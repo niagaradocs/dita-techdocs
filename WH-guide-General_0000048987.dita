@@ -1,0 +1,955 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2019, v.4002-->
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN"
+ "reference.dtd">
+<?Pub Inc?>
+<reference id="descGen" xml:lang="en">
+<title>General elements</title>
+<shortdesc>This topic lists DITA elements shared across Niagara Framework.</shortdesc>
+<refbody>
+<section><title>Tables</title><!--These tables are reused in their entirerties.--><p
+><draft-comment>This Point Status table is designed to be included
+in a troubleshooting chapter. Rather than make this a topic, it should
+be included in a customized topic that reflects unique conditions.
+This table is similar to “About point status,” a topic in “Getting
+Started with Niagara.” This topic provides advice about what to do
+when the various status flags are set, and as such, is meant for Troubleshooting.</draft-comment
+></p><table id="pointstatus">
+<title>Point status</title>
+<tgroup cols="3">
+<?PubTbl tgroup dispwid="929.00px"?>
+<colspec colname="col1" colwidth="0.85*"/><colspec colname="col2"
+colwidth="1.69*"/><colspec colname="COLSPEC0" colwidth="1.12*"/>
+<thead>
+<row>
+<entry>Status</entry>
+<entry>Description</entry>
+<entry>Remedy</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>alarm</entry>
+<entry>The point has a value in an alarm range as defined by a property
+in its alarm extension.</entry>
+<entry>Acknowledge the alarm, investigate and fix the condition that
+caused the alarm.</entry>
+</row>
+<row>
+<entry>down</entry>
+<entry>Driver communication with the parent device as configured in
+the extension has been lost. All proxy point children of the device
+report a status of “down.” This status originates from a proxy point
+only.</entry>
+<entry>Confirm that the parent device is on line and functioning correctly.</entry>
+</row>
+<row>
+<entry>disabled</entry>
+<entry>The proxy extension has been disabled. Polling stops for the
+point. This status originates from a proxy point only.</entry>
+<entry>Enable the proxy extension.</entry>
+</row>
+<row>
+<entry>fault</entry>
+<entry>Typically, this indicates a configuration or license error.
+If a fault occurs following normal {ok} status, it could be a condition
+detected within the device, or perhaps some other fault criterion
+that was met. </entry>
+<entry>Check the point’s proxy extension’s <uicontrol>Fault Cause</uicontrol
+> text for more information.</entry>
+</row>
+<row>
+<entry>null</entry>
+<entry>Indicates no status is available.</entry>
+<entry>Check the point configuration.</entry>
+</row>
+<row>
+<entry>ok</entry>
+<entry>Indicates that the point is functioning as expected. No status
+flag(s) are set.</entry>
+<entry>No action required.</entry>
+</row>
+<row>
+<entry>overridden</entry>
+<entry>The functioning of the point has been stopped usually by a
+hardware override switch.</entry>
+<entry>Make a physical inspection of the device.</entry>
+</row>
+<row>
+<entry>stale</entry>
+<entry>Since the last poll update, the system has not updated the
+point’s value within the specified <uicontrol>Stale Time</uicontrol
+> of its Tuning Policy. This status originates from a proxy point
+only.</entry>
+<entry>This status clears upon receipt of the next poll value.</entry>
+</row>
+</tbody>
+</tgroup>
+</table><!--The following table is reused in the Video Framework Guide.--><table
+id="videoControls">
+<title>Video playback controls</title>
+<tgroup cols="2"><colspec colname="col1" colwidth="0.34*"/><colspec
+colname="col2" colwidth="1.66*"/>
+<thead>
+<row>
+<entry valign="top">Control</entry>
+<entry valign="top">Description</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry><image href="..\graphic\buttonFastPlayReverse_0000066273.png"
+scale="65"></image> Fast Play Reverse</entry>
+<entry>Incrementally speeds up the reverse play speed with each click.
+The on-screen play indicator shows the current play speed while this
+function is being used. <p>The rewind speed defaults to 4x. Use the
+camera’s Property Sheet view to change this speed. Clicking this button
+once rewinds at 4x. Clicking it again increases the rewind speed to
+8x. The maximum rewind speed is 16x.</p></entry>
+</row>
+<row>
+<entry><image href="..\graphic\buttonFastPlayForward_0000066274.png"
+scale="65"></image> Fast Play Forward</entry>
+<entry>Incrementally speeds up the forward play speed with each click.
+The on-screen play indicator shows the current play speed while this
+function is being used.<p>Fast forward speed defaults to 4x. Use the
+camera’s Property Sheet view to change this speed. Clicking this button
+once advances at 4x. Clicking it again increases the fast forward
+speed to 8x. The maximum forward speed is 16x.</p></entry>
+</row>
+<row>
+<entry><image href="..\graphic\buttonSkipReverse_0000066271.png"
+scale="65"></image> Skip Reverse/Skip to the start or previous clip</entry>
+<entry>While playing video, this function skips backward to the beginning
+of the current track and starts playing automatically.<p>The rewind
+speed defaults to 1x. Use the camera’s Property Sheet view to change
+this speed. Clicking this button once rewinds at 1x. Clicking it again
+increases the rewind speed to 2x, 4x, etc. The maximum rewind speed
+is 16x.</p></entry>
+</row>
+<row>
+<entry><image href="..\graphic\buttonSkipForward_0000066272.png"
+scale="65"></image> Skip Forward/Skip to the end or next clip</entry>
+<entry>While playing back video, this function skips forward to the
+next recorded track and starts playing automatically.<p>Slow forward
+play back defaults to 1x. Clicking it again increases the slow forward
+speed to ex, then 4x, etc. The maximum forward speed is 16x.</p></entry>
+</row>
+<row>
+<entry><image href="..\graphic\buttonPlay_0000042114.png" scale="65">
+</image> Play</entry>
+<entry>Initiates playback and resumes playback following a pause.</entry>
+</row>
+<row>
+<entry><image href="..\graphic\buttonPause_0000042115.png" scale="65">
+</image> Pause</entry>
+<entry>Discontinues playback at the current location.</entry>
+</row>
+<row>
+<entry><image href="..\graphic\buttonLiveVideoControl_0000066275.png"
+scale="50"></image> Live</entry>
+<entry>Switches from a playback video display to a live video display
+(still in the <wintitle>Video Playback</wintitle> view).</entry>
+</row>
+</tbody>
+</tgroup>
+</table><!--The following table is reused in the Video Framework Guide.--><table
+id="videoEventControls">
+<title>Event Controls</title>
+<tgroup cols="2"><colspec colname="col1" colwidth="0.34*"/><colspec
+colname="col2" colwidth="1.66*"/>
+<thead>
+<row>
+<entry valign="top">Control</entry>
+<entry valign="top">Description</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry><image href="..\graphic\buttonBrowseEventsControl_0000066290.png"
+scale="65"></image> Browse events</entry>
+<entry>Opens the <wintitle>Browser Events</wintitle> window.</entry>
+</row>
+<row>
+<entry><image href="..\graphic\buttons-timeindex_0000069377.png"
+scale="65"></image> Play From Time</entry>
+<entry>Initiates playback from a specific time.</entry>
+</row>
+</tbody>
+</tgroup>
+</table></section>
+<section><title>Buttons</title><!--These descriptions work for all devices including cameras.--><ul>
+<li><p id="buttonAck-p"><uicontrol>Acknowledge</uicontrol> recognizes
+each selected alarm.</p></li>
+<li><p id="deviceManagerAdd-p"><uicontrol>Add</uicontrol> inserts
+into the database a record for the discovered and selected object.</p
+></li>
+<li><p id="deviceManagerCancel-p"><uicontrol>Cancel</uicontrol> ends
+the current discovery job.</p></li>
+<li><p id="buttonDelete-p"><uicontrol>Delete</uicontrol> removes the
+selected record from the database.</p></li>
+<li><p id="bacnetDelete-p"><uicontrol>Delete</uicontrol> sends a delete-object
+request to the remote BACnet device, which removes the BACnet object
+from the remote BACnet device.</p><note id="bacnetDeleteKey-note"
+>The <uicontrol>Delete</uicontrol> key on the keyboard performs a
+local delete only. The delete keyboard action removes the selected
+BACnet object from the AWS device <uicontrol>Config</uicontrol> folder
+but it does not send a delete-object request to the remote device.</note
+></li>
+<li><p id="bacnetDeviceID-p"><uicontrol>DeviceID</uicontrol> changes
+the device ID in the device.</p></li>
+<li><p id="deviceManagerDiscover-p"><uicontrol>Discover</uicontrol
+> runs a discover job to locate installed devices, which appear in
+the <wintitle>Discovered</wintitle> pane. This view has a standard
+appearance that is similar to all <wintitle>Device Manager</wintitle
+> views.</p></li>
+<li><p id="deviceManagerEdit-p"><uicontrol>Edit</uicontrol> opens
+the device’s database record for updating.</p></li>
+<li><p id="bacnetEvents-p"><uicontrol>Events</uicontrol> retrieves
+the current event information and sends it to the alarm console.</p
+></li>
+<li><p id="bacnetESumm-p"><uicontrol>ESumm</uicontrol> opens the <wintitle
+>Get Enrollment Summary</wintitle> window. This window</p></li>
+<li><p id="buttonExport-p"><uicontrol>Export</uicontrol> saves a copy
+of the selected record to the hard disk.</p></li>
+<li><p id="buttonImport-p"><uicontrol>Import</uicontrol> adds an imported
+item to the database.</p></li>
+<li><p id="alarmsButtonHyperlink"><uicontrol>Hyperlink</uicontrol
+> changes the current view to the hyperlinked target. If no hyperlink
+is associated with the alarm, this button is not available.</p></li>
+<li><p id="deviceManagerMatch-p"><uicontrol>Match</uicontrol> associates
+a discovered device with a record that is already in the database.</p
+></li>
+<li><p id="deviceNewFolder-p"><uicontrol>New Folder</uicontrol> creates
+a new folder for devices. Each such folder provides its own set of
+manager views.</p></li>
+<li><p id="deviceNew-p"><uicontrol>New</uicontrol> creates a new device
+record in the database.</p></li>
+<li><p id="alarmsButtonNotes"><uicontrol>Notes</uicontrol> displays
+the <uicontrol>Notes</uicontrol> window for the purpose of adding
+a note to the selected alarm or alarms.</p></li>
+<li><p id="alarmsButtonRotate"><uicontrol>Rotate</uicontrol> reassigns
+the priority value of each user in the contact list to the next user
+in the list in a revolving manner. All selected lists are affected
+when you click this button.</p></li>
+<li><p id="deviceManagerTagIt-p"><uicontrol>TagIt</uicontrol> associates
+metadata, such as location or unique configuration with the object.</p
+></li>
+<li><p id="deviceManagerTemplateConfig-d"><uicontrol>Template Config</uicontrol
+> accesses the station template that defines configuration options.
+You would select a template to set up the device with pre-configured
+properties.</p></li>
+<li><p id="bacnetTSync-p"><uicontrol>TSync</uicontrol> synchronizes
+the time.</p></li>
+<li><p id="buttonView-p"><uicontrol>View</uicontrol> displays details
+for the selected item.</p></li>
+</ul></section>
+<section><title>Notes</title><draft-comment>Graphics Guide</draft-comment
+><note id="graphics_bajauiExamples">The <apiname>bajaui</apiname> palette
+provides an <filepath>Examples</filepath> folder that contains pre-configured
+FlowPanes and CanvasPanes to help you start designing mobile-friendly
+px pages.</note><note id="graphics_KioskNotSupported">Currently, the
+KioskService and the Kiosk Profiles are not supported in <keyword
+conkeyref="wh_variables_n4/niagara4"
+conref="WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara4"
+>N4</keyword>. Although, it is possible that this will change in future
+releases.</note><note id="HTML5HxProfile-NoteNewStationWiz">In <keyword
+conkeyref="wh_variables_n4/niagara4.6"
+conref="WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara4.6"
+></keyword> (and later) <keyword conkeyref="wh_variables_n4/Workbench"
+conref="WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench"
+></keyword> , the station templates in the <wintitle>New Station Wizard</wintitle
+> are updated so that the default Mobile Web Profile configuration
+of the users and user prototypes is the HTML5HxProfile. If you would
+like to change the Default Mobile Profile for when new users are created,
+go to the UserService <menucascade><uicontrol>Default Protoype</uicontrol>
+<uicontrol>User Prototypes</uicontrol></menucascade> properties and
+set the Mobile Web Profile <parmname>Type</parmname> to the HTML5HxProfile.</note
+><draft-comment>reusable note on tag group handling in the edit tag
+dialog — same content as above</draft-comment><?Pub _newline?><draft-comment
+>CN–24Oct2017: Due to functional changes in N4.4 the TagGroupMonitor
+component has been removed from the TagDictionaryService (per NCCB-29880).
+Consequently all related topics in the Tagging Guide are now deprecated,
+no longer being used — </draft-comment><draft-comment>BACnet Guide</draft-comment
+><note id="graphics_MobileObsoleteNote" type="important"><p
+id="graphics_MobileObsolete-p">In <keyword
+conkeyref="wh_variables_n4/niagara4.6"
+conref="WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara4.6"
+></keyword> and later, legacy <keyword
+conkeyref="wh_variables_n4/niagara"
+conref="WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara"
+>Niagara</keyword> Mobile technology is deprecated. Although it continues
+to be supported and works as expected, you should not use it for any
+new projects. Instead, use the mobile-friendly features of the HTML5
+Hx Profile which provides a significantly improved mobile user experience.</p
+></note><note id="graphics_NoTunnelingInLinks"><p
+id="graphics_NoTunnelingInLinks-p"><keyword
+conkeyref="wh_variables_n4/niagara4"
+conref="WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara4"
+></keyword>.x no longer supports fox, http, and platform tunneling.
+This means that any hyperlinks (that is, ORDs in Px graphics) that
+are based on tunneling do not work.</p></note><note
+id="grfx_self-signed-certif">The Chrome web browser does not cache
+any web resources when connected over https to a station that has
+a self-signed certificate or a certificate that is not trusted. This
+can hurt the performance of various web-based pages served up from <keyword
+conkeyref="wh_variables_n4/niagara"
+conref="WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara"
+>Niagara</keyword>, such as the Html5 Hx Profile and Hx views. For
+best results, install and maintain a fully-signed certificate for
+an optimal web viewing experience. </note><draft-comment>BACnet Guide</draft-comment
+><note id="bacnet_datatypeTrendLogExt">This single extension applies
+to both COV and Interval data collection and may be used in place
+of the deprecated COV and Interval Trend Log Extensions for this data
+type.</note><note id="bacnetDynamicPropNote">Only the following read-only
+properties qualify for initial value setting during object creation.
+Requests that include non-qualified properties from the client cause
+a request to fail.<ul>
+<li><p>Device Status Facets</p></li>
+<li><p>Discovery History Type</p></li>
+</ul></note><!--This caution is used in Station Security Guide and Edge-10–ACE:--><note
+id="security_UserPermissionsOnRoleSvc" type="caution">There are risks
+involved in giving any user broad permissions on the Role Service.
+For example, giving a user <b>admin write</b> permissions on the Role
+Service allows that user to create, edit, rename or delete any role.
+Best practices recommend that such permissions on the Role Service
+be limited only to appropriately authorized users.</note><note
+id="edge_RestrictAccess" type="caution">Protect against unauthorized
+access by restricting physical access to the computers and devices
+that manage your building model. Set up user authentication with strong
+passwords, and secure components by controlling permissions. Failure
+to observe these recommended precautions could expose your network
+systems to unauthorized access and tampering.</note><note
+id="stationSecurity-bajaUserProtytpe">The SAML Authentication Scheme
+only supports the baja-UserPrototype. While LDAP and Kerberos support
+this user prototype as well as the default user prototype.</note><note
+id="Categories_OperatorWritePrivilege">When an admin user (user with
+Admin write privilege on the CategoryService and on a particular station
+component being adjusted) is making a category mask adjustment, the
+user must also have at least Operator write privilege on the category
+being adjusted in the category mask for the station object. This includes
+changes to check marks in the “Inherit” column - the user must have
+at least Operator write access to any altered categories applied from
+the Inherit change. </note><p id="bacnetDynamicCreate">A BACnet client
+can send a request to a BACnet controller to dynamically create this
+component by using either an Object Id or Object Type. Optionally,
+the request may simultaneously specify initial values for one or more
+of a specified set of component properties.</p><note
+id="bacnet_datatypeTrendLogExt">This single extension applies to both
+COV and Interval data collection and may be used in place of the deprecated
+COV and Interval Trend Log Extensions for this data type.</note><note
+id="bacnetDynamicPropNote">Only the following read-only properties
+qualify for initial value setting during object creation. Requests
+that include non-qualified properties from the client cause a request
+to fail.<ul>
+<li><p>Device Status Facets</p></li>
+<li><p>Discovery History Type</p></li>
+</ul></note><note id="Rdbms-MySqlVersionNote">The rdbMySQL-MySQLDatabase
+component was tested with the MySQL connector version “<codeph>mysql-connector—java–8.0.24</codeph
+>”. Use of earlier versions of this connector is not recommended and
+not supported.</note><note id="chart_RelativizedOrds">In <keyword
+conkeyref="wh_variables_n4/niagara4.6"
+conref="..\reuse\WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara4.6"
+>N4.6</keyword> and later, there is added support for relative ORDs
+to better accommodate Px page reuse.</note><note
+id="charts_exportingChartNote">Most options in the <uicontrol>Command
+Bar</uicontrol> provide fine tuning for viewing purposes only. Changes
+made with those options are of a temporary nature and are not included
+when the chart is saved or exported. For example, if you turn on time
+zoom and Delta using buttons in the command bar and then export the
+chart, the chart file displays with the original default settings
+for those options. Exceptions to this are changes made with the <option
+>Time Range</option>, <option>Sampling</option>, and <option>Status
+Coloring</option> options, which are included on export or save. <p
+>If you want to export the chart and retain all of the changes that
+you have made, you need to do the following: <ol>
+<li><p>Export the modified chart to a Station File.</p></li>
+<li><p>Create a <wintitle>Px</wintitle> view for this chart and load
+the exported Station File to this <wintitle>Px</wintitle> view. The
+chart will display with the modifications included.</p></li>
+</ol></p></note><!--This div element is uesd to combine the paragraph and note into a single entity. It is used in the Maxpro appendix of the Video Framework Guide.--><div
+id="MaxproSecureCommunication-div"><p>The Maxpro driver defaults to
+secure TLS communication with the exception of its RTSP protocol,
+which, in the <keyword conkeyref="wh_variables_n4/niagara4.9"
+conref="WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara4.9"
+></keyword> release does not support TLS. If your installation requires
+a connection to a camera or NVR that does not support TLS, you should
+replace the device with one that does support secure communication.
+If you must use a device that is not secure, change <parmname>Use
+Tls</parmname> (Network component Property Sheet) to <option>false</option
+> and change the <parmname>Address</parmname>, <parmname>Port</parmname
+> (Network and NVR Property Sheets) from <userinput>443</userinput
+> to <userinput>80</userinput>.</p><note type="caution">Be aware that
+these changes relax the driver's security settings, compromising security
+to connect to a device that does not support secure communication.
+This opens your network to the potential of being hacked.</note><!--This is used in Station Security Guide and somewhere else (not sure)--><note
+id="Permissions-PermissionsBrowser-N48">In <keyword
+conkeyref="wh_variables_n4/niagara4.8"
+conref="..\reuse\WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara4.8"
+>N4.8</keyword> and later, there is added support for the UserService
+in the <wintitle>Permissions Browser</wintitle> view. Use the <uicontrol
+>Show Permissions for</uicontrol> drop-down list to switch between
+permissions for Users, and for Roles. When viewing permissions for <uicontrol
+>Users</uicontrol>, the view displays a separate column for each user
+as well as any prototype. </note></div><note id="Rdbms-MySqlVersionNote"
+> MySQL connector version <codeph>mysql-connector—java–8.0.22</codeph
+> is not supported by <keyword conkeyref="wh_variables_n4/niagara"
+conref="WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara"
+></keyword>. The latest supported version is <codeph>mysql-connector-java–8.0.21</codeph
+>. If you see the following error it means you are running an incompatible
+version of the connector.<?Pub _newline?><codeph>java.lang.NoClassDefFoundError:
+Could not initialize class <?Pub _newline?>com.mysql.cj.protocol.a.authentication.AuthenticationLdapSaslClientPlugin</codeph
+></note><note id="securityDashbd-enforcedProtocols">The <wintitle
+>Security Dashboard</wintitle> transmits sensitive information. To
+minimize security risks, use the Foxs (secure Fox) protocol to manage
+platform connections. Also, the HTTPS protocol is enforced for secure
+communication over the network. The <wintitle>Security Dashboard View</wintitle
+> is not accessible over HTTP.</note><note
+id="securityDashbd-securityWarning" type="caution">The <wintitle>Security
+Dashboard View</wintitle> presents sensitive data. Users should be
+made aware of this and take necessary precautions to safe-guard the
+information. For example, a user should not walk away from the PC
+while the view is open for others to see. We recommend that any user
+who has access to the dashboard should be configured for auto-logoff.</note
+><note id="securityDashbd-Caution" type="caution">The <wintitle>Security
+Dashboard View</wintitle> may not display every possible security
+setting, and should not be considered as a guarantee that everything
+is configured securely. In particular, third party modules may have
+security settings that do not register to the dashboard.</note><note
+id="securitySamlIdPSvc-Caution" type="caution">Any user that has admin
+access to the SAMLIdPService can see the following sensitive information
+for all stations in the <uicontrol>NiagaraNetwork</uicontrol>:<ul
+compact="yes">
+<li><p>A list of all users (usernames only) in the stations</p></li>
+<li><p>A list of all stations (station names and hostname only)</p
+></li>
+<li><p>A list of all authentication schemes (scheme name only) </p
+></li>
+</ul>This is true <b>regardless of the permissions that user has on
+those components</b>. For security purposes, when adding the SAMLIdPService
+to a station take special care to place it in appropriate categories. <p
+>Additionally, any user with admin write permissions on the SAMLIdPService
+can effectively control who logs in to <b>all stations</b> in the <uicontrol
+>NiagaraNetwork</uicontrol>, and with what permissions (to the extent
+allowed by the remote station for remote users). The recommended security
+best practice is that you treat this as a <b>very sensitive role</b
+>, assigning it only to highly trusted users who manage authentication. </p
+></note><note id="tag_HsVersionAutoImport">When editing <filepath
+>tagsMerge.csv</filepath> or <filepath>equipMerge.csv</filepath>,
+you must include the version row (in <filepath>tagsMerge.csv</filepath
+>). Otherwise, your changes will not be recognized and imported to
+the dictionary.</note><note id="tag_HsSpecifyImportFiles">To use these
+import files, you must always specify a Tags Import File that contains
+a specified version number even if there are no tags to be modified.
+ If no modifications are made to equipment tagGroups, then the Equip
+Import File is optional.</note><note id="tag_HsDataRowsCommented"
+>Initially, all data rows are commented-out (rows start with “<codeph
+>**</codeph>” or “<codeph>##</codeph>” characters), and as such they
+will be ignored on import.  To edit a row, you must remove the comment
+characters so that your changes will be recognized and imported. </note
+><note id="tag_HeapMemory4Indexes">The type of memory being used by
+the tag rule and implied tag indexes is heap memory. So these indexes
+are not stored persistently but are built dynamically after every
+station reboot when NEQL queries are submitted.&nbsp;</note><note
+id="tag_N4.1DataPolicyNote">Starting in <keyword
+conkeyref="wh_variables_n4/niagara4.1"
+conref="WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara4.1"
+></keyword>, tag dictionaries support adding a single DataPolicy to
+a TagInfo or a TagGroupInfo component. Also, the TagInfo and TagGroupInfo
+components have an <uicontrol>Add DataPolicy</uicontrol> action. For
+details, see “Data Policies”.</note><note
+id="tag_N4.1NewImpliedRelation">Starting in <keyword
+conkeyref="wh_variables_n4/niagara4.1"
+conref="WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara4.1"
+></keyword>, there is a new implied relation. For devices containing
+child points that have a <apiname>Null Proxy</apiname> extension,
+the <apiname>childNullProxyPoint</apiname> relation&nbsp;is implied
+on each of those points.</note><note id="chart_RelativizedOrds">In <keyword
+conkeyref="wh_variables_n4/niagara4.6"
+conref="..\reuse\WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara4.6"
+></keyword> and later, there is added support for relative ORDs to
+better accommodate Px page reuse.</note><note
+id="tag_NoteTagGroupsInEditTags">Starting in <keyword
+conkeyref="wh_variables_n4/niagara4.1"
+conref="WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara4.1"
+></keyword>, when using the <wintitle>Edit Tags</wintitle> dialog
+any added TagGroups display differently than in the prior release.
+When adding a TagGroup to any component the added tag group displays
+on the <wintitle>Direct Tags</wintitle> tab as an Ord to the TagGroup
+itself. &nbsp;After saving the added tag assignments, when you reopen
+the <wintitle>Edit Tags</wintitle> dialog you will see the set of
+individual tags in that TagGroup display on the <wintitle>Implied
+Tags</wintitle> tab. The reason for this is that the Tag Group Monitor
+detects the presence of individual tags that are included in a tag
+dictionary’s TagGroupDefinition and it replaces those tags with an <filepath
+>n:tagGroup</filepath> relation from the component to the corresponding
+tag dictionary's <?Pub _nolinebreak?>TagGroup<?Pub /_nolinebreak?><?Pub
+_hyphen-point?>Info tags. </note><draft-comment>reusable NOTE on editing
+tags while in various views— same content as above</draft-comment
+><note id="tag_NoteEditTagsFromViews">In <keyword
+conkeyref="wh_variables_n4/niagara4.1"
+conref="WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara4.1"
+></keyword> and later, when using the <wintitle>Edit Tags</wintitle
+> dialog from within various views (<wintitle>Device Manager</wintitle
+>, <wintitle>Point Manager</wintitle>, <wintitle>Template Editor</wintitle
+>, etc.), TagGroup tags are assigned to a component first as individual
+direct tags. However, periodically the Tag Group Monitor in the Tag
+Dictionary Service searches for individual tags that are also included
+in a tag group. Any such tags are removed from the component and replaced
+with an <codeph>n:tagGroup</codeph> relation. The relation, of course,
+implies the same set of tags.</note><draft-comment>reusable note on
+the edit tag dialog in Template Editor — same content as above</draft-comment
+><draft-comment>.<?Pub _newline?>CN–24Oct2017: Due to functional changes
+in N4.4 the TagGroupMonitor component has been removed from the TagDictionaryService
+(per NCCB-29880). Consequently all related topics in the Tagging Guide
+are now deprecated, no longer being used — </draft-comment><note
+id="tag_NoteEditTagsInTemplate">Starting in 4.1, when using the <wintitle
+>Edit Tags</wintitle> dialog within the <wintitle>Template Editor</wintitle
+> view, TagGroup tags are assigned to a component as individual direct
+tags in the template. Upon template deployment, the Tag Group Monitor
+in the Tag Dictionary Service is notified and the individual tags
+(of the tag group) are removed from the component and replaced with
+an <codeph>n:tagGroup</codeph> relation. The relation, of course,
+implies the same set of tags.</note><note id="Tagging_outbound">In <keyword
+conkeyref="wh_variables_n4/niagara4.6"
+conref="WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara4.6"
+>N4.6</keyword> and later, the “outbound” criteria is added to scoped
+tag rules, <parmname>hasAncestor</parmname> condition, and <parmname
+>hasRelation</parmname> condition so that only intended outbound relations
+are considered.</note><note id="haystackTagDict_NoAutoImportOnUpgrade"
+>In <keyword conkeyref="wh_variables_n4/niagara4.8"
+conref="WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara4.8"
+>N4.8</keyword> and later, when a Haystack tag dictionary is already
+installed in a station it is no longer imported automatically when
+the station starts after upgrading the haystack module. This change
+prevents any new implied equipRef and siteRef relations from appearing
+in the station and affecting hierarchies and NEQL results. The latest
+tag, tag group, and relation definitions can be imported by invoking
+the <uicontrol>Import Dictionary</uicontrol> action on the HsTagDictionary
+component. Note that in the released versions of <keyword
+conkeyref="wh_variables_n4/niagara4.4U3"
+conref="WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara4.4U3"
+>N4.4U3</keyword> and <keyword conkeyref="wh_variables_n4/niagara4.7U1"
+conref="WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara4.7U1"
+>N4.7U1</keyword>, the dictionary continues to import itself automatically.
+Consult your support channel on the availability of a haystack-rt
+patch jar that removes this auto-import behavior.</note><note
+id="DaemonUserHomeLocation" type="caution">The Daemon User Home and
+the <keyword conkeyref="wh_variables_n4/Workbench"
+conref="..\reuse\WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench"
+></keyword> User Home are intended to be installed in distinctly separate
+locations. This separation of homes is for security reasons but it
+also prevents certain unintended results. For example, when the two
+homes are installed in the same location the <wintitle>Station Copier</wintitle
+> becomes unavailable, and you will not be able to make a portable
+copy of the station.</note><note id="BatchEditorCaution1" type="caution"
+>Before using the <uicontrol>Batch Editor</uicontrol>, always <i>save
+and backup the station</i>. It is easy to make errors using the Batch
+Editor, and there is <i>no undo</i>. Therefore in a worst-case scenario,
+you can always reinstall the saved station from your backup.</note
+><!--Platform Guide--><note id="BogPassphraseRemove-Change"
+type="caution">Be aware that unlocking (force-remove) and changing
+(force-change) the passphrase on a BOG file results in the loss of
+sensitive data in the file.</note><note id="ChangePlatDefaultsWizard"
+>In <keyword conkeyref="wh_variables_n4/niagara4.4"
+conref="..\reuse\WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara4.4"
+>Niagara 4.4</keyword> and later, <keyword
+conkeyref="wh_variables_n4/Workbench"
+conref="..\reuse\WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench"
+>Workbench</keyword> enforces the requirement to change the platform
+default system passphrase, add a new platform account, and remove
+the default platform account. If <keyword
+conkeyref="wh_variables_n4/Workbench"
+conref="..\reuse\WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench"
+>Workbench</keyword> detects either of the following conditions when
+making a platform connection it launches the <wintitle>Change Platform
+Defaults Wizard</wintitle> which steps you through the required changes
+prior to completing the platform connection:<ul>
+<li><p>The system passphrase of the remote platform is the default
+value.</p></li>
+<li><p>The platform credentials of the remote platform are factory
+default values.</p></li>
+</ul><p>The requirements to change default credentials are configurable
+via the <wintitle>Platform Connections</wintitle> options under <keyword
+conkeyref="wh_variables_n4/Workbench"
+conref="..\reuse\WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench"
+>Workbench</keyword> <menucascade><uicontrol>Tools</uicontrol>
+<uicontrol>Options</uicontrol></menucascade>. For details see “Platform
+Connections options” in <cite><ph
+conkeyref="doctitles_coresw/Niagara4UserGuide-90E05C89"
+conref="..\reuse\WH_CoreSWDocTitles_Tridium_N4_0000009937.dita#WHCoreSoftwareDocumentTitles-9A315B77/Niagara4UserGuide-90E05C89"
+>docUser</ph></cite>.</p><fig>
+<title>Change Platform Defaults Wizard launches prior to completing
+the platform connection</title>
+<image href="..\graphic\ChangeDefaultsWiz-pg1_0000040570.png"
+placement="break" scale="70"></image>
+</fig><p>In <keyword conkeyref="wh_variables_n4/niagara4.6"
+conref="..\reuse\WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara4.6"
+>Niagara 4.5</keyword> and later, if the <keyword
+conkeyref="wh_variables_n4/Workbench"
+conref="..\reuse\WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench"
+>Workbench</keyword> <wintitle>FIPS Option</wintitle> to <uicontrol
+>Show FIPS Options</uicontrol> is set to “true” certain FIPS options
+become visible in this wizard. If selected, FIPS-strength password
+requirements are enforced.</p></note><note id="FipsOptionsNote">In <keyword
+conkeyref="wh_variables_n4/niagara4.6"
+conref="..\reuse\WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara4.6"
+>Niagara 4.5</keyword> and later, if the <keyword
+conkeyref="wh_variables_n4/Workbench"
+conref="..\reuse\WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench"
+>Workbench</keyword> FIPS Option to <uicontrol>Show FIPS Options</uicontrol
+> is set to “true” certain FIPS options become visible in this window.
+If selected, FIPS-strength password requirements are enforced.</note
+><note id="nCloudDriver-CautionCloudPushPolicy" type="caution">The
+PushPolicy tuning policy should be used only for the few points that
+you want to have pushing data to the cloud platform at the configured
+interval. Configuring a large number of points to use the PushPolicy
+can cause performance problems due to overly frequent updates to the
+cloud platform.</note><note id="SwMgr_moduleSigning">In <keyword
+conkeyref="wh_variables_n4/niagara4.8"
+conref="WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara4.8"
+>Niagara 4.8</keyword> and later, there is added support for verifying
+third party module signatures. Currently third party module signing
+is optional in most cases, but this will gradually shift to a requirement
+over the course of the next few releases. As a result, the <wintitle
+>Software Manager</wintitle> window is changed to include signature
+status icons in the Installed Version and Available Version columns
+indicating the signature status of the installed and available modules.
+Attempting to install modules with signature warnings (indicated by
+a yellow <image
+href="..\graphic\Icon-YellowShield_ModuleSigning_0000065368.png"
+scale="50"></image> icon) will cause a signature warning dialog to
+be displayed, and attempting to install modules with signature errors
+(indicated by a red <image
+href="..\graphic\Icon-RedShield_ModuleSigning_0000065367.png" scale="50">
+</image> icon) will cause the installation to fail. For more details
+see, <cite><ph
+conkeyref="doctitles_coresw/ThirdPartyModuleSigning-171F5F39"
+conref="WH_CoreSWDocTitles_Tridium_N4_0000009937.dita#WHCoreSoftwareDocumentTitles-9A315B77/ThirdPartyModuleSigning-171F5F39"
+></ph></cite>.</note><note id="StationCopier_AlarmHistoryDataExcluded"
+>When copying <i>from </i><keyword conkeyref="wh_variables_n4/Workbench"
+conref="WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench"
+></keyword> <i>to </i>a remote platform, not all types of files can
+be transferred. For example, the copier does not allow alarm and history
+data to be transferred. This is true even if you choose the option
+to “Copy every file in the station directory and its subdirectories”.
+And if you choose the option to “Copy files from selected directories”,
+it does not allow you to select any alarm or history folder or subfolder.
+If you need to include such data, then perform a backup/restore operation
+instead (i.e., backup the station to a <filepath>*.dist</filepath
+> file) making sure to edit default backup settings to NOT exclude
+alarms/history data. </note><note
+id="IndexingADatabaseIsAMemory-AndCPU-i-6C828928" type="caution">Indexing
+a database is a memory- and CPU-intensive operation that affects the
+availability of your SystemDb and remote stations. Do not configure
+a re-index to occur too often so your SystemDb and remote stations
+can maintain availability throughout the day. If your SystemDb is
+indexed frequently, query performance degrades.</note><note
+id="sysIndex_tagDictionariesNote">The <apiname>tagdictionary</apiname
+> palette includes two smart tag dictionaries that support the System
+Database and System Indexing features. The dictionaries allow you
+to easily exclude portions of a NiagaraStation from indexing operations,
+which you might want to do for licensing reasons. The SystemIndex
+dictionary has a smart tag, the scoped tag. If you add this dictionary
+to your station, you can drop a <wintitle>systemIndex:excluded</wintitle
+> marker tag on a component and any descendants will have this same
+tag implied on them. To prevent implying this tag on all descendants
+you can apply a <wintitle>systemIndex:included</wintitle> marker tag
+where necessary. The SystemIndex dictionary has a scoped tag rule
+that can be configured to imply the <wintitle>systemIndex:excluded</wintitle
+> tag on portions of the station as specified in one or more Ord scopes.</note
+><note id="sysDb_VirtualsPermissions" type="important">You must set
+up user permissions for <keyword conkeyref="wh_variables_n4/niagara"
+conref="..\reuse\WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara"
+>Niagara</keyword> virtuals manually in the <keyword
+conkeyref="wh_variables_n4/Supervisor"
+conref="..\reuse\WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Supervisor"
+>Supervisor</keyword> via roles and permissions. For details, see
+“Authorization management” in the <cite><ph
+conkeyref="doctitles_coresw/StationSecurityGuide"
+conref="..\reuse\WH_CoreSWDocTitles_Tridium_N4_0000009937.dita#WHCoreSoftwareDocumentTitles-9A315B77/StationSecurityGuide"
+>Station Security Guide</ph></cite>.</note></section><?Pub Caret -1?>
+<section><title>Reused sectiondivs (!)</title><draft-comment>CN–24Oct2017:
+Due to functional changes in N4.4 the TagGroupMonitor component has
+been removed from the TagDictionaryService (per NCCB-29880). Consequently
+all related topics in the Tagging Guide are now deprecated, no longer
+being used — </draft-comment><sectiondiv
+id="tag_EditTagGroupInTemplates"><p><b>Using the Edit Tag dialog within
+the Template Editor</b></p><p>When using the <wintitle>Edit Tags</wintitle
+> dialog within the <wintitle>Template Editor</wintitle> view, TagGroup
+tags are assigned to a component as individual direct tags in the
+template. Upon template deployment, the Tag Group Monitor in the Tag
+Dictionary Service is notified and the individual tags (of the tag
+group) are removed from the component and replaced with an <codeph
+>n:tagGroup</codeph> relation. The relation, of course, implies the
+same set of tags.</p></sectiondiv><draft-comment>Reusable SectionDiv
+on editing tags while in various views— same content as above.</draft-comment
+><?Pub _newline?><draft-comment>CN–24Oct2017: Due to functional changes
+in N4.4 the TagGroupMonitor component has been removed from the TagDictionaryService
+(per NCCB-29880). Consequently all related topics in the Tagging Guide
+are now deprecated, no longer being used — </draft-comment><sectiondiv
+id="tag_SectEditTagsFromViews"><p><b>Editing tags from within views</b
+></p><p>In <keyword conkeyref="wh_variables_n4/niagara4.1"
+conref="WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara4.1"
+></keyword> and later, when using the <wintitle>Edit Tags</wintitle
+> dialog from within various views (<wintitle>Device Manager</wintitle
+>, <wintitle>Point Manager</wintitle>, <wintitle>Template Editor</wintitle
+>, etc.), TagGroup tags are assigned to a component first as individual
+direct tags. However, periodically the Tag Group Monitor in the Tag
+Dictionary Service searches for individual tags that are also included
+in a tag group. Any such tags are removed from the component and replaced
+with an <codeph>n:tagGroup</codeph> relation. The relation, of course,
+implies the same set of tags.</p></sectiondiv><draft-comment>CN–24Oct2017:
+Due to functional changes in N4.4 the TagGroupMonitor component has
+been removed from the TagDictionaryService (per NCCB-29880). Consequently
+all related topics/reuseable descriptions (like this one) in the Tagging
+Guide are now deprecated, no longer being used — </draft-comment><sectiondiv
+id="tag_ConvertTagGroup2Relations"><p><b>Converting existing tags
+to TagGroup Relations</b></p><p>On station startup, the Tag Group
+Monitor in Tag Dictionary Service scans the station components looking
+for a complete set of tags from each defined TagGroup in the TagDictionaryService.
+If a complete set is detected, the Monitor replaces the set of tags
+on the component with an <codeph>n:tagGroup</codeph> relation from
+the component to the TagGroupDefinition. This set of tags then becomes
+implied tags on the component.</p></sectiondiv><title>Default Index
+Queries</title><p>This OrdList contains a set of default queries that
+are run against stations in the NiagaraNetwork, and optionally against
+the <keyword conkeyref="wh_variables_n4/Supervisor"
+conref="..\reuse\WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Supervisor"
+>Supervisor</keyword>’s station (depending on how you have configured
+the SystemIndexService), during the system indexing process. You can
+use these default queries (via the LocalSystemIndexer) to index your
+local <keyword conkeyref="wh_variables_n4/Supervisor"
+conref="..\reuse\WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Supervisor"
+></keyword> station, and/or all stations in the <keyword
+conkeyref="wh_variables_n4/Supervisor"
+conref="..\reuse\WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Supervisor"
+></keyword>’s NiagaraNetwork (via the NiagaraNetworkSystemIndexSource),
+and populate your SystemDb. By default, the root component of the
+station is indexed, as well as entities in all other driver networks
+as described here. </p><p>Additionally, you can use the default queries
+(via the NiagaraSystemIndexExport/Import) to push/pull entity data
+from an individual station into the <keyword
+conkeyref="wh_variables_n4/Supervisor"
+conref="..\reuse\WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Supervisor"
+></keyword>’s SystemDb. </p><ul compact="yes">
+<li><p><codeph>station:|slot:/|bql:{asComponent}</codeph></p><p>Pulls
+in the root component of the station, which is required in scoped
+queries.</p></li>
+<li><p><codeph>station:|slot:/|bql:select * from driver:DeviceNetwork
+where type !=niagaraDriver:NiagaraNetwork</codeph> </p><p>Pulls in
+all driver networks (excluding NiagaraNetwork) to index entities in
+other device networks.</p></li>
+<li><p><codeph>station:|slot:/|bql:select * from driver:DeviceFolder
+where type != niagaraDriver:NiagaraStationFolder</codeph></p><p>Pulls
+in all driver device folders (excluding NiagaraDriver device folders)
+to index device folders in other networks.</p></li>
+<li><p><codeph>station:|slot:/|bql:select * from driver:Device where
+type !=niagaraDriver:NiagaraStation and type !=niagaraDriver:NiagaraEdgeLiteStation</codeph
+></p><p>Pulls in all devices (excluding NiagaraStations and NiagaraEdgeLiteStations)
+to index devices in other networks.</p></li>
+<li><p><codeph>station:|slot:/|bql:select * from driver:PointFolder
+where type !=niagaraDriver:NiagaraPointFolder</codeph></p><p>Pulls
+in all driver Point folders (excluding NiagaraDriver point folders)
+to index point folders in other networks.</p></li>
+<li><p><codeph>station:|slot:/|bql:select * from control:ControlPoint
+where proxyExt.type !=niagaraDriver:NiagaraProxyExt</codeph></p><p
+>Pulls in all control points (excluding <keyword
+conkeyref="wh_variables_n4/niagara"
+conref="..\reuse\WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara"
+>Niagara</keyword> proxy points) to index control points from other
+networks.</p></li>
+<li><p><codeph>station:|slot:/|bql:select * from schedule:AbstractSchedule
+where type !=niagaraDriver:NiagaraAbstractSchedule</codeph></p><p
+>Pulls in all schedules (excluding <keyword
+conkeyref="wh_variables_n4/niagara"
+conref="..\reuse\WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara"
+>Niagara</keyword> schedules) to index schedules in other networks.</p
+></li>
+</ul></section>
+<section><title>Paragraphs and ph elements</title><!--BACnet--><p
+id="bacnetDynamicCreate">A BACnet client can send a request to a BACnet
+controller to dynamically create this component by using either an
+Object Id or Object Type. Optionally, the request may simultaneously
+specify initial values for one or more of a specified set of component
+properties. </p><ph id="securityDashbd-noLink">In cases where there
+is no component to link to, no hyperlink is provided on the card.</ph
+><div id="Permissions-FilterAndHighlight-N48"><p>Additional enhancements
+to the <wintitle>Permissions Browser</wintitle> view include the following:</p
+><ul compact="yes">
+<li><p><b>Highlight Accessible</b> – applies green shading to entries
+that are accessible by at least one displayed column (user or role).
+Do this by clicking the <uicontrol>Highlight Accessible</uicontrol
+> icon (<image
+href="..\graphic\wbutil-PermissionsBrowser-HighlightEntriesIcon_0000067418.png">
+</image>) in the <keyword conkeyref="wh_variables_n4/Workbench"
+conref="..\reuse\WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench"
+>Workbench</keyword> toolbar.<fig>
+<title>Highlight Accessible tool highlights entries accessible by
+this user</title>
+<image href="..\graphic\HighlightAccessible-Users_0000067416.png"
+placement="break" scale="70"></image>
+</fig></p></li>
+<li><p><b>Filtering</b> – filters results in the table for selected
+users/roles. Do this by clicking the table <uicontrol>Options</uicontrol
+> icon (<image href="..\graphic\icon_TableOptions_0000067417.png"
+scale="120"></image>) at the far right side of the column heading
+row, to display the options menu, and click on <uicontrol>Show Users...</uicontrol
+> (or <uicontrol>Show Roles...</uicontrol>) to open a window that
+lists all users (or roles) which you can filter by search or selection
+and click <uicontrol>OK</uicontrol>. <fig>
+<title>Filtering shows persmissions for selected users/roles</title>
+<image href="..\graphic\FilterUsers_0000067415.png" placement="break"
+scale="70"></image>
+</fig></p></li>
+</ul></div><draft-comment>CN–24Oct2017: Due to functional changes
+in N4.4 the TagGroupMonitor component has been removed from the TagDictionaryService
+(per NCCB-29880). Consequently all related topics in the Tagging Guide
+are now deprecated, no longer being used — </draft-comment><p
+id="tag_TagGroupsInEditTags">Starting in <keyword
+conkeyref="wh_variables_n4/niagara4.1"
+conref="WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara4.1"
+></keyword>, when using the <wintitle>Edit Tags</wintitle> dialog
+any added TagGroups display differently than in the prior release.
+When adding a TagGroup to any component the added tag group displays
+on the <wintitle>Direct Tags</wintitle> tab as an Ord to the TagGroup
+itself. &nbsp;After saving the added tag assignments, when you reopen
+the <wintitle>Edit Tags</wintitle> dialog you will see the set of
+individual tags in that TagGroup display on the <wintitle>Implied
+Tags</wintitle> tab. The reason for this is that the Tag Group Monitor
+detects the presence of individual tags that are included in a tag
+dictionary’s TagGroupDefinition and it replaces those tags with an <filepath
+>n:tagGroup</filepath> relation from the component to the corresponding
+tag dictionary's <?Pub _nolinebreak?>TagGroup<?Pub /_nolinebreak?><?Pub
+_hyphen-point?>Info tags. </p><!--Platform Guide--><p
+id="BogPassphraseValidation">If a BOG file is protected with an unknown
+passphrase, you can use the <keyword
+conkeyref="wh_variables_n4/Workbench"
+conref="..\reuse\WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench"
+></keyword> toolbar icon to unlock (force-remove) the passphrase,
+making the file unprotected, or “force-change” the passphrase to enter
+a new value. When you choose either of these options, <i>any sensitive
+data in the file is cleared</i>.</p><p
+id="DistFileInstall_PassphraseValidation-791B1D0B">When you click <uicontrol
+>Install</uicontrol>, the system attempts to validate the file’s passphrase.<ul>
+<li><p>If the file passphrase and system passphrase are the same,
+the process continues without prompting for a passphrase.</p></li>
+<li><p>If the file passphrase and system passphrase are different,
+you are prompted to enter the file’s passphrase, as shown here. <fig>
+<title>Distribution File Installer prompts for file passphrase</title>
+<image
+href="..\graphic\platform_distfileinstaller_passphraseprompt_0000006960.png"
+placement="break" scale="65"></image>
+</fig><note>If prompted for the .dist file passphrase and you do not
+know it, you cannot install the file.</note></p></li>
+</ul></p><p id="ChangePlatDefaultsWizard-FipsOptions">If the <keyword
+conkeyref="wh_variables_n4/Workbench"
+conref="..\reuse\WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench"
+>Workbench</keyword> option to "Show FIPS Options" is set to “true”
+there is an added “Select FIPS 140-2 mode” step in the <wintitle>Change
+Platform Defaults Wizard</wintitle>, as shown. This indicates that
+in a subsequent step the wizard displays a checkbox labeled, “This
+platform will be licensed for FIPS 140-2”. Clicking this checkbox
+enforces FIPS password strength requirements. Note that if not checked,
+the platform does not consider a password FIPS-compliant, even if
+it technically meets the requirements. Also, if both of the <keyword
+conkeyref="wh_variables_n4/Workbench"
+conref="..\reuse\WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench"
+>Workbench</keyword> <wintitle>FIPS Options</wintitle> are set to
+“true”, then by default this checkbox is visible and selected. In
+that situation, the wizard enforces FIPS password strength requirements
+by default. <fig>
+<title>Change Platform Defaults Wizard step to select FIPS mode</title>
+<image
+href="..\graphic\ChangePlatformDefaultsWizard-FipsOption_0000043400.png"
+placement="break" scale="70"></image>
+</fig></p><draft-comment>For use in topics on StationCopier passphrase
+check processes — can insert the following para in topics or task
+step info tag</draft-comment><p id="StationCopier-PassphraseChk">If
+the file passphrase is not the same as the target host system passphrase
+then you are prompted to enter the file passphrase, as shown.<fig>
+<title>Station Transfer Wizard prompt for bog file passphrase</title>
+<image
+href="..\graphic\platform_stationcopier_passphraseprompt_0000007000.png"
+placement="break" scale="65"></image>
+</fig></p><draft-comment>Id= WbPlatformConnectionOptions is used in
+N4 platform guide, N4 installation guide and JACE 8000 startup guide.
+Note similar (if not identical) text in a slightly different format
+appears in the N4 getting started guide in the Platform Connections
+options topic under Customizing Workbench chapter under Types of options
+section.</draft-comment><p id="WbPlatformConnectionOptions">In <keyword
+conkeyref="wh_variables_n4/niagara4.4"
+conref="WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara4.4"
+>Niagara 4.4</keyword> and later, <keyword
+conkeyref="wh_variables_n4/Workbench"
+conref="WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench"
+>Workbench</keyword> requires that the user remove the default platform
+user account and change the default system passphrase prior to completing
+a platform connection. These requirements are configurable via the <wintitle
+>Platform Connections</wintitle> options under <menucascade><uicontrol
+>Tools</uicontrol><uicontrol>Options</uicontrol></menucascade>. <fig>
+<title>Platform connection options</title>
+<image href="..\graphic\WB_PlatformConnectionsOptions2_0000040568.png"
+placement="break" scale="75" scope="local"></image>
+</fig>These platform connection options are “true” by default, so
+that anytime <keyword conkeyref="wh_variables_n4/Workbench"
+conref="WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench"
+>Workbench</keyword> detects either of the following conditions when
+making a platform connection it launches the <wintitle>Change Platform
+Defaults Wizard</wintitle> which steps you through the required changes:<ul>
+<li><p>The system passphrase of the remote platform is the default
+value.</p></li>
+<li><p>The platform credentials of the remote platform are factory
+default values.</p></li>
+</ul>This view allows you to configure whether or not the system prompts
+the user to remove the default platform user account and/or to change
+the default system passphrase when making a platform connection. These
+options are offered as a convenience. For example, if another workflow
+already prompts for these changes, setting one or both of these options
+to <option>false</option> can prevent redundant prompts. </p></section>
+<section><title>Reused li elements</title><!--Used in Provisioning and in Station Security Guide--><ul>
+<li id="provisioning_StepsPrereqComponents"><p>The BatchJobService
+is available under the Services node and ProvisioningNwExt is available
+under your NiagaraNetwork in the Nav tree.</p></li>
+</ul></section>
+<section><title>Reused actions</title><ul
+id="PingSendsAMessageToANetworkObjectde-DFC8ADDB">
+<li><p id="actionPing-p"><uicontrol id="Ping-DFCA9E46">Ping</uicontrol
+> sends a message to a network object (device, database, etc). The
+message provokes a response, which indicates the current state of
+the object.</p></li>
+<li><p id="actionExecute-p"><uicontrol>Execute</uicontrol> runs the
+application.</p></li>
+<li><p id="ccnFetch-p"><uicontrol>Fetch</uicontrol> retrieves additional
+table-related information.</p></li>
+<li><p id="bacnetDisconnectAll"><uicontrol>Disconnect All</uicontrol
+> disconnects all connected hub-accepting connections on the <uicontrol
+>Hub Function</uicontrol> and direct-initiating and -accepting connections
+on the <uicontrol>Node Switch</uicontrol>.</p></li>
+<li><p id="bacnetDisconnectAll"><uicontrol>Disconnect All</uicontrol
+> disconnects all connected hub-accepting connections on the <uicontrol
+>Hub Function</uicontrol> and direct-initiating and -accepting connections
+on the <uicontrol>Node Switch</uicontrol>.</p></li>
+</ul><!--The following three paragraphs are used in the RDBMS Guide to document Actions.--><p
+id="rdbmsAllowDialectMods-p"><uicontrol>Allow Dialect Modifications</uicontrol
+> makes the <parmname>Timestamp Storage</parmname> property writable
+within the <wintitle>RdbmsNetwork Update Wizard</wintitle>. When the
+wizard converts a database to UTC (Coordinated Universal Time), it
+sets this property to read-only.</p><p id="rdbmsRetry-p"><uicontrol
+>Retry</uicontrol> downloads histories again.</p><p
+id="rdbmsMigrateToOpt-p"><uicontrol>Migrate To Optimized Table Indexes</uicontrol
+> (introduced in <keyword conkeyref="wh_variables_n4/niagara4.11"
+conref="..\reuse\WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara4.11"
+>Niagara 4.11</keyword>) can be used against existing RDBMS installations
+(prior to <keyword conkeyref="wh_variables_n4/niagara4.11"
+conref="..\reuse\WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara4.11"
+>Niagara 4.11</keyword>) to migrate the existing RDBMS tables and
+ensure that updated indexes are created in the RDBMS. Coordinate with
+your DBA before you execute this action. The updated indexes maximize
+query performance, but this action is not mandatory. Since this optional
+action affects the tables in the existing RDBMS, this migration does
+not happen automatically but requires you to manually invoke the action.
+Invoking this action kicks off a job in the <uicontrol>JobService</uicontrol
+> where you can monitor the migration progress and results.</p></section>
+</refbody>
+</reference>

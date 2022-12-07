@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2019, v.4002-->
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<?Pub Inc?>
+<map xml:lang="en">
+<title>NCS Key Definitions</title>
+<keydef format="ditamap"
+href="NCS map for topic key definitions_0000095932.dita" keys="ncstopics"
+navtitle="NCS map for topic key definitions" scope="local"></keydef>
+<keydef format="ditamap"
+href="NCS map for graphics key definitions_0000096037.dita"
+keys="ncsgraphics" navtitle="NCS map for graphics key definitions"
+scope="local"></keydef>
+<keydef format="dita" href="..\reuse\WH-guide-CloudLink_0000097090.dita"
+keys="reusecl" navtitle="WH-guide-CloudLink (shared)" scope="local"
+type="reference"></keydef>
+</map><?Pub Caret -2?>

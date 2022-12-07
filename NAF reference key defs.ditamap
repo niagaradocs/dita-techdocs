@@ -1,0 +1,1444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2019, v.4002-->
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<?Pub UDT instructions _comment FontColor="red"?>
+<?Pub UDT template _font?>
+<?Pub Inc?>
+<map xml:lang="en">
+<title>NAF reference key defs</title>
+<keydef format="dita" href="..\reuse\Reuse1.dita" keys="reuse1"
+navtitle="Reuse1" scope="local" type="reference"></keydef>
+<keydef format="dita" href="..\reuse\WH-guide-General_0000048987.dita"
+keys="gen" navtitle="General elements" scope="local" type="reference">
+</keydef>
+<keydef format="dita"
+href="..\reference\nafrefAbout this reference.dita"
+keys="nafref_aboutref" navtitle="About this reference" scope="local"
+type="reference">
+<keydef format="dita" href="..\concept\nafrefDocument change log.dita"
+keys="nafref_docchangelog" navtitle="Document change log" scope="local"
+type="concept"></keydef>
+<keydef format="dita" href="..\concept\nafrefRelated documentation.dita"
+keys="nafref_relateddoc" navtitle="Related documentation" scope="local"
+type="concept"></keydef>
+</keydef>
+<topichead navtitle="CHAPTER MAPS">
+<keydef format="ditamap"
+href="..\nafrefAnalytics Tag Dictionary.ditamap"
+keys="nafref_anatagdictmap" navtitle="Analytics Tag Dictionary"
+scope="local"></keydef>
+<keydef format="ditamap" href="..\nafrefAlgorithm library.ditamap"
+keys="nafref_algolibmap" navtitle="Algorithm library" scope="local">
+</keydef>
+<keydef format="ditamap"
+href="..\nafrefComponents, views and windows.ditamap"
+keys="nafref_compmap" navtitle="Components, views and windows"
+scope="local"></keydef>
+<keydef format="ditamap" href="..\nafrefLogic blocks.ditamap"
+keys="nafref_logicmap" navtitle="Logic blocks" scope="local"></keydef>
+<keydef format="ditamap" href="..\nafrefGraphics bindings.ditamap"
+keys="nafref_graphsbindingmap" navtitle="Graphics bindings"
+scope="local"></keydef>
+<keydef format="ditamap" href="..\nafrefCharts.ditamap"
+keys="nafref_chartsmap" navtitle="Charts" scope="local"></keydef>
+<keydef format="ditamap" href="..\nafrefORD schemes.ditamap"
+keys="nafref_ordschemesmap" navtitle="ORD schemes" scope="local">
+</keydef>
+<keydef format="ditamap" href="..\nafrefAnalytics Reports.ditamap"
+keys="nafref_reportsmap" navtitle="Analytics Reports" scope="local">
+</keydef>
+</topichead>
+<topichead navtitle="TOPICS">
+<keydef format="dita"
+href="..\reference\nafrefAnalytics tag dictionary.dita"
+keys="nafref_anatagdict" navtitle="Analytics tag dictionary"
+scope="local">
+<keydef format="dita" href="..\reference\nafrefTag Definitions.dita"
+keys="nafref_tagdefs" navtitle="Tag Definitions" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefTag Group Definitions.dita"
+keys="nafref_taggroupdef" navtitle="Tag Group Definitions" scope="local"
+type="reference"></keydef>
+</keydef>
+<keydef format="dita"
+href="..\reference\nafrefAlgorithm library reference.dita"
+keys="nafref_algolibref" navtitle="Algorithm library reference"
+scope="local" type="reference">
+<keydef format="dita"
+href="..\reference\nafrefLow Chilled Water Temp.dita"
+keys="nafref_lowchillwatertemp" navtitle="Low Chilled Water Temp"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefHigh Chilled Water Temp.dita"
+keys="nafref_highchillwatertemp" navtitle="High Chilled Water Temp"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefChilled Water Mixing.dita"
+keys="nafref_chillwatermix" navtitle="Chilled Water Mixing"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefSimultaneous Heat_Cool.dita"
+keys="nafref_simulheatcool" navtitle="Simultaneous Heat/Cool"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefHigh Supply Temperature.dita"
+keys="nafref_highsupplytemp" navtitle="High Supply Temperature"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefLow Supply Temperature.dita"
+keys="nafref_lowsupplytemp" navtitle="Low Supply Temperature"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefHigh Supply Static Pressure.dita"
+keys="nafref_highsupplystaticpre" navtitle="High Supply Static Pressure"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefLow Supply Static Pressure.dita"
+keys="nafref_lowsupplystaticpre" navtitle="Low Supply Static Pressure"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefElectricity Usage 5 percent Less Than Last Year.dita"
+keys="nafref_elecuseless"
+navtitle="Electricity Usage 5 percent Less Than Last Year" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefElectricity Usage 5 percent More Than Last Year.dita"
+keys="nafref_elecusemore"
+navtitle="Electricity Usage 5 percent More Than Last Year" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefWater Usage 5 percent Less Than Last Year.dita"
+keys="nafref_wateruseless"
+navtitle="Water Usage 5 percent Less Than Last Year" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefWater Usage 5 percent More Than Last Year.dita"
+keys="nafref_waterusemore"
+navtitle="Water Usage 5 percent More Than Last Year" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefHeating Valve Open 100 percent.dita"
+keys="nafref_heatvalvopen" navtitle="Heating Valve Open 100 percent"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefCooling Valve Open 100 percent.dita"
+keys="nafref_coolvalvopen" navtitle="Cooling Valve Open 100 percent"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefLow Outside Air Intake.dita"
+keys="nafref_lowoutairin" navtitle="Low Outside Air Intake"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefHigh Outside Air Intake.dita"
+keys="nafref_highoutairin" navtitle="High Outside Air Intake"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefUnscheduled Operation.dita"
+keys="nafref_unschop" navtitle="Unscheduled Operation" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefProlonged 100 percent VAV Damper.dita"
+keys="nafref_prolongedvavdamp"
+navtitle="Prolonged 100 percent VAV Damper" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefElectric EUI Exceeds Month Target.dita"
+keys="nafref_eleeuimonth" navtitle="Electric EUI Exceeds Month Target"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefElectric EUI Exceeds Yearly Target.dita"
+keys="nafref_eleeuiyearly" navtitle="Electric EUI Exceeds Yearly Target"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefChilled water usage minus 10 percent of last month.dita"
+keys="nafref_chillwaterminus10lastmo"
+navtitle="Chilled water usage minus 10 percent of last month"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefChilled water plus 10 percent of last month.dita"
+keys="nafref_chillwaterplus10lastmo"
+navtitle="Chilled water plus 10 percent of last month" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefChilled water usage minus 5 percent of last month.dita"
+keys="nafref_chillwaterminus5lastmo"
+navtitle="Chilled water usage minus 5 percent of last month"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefChilled water usage plus 5 percent of last month.dita"
+keys="nafref_chillwaterplus5lastmo"
+navtitle="Chilled water usage plus 5 percent of last month"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefNon-conformance space temperature.dita"
+keys="nafref_nonconformtemp"
+navtitle="Non-conformance space temperature" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefNon-conformance space humidity.dita"
+keys="nafref_nonconformhumidity"
+navtitle="Non-conformance space humidity" scope="local" type="reference">
+</keydef>
+<keydef format="dita"
+href="..\reference\nafrefSpace exhaust flow is high.dita"
+keys="nafref_spaceexhaust" navtitle="Space exhaust flow is high"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefSpace supply flow is high.dita"
+keys="nafref_spacesupply" navtitle="Space supply flow is high"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefLow hot water temperature.dita"
+keys="nafref_lowhotwatertemp" navtitle="Low hot water temperature"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefHigh hot water temperature.dita"
+keys="nafref_highhotwatertemp" navtitle="High hot water temperature"
+scope="local" type="reference"></keydef>
+<keydef format="dita" href="..\reference\nafrefHot water mixing.dita"
+keys="nafref_hotwatermixing" navtitle="Hot water mixing" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefPump not meeting setpoint.dita"
+keys="nafref_pumpnotmeeting" navtitle="Pump not meeting setpoint"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefPump exceeding setpoint.dita"
+keys="nafref_pumpexceeding" navtitle="Pump exceeding setpoint"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefSpace differential pressure high or low.dita"
+keys="nafref_spacediffer"
+navtitle="Space differential pressure high or low" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefEconomizer not running based on temperature.dita"
+keys="nafref_econnotontemp"
+navtitle="Economizer not running based on temperature" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefEconomizer not running - enthalpy based.dita"
+keys="nafref_econnotenthalpy"
+navtitle="Economizer not running — enthalpy based" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefDamper open during warmup.dita"
+keys="nafref_damperopen" navtitle="Damper open during warmup"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefUnscheduled operation efan.dita"
+keys="nafref_unschopefan" navtitle="Unscheduled operation efan"
+scope="local" type="reference"></keydef>
+</keydef>
+<keydef format="dita"
+href="..\reference\nafrefComponents, views and windows.dita"
+keys="nafref_comp" navtitle="Components, views and windows"
+scope="local" type="reference">
+<keydef format="dita"
+href="..\reference\nafrefAnalyticService (BAnalyticsService).dita"
+keys="nafref_anaservice" navtitle="AnalyticService (BAnalyticService)"
+scope="local" type="reference">
+<keydef format="dita"
+href="..\reference\nafrefAnalytics Subscription properties.dita"
+keys="nafref_anasubprop" navtitle="Analytics Subscription properties"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefAnalytic Service View.dita"
+keys="nafref_anaserviceview" navtitle="Analytic Service View"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefChart render capacity.dita"
+keys="nafref_chartrendercap"
+navtitle="Automatic conversion of metric values in tables" scope="local"
+type="reference"></keydef>
+</keydef>
+<keydef format="dita" href="..\reference\nafrefAlerts folder.dita"
+keys="nafref_alertsfolder" navtitle="Alerts folder" scope="local"
+type="reference">
+<keydef format="dita"
+href="..\reference\nafrefAlert (BAnalyticAlert).dita"
+keys="nafref_banalyticalert" navtitle="Alert (BAnalyticAlert)"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefAnalytic Alert Manager view.dita"
+keys="nafref_anaalertmgr" navtitle="Analytic Alert Manager view"
+scope="local" type="reference"></keydef>
+<keydef format="dita" href="..\reference\nafrefAlert Nodes View.dita"
+keys="nafref_alertnodesview" navtitle="Alert Nodes View" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefNew_edit alert windows.dita"
+keys="nafref_neweditalert" navtitle="New/edit alert windows"
+scope="local" type="reference"></keydef>
+</keydef>
+<keydef format="dita" href="..\reference\nafrefAlgorithms folder.dita"
+keys="nafref_algofolder" navtitle="Algorithms folder" scope="local"
+type="reference">
+<keydef format="dita"
+href="..\reference\nafrefAlgorithm (BAlgorithm).dita"
+keys="nafref_balgorithm" navtitle="Algorithm (BAlgorithm)" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefAlgorithm Manager view.dita"
+keys="nafref_algomgr" navtitle="Algorithm Manager view" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefNew_Edit algorithm windows.dita"
+keys="nafref_neweditalgo" navtitle="New/Edit algorithm windows"
+scope="local" type="reference"></keydef>
+</keydef>
+<keydef format="dita" href="..\reference\nafrefDefinitions Folder.dita"
+keys="nafref_deffolder" navtitle="Definitions Folder" scope="local"
+type="reference">
+<keydef format="dita"
+href="..\reference\nafrefDefinition (BAnalyticDataDefinition).dita"
+keys="nafref_banadatadef"
+navtitle="Definition (BAnalyticDataDefinition)" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefAnalytic Data Manager view.dita"
+keys="nafref_anadatamgr" navtitle="Analytic Data Manager view"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefNew_Edit Definition windows.dita"
+keys="nafref_neweditdef" navtitle="New/Edit Definition windows"
+scope="local" type="reference"></keydef>
+</keydef>
+<keydef format="dita" href="..\reference\nafrefPollers folder.dita"
+keys="nafref_pollersfolder" navtitle="Pollers folder" scope="local"
+type="reference">
+<keydef format="dita"
+href="..\reference\nafrefCyclic poller (BCyclicPoller).dita"
+keys="nafref_cyclicpoller" navtitle="Cyclic poller (BCyclicPoller)"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefTriggered poller (BTriggeredPoller).dita"
+keys="nafref_trigpoller" navtitle="Triggered poller (BTriggeredPoller)"
+scope="local" type="reference"></keydef>
+<keydef format="dita" href="..\reference\nafrefPoller Manager view.dita"
+keys="nafref_pollermgr" navtitle="Poller Manager view" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefNew_Edit poller window.dita"
+keys="nafref_neweditpoller" navtitle="New/Edit poller window"
+scope="local" type="reference"></keydef>
+</keydef>
+<keydef format="dita"
+href="..\reference\nafrefProxy extension (BAnalyticProxyExt).dita"
+keys="nafref_proxyext" navtitle="Proxy extension (BAnalyticProxyExt)"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefCombination (BCombination).dita"
+keys="nafref_bcombination" navtitle="Combination (BCombination)"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefInterval (BInterval).dita"
+keys="nafref_binterval" navtitle="Interval (BInterval)" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefbaselineValue window.dita"
+keys="nafref_baseline" navtitle="baselineValue window" scope="local"
+type="reference"></keydef>
+</keydef>
+<keydef format="dita" href="..\reference\nafrefLogic blocks.dita"
+keys="nafref_logic" navtitle="Logic blocks" scope="local"
+type="reference">
+<keydef format="dita"
+href="..\reference\nafrefData Source (BDataSourceBlock).dita"
+keys="nafref_bdatasourceblock" navtitle="Data Source (BDataSourceBlock)"
+scope="local" type="reference"></keydef>
+<keydef format="dita" href="..\reference\nafrefResult block.dita"
+keys="nafref_resultblock" navtitle="Result block" scope="local"
+type="reference"></keydef>
+<keydef format="dita" href="..\reference\nafrefConstant blocks.dita"
+keys="nafref_constantblocks" navtitle="Constant blocks" scope="local"
+type="reference">
+<keydef format="dita"
+href="..\reference\nafrefBoolean constant (BBooleanConstantBlock).dita"
+keys="nafref_bboolconblock"
+navtitle="Boolean constant (BBooleanConstantBlock)" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefEnum constant (BEnumConstantBlock.dita"
+keys="nafref_benumconblock"
+navtitle="Enum constant (BEnumConstantBlock)" scope="local"
+type="reference"></keydef>
+<keydef format="dita" href="..\reference\nafrefEnum facets window.dita"
+keys="nafref_enumfacets" navtitle="Enum facets window" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefNumeric constant (BNumericConstantBlock).dita"
+keys="nafref_bnumconblock"
+navtitle="Numeric constant (BNumericConstantBlock)" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefString constant (BStringConstantBlock).dita"
+keys="nafref_bstringconblock"
+navtitle="String constant (BStringConstantBlock)" scope="local"
+type="reference"></keydef>
+</keydef>
+<keydef format="dita" href="..\reference\nafrefFilter blocks.dita"
+keys="nafref_filterblocks" navtitle="Filter blocks" scope="local"
+type="reference">
+<keydef format="dita"
+href="..\reference\nafrefDeadband filter (BDeadbandFilter).dita"
+keys="nafref_bdeadband" navtitle="Deadband filter (BDeadbandFilter)"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefInvalid Value filter  (BInvalidValueFilter).dita"
+keys="nafref_binvalidvalue"
+navtitle="Invalid Value filter  (BInvalidValueFilter)" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefLogic filter (BLogicFilter).dita"
+keys="nafref_blogicfilter" navtitle="Logic filter (BLogicFilter)"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefRange filter (BRangeFilterBlock).dita"
+keys="nafref_brangefilter" navtitle="Range filter (BRangeFilterBlock)"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefTime Filter (BTimeFilterBlock).dita"
+keys="nafref_btimefilterblock" navtitle="Time Filter (BTimeFilterBlock)"
+scope="local" type="reference"></keydef>
+</keydef>
+<keydef format="dita" href="..\reference\nafrefGeneral blocks.dita"
+keys="nafref_generalblocks" navtitle="General blocks" scope="local"
+type="reference">
+<keydef format="dita" href="..\reference\nafrefDebug (BDebugBlock).dita"
+keys="nafref_bdebugblock" navtitle="Debug (BDebugBlock)" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefConsumption To Demand (BConsumptionToDemandBlock).dita"
+keys="nafref_bcontodemand"
+navtitle="Consumption To Demand (BConsumptionToDemandBlock)"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefDemand to Delta Consumption (BDemandToConsumptionBlock).dita"
+keys="nafref_bdemandtodelta"
+navtitle="Demand to Delta Consumption (BDemandToConsumptionBlock)"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefIntersection (BIntersectionBlock).dita"
+keys="nafref_binterblock" navtitle="Intersection (BIntersectionBlock)"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefInterval count  (BIntervalCountBlock).dita"
+keys="nafref_bintervalctblock"
+navtitle="Interval count  (BIntervalCountBlock)" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefLogic folder (LogicFolder).dita"
+keys="nafref_logicfolder" navtitle="Logic folder (LogicFolder)"
+scope="local" type="reference"></keydef>
+<keydef format="dita" href="..\reference\nafrefNot (BNotBlock).dita"
+keys="nafref_bnotblock" navtitle="Not  (BNotBlock)" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefPsychrometric (BPsychrometricBlock).dita"
+keys="nafref_bpsychblock" navtitle="Psychrometric (BPsychrometricBlock)"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefRequest overrides (BRequestOverridesBlock).dita"
+keys="nafref_breqoverblock"
+navtitle="Request overrides (BRequestOverridesBlock)" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefRollup (BRollupBlock).dita"
+keys="nafref_brollupblock" navtitle="Rollup (BRollupBlock)"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefRuntime (BRuntimeBlock).dita"
+keys="nafref_brunblock" navtitle="Runtime (BRuntimeBlock)" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefSlidingWindow (BSlidingWindowBlock).dita"
+keys="nafref_bslidwinblock"
+navtitle="SlidingWindow (BSlidingWindowBlock)" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefTime range offset  (BTimeRangeOffsetBlock).dita"
+keys="nafref_timerangeoffset"
+navtitle="Time range offset  (BTimeRangeOffsetBlock)" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefTimestamp offset (BTimestampOffsetBlock).dita"
+keys="nafref_btimestampoffset"
+navtitle="Timestamp offset (BTimestampOffsetBlock)" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefToday Builder (BDayBuilderBlock).dita"
+keys="nafref_bdaybuilderblock"
+navtitle="Today Builder (BDayBuilderBlock)" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefValue duration (BValueDurationBlock).dita"
+keys="nafref_bvaluedurationblock"
+navtitle="Value duration (BValueDurationBlock)" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefValue Map (BValueMapBlock).dita"
+keys="nafref_bvaluemapblock" navtitle="Value Map (BValueMapBlock)"
+scope="local" type="reference"></keydef>
+</keydef>
+<keydef format="dita" href="..\reference\nafrefMath blocks.dita"
+keys="nafref_mathblocks" navtitle="Math blocks" scope="local"
+type="reference">
+<keydef format="dita"
+href="..\reference\nafrefBiMath (BBiMathBlock).dita"
+keys="nafref_bbimathblock" navtitle="BiMath (BBiMathBlock)"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefUni math (BUniMathBlock).dita"
+keys="nafref_bunimathblock" navtitle="Uni math (BUniMathBlock)"
+scope="local" type="reference"></keydef>
+</keydef>
+<keydef format="dita" href="..\reference\nafrefSwitch blocks.dita"
+keys="nafref_switchblocks" navtitle="Switch blocks" scope="local"
+type="reference">
+<keydef format="dita"
+href="..\reference\nafrefBiSwitch (BBiSwitchBlock).dita"
+keys="nafref_bbiswitchblock" navtitle="BiSwitch (BBiSwitchBlock)"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefCovSwitch (BCoVSwitchBlock).dita"
+keys="nafref_bcovswitchblock" navtitle="CovSwitch (BCoVSwitchBlock)"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefDeadbandSwitch (BDeadbandSwitch).dita"
+keys="nafref_bdeadswitch" navtitle="DeadbandSwitch (BDeadbandSwitch)"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefInvalid Value Switch (BInvalidValueSwitchBlock).dita"
+keys="nafref_binvalidvalueswitch"
+navtitle="Invalid Value Switch (BInvalidValueSwitchBlock)" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefRange switch (BRangeSwitchBlock).dita"
+keys="nafref_brangeswitchblock"
+navtitle="Range switch (BRangeSwitchBlock)" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefTransitionSwitch (BTransitionSwitchBlock).dita"
+keys="nafref_btransswitchblock"
+navtitle="TransitionSwitch (BTransitionSwitchBlock)" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefUniSwitch (BUniSwitchBlock).dita"
+keys="nafref_buniswitchblock" navtitle="UniSwitch (BUniSwitchBlock)"
+scope="local" type="reference"></keydef>
+</keydef>
+</keydef>
+<keydef format="dita" href="..\concept\nafrefGraphics bindings.dita"
+keys="nafref_graphicsbinding" navtitle="Graphics bindings" scope="local"
+type="concept">
+<keydef format="dita"
+href="..\reference\nafrefAnalytic chart binding.dita"
+keys="nafref_anawebchartbinding" navtitle="Analytic web chart binding"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefAnalytic rollup binding.dita"
+keys="nafref_anarollupbinding" navtitle="Analytic rollup binding"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefAnalytic table binding.dita"
+keys="nafref_anatablebinding" navtitle="Analytic table binding"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefAnalytic value binding.dita"
+keys="nafref_anavaluebinding" navtitle="Analytic value binding"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefAnalytic web rollup binding.dita"
+keys="nafref_anawebrollupbind" navtitle="Analytic web rollup binding"
+scope="local" type="reference"></keydef>
+</keydef>
+<keydef format="dita" href="..\reference\nafrefCharts.dita"
+keys="nafref_charts" navtitle="Charts" scope="local" type="reference">
+<keydef format="dita" href="..\reference\nafrefAggregation chart.dita"
+keys="nafref_aggchart" navtitle="Aggregation chart" scope="local"
+type="reference"></keydef>
+<keydef format="dita" href="..\reference\nafrefAnalyticWebChart.dita"
+keys="nafref_anawebchart" navtitle="AnalyticWebChart" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefWeb chart Ux settings window.dita"
+keys="nafref_webchartuxsettings" navtitle="Web chart Ux settings window"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefAverage Profile chart.dita"
+keys="nafref_avgprofilechart" navtitle="Average Profile chart"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefEquipment Operation chart.dita"
+keys="nafref_equipopchart" navtitle="Equipment Operation chart"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefLoad duration Ux chart.dita"
+keys="nafref_loaddurationuxchart" navtitle="Load duration chart"
+scope="local" type="reference"></keydef>
+<keydef format="dita" href="..\reference\nafrefRanking chart.dita"
+keys="nafref_rankingchart" navtitle="Ranking chart" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefRelative contribution Ux chart.dita"
+keys="nafref_relcontribuxchart" navtitle="Relative contribution chart"
+scope="local" type="reference"></keydef>
+<keydef format="dita" href="..\reference\nafrefSpectrum Ux chart.dita"
+keys="nafref_spectrumuxchart" navtitle="Spectrum chart" scope="local"
+type="reference"></keydef>
+</keydef>
+<keydef format="dita" href="..\concept\nafrefOrd schemes.dita"
+keys="nafref_ordschemes" navtitle="Ord schemes" scope="local"
+type="concept">
+<keydef format="dita"
+href="..\reference\nafrefValue requests (analyticValue).dita"
+keys="nafref_valuerequests" navtitle="Value requests (analyticValue:)"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefRollup requests (analyticRollup).dita"
+keys="nafref_rolluprequests"
+navtitle="Rollup requests (analyticRollup:)" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefTrend requests (analyticTrend).dita"
+keys="nafref_trendrequests" navtitle="Trend requests (analyticTrend:)"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefAnalytic Multi Trend Requests (analyticMultiTrend).dita"
+keys="nafref_multitrendrequests"
+navtitle="Analytic multi-trend requests (analyticMultiTrend)"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefAnalytic multi-rollup requests.dita"
+keys="nafref_multi-rolluprequests"
+navtitle="Analytic multi-rollup requests (analyticMultiRollup)"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefAnalytic alerts requests (alerts).dita"
+keys="nafref_alertsrequests"
+navtitle="Analytic alerts requests (alerts:)" scope="local"
+type="reference"></keydef>
+</keydef>
+<keydef format="dita" href="..\concept\nafrefReports.dita"
+keys="nafref_reports" navtitle="Reports" scope="local" type="concept">
+<keydef format="dita" href="..\reference\nafrefAll Reports view.dita"
+keys="nafref_allreports" navtitle="All Reports view" scope="local"
+type="reference"></keydef>
+<keydef format="dita" href="..\reference\nafrefReport editor.dita"
+keys="nafref_reporteditor" navtitle="Report editor" scope="local"
+type="reference">
+<keydef format="dita" href="..\reference\nafrefTime Range window.dita"
+keys="nafref_timerangewindow" navtitle="Time Range window" scope="local"
+type="reference"></keydef><?Pub Caret -2?>
+<keydef format="dita"
+href="..\reference\nafrefBaseline configuration.dita"
+keys="nafref_baselineconfig" navtitle="Baseline configuration"
+scope="local" type="reference"></keydef>
+<keydef format="dita" href="..\reference\nafrefValue normalization.dita"
+keys="nafref_valuenormal" navtitle="Value normalization" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefAdvanced Settings window.dita"
+keys="nafref_advancedsettings" navtitle="Advanced window" scope="local"
+type="reference"></keydef>
+</keydef>
+<keydef format="dita"
+href="..\reference\nafrefAggregation Analysis report.dita"
+keys="nafref_agganalysisrpt" navtitle="Aggregation report" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefAverage Profile report.dita"
+keys="nafref_afgprofilereport" navtitle="Average Profile report"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefEquipment Operation report.dita"
+keys="nafref_equipopreport" navtitle="Equipment Operation report"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefLoad Duration report.dita"
+keys="nafref_loaddurationreport" navtitle="Load Duration report"
+scope="local" type="reference"></keydef>
+<keydef format="dita" href="..\reference\nafrefRanking Report.dita"
+keys="nafref_rankingreport" navtitle="Ranking report" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefRelative Contribution report.dita"
+keys="nafref_relcontribreport" navtitle="Relative Contribution report"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reference\nafrefSpectrum Summary report.dita"
+keys="nafref_spectrumsumreport" navtitle="Spectrum Summary report"
+scope="local" type="reference"></keydef>
+</keydef>
+</topichead>
+<topichead navtitle="GRAPHICS">
+<keydef format="png"
+href="..\graphic\alertsPropSheetFrag_0000059039.png" keys="59039"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmChilledWaterMixing_0000028173.png"
+keys="28173" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmChilledWaterMixingFlowchart_0000028174.png"
+keys="28174" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmChilledWaterUsageMinus10PcOfLastMonth_0000029719.png"
+keys="29719" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmChilledWaterUsageMinus10PcOfLastMonthFlowchart_0000029720.png"
+keys="29720" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmChilledWaterUsageMinus5PcOfLastMonth_0000029715.png"
+keys="29715" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmChilledWaterUsageMinus5PcOfLastMonthFlowchart_0000029716.png"
+keys="29716" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmChilledWaterUsagePlus10PcOfLastMonth_0000029717.png"
+keys="29717" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmChilledWaterUsagePlus10PcOfLastMonthFlowchart_0000029718.png"
+keys="29718" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmChilledWaterUsagePlus5PcOfLastMonth_0000029713.png"
+keys="29713" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmChilledWaterUsagePlus5PcOfLastMonthFlowchart_0000029714.png"
+keys="29714" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmCoolingValveOpen100Percent_0000028211.png"
+keys="28211" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmCoolingValveOpen100PercentFlowchart_0000028212.png"
+keys="28212" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmDamper_Open_During_Warmup_0000029969.png"
+keys="29969" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmDamper_Open_During_WarmupFlowchart_0000029970.png"
+keys="29970" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmEconomizerNotRunning-EnthalpyBased_0000029951.png"
+keys="29951" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmEconomizerNotRunning-EnthalpyBasedFlowchart_0000029952.png"
+keys="29952" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmEconomizerNotRunning-TempBased_0000029953.png"
+keys="29953" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmEconomizerNotRunning-TempBasedFlowchart_0000029954.png"
+keys="29954" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmElectricEUIExceedsMonthTarget_0000028221.png"
+keys="28221" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmElectricEUIExceedsMonthTargetFlowchart_0000028222.png"
+keys="28222" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmElectricEUIExceedsYearlyTarget_0000028249.png"
+keys="28249" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmElectricEUIExceedsYearlyTargetFlowchart_0000028250.png"
+keys="28250" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmHeatingValveOpen100Percent_0000028213.png"
+keys="28213" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmHeatingValveOpen100PercentFlowchart_0000028214.png"
+keys="28214" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmHiChilledWaterTempFlowchart_0000028176.png"
+keys="28176" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmHighChilledWaterTemp_0000028175.png"
+keys="28175" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmHighHotWaterTemp_0000029933.png" keys="29933"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmHighHotWaterTempFlowchart_0000029934.png"
+keys="29934" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmHighOutsideAirIntake_0000028227.png"
+keys="28227" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmHighOutsideAirIntakeFlowchart_0000028228.png"
+keys="28228" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmHighSupplyStaticPressure_0000028195.png"
+keys="28195" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmHighSupplyStaticPressureFlowchart_0000028196.png"
+keys="28196" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmHighSupplyTemperature_0000028199.png"
+keys="28199" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmHighSupplyTemperatureFlowchart_0000028200.png"
+keys="28200" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmHotWaterMixing_0000029931.png" keys="29931"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmHotWaterMixingFlowchart_0000029932.png"
+keys="29932" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmkWUsageGreaterThanLastYearByMoreThan5Percent_0000028219.png"
+keys="28219" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmkWUsageGreaterThanLastYearByMoreThan5PercentFlowchart_0000028220.png"
+keys="28220" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmkWUsageLessThanLastYearByMoreThan5Percent_0000028191.png"
+keys="28191" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmkWUsageLessThanLastYearByMoreThan5PercentFlowchart_0000028192.png"
+keys="28192" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmLoChilledWaterTempFlowchart_0000028178.png"
+keys="28178" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmLowChilledWaterTemp_0000028177.png"
+keys="28177" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmLowHotWaterTemp_0000029935.png" keys="29935"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmLowHotWaterTempFlowchart_0000029936.png"
+keys="29936" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmLowOutsideAirIntake_0000028229.png"
+keys="28229" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmLowOutsideAirIntakeFlowchart_0000028230.png"
+keys="28230" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmLowSupplyStaticPressure_0000028193.png"
+keys="28193" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmLowSupplyStaticPressureFlowchart_0000028194.png"
+keys="28194" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmLowSupplyTemperature_0000028197.png"
+keys="28197" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmLowSupplyTemperatureFlowchart_0000028198.png"
+keys="28198" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmNAFAnaValueORD_0000096882.png" keys="96882"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmNAFInterval_0000096881.png" keys="96881"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmNAFMakesTrends_0000096880.png" keys="96880"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmNAFruntime-hours_0000096909.png" keys="96909"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmNAFruntime-minutes_0000096908.png"
+keys="96908" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmNonConformanceSpaceHumidity_0000029731.png"
+keys="29731" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmNonConformanceSpaceHumidityFlowchart_0000029732.png"
+keys="29732" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmNonConformanceSpaceTemp_0000029733.png"
+keys="29733" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmNonConformanceSpaceTempFlowchart_0000029734.png"
+keys="29734" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmProlonged100PercentVAVDamper_0000028223.png"
+keys="28223" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmProlonged100PercentVAVDamperFlowchart_0000028224.png"
+keys="28224" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmPumpExceedingSetpoint_0000029957.png"
+keys="29957" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmPumpExceedingSetpointFlowchart_0000029958.png"
+keys="29958" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmPumpNotMeetingSetpoint_0000029959.png"
+keys="29959" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmPumpNotMeetingSetpointFlowchart_0000029960.png"
+keys="29960" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmSimultaneousHeatCool_0000028171.png"
+keys="28171" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmSimultaneousHeatCoolFlowchart_0000028172.png"
+keys="28172" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmSpaceDifferentialPressureHighLow_0000029955.png"
+keys="29955" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmSpaceDifferentialPressureHighLowFlowchart_0000029956.png"
+keys="29956" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmSpaceExhaustFlowIsHigh_0000029939.png"
+keys="29939" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmSpaceExhaustFlowIsHighFlowchart_0000029940.png"
+keys="29940" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmSpaceSupplyFlowIsHigh_0000029937.png"
+keys="29937" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmSpaceSupplyFlowIsHighFlowchart_0000029938.png"
+keys="29938" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmUnscheduled_Operation_EFan_0000029967.png"
+keys="29967" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmUnscheduled_Operation_EFanFlowchart_0000029968.png"
+keys="29968" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmUnscheduledOperation_0000028225.png"
+keys="28225" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmUnscheduledOperationFlowchart_0000028226.png"
+keys="28226" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmWaterUsageGreaterThanLastYearByMoreThan5Percent_0000028215.png"
+keys="28215" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmWaterUsageGreaterThanLastYearByMoreThan5PercentFlowchart_0000028216.png"
+keys="28216" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmWaterUsageLessThanLastYearByMoreThan5Percent_0000028217.png"
+keys="28217" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\algorithmWaterUsageLessThanLastYearByMoreThan5PercentFlowchart_0000028218.png"
+keys="28218" scope="local"></keydef>
+<keydef format="png" href="..\graphic\baselineDetails.png"
+keys="baselineDetails" scope="local"></keydef>
+<keydef format="png" href="..\graphic\baselineValue.png"
+keys="baselineValue" scope="local"></keydef>
+<keydef format="png" href="..\graphic\buttonFileFinder_0000027743.png"
+keys="27743" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\buttonNavigationTree_0000059165.png" keys="59165"
+scope="local"></keydef>
+<keydef format="png" href="..\graphic\buttonPxBinding_0000027741.png"
+keys="27741" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\buttonShowDetails2.4_0000059890.png" keys="59890"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\buttonToggleView-EditMode_0000027742.png" keys="27742"
+scope="local"></keydef>
+<keydef format="png" href="..\graphic\chartAggregation_0000034560.PNG"
+keys="34560" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\chartAnalyticWebCharts_0000049517.png" keys="49517"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\chartAverageProfileChartMultibinding2.1_0000059185.png"
+keys="59185" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\chartEquipmentoperation2.1_0000059184.png" keys="59184"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\chartInterpolatedData2.1_0000058988.png" keys="58988"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\chartLoadDuration2.1_0000059183.png" keys="59183"
+scope="local"></keydef>
+<keydef format="png" href="..\graphic\chartNAF_X-Axis_0000027559.png"
+keys="27559" scope="local"></keydef>
+<keydef format="png" href="..\graphic\chartNAF_Y-Axis_0000027558.png"
+keys="27558" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\chartNAFdefaultinterval6_0000096531.png" keys="96531"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\chartNAFdefaultinterval_0000096532.png" keys="96532"
+scope="local"></keydef>
+<keydef format="png" href="..\graphic\chartPen_0000027560.png"
+keys="27560" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\chartRankingChart2.1_0000059262.png" keys="59262"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\chartRelativeContribution2.1_0000059182.png"
+keys="59182" scope="local"></keydef>
+<keydef format="png" href="..\graphic\chartSpectrum2.1_0000059181.png"
+keys="59181" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\chartsRelContribution-2Charts_0000039232.png"
+keys="39232" scope="local"></keydef>
+<keydef format="png" href="..\graphic\chartXColumn_0000027820.png"
+keys="27820" scope="local"></keydef>
+<keydef format="png" href="..\graphic\chartYColumn_0000027819.png"
+keys="27819" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\componentAlgorithmPropertySheet_0000028243.png"
+keys="28243" scope="local"></keydef>
+<keydef format="png" href="..\graphic\componentBiMath_0000028338.png"
+keys="28338" scope="local"></keydef>
+<keydef format="png" href="..\graphic\componentBiSwitch_0000028336.png"
+keys="28336" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\componentBooleanConstant_0000028300.png" keys="28300"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\componentCombinationOptions_0000028262.png"
+keys="28262" scope="local"></keydef>
+<keydef format="png" href="..\graphic\componentCOVSwitch_0000028335.png"
+keys="28335" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\componentCyclicPollerPropertySheet_0000028267.png"
+keys="28267" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\componentDataSourceBlock_0000028261.png" keys="28261"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\componentDeadbandFilter_0000028295.png" keys="28295"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\componentEnumConstant_0000028299.png" keys="28299"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\componentEnumWindow_0000028298.png" keys="28298"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\componentIntersection_0000028291.png" keys="28291"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\componentIntervalCount_0000028320.png" keys="28320"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\componentInvalidValueSwitch_0000028334.png"
+keys="28334" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\componentLogicFilter_0000028294.png" keys="28294"
+scope="local"></keydef>
+<keydef format="png" href="..\graphic\componentNotBlock_0000028319.png"
+keys="28319" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\componentNumericConstant_0000028297.png" keys="28297"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\componentPsychometric_0000028318.png" keys="28318"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\componentRangeFilter_0000028293.png" keys="28293"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\componentRangeSwitch_0000028333.png" keys="28333"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\componentRequestOverridesBlock_0000028317.png"
+keys="28317" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\componentRollupPropertySheet_0000028316.png"
+keys="28316" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\componentRuntimeBlock2.1_0000068330.png" keys="68330"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\componentSlidingWindow_0000028314.png" keys="28314"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\componentStringConstant_0000028296.png" keys="28296"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\componentTimeRangeOffset_0000028313.png" keys="28313"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\componentTimestampOffset_0000028312.png" keys="28312"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\componentTodayBuilder_0000028311.png" keys="28311"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\componentTransitionSwitch_0000028332.png" keys="28332"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\componentTriggeredPollerPropertySheet_0000028266.png"
+keys="28266" scope="local"></keydef>
+<keydef format="png" href="..\graphic\componentUniMath_0000028337.png"
+keys="28337" scope="local"></keydef>
+<keydef format="png" href="..\graphic\componentUniSwitch_0000028331.png"
+keys="28331" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\componentValueDuration_0000028340.png" keys="28340"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\componentValueMapWindow_0000028339.png" keys="28339"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\exNAFchartsMissingData_0000096995.png" keys="96339"
+scope="local"></keydef>
+<keydef format="png" href="..\graphic\exNAFslots_0000096530.png"
+keys="96530" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\exNAFslotsreordered_0000096529.png" keys="96529"
+scope="local"></keydef>
+<keydef format="png" href="..\graphic\exNAFtagscalledout_0000096528.png"
+keys="96528" scope="local"></keydef>
+<keydef format="png" href="..\graphic\iconCommandClone_0000049484.png"
+keys="49484" scope="local"></keydef>
+<keydef format="png" href="..\graphic\iconCommandDelete_0000049482.png"
+keys="49482" scope="local"></keydef>
+<keydef format="png" href="..\graphic\iconCommandEdit_0000049483.png"
+keys="49483" scope="local"></keydef>
+<keydef format="png" href="..\graphic\iconConfig_0000028375.png"
+keys="28375" scope="local"></keydef>
+<keydef format="png" href="..\graphic\iconContract_0000040256.png"
+keys="40256" scope="local"></keydef>
+<keydef format="png" href="..\graphic\iconEdit_0000039235.png"
+keys="39235" scope="local"></keydef>
+<keydef format="png" href="..\graphic\iconExpand_0000040255.png"
+keys="40255" scope="local"></keydef>
+<keydef format="png" href="..\graphic\iconExport_0000028377.png"
+keys="28377" scope="local"></keydef>
+<keydef format="png" href="..\graphic\iconSettings.png"
+keys="iconSettings" scope="local"></keydef>
+<keydef format="png" href="..\graphic\iconTimeRange_0000028376.png"
+keys="28376" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\NAFalgorithmDemand_RangeFilter_0000027699.png"
+keys="27699" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\NAFalgorithmDemand_RangeFilterFlowchart_0000027700.png"
+keys="27700" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\NAFalgorithmDemand_ReplaceBadData_0000027698.png"
+keys="27698" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\NAFalgorithmDemand_ReplaceBadDataFlowchart_0000027697.png"
+keys="27697" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\NAFalgorithmExample_0000027747.png" keys="27747"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\nafalgorithmPsychometricExample_0000039240.png"
+keys="39420" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\NAFbindingAnalyticRollupbindingProperties_0000027779.png"
+keys="27779" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\NAFbindingAnalyticValue_0000028361.png" keys="28361"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\NAFbindingAnalyticWebChartBinding_0000027744.png"
+keys="27744" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\NAFchartSpectrumUXChart_0000027776.png" keys="27776"
+scope="local"></keydef>
+<keydef format="png" href="..\graphic\nafComparisonToBaseline.png"
+keys="nafComptoBaseline" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\nafcomponentPsychometricMode_0000039238.png"
+keys="39238" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\nafcomponentPsychometricUnits_0000039239.png"
+keys="39239" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\nafEditToRemoveWebChartBinding_0000039234.png"
+keys="39234" scope="local"></keydef>
+<keydef format="png" href="..\graphic\nafExceedsTargetSimulation.png"
+keys="nafExceedsTargetSim" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\nafExceedsTargetSimulationTriggered.png"
+keys="nafExceedsTargetSimTrig" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\NAFgraphicsAddBinding_0000027780.png" keys="27780"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\NAFgraphicsWebChartBinding_0000027778.png" keys="27778"
+scope="local"></keydef>
+<keydef format="png" href="..\graphic\NAFhierarchyTwo_0000027714.png"
+keys="27714" scope="local"></keydef>
+<keydef format="png" href="..\graphic\NAFOverview_0000027694.png"
+keys="27694" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\NAFpropertysheetAnalyticsSubscription_0000039640.png"
+keys="39640" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\NAFpropsheetComponentDataDef_0000027750.png"
+keys="27750" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\NAFpropsheetComponentSimpleTagInfo_0000028180.png"
+keys="28180" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\NAFpropsheetNiagaraNetwork_0000027696.png" keys="27696"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\NAFpropsheetNNetworkTagsToFetch_0000027695.png"
+keys="27695" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\nafPsychometricData_0000039236.png" keys="39236"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\nafPsychometricTableBinding_0000039237.png"
+keys="39237" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\NAFPxViewAggregationWindow_0000027775.png" keys="27775"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\NAFPxViewRankingChartWidgetTree_0000027745.png"
+keys="27745" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\NAFtagGroupDefinitions_0000028179.png" keys="28179"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\NAFtagGroupLevelDef_0000027713.png" keys="27713"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\NAFtagQueryLevelDef_0000027712.png" keys="27712"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\NAFtagRelationLevelDef_0000027711.png" keys="27711"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\nafviewAlarmConsole_0000039480.png" keys="39480"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\nafviewOpenAlarmSources_0000039479.png" keys="39479"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\NAFviewTagDictionaryManager_0000027715.png"
+keys="27715" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\NAFwindowAlgorithmNew_0000027748.png" keys="27748"
+scope="local"></keydef>
+<keydef format="png" href="..\graphic\NAFwindowEditAlert_0000027746.png"
+keys="27746" scope="local"></keydef>
+<keydef format="png" href="..\graphic\NAFwindowTagEdit_0000027749.png"
+keys="27749" scope="local"></keydef>
+<keydef format="png" href="..\graphic\navNAFTagFolders_0000096998.png"
+keys="96998" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\navTreeAuthenticationService_0000032200.png"
+keys="32200" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\NAFpropsheetComponentSimpleTagInfo_0000028180.png"
+keys="28180" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\NAFtagGroupDefinitions_0000028179.png" keys="28179"
+scope="local"></keydef>
+<keydef format="png" href="..\graphic\propNAFdatadefnohighlight.png"
+keys="propNAFdatadefnohighlight" scope="local"></keydef>
+<keydef format="png" href="..\graphic\properties_baseline.png"
+keys="propBaseline" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\propertiesAnalyticProxyExt2.1_0000059189.png"
+keys="59189" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\propertiesAnalyticRollupBinding2.1_0000059162.png"
+keys="59162" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\propertiesAnalyticService2.1_0000059043.png"
+keys="59043" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\propertiesAnalyticTableBinding2.1_0000059161.png"
+keys="59161" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\propertiesAnalyticWebChartBinding2.1_0000059041.png"
+keys="59041" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\propertiesChartRenderCapacity2.1_0000059047.png"
+keys="59047" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\propertiesDefinitions_0000067280.png" keys="67280"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\propertiesFedSystemID_0000095168.png" keys="95168"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\propertiesNormalization2.1_0000059163.png" keys="59163"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\propertiesOatTag2.1_0000059164.png" keys="59164"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\propertiesSpectrumChart2.1_0000059166.png" keys="59166"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\propertiesTimeFilter2.1_0000059048.png" keys="59048"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\propertiesWbViewBinding2.1_0000059167.png" keys="59167"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\propertyAutoTagAnalyticPoint_0000059170.png"
+keys="59170" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\propertyViewSize2.1_0000059168.png" keys="59168"
+scope="local"></keydef>
+<keydef format="jpg"
+href="..\graphic\reportAggregation2.1_0000059267.jpg" keyref="59267"
+keys="59267" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\reportAverageProfile2.1_0000059187.png" keys="59187"
+scope="local"></keydef>
+<keydef format="jpg"
+href="..\graphic\reportAverageProfileBaselineHighlighted2.1_0000059269.jpg"
+keyref="59269" keys="59269" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\reportAverageProfileNormalizationHighlighted2.1_0000059268.png"
+keys="59268" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\reportEquipmentOperation2.1_0000059261.png"
+keys="59261" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\reportInterpolatedData2.1_0000058987.png" keys="58987"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\reportLoadDuration2.1_0000059266.png" keys="59266"
+scope="local"></keydef>
+<keydef format="jpg" href="..\graphic\reportRanking2.1_0000059265.jpg"
+keyref="59265" keys="59265" scope="local"></keydef>
+<keydef format="jpg"
+href="..\graphic\reportRelativeContribution2.1_0000059264.jpg"
+keyref="59264" keys="59264" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\reportRelativeContribution_0000041736.png" keys="41736"
+scope="local"></keydef>
+<keydef format="png" href="..\graphic\reportSpectrum2.1_0000059263.png"
+keys="59263" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\tabWebBindingLabel2.1_0000059050.png" keys="59050"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\tableWebChartBinding_0000049513.png" keys="49513"
+scope="local"></keydef>
+<keydef format="png" href="..\graphic\viewAlertManager_0000028246.png"
+keys="28246" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\viewAlgorithmManager_0000028242.png" keys="28242"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\viewAnalyticDataManager_0000028269.png" keys="28269"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\viewAnalyticService_0000028248.png" keys="28248"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\viewAnalyticServiceSlotSheet_0000059046.png"
+keys="59046" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\viewBoundTableInterpolatedData2.1_0000058985.png"
+keys="58985" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\viewEditTagsEquipmentArea_0000049489.png" keys="49489"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\viewNodeSelectionEditor2.1_0000059044.png" keys="59044"
+scope="local"></keydef>
+<keydef format="png" href="..\graphic\viewPollerManager_0000028265.png"
+keys="28265" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\viewReportEditorAnnotated_0000041739.png" keys="41739"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\viewReportEditorChartArea_0000041735.png" keys="41735"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\viewReportEditorMinimalSettingsTimeRange_0000041770.png"
+keys="41770" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\viewReportEditorNodePane_0000041737.png" keys="41737"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\viewReportEditorTableArea_0000041734.png" keys="41734"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\viewReportTableConvertedValues2.1_0000059045.png"
+keys="59045" scope="local"></keydef>
+<keydef format="png" href="..\graphic\viewUxReports_0000049485.png"
+keys="49485" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\viewWebTableInterpolatedData2.1_0000058986.png"
+keys="58986" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\windowadvancedsettings-aggregationreport2.1_0000058990.png"
+keys="58990" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\windowAnalyticsCloneReport_0000049519.png" keys="49519"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\windowAnalyticsCreateFromPalette_0000049481.png"
+keys="49481" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\windowAnalyticsEdit_0000049520.png" keys="49520"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\windowAverageProfileReportAdvancedSettings2.1_0000059186.png"
+keys="59186" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\windowBaselineDetails_0000049486.png" keys="49486"
+scope="local"></keydef>
+<keydef format="png" href="..\graphic\windoweditalert2.1_0000059169.png"
+keys="59169" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\windowEditAlgorithm_0000028241.png" keys="28241"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\windowNAFalarmbinding_0000096555.png" keys="96555"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\windowNAFalarmroots_0000096554.png" keys="96554"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\windowNAFalertsnodefilter_0000096572.png" keys="96572"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\windowNAFalgorithmagg_0000096523.png" keys="96523"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\windowNAFDegreeDayMapping_0000049559.png" keys="49559"
+scope="local"></keydef>
+<keydef format="png" href="..\graphic\windowNAFEditTags_0000096999.png"
+keys="96999" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\windowNAFNewMissingDataStrategy_0000096997.png"
+keys="96997" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\windowNAFRawDataFilterExample_0000068400.png"
+keys="96400" scope="local"></keydef>
+<keydef format="png" href="..\graphic\windowNewAlert_0000028245.png"
+keys="28245" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\windowNewAnalyticsDefinition_0000068420.png"
+keys="68420" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\windowNewDataDefinition_0000067249.png" keys="67249"
+scope="local"></keydef>
+<keydef format="png" href="..\graphic\windowNewPoller_0000028264.png"
+keys="28264" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\windowReportColorPicker2.1_0000059270.png" keys="59270"
+scope="local"></keydef>
+<keydef format="png" href="..\graphic\windowSelectTag_0000041733.png"
+keys="41733" scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\windowTimeRangeCurrent2.1_0000059349.png" keys="59349"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\windowTimeRangeFrom2.1_0000059350.png" keys="59350"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\windowTimeRangeLive2.1_0000059347.png" keys="59347"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\windowTimeRangePrevious2.1_0000059348.png" keys="59348"
+scope="local"></keydef>
+<keydef format="png"
+href="..\graphic\windowWebChartUxSettings2.1_0000059188.png"
+keys="59188" scope="local"></keydef>
+</topichead>
+</map>

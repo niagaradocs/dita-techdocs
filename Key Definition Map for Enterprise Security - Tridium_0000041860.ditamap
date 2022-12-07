@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2019, v.4002-->
+<!DOCTYPE map PUBLIC "-//Arbortext//DTD DITA Keybase//EN"
+ "keybase.dtd">
+<map xml:lang="en">
+<title>Key Definition Map for Enterprise Security - Tridium</title>
+<topicmeta><data><draft-comment>Although we don&#x2019;t version WH
+reference topics, we made an exception for Entsec 2.4 because of the
+different graphics. If you have to produce the AX version of these
+documents, move the AX topicgroup above the N4 topic group. REVIEWERS:
+PLEASE IGNORE THIS INFORMATION WHEN REVIEWING THE COMMENTS IN THIS
+DOCUMENT.</draft-comment></data></topicmeta>
+<topicgroup>
+<topicmeta>
+<navtitle>N4, Entsec 2.4 Warehouse Topic</navtitle>
+</topicmeta>
+<keyconrefs href="..\reuse\WH-Entsec-2.4_0000048484.dita" keys="entsec"
+navtitle="WH-Entsec-2.4" type="reference"></keyconrefs>
+</topicgroup>
+</map><?Pub Caret -2?>

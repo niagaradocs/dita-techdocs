@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2019, v.4002-->
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<?Pub Inc?>
+<map xml:lang="en">
+<title>NCS Topics Keydef Map</title>
+<keydef format="png"
+href="cloudLinkOutputCannotDisplayPage_0000094969.png"
+keys="clOutputCannotDisplay" scope="local"></keydef>
+<keydef format="dita"
+href="..reference\About this guide (NCS Back-end)_0000095412.dita"
+keys="back-end_about" navtitle="About this guide (NCS Back-end)"
+scope="local" type="reference"></keydef>
+<keydef format="dita" href="..reference\About this guide (NCS Cust)_0000095787.dita"
+keys="customer_about" navtitle="About this guide (Customer NCS)"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..reference\About this guide (NCS Partner)_0000095612.dita"
+id="AboutThisGuideNiagaraCloudServices-8A58E266" keys="partner_about"
+navtitle="About this guide" scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..task\Adding cloud endpoints to the Workbench browser allowlist (NCS)_0000095644.dita"
+keys="ncs_browserallowlist"
+navtitle="Adding cloud endpoints to the Workbench browser allowlist (NCS)"
+scope="local" type="task"></keydef>
+<keydef format="dita"
+href="..task\Adding the Cloud Connection Service (CloudLink)_0000083146.dita"
+keys="cl_addService"
+navtitle="Adding the Cloud Connection Service (CloudLink)" scope="local"
+type="task"></keydef>
+<keydef format="dita" href="..reference\AMQP blocked-cloudLink_0000095015.dita"
+keys="cl_AMQPblocked" navtitle="AMQP blocked (NCS)" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..reference\Authenticators, transports and channels (NCS Partner)_0000095619.dita"
+keys="cl_authtranschan"
+navtitle="Authenticators, transports and channels" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..task\Bulk upload and activating the channel (NCS NDS)_0000095737.dita"
+keys="nds_activatechannel"
+navtitle="Bulk upload and activating the channel (NCS NDS)"
+scope="local" type="task"></keydef>
+<keydef format="dita" href="..task\Cannot connect to the cloud_0000094957.dita"
+keys="cl_nocloud" navtitle="Cannot connect to the cloud" scope="local"
+type="task"></keydef>
+<keydef format="dita"
+href="..reference\Cannot reach device registration web service-cloudLink_0000094979.dita"
+keys="cl_nointernet"
+navtitle="Cannot reach device registration web service" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..task\Checking DNS health (CloudLink)_0000095761.dita"
+keys="cl_dnshealth" navtitle="Checking DNS health" scope="local"
+type="task"></keydef>
+<keydef format="dita"
+href="..task\Checking external communication (CloudLink)_0000095760.dita"
+keys="cl_endpoint" navtitle="Checking endpoint availability"
+scope="local" type="task"></keydef>
+<keydef format="dita"
+href="..task\Checking external communication (CloudLink)_0000095760.dita"
+keys="cl_externalcomm" navtitle="Checking external communication"
+scope="local" type="task"></keydef>
+<keydef format="dita"
+href="..task\Checking network port health (CloudLink)_0000095762.dita"
+keys="cl_netporthealth" navtitle="Checking network port health"
+scope="local" type="task"></keydef>
+<keydef format="dita"
+href="..reference\Authenticator information (CloudLink)_0000083161.dita"
+keys="ncs_collectAuthInfo" navtitle="Authenticator information"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..reference\Cloud History, table of histories to export (CloudLink)_0000097080.dita"
+keys="nds_cloudhisttable"
+navtitle="Cloud History, table of histories to export" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..reference\CloudHistoryExportConfig (NAF)_0000097110.dita"
+keys="nds_cloudhistexport" navtitle="CloudHistoryExportConfig"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..task\Configuring histories to export data (NCS NDS)_0000095738.dita"
+keys="nds_confighistories"
+navtitle="Configuring histories to export data (NCS NDS)" scope="local"
+type="task"></keydef>
+<keydef format="dita"
+href="..concept\Connection issues (CloudLink)_0000084428.dita"
+keys="ncs_connectissues" navtitle="Connection issues" scope="local"
+type="concept"></keydef>
+<keydef format="dita"
+href="..reference\Connector does not attempt connection-cloudLink_0000095017.dita"
+keys="cl_noconnect" navtitle="Connector does not attempt connection"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..reference\Connector keys are lost-cloudLink_0000094978.dita"
+keys="cl_keyslost" navtitle="Connector keys are lost" scope="local"
+type="reference"></keydef>
+<keydef format="dita" href="..task\Creating a report (NCS NDS)_0000095736.dita"
+keys="nds_createrptcust" navtitle="Creating a report (NCS NDS)"
+scope="local" type="task"></keydef>
+<keydef format="dita"
+href="..task\Creating customer credentials and secret using Ping (SRE)_0000095471.dita"
+keys="back-end_serviceaccount"
+navtitle="Creating a service account (NCS Back-end)" scope="local"
+type="task"></keydef>
+<keydef format="dita"
+href="..concept\Customer organization configuration (NCS)_0000095618.dita"
+keys="ncs_custconfig"
+navtitle="Customer organization configuration (NCS)" scope="local"
+type="concept"></keydef>
+<keydef format="dita" href="..reference\Customer view (NCS)_0000095792.dita"
+keys="ncs_custview" navtitle="Customer view (NCS)" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..reference\Device registration view does not load (CloudLink)_0000083255.dita"
+keys="cl_deviceregfail"
+navtitle="Device registration view will not load" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..reference\Document Change Log (NCS Back-end)_0000095452.dita"
+keys="back-end_docchange" navtitle="Document Change Log (NCS Back-end)"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..reference\Document Change Log (NCS Cust)_0000095786.dita"
+id="DocumentChangeLogCustomerNiagaraClo-8A585997"
+keys="customer_docchange" navtitle="Document Change Log (Customer NCS)"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..reference\Document change log (NCS Partner)_0000095611.dita"
+id="DocumentChangeLogNiagaraCloudServic-8A592B5E"
+keys="partner_docchange" navtitle="Document change log (NCS Partner)"
+scope="local" type="reference"></keydef>
+<keydef format="dita" href="..glossentry\API (NCS)_0000095802.dita" keys="glossAPI"
+navtitle="glossary term: API (NCS NDS)" scope="local" type="glossentry">
+</keydef>
+<keydef format="dita" href="..glossentry\customer organization (NCS)_0000095801.dita"
+keys="glossCust" navtitle="glossary term: customer organization (NCS)"
+scope="local" type="glossentry"></keydef>
+<keydef format="dita" href="..glossentry\customer user (NCS)_0000095800.dita"
+keys="glossCustUser" navtitle="glossary term: customer user (NCS NDS)"
+scope="local" type="glossentry"></keydef>
+<keydef format="dita" href="..glossentry\DNS (NCS)_0000095799.dita" keys="glossDNS"
+navtitle="glossary term: DNS" scope="local" type="glossentry"></keydef>
+<keydef format="dita" href="..glossentry\export policy (NCS)_0000095798.dita"
+keys="glossExportPolicy" navtitle="glossary term: export policy"
+scope="local" type="glossentry"></keydef>
+<keydef format="dita" href="..glossentry\federated identity (NCS)_0000095797.dita"
+keys="glossFederatedIdentity"
+navtitle="glossary term: federated identity" scope="local"
+type="glossentry"></keydef>
+<keydef format="dita" href="..glossentry\GUID (NCS)_0000095796.dita" keys="glossGUID"
+navtitle="glossary term: GUID" scope="local" type="glossentry"></keydef>
+<keydef format="dita" href="..glossentry\IoT and IoT Hub (NCS)_0000095795.dita"
+keys="glossIoT" navtitle="glossary term: IoT and IoT Hub" scope="local"
+type="glossentry"></keydef>
+<keydef format="dita" href="..glossentry\management plane (NCS)_0000095794.dita"
+keys="glossMgmtPlane" navtitle="glossary term: management plane"
+scope="local" type="glossentry"></keydef>
+<keydef format="dita" href="..glossentry\NCP_0000094028.dita" keys="glossNCP"
+navtitle="glossary term: NCP" scope="local" type="glossentry"></keydef>
+<keydef format="dita" href="..glossentry\NCS_0000093998.dita" keys="glossPartner"
+navtitle="glossary term: partner" scope="local" type="glossentry">
+</keydef>
+<keydef format="dita" href="..glossentry\SI admin (NCS)_0000095812.dita"
+keys="glossSIAdmin" navtitle="glossary term: SI admin" scope="local"
+type="glossentry"></keydef>
+<keydef format="dita" href="..glossentry\SI user (NCS)_0000095811.dita"
+keys="glossSIUser" navtitle="glossary term: SI user" scope="local"
+type="glossentry"></keydef>
+<keydef format="dita" href="..glossentry\SRE (NCS Back-end)_0000095912.dita"
+keys="glossSRE" navtitle="glossary term: SRE" scope="local"
+type="glossentry"></keydef>
+<keydef format="dita" href="..glossentry\telemetry (NCS)_0000095810.dita"
+keys="glossTelemetry" navtitle="glossary term: telemetry" scope="local"
+type="glossentry"></keydef>
+<keydef format="dita"
+href="..task\Installing software (CloudLink)_0000083221.dita"
+keys="cl_installmodules"
+navtitle="Installing software modules (CloudLink)" scope="local"
+type="task"></keydef>
+<keydef format="dita" href="..reference\Integrator view (NCS)_0000095791.dita"
+id="IntegratorViewNiagaraCloudServices-8A58D786" keys="ncs_intview"
+navtitle="Integrator view (NCS)" scope="local" type="reference">
+</keydef>
+<keydef format="dita"
+href="..reference\Network Sanity Checks (CloudLink)_0000083158.dita"
+keys="cl_netsanity" navtitle="Network sanity checks" scope="local"
+type="reference"></keydef>
+<keydef format="dita" href="..reference\New Customer window (NCS)_0000096139.dita"
+keys="ncs_newcustwindow" navtitle="New Customer window" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..concept\Niagara Cloud Suite (NCS Cust)_0000095872.dita"
+keys="ncs_introcust" navtitle="Niagara Cloud Suite (NCS Cust)"
+scope="local" type="concept"></keydef>
+<keydef format="dita"
+href="..concept\Niagara Data Service (NCS NDS)_0000095617.dita" keys="nds_intro"
+navtitle="Niagara Data Service (NCS NDS)" scope="local" type="concept">
+</keydef>
+<keydef format="dita"
+href="..concept\Niagara Data Service (NCS NDS Cust)_0000095871.dita"
+keys="nds_introcust" navtitle="Niagara Data Service (NCS NDS Cust)"
+scope="local" type="concept"></keydef>
+<keydef format="dita" href="..concept\Overview (Back-end)_0000096202.dita"
+keys="back-end_overview" navtitle="Overview" scope="local"
+type="concept"></keydef>
+<keydef format="dita" href="..concept\Overview (NCS Partner)_0000095622.dita"
+keys="ncs_overpartner" navtitle="Overview (NCS Partner)" scope="local"
+type="concept"></keydef>
+<keydef format="dita" href="..concept\Partner prerequisites (NCS)_0000096189.dita"
+keys="back-end_prereqs" navtitle="Partner prerequisites" scope="local"
+type="concept"></keydef>
+<keydef format="dita"
+href="..concept\Preparation for API support (NCS Back-end)_0000095462.dita"
+keys="back-end_prepforAPIsupport" navtitle="Preparation for API support"
+scope="local" type="concept"></keydef>
+<keydef format="dita"
+href="..concept\Preparation to connect to the cloud (NCS Partner)_0000095620.dita"
+keys="ncs_cloudprep"
+navtitle="Preparation to connect to the cloud (NCS Partner)"
+scope="local" type="concept"></keydef>
+<keydef format="dita"
+href="..reference\Proxy server preventing connection-cloudLink_0000095016.dita"
+keys="cl_proxyservprevent" navtitle="Proxy server preventing connection"
+scope="local" type="reference"></keydef>
+<keydef format="dita" href="..concept\Reference (NCS Cust)_0000095784.dita"
+keys="ncs_refcust" navtitle="Reference (NCS Cust)" scope="local"
+type="concept"></keydef>
+<keydef format="dita" href="..concept\Reference (NCS)_0000095782.dita"
+keys="ncs_refpartner" navtitle="Reference (NCS)" scope="local"
+type="concept"></keydef>
+<keydef format="dita"
+href="..concept\Registration and certificates (NCS)_0000095729.dita"
+keys="ncs_regandcert" navtitle="Registration and certificates (NCS)"
+scope="local" type="concept"></keydef>
+<keydef format="dita"
+href="..task\Registering a device (CloudLink)_0000083175.dita"
+id="RegisteringDevices-8A58FBD5" keys="ncs_registerdevice"
+navtitle="Registering devices (CloudLink)" scope="local" type="task">
+</keydef>
+<keydef format="dita"
+href="..concept\Registration issues (CloudLink)_0000084429.dita"
+keys="cl_regdevices" navtitle="Registration issues" scope="local"
+type="concept"></keydef>
+<keydef format="dita"
+href="..reference\Related Documentation (NCS Back-end)_0000095451.dita"
+keys="back-end_related" navtitle="Related Documentation (NCS Back-end)"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..reference\Related Documentation (NCS Cust)_0000095785.dita"
+id="RelatedDocumentationCustomerNiagara-8A58B89E"
+keys="customer_relateddoc"
+navtitle="Related Documentation (Customer NCS)" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..reference\Related Documentation (NCS Partner)_0000095610.dita"
+id="RelatedDocumentationNiagaraCloudSer-8A5921EE"
+keys="partner_relateddoc" navtitle="Related Documentation (Partner NCS)"
+scope="local" type="reference"></keydef>
+<keydef format="dita" href="..reference\Report view (NCS NDS)_0000095789.dita"
+id="ReportViewNDS-896F4E24" keys="nds_reportview"
+navtitle="Report view (NCS NDS)" scope="local" type="reference">
+</keydef>
+<keydef format="dita" href="..reference\Requirements (CloudLink)_0000083197.dita"
+keys="ncs_requirements" navtitle="Requirements (NCS)" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..task\Running the model upload job (NCS NDS)_0000095739.dita"
+keys="nds_runmodel" navtitle="Running the model upload job (NCS NDS)"
+scope="local" type="task"></keydef>
+<keydef format="dita" href="..task\Setting up a customer (NCS)_0000095642.dita"
+keys="ncs_createcustomer" navtitle="Setting up a customer (NCS)"
+scope="local" type="task"></keydef>
+<keydef format="dita"
+href="..task\Setting up customer users (NCS)_0000095641.dita"
+keys="ncs_setupcustuser" navtitle="Setting up customer users"
+scope="local" type="task"></keydef>
+<keydef format="dita"
+href="..task\Setting up a partner (NCS Back-end)_0000095922.dita"
+keys="back-end_setuppartner" navtitle="Setting up a partner (NCS)"
+scope="local" type="task"></keydef>
+<keydef format="dita" href="..task\Setting up a project (NCS)_0000095639.dita"
+id="SettingUpAProjectNiagaraCloudServic-8A58EA5F"
+keys="ncs_setupproject" navtitle="Setting up a project (NCS)"
+scope="local" type="task"></keydef>
+<keydef format="dita"
+href="..task\Setting up device internet access (CloudLink)__0000083302.dita"
+keys="cl_Internet" navtitle="Setting up device internet access"
+scope="local" type="task"></keydef>
+<keydef format="dita"
+href="..task\Setting up the NCP service (Tridium Ops NCS Back-end)_0000095470.dita"
+keys="back-end_setupservice"
+navtitle="Setting up the NCP service (Tridium Ops)" scope="local"
+type="task"></keydef>
+<keydef format="dita"
+href="..task\Setting up the Tridium Ops Postman Collection (NCS Back-end)_0000095472.dita"
+keys="back-end_setuppostman"
+navtitle="Setting up the Tridium Ops Postman Collection (NCS Back-end)"
+scope="local" type="task"></keydef>
+<keydef format="dita"
+href="..task\Setting up customer users (NCS)_0000095641.dita"
+id="SettingUpAnSINiagaraCloudServices-8A591EFD" keys="ncs_setupusers"
+navtitle="Setting up customer users (NCS)" scope="local" type="task">
+</keydef>
+<keydef format="dita" href="..reference\Saved Reports view (NCS NDS)_0000095790.dita"
+keys="nds_savedreports" navtitle="Saved Reports view" scope="local"
+type="reference"></keydef>
+<keydef format="dita" href="..task\Signing in and out (NCS)_0000095643.dita"
+id="SigningInAndOutNiagaraCloudServices-8A58DB4D" keys="ncs_signinout"
+navtitle="Signing in and out (NCS)" scope="local" type="task"></keydef>
+<keydef format="dita"
+href="..task\Setting up device internet access (CloudLink)__0000083302.dita"
+keys="provisioning_clocksync"
+navtitle="Synchronizing clocks (provisioning)" scope="local" type="task">
+</keydef>
+<keydef format="dita"
+href="..reference\Troubleshooting (CloudLink)_0000083182.dita"
+keys="cl_troubleshooting" navtitle="Troubleshooting (CloudLink)"
+scope="local" type="reference"></keydef>
+<keydef format="dita" href="..concept\Users (NCS Partner)_0000095621.dita"
+id="TerminologyNiagaraCloudServices-8A591633" keys="back-end_users"
+navtitle="Users (NCS)" scope="local" type="concept"></keydef>
+<keydef format="dita"
+href="..reference\Users and Roles view (NCS NDS)_0000095788.dita"
+id="UsersAndRolesViewNiagaraCloudServic-8A590A19"
+keys="ncs_usersandroles" navtitle="Users and Roles view (NCS)"
+scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..task\Viewing user role and scope (NCS NDS)_0000095640.dita"
+keys="nds_viewrolescope"
+navtitle="Viewing user role and scope (NCS NDS)" scope="local"
+type="task"></keydef>
+<keydef format="dita" href="..task\Viewing reports (NCS NDS)_0000095735.dita"
+id="ViewingReportsNiagaraCloudServicesN-8A591116" keys="nds_viewreports"
+navtitle="Viewing reports (NCS NDS)" scope="local" type="task"></keydef>
+<keydef format="dita"
+href="..task\Viewing reports (NCS NDS Cust)_0000095882.dita"
+keys="nds_viewreportscust" navtitle="Viewing reports (NCS NDS Cust)"
+scope="local" type="task"></keydef>
+<keydef format="dita"
+href="..reference\What Files to Collect (CloudLink)_0000083206.dita"
+keys="cl_filestocollect" navtitle="What files to collect" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..reference\What Logs to Collect (CloudLink)_0000083135.dita"
+keys="cl_logstocollect" navtitle="What logs to collect" scope="local"
+type="reference"></keydef>
+<keydef format="dita"
+href="..reference\When an Incident Occurs (CloudLink)_0000083174.dita"
+keys="cl_incident" navtitle="When an incident occurs (CloudLink)"
+scope="local" type="reference"></keydef>
+</map><?Pub Caret -2?>

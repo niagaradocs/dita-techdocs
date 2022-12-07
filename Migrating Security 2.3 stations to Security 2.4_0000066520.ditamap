@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2019, v.4002-->
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<map collection-type="sequence"
+id="MigratingSecurity2.3StationsToSecur-332FD9AA" xml:lang="en">
+<title>Migrating <keyword conkeyref="..\reuse\wh_variables_n4/entsec"
+conref="..\reuse\WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/entsec"
+></keyword> legacy stations and connecting to legacy JACE-6 controllers </title>
+<topicgroup processing-role="resource-only">
+<topicmeta>
+<navtitle>Document TopicGroup</navtitle>
+</topicmeta>
+<keydef format="dita" href="..\reuse\WH-G-K-Descriptions_0000009916.dita"
+keys="desc-g" navtitle="WH-G-K-Descriptions" scope="local"
+type="reference"></keydef>
+<keydef format="dita" href="..\reuse\WH-L-Descriptions_0000009915.dita"
+keys="desc-l" navtitle="WH-L-Descriptions" scope="local"
+type="reference"></keydef>
+<keydef format="dita" href="..\reuse\WH-P-Descriptions_0000009912.dita"
+keys="desc-p" navtitle="WH-P-Descriptions" scope="local"
+type="reference"></keydef>
+<keydef format="dita" href="..\reuse\WH-S-Descriptions_0000009940.dita"
+keys="desc-s" navtitle="WH-S-Descriptions" scope="local"
+type="reference"></keydef>
+<keydef format="dita" href="..\reuse\WH-U-Z-Descriptions_N4_0000009938.dita"
+keys="desc-u" navtitle="WH-U-Z-Descriptions" scope="local"
+type="reference"></keydef>
+<keydef format="dita" href="..\reuse\WH_Graphics_JACE-8000_0000010089.dita"
+keys="gui_j8" navtitle="WH_Graphics_JACE-8000" scope="local"
+type="reference"></keydef>
+</topicgroup>
+<topicgroup processing-role="resource-only">
+<topicmeta>
+<navtitle>Tridium TopicGroup</navtitle>
+</topicmeta>
+<mapref format="ditamap"
+href="KeyDefMap_Variables-Tridium_N4_0000009928.dita"
+navtitle="Key Definition Map for Variables - Tridium" scope="local">
+</mapref>
+<mapref format="ditamap"
+href="KeyDefMap_DocTitles-Tridium_N4_0000009929.dita"
+navtitle="Key Definition Map for Document Titles - Tridium"
+scope="local"></mapref>
+<keydef format="dita" href="..\reuse\WH_LegalNotices_Tridium_N4_0000009932.dita"
+keys="legal_notices" scope="local" type="reference"></keydef>
+</topicgroup>
+<topicref format="dita"
+href="Migrating Enterprise Security stations_0000066489.dita"
+navtitle="Migrating Enterprise Security stations" scope="local"
+type="concept">
+<topicref format="dita"
+href="Upgrading devDriver-based video drivers_0000066476.dita"
+navtitle="Upgrading devDriver-based video drivers" scope="local"
+type="task"></topicref>
+<topicref format="dita"
+href="Mapping Supervisor cameras to Ax controllers before migration to _0000067000.dita"
+navtitle="Mapping Supervisor cameras to Ax controllers before migration to "
+scope="local" type="task"></topicref>
+<topicref format="dita"
+href="Preparing the BackupService_0000066475.dita"
+navtitle="Preparing the BackupService" scope="local" type="task">
+</topicref>
+<topicref format="dita"
+href="Backing up by creating a distribution file_0000066473.dita"
+navtitle="Backing up by creating a distribution file" scope="local"
+type="task"></topicref>
+<topicref format="dita" href="Migrating each station_0000066472.dita"
+navtitle="Migrating each station" scope="local" type="task"></topicref>
+<topicref format="dita" href="Copying the migrated files_0000066471.dita"
+navtitle="Copying the migrated files" scope="local" type="task">
+</topicref>
+<topicref format="dita"
+href="Setting up database passwords_0000066510.dita"
+navtitle="Setting up Supervisor's database password" scope="local"
+type="task"></topicref>
+<topicref format="dita"
+href="Creating and updating the HSQL database password - Entsec Install and Maint_0000078161.dita"
+navtitle="Creating and updating the HSQL database password"
+scope="local" type="task"></topicref>
+<topicref format="dita"
+href="Configuring driver passwords_0000066509.dita"
+navtitle="Configuring network device passwords" scope="local"
+type="task"></topicref>
+<topicref format="dita"
+href="Deleting the old certificates_0000066508.dita"
+navtitle="Deleting the old certificates" scope="local" type="task">
+</topicref>
+<topicref format="dita"
+href="Reconnecting the Supervisor and remote stations_0000066507.dita"
+navtitle="Reconnecting the Supervisor and remote stations" scope="local"
+type="task"></topicref>
+<topicref format="dita"
+href="Restoring the BackupService schedules_0000066506.dita"
+navtitle="Restoring the BackupService schedules" scope="local"
+type="task"></topicref>
+</topicref>
+</map><?Pub Caret -2?>
