@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2019, v.4002-->
+<!DOCTYPE map PUBLIC "-//Arbortext//DTD DITA Keybase//EN"
+ "keybase.dtd">
+<?Pub Inc?>
+<map xml:lang="en">
+<title>Key Definition Map for Variables &#x2014; Tridium</title>
+<keyconrefs format="dita"
+href="..\reuse\WH_SoftwareVariables_Tridium_N4_0000009934.dita"
+keys="wh_variables_n4" navtitle="WH: Software variables &#x2014; Tridium"
+scope="local" type="reference">
+<topicmeta>
+<keyinfo><keydescription>This keyconref associates the key, wh_variables_n4,
+with the warehouse topic, 9934, that contains Tridiun-specific content,
+such as Workbench.</keydescription><keyforconrefs/></keyinfo>
+</topicmeta>
+</keyconrefs>
+<keydef format="dita"
+href="..\reuse\WH_HardwareVariables_Tridium_N4_0000009933.dita"
+keyref="host_models" keys="host_models"
+navtitle="WH: Hardware variables &#x2014; Tridium" scope="local"
+type="reference">
+<topicmeta>
+<keyinfo><keydescription>This keyconref associates the key, host_models,
+with the warehouse topic 9933 that contains Tridium-specific content,
+such as JACE-8000</keydescription></keyinfo>
+</topicmeta>
+</keydef>
+<keyconrefs format="dita"
+href="..\reuse\WH_LegalNotices_Tridium_N4_0000009932.dita" keys="legal_notices"
+navtitle="Legal_Notices_Tridium" scope="local" type="reference">
+<topicmeta>
+<keyinfo><keydescription>This keyconref associates the key, legal_notices,
+with the warehouse topic, 9932, that contains Tridium-specific legal
+notices. These appear at the front of each document.</keydescription>
+</keyinfo>
+</topicmeta>
+</keyconrefs>
+<keyconrefs format="dita" href="..\reuse\WH_LegalNotices_Forge_0000078315.dita"
+keys="legal_notices_forge" navtitle="Legal_Notices_Forge" scope="local"
+type="reference">
+<topicmeta>
+<keyinfo><keydescription>This keyconref associates the key, legal_notices,
+with the warehouse topic, 9932, that contains Tridium-specific legal
+notices. These appear at the front of each document.</keydescription>
+</keyinfo>
+</topicmeta>
+</keyconrefs>
+<keydef format="dita"
+href="Provided software component use rights (FC)_0000087275.dita"
+keys="use_rights" navtitle="Provided software component use rights"
+scope="local" type="reference">
+<topicmeta>
+<keyinfo><keydescription></keydescription></keyinfo>
+</topicmeta>
+</keydef>
+</map><?Pub Caret -2?>
