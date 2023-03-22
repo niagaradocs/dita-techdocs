@@ -4,7 +4,6 @@
  "bookmap+ditabase.dtd">
 <?Pub Inc?>
 <concept id="aArchiving" xml:lang="en">
-<atict:info tracking="off" ref="0" print="" color=""/>
 <title>About exporting and importing histories</title>
 <shortdesc>Exporting and importing histories serves several purposes. Archiving is the process of
 saving one or more histories to a different location (station), other than where it originated for
