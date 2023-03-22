@@ -24,18 +24,18 @@ conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVaria
 ></keyword> (<userinput>https://www.niagara-cloud.com</userinput>)
 using your Niagara Community credentials.</cmd>
 <stepresult>The <wintitle>Customer</wintitle> view opens.<image
-href="../graphic\viewNCSCustomer_0000095626.png"
-keyref="viewNCSCustomer" placement="break" scale="65"></image></stepresult>
+href="../graphic/viewNCSCustomer_0000095626.png" keyref="viewNCSCustomer" placement="break"
+scale="65"/></stepresult>
 </step>
 <step><cmd>Select a a project and search for a device.</cmd>
 <stepresult>The device row displays in the <wintitle>CUSTOMER</wintitle
 > view.</stepresult>
 </step>
-<step><cmd>Click the Recover icon (<image
-href="C:\repos\nccb-dita\graphic\iconNCSCloudDownload.png" scope="local">
-</image>).</cmd>
-<stepresult>The <wintitle>SAVED BACKUPS</wintitle> view opens.<p>[screen
-capture as the customer user sees the list needed here]</p></stepresult>
+<step>
+<cmd>Click the Recover icon (<image href="C:/repos/nccb-dita/graphic/iconNCSCloudDownload.png"
+scope="local"/>).</cmd>
+<stepresult>The <wintitle>SAVED BACKUPS</wintitle> view opens.<p>[screen capture as the customer
+user sees the list needed here]</p></stepresult>
 </step>
 </steps>
 </taskbody>
