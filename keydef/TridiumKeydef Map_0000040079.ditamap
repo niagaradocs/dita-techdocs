@@ -5,42 +5,43 @@
 <map xml:lang="en">
 <title>Tridium Key Definitions</title>
 <keydef format="dita"
-href="..\reuse\WH_SoftwareVariables_Tridium_N4_0000009934.dita"
+href="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita"
 keys="wh_variables_n4"
 navtitle="WH: Software and Product variables — Tridium" scope="local"
-type="reference"></keydef><?Pub Caret -1?>
+type="reference"></keydef>
 <keydef format="dita"
-href="..\reuse\WH_HardwareVariables_Tridium_N4_0000009933.dita"
+href="../reuse/WH_HardwareVariables_Tridium_N4_0000009933.dita"
 keys="host_models" navtitle="WH: Hardware variables-Tridium"
 scope="local" type="reference"></keydef>
 <keydef format="dita"
-href="..\reuse\WH_CoreSWDocTitles_Tridium_N4_0000009937.dita"
+href="../reuse/WH_CoreSWDocTitles_Tridium_N4_0000009937.dita"
 keys="doctitles_coresw" navtitle="Core Software Document Titles_Tridium"
 scope="local" type="reference"></keydef>
 <keydef format="dita"
-href="..\reuse\WH_DriverSWDocTitles-Tridium_N4_0000009935.dita"
+href="../reuse/WH_DriverSWDocTitles-Tridium_N4_0000009935.dita"
 keys="doctitles_drivers" navtitle="WH: Driver Software Document Titles"
 scope="local" type="reference"></keydef>
 <keydef format="dita"
-href="..\reuse\WH_HardwareDocTitles_Tridium_N4_0000009936.dita"
+href="../reuse/WH_HardwareDocTitles_Tridium_N4_0000009936.dita"
 keys="doctitles_hardware"
 navtitle="WH: Hardware Document Titles — Tridium" scope="local"
 type="reference"></keydef>
 <keydef format="dita"
-href="..\reuse\WH_LegalNotices_Tridium_N4_0000009932.dita"
+href="../reuse/WH_LegalNotices_Tridium_N4_0000009932.dita"
 keys="legal_notices" navtitle="Legal_Notices_Tridium" scope="local"
 type="reference"></keydef>
+<keydef format="dita" href="../reference/LegalNotice_Marketplace.dita"
+keys="legal_notices_marketplace" navtitle="" scope="local"
+type="reference"></keydef><?Pub Caret -1?>
 <keydef format="dita"
-href="..\reference\Legal Notice Marketplace_0000097819.dita"
-keys="legal_notices_marketplace" navtitle="Legal_Notices_Marketplace"
-scope="local" type="reference"></keydef>
-<keydef format="dita"
-href="..\reuse\WH_LegalNotices_Forge_0000078315.dita"
+href="../reuse/WH_LegalNotices_Forge_0000078315.dita"
 keys="legal_notices_forge" navtitle="Legal_Notices_Forge" scope="local"
 type="reference"></keydef>
-<keydef format="dita" href="..\reuse\WH-guide-General_0000048987.dita"
+<keydef format="dita" href="../reuse/WH-Entsec.dita" keys="entsec"
+navtitle="WH-Entsec-2.4" scope="local" type="reference"></keydef>
+<keydef format="dita" href="../reuse/WH-guide-General_0000048987.dita"
 keys="gen" navtitle="General elements" scope="local" type="reference">
 </keydef>
-<keydef format="dita" href="..\reuse\Reuse1.dita" keys="reusekey"
+<keydef format="dita" href="../reuse/Reuse1.dita" keys="reusekey"
 navtitle="Reuse1" scope="local" type="reference"></keydef>
 </map>
