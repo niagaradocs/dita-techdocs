@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2019, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<task id="ViewingReportsNCSNDSCust-A8372A2B" xml:lang="en">
+<title>Viewing reports</title><?Pub Caret -2?>
+<shortdesc>Saved reports identify trends in the collected station
+data.</shortdesc>
+<prolog>
+<metadata><keywords><indexterm>reports<indexterm>viewing</indexterm
+><indexterm>saved reports<indexterm>viewing</indexterm></indexterm
+></indexterm></keywords></metadata>
+</prolog>
+<taskbody>
+<prereq>You are a customer user. You have credentials to sign in to
+the Niagara Community.</prereq>
+<steps>
+<step><cmd>Sign in to the <keyword
+conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/CloudMgmtPortal"
+></keyword> (<userinput>https://www.niagara-cloud.com</userinput>)
+using your Niagara Community credentials.</cmd>
+<stepresult>The <wintitle>Customer</wintitle> view opens.<image
+href="../graphic/viewNCSCustomer_0000095626.png"
+keyref="viewNCSCustomer" placement="break" scale="65"></image></stepresult>
+</step>
+<step><cmd>Click the menu button (<image
+href="../graphic\buttonNCSMenu.png" keyref="buttonNCSMenu" scale="65"
+scope="local"></image>) and click <uicontrol>Saved Reports</uicontrol
+>.</cmd>
+<stepresult>The <wintitle>Saved Reports</wintitle> view opens.<image
+href="C:\repos\nccb-dita\graphic\viewNDSSavedReportsCustomer.png"
+keyref="viewNDSSavedReportsCust" placement="break" scale="85"></image
+></stepresult>
+</step>
+<step><cmd>Select the <uicontrol>REPORT TITLE</uicontrol>.</cmd>
+<stepresult>The report opens.<image
+href="C:\repos\nccb-dita\graphic\viewNDSCustomerReport.png"
+keyref="viewNDSCCustomerReport" placement="break" scale="65"></image
+><p>Each report can include data from more than one device.</p></stepresult>
+</step>
+<step><cmd>To view the value for an individual point, move the cursor
+along the displayed line in the center of the chart.</cmd>
+<stepresult><p>Passing the cursor over a time instance causes the
+tooltip to display the point’s value at that time. When you select
+multiple points, the tooltip displays the values for all the points
+at the selected time.</p></stepresult>
+</step>
+<step><cmd>To export this on-demand chart, click the export button
+(<image href="C:\repos\nccb-dita\graphic\buttonNDS_MakePDF.png"
+scale="150"></image>) in the upper right of the view (upper right
+of the view).</cmd>
+<stepresult>The <wintitle>EXPORT AS</wintitle> window opens.<image
+href="C:\repos\nccb-dita\graphic\windowNDSExportAs.png"
+keyref="windowNDSExportAs" placement="break" scale="65"></image><p
+>Your choices are <uicontrol>Export Chart as PDF</uicontrol> and <uicontrol
+>Export Histories as CSV</uicontrol>.</p></stepresult>
+</step>
+<step><cmd>Select the type of export from the drop-down list and click <uicontrol
+>Continue</uicontrol>.</cmd>
+<stepresult>The system saves the PDF or CSV file in your computer’s <uicontrol
+>Downloads</uicontrol> folder.</stepresult>
+</step>
+</steps>
+</taskbody>
+</task>
