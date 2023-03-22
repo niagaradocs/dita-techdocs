@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2019, v.4002-->
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN"
+ "bookmap.dtd">
+<?Pub Inc?>
+<bookmap id="index" outputclass="hide" xml:lang="en">
+<booktitle>
+<mainbooktitle>NCS Customer Guide</mainbooktitle>
+</booktitle>
+<bookmeta><?Pub Dtl?>
+<critdates><revised golive="January 19, 2023"
+modified="January 19, 2023"/></critdates>
+</bookmeta>
+<frontmatter>
+<topicref format="ditamap"
+href="keydef\TridiumKeydef Map_0000040079.ditamap"
+navtitle="Tridium Key Definitions" scope="local"></topicref>
+<topicref format="ditamap"
+href="keydef/KeyDefMap_ncsPartnerCustomer_0000096037.ditamap"
+navtitle="NCS keydef map for topics and graphics" scope="local">
+</topicref>
+<notices keyref="legal_notices">
+<topicmeta>
+<navtitle>Legal Notices</navtitle>
+</topicmeta>
+</notices>
+<topicref format="dita" href="reference/~CheatSheet.dita"
+navtitle="Cheat sheet" processing-role="resource-only" scope="local"
+type="reference"></topicref>
+<booklists>
+<toc/></booklists>
+<preface format="dita" id="preface" navtitle="Preface" scope="local"
+type="reference">
+<topicref cascade="nomerge" format="dita"
+href="reference\ncsCustomerAboutThisGuide_0000095787.dita"
+keyref="customer_about" navtitle="About this guide (NCS Cust)"
+otherprops="homepage no_search" scope="local" type="reference">
+<topicref format="dita"
+href="reference\ncsCustomerDocumentChangeLog_0000095786.dita"
+keyref="customer_docchange" navtitle="Document Change Log (NCS Cust)"
+otherprops="no_search" scope="local" type="reference"></topicref>
+<topicref format="dita"
+href="reference\ncsCustomerRelatedDocumentation_0000095785.dita"
+keyref="customer_relateddoc" navtitle="Related Documentation (NCS Cust)"
+otherprops="no_search" scope="local" type="reference"></topicref>
+</topicref>
+</preface>
+</frontmatter>
+<chapter format="dita"
+href="concept\ncsCustomerNiagaraCloudSuite_0000095872.dita"
+keyref="ncs_introcust" navtitle="Niagara Cloud Suite (NCS Cust)"
+scope="local" type="concept">
+<topicref format="dita" href="concept\ncsPartnerUsers_0000095621.dita"
+keyref="ncs_users" navtitle="Users (NCS Partner)" scope="local"
+type="concept"></topicref>
+<topicref format="dita"
+href="concept\ncsCustomerNiagaraDataService_0000095871.dita"
+keyref="nds_introcust" navtitle="Niagara Data Service (NCS NDS Cust)"
+scope="local" type="concept"></topicref>
+<topicref format="dita"
+href="task/ncs_ndsViewingAndExportingReportsCust_0000095882.dita"
+keyref="nds_viewreportscust" navtitle="Viewing and exporting reports"
+scope="local" type="task"></topicref>
+<topicref format="dita" href="task/ncs_RecoverViewingBackups.dita"
+keyref="recover_viewbackups" navtitle="Viewing saved backups"
+scope="local" type="task"></topicref><?Pub Caret -1?>
+</chapter>
+<chapter format="dita"
+href="reference\ncsCustomerReference_0000095784.dita"
+keyref="ncs_refcust" navtitle="Reference" scope="local" type="reference">
+<topicref format="dita"
+href="reference\ncs_ndsSavedReportsView_0000095790.dita"
+keyref="nds_savedreports" navtitle="Saved Reports view (NCS NDS)"
+scope="local" type="reference"></topicref>
+<topicref format="dita"
+href="reference\ncs_ndsReportView_0000095789.dita"
+keyref="nds_reportview" navtitle="Report view (NCS NDS)" scope="local"
+type="reference"></topicref>
+</chapter>
+<backmatter>
+<booklists>
+<glossarylist>
+<topicref format="dita"
+href="glossentry\ncsCustomerOrganization_0000095801.dita"
+keyref="glossCust" navtitle="customer organization (NCS)" scope="local"
+type="glossentry"></topicref>
+<topicref format="dita"
+href="glossentry\ncsCustomerUser_0000095800.dita" keyref="glossCustUser"
+navtitle="customer user (NCS NDS)" scope="local" type="glossentry">
+</topicref>
+<topicref format="dita" href="glossentry\ncsSIadmin_0000095812.dita"
+keyref="glossSIAdmin" navtitle="SI admin (NCS)" scope="local"
+type="glossentry"></topicref>
+</glossarylist>
+<indexlist/></booklists>
+</backmatter>
+</bookmap>
