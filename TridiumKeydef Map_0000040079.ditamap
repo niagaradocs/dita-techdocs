@@ -2,13 +2,14 @@
 <!--Arbortext, Inc., 1988-2019, v.4002-->
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
  "map.dtd">
+<?Pub Inc?>
 <map xml:lang="en">
 <title>Tridium Key Definitions</title>
 <keydef format="dita"
 href="..\reuse\WH_SoftwareVariables_Tridium_N4_0000009934.dita"
 keys="wh_variables_n4"
 navtitle="WH: Software and Product variables — Tridium" scope="local"
-type="reference"></keydef><?Pub Caret -1?>
+type="reference"></keydef>
 <keydef format="dita"
 href="..\reuse\WH_HardwareVariables_Tridium_N4_0000009933.dita"
 keys="host_models" navtitle="WH: Hardware variables-Tridium"
@@ -31,13 +32,15 @@ href="..\reuse\WH_LegalNotices_Tridium_N4_0000009932.dita"
 keys="legal_notices" navtitle="Legal_Notices_Tridium" scope="local"
 type="reference"></keydef>
 <keydef format="dita"
-href="..\reference\Legal Notice Marketplace_0000097819.dita"
-keys="legal_notices_marketplace" navtitle="Legal_Notices_Marketplace"
-scope="local" type="reference"></keydef>
+href="C:\repos\nccb-dita\reference\LegalNotice_Marketplace.dita"
+keys="legal_notices_marketplace" navtitle="" scope="local"
+type="reference"></keydef><?Pub Caret -1?>
 <keydef format="dita"
 href="..\reuse\WH_LegalNotices_Forge_0000078315.dita"
 keys="legal_notices_forge" navtitle="Legal_Notices_Forge" scope="local"
 type="reference"></keydef>
+<keydef format="dita" href="..\reuse\WH-Entsec.dita" keys="entsec"
+navtitle="WH-Entsec-2.4" scope="local" type="reference"></keydef>
 <keydef format="dita" href="..\reuse\WH-guide-General_0000048987.dita"
 keys="gen" navtitle="General elements" scope="local" type="reference">
 </keydef>
