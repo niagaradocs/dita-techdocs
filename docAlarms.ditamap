@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Arbortext, Inc., 1988-2019, v.4002-->
 <!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN"
  "bookmap.dtd">
 <?Pub Inc?>
 <bookmap id="index" outputclass="hide" xml:lang="en">
-<booktitle>
-<mainbooktitle><ph conkeyref="doctitles_coresw/NiagaraN4AlarmsGuide"
-conref="c:/repos/nccb-dita/reuse/WH_CoreSWDocTitles_Tridium_N4_0000009937.dita#WHCoreSoftwareDocumentTitles-9A315B77/NiagaraN4AlarmsGuide"
-/></mainbooktitle>
-</booktitle>
 <bookmeta>
 <publisherinformation>
-<organization><keyword conkeyref="wh_variables_n4/corp_legalname"
-conref="reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/corp_legalname"
-></keyword></organization>
+<organization/>
 </publisherinformation>
 <critdates><revised golive="January 9, 2023" modified="January 9, 2023"/>
 </critdates>
