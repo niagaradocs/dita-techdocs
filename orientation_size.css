@@ -1,0 +1,633 @@
+/* Set the default layout for the whole document, including the:
+ * Cover page
+ * Table of contents
+ * Document body */
+ @page {
+    size: A4;
+    margin: 80px 55px;
+}
+@page:right {
+    @top-right {
+        padding-right: 15mm;
+        margin-right:-15mm; 
+    }
+    @top-left {
+        margin-left:-15mm;
+        padding-left: 15mm;
+    }
+    @bottom-left {
+        margin-left:-15mm;
+        padding-left: 15mm;
+    }
+    @bottom-right {
+        margin-right:-15mm;
+        padding-right: 15mm;
+    }
+}
+@page:left {
+    @top-right {
+        margin-right:-15mm;
+        padding-right: 15mm;
+    }
+    @top-left {
+        margin-left:-15mm; 
+        padding-left: 15mm;
+    }
+    @bottom-left {
+        margin-left: -15mm;
+        padding-left: 15mm;
+    }
+    @bottom-right {
+        margin-right:-15mm;
+        padding-right: 15mm;
+    }
+}
+
+/* Set large portrait margins for topics and maps with the @outputclass="portrait_large" attribute assigned to their root tags. */
+.portrait_large {
+    page: portrait_large;
+    prince-page-group: start;
+    page-break-before: always;
+}
+@page portrait_large {
+    margin: 95px 70px;
+}
+@page portrait_large:right {
+    @top-right {
+        padding-right: 20mm;
+        margin-right: -20mm;
+    }
+    @top-left {
+        padding-left: 20mm;
+        margin-left: -20mm;
+    }
+    @bottom-left {
+        padding-left: 20mm;
+        margin-left: -20mm;
+    }
+    @bottom-right {
+        padding-right: 20mm;
+        margin-right: -20mm;
+    }
+}
+@page portrait_large:left {
+        @top-right {
+            padding-right: 20mm;
+            margin-right: -20mm;
+        }
+        @top-left {
+            padding-left: 20mm;
+            margin-left: -20mm;    
+        }
+        @bottom-left {
+            padding-left: 20mm;
+            margin-left: -20mm;    
+        }
+        @bottom-right {
+            padding-right: 20mm;
+            margin-right: -20mm;
+        }
+}
+
+/* Set default/normal portrait margins for topics and maps with the @outputclass="portrait" or @outputclass="portrait_normal" attributes assigned to their root tags. */
+.portrait, .portrait_normal {
+    page: portrait;
+    prince-page-group: start;
+    page-break-before: always;
+}
+@page portrait:right {
+    @top-right {
+        padding-right: 15mm;
+        margin-right:-15mm; 
+    }
+    @top-left {
+        margin-left:-15mm;
+        padding-left: 15mm;
+    }
+    @bottom-left {
+        margin-left:-15mm;
+        padding-left: 15mm;
+    }
+    @bottom-right {
+        margin-right:-15mm;
+        padding-right: 15mm;
+    }
+}
+@page portrait:left {
+    @top-right {
+        margin-right:-15mm;
+        padding-right: 15mm;
+    }
+    @top-left {
+        margin-left:-15mm; 
+        padding-left: 15mm;
+    }
+    @bottom-left {
+        margin-left: -15mm;
+        padding-left: 15mm;
+    }
+    @bottom-right {
+        margin-right:-15mm;
+        padding-right: 15mm;
+    }
+}
+
+/* Set small portrait margins for topics and maps with the @outputclass="portrait_small" attribute assigned to their root tags. */
+.portrait_small {
+    page: portrait_small;
+    prince-page-group: start;
+    page-break-before: always;
+}
+@page portrait_small {
+    margin: 65px 40px;
+}
+@page portrait_small:right {
+    @top-right {
+        padding-right: 15mm;
+    }
+    @top-left {
+        padding-left: 15mm;
+    }
+    @bottom-left {
+        padding-left: 15mm;
+    }
+    @bottom-right {
+        padding-right: 15mm;
+    }
+}
+@page portrait_small:left {
+    @top-right {
+        padding-right: 15mm;
+    }
+    @top-left {
+        padding-left: 15mm;
+    }
+    @bottom-left {
+        padding-left: 15mm;
+    }
+    @bottom-right {
+        padding-right: 15mm;
+    }
+}
+
+/* Set large landscape margins for topics and maps with the @outputclass="landscape_large" attribute assigned to their root tags. */
+.landscape_large {
+    page: landscape_large;
+    prince-page-group: start;
+    page-break-before: always;
+}
+
+@page landscape_large {
+    size: A4 landscape;
+    margin: 95px 70px;
+}
+
+@page landscape_large:right {
+    @top-right {
+        padding-right: 20mm;
+        margin-right: -20mm;
+    }
+    @top-left {
+        padding-left: 20mm;
+        margin-left: -20mm;
+    }
+    @bottom-left {
+        padding-left: 20mm;
+        margin-left: -20mm;
+    }
+    @bottom-right {
+        padding-right: 20mm;
+        margin-right: -20mm;
+    }
+}
+@page landscape_large:left {
+    @top-right {
+        padding-right: 20mm;
+        margin-right: -20mm;        
+    }
+    @top-left {
+        padding-left: 20mm;
+        margin-left: -20mm;            
+    }
+    @bottom-left {
+        padding-left: 20mm;
+        margin-left: -20mm;    
+    }
+    @bottom-right {
+        padding-right: 20mm;
+        margin-right: -20mm;
+    }
+}
+
+/* Set default/normal landscape margins for topics and maps with the @outputclass="landscape" or @outputclass="landscape_normal" attributes assigned to their root tags. */
+.landscape, .landscape_normal {
+    page: landscape;
+    prince-page-group: start;
+    page-break-before: always;
+  }
+@page landscape {
+    size: landscape;
+    margin: 80px 55px;
+  }
+@page landscape:right {
+    @top-right {
+        padding-right: 15mm;
+    }
+    @top-left {
+        padding-left: 15mm;
+    }
+    @bottom-left {
+        padding-left: 15mm;
+    }
+    @bottom-right {
+        padding-right: 15mm;
+    }
+}
+@page landscape:left {
+    @top-right {
+        padding-right: 15mm;
+    }
+    @top-left {
+        padding-left: 15mm;
+    }
+    @bottom-left {
+        padding-left: 15mm;
+    }
+    @bottom-right {
+        padding-right: 15mm;
+    }
+}
+
+/* Set small landscape margins for topics and maps with the @outputclass="landscape_small" attribute assigned to their root tags. */
+.landscape_small {
+    page: landscape_small;
+    prince-page-group: start;
+    page-break-before: always;
+}
+@page landscape_small {
+    size: landscape;
+    margin: 65px 40px;
+}
+@page landscape_small:right {
+    @top-right {
+        padding-right: 15mm;
+    }
+    @top-left {
+        padding-left: 15mm;
+    }
+    @bottom-left {
+        padding-left: 15mm;
+    }
+    @bottom-right {
+        padding-right: 15mm;
+    }
+}
+@page landscape_small:left {
+    @top-right {
+        padding-right: 15mm;
+    }
+    @top-left {
+        padding-left: 15mm;
+    }
+    @bottom-left {
+        padding-left: 15mm;
+    }
+    @bottom-right {
+        padding-right: 15mm;
+    }
+}
+/* TOC **************************************************************************/
+nav > ul:first-of-type {
+    page: toc;
+    prince-page-group: start;
+}
+
+@page toc {
+    size: A4;
+    margin: 80px 55px;
+}
+
+@page toc:left {
+    @top-right {
+        margin-right:-15mm;
+        padding-right: 15mm;
+    }
+    @top-left {
+        margin-left:-15mm; 
+        padding-left: 15mm;
+    }
+    @bottom-left {
+        margin-left: -15mm;
+        padding-left: 15mm;
+    }
+    @bottom-right {
+        margin-right:-15mm;
+        padding-right: 15mm;
+    }
+}
+
+@page toc:right {
+    @top-right {
+        padding-right: 15mm;
+        margin-right:-15mm; 
+    }
+    @top-left {
+        margin-left:-15mm;
+        padding-left: 15mm;
+    }
+    @bottom-left {
+        margin-left:-15mm;
+        padding-left: 15mm;
+    }
+    @bottom-right {
+        margin-right:-15mm;
+        padding-right: 15mm;
+    }
+}
+
+/* Set large portrait TOC margins for maps with the @outputclass="portrait_large" attribute assigned to their root tags. */
+nav > ul.toc_portrait_large {
+    page: toc_portrait_large;
+    prince-page-group: start;
+}
+
+@page toc_portrait_large {
+    margin: 95px 70px;
+}
+@page toc_portrait_large:right {
+    @top-right {
+        padding-right: 20mm;
+        margin-right: -20mm;
+    }
+    @top-left {
+        padding-left: 20mm;
+        margin-left: -20mm;
+    }
+    @bottom-left {
+        padding-left: 20mm;
+        margin-left: -20mm;
+    }
+    @bottom-right {
+        padding-right: 20mm;
+        margin-right: -20mm;
+    }
+}
+@page toc_portrait_large:left {
+        @top-right {
+            padding-right: 20mm;
+            margin-right: -20mm;
+        }
+        @top-left {
+            padding-left: 20mm;
+            margin-left: -20mm;    
+        }
+        @bottom-left {
+            padding-left: 20mm;
+            margin-left: -20mm;    
+        }
+        @bottom-right {
+            padding-right: 20mm;
+            margin-right: -20mm;
+        }
+}
+
+/* Set default/normal portrait TOC margins for maps with the @outputclass="portrait" attribute assigned to their root tags. */
+nav > ul.toc_portrait {
+    page: toc_portrait;
+    prince-page-group: start;
+}
+@page toc_portrait:right {
+    @top-right {
+        padding-right: 15mm;
+        margin-right:-15mm; 
+    }
+    @top-left {
+        margin-left:-15mm;
+        padding-left: 15mm;
+    }
+    @bottom-left {
+        margin-left:-15mm;
+        padding-left: 15mm;
+    }
+    @bottom-right {
+        margin-right:-15mm;
+        padding-right: 15mm;
+    }
+}
+@page toc_portrait:left {
+    @top-right {
+        margin-right:-15mm;
+        padding-right: 15mm;
+    }
+    @top-left {
+        margin-left:-15mm; 
+        padding-left: 15mm;
+    }
+    @bottom-left {
+        margin-left: -15mm;
+        padding-left: 15mm;
+    }
+    @bottom-right {
+        margin-right:-15mm;
+        padding-right: 15mm;
+    }
+}
+
+/* Set small portrait TOC margins for maps with the @outputclass="portrait_small" attribute assigned to their root tags. */
+nav > ul.toc_portrait_small {
+    page: toc_portrait_small;
+    prince-page-group: start;
+}
+
+@page toc_portrait_small {
+    margin: 65px 40px;
+}
+@page toc_portrait_small:right {
+    @top-right {
+        padding-right: 15mm;
+    }
+    @top-left {
+        padding-left: 15mm;
+    }
+    @bottom-left {
+        padding-left: 15mm;
+    }
+    @bottom-right {
+        padding-right: 15mm;
+    }
+}
+@page toc_portrait_small:left {
+    @top-right {
+        padding-right: 15mm;
+    }
+    @top-left {
+        padding-left: 15mm;
+    }
+    @bottom-left {
+        padding-left: 15mm;
+    }
+    @bottom-right {
+        padding-right: 15mm;
+    }
+}
+
+/* Set large landscape TOC margins and maps with the @outputclass="landscape_large" attribute assigned to their root tags. */
+nav > ul.toc_landscape_large {
+    page: toc_landscape_large;
+    prince-page-group: start;
+}
+
+@page toc_landscape_large {
+    size: A4 landscape;
+    margin: 95px 70px;
+}
+
+@page toc_landscape_large:right {
+    @top-right {
+        padding-right: 20mm;
+        margin-right: -20mm;
+    }
+    @top-left {
+        padding-left: 20mm;
+        margin-left: -20mm;
+    }
+    @bottom-left {
+        padding-left: 20mm;
+        margin-left: -20mm;
+    }
+    @bottom-right {
+        padding-right: 20mm;
+        margin-right: -20mm;
+    }
+}
+@page toc_landscape_large:left {
+    @top-right {
+        padding-right: 20mm;
+        margin-right: -20mm;        
+    }
+    @top-left {
+        padding-left: 20mm;
+        margin-left: -20mm;            
+    }
+    @bottom-left {
+        padding-left: 20mm;
+        margin-left: -20mm;    
+    }
+    @bottom-right {
+        padding-right: 20mm;
+        margin-right: -20mm;
+    }
+}
+
+/* Set default/normal landscape TOC margins for topics and maps with the @outputclass="landscape" attributes assigned to their root tags. */
+nav > ul.toc_landscape {
+    page: toc_landscape;
+    prince-page-group: start;
+}
+
+@page toc_landscape {
+    size: landscape;
+    margin: 80px 55px;
+  }
+@page toc_landscape:right {
+    @top-right {
+        padding-right: 15mm;
+    }
+    @top-left {
+        padding-left: 15mm;
+    }
+    @bottom-left {
+        padding-left: 15mm;
+    }
+    @bottom-right {
+        padding-right: 15mm;
+    }
+}
+@page toc_landscape:left {
+    @top-right {
+        padding-right: 15mm;
+    }
+    @top-left {
+        padding-left: 15mm;
+    }
+    @bottom-left {
+        padding-left: 15mm;
+    }
+    @bottom-right {
+        padding-right: 15mm;
+    }
+}
+
+/* Set small landscape TOC margins for maps with the @outputclass="landscape_small" attribute assigned to their root tags. */
+nav > ul.toc_landscape_small {
+    page: toc_landscape_small;
+    prince-page-group: start;
+}
+
+@page toc_landscape_small {
+    size: landscape;
+    margin: 65px 40px;
+}
+@page toc_landscape_small:right {
+    @top-right {
+        padding-right: 15mm;
+    }
+    @top-left {
+        padding-left: 15mm;
+    }
+    @bottom-left {
+        padding-left: 15mm;
+    }
+    @bottom-right {
+        padding-right: 15mm;
+    }
+}
+@page toc_landscape_small:left {
+    @top-right {
+        padding-right: 15mm;
+    }
+    @top-left {
+        padding-left: 15mm;
+    }
+    @bottom-left {
+        padding-left: 15mm;
+    }
+    @bottom-right {
+        padding-right: 15mm;
+    }
+}
+
+/*** Fixes **************************************************************************/
+/* Prevent items from overflowing the page. */
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+/* Fix elements positioning. */
+body, 
+ul, 
+ol, 
+li, 
+h1, 
+h2, 
+div {
+    margin: 0px; 
+    padding: 0px; 
+    clear: both;
+}
+
+/* Fix lists position in the document body */
+.ul:not(ul.choices, ul.steps-unordered),
+.ol:not(ol.substeps, .steps) {
+  list-style-position: outside;
+  margin-left: 33px;
+}
+
+/* Fix issues with descriptions in step children elements */
+.figdesc,
+.tabledesc,
+.figdesc > p,
+.tabledesc > p {
+  float: left;
+}
