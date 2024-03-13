@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2019, v.4002-->
+<!DOCTYPE map PUBLIC "-//Arbortext//DTD DITA Keybase//EN"
+ "keybase.dtd">
+<?Pub Inc?>
+<map xml:lang="en">
+<title>Key Definition Map for WebChart Graphics</title>
+<keyconrefs format="dita" href="zWH_Icons_Zebra_0000000637.dita"
+keys="icons_zebra" navtitle="WH: Icons &#x2014; Zebra" scope="local"
+type="reference">
+<topicmeta>
+<keyinfo><keydescription>Zebra-theme icons that we are using</keydescription>
+<keyreftags value="image"/></keyinfo>
+</topicmeta>
+</keyconrefs>
+<keydef format="dita" href="zWH_Graphics_WebCharts_0000000573.dita"
+keys="gui_charting" navtitle="WH: Graphics &#x2014; WebCharts"
+scope="local" type="reference">
+<topicmeta>
+<keyinfo><keydescription>Zebra-theme icons that we are using</keydescription>
+<keyreftags value="image"/></keyinfo>
+</topicmeta>
+</keydef>
+</map><?Pub Caret -2?>

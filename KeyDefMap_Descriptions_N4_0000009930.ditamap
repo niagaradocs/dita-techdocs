@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2019, v.4002-->
+<!DOCTYPE map PUBLIC "-//Arbortext//DTD DITA Keybase//EN"
+ "keybase.dtd">
+<?Pub Inc?>
+<map xml:lang="en">
+<title>Key Definition Map for Descriptions</title>
+<keydef format="dita"
+href="..\reuse\WH-A-Descriptions_N4_0000059977.dita" keys="desc_a"
+navtitle="WH-A-Descriptions_N4" scope="local" type="reference"></keydef><?Pub
+Caret -2?>
+<keydef format="dita"
+href="..\reuse\WH-B-D-Descriptions_N4_0000059962.dita" keys="desc_b"
+navtitle="WH-B-D-Descriptions_N4" scope="local" type="reference">
+</keydef>
+<keydef format="dita"
+href="..\reuse\WH-E-F-Descriptions_N4_0000059989.dita" keys="desc_e"
+navtitle="WH-E-F-Descriptions_N4" scope="local" type="reference">
+</keydef>
+<keydef format="dita"
+href="..\reuse\WH-G-K-Descriptions_N4_0000059995.dita" keys="desc_g"
+navtitle="WH-G-K-Descriptions_N4" scope="local" type="reference">
+</keydef>
+<keydef format="dita"
+href="..\reuse\WH-L-Descriptions_N4_0000059958.dita" keys="desc_l"
+navtitle="WH-L-Descriptions_N4" scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reuse\WH-M-N-Descriptions_N4_0000009914.dita" keys="desc_m"
+navtitle="WH-M-N-Descriptions_N4" scope="local" type="reference">
+</keydef>
+<keydef format="dita"
+href="..\reuse\WH-O-Descriptions_N4_0000060039.dita" keys="desc_o"
+navtitle="WH-O-Descriptions_N4" scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reuse\WH-P-Descriptions_N4_0000059998.dita" keys="desc_p"
+navtitle="WH-P-Descriptions_N4" scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reuse\WH-Q-R-Descriptions_N4_0000059956.dita" keys="desc_q"
+navtitle="WH-Q-R-Descriptions_N4" scope="local" type="reference">
+</keydef>
+<keydef format="dita"
+href="..\reuse\WH-S-Descriptions_N4_0000060044.dita" keys="desc_s"
+navtitle="WH-S-Descriptions_N4" scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reuse\WH-T-Descriptions_N4_0000059982.dita" keys="desc_t"
+navtitle="WH-T-Descriptions_N4" scope="local" type="reference"></keydef>
+<keydef format="dita"
+href="..\reuse\WH-U-Z-Descriptions_N4_0000009938.dita" keys="desc_u"
+navtitle="WH-U-Z-Descriptions_N4" scope="local" type="reference">
+<topicmeta>
+<keyinfo><keydescription>Keydef for descriptions</keydescription>
+<keyreftags value="div row entry property"/><keyforconrefs/></keyinfo>
+</topicmeta>
+</keydef>
+</map>

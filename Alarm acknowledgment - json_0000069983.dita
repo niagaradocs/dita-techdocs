@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2019, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd" [
+<!ENTITY fmv2 "Distech Controls">
+<!ENTITY AX "NiagaraAX">
+<!ENTITY fmv1 "Distech Controls">
+<!ENTITY nbsp "&#38;#160;">
+]>
+<concept id="InboundComponents-Json-715A7D3D" xml:lang="en">
+<title>Inbound components</title>
+<shortdesc>Inbound components route JSON messages to control points
+and devices.</shortdesc>
+<prolog>
+<metadata><keywords><indexterm>alarm<indexterm>acknowledging</indexterm
+></indexterm></keywords></metadata>
+</prolog>
+<conbody>
+<p>To create a new inbound type, you extend one of the three main
+types: <codeph>BJsonRouter</codeph>, <codeph>BJsonSelector</codeph
+> or <codeph>BJsonHandler</codeph> and implement <codeph>routeValue(BString
+message, Context cx) throws RoutingFailedException</codeph>. You can
+create a new <codeph>RoutingFailedException</codeph> at any stage
+to report an error and update the lastResult slot.</p>
+<p>When extending any of the <codeph>BJsonInbound</codeph> types,
+you may specify which property triggers an automatic re-routing of
+the last input with <codeph>Property[] getRerunTriggers()</codeph
+>. The helper interface <codeph>JsonKeyExtractUtil</codeph> contains
+several methods for extracting values from a JSON payload.</p>
+</conbody>
+</concept><?Pub Caret -2?>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2019, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Inc?>
+<task id="ViewingSavedBackups-19AB87CC" xml:lang="en">
+<title>Viewing saved backups</title>
+<shortdesc>As a customer user of the <keyword
+conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/CloudMgmtPortal"
+/>, you may view the current list of five backup files. You need an SI Admin user to create, restore
+add notes and designate a backup as the preferred backup for your station.</shortdesc>
+<prolog>
+<metadata><keywords><indexterm>backup<indexterm>viewing</indexterm
+></indexterm></keywords></metadata>
+</prolog>
+<taskbody>
+<prereq>You are a customer user with access to the <keyword
+conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/CloudMgmtPortal"
+/>.</prereq>
+<steps>
+<step>
+<cmd>Sign in to the <keyword
+conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/CloudMgmtPortal"
+/> (<userinput>https://www.niagara-cloud.com</userinput>) using your Niagara Community
+credentials.</cmd>
+<stepresult>The <wintitle>Customer</wintitle> view opens.<image
+href="../graphic/viewNCSCustomer_0000095626.png" keyref="viewNCSCustomer" placement="break"
+scale="65"/></stepresult>
+</step>
+<step><cmd>Select a a project and search for a device.</cmd>
+<stepresult>The device row displays in the <wintitle>CUSTOMER</wintitle
+> view.</stepresult>
+</step>
+<step>
+<cmd>Click the Recover icon (<image href="../graphic/iconNCSCloudDownload.png"
+id="image_wpr_sdx_wwb"/>).</cmd>
+<stepresult>The <wintitle>SAVED BACKUPS</wintitle> view opens.<p>[screen capture as the customer
+user sees the list needed here]</p></stepresult>
+</step>
+</steps>
+</taskbody>
+</task>

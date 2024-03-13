@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2019, v.4002-->
+<!DOCTYPE map PUBLIC "-//Arbortext//DTD DITA Keybase//EN"
+ "keybase.dtd">
+<?Pub Inc?>
+<map xml:lang="en">
+<title>Key Definition Map for Variables &#x2014; DISTECH</title>
+<keyconrefs format="dita"
+href="reuse\WH_SoftwareVariables_DISTECH_N4_0000011877.dita"
+keys="wh_variables_n4" navtitle="WH: Software variables &#x2014; Distech"
+scope="local" type="reference">
+<topicmeta>
+<keyinfo><keydescription>These are for keyword variables that can
+be keyreffed in as keyconrefs using the &lt;keyword>. Each &lt;keyword>
+has an ID value for use with the keyref.</keydescription><keyforconrefs/>
+</keyinfo>
+</topicmeta>
+</keyconrefs>
+<keyconrefs format="dita"
+href="reuse\WH_Hardware variables-DISTECH_N4_0000011876.dita"
+keys="host_models" navtitle="WH: Hardware variables-Distech"
+scope="local" type="reference">
+<topicmeta>
+<keyinfo><keydescription>Hardware Models and Descriptions &#x2014;
+Distech</keydescription><keyreftags value="xref link topicref"/>
+</keyinfo>
+</topicmeta>
+</keyconrefs>
+<keyconrefs format="dita"
+href="reuse\WH_Graphics_OEM_Distech_N4_0000022270.dita" keys="graphics_oem"
+navtitle="WH_Graphics_OEM_Distech" scope="local" type="reference">
+<topicmeta>
+<keyinfo><keydescription>Distech Graphics</keydescription><keyreftags
+value="image"/><keyforconrefs/></keyinfo>
+</topicmeta>
+</keyconrefs>
+<keyconrefs format="dita"
+href="reuse\wh_legalnotices_distech_N4_0000011875.dita" keys="legal_notices"
+navtitle="Legal Notices Distech" scope="local" type="reference">
+<topicmeta>
+<keyinfo><keydescription>Legal information for cover back side.</keydescription>
+<keyreftags value="notices topicref"/></keyinfo>
+</topicmeta>
+</keyconrefs>
+</map><?Pub Caret -2?>

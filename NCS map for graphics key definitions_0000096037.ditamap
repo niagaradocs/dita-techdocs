@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2019, v.4002-->
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<?Pub Inc?>
+<map xml:lang="en">
+<title>NCS graphics map for key defs</title>
+<keydef format="png" href="addCloudConnectionService_0000083939.PNG"
+keys="addCCServ" scope="local"></keydef>
+<keydef format="png" href="buttonNCSMenu_0000094827.png"
+keys="buttonNCSMenu" scope="local"></keydef>
+<keydef format="png" href="buttonNCSUserActions_0000095632.png"
+keys="buttonNCSUserActions" scope="local"></keydef>
+<keydef format="png"
+href="cloudLinkOutputCannotDisplayPage_0000094969.png"
+keys="clOutputCannotDisplay" scope="local"></keydef>
+<keydef format="png"
+href="CloudLinkFederatedIdentityAuth_0000094929.png"
+keys="propertiesfedIDauth" scope="local"></keydef>
+<keydef format="png" href="Connection Issues_0000079764.png"
+keys="connectissues" scope="local"></keydef>
+<keydef format="png" href="cloudlink_ConnectorKeysLost_0000084415.PNG"
+keys="keyslost" scope="local"></keydef>
+<keydef format="png"
+href="cloudlink_RpkAuthenticatorKeysLost_0000084414.PNG"
+keys="rpkauthkeyslost" scope="local"></keydef>
+<keydef format="png" href="iconSave_0000094825.png" keys="iconSave"
+scope="local"></keydef>
+<keydef format="png" href="messageDeviceRegSuccess_0000094824.png"
+keys="messageDeviceRegSuccess" scope="local"></keydef>
+<keydef format="png" href="NCSTerminology_0000095635.png"
+keys="ncsterminology" scope="local"></keydef>
+<keydef format="png" href="outputAMQPBlocked_0000094823.png"
+keys="outAMQPBlocked" scope="local"></keydef>
+<keydef format="png" href="Endpoint Availability_0000079768.png"
+keys="outputEndpointAvail" scope="local"></keydef>
+<keydef format="png" href="DNS Health_0000079771.png" id="dns"
+keys="DNSHealth" scope="local"></keydef>
+<keydef format="png" href="DNS Health1  _0000079770.png"
+keys="DNSHealth1" scope="local"></keydef>
+<keydef format="png" href="External Communication_0000079769.png"
+keys="externalcomm" scope="local"></keydef>
+<keydef format="png" href="iconOpenPalette_0000097130.png"
+keys="iconOpenPalette" scope="local"></keydef>
+<keydef format="png" href="outputForAMQPBlocked_0000094822.png"
+keys="outForAMQPBlocked" scope="local"></keydef>
+<keydef format="png" href="cloudLink_NetworkPortHealth_0000084418.PNG"
+keys="NetPortHealth" scope="local"></keydef>
+<keydef format="png" href="outputRegSuccess_0000095772.png"
+keys="outRegSuccess" scope="local"></keydef>
+<keydef format="png" href="postmanAccessToken_0000097174.png"
+keys="postmanAccessToken" scope="local"></keydef>
+<keydef format="png" href="postmanApplications_0000095478.png"
+keys="postmanApps" scope="local"></keydef>
+<keydef format="png" href="postmanAuthenticationTab_0000095489.png"
+keys="postmanAuthenticationTab" scope="local"></keydef>
+<keydef format="png" href="postmanConfigurationsTab_0000095492.png"
+keys="postmanConfigTab" scope="local"></keydef>
+<keydef format="png"
+href="postmanCreateServiceAccountComplete_0000097172.png"
+keys="postmanCreateComplete" scope="local"></keydef>
+<keydef format="png" href="postmanCustTest_0000095476.png"
+keys="postmanCustTest" scope="local"></keydef>
+<keydef format="png" href="postmanCustTestURLs_0000095475.png"
+keys="postmanCustTestURLs" scope="local"></keydef>
+<keydef format="png" href="postmanEditPage_0000095474.png"
+keys="postmanEditPage" scope="local"></keydef>
+<keydef format="png" href="postmanExtractedZip_0000095481.png"
+keys="postmanExtractedZip" scope="local"></keydef>
+<keydef format="png" href="postmanFileImport_0000095480.png"
+keys="postmanFileImport" scope="local"></keydef>
+<keydef format="png" href="postmanHome_0000095491.png"
+keys="postmanHome" scope="local"></keydef>
+<keydef format="png" href="postmanImport_0000095482.png"
+keys="postmanImport" scope="local"></keydef>
+<keydef format="png" href="postmanNCSEnvironment_0000095490.png"
+keys="postmanNCSEnvironment" scope="local"></keydef>
+<keydef format="png" href="postmanRunOrder_0000096212.png"
+keys="postmanRun" scope="local"></keydef>
+<keydef format="png" href="postmanSelectEnvironment_0000096211.png"
+keys="postmanSelectEnviron" scope="local"></keydef>
+<keydef format="png" href="postmanNewApp_0000095477.png"
+keys="postmanNewApp" scope="local"></keydef>
+<keydef format="png" href="postmanPingIdentity_0000095479.png"
+keys="postmanPingId" scope="local"></keydef>
+<keydef format="png" href="postmanResourceScopes_0000095473.png"
+keys="postmanResourceScopes" scope="local"></keydef>
+<keydef format="png" href="postmanVariablesTab_0000097173.png"
+keys="postmanVariablesTab" scope="local"></keydef>
+<keydef format="png" href="propertiesAMQPTransport_0000095165.png"
+keys="propertiesAMQPTransport" scope="local"></keydef>
+<keydef format="png" href="propertiesChannelConfig_0000095713.png"
+keys="propertiesChannelConfig" scope="local"></keydef>
+<keydef format="png" href="propertiesFedSystemID_0000095168.png"
+keys="propertiesFedSystemId" scope="local"></keydef>
+<keydef format="png" href="propertiesPoint_0000095718.png"
+keys="propertiesPoint" scope="local"></keydef>
+<keydef format="png" href="propertiesPoint_0000095718.png"
+keys="propertiesPointCloudid" scope="local"></keydef>
+<keydef format="png" href="salesforceAccessToken_0000095486.png"
+keys="salesforceAccessToken" scope="local"></keydef>
+<keydef format="png" href="salesforceAllTests_0000095483.png"
+keys="salesforceAllTests" scope="local"></keydef>
+<keydef format="png" href="salesforceAuthComplete_0000095487.png"
+keys="salesforceAuthComplete" scope="local"></keydef>
+<keydef format="png" href="salesforceLoginWindow_0000095488.png"
+keys="salesforceLoginWindow" scope="local"></keydef>
+<keydef format="png" href="salesforceRunOrder_0000095484.png"
+keys="salesforceRunOrder" scope="local"></keydef>
+<keydef format="png" href="salesforceVariables_0000095485.png"
+keys="SalesforceVariables" scope="local"></keydef>
+<keydef format="png"
+href="code_systemDisabledBySentience3_0000085049.png" keys="sysdisabled"
+scope="local"></keydef>
+<keydef format="png" href="tabAuth_get-access-token_0000096210.png"
+keys="tabAuthGetToken" scope="local"></keydef>
+<keydef format="png" href="tableNDSHistoryExport_0000097069.png"
+keys="tableNDSHistoryExport" scope="local"></keydef>
+<keydef format="png" href="tabVar_si-admin-email_0000096209.png"
+keys="tabVarEmail" scope="local"></keydef>
+<keydef format="png" href="viewModelExportSuccess_0000095716.png"
+keys="viewModelExportSuccess" scope="local"></keydef>
+<keydef format="png" href="viewNCSCustomer_0000095626.png"
+keys="viewNCSCustomer" scope="local"></keydef>
+<keydef format="png" href="viewNCSIntegrator_0000095633.png"
+keys="viewNCSIntegrator" scope="local"></keydef>
+<keydef format="png" href="viewNCSUsersAndRoles_0000095630.png"
+keys="viewNCSUsersAndRoles" scope="local"></keydef>
+<keydef format="png" href="viewNDSChartedPoint_0000095711.png"
+keys="viewNDSChartedPoint" scope="local"></keydef>
+<keydef format="png" href="viewNDSChartedPoints_0000095710.png"
+keys="viewNDSChartedPoints" scope="local"></keydef>
+<keydef format="png" href="viewNDSConfigureDate_0000095712.png"
+keys="viewNDSConfigureDate" scope="local"></keydef>
+<keydef format="png" href="viewNDSReport_0000095771.png"
+keys="viewNDSReport" scope="local"></keydef>
+<keydef format="png" href="viewNDSSavedReports_0000095749.png"
+keys="viewNDSSavedReports" scope="local"></keydef>
+<keydef format="png" href="viewRegCerts_0000095719.png"
+keys="viewRegCerts" scope="local"></keydef>
+<keydef format="png" href="viewUserInformation_0000095627.png"
+keys="viewUserInformation" scope="local"></keydef>
+<keydef format="png" href="windowAuthDeviceReg_0000095167.png"
+keys="windowAuthDeviceReg" scope="local"></keydef>
+<keydef format="png" href="windowAuthenticationComplete_0000097175.png"
+keys="windowauthenticationcomplete" scope="local"></keydef>
+<keydef format="png" href="windowAuthSystemGuid_0000095166.png"
+keys="windowAuthSystemGUID" scope="local"></keydef>
+<keydef format="png" href="windowNCSAddUsers_0000095629.png"
+keys="windowNCSAddUsers" scope="local"></keydef>
+<keydef format="png" href="windowNewCustomer_0000095631.png"
+keys="windowNewCust" scope="local"></keydef>
+<keydef format="png" href="windowNewProject_0000095655.png"
+keys="windowNewProject" scope="local"></keydef>
+<keydef format="png" href="windowNiagaraService_0000062810.png"
+keys="windowNiagaraSignIn" scope="local"></keydef>
+<keydef format="png" href="windowRegisterNewDevice_0000095169.png"
+keys="windowRegisterNewDevice" scope="local"></keydef>
+</map><?Pub Caret -2?>
