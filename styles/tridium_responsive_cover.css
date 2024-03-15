@@ -1,0 +1,82 @@
+/* Differentiate the cover page from the TOC and the document body. */
+.cover-page-container {
+    prince-page-group: start;
+    page: cover_page;
+    counter-reset: page 0;
+  }
+  
+  /* Style the cover page.
+  Assert that the cover page size and orientation is never changed. */
+  @page cover_page {
+    size: A4; /* Changing this property requires you to adjust padding for children elements. Please, see the comments below. */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Make the cover-page-container (h1) fills up the whole cover page. */
+  .cover-page-container {
+    background-color: #09afd6;
+    width: 100%;
+    height: 100%;
+    page-break-after: always;
+  }
+  
+  /* Apply the typography settings to the cover page. */
+  .cover-page-container * {
+    font-family: "Roboto", Helvetica, Arial;
+  }
+  
+  /* Define the space where the title can be placed. */
+  .cover-page-content {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    padding: 0mm 15mm 0mm 15mm;
+    margin-bottom: 25%; /* Should match the margin-top property in the .title-text selector. */
+  }
+  
+  /* Style the cover page title. */
+  .title-text {
+    color: #fff;
+    font-style: normal;
+    font-weight: bold;
+    text-align: left;
+    font-size: 80px;
+    line-height: 90px;
+    height: 10000px; /* Increase, if needed */
+    margin-top: 25%;
+    word-wrap: normal; /* Should you need to wrap long words, set to break-word */
+    letter-spacing: 0.025em;
+  }
+  
+  /* Style the bottom area of the cover. */
+  .bottom-stripe {
+    position: absolute;
+    bottom: 0px;
+    display: block;
+    clear: both;
+    background-color: #fff;
+    height: 200px;
+    width: 100%;
+    margin: 0mm 0mm 0mm -15mm;
+    padding: 0mm 15mm 0mm 15mm;
+  }
+  
+  /* Define the space where a logo can be placed. */
+  .logo-container {
+    display: block;
+    clear: both;
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    bottom: 25px;
+    right: 15mm;
+    height: 150px;
+    width: 350px;
+  }
+  
+  /* Define where the actual logo is placed in the <div class="logo-container"> */
+  .logo {
+    display: block;
+    float: right;
+  }
