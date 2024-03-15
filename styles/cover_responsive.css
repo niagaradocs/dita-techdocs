@@ -2,16 +2,15 @@
 .cover-page-container {
     prince-page-group: start;
     page: cover_page;
-    counter-reset: page 0;
+    counter-reset: page 1;
   }
-  
   /* Style the cover page.
   Assert that the cover page size and orientation is never changed. */
-  @page cover_page {
-    size: A4; /* Changing this property requires you to adjust padding for children elements. Please, see the comments below. */
-    margin: 0;
-    padding: 0;
-  }
+  @page :cover_page {
+    margin: 1in 0.75in;
+    size: US-Letter portrait !important;
+    background-color: fff;
+}
   
   /* Make the cover-page-container (h1) fills up the whole cover page. */
   .cover-page-container {
@@ -31,52 +30,102 @@
     display: inline-block;
     height: 100%;
     width: 100%;
-    padding: 0mm 15mm 0mm 15mm;
+    padding: 0in 0.75in;
     margin-bottom: 25%; /* Should match the margin-top property in the .title-text selector. */
   }
-  
-  /* Style the cover page title. */
-  .title-text {
-    color: #fff;
+
+div.cover-page-heading {
+    color: rgb(38,128,216);
+    font-family: "Avenir", Arial, Helvetica, sans-serif;
     font-style: normal;
-    font-weight: bold;
-    text-align: left;
-    font-size: 80px;
-    line-height: 90px;
-    height: 10000px; /* Increase, if needed */
-    margin-top: 25%;
+    font-weight: 400;
+    text-align: right;
+    font-size: 30pt;
+    line-height: 40px;
     word-wrap: normal; /* Should you need to wrap long words, set to break-word */
-    letter-spacing: 0.025em;
   }
   
+    /* Style the cover page title. */
+.title-text .title, .title-text .title .ph {
+    color: #000;
+    font-family: "Avenir", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    text-align: right;
+    font-size: 30pt;
+    line-height: 20pt;
+    letter-spacing: 0pt;
+    margin-top: 1.75in;
+	height: auto;
+    word-wrap: break-word; /* Should you need to wrap long words, set to break-word */
+    
+  }
+  
+
+/* Style bookmeta metadata on the cover page DATE BLOCK*/
+/* Style the map title on the cover page */
+  div.title-text {
+    color: red;
+    font-style: normal;
+    font-weight: 800;
+    text-align: right;
+    font-size: 80px;
+    word-wrap: normal;
+
+}
+
+/* Style bookmeta metadata on the cover page DATE BLOCK*/
+div.meta-value {
+    font-family: "Avenir", Helvetica, Arial;
+    color:#000;
+    width: 100%;
+	height: 100%;
+    text-align: right;
+    margin-top: 1.0in;
+    padding-top: 8px;
+}
+div.bookmeta-metadata {
+    font-family: "Avenir", Helvetica, Arial;
+    color: #000;
+    font-size: 14pt;
+    font-weight: 900;
+    line-height: 20pt;
+	height: auto;
+}  
   /* Style the bottom area of the cover. */
   .bottom-stripe {
-    position: absolute;
-    bottom: 0px;
-    display: block;
+    margin-top: 0.5in;
+	display: block;
     clear: both;
-    background-color: #fff;
+    background-color: #f3f;
     height: 200px;
     width: 100%;
-    margin: 0mm 0mm 0mm -15mm;
-    padding: 0mm 15mm 0mm 15mm;
   }
   
   /* Define the space where a logo can be placed. */
-  .logo-container {
+.logo-container {
     display: block;
-    clear: both;
+    background-color: #ff4;
     position: absolute;
-    padding: 0px;
-    margin: 0px;
-    bottom: 25px;
-    right: 15mm;
+    margin-top: 0.2in;
+    right: 0;
     height: 150px;
     width: 350px;
-  }
-  
+}
+
   /* Define where the actual logo is placed in the <div class="logo-container"> */
   .logo {
     display: block;
     float: right;
+  }
+
+
+  /* Style the bottom area of the cover. */
+  .bottom-stripe {
+    margin-top: 0.5in;
+	display: block;
+    clear: both;
+    background-color: #f3f;
+    height: 200px;
+    width: 100%;
   }
