@@ -15,7 +15,7 @@
   
   /* Make the cover-page-container (h1) fills up the whole cover page. */
   .cover-page-container {
-    background-color: #fff;
+    background-color: blue;
     width: 100%;
     height: 100%;
     page-break-after: always;
