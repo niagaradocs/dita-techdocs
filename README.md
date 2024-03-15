@@ -1,2 +1,2 @@
 # dita-techdocs
-Technical Documentation location for migrating from Windchill
+Technical Documentation location for Heretto linked resources.
