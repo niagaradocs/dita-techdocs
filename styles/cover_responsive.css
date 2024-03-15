@@ -1,4 +1,12 @@
   /* Differentiate the cover page from the TOC and the document body. */
+/* Copy of styles on github so I can test faster */
+ @page {
+    margin:0in;
+    size: US-Letter portrait !important;
+    background-color: fff;
+ }
+
+  /* Differentiate the cover page from the TOC and the document body. */
 .cover-page-container {
     prince-page-group: start;
     page: cover_page;
@@ -7,7 +15,7 @@
   /* Style the cover page.
   Assert that the cover page size and orientation is never changed. */
   @page :cover_page {
-    margin: 1in 0.75in;
+    margin:0in;
     size: US-Letter portrait !important;
     background-color: fff;
 }
@@ -22,7 +30,7 @@
   
   /* Apply the typography settings to the cover page. */
   .cover-page-container * {
-    font-family: "Roboto", Helvetica, Arial;
+    font-family: "Avenir", Helvetica, Arial;
   }
   
   /* Define the space where the title can be placed. */
@@ -30,8 +38,8 @@
     display: inline-block;
     height: 100%;
     width: 100%;
-    padding: 0in 0.75in;
-    margin-bottom: 25%; /* Should match the margin-top property in the .title-text selector. */
+    padding: 1.0in 0.75in;
+    margin-bottom: 1.75in; /* Should match the margin-top property in the .title-text selector. */
   }
 
 div.cover-page-heading {
@@ -61,7 +69,6 @@ div.cover-page-heading {
     
   }
   
-
 /* Style bookmeta metadata on the cover page DATE BLOCK*/
 /* Style the map title on the cover page */
   div.title-text {
@@ -105,10 +112,10 @@ div.bookmeta-metadata {
   /* Define the space where a logo can be placed. */
 .logo-container {
     display: block;
-    background-color: #ff4;
+    background-color: #fff;
     position: absolute;
     margin-top: 0.2in;
-    right: 0;
+    right: 0.75in;
     height: 150px;
     width: 350px;
 }
