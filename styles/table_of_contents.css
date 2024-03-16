@@ -13,13 +13,13 @@ nav > ul:first-child::before {
     font-weight: 800;
     display: block;
     clear: both;
-    padding: 0px 0px 0.0in 0.2in;
+    padding: 0in;
     letter-spacing: 0.025em;
 }
 
 /* Set padding, margins, and letter spacing for the whole TOC. */
 nav {
-	margin: 0.75in;
+	margin-left: 0.5in;
     letter-spacing: 0.025em;
     page-break-after: always;
 }
@@ -36,14 +36,14 @@ nav * {
 /* Style "<topic_title>.....................<page>". */
 nav a::after {
     content: leader(".") target-counter(attr(href), page); 
-    margin-left: 2.25in;
+    margin-left: 2.5in;
     font-weight: 500;
     font-size: 10pt;
 }
 
 /* Set margins and padding for the TOC links. */
 nav ul { 
-    margin: 2.5px 0px 0px 0px;
+    margin: 2.0px 0px 0px 0px;
     padding: 0px;
 }
 
