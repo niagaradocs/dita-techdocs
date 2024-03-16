@@ -3,43 +3,44 @@
  * Table of contents
  * Document body */
  @page {
-    size: A4;
-    margin: 80px 55px;
+    margin:0in;
+    size: US-Letter portrait !important;
+    background-color: fff;
 }
 @page:right {
     @top-right {
-        padding-right: 15mm;
-        margin-right:-15mm; 
+        padding-right: 0.75in;
+        margin-right:0.75in; 
     }
     @top-left {
-        margin-left:-15mm;
-        padding-left: 15mm;
+        margin-left:0.75in;
+        padding-left: 0.75in;
     }
     @bottom-left {
-        margin-left:-15mm;
-        padding-left: 15mm;
+        margin-left:0.75in;
+        padding-left: 0.75in;
     }
     @bottom-right {
-        margin-right:-15mm;
-        padding-right: 15mm;
+        margin-right:0.75in;
+        padding-right: 0.75in;
     }
 }
 @page:left {
     @top-right {
-        margin-right:-15mm;
-        padding-right: 15mm;
+        margin-right:0.75in;
+        padding-right: 0.75in;
     }
     @top-left {
-        margin-left:-15mm; 
-        padding-left: 15mm;
+        margin-left:0.75in; 
+        padding-left: 0.75in;
     }
     @bottom-left {
-        margin-left: -15mm;
-        padding-left: 15mm;
+        margin-left: 0.75in;
+        padding-left: 0.75in;
     }
     @bottom-right {
-        margin-right:-15mm;
-        padding-right: 15mm;
+        margin-right:0.75in;
+        padding-right: 0.75in;
     }
 }
 
@@ -97,38 +98,38 @@
 }
 @page portrait:right {
     @top-right {
-        padding-right: 15mm;
-        margin-right:-15mm; 
+        padding-right: 0.75in;
+        margin-right:0.75in; 
     }
     @top-left {
-        margin-left:-15mm;
-        padding-left: 15mm;
+        margin-left:0.75in;
+        padding-left: 0.75in;
     }
     @bottom-left {
-        margin-left:-15mm;
-        padding-left: 15mm;
+        margin-left:0.75in;
+        padding-left: 0.75in;
     }
     @bottom-right {
-        margin-right:-15mm;
-        padding-right: 15mm;
+        margin-right:0.75in;
+        padding-right: 0.75in;
     }
 }
 @page portrait:left {
     @top-right {
-        margin-right:-15mm;
-        padding-right: 15mm;
+        margin-right:0.75in;
+        padding-right: 0.75in;
     }
     @top-left {
-        margin-left:-15mm; 
-        padding-left: 15mm;
+        margin-left:0.75in; 
+        padding-left: 0.75in;
     }
     @bottom-left {
-        margin-left: -15mm;
-        padding-left: 15mm;
+        margin-left: 0.75in;
+        padding-left: 0.75in;
     }
     @bottom-right {
-        margin-right:-15mm;
-        padding-right: 15mm;
+        margin-right:0.75in;
+        padding-right: 0.75in;
     }
 }
 
@@ -143,30 +144,30 @@
 }
 @page portrait_small:right {
     @top-right {
-        padding-right: 15mm;
+        padding-right: 0.75in;
     }
     @top-left {
-        padding-left: 15mm;
+        padding-left: 0.75in;
     }
     @bottom-left {
-        padding-left: 15mm;
+        padding-left: 0.75in;
     }
     @bottom-right {
-        padding-right: 15mm;
+        padding-right: 0.75in;
     }
 }
 @page portrait_small:left {
     @top-right {
-        padding-right: 15mm;
+        padding-right: 0.75in;
     }
     @top-left {
-        padding-left: 15mm;
+        padding-left: 0.75in;
     }
     @bottom-left {
-        padding-left: 15mm;
+        padding-left: 0.75in;
     }
     @bottom-right {
-        padding-right: 15mm;
+        padding-right: 0.75in;
     }
 }
 
@@ -231,30 +232,30 @@
   }
 @page landscape:right {
     @top-right {
-        padding-right: 15mm;
+        padding-right: 0.75in;
     }
     @top-left {
-        padding-left: 15mm;
+        padding-left: 0.75in;
     }
     @bottom-left {
-        padding-left: 15mm;
+        padding-left: 0.75in;
     }
     @bottom-right {
-        padding-right: 15mm;
+        padding-right: 0.75in;
     }
 }
 @page landscape:left {
     @top-right {
-        padding-right: 15mm;
+        padding-right: 0.75in;
     }
     @top-left {
-        padding-left: 15mm;
+        padding-left: 0.75in;
     }
     @bottom-left {
-        padding-left: 15mm;
+        padding-left: 0.75in;
     }
     @bottom-right {
-        padding-right: 15mm;
+        padding-right: 0.75in;
     }
 }
 
@@ -270,30 +271,30 @@
 }
 @page landscape_small:right {
     @top-right {
-        padding-right: 15mm;
+        padding-right: 0.75in;
     }
     @top-left {
-        padding-left: 15mm;
+        padding-left: 0.75in;
     }
     @bottom-left {
-        padding-left: 15mm;
+        padding-left: 0.75in;
     }
     @bottom-right {
-        padding-right: 15mm;
+        padding-right: 0.75in;
     }
 }
 @page landscape_small:left {
     @top-right {
-        padding-right: 15mm;
+        padding-right: 0.75in;
     }
     @top-left {
-        padding-left: 15mm;
+        padding-left: 0.75in;
     }
     @bottom-left {
-        padding-left: 15mm;
+        padding-left: 0.75in;
     }
     @bottom-right {
-        padding-right: 15mm;
+        padding-right: 0.75in;
     }
 }
 /* TOC **************************************************************************/
@@ -309,39 +310,39 @@ nav > ul:first-of-type {
 
 @page toc:left {
     @top-right {
-        margin-right:-15mm;
-        padding-right: 15mm;
+        margin-right:0.75in;
+        padding-right: 0.75in;
     }
     @top-left {
-        margin-left:-15mm; 
-        padding-left: 15mm;
+        margin-left:0.75in; 
+        padding-left: 0.75in;
     }
     @bottom-left {
-        margin-left: -15mm;
-        padding-left: 15mm;
+        margin-left: 0.75in;
+        padding-left: 0.75in;
     }
     @bottom-right {
-        margin-right:-15mm;
-        padding-right: 15mm;
+        margin-right:0.75in;
+        padding-right: 0.75in;
     }
 }
 
 @page toc:right {
     @top-right {
-        padding-right: 15mm;
-        margin-right:-15mm; 
+        padding-right: 0.75in;
+        margin-right:0.75in; 
     }
     @top-left {
-        margin-left:-15mm;
-        padding-left: 15mm;
+        margin-left:0.75in;
+        padding-left: 0.75in;
     }
     @bottom-left {
-        margin-left:-15mm;
-        padding-left: 15mm;
+        margin-left:0.75in;
+        padding-left: 0.75in;
     }
     @bottom-right {
-        margin-right:-15mm;
-        padding-right: 15mm;
+        margin-right:0.75in;
+        padding-right: 0.75in;
     }
 }
 
@@ -398,38 +399,38 @@ nav > ul.toc_portrait {
 }
 @page toc_portrait:right {
     @top-right {
-        padding-right: 15mm;
-        margin-right:-15mm; 
+        padding-right: 0.75in;
+        margin-right:0.75in; 
     }
     @top-left {
-        margin-left:-15mm;
-        padding-left: 15mm;
+        margin-left:0.75in;
+        padding-left: 0.75in;
     }
     @bottom-left {
-        margin-left:-15mm;
-        padding-left: 15mm;
+        margin-left:0.75in;
+        padding-left: 0.75in;
     }
     @bottom-right {
-        margin-right:-15mm;
-        padding-right: 15mm;
+        margin-right:0.75in;
+        padding-right: 0.75in;
     }
 }
 @page toc_portrait:left {
     @top-right {
-        margin-right:-15mm;
-        padding-right: 15mm;
+        margin-right:0.75in;
+        padding-right: 0.75in;
     }
     @top-left {
-        margin-left:-15mm; 
-        padding-left: 15mm;
+        margin-left:0.75in; 
+        padding-left: 0.75in;
     }
     @bottom-left {
-        margin-left: -15mm;
-        padding-left: 15mm;
+        margin-left: 0.75in;
+        padding-left: 0.75in;
     }
     @bottom-right {
-        margin-right:-15mm;
-        padding-right: 15mm;
+        margin-right:0.75in;
+        padding-right: 0.75in;
     }
 }
 
@@ -444,30 +445,30 @@ nav > ul.toc_portrait_small {
 }
 @page toc_portrait_small:right {
     @top-right {
-        padding-right: 15mm;
+        padding-right: 0.75in;
     }
     @top-left {
-        padding-left: 15mm;
+        padding-left: 0.75in;
     }
     @bottom-left {
-        padding-left: 15mm;
+        padding-left: 0.75in;
     }
     @bottom-right {
-        padding-right: 15mm;
+        padding-right: 0.75in;
     }
 }
 @page toc_portrait_small:left {
     @top-right {
-        padding-right: 15mm;
+        padding-right: 0.75in;
     }
     @top-left {
-        padding-left: 15mm;
+        padding-left: 0.75in;
     }
     @bottom-left {
-        padding-left: 15mm;
+        padding-left: 0.75in;
     }
     @bottom-right {
-        padding-right: 15mm;
+        padding-right: 0.75in;
     }
 }
 
@@ -531,30 +532,30 @@ nav > ul.toc_landscape {
   }
 @page toc_landscape:right {
     @top-right {
-        padding-right: 15mm;
+        padding-right: 0.75in;
     }
     @top-left {
-        padding-left: 15mm;
+        padding-left: 0.75in;
     }
     @bottom-left {
-        padding-left: 15mm;
+        padding-left: 0.75in;
     }
     @bottom-right {
-        padding-right: 15mm;
+        padding-right: 0.75in;
     }
 }
 @page toc_landscape:left {
     @top-right {
-        padding-right: 15mm;
+        padding-right: 0.75in;
     }
     @top-left {
-        padding-left: 15mm;
+        padding-left: 0.75in;
     }
     @bottom-left {
-        padding-left: 15mm;
+        padding-left: 0.75in;
     }
     @bottom-right {
-        padding-right: 15mm;
+        padding-right: 0.75in;
     }
 }
 
@@ -570,30 +571,30 @@ nav > ul.toc_landscape_small {
 }
 @page toc_landscape_small:right {
     @top-right {
-        padding-right: 15mm;
+        padding-right: 0.75in;
     }
     @top-left {
-        padding-left: 15mm;
+        padding-left: 0.75in;
     }
     @bottom-left {
-        padding-left: 15mm;
+        padding-left: 0.75in;
     }
     @bottom-right {
-        padding-right: 15mm;
+        padding-right: 0.75in;
     }
 }
 @page toc_landscape_small:left {
     @top-right {
-        padding-right: 15mm;
+        padding-right: 0.75in;
     }
     @top-left {
-        padding-left: 15mm;
+        padding-left: 0.75in;
     }
     @bottom-left {
-        padding-left: 15mm;
+        padding-left: 0.75in;
     }
     @bottom-right {
-        padding-right: 15mm;
+        padding-right: 0.75in;
     }
 }
 

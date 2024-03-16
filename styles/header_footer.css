@@ -3,7 +3,7 @@
 /* TOC */
 @page toc:left{
     @bottom-left{
-        content: "Copyright © 2020-2021 Company Name";
+        content: "Copyright © 2023-2024 Company Name";
         letter-spacing: 0.025em;
         color: #000;
         border: none;
@@ -23,7 +23,7 @@
 
 @page toc:right{
     @bottom-left{
-        content: "Copyright © 2020-2021 Company Name";
+        content: "Copyright © 2022-2024 Company Name";
         letter-spacing: 0.025em;
         font-size:18px;
         color: #000;
