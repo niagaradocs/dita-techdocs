@@ -1,0 +1,38 @@
+/* Import the Roboto Google font. */
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400");
+
+/* Set the Roboto font globally. */
+@page {
+  font-family: "Roboto", Helvetica, Arial;
+}
+
+/* Set the Roboto font properties for the document body and #content-wrapper. */
+body,
+article,
+.body * {
+  color: #000;
+  font-family: "Roboto", Helvetica, Arial;
+  font-weight: normal;
+  line-height: 1.5em;
+  font-style: normal;
+  text-align: left;
+  font-size: 16px;
+}
+
+/* Set how the strong elements are displayed.
+Asserts that their children elements are uniformly styled. */
+strong.b,
+strong.b * {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Set how the emphasized elements are displayed.
+Asserts that their children elements are uniformly styled. */
+em.i,
+em.i * {
+  font-style: italic;
+  font-family: inherit;
+  font-size: inherit;
+}

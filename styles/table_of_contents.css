@@ -19,7 +19,7 @@ nav > ul:first-child::before {
 
 /* Set padding, margins, and letter spacing for the whole TOC. */
 nav {
-	margin: 0.75;
+	margin: 0.75in;
     letter-spacing: 0.025em;
     page-break-after: always;
 }
