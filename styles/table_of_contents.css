@@ -1,0 +1,180 @@
+/* Remove the map title that appears before the Table of Contents (TOC). */
+body > .topictitle1 {
+    display: none;
+}
+
+/* Add a custom TOC heading. */
+nav > ul:first-child::before { 
+    content: "Contents";
+    font-size: 24pt;
+    color: #000;
+    text-align: left;
+    font-style: normal;
+    font-weight: 800;
+    display: block;
+    clear: both;
+    padding: 0px 0px 0.25in 0.25in;
+    letter-spacing: 0.025em;
+}
+
+/* Set padding, margins, and letter spacing for the whole TOC. */
+nav {
+	margin: 0.75;
+    letter-spacing: 0.025em;
+    page-break-after: always;
+}
+
+/* Style the font for the entire TOC. */
+nav * {
+    font-weight: 500;
+    color: #000; 
+    text-decoration: none;
+}
+
+/* Style "<topic_title>.....................<page>". */
+nav a::after {
+    content: leader(".") target-counter(attr(href), page); 
+    margin-left: 0px;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+/* Set margins and padding for the TOC links. */
+nav ul { 
+    margin: 2.5px 0px 0px 0px;
+    padding: 0px;
+}
+
+/*.topichead {
+    font-weight: bold;
+    font-style: normal;
+}*/
+
+/* Level-1 (chapter). */
+nav ul li {
+    list-style-type: none;
+    padding: inherit;
+    padding: 2px 0px 2px 0px; 
+    font-size: 16px;
+    margin-left: 0px;
+  }
+
+/* Style level-1 (chapter) topics that have children. */
+nav > ul:has(ul) > li {
+    padding-top: 15px;
+}
+nav > ul:has(ul) > li:first-child {
+    padding-top: 10px;
+}
+nav > ul:has(ul) > li > a {
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+}
+nav > ul:has(ul) > li, 
+nav > ul:has(ul) > li:before {
+    color: #000;
+    font-weight: bold;
+    font-size: 22px;
+}
+nav > ul:has(ul) > li > a::after {
+    color: #000;
+    font-weight: bold;
+}  
+/* Style level-1 (chapter) topics that do not have children. */
+nav > ul > li > a,
+nav > ul > li:before {
+    font-weight: normal;
+    font-size: 18px;
+    color: #000;
+}
+
+/* Level-2 (subchapter) and deeper. */
+nav ul li ul li {
+    padding-left: 32px;
+}
+nav > ul > li > ul > li {
+    padding-top: 5px;
+}
+nav ul li ul li, 
+nav ul li ul li:before {
+    font-weight: bold;
+}
+nav > ul > li > ul > li {
+    font-weight: bold;
+    font-size: 18px;
+}
+nav > ul > li > ul > li > a::after {
+    font-weight: bold;
+}
+
+/* Level-3 and deeper. */
+nav ul li ul li ul li, 
+nav ul li ul li ul li:before {
+    font-weight: normal;
+}
+
+/* Level-5 and deeper (hidden). */
+nav ul ul ul ul ul {
+    content: none;
+}
+
+/* You can assign the @outputclass="no_toc" to the root element of a map to hide the table of contents. */
+body.no_toc > nav {
+    display: none;
+}
+
+/* Avoid overflowing text in the following elements: */
+a {
+    word-wrap: break-word;
+}
+
+/* Hide ditavalrefs from the TOC */
+.ditavalref {
+    display: none;
+}
+
+/* Style chapter-level Tables of Contents (TOCs)*/
+div.mini-toc-wrapper > ul::before {
+    display: block;
+    content: "Chapter Contents";
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 5px -1.5px;
+    letter-spacing: 0.025em;
+}
+div.mini-toc-wrapper > ul:empty:before {
+    display: none;
+}
+
+div.mini-toc-wrapper {
+    display: block;
+    margin: 15px 0 25px 0;
+    letter-spacing: 0.025em;
+}
+/* Set margins for nested topics */
+div.mini-toc-wrapper ul ul {
+    margin: 0 0 0 32px;
+    padding: 0px;
+}
+/* Remove bullets */
+div.mini-toc-wrapper li {
+    list-style-type: none;
+}
+/* Style linktext */
+div.mini-toc-wrapper a,
+div.mini-toc-wrapper a * {
+    text-decoration: none;
+    color: #000;
+    font-weight: inherit;
+    font-family: inherit;
+    font-size: 16px;
+    font-style: inherit;
+}
+/* Add dots and pages */
+div.mini-toc-wrapper a::after {
+    content: leader(".") target-counter(attr(href), page); 
+    margin-left: 0px;
+    font-weight: normal;
+    font-size: 16px;
+}
