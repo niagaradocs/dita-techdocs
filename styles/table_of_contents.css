@@ -13,13 +13,13 @@ nav > ul:first-child::before {
     font-weight: 800;
     display: block;
     clear: both;
-    padding: 0px 0px 0.0in 0.25in;
+    padding: 0px 0px 0.0in 0.2in;
     letter-spacing: 0.025em;
 }
 
 /* Set padding, margins, and letter spacing for the whole TOC. */
 nav {
-	margin: 02.5in;
+	margin: 0.75in;
     letter-spacing: 0.025em;
     page-break-after: always;
 }
