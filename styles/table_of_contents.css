@@ -13,14 +13,13 @@ nav > ul:first-child::before {
     font-weight: 800;
     display: block;
     clear: both;
-    padding: 0in;
-    letter-spacing: 0.025em;
+    padding-left: -1.0in;
 }
 
 /* Set padding, margins, and letter spacing for the whole TOC. */
 nav {
-	margin-left: 0.5in;
-    letter-spacing: 0.025em;
+ /* counter-reset: chapter; Initializes the chapter counter */
+ /* letter-spacing: 0.025em; */
     page-break-after: always;
 }
 
@@ -29,14 +28,16 @@ nav * {
 	font-family: "Avenir", Arial, Helvetica;
 	font-size: 10pt;
     font-weight: 500;
-    color: #000; 
+/*  color: #000; */
     text-decoration: none;
+    padding-left: 1in;
+    padding-right: 0.5in;
 }
 
 /* Style "<topic_title>.....................<page>". */
 nav a::after {
     content: leader(".") target-counter(attr(href), page); 
-    margin-left: 2.5in;
+    margin-left: 0.025in;
     font-weight: 500;
     font-size: 10pt;
 }
@@ -48,7 +49,7 @@ nav ul {
 }
 
 /*.topichead {
-    font-weight: bold;
+    font-weight: 500;
     font-style: normal;
 }*/
 
@@ -56,64 +57,70 @@ nav ul {
 nav ul li {
     list-style-type: none;
     padding: inherit;
-    padding: 2px 0px 2px 0px; 
+/*  padding: 2px 0px 2px 0px; */
     font-size: 10pt;
     margin-left: 0px;
+    color: #000;
   }
 
 /* Style level-1 (chapter) topics that have children. */
 nav > ul:has(ul) > li {
-    padding-top: 15px;
+    font-weight: 800;
+    padding-top: 2pt;
+    color: #000;
 }
 nav > ul:has(ul) > li:first-child {
-    padding-top: 10px;
+ /* padding-top: 2px; */
+    color: #000;
 }
 nav > ul:has(ul) > li > a {
-    color: #000;
-    font-size: 22px;
-    font-weight: bold;
+    color: #000; /* top level toc entry */
+    font-size: 10pt;
+    font-weight: 800;
 }
 nav > ul:has(ul) > li, 
+
 nav > ul:has(ul) > li:before {
     color: #000;
-    font-weight: bold;
-    font-size: 22px;
+    font-weight: 500;
+    font-size: 10pt;
 }
+
 nav > ul:has(ul) > li > a::after {
     color: #000;
-    font-weight: bold;
+    font-weight: 500;
 }  
 /* Style level-1 (chapter) topics that do not have children. */
 nav > ul > li > a,
 nav > ul > li:before {
-    font-weight: normal;
-    font-size: 18px;
+    font-weight: 800;
+    font-size: 10pt;
     color: #000;
 }
 
 /* Level-2 (subchapter) and deeper. */
 nav ul li ul li {
-    padding-left: 32px;
+    padding-left: 0.5in;
 }
 nav > ul > li > ul > li {
-    padding-top: 5px;
+    padding-top: 2px;
 }
 nav ul li ul li, 
 nav ul li ul li:before {
-    font-weight: bold;
+    font-weight: 500;
 }
 nav > ul > li > ul > li {
-    font-weight: bold;
+    font-weight: 500;
     font-size: 18px;
 }
 nav > ul > li > ul > li > a::after {
-    font-weight: bold;
+    font-weight: 500;
 }
 
 /* Level-3 and deeper. */
 nav ul li ul li ul li, 
 nav ul li ul li ul li:before {
-    font-weight: normal;
+    font-weight: 400;
 }
 
 /* Level-5 and deeper (hidden). */
@@ -141,7 +148,7 @@ div.mini-toc-wrapper > ul::before {
     display: block;
     content: "Chapter Contents";
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 500;
     margin: 0 0 5px -1.5px;
     letter-spacing: 0.025em;
 }
@@ -177,6 +184,6 @@ div.mini-toc-wrapper a * {
 div.mini-toc-wrapper a::after {
     content: leader(".") target-counter(attr(href), page); 
     margin-left: 0px;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
 }
