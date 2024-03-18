@@ -1,29 +1,63 @@
 /* Import the Roboto Google font. */
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400");
+/* @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400"); */
 
-/* Set the Roboto font globally. */
-@page {
-  font-family: "Roboto", Helvetica, Arial;
+/******** Import Fonts from AWS ********* */
+
+@font-face {
+    font-family: "Avenir";
+	src: url("https://s3.amazonaws.com/downloads.tridium.com/fonts/AVENIRLTSTD-ROMAN.OTF") format("truetype");
+    font-weight: 400; /* LT STD 55 Roman */
+    font-style: normal;
+}
+@font-face {
+	font-family: "Avenir";
+	src: url("https://s3.amazonaws.com/downloads.tridium.com/fonts/AVENIRLTCOM-MEDIUM.TTF") format("truetype");
+    font-weight: 500; /* LT STD 65 */
+    font-style: normal;
+}
+ @font-face {
+    font-family: "Avenir Heavy";
+	src: url("https://s3.amazonaws.com/downloads.tridium.com/fonts/AVENIRLTCOM-HEAVY.TTF") format("truetype");
+    font-weight: 800;
+    font-style: normal;
 }
 
-/* Set the Roboto font properties for the document body and #content-wrapper. */
+@font-face {
+    font-family: "Avenir";
+	src: url("https://s3.amazonaws.com/downloads.tridium.com/fonts/AVENIRLTSTD-BLACK.OTF") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Avenir";
+	src: url("https://s3.amazonaws.com/downloads.tridium.com/fonts/AVENIRLTCOM-LIGHT.TTF") format("truetype");
+    font-weight: 300; /* Light */
+    font-style: normal;
+}
+@font-face {
+    font-family: "Avenir";
+    src: url("https://s3.amazonaws.com/downloads.tridium.com/fonts/AVENIRLTCOM-LIGHTOBLIQUE.TTF") format("truetype");
+    font-weight: 300;
+    font-style: oblique;
+}
+/* Set the Avenir font properties for the document body and #content-wrapper. */
 body,
 article,
 .body * {
   color: #000;
-  font-family: "Roboto", Helvetica, Arial;
+  font-family: "Avenir", Helvetica, Arial;
   font-weight: normal;
   line-height: 1.5em;
   font-style: normal;
   text-align: left;
-  font-size: 16px;
+  font-size: 10pt;
 }
 
 /* Set how the strong elements are displayed.
 Asserts that their children elements are uniformly styled. */
 strong.b,
 strong.b * {
-  font-weight: bold;
+  font-weight: 800;
   font-family: inherit;
   font-size: inherit;
 }
@@ -32,7 +66,7 @@ strong.b * {
 Asserts that their children elements are uniformly styled. */
 em.i,
 em.i * {
-  font-style: italic;
+  font-style: oblique;
   font-family: inherit;
   font-size: inherit;
 }
