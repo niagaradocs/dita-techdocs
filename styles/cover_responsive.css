@@ -14,13 +14,14 @@
   }
   /* Style the cover page.
   Assert that the cover page size and orientation is never changed. */
-  @page :cover_page {
+  @page cover_page {
     margin:0in;
+	padding: 0in;
     size: US-Letter portrait !important;
     background-color: fff;
 }
   
-  /* Make the cover-page-container (h1) fills up the whole cover page. */
+  /* Make the cover-page-container (h1) fills up the whole cover page. Hides header. */
   .cover-page-container {
     background-color: #fff;
     width: 100%;
