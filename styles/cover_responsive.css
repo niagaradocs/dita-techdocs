@@ -38,7 +38,7 @@
     display: inline-block;
     height: 100%;
     width: 100%;
-    padding: 1.0in 0.75in;
+    padding: 0;
     margin-bottom: 1.75in; /* Should match the margin-top property in the .title-text selector. */
   }
 
@@ -115,7 +115,7 @@ div.bookmeta-metadata {
     background-color: #fff;
     position: absolute;
     margin-top: 0.2in;
-    right: 0.75in;
+    right: 0in;
     height: 150px;
     width: 350px;
 }
