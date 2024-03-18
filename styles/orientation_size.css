@@ -305,7 +305,7 @@ nav > ul:first-of-type {
 
 @page toc {
     size: US-Letter;
-    margin: 0.75in;
+    margin: 0.0in;
 }
 
 @page toc:left {
