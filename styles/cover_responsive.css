@@ -137,3 +137,17 @@ div.bookmeta-metadata {
     height: 200px;
     width: 100%;
   }
+  
+/* Legal page. */
+h1[id="ariaid-title1"] {
+    font-family: "Verdana" Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+}
+#legal_niagara_tridium--en--1__address p + p {
+    margin-top: -12pt;
+}
+/* Put every title in a separate line. */
+.title {
+  display: block;
+  clear: both;
+}  
