@@ -1,0 +1,54 @@
+/* Set the fullpage_title layout */
+.fullpage_title,
+.fullpage_title + .shortdesc,
+.fullpage_title + .abstract {
+    page: fullpage_title;
+}
+@page fullpage_title {
+    background-color: #000;
+    @top-right {
+        content: none;
+    }
+    @top-left {
+        content: none;
+    }
+    @bottom-left {
+        content: none;
+    }
+    @bottom-right {
+        content: none;
+    }
+}
+
+/* Place abstracts and shortdesc when not followed by any content. */
+.fullpage_title + .shortdesc,
+.fullpage_title + .abstract {
+    margin: 15px 0 0 15mm;
+}
+
+/* Style fullpage_title titles. */
+h1.title.fullpage_title {
+    display: block;
+    font-size: 74px;
+    line-height: 82px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 45mm;
+    margin-left: 15mm;
+    padding-bottom: 10px;
+    border-bottom: 5px solid #fff;
+    color: #fff;
+}
+
+/* Style shortdesc and abstracts following fullpage_title titles. */
+.fullpage_title + .shortdesc,
+.fullpage_title + .shortdesc *,
+.fullpage_title + .abstract,
+.fullpage_title + .abstract * {
+    color: #fff;
+    background-color: transparent;
+    text-align: right;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.5rem;
+}

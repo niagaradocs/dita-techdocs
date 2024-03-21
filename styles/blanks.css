@@ -1,0 +1,67 @@
+/* Starts each chapter (level-1 topic) on the right page. Insert a blank page before a chapter if needed. */
+body > nav ~ article.nested0 {
+    page-break-before: left;
+}
+
+/* Add a blank page after the cover page. */
+nav {
+    page-break-before: right;
+}
+
+/* Style blank pages. */
+@page toc:blank {
+    @top-right {
+       background-image: none;
+       background-color: #fff;
+       margin: 0;
+       content:"";
+   }
+   @top-left {
+       background-image: none;
+       background-color: #fff;
+       margin: 0;
+       content: "";
+   }
+   @bottom-right {
+       background-image: none;
+       border-top: none;
+       background-color: #fff;
+       margin: 0;
+       content: "";
+   }
+   @bottom-left {
+       background-image: none;
+       border-top: none;
+       background-color: #fff;
+       margin: 0;
+       content: "";
+   }
+}
+@page:blank {
+    @top-right {
+        background-image: none;
+        background-color: #fff;
+        margin: 0;
+        content:"";
+    }
+    @top-left {
+        background-image: none;
+        background-color: #fff;
+        margin: 0;
+        content: "";
+    }
+    @bottom-right {
+        background-image: none;
+        border-top: none;
+        background-color: #fff;
+        margin: 0;
+        content: "";
+    }
+    @bottom-left {
+        background-image: none;
+        border-top: none;
+        background-color: #fff;
+        margin: 0;
+        content: "";
+    }
+}

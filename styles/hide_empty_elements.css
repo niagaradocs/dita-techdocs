@@ -1,0 +1,25 @@
+/* Hide empty elements. */
+.body .prereq:empty,
+.body .postreq:empty,
+.body .steps:empty,
+.body .steps-unordered:empty,
+.body .stepsection:empty,
+.body .cause:empty,
+.body .condition:empty,
+.body .context:empty,
+.body .result:empty,
+.body .example:empty,
+.body .info:empty,
+article .prereq:empty,
+article .postreq:empty,
+article .steps:empty,
+article .steps-unordered:empty,
+article .stepsection:empty,
+article .cause:empty,
+article .condition:empty,
+article .context:empty,
+article .result:empty,
+article .example:empty,
+article .info:empty {
+  display: none;
+}

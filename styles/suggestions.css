@@ -1,0 +1,15 @@
+.ct-del, .ct-del .title, .ct-del .p
+{
+  color:red!important;
+  text-decoration: line-through!important;
+  border-bottom:2px solid transparent;
+  border-top:2px solid transparent;
+}
+
+.ct-ins, .ct-ins .title, .ct-ins .p, .ct-split, .ct-split .title, .ct-split .p
+{
+  color:red!important;
+  text-decoration: underline!important;
+  border-bottom:2px solid transparent;
+  border-top:2px solid transparent;
+}

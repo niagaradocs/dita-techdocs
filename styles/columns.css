@@ -1,0 +1,44 @@
+/* Set the two-column layout for topics and maps with the @outputclass="two_column" attribute assigned on their root tags. */
+.two_column {
+  column-count: 2;
+}
+
+/* Set the three-column layout for topics and maps wuth the @outputclass="three_column" attribute assigned on their root tags. */
+.three_column {
+  column-count: 3;
+}
+
+/* Set the four-column layout for topics and maps with the @outputclass="four_column" attribute assigned on their root tags. */
+.four_column {
+  column-count: 4;
+}
+
+/* Set the no-column (default) layout for topics and maps with the @outputclass="no_column" attribute assigned on their root tags. 
+.no_column {
+  column-span: all;
+}*/
+
+/* Prevent topic titles, abstracts, and short descriptions from being split into several columns. */
+.topic > .title,
+.sectiontitle,
+.prereq::before,
+.postreq::before,
+.steps::before,
+.steps-unordered::before,
+.stepsection,
+.cause::before,
+.remedy::before,
+.condition::before,
+.context::before,
+.result::before,
+.example::before {
+  column-span: all;
+}
+
+/* Style all column layouts. */
+.two_column,
+.three_column,
+.four_column {
+  column-fill: balance;
+  margin-top: 10px;
+}

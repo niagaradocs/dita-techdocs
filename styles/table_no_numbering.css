@@ -1,0 +1,5 @@
+/* Disable table numbering. */
+span.table--title-label {
+    display: none;
+    content: none;
+}

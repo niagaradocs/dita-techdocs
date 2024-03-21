@@ -1,0 +1,94 @@
+/*  Style footnote elements at the bottom of the page. */
+@page {
+      counter-reset: none;
+  @footnotes {
+    margin-top: 10px;
+    border-top: 2px dotted #000;
+    border-clip: 250px;
+    padding: 2.5px 0px 2.5px 15px;
+  }
+}
+
+/* Style footnote number preceding the footnote text at the bottom of the page. */
+.fn::footnote-marker {
+  font-weight: normal;
+}
+
+/* Style footnote text at the bottom of the page. */
+.fn {
+  float: footnote;
+  break-inside: avoid;
+}
+
+/* Footnote text inherites parent styling in Prince. Remove inherited formatting. */
+.fn,
+.fn * {
+  font-size: 14px !important; /* The important property is needed to ensure that the elements contained in footnotes are uniformly styled. */
+  background-color: transparent;
+  padding: 0px;
+  margin: 0px;
+  color: #404040;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+  text-decoration: none;
+  border: none;
+  font-family: "Roboto", Helvetica, Arial;
+  letter-spacing: normal;
+}
+/* Assert that italic text is correctly rendered in footnotes. */
+.fn em,
+.fn .i {
+  font-style: italic !important; /* Prince-specific */
+}
+/* Assert that bold text is correctly rendered in footnotes. */
+.fn strong,
+.fn .b {
+  font-weight: bold !important; /* Prince-specific */
+}
+/* Assert that underlined text is correctly rendered in footnotes. */
+.fn u,
+.fn .u {
+  text-decoration: underline !important; /* Prince-specific */
+}
+/* Fix ordered and unordered lists position in footnotes. */
+.fn .ul,
+.fn .ol {
+  margin-left: 22px !important; /* Prince-specific */
+}
+
+/* Style footnote callouts in the document body. */ 
+.fn::footnote-call {
+  content: counter(footnote);
+  vertical-align: super;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: none;
+  color: #000;
+}
+
+/* Keep footnotes in one block. */
+p {
+  prince-footnote-policy: keep-with-block;
+}
+
+/* Add a horizontal rule before footnotes on sites. */
+div.fn {
+  border-top: 1px solid #000;
+  margin-top: 25px;
+  padding-top: 5px;
+}
+div.fn,
+div.fn * {
+  font-size: 14px !important; /* The important property seems to be needed to overwrite the default SSG settings. */
+}
+div.fn ~ div.fn {
+  border: none;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+/* Make callouts smaller for sites. */
+a > sup {
+  font-size: 8px !important; /* The important property seems to be needed to overwrite the default SSG settings. */
+}

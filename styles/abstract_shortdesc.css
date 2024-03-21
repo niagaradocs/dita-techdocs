@@ -1,0 +1,13 @@
+/* Overwrite the default site styling.
+Apply default styling. */
+.abstract,
+.shortdesc {
+    font-style: normal;
+    color: #000;
+}
+
+/* Add paragraph-like margins to short descriptions. */
+.shortdesc {
+    display: block;
+    margin-top: 5px;
+}
