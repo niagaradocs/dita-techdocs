@@ -1,0 +1,128 @@
+/* REQUIRES: orientation_size.css */
+
+/* TABLE OF CONTENTS */
+@page toc:left{
+    @bottom-left{
+        content: "Copyright © 2020-2021 Tridium";
+        letter-spacing: 0.025em;
+        color: #fff;
+        border: none;
+        background-color: #457b9d;
+        font-size:18px;
+        font-style: normal;
+        font-weight: bold;
+        
+}
+    @bottom-right {
+        content: "";
+        letter-spacing: 0.025em;
+        border: none;
+        background-color: #457b9d;
+    }
+}
+
+@page toc:right{
+    @bottom-right{
+        content: "Copyright © 2020-2021 Tridium";
+        letter-spacing: 0.025em;
+        font-size:18px;
+        color: #fff;
+        border: none;
+        background-color: #457b9d;
+        font-style: normal;
+        font-weight: bold;
+        
+}
+    @bottom-left{
+        content: "";
+        letter-spacing: 0.025em;
+        border: none;
+        background-color: #457b9d;
+    }
+}
+
+/* DOCUMENT BODY */
+@page:left{
+    @top-right{
+        content: "Company Name";
+        line-height: 1em;
+        font-weight: bold;
+        color: #457b9d;
+        font-size: 18px;
+        letter-spacing: 0.025em;    }
+    @top-left{
+        font-size: 18px;
+        color: #457b9d;
+        font-style: normal;
+        font-weight: bold;
+        text-transform: none;
+        content: "{map.title}";
+        letter-spacing: 0.025em;
+        line-height: 1em;
+    }
+    @bottom-left{
+        content: "";
+        letter-spacing: 0.025em;
+        color: #fff;
+        font-style: normal;
+        border: none;
+        background-color: #457b9d;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    @bottom-right {
+        font-size: 18px;
+        border: none;
+        background-color: #457b9d;
+        font-style: normal;
+        font-weight: normal;        
+        font-size: 18px;
+        color: #fff;
+        font-weight: bold;
+        content: counter(page);
+        letter-spacing: 0.025em;
+    }
+}
+
+@page:right{
+    @top-left{
+        content: "Company Name";
+        line-height: 1em;
+        font-weight: bold;
+        color: #457b9d;
+        font-size: 18px;
+        letter-spacing: 0.025em;    }
+    @top-right{
+        font-size: 18px;
+        color: #457b9d;
+        font-style: normal;
+        font-weight: bold;
+        text-transform: none;
+        content: "{map.title}";
+        letter-spacing: 0.025em;
+        
+        text-align: right;
+        line-height: 1em;
+    }
+    @bottom-right{
+        content: "";
+        letter-spacing: 0.025em;
+        color: #fff;
+        font-style: normal;
+        border: none;
+        background-color: #457b9d;
+        font-size: 18px;
+        font-weight: bold;
+      }
+    @bottom-left{
+        border: none;
+        background-color: #457b9d;
+        font-size:18px;
+        font-style: normal;
+        font-weight: normal;
+        color: #fff;
+        font-weight: bold;
+        content: counter(page);
+        letter-spacing: 0.025em;
+    }
+}

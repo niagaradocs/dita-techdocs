@@ -6,6 +6,8 @@
     margin:0.75in;
     size: US-Letter portrait !important;
     background-color: fff;
+	font-family: "Avenir", Arial, Helvetica, sans-serif;
+	
 }
 @page:right {
     @top-right {
