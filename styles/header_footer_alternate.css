@@ -36,6 +36,7 @@
 }
     @bottom-left{
         content: "yyy";
+		color: #000;
         letter-spacing: 0.025em;
         border: none;
         background-color: #fff;

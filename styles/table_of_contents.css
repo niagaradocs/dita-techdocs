@@ -7,8 +7,8 @@ body > .topictitle1 {
 nav > ul:first-child::before { 
     content: "Contents";
     margin-top: 0;
-    padding-top: 1in;
-    padding-left: 1in;
+    padding-top: 0.75in;
+    margin-left: -0.75in;
     font-size: 24pt;
     color: #000;
     text-align: left;
@@ -16,9 +16,7 @@ nav > ul:first-child::before {
     font-weight: 800;
     display: block;
     clear: both;
-    padding-left: -0.75in;
 }
-
 /* Set padding, margins, and letter spacing for the whole TOC. */
 nav {
  /* counter-reset: chapter; Initializes the chapter counter */
