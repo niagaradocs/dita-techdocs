@@ -1,4 +1,4 @@
-/* Put every title in a separate line. */
+/* ======== start "title.css" Put every title in a separate line. ========== */
 .title {
   display: block;
   clear: both;
@@ -16,7 +16,7 @@ Ensure that the titles children are styled in a consistent way. */
 .table--title-label,
 .fig--title-label,
 figcaption:not(figcaption > .desc) {
-  font-family: "Roboto", Helvetica, Arial;
+  font-family: "Avenir", Helvetica, Arial;
   color: #000;
   border: none;
   text-align: left;
@@ -54,18 +54,18 @@ figcaption:not(figcaption > .desc) {
 .topictitle1 * {
   margin: 0px;
   padding: 0px;
-  font-size: 42px;
+  font-size: 24pt;
 
 }
 
 .topictitle2,
 .topictitle2 * {
-  font-size: 32px;
+  font-size: 14pt;
 }
 
 .topictitle3,
 .topictitle3 * {
-  font-size: 28px;
+  font-size: 11pt;
 }
 
 .topictitle4,
@@ -82,7 +82,7 @@ figcaption:not(figcaption > .desc) {
 .topictitle9 *,
 .sectiontitle,
 .sectiontitle * {
-  font-size: 24px;
+  font-size: 10pt;
 }
 
 /* Style section element titles. */
@@ -96,7 +96,7 @@ figcaption:not(figcaption > .desc) {
 .table--title-label *,
 .table > caption > .title,
 .table > caption > .title * {
-  font-size: 16px;
+  font-size: 14pt;
   background-color: transparent;
 }
 
