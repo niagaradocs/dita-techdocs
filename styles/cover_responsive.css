@@ -47,7 +47,7 @@ div.cover-page-heading {
     color: rgb(38,128,216);
     font-family: "Avenir", Arial, Helvetica, sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: ny;
     text-align: right;
     font-size: 30pt;
     line-height: 40px;
@@ -139,12 +139,13 @@ div.bookmeta-metadata {
   }
   
 /* Legal page. */
-h1[id="ariaid-title1"] {
-    font-family: "Verdana" Arial, Helvetica, sans-serif;
+#ariaid-title1 {
+    font-family: "Avenir", Arial, Helvetica, sans-serif;
     font-size: 16pt;
+	color: blue;
 }
 #legal_niagara_tridium--en--1__address p + p {
-    margin-top: -12pt;
+    margin-top: 0pt;
 }
 /* Put every title in a separate line. */
 .title {
