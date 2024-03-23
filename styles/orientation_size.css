@@ -299,10 +299,11 @@
     }
 }
 /* TOC **************************************************************************/
-nav > ul:first-of-type {
+/* nav > ul:first-of-type {
     page: toc;
     prince-page-group: start;
 }
+*/
 
 @page toc {
     size: US-Letter;
