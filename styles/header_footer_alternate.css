@@ -1,43 +1,44 @@
-/* REQUIRES: orientation_size.css */
+/* Alternating header footers */
 
 /* TABLE OF CONTENTS */
 @page toc:left{
     @bottom-left{
-        content: "Copyright © 2020-2021 Tridium";
+        content: "Copyright © 2024 Tridium";
         letter-spacing: 0.025em;
-        color: #fff;
+        color: #000;
         border: none;
-        background-color: #457b9d;
-        font-size:18px;
+        background-color: #fff;
+        font-size:8pt;
         font-style: normal;
-        font-weight: bold;
+        font-weight: 400;
         
 }
     @bottom-right {
-        content: "";
+        content: "xxx";
         letter-spacing: 0.025em;
+        color: #000;
         border: none;
-        background-color: #457b9d;
+        background-color: #fff;
     }
 }
 
 @page toc:right{
     @bottom-right{
-        content: "Copyright © 2020-2021 Tridium";
+        content: "Copyright © 2024 Tridium";
         letter-spacing: 0.025em;
         font-size:18px;
-        color: #fff;
+        color: #000;
         border: none;
-        background-color: #457b9d;
+        background-color: #fff;
         font-style: normal;
         font-weight: bold;
         
 }
     @bottom-left{
-        content: "";
+        content: "yyy";
         letter-spacing: 0.025em;
         border: none;
-        background-color: #457b9d;
+        background-color: #fff;
     }
 }
 
@@ -46,83 +47,84 @@
     @top-right{
         content: "Company Name";
         line-height: 1em;
-        font-weight: bold;
-        color: #457b9d;
+        font-weight: 400;
+        color: #000;
         font-size: 18px;
-        letter-spacing: 0.025em;    }
+        letter-spacing: 0.025em;
+        }
     @top-left{
         font-size: 18px;
-        color: #457b9d;
+        color: #000;
         font-style: normal;
-        font-weight: bold;
+        font-weight: 400;
         text-transform: none;
         content: "{map.title}";
         letter-spacing: 0.025em;
         line-height: 1em;
     }
     @bottom-left{
-        content: "";
+        content: counter(page);
         letter-spacing: 0.025em;
-        color: #fff;
+        color: #000;
         font-style: normal;
         border: none;
-        background-color: #457b9d;
+        background-color: #fff;
         font-size: 18px;
         font-weight: bold;
     }
     @bottom-right {
         font-size: 18px;
         border: none;
-        background-color: #457b9d;
+        background-color: #fff;
         font-style: normal;
         font-weight: normal;        
         font-size: 18px;
-        color: #fff;
+        color: #000;
         font-weight: bold;
-        content: counter(page);
+        content: "Date";
         letter-spacing: 0.025em;
     }
 }
 
 @page:right{
     @top-left{
-        content: "Company Name";
+        content: "{map.title}";
         line-height: 1em;
-        font-weight: bold;
-        color: #457b9d;
+        font-weight: 400;
+        color: #000;
         font-size: 18px;
         letter-spacing: 0.025em;    }
     @top-right{
         font-size: 18px;
-        color: #457b9d;
+        color: #000;
         font-style: normal;
-        font-weight: bold;
+        font-weight: 400;
         text-transform: none;
-        content: "{map.title}";
+        content: "{chapter.title}";
         letter-spacing: 0.025em;
         
         text-align: right;
         line-height: 1em;
     }
     @bottom-right{
-        content: "";
+        content: counter(page);
         letter-spacing: 0.025em;
-        color: #fff;
+        color: #000;
         font-style: normal;
         border: none;
-        background-color: #457b9d;
+        background-color: #fff;
         font-size: 18px;
         font-weight: bold;
       }
     @bottom-left{
         border: none;
-        background-color: #457b9d;
+        background-color: #fff;
         font-size:18px;
         font-style: normal;
         font-weight: normal;
-        color: #fff;
+        color: #000;
         font-weight: bold;
-        content: counter(page);
+        content: "Date";
         letter-spacing: 0.025em;
     }
 }
