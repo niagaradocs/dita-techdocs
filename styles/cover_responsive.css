@@ -147,6 +147,8 @@ div.bookmeta-metadata {
 #legal_niagara_tridium--en--1__address p + p {
     margin-top: 0pt;
 	margin-bottom: 0pt;
+	padding-top: 0pt;
+	padding-bottom: 0pt;
 }
 /* Put every title in a separate line. */
 .title {
