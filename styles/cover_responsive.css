@@ -139,17 +139,51 @@ div.bookmeta-metadata {
   }
   
 /* Legal page. */
-#ariaid-title1 {
-    font-family: "Avenir", Arial, Helvetica, sans-serif;
-    font-size: 16pt;
-	color: blue;
-}
+
 #legal_niagara_tridium--en--1__address p + p {
     margin-top: 0pt;
 	margin-bottom: 0pt;
 	padding-top: 0pt;
 	padding-bottom: 0pt;
 }
+
+#ariaid-title1 {
+    font-family: "Avenir", Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+	color: #000;
+	margin-bottom: 12pt;
+}
+
+.legal_niagara_tridium section h2 {
+    font-family: "Avenir", Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    font-weight: 800;
+    color: #000;
+    margin-top: 12pt; 
+    margin-bottom: 0pt;
+    padding: 0pt;
+}
+
+#legal_niagara_tridium--en--1__address .p {
+    font-family: "Avenir", Arial, Helvetica, sans-serif;
+    margin: 0pt;
+    padding: 0pt;
+}
+.legal_niagara_tridium section h2 + p {
+    margin-top: 5pt; /* Reduced top margin for the paragraph following an h2 */
+}
+
+.legal_niagara_tridium section p {
+    margin-top: 8pt; /* Slightly larger than the first paragraph, but still reduced */
+}
+
+
+/* Target strong tags with .ph.b classes specifically for font size and color adjustments */
+#legal_niagara_tridium--en--1__address .ph.b {
+    font-size: 12pt;
+    color: #000;
+}
+
 /* Put every title in a separate line. */
 .title {
   display: block;
