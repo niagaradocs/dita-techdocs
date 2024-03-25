@@ -52,7 +52,7 @@ nav > ul:first-of-type {
 @page toc {
     size: US-Letter;
     margin: 0in 0.75in 0.75in 0.75in;
-    background-color: rgb(254, 239, 255);
+    background-color: #fff;
 }
 @page toc:left {
     @top-right {
@@ -73,10 +73,10 @@ nav > ul:first-of-type {
         padding-right: 0in;       
     }
     @top-left {        
-        padding-left: 0.75in;
+        padding-left: 0in;
     }
     @bottom-left {        
-        padding-left: 0.75in;
+        padding-left: 0in;
     }
     @bottom-right {        
         padding-right: 0in;
