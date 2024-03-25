@@ -9,27 +9,29 @@
 	font-family: "Avenir", Arial, Helvetica, sans-serif;
 }
 @page:right {
+    background-color: yellow;
     @top-right {
-        padding-right: 0.0in;
+        padding-right: 0.75in;
         margin-right:0.0n; 
     }
     @top-left {
         margin-left:0.0in;
-        padding-left: 0.25in;
+        padding-left: 0.0in;
     }
     @bottom-left {
         margin-left:0.0in;
-        padding-left: 0.25in;
+        padding-left: 0.0in;
     }
     @bottom-right {
         margin-right:0.0in;
         padding-right: 0.0in;
     }
 }
+
 @page:left {
     @top-right {
         margin-right:0.0in;
-        padding-right: 0.25in;
+        padding-right: 0.0in;
     }
     @top-left {
         margin-left:0.0in; 
@@ -41,562 +43,58 @@
     }
     @bottom-right {
         margin-right:0.0in;
-        padding-right: 0.25in;
+        padding-right: 0.0in;
     }
 }
 
-/* Set large portrait margins for topics and maps with the @outputclass="portrait_large" attribute assigned to their root tags. */
-.portrait_large {
-    page: portrait_large;
-    prince-page-group: start;
-    page-break-before: always;
-}
-@page portrait_large {
-    margin: 95px 70px;
-}
-@page portrait_large:right {
-    @top-right {
-        padding-right: 20mm;
-        margin-right: -20mm;
-    }
-    @top-left {
-        padding-left: 20mm;
-        margin-left: -20mm;
-    }
-    @bottom-left {
-        padding-left: 20mm;
-        margin-left: -20mm;
-    }
-    @bottom-right {
-        padding-right: 20mm;
-        margin-right: -20mm;
-    }
-}
-@page portrait_large:left {
-        @top-right {
-            padding-right: 20mm;
-            margin-right: -20mm;
-        }
-        @top-left {
-            padding-left: 20mm;
-            margin-left: -20mm;    
-        }
-        @bottom-left {
-            padding-left: 20mm;
-            margin-left: -20mm;    
-        }
-        @bottom-right {
-            padding-right: 20mm;
-            margin-right: -20mm;
-        }
-}
-
-/* Set default/normal portrait margins for topics and maps with the @outputclass="portrait" or @outputclass="portrait_normal" attributes assigned to their root tags. */
-.portrait, .portrait_normal {
-    page: portrait;
-    prince-page-group: start;
-    page-break-before: always;
-}
-@page portrait:right {
-    @top-right {
-        padding-right: 0.75in;
-        margin-right:0.75in; 
-    }
-    @top-left {
-        margin-left:0.75in;
-        padding-left: 0.75in;
-    }
-    @bottom-left {
-        margin-left:0.75in;
-        padding-left: 0.75in;
-    }
-    @bottom-right {
-        margin-right:0.75in;
-        padding-right: 0.75in;
-    }
-}
-@page portrait:left {
-    @top-right {
-        margin-right:0.75in;
-        padding-right: 0.75in;
-    }
-    @top-left {
-        margin-left:0.75in; 
-        padding-left: 0.75in;
-    }
-    @bottom-left {
-        margin-left: 0.75in;
-        padding-left: 0.75in;
-    }
-    @bottom-right {
-        margin-right:0.75in;
-        padding-right: 0.75in;
-    }
-}
-
-/* Set small portrait margins for topics and maps with the @outputclass="portrait_small" attribute assigned to their root tags. */
-.portrait_small {
-    page: portrait_small;
-    prince-page-group: start;
-    page-break-before: always;
-}
-@page portrait_small {
-    margin: 65px 40px;
-}
-@page portrait_small:right {
-    @top-right {
-        padding-right: 0.75in;
-    }
-    @top-left {
-        padding-left: 0.75in;
-    }
-    @bottom-left {
-        padding-left: 0.75in;
-    }
-    @bottom-right {
-        padding-right: 0.75in;
-    }
-}
-@page portrait_small:left {
-    @top-right {
-        padding-right: 0.75in;
-    }
-    @top-left {
-        padding-left: 0.75in;
-    }
-    @bottom-left {
-        padding-left: 0.75in;
-    }
-    @bottom-right {
-        padding-right: 0.75in;
-    }
-}
-
-/* Set large landscape margins for topics and maps with the @outputclass="landscape_large" attribute assigned to their root tags. */
-.landscape_large {
-    page: landscape_large;
-    prince-page-group: start;
-    page-break-before: always;
-}
-
-@page landscape_large {
-    size: US-Letter landscape;
-    margin: 95px 70px;
-}
-
-@page landscape_large:right {
-    @top-right {
-        padding-right: 20mm;
-        margin-right: -20mm;
-    }
-    @top-left {
-        padding-left: 20mm;
-        margin-left: -20mm;
-    }
-    @bottom-left {
-        padding-left: 20mm;
-        margin-left: -20mm;
-    }
-    @bottom-right {
-        padding-right: 20mm;
-        margin-right: -20mm;
-    }
-}
-@page landscape_large:left {
-    @top-right {
-        padding-right: 20mm;
-        margin-right: -20mm;        
-    }
-    @top-left {
-        padding-left: 20mm;
-        margin-left: -20mm;            
-    }
-    @bottom-left {
-        padding-left: 20mm;
-        margin-left: -20mm;    
-    }
-    @bottom-right {
-        padding-right: 20mm;
-        margin-right: -20mm;
-    }
-}
-
-/* Set default/normal landscape margins for topics and maps with the @outputclass="landscape" or @outputclass="landscape_normal" attributes assigned to their root tags. */
-.landscape, .landscape_normal {
-    page: landscape;
-    prince-page-group: start;
-    page-break-before: always;
-  }
-@page landscape {
-    size: landscape;
-    margin: 80px 55px;
-  }
-@page landscape:right {
-    @top-right {
-        padding-right: 0.75in;
-    }
-    @top-left {
-        padding-left: 0.75in;
-    }
-    @bottom-left {
-        padding-left: 0.75in;
-    }
-    @bottom-right {
-        padding-right: 0.75in;
-    }
-}
-@page landscape:left {
-    @top-right {
-        padding-right: 0.75in;
-    }
-    @top-left {
-        padding-left: 0.75in;
-    }
-    @bottom-left {
-        padding-left: 0.75in;
-    }
-    @bottom-right {
-        padding-right: 0.75in;
-    }
-}
-
-/* Set small landscape margins for topics and maps with the @outputclass="landscape_small" attribute assigned to their root tags. */
-.landscape_small {
-    page: landscape_small;
-    prince-page-group: start;
-    page-break-before: always;
-}
-@page landscape_small {
-    size: landscape;
-    margin: 65px 40px;
-}
-@page landscape_small:right {
-    @top-right {
-        padding-right: 0.75in;
-    }
-    @top-left {
-        padding-left: 0.75in;
-    }
-    @bottom-left {
-        padding-left: 0.75in;
-    }
-    @bottom-right {
-        padding-right: 0.75in;
-    }
-}
-@page landscape_small:left {
-    @top-right {
-        padding-right: 0.75in;
-    }
-    @top-left {
-        padding-left: 0.75in;
-    }
-    @bottom-left {
-        padding-left: 0.75in;
-    }
-    @bottom-right {
-        padding-right: 0.75in;
-    }
-}
 /* TOC **************************************************************************/
-/* nav > ul:first-of-type {
+nav > ul:first-of-type {
     page: toc;
     prince-page-group: start;
 }
-*/
-
 @page toc {
     size: US-Letter;
-    margin: 0.0in;
+    margin: 0in 0.75in 0.75in 0.75in;
+    background-color: rgb(254, 239, 255);
 }
-
 @page toc:left {
     @top-right {
-        margin-right:0.75in;
-        padding-right: 0.75in;
+        padding-right: 0.25in;
     }
     @top-left {
-        margin-left:0.75in; 
-        padding-left: 0.75in;
+        padding-left: 0in;
     }
-    @bottom-left {
-        margin-left: 0.75in;
-        padding-left: 0.75in;
+    @bottom-left {       
+        padding-left: 0.0in;
     }
-    @bottom-right {
-        margin-right:0.75in;
-        padding-right: 0.75in;
+    @bottom-right {        
+        padding-right: 0.25in;
     }
 }
-
-@page toc:right {
+@page toc:right {    
     @top-right {
-        padding-right: 0.75in;
-        margin-right:0.75in; 
+        padding-right: 0in;       
     }
+    @top-left {        
+        padding-left: 0.75in;
+    }
+    @bottom-left {        
+        padding-left: 0.75in;
+    }
+    @bottom-right {        
+        padding-right: 0in;
+    }
+}
+/************* Map title customization ************* /
+/* Generate a map title in the header. */
+@page:left {
     @top-left {
-        margin-left:0.75in;
-        padding-left: 0.75in;
-    }
-    @bottom-left {
-        margin-left:0.75in;
-        padding-left: 0.75in;
-    }
-    @bottom-right {
-        margin-right:0.75in;
-        padding-right: 0.75in;
+        content: "{map.title}";
     }
 }
-
-/* Set large portrait TOC margins for maps with the @outputclass="portrait_large" attribute assigned to their root tags. */
-nav > ul.toc_portrait_large {
-    page: toc_portrait_large;
-    prince-page-group: start;
-}
-
-@page toc_portrait_large {
-    margin: 95px 70px;
-}
-@page toc_portrait_large:right {
+@page:right {
     @top-right {
-        padding-right: 20mm;
-        margin-right: -20mm;
-    }
-    @top-left {
-        padding-left: 20mm;
-        margin-left: -20mm;
-    }
-    @bottom-left {
-        padding-left: 20mm;
-        margin-left: -20mm;
-    }
-    @bottom-right {
-        padding-right: 20mm;
-        margin-right: -20mm;
-    }
-}
-@page toc_portrait_large:left {
-        @top-right {
-            padding-right: 20mm;
-            margin-right: -20mm;
-        }
-        @top-left {
-            padding-left: 20mm;
-            margin-left: -20mm;    
-        }
-        @bottom-left {
-            padding-left: 20mm;
-            margin-left: -20mm;    
-        }
-        @bottom-right {
-            padding-right: 20mm;
-            margin-right: -20mm;
-        }
-}
-
-/* Set default/normal portrait TOC margins for maps with the @outputclass="portrait" attribute assigned to their root tags. */
-nav > ul.toc_portrait {
-    page: toc_portrait;
-    prince-page-group: start;
-}
-@page toc_portrait:right {
-    @top-right {
-        padding-right: 0.75in;
-        margin-right:0.75in; 
-    }
-    @top-left {
-        margin-left:0.75in;
-        padding-left: 0.75in;
-    }
-    @bottom-left {
-        margin-left:0.75in;
-        padding-left: 0.75in;
-    }
-    @bottom-right {
-        margin-right:0.75in;
-        padding-right: 0.75in;
-    }
-}
-@page toc_portrait:left {
-    @top-right {
-        margin-right:0.75in;
-        padding-right: 0.75in;
-    }
-    @top-left {
-        margin-left:0.75in; 
-        padding-left: 0.75in;
-    }
-    @bottom-left {
-        margin-left: 0.75in;
-        padding-left: 0.75in;
-    }
-    @bottom-right {
-        margin-right:0.75in;
-        padding-right: 0.75in;
-    }
-}
-
-/* Set small portrait TOC margins for maps with the @outputclass="portrait_small" attribute assigned to their root tags. */
-nav > ul.toc_portrait_small {
-    page: toc_portrait_small;
-    prince-page-group: start;
-}
-
-@page toc_portrait_small {
-    margin: 65px 40px;
-}
-@page toc_portrait_small:right {
-    @top-right {
-        padding-right: 0.75in;
-    }
-    @top-left {
-        padding-left: 0.75in;
-    }
-    @bottom-left {
-        padding-left: 0.75in;
-    }
-    @bottom-right {
-        padding-right: 0.75in;
-    }
-}
-@page toc_portrait_small:left {
-    @top-right {
-        padding-right: 0.75in;
-    }
-    @top-left {
-        padding-left: 0.75in;
-    }
-    @bottom-left {
-        padding-left: 0.75in;
-    }
-    @bottom-right {
-        padding-right: 0.75in;
-    }
-}
-
-/* Set large landscape TOC margins and maps with the @outputclass="landscape_large" attribute assigned to their root tags. */
-nav > ul.toc_landscape_large {
-    page: toc_landscape_large;
-    prince-page-group: start;
-}
-
-@page toc_landscape_large {
-    size: US-Letter landscape;
-    margin: 95px 70px;
-}
-
-@page toc_landscape_large:right {
-    @top-right {
-        padding-right: 20mm;
-        margin-right: -20mm;
-    }
-    @top-left {
-        padding-left: 20mm;
-        margin-left: -20mm;
-    }
-    @bottom-left {
-        padding-left: 20mm;
-        margin-left: -20mm;
-    }
-    @bottom-right {
-        padding-right: 20mm;
-        margin-right: -20mm;
-    }
-}
-@page toc_landscape_large:left {
-    @top-right {
-        padding-right: 20mm;
-        margin-right: -20mm;        
-    }
-    @top-left {
-        padding-left: 20mm;
-        margin-left: -20mm;            
-    }
-    @bottom-left {
-        padding-left: 20mm;
-        margin-left: -20mm;    
-    }
-    @bottom-right {
-        padding-right: 20mm;
-        margin-right: -20mm;
-    }
-}
-
-/* Set default/normal landscape TOC margins for topics and maps with the @outputclass="landscape" attributes assigned to their root tags. */
-nav > ul.toc_landscape {
-    page: toc_landscape;
-    prince-page-group: start;
-}
-
-@page toc_landscape {
-    size: landscape;
-    margin: 80px 55px;
-  }
-@page toc_landscape:right {
-    @top-right {
-        padding-right: 0.75in;
-    }
-    @top-left {
-        padding-left: 0.75in;
-    }
-    @bottom-left {
-        padding-left: 0.75in;
-    }
-    @bottom-right {
-        padding-right: 0.75in;
-    }
-}
-@page toc_landscape:left {
-    @top-right {
-        padding-right: 0.75in;
-    }
-    @top-left {
-        padding-left: 0.75in;
-    }
-    @bottom-left {
-        padding-left: 0.75in;
-    }
-    @bottom-right {
-        padding-right: 0.75in;
-    }
-}
-
-/* Set small landscape TOC margins for maps with the @outputclass="landscape_small" attribute assigned to their root tags. */
-nav > ul.toc_landscape_small {
-    page: toc_landscape_small;
-    prince-page-group: start;
-}
-
-@page toc_landscape_small {
-    size: landscape;
-    margin: 65px 40px;
-}
-@page toc_landscape_small:right {
-    @top-right {
-        padding-right: 0.75in;
-    }
-    @top-left {
-        padding-left: 0.75in;
-    }
-    @bottom-left {
-        padding-left: 0.75in;
-    }
-    @bottom-right {
-        padding-right: 0.75in;
-    }
-}
-@page toc_landscape_small:left {
-    @top-right {
-        padding-right: 0.75in;
-    }
-    @top-left {
-        padding-left: 0.75in;
-    }
-    @bottom-left {
-        padding-left: 0.75in;
-    }
-    @bottom-right {
-        padding-right: 0.75in;
+        content: "{publish.date}";
     }
 }
 

@@ -139,6 +139,14 @@ div.bookmeta-metadata {
   }
   
 /* Legal page. */
+/* LEGAL basic styles to all paragraphs within the specified section (may be redundant) */
+div.legal_niagara_tridium {
+    margin-top: 0in;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    page-break-after: always;
+}
 
 #legal_niagara_tridium--en--1__address p + p {
     margin-top: 0pt;
