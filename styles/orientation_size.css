@@ -10,10 +10,9 @@
 }
 
 @page:right {
-    background-color: lightyellow;
     @top-right {
-        padding-right: 0in;
-        margin-right:0.0n; 
+        margin-right: 0in;
+        padding-right:0.0n; 
     }
     @top-left {
         margin-left:0.0in;
