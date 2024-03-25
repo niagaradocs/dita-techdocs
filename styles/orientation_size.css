@@ -8,10 +8,11 @@
     background-color: fff;
 	font-family: "Avenir", Arial, Helvetica, sans-serif;
 }
+
 @page:right {
-    background-color: yellow;
+    background-color: lightyellow;
     @top-right {
-        padding-right: 0.75in;
+        padding-right: 0in;
         margin-right:0.0n; 
     }
     @top-left {
@@ -27,24 +28,21 @@
         padding-right: 0.0in;
     }
 }
-
 @page:left {
-    @top-right {
-        margin-right:0.0in;
-        padding-right: 0.0in;
-    }
     @top-left {
-        margin-left:0.0in; 
-        padding-left: 0.0in;
+        padding-left: 0in;
     }
     @bottom-left {
-        margin-left: 0.0in;
-        padding-left: 0.0in;
+        padding-left: 0in;
     }
     @bottom-right {
-        margin-right:0.0in;
-        padding-right: 0.0in;
+        padding-right: 0in;
+        content: "{map.title}";
     }
+    @top-right {
+        padding-right: 0in;
+        margin-right:0.0n; 
+    }	
 }
 
 /* TOC **************************************************************************/
