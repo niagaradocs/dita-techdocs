@@ -135,7 +135,7 @@
         }
     @bottom-right { /* all these are working. Why padding must be added? */
         content: flow(revisionDateFlow);
-        padding-left: 6in;
+        padding-left: 5.5in;
         }
     @bottom-left {
         font-size: 8pt;
