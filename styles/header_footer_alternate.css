@@ -135,8 +135,6 @@
         }
     @bottom-right { /* all these are working */
         content: flow(revisionDateFlow);
-        font-size: 8pt;
-        font-weight: 400; 
         }
     @bottom-left {
         font-size: 8pt;
@@ -145,8 +143,6 @@
 }
 
 @page:right {
-    font-size: 8pt;
-    font-weight: 400;
     @top-right {
     }
     @top-left {
