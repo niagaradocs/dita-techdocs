@@ -31,12 +31,15 @@
 }
 @page:left {
     @top-left {
+		margin-left: 0in;
         padding-left: 0in;
     }
     @bottom-left {
+		margin-left: 0in;
         padding-left: 0in;
-    }
+	}
     @bottom-right {
+		margin-right: 0in;
         padding-right: 0in;
     }
     @top-right {
