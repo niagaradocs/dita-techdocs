@@ -127,14 +127,15 @@
         letter-spacing: 0.025em;
     }
 }
-/************* Map title customization ************* /
+/************* Map title customization for header ************* /
 /* Generate a map title in the header. */
 @page:left {
     @top-right {
         content: "{map.title}"; /* working */
         }
-    @bottom-right { /* all these are working */
+    @bottom-right { /* all these are working. Why padding must be added? */
         content: flow(revisionDateFlow);
+        padding-left: 6in;
         }
     @bottom-left {
         font-size: 8pt;
