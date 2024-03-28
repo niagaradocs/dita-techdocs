@@ -3,7 +3,7 @@ body > nav ~ article.nested0 {
     page-break-before: left;
 }
 
-/* Add a blank page after the cover page. */
+/* Add a blank page after the LEGAL page. */
 nav {
     page-break-before: right;
 }
