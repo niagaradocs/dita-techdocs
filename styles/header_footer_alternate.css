@@ -26,21 +26,23 @@
     @bottom-right{
         content: "Copyright © 2024 Tridium";
         letter-spacing: 0.025em;
-        font-size:18px;
         color: #000;
         border: none;
         background-color: #fff;
+        font-size:8pt;
         font-style: normal;
-        font-weight: bold;
-        
+        font-weight: 400;        
 }
     @bottom-left{
         content: "yyy";
-		color: #000;
         letter-spacing: 0.025em;
+		color: #000;
         border: none;
         background-color: #fff;
-    }
+        font-size:8pt;
+        font-style: normal;
+        font-weight: 400;
+	}
 }
 
 /* DOCUMENT BODY */
@@ -74,14 +76,10 @@
         font-weight: bold;
     }
     @bottom-right {
-        font-size: 18px;
+        font-size: 8pt;
         border: none;
         background-color: #fff;
-        font-style: normal;
-        font-weight: normal;        
-        font-size: 18px;
-        color: #000;
-        font-weight: bold;
+        font-weight: 400;
         content: "Date";
         letter-spacing: 0.025em;
     }
@@ -129,3 +127,38 @@
         letter-spacing: 0.025em;
     }
 }
+/************* Map title customization ************* /
+/* Generate a map title in the header. */
+@page:left {
+    @top-right {
+        content: "{map.title}"; /* working */
+        }
+    @bottom-right { /* all these are working */
+        content: flow(revisionDateFlow);
+        font-size: 8pt;
+        font-weight: 400; 
+        }
+    @bottom-left {
+        font-size: 8pt;
+        font-weight: 400; 
+        }        
+}
+
+@page:right {
+    font-size: 8pt;
+    font-weight: 400;
+    @top-right {
+    }
+    @top-left {
+        content: "{map.title}";
+        } 
+    @bottom-left {
+        content: flow(revisionDateFlow);
+        font-size: 8pt;
+        font-weight: 400;
+    }
+}
+
+.revision-date {
+    -prince-flow: static(revisionDateFlow, start);
+    }

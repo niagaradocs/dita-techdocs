@@ -7,6 +7,8 @@
     size: US-Letter portrait !important;
     background-color: fff;
 	font-family: "Avenir", Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: 400;
 }
 
 @page:right {
@@ -36,7 +38,6 @@
     }
     @bottom-right {
         padding-right: 0in;
-        content: "{map.title}";
     }
     @top-right {
         padding-right: 0in;
@@ -80,18 +81,6 @@ nav > ul:first-of-type {
     }
     @bottom-right {        
         padding-right: 0in;
-    }
-}
-/************* Map title customization ************* /
-/* Generate a map title in the header. */
-@page:left {
-    @top-left {
-        content: "{map.title}";
-    }
-}
-@page:right {
-    @top-right {
-        content: "{publish.date}";
     }
 }
 
