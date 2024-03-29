@@ -127,19 +127,22 @@
         letter-spacing: 0.025em;
     }
 }
-/************* Map title customization for header ************* /
+/************* Map title customization for header and footer ************* /
 /* Generate a map title in the header. */
+.revision-date {
+    string-set: revision-date content();
+	
 @page:left {
     @top-right {
-        content: "{map.title}"; /* working */
+        content: "{map.title}"; /* working only when in Heretto editor */
         }
     @top-left {
         content: "{chapter.title}";
         }
-    @bottom-right { /* all these are working. Why padding must be added? */
-        content: flow(revisionDateFlow);
-        text-align: right; /* Align to the right on left pages */
-        }
+    @bottom-right {
+        content: string(revision-date);
+        text-align: right;
+	}
     @bottom-left {
         font-size: 8pt;
         font-weight: 400; 
@@ -156,13 +159,7 @@
 	@bottom-right {
 	}
     @bottom-left {
-        content: flow(revisionDateFlow);
-		text-align: left;
-        font-size: 8pt;
-        font-weight: 400;
+        content: string(revision-date);
+        text-align: left;
     }
 }
-
-.revision-date {
-    -prince-flow: static(revisionDateFlow, start);
-    }
