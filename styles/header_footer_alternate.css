@@ -131,6 +131,7 @@
 /* Generate a map title in the header. */
 .revision-date {
     string-set: revision-date content();
+	display: none;
 }
 	
 @page:left {
