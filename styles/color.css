@@ -49,11 +49,11 @@ article.topic.faq {
   }
   @bottom-left {
     color: #fff;
-    background-color: #457b9d;
+    background-color: #fff;
   }
   @bottom-right {
     color: #fff;
-    background-color: #457b9d;
+    background-color: #fff;
   }
 }
 @page toc:right {
@@ -67,47 +67,47 @@ article.topic.faq {
   }
   @bottom-left {
     color: #fff;
-    background-color: #457b9d;
+    background-color: #fff;
   }
   @bottom-right {
     color: #fff;
-    background-color: #457b9d;
+    background-color: #fff;
   }
 }
 @page:left{
   @top-left {
-    color: #457b9d;
+    color: #000;
     background-color: transparent;
   }
   @top-right {
-    color: #457b9d;
+    color: #000;
     background-color: transparent;
   }
   @bottom-left {
     color: #fff;
-    background-color: #457b9d;
+    background-color: #fff;
   }
   @bottom-right {
     color: #fff;
-    background-color: #457b9d;
+    background-color: #fff;
   }
 }
 @page:right{
   @top-left {
-    color: #457b9d;
+    color: #000;
     background-color: transparent;
   }
   @top-right {
-    color: #457b9d;
+    color: #000;
     background-color: transparent;
   }
   @bottom-left {
     color: #fff;
-    background-color: #457b9d;
+    background-color: #fff;
   }
   @bottom-right {
     color: #fff;
-    background-color: #457b9d;
+    background-color: #fff;
   }
 }
 
