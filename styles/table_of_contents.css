@@ -8,6 +8,7 @@ nav > ul:first-child::before {
     content: "Contents";
     margin-top: 0;
     padding-top: 0.75in;
+	padding-bottom: 14pt;
     font-size: 24pt;
     color: #000;
     text-align: left;
@@ -44,7 +45,7 @@ nav a::after {
 
 /* Set margins and padding for the TOC links. */
 nav ul { 
-    margin: 2.0px 0px 0px 0px;
+    margin: 4pt 0pt 4pt 0pt;
     padding: 0px;
 }
 
