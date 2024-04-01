@@ -47,7 +47,7 @@ div.cover-page-heading {
     color: rgb(38,128,216);
     font-family: "Avenir", Arial, Helvetica, sans-serif;
     font-style: normal;
-    font-weight: ny;
+    font-weight: 400;
     text-align: right;
     font-size: 30pt;
     line-height: 40px;
@@ -140,13 +140,32 @@ div.bookmeta-metadata {
   
 /* Legal page. */
 /* LEGAL basic styles to all paragraphs within the specified section (may be redundant) */
+
 div.legal_niagara_tridium {
-    margin-top: 0in;
+    page:legal_page;
+    prince-page-group: start;
+}	
+@page legal_page {    
+    size: US-Letter;
+    margin: 0in 0.75in 0.75in 0.75in;
+    padding-top: 0.75in;
+    background-color: #fff;
+}
+
+div.legal_niagara_tridium {
+    prince-page-group: start;
+	page:legal_page;
+	margin-top: 0in;
     background-color: #fff;
     width: 100%;
     height: 100%;
     page-break-after: always;
 }
+.cover-page-container {
+    prince-page-group: start;
+    page: cover_page;
+    counter-reset: page 1;
+  }
 
 #legal_niagara_tridium--en--1__address p + p {
     margin-top: 0pt;
