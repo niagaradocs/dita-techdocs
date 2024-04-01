@@ -7,10 +7,10 @@
   background-color: #fff;
 }
 .title-text {
-  color: #000;
+  color: #000 #000;
 }
 .bottom-stripe {
-  background-color: #fff;
+  background-color: #000 #fff;
 }
 
 /* fullpage_title.css */
@@ -40,11 +40,11 @@ article.topic.faq {
 /* header_footer.css and header_footer_alternate.css =================*/
 @page toc:left {
   @top-left {
-    color: #457b9d;
+    color: #000;
     background-color: transparent;
   }
   @top-right {
-    color: #457b9d;
+    color: #000;
     background-color: transparent;
   }
   @bottom-left {
@@ -58,11 +58,11 @@ article.topic.faq {
 }
 @page toc:right {
   @top-left {
-    color: #457b9d;
+    color: #000;
     background-color: transparent;
   }
   @top-right {
-    color: #457b9d;
+    color: #000;
     background-color: transparent;
   }
   @bottom-left {
@@ -287,7 +287,7 @@ code {
 /* filepath_sysoutput_userinput_varname.css ==========================*/
 .userinput,
 .userinput * {
-  color: #457b9d;
+  color: #000;
 }
 .systemoutput,
 .filepath,
@@ -317,7 +317,7 @@ div.fn {
 /* xref_related_links.css ============================================*/
 .xref,
 .link {
-  color: #457b9d;
+  color: #000;
 }
 .related-links::before{
   color: #1d3557;
@@ -334,7 +334,7 @@ div.fn {
 }
 .note_note,
 .note_trouble {
-  border-color: #457b9d;
+  border-color: #000;
   background-color: #29b4d328;
 }
 .note_note > .note__title,
