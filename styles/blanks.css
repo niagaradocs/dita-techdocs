@@ -14,27 +14,27 @@ nav {
        background-image: none;
        background-color: #fff;
        margin: 0;
-       content:"";
+       content:"blankright";
    }
    @top-left {
        background-image: none;
        background-color: #fff;
        margin: 0;
-       content: "";
+       content: "blankleft";
    }
    @bottom-right {
        background-image: none;
        border-top: none;
        background-color: #fff;
        margin: 0;
-       content: "";
+       content: "blankbottomright";
    }
    @bottom-left {
        background-image: none;
        border-top: none;
        background-color: #fff;
        margin: 0;
-       content: "";
+       content: "blankbottomleft";
    }
 }
 @page:blank {
