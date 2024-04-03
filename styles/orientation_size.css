@@ -61,7 +61,7 @@ nav > ul:first-of-type {
 
 /************************* Fixes ****************************************************/
 /* Prevent items from overflowing the page. */
- {
+ * {
     box-sizing: border-box;
     max-width: 100%;
 }
