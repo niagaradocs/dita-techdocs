@@ -13,13 +13,13 @@ nav {
     @top-right {
        background-image: none;
        background-color: #fff;
-       margin: 0;
+       margin: 0.75in;
        content:"blankright";
    }
    @top-left {
        background-image: none;
        background-color: #fff;
-       margin: 0;
+       margin: 0.75in;
        content: "blankleft";
    }
    @bottom-right {
@@ -27,14 +27,14 @@ nav {
        border-top: none;
        background-color: #fff;
        margin: 0;
-       content: "blankbottomright";
+       content: counter(page);
    }
    @bottom-left {
        background-image: none;
        border-top: none;
        background-color: #fff;
        margin: 0;
-       content: "blankbottomleft";
+       content: string(revision-date);
    }
 }
 @page:blank {
