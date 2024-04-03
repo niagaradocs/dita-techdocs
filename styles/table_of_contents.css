@@ -7,7 +7,7 @@ body > .topictitle1 {
 nav > ul:first-child::before { 
     content: "Contents";
     margin-top: 0;
-    padding-top: 0.75in;
+    padding-top: 0in;
 	padding-bottom: 14pt;
     font-size: 24pt;
     color: #000;
