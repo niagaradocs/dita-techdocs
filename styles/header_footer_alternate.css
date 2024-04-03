@@ -2,8 +2,8 @@
 
 /* TABLE OF CONTENTS */
 @page toc:left{
-    @bottom-left{
-        content: "Copyright © 2024 Tridium";
+    @bottom-left {
+        content: counter(page);
         letter-spacing: 0.025em;
         color: #000;
         border: none;
@@ -11,10 +11,10 @@
         font-size:8pt;
         font-style: normal;
         font-weight: 400;
-        
-}
+    }
     @bottom-right {
-        content: "xxx";
+        content: string(revision-date);
+        text-align: right;
         letter-spacing: 0.025em;
         color: #000;
         border: none;
@@ -22,10 +22,9 @@
     }
 }
 
-/* ----remove for now-------------
-@page toc:right{
-    @bottom-right{
-        content: "Copyright © 2024 Tridium";
+@page toc:right {
+    @bottom-right {
+        content: counter(page);
         letter-spacing: 0.025em;
         color: #000;
         border: none;
@@ -33,9 +32,9 @@
         font-size:8pt;
         font-style: normal;
         font-weight: 400;        
-}
+    }
     @bottom-left{
-        content: "yyy";
+        content: string(revision-date);
         letter-spacing: 0.025em;
 		color: #000;
         border: none;
@@ -45,7 +44,7 @@
         font-weight: 400;
 	}
 }
-*/
+
 /* DOCUMENT BODY */
 @page:left{
     @top-right{
