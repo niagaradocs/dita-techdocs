@@ -10,6 +10,7 @@ nav ul li:before {
   counter-increment: toc_level1;
   content: "Chapter " counter(toc_level1) ". ";
 }
+/******** only number top level Chapter no sublevel numbering ****************/
 nav ul ul {
   counter-reset: toc_level2;
 }
