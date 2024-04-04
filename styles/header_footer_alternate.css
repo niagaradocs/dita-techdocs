@@ -63,7 +63,7 @@
         font-weight: 400;
 	}
 	@top-right{
-		content: "{map.topic.title}";
+		content: "{map.title}";
 		line-height: 1em;
 		font-weight: 400;
 		color: #000;

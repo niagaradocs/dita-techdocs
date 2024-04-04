@@ -61,14 +61,14 @@ nav ul li {
 /*  padding: 2px 0px 2px 0px; */
     font-size: 10pt;
     margin-left: 0px;
-    color: #000;
+    color: red;
   }
 
 /* Style level-1 (chapter) topics that have children. */
 nav > ul:has(ul) > li {
     font-weight: 800;
     padding-top: 2pt;
-    color: #000;
+    color: blue;
 }
 nav > ul:has(ul) > li:first-child {
  /* padding-top: 2px; */
