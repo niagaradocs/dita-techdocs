@@ -8,7 +8,7 @@ nav > ul:first-child::before {
     content: "Contents";
     margin-top: 0;
     padding-top: 0in;
-	padding-bottom: 14pt;
+	padding-bottom: 0.25in;
     font-size: 24pt;
     color: #000;
     text-align: left;
@@ -21,7 +21,7 @@ nav > ul:first-child::before {
 nav {
  /* counter-reset: chapter; Initializes the chapter counter */
  /* letter-spacing: 0.025em; */
-    page-break-after: always;
+    page-break-after: right;
 }
 
 /* Style the font for the entire TOC. */
@@ -129,7 +129,7 @@ nav ul ul ul ul ul {
     content: none;
 }
 
-/* You can assign the @outputclass="no_toc" to the root element of a map to hide the table of contents. */
+/* You can assign the @outputclass="no_toc" to the root element of a map to hide it from the table of contents. */
 body.no_toc > nav {
     display: none;
 }
@@ -188,3 +188,50 @@ div.mini-toc-wrapper a::after {
     font-weight: 400;
     font-size: 16px;
 }
+/**** CUSTOMIZATIONS FOR NIAGARA DOCS ********/
+
+/* TABLE OF CONTENTS (TOC) NUMBERING */
+/* Reset the chapter counter at the beginning of the TOC */
+nav ul {
+  counter-reset: toc_level1;
+}
+
+/* Increment toc_level1 only for direct children list items of the top ul */
+nav > ul > li:before {
+  counter-increment: toc_level1;
+  content: "Chapter " counter(toc_level1) ". ";
+}
+
+/* Ensure sub-levels do not reset toc_level1 and have no numbering prefix */
+nav ul ul {
+  counter-reset: toc_level2; /* Reset for cleanliness, but not strictly necessary */
+}
+
+nav ul ul li:before {
+  content: ""; /* Or some formatting to indicate sub-chapters without numbering */
+}
+
+/* Setup the chapter-level counter at the beginning of the document */
+html {
+    counter-reset: section_level1;
+}
+
+/* Increment and display the chapter counter for each chapter title within <article> elements */
+article h1.title.topictitle1:before {
+    counter-increment: section_level1;
+    content: "Chapter " counter(section_level1) "  ";
+}
+
+/* Correct handling for "About This Guide" and "Legal Notices" */
+/* Prevent chapter increment for the Legal Notices and About This Guide topics */
+    h1#ariaid-title1:before,
+    h1#ariaid-title2:before {
+    counter-increment: section_level1 0; /* Correctly prevents incrementing the chapter counter */
+    content: ""; /* Removes "Chapter" prefix */
+}
+
+/* Optional: Reset section counters for sublevels if you use them for other purposes */
+.topictitle2 {
+    counter-reset: section_level2;
+}
+/* And so on for .topictitle3, .topictitle4... */

@@ -204,6 +204,13 @@ div.legal_niagara_tridium {
     margin-top: 8pt; /* Slightly larger than the first paragraph, but still reduced */
 }
 
+/**** legal plus about this guide ****/
+h1#ariaid-title1,
+h1#ariaid-title2 {
+    font-size: 16pt;
+    font-weight: 800;
+    padding: #000;
+}
 
 /* Target strong tags with .ph.b classes specifically for font size and color adjustments */
 #legal_niagara_tridium--en--1__address .ph.b {
