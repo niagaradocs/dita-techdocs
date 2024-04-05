@@ -17,10 +17,12 @@ nav > ul:first-child::before {
     display: block;
     clear: both;
 }
+
 /* Set padding, margins, and letter spacing for the whole TOC. */
 nav {
  /* counter-reset: chapter; Initializes the chapter counter */
  /* letter-spacing: 0.025em; */
+	margin-left: 0.75in;
     page-break-after: right;
 }
 
@@ -31,8 +33,8 @@ nav * {
     font-weight: 500;
 /*  color: #000; */
     text-decoration: none;
-    padding-left: 1in;
-    padding-right: 0.5in;
+    padding-left: 0in;
+    padding-right: 0.0in;
 }
 
 /* Style "<topic_title>.....................<page>". */
