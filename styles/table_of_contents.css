@@ -111,7 +111,7 @@ nav > ul:has(ul) > li > a::after {
 
 /* Level-2 (subchapter) and deeper. */
 nav ul li ul li {
-    padding-left: 0.75in;
+    padding-left: 0.875in;
 }
 nav > ul > li > ul > li {
     padding-top: 0px;
