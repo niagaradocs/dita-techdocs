@@ -47,7 +47,7 @@ nav a::after {
 
 /* Set margins and padding for the TOC links. */
 nav ul { 
-    margin: 4pt 0pt 4pt 0pt;
+    margin: 0pt 0pt 0pt 0pt;
     padding: 0px;
 }
 
@@ -62,14 +62,28 @@ nav ul li {
     padding: inherit;
 /*  padding: 2px 0px 2px 0px; */
     font-size: 10pt;
-    margin-left: 0px;
-    color: red;
+    margin-left: 0in;
+    color: #000;
   }
+/* ---- Increment toc_level1 only for direct children list items of the top ul */
+nav > ul > li:before {
+  counter-increment: toc_level1;
+  content: "Chapter " counter(toc_level1) "";
+  padding-right: 0.125in;
+}
+
+/* Style level-1 (chapter) topics that do not have children. */
+nav > ul > li > a,
+nav > ul > li:before {
+    font-weight: 800;
+    font-size: 10pt;
+    color: #000;
+}
 
 /* Style level-1 (chapter) topics that have children. */
 nav > ul:has(ul) > li {
     font-weight: 800;
-    padding-top: 2pt;
+    
     color: blue;
 }
 nav > ul:has(ul) > li:first-child {
@@ -85,7 +99,7 @@ nav > ul:has(ul) > li,
 
 nav > ul:has(ul) > li:before {
     color: #000;
-    font-weight: 500;
+    font-weight: 800;
     font-size: 10pt;
 }
 
@@ -93,20 +107,14 @@ nav > ul:has(ul) > li > a::after {
     color: #000;
     font-weight: 500;
 }  
-/* Style level-1 (chapter) topics that do not have children. */
-nav > ul > li > a,
-nav > ul > li:before {
-    font-weight: 800;
-    font-size: 10pt;
-    color: #000;
-}
+
 
 /* Level-2 (subchapter) and deeper. */
 nav ul li ul li {
-    padding-left: 0.5in;
+    padding-left: 0.75in;
 }
 nav > ul > li > ul > li {
-    padding-top: 2px;
+    padding-top: 0px;
 }
 nav ul li ul li, 
 nav ul li ul li:before {
@@ -123,6 +131,7 @@ nav > ul > li > ul > li > a::after {
 /* Level-3 and deeper. */
 nav ul li ul li ul li, 
 nav ul li ul li ul li:before {
+    padding-left: 0.25in;
     font-weight: 400;
 }
 
