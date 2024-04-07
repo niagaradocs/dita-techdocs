@@ -21,7 +21,7 @@
         background-color: #fff;
     }
 	@top-right{
-		content: "{map.title}";
+		content: "Contents";
 		line-height: 1em;
 		font-weight: 400;
 		color: #000;
@@ -34,7 +34,7 @@
         font-style: normal;
         font-weight: 400;
         text-transform: none;
-        content: "{map.topic.title}";
+        content: string(document-title);
         letter-spacing: 0.025em;
         line-height: 1em;
     }
