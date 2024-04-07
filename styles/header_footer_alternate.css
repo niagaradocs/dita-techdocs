@@ -63,7 +63,7 @@
         font-weight: 400;
 	}
 	@top-right{
-		content: "{map.title}";
+		content: string(document-title);
 		line-height: 1em;
 		font-weight: 400;
 		color: #000;
@@ -71,12 +71,12 @@
 		letter-spacing: 0.025em;
 	}
     @top-left{
+		content: "Contents";
         font-size: 8pt;
         color: #000;
         font-style: normal;
         font-weight: 400;
         text-transform: none;
-        content: "{map.title}";
         letter-spacing: 0.025em;
         line-height: 1em;
     }
