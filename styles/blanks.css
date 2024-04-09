@@ -1,8 +1,8 @@
 /* Starts each chapter (level-1 topic) on the right page. Insert a blank page before a chapter if needed. */
-body > nav ~ article.nested0 {
+/* body > nav ~ article.nested0 {
     page-break-before: left;
 }
-
+*/
 /* Add a blank page after the LEGAL page. */
 nav {
     page-break-before: right;
