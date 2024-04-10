@@ -55,13 +55,13 @@ nav {
         border-top: none;
         background-color: #fff;
         margin: 0;
-        content: "";
+        content: "bottom right blank";
     }
     @bottom-left {
         background-image: none;
         border-top: none;
         background-color: #fff;
         margin: 0;
-        content: "";
+        content: "left blank";
     }
 }

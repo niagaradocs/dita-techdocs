@@ -1,11 +1,12 @@
   /* Differentiate the cover page from the TOC and the document body. */
-/* Copy of styles on github so I can test faster */
+/* I think this is a duplicate of what is on 'orientation_size.css
  @page {
     margin:0in;
     size: US-Letter portrait !important;
     background-color: fff;
  }
-
+ */
+ 
   /* Differentiate the cover page from the TOC and the document body. */
 .cover-page-container {
     prince-page-group: start;

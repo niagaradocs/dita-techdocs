@@ -2,7 +2,19 @@
  * Cover page
  * Table of content
  * Document body */
- @page {
+:root {
+	--font-family-body: "Avenir", Arial, Helvetica, sans-serif;
+    --font-size-body: 8pt;
+	--font-weigh-normal: 500;
+	--font-style-normal: normal;
+    --text-color: #000;
+    --letter-spacing: 0.025em;
+    --background-color: #fff;
+	--padding-body: 0in;
+	--margin-body: 0in;
+}
+
+ @page, @page toc {
     margin:0.75in;
     size: US-Letter portrait !important;
     background-color: fff;
@@ -10,6 +22,23 @@
 	font-size: 8pt;
 	font-weight: 500;
 }
+
+@page toc:left, @page toc:right, @page:left, @page:right {
+    @bottom-left, @bottom-right, @top-left, @top-right {
+        letter-spacing: var(--letter-spacing);
+        color: var(--text-color);
+        border: none;
+        background-color: var(--background-color);
+		font-family: var(--font-family-body);
+        font-size: var(--font-size-body);
+        font-style: var(--font-style-normal);
+        font-weight: var(--font-weight-normal);
+		padding: var(--padding-body);
+    }
+}
+ 
+ 
+/* hiding for now 
 
 @page:right {
     @top-right {
@@ -47,7 +76,7 @@
         margin-right:0.0n; 
     }	
 }
-
+*/
 /** TOC definition ***For Header and Footer TOC see "header_footer_alternate.css" */
 nav > ul:first-of-type {
     page: toc;
