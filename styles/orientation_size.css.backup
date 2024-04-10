@@ -31,15 +31,30 @@
 	margin: var(--margin-default);
 }
 
+ 
+@page toc:left, {
+    @bottom-left, @bottom-right, @top-left, @top-right {
+		font-family: var(--font-family-body);
+        font-size: var(--font-size-body);
+        font-style: var(--font-style-normal);
+        font-weight: var(--font-weight-normal);
+    }
+}
+@page toc:right {
+	
+}
+ 
+*/
 /** TOC definition ***For Header and Footer TOC see "header_footer_alternate.css" */
-
 nav > ul:first-of-type {
-    -prince-page-group: start;
     page: toc;
+    prince-page-group: start;
 }
 @page toc {
-
-} 
+    size: US-Letter;
+    margin: 0.75in;
+    background-color: #fff;
+}
 
 /************************* Fixes ****************************************************/
 /* Prevent items from overflowing the page. */

@@ -1,204 +1,98 @@
-/* Alternating header footers */
-
-/* TABLE OF CONTENTS */
-@page toc:left{
-    @bottom-left {
-        content: counter(page);
-        letter-spacing: 0.025em;
-        color: #000;
-        border: none;
-        background-color: #fff;
-        font-size:8pt;
-        font-style: normal;
-        font-weight: 400;
-    }
-    @bottom-right {
-        content: string(revision-date);
-        text-align: right;
-        letter-spacing: 0.025em;
-        color: #000;
-        border: none;
-        background-color: #fff;
-    }
-	@top-right{
-		content: "Contents";
-		line-height: 1em;
-		font-weight: 400;
-		color: #000;
-		font-size: 8pt;
-		letter-spacing: 0.025em;
-	}
-    @top-left{
-        font-size: 8pt;
-        color: #000;
-        font-style: normal;
-        font-weight: 400;
-        text-transform: none;
-        content: string(document-title);
-        letter-spacing: 0.025em;
-        line-height: 1em;
-    }
-}
-
-
-@page toc:right {
-    @bottom-right {
-        content: counter(page);
-        letter-spacing: 0.025em;
-        color: #000;
-        border: none;
-        background-color: #fff;
-        font-size:8pt;
-        font-style: normal;
-        font-weight: 400;        
-    }
-    @bottom-left{
-        content: string(revision-date);
-        letter-spacing: 0.025em;
-		color: #000;
-        border: none;
-        background-color: #fff;
-        font-size:8pt;
-        font-style: normal;
-        font-weight: 400;
-	}
-	@top-right{
-		content: string(document-title);
-		line-height: 1em;
-		font-weight: 400;
-		color: #000;
-		font-size: 8pt;
-		letter-spacing: 0.025em;
-	}
-    @top-left{
-		content: "Contents";
-        font-size: 8pt;
-        color: #000;
-        font-style: normal;
-        font-weight: 400;
-        text-transform: none;
-        letter-spacing: 0.025em;
-        line-height: 1em;
-    }
-}
-
-/* DOCUMENT BODY */
-@page:left{
-    @top-right{
-        content: "Company Name";
-        line-height: 1em;
-        font-weight: 400;
-        color: #000;
-        font-size: 8pt;
-        letter-spacing: 0.025em;
-        }
-    @top-left{
-        font-size: 8pt;
-        color: #000;
-        font-style: normal;
-        font-weight: 400;
-        text-transform: none;
-        content: "{map.title}";
-        letter-spacing: 0.025em;
-        line-height: 1em;
-    }
-    @bottom-left{
-        content: counter(page);
-        letter-spacing: 0.025em;
-        color: #000;
-        font-style: normal;
-        border: none;
-        background-color: #fff;
-        font-size: 8pt;
-        font-weight: 400;
-    }
-    @bottom-right {
-        font-size: 8pt;
-        border: none;
-        background-color: #fff;
-        font-weight: 400;
-        content: "Date";
-        letter-spacing: 0.025em;
-    }
-}
-
-@page:right{
-    @top-left{
-        content: "{map.title}";
-        line-height: 1em;
-        font-weight: 400;
-        color: #000;
-        font-size: 8pt;
-        letter-spacing: 0.025em;    }
-    @top-right{
-        font-size: 8pt;
-        color: #000;
-        font-style: normal;
-        font-weight: 400;
-        text-transform: none;
-        content: "{chapter.title}";
-        letter-spacing: 0.025em;
-        
-        text-align: right;
-        line-height: 1em;
-    }
-    @bottom-right{
-        content: counter(page);
-        letter-spacing: 0.025em;
-        color: #000;
-        font-style: normal;
-        border: none;
-        background-color: #fff;
-        font-size: 8pt;
-        font-weight: 400;
-      }
-    @bottom-left{
-        border: none;
-        background-color: #fff;
-        font-size: 8pt;
-        font-style: normal;
-        font-weight: normal;
-        color: #000;
-        font-weight: 400;
-        content: "Date";
-        letter-spacing: 0.025em;
-    }
-}
-/************* Map title customization for header and footer ************* /
-/* Generate a map title in the header. */
+/* Generate a map title and date for the header. */
 .revision-date {
     string-set: revision-date content();
 	display: none;
 }
-	
+article h1.title.topictitle1 {
+    string-set: chapter-title content();
+    break-before: right;
+}
+/* Alternating header footers */
+/*********** MAIN PAGE HEADER FOOTER ****************/
 @page:left {
-    @top-right {
-        content: "{map.title}"; /* working only when in Heretto editor */
-        }
     @top-left {
-        content: "{chapter.title}";
-        }
+        content: "Chapter " counter(section_level1) "     "string(chapter-title);
+		margin-left: 0in;
+        padding-left: 0in;
+    }
+    @top-right {
+        content: "{map.title}";
+        padding-right: 0in;
+        margin-right:0.0n; 
+    }
+    @bottom-left {
+        content: counter(page);
+		margin-left: 0in;
+        padding-left: 0in;
+	}
+    @bottom-right {
+        content: string(revision-date);
+		margin-right: 0in;
+        padding-right: 0in;
+    }
+}
+ @page:right {
+    @top-left {
+        content: "{map.title}";
+        margin-left: 0in;
+        padding-left: 0in;
+    }
+    @top-right {
+        content: "Chapter " counter(section_level1) "     "string(chapter-title);
+        margin-right: 0in;
+        padding-right: 0n; 
+    }
+    @bottom-left {
+        content: string(revision-date);
+        text-align: right; 
+        margin-left: 0.0in;
+        padding-left: 0.0in;
+    }
+    @bottom-right {
+        content: counter(page);
+        margin-right:0.0in;
+        padding-right: 0.0in;
+    }
+ }
+/** TOC GROUP START PAGE **/
+nav > ul:first-of-type {
+    page: toc;
+    prince-page-group: start;
+}
+@page toc {
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-body);
+    font-style: var(--font-style-normal);
+    font-weight: var(--font-weight-normal);
+}
+
+/******* TABLE OF CONTENTS HEADER FOOTER ******/    
+@page toc:left{
+    @top-left{
+    	content: "Contents";}
+    @top-right{
+        content: "{map.title}";
+	}
+    @bottom-left {
+        content: counter(page);
+    }
     @bottom-right {
         content: string(revision-date);
         text-align: right;
-	}
-    @bottom-left {
-        font-size: 8pt;
-        font-weight: 400; 
-        }        
+    }
 }
 
-
-@page:right {
-    @top-right {
+@page toc:right {
+    @top-left{
+		content: string(document-title);
     }
-    @top-left {
-        content: "{map.title}";
-        } 
-	@bottom-right {
+	@top-right{
+		content: "Contents";
 	}
-    @bottom-left {
+    @bottom-left{
         content: string(revision-date);
-        text-align: left;
+	}    
+    @bottom-right {
+        content: counter(page);      
     }
 }
