@@ -7,6 +7,15 @@ article h1.title.topictitle1 {
     string-set: chapter-title content();
     break-before: right;
 }
+h2.title.sectiontitle {
+    font-size: 11pt;
+    font-weight: 800;
+    padding-top: 0.1in;
+}
+/* Level-2 (subchapter) and deeper. */
+nav ul li ul li {
+    padding-left: 0.875in;
+}
 /* Alternating header footers */
 /*********** MAIN PAGE HEADER FOOTER ****************/
 @page:left {
