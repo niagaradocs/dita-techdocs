@@ -1,4 +1,7 @@
-/* Generate a map title and date for the header. */
+/* Capture doc title string and date for the header. */
+.cover-page-container .cover-page-content .title-text .title.topictitle1 {
+    string-set: document-title content(text);
+}
 .revision-date {
     string-set: revision-date content();
 	display: none;
@@ -80,7 +83,7 @@ nav > ul:first-of-type {
     @top-left{
     	content: "Contents";}
     @top-right{
-        content: "{map.title}";
+    	content: string(document-title);
 	}
     @bottom-left {
         content: counter(page);
@@ -100,6 +103,7 @@ nav > ul:first-of-type {
 	}
     @bottom-left{
         content: string(revision-date);
+        text-align: left;
 	}    
     @bottom-right {
         content: counter(page);      

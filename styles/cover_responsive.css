@@ -154,7 +154,7 @@ div.legal_niagara_tridium {
 }
 
 div.legal_niagara_tridium {
-    prince-page-group: start;
+  -prince-page-group: start;
 	page:legal_page;
 	margin-top: 0in;
     background-color: #fff;
@@ -163,7 +163,7 @@ div.legal_niagara_tridium {
     page-break-after: always;
 }
 .cover-page-container {
-    prince-page-group: start;
+    -prince-page-group: start;
     page: cover_page;
     counter-reset: page 1;
   }
