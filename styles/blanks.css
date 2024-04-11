@@ -4,9 +4,9 @@
 }
 */
 /* Add a blank page after the LEGAL page. */
-nav {
+/* nav {
     page-break-before: right;
-}
+} */
 
 /* Style blank pages. */
 @page toc:blank {
@@ -14,27 +14,27 @@ nav {
        background-image: none;
        background-color: #fff;
        margin: 0.75in;
-       content:"blankright";
+       content:"";
    }
    @top-left {
        background-image: none;
        background-color: #fff;
        margin: 0.75in;
-       content: "blankleft";
+       content: "";
    }
    @bottom-right {
        background-image: none;
        border-top: none;
        background-color: #fff;
        margin: 0;
-       content: counter(page);
+       content: string(revision-date);       
    }
    @bottom-left {
        background-image: none;
        border-top: none;
        background-color: #fff;
        margin: 0;
-       content: string(revision-date);
+       content: counter(page);
    }
 }
 @page:blank {
@@ -55,13 +55,13 @@ nav {
         border-top: none;
         background-color: #fff;
         margin: 0;
-        content: "bottom right blank";
+        content: string(revision-date);
     }
     @bottom-left {
         background-image: none;
         border-top: none;
         background-color: #fff;
         margin: 0;
-        content: "left blank";
+        content: counter(page);
     }
 }
