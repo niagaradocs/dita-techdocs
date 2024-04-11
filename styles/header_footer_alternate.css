@@ -19,7 +19,48 @@ h2.title.sectiontitle {
 nav ul li ul li {
     padding-left: 0.875in;
 }
+
+/* Target both "topic reference nested0" and "topic concept nested0" classes */
+.topic.reference.nested0, .topic.concept.nested0 {
+    break-before: page; /* Ensure it starts on a new page */
+    -prince-page-group: start; /* Start a new page group */
+    page: preface; /* Assign a named page for special styling */
+}
+
+/* Define styles for the preface named page */
+@page preface:left{
+    @top-left{
+    	content: ""; }
+    @top-right{
+    	content: string(document-title);
+	}
+    @bottom-left {
+        content: counter(page);
+    }
+    @bottom-right {
+        content: string(revision-date);
+        text-align: right;
+    }
+}
+
+@page preface:right {
+    @top-left{
+		content: "";
+    }
+	@top-right{
+		content: "";
+	}
+    @bottom-left{
+        content: string(revision-date);
+        text-align: left;
+	}    
+    @bottom-right {
+        content: counter(page);      
+    }
+}
+
 /* Alternating header footers */
+
 /*********** MAIN PAGE HEADER FOOTER ****************/
 @page:left {
     @top-left {
