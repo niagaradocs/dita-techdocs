@@ -60,11 +60,10 @@ nav ul li ul li {
 }
 /* Start MAIN DOCUMENT CHAPTERS ********/
 /* Target "chapter_start" main document */
-.chapter_start, #ariaid-title5 {
-    break-before: page; /* Ensure it starts on a new page */
+#ariaid-title5 {
+    /* break-before: page; */ /* Ensure it starts on a new page */
     -prince-page-group: start; /* Start a new page group */
     page: main_document; /* Assign a named page for special styling */
-    color: rgb(230, 245, 16);
 }
 
 /* Alternating header footers */
