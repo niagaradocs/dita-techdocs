@@ -4,10 +4,10 @@
 }
 
 /* Insert a page-break before chapters (level-1 topics) that contain children topics. */
- article:has(>.topictitle1) {
+ /* article:has(>.topictitle1) {
   page-break-before: always;
   break-inside: auto;
-}
+} */
 
 /* Break the following elements over multiple pages: */
 table,
