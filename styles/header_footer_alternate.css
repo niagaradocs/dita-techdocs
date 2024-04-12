@@ -8,7 +8,7 @@
 }
 article h1.title.topictitle1 {
     string-set: chapter-title content();
-/*    page-break-before: right; */
+    page-break-before: right; 
 }
 h2.title.sectiontitle {
     font-size: 11pt;
