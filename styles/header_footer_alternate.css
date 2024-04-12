@@ -8,7 +8,6 @@
 }
 article h1.title.topictitle1 {
     string-set: chapter-title content();
-    break-before: right;
 }
 h2.title.sectiontitle {
     font-size: 11pt;
@@ -21,7 +20,7 @@ nav ul li ul li {
 }
 
 /* PREFACE PAGE START */
-#ariaid-title2 {
+.topic.reference.nested0, .topic.concept.nested0 {
     break-before: page; /* Ensure it starts on a new page */
     -prince-page-group: start; /* Start a new page group */
     page: preface; /* Assign a named page for special styling */
