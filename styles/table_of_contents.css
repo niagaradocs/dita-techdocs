@@ -13,7 +13,7 @@ nav > ul:first-child::before {
     color: #000;
     text-align: left;
     font-style: normal;
-    font-weight: 800;
+    font-weight: var(--font-weight-normal);
     display: block;
     clear: both;
 }

@@ -1,7 +1,7 @@
 /* Style cite elements. */
 .cite {
   color: #000;
-  font-style: normal;
+  font-style: var(--font-style-italic);
   font-weight: normal;
 }
 

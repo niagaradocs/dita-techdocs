@@ -21,7 +21,7 @@ figcaption:not(figcaption > .desc) {
   border: none;
   text-align: left;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
   word-wrap: break-word;
   line-height: 1.2em;
   background-color: transparent;

@@ -50,7 +50,7 @@ article,
   line-height: 1.5em;
   font-style: normal;
   text-align: left;
-  font-size: 10pt;
+  font-size: var(--font-size-body);
 }
 
 /* Set how the strong elements are displayed.

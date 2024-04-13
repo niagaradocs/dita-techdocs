@@ -24,6 +24,13 @@ li.choice::before {
   vertical-align: center;
 }
 
+/* temp add for steps */
+/* This targets only the first level of <li> items within .steps that are direct children */
+/* ol.steps > li {
+  margin-left: .75in;
+} */
+
+
 /* Implement custom steps, substeps, and choices numbering. */
 ol.steps,
 ul.choices,

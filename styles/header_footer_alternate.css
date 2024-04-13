@@ -11,8 +11,8 @@ article h1.title.topictitle1 {
     page-break-before: right; 
 }
 h2.title.sectiontitle {
-    font-size: 11pt;
-    font-weight: 800;
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-heavy);
     padding-top: 0.1in;
 }
 /* Level-2 (subchapter) and deeper. */
