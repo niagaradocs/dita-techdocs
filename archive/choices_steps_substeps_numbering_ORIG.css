@@ -4,26 +4,26 @@
  */
 
 /* Style step, substep, and choice elements. */
-li.step::before,
-li.substep::before,
-li.choice::before {
-  margin: 0px 10px 0px -31px;
-  display: inline-block;
-  box-sizing: border-box;
-  border-radius: 50%;
-  background-color: #000;
+/*  li.step::before,
+  li.substep::before,
+  li.choice::before {
+    margin: 0px 10px 0px -31px;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #000;
 
-  width: 1.5rem;
-  height: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
 
-  font-weight: bold;
-  font-size: 16px;
-  color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
 
-  text-align: center;
-  vertical-align: center;
-}
-
+    text-align: center;
+    vertical-align: center;
+  }
+*/
 /* temp add for steps */
 /* This targets only the first level of <li> items within .steps that are direct children */
  ol.steps > li {
