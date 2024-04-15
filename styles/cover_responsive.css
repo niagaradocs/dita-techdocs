@@ -205,14 +205,29 @@ div.legal_niagara_tridium {
     margin-top: 8pt; /* Slightly larger than the first paragraph, but still reduced */
 }
 
-/**** legal plus about this guide ****/
-h1#ariaid-title1,
-h1#ariaid-title2 {
+/**** legal page title ****/
+h1#ariaid-title1 {
     font-size: 16pt;
     font-weight: 800;
     padding: #000;
 }
-
+/* About this Guide, Change Log, Rel docs */
+#ariaid-title2, #ariaid-title3, #ariaid-title4 { 
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-title);
+  padding-bottom: .1in;
+}
+h2.title.sectiontitle, h3.title.sectiontitle {
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-heading);
+}
+p.shortdesc {
+  margin:0;
+  padding: 0;
+}
 /* Target strong tags with .ph.b classes specifically for font size and color adjustments */
 #legal_niagara_tridium--en--1__address .ph.b {
     font-size: 12pt;

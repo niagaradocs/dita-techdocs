@@ -23,39 +23,13 @@ li.choice::before {
   text-align: center;
   vertical-align: center;
 }
+
+/* temp add for steps */
 /* This targets only the first level of <li> items within .steps that are direct children */
-ol.steps {
-  margin-left: 0.55in;
-  counter-reset: stepCounter; /* Reset step counter for each ol.steps */
-  line-height: var(--line-height-body);
-}
-li.step::before,
-li.substep::before {
-    counter-increment: stepCounter; /* Increment counter */
-    content: "Step " counter(stepCounter) "."; /* Display Step and the number */
-    display: inline-block; /* Allows us to give it width and proper alignment */
-    width: 80px; /* Adjust width as needed to fit "Step" prefix */
-    margin-left: -90px; /* Pulls the label to the left of the list item */
-    text-align: right; /* Aligns the text to the right within the given width */
-    margin-right: 10px; /* Provides spacing between the label and the list text */
-    background-color: #fff;
-}
+ ol.steps > li {
+  margin-left: .25in;
+} 
 
-li.choice::before {
-    content: counter(choice, lower-alpha) "."; /* Nested choices with alphabets */
-    counter-increment: choice; /* Increment choice counter */
-    display: inline-block;
-    width: 80px; /* Same width for alignment */
-    margin-left: -.7in;
-    margin-bottom: .025in;
-    text-align: right;
-    margin-right: 10px;
-    background-color: #fff;
-}
-
-ul.choices {
-    counter-reset: choice; /* Reset choice counter for each ul.choices */
-}
 
 /* Implement custom steps, substeps, and choices numbering. */
 ol.steps,

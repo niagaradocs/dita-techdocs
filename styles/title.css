@@ -4,6 +4,10 @@
   clear: both;
 }
 
+/* Chapter Title */
+.title.topictitle1 {
+  margin-bottom: 0.2in;
+}
 /* Prevents all sorts of issues with titles that contains other tags. */
 .title * {
   display: inline;
@@ -26,7 +30,7 @@ figcaption:not(figcaption > .desc) {
   line-height: 1.2em;
   background-color: transparent;
   padding: 0px;
-  margin: 25px 0px 0px 0px;
+  margin: 8px 0px 0px 0px;
 }
 
 /* Remove margins for image and table titles. */

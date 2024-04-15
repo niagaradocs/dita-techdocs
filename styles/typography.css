@@ -41,15 +41,16 @@
     font-style: oblique;
 }
 /* Set the Avenir font properties for the document body and #content-wrapper. */
+/* Set the Avenir font properties for the document body and #content-wrapper. */
 body,
 article,
 .body * {
   color: #000;
   font-family: "Avenir", Helvetica, Arial;
-  font-weight: normal;
-  line-height: 1.5em;
-  font-style: normal;
-  text-align: left;
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-body);
+  font-style: var(--font-style-normal);
+  text-align: var(--text-align-normal);
   font-size: var(--font-size-body);
 }
 

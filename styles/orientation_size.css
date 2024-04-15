@@ -2,9 +2,9 @@
  * Cover page
  * Table of contents
  * Document body */
-:root {
+ :root {
 	--font-family-body: "Avenir", Arial, Helvetica, sans-serif;
-    --font-size-body: 8pt;
+    --font-size-body: 10pt;
 	--font-size-title: 24pt;
 	--font-size-h1: 14pt;
 	--font-size-h2: 11pt;
@@ -12,7 +12,12 @@
 	--font-weight-normal: 500;
 	--font-weight-heavy: 800;
 	--font-style-normal: normal;
+    --font-style-italic: italic;
+    --line-height-title: 1.2;
+    --line-height-heading: 1.2;
+    --line-height-body: 1.2;
     --text-color: #000;
+    --text-align-normal: left;
     --letter-spacing: 0.025em;
     --background-color: #fff;
 	--padding-body: 0in;
