@@ -5,20 +5,23 @@ Align unordered lists with ordered lists. */
 }
 
 /* Add a paragraph-like margin before ordered and unordered lists. */
+/*
 ul, .ul,
 .ol {
   margin-top: 0.05in;
   margin-left: 0.0in;
   padding: 0in;
 }
-
+*/
 /* Set paragraph-like margins for list items. */
+/*
 .li,
 .li p,
 .li .p {
   margin: 0px;
   padding: 0in;
 }
+*/
 
 /* Style step, substep, and choice elements. */
 .step,
