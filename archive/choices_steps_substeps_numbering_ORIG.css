@@ -44,10 +44,12 @@ ol.steps > li.step::before {
 ol.steps > li.step {
   counter-increment: li;
 }
+/* 
 ul.steps-unordered > li.step::before,
 li.choice::before {
   content: "▪";
 }
+*/
 li.substep::before {
   content: counter(li, lower-alpha);
 }
