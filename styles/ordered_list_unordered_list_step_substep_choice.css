@@ -1,7 +1,7 @@
 /* Style unordered lists (including: steps-unordered, choices).
 Align unordered lists with ordered lists. */
 .ul {
-  list-style: square;
+  list-style: disc;
 }
 
 /* Add a paragraph-like margin before ordered and unordered lists. */
@@ -14,11 +14,10 @@ ul, .ul,
 }
 */
 /* Set paragraph-like margins for list items. */
-/*
 .li,
 .li p,
 .li .p {
-  margin: 0px;
+  margin: 0.05in;
   padding: 0in;
 }
 */
@@ -33,7 +32,7 @@ ul, .ul,
 
 /* Set margins between steps. */
 .step {
-  margin-top: 5px;
+  margin-top: 0.2in;
 }
 
 /* Set margins between choices and substeps. */
