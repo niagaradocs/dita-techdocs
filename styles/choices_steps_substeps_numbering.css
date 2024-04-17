@@ -10,7 +10,7 @@ ol.steps {
   counter-reset: stepCounter; /* Reset step counter for each ol.steps */
   line-height: var(--line-height-body);
 }
-
+/*
 li.step::before,
 li.substep::before {
   counter-increment: stepCounter; /* Increment counter */
@@ -22,6 +22,7 @@ li.substep::before {
   margin-right: 10px; /* Provides spacing between the label and the list text */
   background-color: #d8d5d5;
 }
+*/
 
 li.choice::before {
 /* content: counter(choice, lower-alpha) "."; */ /* Nested choices with alphabets */ 
