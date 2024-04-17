@@ -10,9 +10,8 @@ ol.steps {
   counter-reset: stepCounter; /* Reset step counter for each ol.steps */
   line-height: var(--line-height-body);
 }
-/*
-li.step::before,
-li.substep::before {
+
+li.step::before, {
   counter-increment: stepCounter; /* Increment counter */
   content: "Step " counter(stepCounter) "."; /* Display Step and the number */
   display: inline-block; /* Allows us to give it width and proper alignment */
@@ -20,35 +19,18 @@ li.substep::before {
   margin-left: -90px; /* Pulls the label to the left of the list item */
   text-align: right; /* Aligns the text to the right within the given width */
   margin-right: 10px; /* Provides spacing between the label and the list text */
-  background-color: #d8d5d5;
+  background-color: red;
 }
-*/
-
-li.choice::before {
-/* content: counter(choice, lower-alpha) "."; */ /* Nested choices with alphabets */ 
-  counter-increment: choice; /* Increment choice counter */
-  display: inline-block;
-  width: 80px; /* Same width for alignment */
-  margin-left: -.7in;
-  margin-bottom: .025in;
-  text-align: right;
-  margin-right: 10px;
-  background-color: #fff;
-}
-
-
-ul.choices {
-  counter-reset: choice; /* Reset choice counter for each ul.choices */
-}
-
+/* removed two sets of classes that number choices since we are not numbering them */
 /* Implement custom steps, substeps, and choices numbering. */
-/*
+/* may disable the following */
 ol.steps,
 ul.choices,
 ol.substeps {
   list-style: none;
   counter-reset: li;
 }
+
 ol.steps > li.step::before {
   content: counter(li);
 }
@@ -61,6 +43,8 @@ li.choice::before {
   content: "▪";
 }
 */
+/* end commenting out */
+
 li.substep::before {
   content: counter(li, lower-alpha);
 }
@@ -68,7 +52,7 @@ li.substep {
   counter-increment: li;
 }
 
-/* Fix the position of step element children. */
+/* Fix the position of step element children. I'm not sure about these */
 .stepresult,
 .info,
 .stepxmp,
@@ -76,7 +60,7 @@ li.substep {
 .substeps {
   font-style: normal;
   font-weight: normal;
-  border-left: 2px dotted #000;
+  border-left: 0px dotted #000; /* no border */
   margin: 0px 0px 5px -20px;
   padding: 2.5px 0px 0.5px 20.5px;
 }
