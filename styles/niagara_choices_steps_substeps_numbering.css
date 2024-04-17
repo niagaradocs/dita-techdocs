@@ -5,27 +5,6 @@
 
 /* Style step, substep, and choice elements. */
 /* This targets only the first level of <li> items within .steps that are direct children */
-ol.steps {
-  margin-left: 0.55in;
-  counter-reset: stepCounter; /* Reset step counter for each ol.steps */
-  line-height: var(--line-height-body);
-}
-
-li.step::before {
-  counter-increment: stepCounter; /* Increment counter */
-  content: "Step " counter(stepCounter) "."; /* Display Step and the number */
-  display: inline-block; /* Allows us to give it width and proper alignment */
-  width: 80px; /* Adjust width as needed to fit "Step" prefix */
-  margin-left: -90px; /* Pulls the label to the left of the list item */
-  text-align: right; /* Aligns the text to the right within the given width */
-  margin-right: 10px; /* Provides spacing between the label and the list text */
-}
-/* removed two sets of classes that number choices since we are not numbering them */
-/* Implement custom steps, substeps, and choices numbering. */
-/* may disable the following */
-/* ol.steps, */
-
-
 /* removed clases end commenting out */
 
 li.substep::before {
