@@ -29,23 +29,8 @@ ol.substeps {
   list-style: none;
   counter-reset: li;
 }
-/* 
-ol.steps > li.step::before {
-  content: counter(li);
-}
-*/
-/*
-ol.steps > li.step {  
-  counter-increment: li;
-}
-*/
 
-ul.steps-unordered > li.step::before,
-li.choice::before {
-  content: "▪";
-}
-*/
-/* end commenting out */
+/* removed clases end commenting out */
 
 li.substep::before {
   content: counter(li, lower-alpha);
