@@ -23,7 +23,7 @@ li.step::before {
 /* removed two sets of classes that number choices since we are not numbering them */
 /* Implement custom steps, substeps, and choices numbering. */
 /* may disable the following */
-ol.steps,
+/* ol.steps, */
 ul.choices,
 ol.substeps {
   list-style: none;
