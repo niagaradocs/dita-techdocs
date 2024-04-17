@@ -20,7 +20,7 @@ li.substep::before {
   margin-left: -90px; /* Pulls the label to the left of the list item */
   text-align: right; /* Aligns the text to the right within the given width */
   margin-right: 10px; /* Provides spacing between the label and the list text */
-  background-color: #fff;
+  background-color: #d8d5d5;
 }
 
 li.choice::before {
@@ -41,6 +41,7 @@ ul.choices {
 }
 
 /* Implement custom steps, substeps, and choices numbering. */
+/*
 ol.steps,
 ul.choices,
 ol.substeps {
@@ -53,7 +54,7 @@ ol.steps > li.step::before {
 ol.steps > li.step {
   counter-increment: li;
 }
-/*
+
 ul.steps-unordered > li.step::before,
 li.choice::before {
   content: "▪";
