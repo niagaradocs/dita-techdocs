@@ -11,7 +11,7 @@ ol.steps {
   line-height: var(--line-height-body);
 }
 
-li.step::before, {
+li.step::before {
   counter-increment: stepCounter; /* Increment counter */
   content: "Step " counter(stepCounter) "."; /* Display Step and the number */
   display: inline-block; /* Allows us to give it width and proper alignment */
@@ -19,7 +19,6 @@ li.step::before, {
   margin-left: -90px; /* Pulls the label to the left of the list item */
   text-align: right; /* Aligns the text to the right within the given width */
   margin-right: 10px; /* Provides spacing between the label and the list text */
-  background-color: red;
 }
 /* removed two sets of classes that number choices since we are not numbering them */
 /* Implement custom steps, substeps, and choices numbering. */
@@ -30,13 +29,16 @@ ol.substeps {
   list-style: none;
   counter-reset: li;
 }
-
+/* 
 ol.steps > li.step::before {
   content: counter(li);
 }
+*/
+/*
 ol.steps > li.step {
   counter-increment: li;
 }
+*/
 
 ul.steps-unordered > li.step::before,
 li.choice::before {
@@ -99,7 +101,7 @@ li.substep {
   margin-top: -24px;
   padding-left: 20px;
   margin-left: -20px;
-  border-left: 2px dotted #000;
+  border-left: 0px dotted #000;
 }
 
 /* Fix the position of notes before commands. */
