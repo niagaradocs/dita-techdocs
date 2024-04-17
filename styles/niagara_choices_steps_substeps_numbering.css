@@ -35,7 +35,7 @@ ol.steps > li.step::before {
 }
 */
 /*
-ol.steps > li.step {
+ol.steps > li.step {  
   counter-increment: li;
 }
 */
@@ -111,22 +111,7 @@ li.substep {
   margin-bottom: 30px;
   margin-left: 2px;
 }
-
-/* Place the required label before a step or substep. */
-li.step > strong,
-li.substep > strong {
-  display: block;
-  margin-top: -24px;
-  margin-left: 2px;
-  letter-spacing: 0.025em;
-  font-weight: bold;
-}
-strong ~ .cmd {
-  margin-top: 0px;
-  margin-bottom: -2px;
-  padding-bottom: 2px;
-}
-
+/* removed strong labeling here */ 
 /* Fix the placement of choicetables. */
 .choicetable {
   margin-left: 2px;
