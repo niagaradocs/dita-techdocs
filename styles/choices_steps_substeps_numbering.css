@@ -24,7 +24,7 @@ li.substep::before {
 }
 
 li.choice::before {
-  content: counter(choice, lower-alpha) "."; /* Nested choices with alphabets */
+/* content: counter(choice, lower-alpha) "."; */ /* Nested choices with alphabets */ 
   counter-increment: choice; /* Increment choice counter */
   display: inline-block;
   width: 80px; /* Same width for alignment */
@@ -34,6 +34,7 @@ li.choice::before {
   margin-right: 10px;
   background-color: #fff;
 }
+
 
 ul.choices {
   counter-reset: choice; /* Reset choice counter for each ul.choices */
