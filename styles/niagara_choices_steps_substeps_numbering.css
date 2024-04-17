@@ -13,7 +13,7 @@ ol.steps {
 
 li.step::before {
   counter-increment: stepCounter; /* Increment counter */
-  content: "Step " counter(stepCounter) "."; /* Display Step and the number */
+  content: "St0p " counter(stepCounter) "."; /* Display Step and the number */
   display: inline-block; /* Allows us to give it width and proper alignment */
   width: 80px; /* Adjust width as needed to fit "Step" prefix */
   margin-left: -90px; /* Pulls the label to the left of the list item */
