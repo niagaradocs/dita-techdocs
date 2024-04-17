@@ -219,8 +219,7 @@ article,
 li.step::before,
 li.substep::before,
 li.choice::before {
-  background-color: #dcdcdc;
-  color: #404040;
+   color: #404040;
 }
 .stepresult,
 .info,
