@@ -9,7 +9,9 @@
 
 li.substep::before {
   content: counter(li, lower-alpha);
+  color:aqua;
 }
+
 li.substep {
   counter-increment: li;
 }

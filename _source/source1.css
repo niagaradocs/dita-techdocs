@@ -1,0 +1,55 @@
+/* LAYOUT ***************************************************************/
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/typography.css");
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/cover_responsive.css");
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/orientation_size.css");
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/blanks.css");
+/* @import url("https://niagaradocs.github.io/dita-techdocs/styles/breaks.css#DISABLED"); */
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/color.css");
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/table_of_contents.css");
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/header_footer_alternate.css");
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara_ordered_list_unordered_list_step_substep_choice.css");
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara_choices_steps_substeps_numbering.css");
+
+/* Style step, substep, and choice elements. */
+.substep,
+.choice {
+  list-style-position: outside;
+  margin-left: 0.2in;
+}
+/============== *experiment =============*/
+ol.steps img.image {
+    display: block; /* Makes the image a block-level element, causing it to appear on a new line */
+    margin: 10px auto; /* Centers the image and adds space around it */
+    max-width: 100%; /* Ensures image does not overflow its container */
+    height: auto; /* Keeps image aspect ratio intact */
+}
+
+/* Set margins between steps. */
+.step {
+  margin-top: 1.25em;
+  color: red;
+}
+ol.steps {
+  margin-left: 0.55in;
+  counter-reset: stepCounter; /* Reset step counter for each ol.steps */
+  line-height: var(--line-height-body);
+}
+ol.steps > li.step::before {
+  counter-increment: stepCounter; /* Increment counter */
+  content: "Step" ; /* Display Step and the number */
+  vertical-align: top;
+  display: inline-block; /* Allows us to give it width and proper alignment */
+  width: 80px; /* Adjust width as needed to fit "Step" prefix */
+  margin-left: -1.15in; /* Pulls the label to the left of the list item */
+  text-align: right; /* Aligns the text to the right within the given width */
+  margin-right: 10px; /* Provides spacing between the label and the list text */
+}
+/* Display multiline commands with uniform indentation. */
+.cmd {
+margin-top: -1.2em;
+margin-bottom: 0.25em;
+display: block;
+clear: both;
+padding-left: 20px;
+margin-left: -20px;
+}
