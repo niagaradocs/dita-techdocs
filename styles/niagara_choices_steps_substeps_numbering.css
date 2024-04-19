@@ -59,9 +59,8 @@ li.substep {
 
 /* Display multiline commands with uniform indentation. */
 .cmd {
-  display: block;
-  clear: both;
-  margin-top: -24px;
+  display: inline;
+
   padding-left: 20px;
   margin-left: -20px;
   border-left: 0px dotted #000;
