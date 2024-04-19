@@ -17,17 +17,34 @@ li.substep {
   counter-increment: li;
 }
 */
+ol.steps {
+  margin-left: 0.35in;
+  margin-top: 0.75em;
+  counter-reset: stepCounter; /* Reset step counter for each ol.steps */
+  line-height: var(--line-height-body);
+}
+ol.steps > li.step::before {
+  counter-increment: stepCounter; /* Increment counter */
+  content: "Step "; /* Display Step and the number */
+  vertical-align: top;
+  display: inline-block; /* Allows us to give it width and proper alignment */
+  width: 0.55in; /* Adjust width as needed to fit "Step" prefix */
+  margin-left: -.85in; /* Pulls the label to the left of the list item */
+  text-align: right; /* Aligns the text to the right within the given width */
+  margin-right: 0.3in; /* Provides spacing between the label and the list text */
+}
+
 /* Fix the position of step element children. I'm not sure about these */
 .stepresult,
 .info,
 .stepxmp,
 .choices,
 .substeps {
-  font-style: normal;
-  font-weight: normal;
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-normal);
   border-left: 0px dotted #000; /* no border */
-  margin: 0px 0px 5px -20px;
-  padding: 2.5px 0px 0.5px 20.5px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
 }
 
 /* Fix the position of result and example elements. */
@@ -60,10 +77,16 @@ li.substep {
 /* Display multiline commands with uniform indentation. */
 .cmd {
   display: inline;
-
   padding-left: 20px;
   margin-left: -20px;
   border-left: 0px dotted #000;
+}
+
+ol.steps img.image {
+  display: block; /* Makes the image a block-level element, causing it to appear on a new line */
+/*  margin: 10px auto;  Centers the image and adds space around it */
+  max-width: 100%; /* Ensures image does not overflow its container */
+  height: auto; /* Keeps image aspect ratio intact */
 }
 
 /* Fix the position of notes before commands. */

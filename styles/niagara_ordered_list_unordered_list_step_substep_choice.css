@@ -21,18 +21,18 @@ ul, .ul,
   padding: 0in;
 }
 */
-
 /* Style step, substep, and choice elements. */
+.substep, 
 .step,
-.substep,
 .choice {
   list-style-position: outside;
-  margin-left: 33px;
+  margin: 0.25em 0 0.1em 0.25in;
 }
 
 /* Set margins between steps. */
 .step {
-  margin-top: 0.2in;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
 }
 
 /* Set margins between choices and substeps. */
