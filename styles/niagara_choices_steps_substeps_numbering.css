@@ -6,16 +6,17 @@
 /* Style step, substep, and choice elements. */
 /* This targets only the first level of <li> items within .steps that are direct children */
 /* removed clases end commenting out */
-
+/*
 li.substep::before {
   content: counter(li, lower-alpha);
   color:aqua;
 }
-
+*/
+/*
 li.substep {
   counter-increment: li;
 }
-
+*/
 /* Fix the position of step element children. I'm not sure about these */
 .stepresult,
 .info,
