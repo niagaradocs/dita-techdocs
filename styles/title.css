@@ -64,12 +64,14 @@ figcaption:not(figcaption > .desc) {
 
 .topictitle2,
 .topictitle2 * {
-  font-size: 14pt;
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-h1);
 }
 
 .topictitle3,
 .topictitle3 * {
-  font-size: 11pt;
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-h2);
 }
 
 .topictitle4,
@@ -86,13 +88,14 @@ figcaption:not(figcaption > .desc) {
 .topictitle9 *,
 .sectiontitle,
 .sectiontitle * {
-  font-size: 10pt;
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-h3);
 }
 
 /* Style section element titles. */
 .sectiontitle,
 .sectiontitle * {
-  font-weight: normal;
+  font-weight: var(--font-weight-normal);
 }
 
 /* Style table titles. */
