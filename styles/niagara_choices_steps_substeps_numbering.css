@@ -9,16 +9,14 @@
 /*
 li.substep::before {
   content: counter(li, lower-alpha);
-  color:aqua;
+  color: aqua;
 }
 */
-/*
 li.substep {
   counter-increment: li;
 }
-*/
 ol.steps {
-  margin-left: 0.35in;
+  margin-left: 0.55in;
   margin-top: 0.75em;
   counter-reset: stepCounter; /* Reset step counter for each ol.steps */
   line-height: var(--line-height-body);
@@ -56,10 +54,10 @@ ol.steps > li.step::before {
 
 /* Fix the position of choices and substeps elements. */
 .choices,
-.substeps {
-  padding: 2.5px 0px 0.5px 22px;
-  margin: 0px 0px 5px -20px;
+.substeps {   
+  margin: 0px 0px 0px 0.15in;
 }
+
 
 /* Fix the placement of choice element children. */
 .choice > .note,
