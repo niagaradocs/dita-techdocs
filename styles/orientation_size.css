@@ -33,7 +33,7 @@
 	color: var(--text-color);
 	letter-spacing: var(--letter-spacing);
 	padding: var(--padding-body);
-	margin: var(--margin-default);
+    margin: var(--margin-default);
 }
 
 /** TOC definition ***For Header and Footer TOC see "header_footer_alternate.css" */

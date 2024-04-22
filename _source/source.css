@@ -9,44 +9,23 @@
 @import url("https://niagaradocs.github.io/dita-techdocs/styles/header_footer_alternate.css");
 @import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara_ordered_list_unordered_list_step_substep_choice.css");
 @import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara_choices_steps_substeps_numbering.css");
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/note.css");
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/title.css");
 
-/* Set margins and positioning for steps and substeps. */
-.step,
-.substep,
-.choice {
-  list-style-position: outside; /* Ensures list marker is outside the content flow */
-  margin-left: 3px;
-  color: green; /* Sample color for visibility */
-}
-
-/* Special styling for ordered list containing steps */
-ol.steps {
-  margin-left: 0.55in; /* Adjust spacing to the left */
-  counter-reset: stepCounter; /* Reset step counter for each ol.steps */
-}
-
-/* Styling for the step indicator before each list item */
-ol.steps > li.step::before {
-  counter-increment: stepCounter; /* Increment counter */
-  content: "Step " ; /* Display "Step" and NOT the number */
-  display: inline-block; /* Keep this inline with text */
-  width: auto; /* Adjust width to content size */
-  margin-right: 10px; /* Space between the step indicator and the text */
-  vertical-align: middle; /* Align with the middle of the text */
-}
-
-/* Styling for command phrases within steps */
-.cmd {
-  display: inline; /* Keep commands inline to avoid breaking the flow */
-  padding-left: 0px; /* Adjust padding as necessary */
-  margin-left: 0px; /* Ensure alignment with the start of the list item */
-  border-left: 0px solid #000; /* Example border, can be adjusted or removed */
-}
-
-/* Handle images within steps */
-ol.steps img.image {
-  display: block; /* Display images as block to ensure they appear on a new line */
-  max-width: 100%; /* Limit image width to prevent overflow */
-  height: auto; /* Maintain aspect ratio */
-  margin: 10px 0; /* Add space above and below the image */
-}
+    /* Style the cover page title. */
+    .title-text .title, .title-text .title .ph {
+        color: #000;
+        font-family: "Avenir", Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        text-align: right;
+        font-size: 30pt;
+        line-height: 20pt;
+        letter-spacing: 0pt;
+        margin-top: 1.75in;
+        height: auto;
+        word-wrap: break-word; /* Should you need to wrap long words, set to break-word */
+        background-color: aquamarine;
+        
+      }
+      

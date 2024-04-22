@@ -58,7 +58,7 @@ figcaption:not(figcaption > .desc) {
 .topictitle1 * {
   margin: 0px;
   padding: 0px;
-  font-size: 24pt;
+  font-size: var(--font-size-title);
 
 }
 
