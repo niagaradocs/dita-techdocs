@@ -9,7 +9,8 @@
 @import url("https://niagaradocs.github.io/dita-techdocs/styles/header_footer_alternate.css");
 @import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara_ordered_list_unordered_list_step_substep_choice.css");
 @import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara_choices_steps_substeps_numbering.css");
-@import url("https://niagaradocs.github.io/dita-techdocs/styles/note.css");
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara-notes.css");
+
 @import url("https://niagaradocs.github.io/dita-techdocs/styles/title.css");
 
     /* Style the cover page title. */
