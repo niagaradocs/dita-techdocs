@@ -83,3 +83,8 @@
 li.li:not(.step, .substep, .choice) > div.note {
   margin: 5px 0px 5px 0px; 
 }
+/* Do not add margins before chapters (level-1 topics) that contain children topics. */
+article:has(.topictitle1, :not(article)) {
+  margin-top: 0.1in;
+  margin-bottom: 0.1in;
+}
