@@ -6,7 +6,7 @@
   display: block; /* inline-block breaks notes in tables */
   color: #000;
   margin: 10px 0px 10px 0px;
-  padding: 10px;
+/* padding: 10px; */
   width: 100%;
 }
 
@@ -29,34 +29,30 @@
   padding-right: 3.5px;
 }
  */
-/* Style the note element contents with the @type="note", @type="", and @type="trouble" attributes assigned. REMOVED */
-
-
 
 /* Style the note element contents with the @type="tip" and @type="fastpath" attributes assigned. REMOVED ICONS */
 .note_tip,
 .note_fastpath {
   border-color: #000;
-  background-color: #F4F4F4;
+  background-color: #fff;
 }
 .note_tip>.note__title,
 .note_fastpath>.note__title {
   color: #000;
 }
 
-
 /* Style the note element contents with the @type="important", @type="remember", and @type="restriction" attributes assigned. */
 .note_important,
 .note_remember,
 .note_restriction {
   border-color: #000;
-  background-color: #F4F4F4;
+  background-color: #fff;
 }
 .note_important>.note__title, 
 .note_remember>.note__title, 
 .note_restriction>.note__title {
   color: #000;
-
+}
 
 /* Style the note element contents with the @type="attention" attributes assigned. */
 .note_attention,
@@ -64,7 +60,7 @@
 .note_warning,
 .note_danger {
   border-color: #000;
-  background-color: #F4F4F4;
+  background-color: #fff
 }
 
 /* Style the note element contents with the @type="attention", @type="caution", @type="warning", and @type="danger" attributes assigned. */
@@ -85,5 +81,5 @@
 .example > .note,
 .result > .note,
 li.li:not(.step, .substep, .choice) > div.note {
-  margin: 5px 0px 5px 0px;
+  margin: 5px 0px 5px 0px; 
 }
