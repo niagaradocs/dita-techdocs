@@ -5,7 +5,7 @@
   clear: both;
   display: block; /* inline-block breaks notes in tables */
   color: #000;
-  margin: 10px 0px 10px 0px;
+/* margin: 10px 0px 10px 0px; */
 /* padding: 10px; */
   width: 100%;
 }
@@ -52,7 +52,7 @@
 .note_remember>.note__title, 
 .note_restriction>.note__title {
   color: #000;
-}
+} 
 
 /* Style the note element contents with the @type="attention" attributes assigned. */
 .note_attention,
