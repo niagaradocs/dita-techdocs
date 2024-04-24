@@ -30,7 +30,8 @@ nav ul li ul li {
 /* Define styles for the preface named page */
 @page preface:left{
     @top-left{
-    	content: ""; }
+    	content: "top left"; 
+    }
     @top-right{
     	content: string(document-title);
 	}
@@ -59,17 +60,19 @@ nav ul li ul li {
     }
 }
 /* Start MAIN DOCUMENT CHAPTERS ********/
+
 /* Target "chapter_start" main document */
 .chapter_start {
-   /* break-before: page; */ /* Ensure it starts on a new page */
+    break-before: right; */ /* Ensure it starts on a new page
     -prince-page-group: start; /* Start a new page group */
-    page: main_document; /* Assign a named page for special styling */
+    page: main; /* Assign a named page for special styling */
 }
+
 
 /* Alternating header footers */
 
 /*********** MAIN PAGE HEADER FOOTER ****************/
-@page:left {
+@page main:left {
     @top-left {
         content: "Chapter " counter(section_level1) string(chapter-title);
 		margin-left: 0in;
@@ -91,7 +94,7 @@ nav ul li ul li {
         padding-right: 0in;
     }
 }
- @page:right {
+ @page main:right {
     @top-left {
         content: string(document-title);
         margin-left: 0in;
