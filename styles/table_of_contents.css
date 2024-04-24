@@ -200,49 +200,67 @@ div.mini-toc-wrapper a::after {
     font-size: 16px;
 }
 /**** CUSTOMIZATIONS FOR NIAGARA DOCS ********/
-
 /* TABLE OF CONTENTS (TOC) NUMBERING */
-/* Reset the chapter counter at the beginning of the TOC */
+/* Level 1 (chapter-level) TOC numbering. */
 nav ul {
-  counter-reset: toc_level1;
-}
-
-/* Increment toc_level1 only for direct children list items of the top ul */
-nav > ul > li:before {
-  counter-increment: toc_level1;
-  content: "Chapter " counter(toc_level1) ". ";
-}
-
-/* Ensure sub-levels do not reset toc_level1 and have no numbering prefix */
-nav ul ul {
-  counter-reset: toc_level2; /* Reset for cleanliness, but not strictly necessary */
-}
-
-nav ul ul li:before {
-  content: ""; /* Or some formatting to indicate sub-chapters without numbering */
-}
-
-/* Setup the chapter-level counter at the beginning of the document */
-html {
-    counter-reset: section_level1;
-}
-
-/* Increment and display the chapter counter for each chapter title within <article> elements */
-article h1.title.topictitle1:before {
-    counter-increment: section_level1;
-    content: "Chapter " counter(section_level1) "  ";
-}
-
-/* Correct handling for "About This Guide" and "Legal Notices" */
-/* Prevent chapter increment for the Legal Notices and About This Guide topics */
-    h1#ariaid-title1:before,
-    h1#ariaid-title2:before {
-    counter-increment: section_level1 0; /* Correctly prevents incrementing the chapter counter */
-    content: ""; /* Removes "Chapter" prefix */
-}
-
-/* Optional: Reset section counters for sublevels if you use them for other purposes */
-.topictitle2 {
-    counter-reset: section_level2;
-}
-/* And so on for .topictitle3, .topictitle4... */
+    counter-reset: toc_level1;
+  }
+  nav ul li:before {
+    counter-increment: toc_level1;
+    content: "Chapter  " counter(toc_level1);
+  }
+  
+  /******** only number top level Chapter no sublevel numbering ****************/
+  nav ul ul {
+    counter-reset: toc_level2; /* Prevent sublevel numbering but allow content display */
+  }
+  
+  /* Display subchapter-level titles without numbering. */
+  nav ul li ul li:before {
+    content: ""; /* No counter increment, display without a number */
+  }
+  
+  /* Reset for further sublevels to ensure no accidental counters are used */
+  nav ul ul ul {
+    counter-reset: toc_level3;
+  }
+  
+  nav ul li ul li ul li:before {
+    content: ""; /* Ensure content display without numbering */
+  }
+  
+  nav ul ul ul ul {
+    counter-reset: toc_level4; /* Reset deeper levels to avoid accidental counting */
+  }
+  
+  /* Ensure all deeper levels are not numbered but still reset counters for consistency */
+  nav ul li ul li ul li ul li:before,
+  nav ul ul ul ul ul,
+  nav ul li ul li ul li ul li ul li:before {
+    content: ""; /* Display without numbering */
+    counter-reset: toc_level5;
+  }
+  /* Reset sub-level counters without incrementing them to avoid affecting chapter numbering */
+  nav ul ul, nav ul ul ul, nav ul ul ul ul, nav ul ul ul ul ul {
+      counter-reset: toc_level2 toc_level3 toc_level4 toc_level5;
+  }
+  
+  /* Adjust sub-level content without numbering */
+  nav ul li ul li:before, nav ul li ul li ul li:before, nav ul li ul li ul li ul li:before {
+      content: ""; /* No prefix content for sub-levels */
+  }
+  /* Chapter-level topic title numbering. */
+  article > .topictitle1:before {
+      counter-increment: section_level1;
+      content: "Chapter " counter(section_level1) ". ";
+  }
+  
+  /* Subchapter levels - Reset counters but do not increment */
+  .topictitle2, .topictitle3, .topictitle4, .topictitle5 {
+      counter-reset: section_level2 section_level3 section_level4 section_level5;
+  }
+  
+  /* Remove numbering from subchapter levels */
+  .topictitle2::before, .topictitle3::before, .topictitle4::before, .topictitle5::before {
+      content: ""; /* Ensures subchapter titles are included without numbers */
+  }
