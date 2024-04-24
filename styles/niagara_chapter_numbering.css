@@ -96,8 +96,9 @@ article > .topictitle1 {
   content: "";
 }
 
-/*********  NO Increment or Title for Preface topics ********** /
+/*********  NO Increment or Title for Preface topics **********/
 h1#ariaid-title1:before,
 h1#ariaid-title2:before {
     counter-increment: section_level1 0; /* Correctly prevents incrementing the chapter counter */
     content: ""; /* Removes "Chapter" prefix */
+}
