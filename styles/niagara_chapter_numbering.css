@@ -15,43 +15,6 @@ nav ul ul {
   counter-reset: toc_level2;
 }
 
-/* Level 2 (subchapter-level) TOC numbering. */
-nav ul li ul li:before {
-  counter-increment: toc_level2;
-  content: counter(toc_level1) "." counter(toc_level2) ". ";
-}
-nav ul ul ul {
-  counter-reset: toc_level3;
-}
-
-/* Level 3 TOC numbering. */
-nav ul li ul li ul li:before {
-  counter-increment: toc_level3;
-  content: counter(toc_level1) "." counter(toc_level2) "." counter(toc_level3)
-    ". ";
-}
-nav ul ul ul ul {
-  counter-reset: toc_level4;
-}
-
-/* Level 4 TOC numbering. */
-nav ul li ul li ul li ul li:before {
-  counter-increment: toc_level4;
-  content: counter(toc_level1) "." counter(toc_level2) "." counter(toc_level3)
-    "." counter(toc_level4) ". ";
-}
-nav ul ul ul ul ul {
-  counter-reset: toc_level5;
-  content: none;
-}
-
-/* Level 5 TOC numbering. */
-nav ul li ul li ul li ul li ul li:before {
-  counter-increment: toc_level5;
-  /*content        : counter(toc_level1)"."counter(toc_level2)"."counter(toc_level3)"."counter(toc_level4)"."counter(toc_level5)". ";*/
-  content: none; /* Removes level 5 topics (and deeper) from the table of contents */
-}
-
 /***DOCUMENT BODY NUMBERING***/
 /* Level 1 (chapter-level) topic title numbering. */
 article > .topictitle1:before {
