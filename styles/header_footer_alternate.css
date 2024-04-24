@@ -71,12 +71,12 @@ nav ul li ul li {
 /*********** MAIN PAGE HEADER FOOTER ****************/
 @page:left {
     @top-left {
-        content: "Chapter " counter(section_level1) "     "string(chapter-title);
+        content: "Chapter " counter(section_level1) string(chapter-title);
 		margin-left: 0in;
         padding-left: 0in;
     }
     @top-right {
-        content: "{map.title}";
+        content: string(document-title);
         padding-right: 0in;
         margin-right:0.0n; 
     }
@@ -93,12 +93,12 @@ nav ul li ul li {
 }
  @page:right {
     @top-left {
-        content: "{map.title}";
+        content: string(document-title);
         margin-left: 0in;
         padding-left: 0in;
     }
     @top-right {
-        content: "Chapter " counter(section_level1) "     "string(chapter-title);
+        content: "Chapter " counter(section_level1) string(chapter-title);
         margin-right: 0in;
         padding-right: 0n; 
     }
