@@ -4,29 +4,21 @@
 @import url("https://niagaradocs.github.io/dita-techdocs/styles/orientation_size.css");
 @import url("https://niagaradocs.github.io/dita-techdocs/styles/blanks.css");
 /* @import url("https://niagaradocs.github.io/dita-techdocs/styles/breaks.css#DISABLED"); */
-@import url("https://niagaradocs.github.io/dita-techdocs/styles/color.css");
 @import url("https://niagaradocs.github.io/dita-techdocs/styles/table_of_contents.css");
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara_color.css");
+
 @import url("https://niagaradocs.github.io/dita-techdocs/styles/header_footer_alternate.css");
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara_formatting.css");
 @import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara_ordered_list_unordered_list_step_substep_choice.css");
 @import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara_choices_steps_substeps_numbering.css");
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara_chapter_numbering.css");
 @import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara-notes.css");
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara_titles.css");
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/figure_image.css");
 
-@import url("https://niagaradocs.github.io/dita-techdocs/styles/title.css");
-
-    /* Style the cover page title. */
-    .title-text .title, .title-text .title .ph {
-        color: #000;
-        font-family: "Avenir", Arial, Helvetica, sans-serif;
-        font-style: normal;
-        font-weight: 800;
-        text-align: right;
-        font-size: 30pt;
-        line-height: 20pt;
-        letter-spacing: 0pt;
-        margin-top: 1.75in;
-        height: auto;
-        word-wrap: break-word; /* Should you need to wrap long words, set to break-word */
-        background-color: aquamarine;
-        
-      }
-      
+/* Targeting only images inside the .ph.cmd to ensure they stay inline */
+.ph.cmd img.image {
+    display: inline;       /* Keeps the image as part of the inline text flow */
+    vertical-align: middle; /* Aligns the image with the middle of the text line */
+    margin: 0 4px;         /* Adds horizontal spacing for visual separation */
+}

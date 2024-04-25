@@ -24,10 +24,10 @@ figcaption:not(figcaption > .desc) {
   color: #000;
   border: none;
   text-align: left;
-  font-style: normal;
-  font-weight: 500;
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-normal);
   word-wrap: break-word;
-  line-height: 1.2em;
+  line-height: var(--line-height-body);
   background-color: transparent;
   padding: 0px;
   margin: 8px 0px 0px 0px;
@@ -103,7 +103,7 @@ figcaption:not(figcaption > .desc) {
 .table--title-label *,
 .table > caption > .title,
 .table > caption > .title * {
-  font-size: 14pt;
+  font-size: var(--font-size-h3);
   background-color: transparent;
 }
 
