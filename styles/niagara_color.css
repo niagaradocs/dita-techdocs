@@ -338,7 +338,7 @@ div.fn {
 }
 .note_note > .note__title,
 .note_trouble > .note__title {
-  color: #fff;
+  color: #000;
 }
 .note_tip,
 .note_fastpath {
