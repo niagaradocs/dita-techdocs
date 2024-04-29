@@ -54,16 +54,16 @@ div.cover-page-heading {
     line-height: 40px;
     word-wrap: normal; /* Should you need to wrap long words, set to break-word */
   }
-  
+
     /* Style the cover page title. */
 .title-text .title, .title-text .title .ph {
-    color: #000;
+    color:#000;
     font-family: "Avenir", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 800;
     text-align: right;
     font-size: 30pt;
-    line-height: 20pt;
+    line-height: var(--line-height-cover);
     letter-spacing: 0pt;
     margin-top: 1.75in;
 	height: auto;
