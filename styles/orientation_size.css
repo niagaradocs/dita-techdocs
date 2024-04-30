@@ -3,6 +3,7 @@
  * Table of contents
  * Document body */
  :root {
+    --font-family-monospace: "Courier New", Courier, monospace;
 	--font-family-body: "Avenir", Arial, Helvetica, sans-serif;
     --font-size-body: 10pt;
 	--font-size-title: 24pt;
