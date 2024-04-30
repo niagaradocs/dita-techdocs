@@ -1,0 +1,26 @@
+/* Style uicontrol elements. */
+.uicontrol {
+    font-weight: var(--font-weight-heavy);
+    color: #000;
+  }
+  
+  /* Style wintitle elements. */
+  .wintitle {
+    font-weight: var(--font-weight-heavy);
+  }
+  
+  /* Style keyboard keys/shortcuts. */
+  .shortcut {
+    font-variant: small-caps;
+    text-transform: lowercase;
+    color: #000;
+  }
+  
+  /* Style menucascades. */
+  abbr[title] {
+    border-bottom: none; /* remove the default underline */
+    text-decoration: none; /* remove the "and then" tooltip */
+    content: " > "; /* determine a custom "and then" symbol */
+    color: #000;
+  }
+  
