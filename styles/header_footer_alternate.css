@@ -63,17 +63,25 @@ nav ul li ul li {
 
 /* Target "chapter_start" main document Add more specificity to prioritize over preface page*/
     article.topic.reference.nested0, article.topic.concept.nested0.chapter_start {
-    break-before: right; */ /* Ensure it starts on a new page
+    break-before: right; /* Ensure it starts on a new page
     -prince-page-group: start; /* Start a new page group */
     page: main; /* Assign a named page for special styling */
 }
 
 /* Alternating header footers */
 
+/* Start MAIN DOCUMENT CHAPTERS ********/
+
+/* Target "chapter_start" main document Add more specificity to prioritize over preface page*/
+article.topic.reference.nested0, article.topic.concept.nested0.chapter_start {
+    break-before: right; /* Ensure it starts on a new page
+    -prince-page-group: start; /* Start a new page group */
+    page: main; /* Assign a named page for special styling */
+}
 /*********** MAIN PAGE HEADER FOOTER ****************/
 @page main:left {
     @top-left {
-        content: "Chapter " counter(section_level1) string(chapter-title);
+        content: "Chapter " counter(section_level1)" " string(chapter-title);
 		margin-left: 0in;
         padding-left: 0in;
     }
@@ -100,7 +108,7 @@ nav ul li ul li {
         padding-left: 0in;
     }
     @top-right {
-        content: "Chapter " counter(section_level1) string(chapter-title);
+        content: "Chapter " counter(section_level1) " " string(chapter-title);
         margin-right: 0in;
         padding-right: 0n; 
     }

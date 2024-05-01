@@ -1,0 +1,89 @@
+/* Do not break pages before chapters (level-1 topics) that do not contain children topics. */
+.topictitle1 {
+  page-break-before: avoid;
+}
+
+/* Insert a page-break before chapters (level-1 topics) that contain children topics. */
+ /* article:has(>.topictitle1) {
+  page-break-before: always;
+  break-inside: auto;
+} */
+
+/* Break the following elements over multiple pages: */
+table,
+code,
+pre.codeblock,
+.entry,
+.xref,
+.sysoutput,
+.varname,
+.filepath,
+.userinput,
+.dd {
+  break-inside: auto;
+}
+
+/* Avoid breaking the following elements over multiple pages: */
+.note,
+dt,
+dd,
+.title,
+.codeph,
+.fig,
+.abstract,
+.shortdesc,
+.info,
+.stepxmp,
+.example,
+.result,
+.stepresult,
+.context,
+.prereq
+.postreq,
+article {
+  break-inside: avoid;
+}
+
+/* Keep definition titles and definition descriptions together. */
+.dt {
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+.dd {
+  page-break-before: avoid;
+  break-before: avoid;
+}
+
+/* Avoid excessive page-breaks after topicheads with navtitles and topics with titles only */
+article > .title + article.topic {
+  break-inside: auto;
+}
+
+/* Assign the @outputclass="break_topics" attribute to the root map element to break-inside topics. */
+body.break_topics article {
+  break-inside: auto;
+}
+body.break_topics article:has(.topictitle1) {
+  break-inside: avoid;
+}
+
+/* You can assign the @outputclass="break_before" attribute to force a page-break before a given element. */
+.break_before {
+  page-break-before: always;
+}
+
+/* You can assign the @outputclass="break_after" attribute to force a page-break after a given element. */
+.break_after {
+  page-break-after: always;
+}
+
+/* You can assign the @outputclass="break_avoid" attribute to prevent breaking an element over multiple pages. */
+.break_avoid {
+  break-inside: avoid;
+}
+
+/* You can assign the @outputclass="break_inside" attribute to break an element over multiple pages. */
+.break_inside {
+  break-inside: auto;
+}
