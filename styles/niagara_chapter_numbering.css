@@ -54,11 +54,11 @@ nav ul li ul li ul li ul li ul li:before {
 
 /***DOCUMENT BODY NUMBERING***/
 /* Level 1 (chapter-level) topic title numbering. */
-article > .topictitle1:before {
+article:not(.glossentry) > .topictitle1:before {
   counter-increment: section_level1;
   content: "Chapter " counter(section_level1) ". ";
 }
-article > .topictitle1 {
+article:not(.glossentry) > .topictitle1 {
   counter-reset: section_level2;
 }
 
