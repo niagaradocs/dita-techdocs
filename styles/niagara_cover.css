@@ -1,23 +1,10 @@
   /* Differentiate the cover page from the TOC and the document body. */
-/* I think this is a duplicate of what is on 'orientation_size.css
- @page {
-    margin:0in;
-    size: US-Letter portrait !important;
-    background-color: fff;
- }
- */
  
-  /* Differentiate the cover page from the TOC and the document body. */
-.cover-page-container {
-    prince-page-group: start;
-    page: cover_page;
-    counter-reset: page 1;
-  }
-  /* Style the cover page.
-  Assert that the cover page size and orientation is never changed. */
+
+  /* Style the cover page.  Assert that the cover page size and orientation is never changed. */
   @page cover_page {
     margin:0in;
-	padding: 0in;
+	  padding: 0in;
     size: US-Letter portrait !important;
     background-color: fff;
 }
@@ -139,35 +126,12 @@ div.bookmeta-metadata {
     width: 100%;
   }
   
-/* Legal page. */
-/* LEGAL basic styles to all paragraphs within the specified section (may be redundant) */
-
-div.legal_niagara_tridium {
-    page:legal_page;
-    prince-page-group: start;
-}	
-@page legal_page {    
-    size: US-Letter;
-    margin: 0in 0.75in 0.75in 0.75in;
-    padding-top: 0.75in;
-    background-color: #fff;
-}
-
-div.legal_niagara_tridium {
-  -prince-page-group: start;
-	page:legal_page;
-	margin-top: 0in;
-    background-color: #fff;
-    width: 100%;
-    height: 100%;
-    page-break-after: always;
-}
 .cover-page-container {
-    -prince-page-group: start;
-    page: cover_page;
-    counter-reset: page 1;
+  -prince-page-group: start;
+  page: cover_page;
+  counter-reset: page 1;
   }
-
+/* ---------------- LEGAL PAGE STYLING ----------------*/
 #legal_niagara_tridium--en--1__address p + p {
     margin-top: 0pt;
 	margin-bottom: 0pt;

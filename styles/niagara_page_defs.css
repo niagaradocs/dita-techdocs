@@ -1,11 +1,11 @@
-/* ========== Hold all page defs and prince page groups ========= */
-  /* Differentiate the cover page from the TOC and the document body. */
+/* === All page defs and prince page groups (except cover + legal === */
 /* Differentiate the cover page from the TOC and the document body. */
   .cover-page-container {
     -prince-page-group: start;
     page: cover_page;
     counter-reset: page 1;
   }  
+
 
   /* Legal page. */
 div.legal_niagara_tridium {
@@ -17,6 +17,15 @@ div.legal_niagara_tridium {
       height: 100%;
       page-break-after: always;
   }
+/* 
+  @page legal_page {    
+    size: US-Letter;
+    margin: 0in 0.75in 0.75in 0.75in;
+    padding-top: 0.75in;
+    background-color: #fff;
+}
+*/
+
 
   /* PREFACE PAGE START */
 .topic.reference.nested0, .topic.concept.nested0 {
@@ -38,6 +47,4 @@ nav > ul:first-of-type {
     -prince-page-group: start;
     page: toc;
 }
-@page toc {
 
-} 

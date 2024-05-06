@@ -1,6 +1,6 @@
 /* Capture doc title string and date for the header. */
 .cover-page-container .cover-page-content .title-text .title.topictitle1 {
-    string-set: document-title content(text);
+    string-set: document-title content();
 }
 .revision-date {
     string-set: revision-date content();
@@ -21,7 +21,7 @@ nav ul li ul li {
 }
 
 /* Define styles for the preface named page */
-@page preface:left{
+@page preface:left {
     @top-left{
     	content: string(chapter-title); 
     }
