@@ -74,6 +74,10 @@
   text-transform: uppercase;
 }
 
+div.note {
+  display: block;    
+}
+
 /* Set consistent margins for notes in task topics. */
 .stepresult > .note,
 .info > .note,

@@ -7,7 +7,12 @@
  }
  */
  
-
+  /* Differentiate the cover page from the TOC and the document body. */
+.cover-page-container {
+    prince-page-group: start;
+    page: cover_page;
+    counter-reset: page 1;
+  }
   /* Style the cover page.
   Assert that the cover page size and orientation is never changed. */
   @page cover_page {
@@ -134,9 +139,13 @@ div.bookmeta-metadata {
     width: 100%;
   }
   
-
+/* Legal page. */
 /* LEGAL basic styles to all paragraphs within the specified section (may be redundant) */
 
+div.legal_niagara_tridium {
+    page:legal_page;
+    prince-page-group: start;
+}	
 @page legal_page {    
     size: US-Letter;
     margin: 0in 0.75in 0.75in 0.75in;
@@ -144,7 +153,20 @@ div.bookmeta-metadata {
     background-color: #fff;
 }
 
-
+div.legal_niagara_tridium {
+  -prince-page-group: start;
+	page:legal_page;
+	margin-top: 0in;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    page-break-after: always;
+}
+.cover-page-container {
+    -prince-page-group: start;
+    page: cover_page;
+    counter-reset: page 1;
+  }
 
 #legal_niagara_tridium--en--1__address p + p {
     margin-top: 0pt;
@@ -189,13 +211,24 @@ h1#ariaid-title1 {
     font-weight: 800;
     padding: #000;
 }
-/* About this Guide, Change Log, Rel docs */
-#ariaid-title2, #ariaid-title3, #ariaid-title4 { 
+
+/* About this Guide, Change Log, Rel docs, but exclude chapter_start on ariaid-title4 */
+#ariaid-title2, #ariaid-title3, #ariaid-title4:not(.chapter_start) {
   font-size: var(--font-size-h1);
   font-weight: var(--font-weight-normal);
   line-height: var(--line-height-title);
   padding-bottom: .1in;
 }
+
+/* Style topics nested on different levels. */
+#ariaid-title4.chapter_start,
+.topictitle1,
+.topictitle1 * {
+  margin: 0px;
+  padding: 0px;
+  font-size: var(--font-size-title);
+}
+
 h2.title.sectiontitle, h3.title.sectiontitle {
   font-family: var(--font-family-body);
   font-weight: var(--font-weight-normal);
