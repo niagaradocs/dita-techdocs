@@ -1,13 +1,12 @@
-/* === All page defs and prince page groups (except cover + legal === */
-/* Differentiate the cover page from the TOC and the document body. */
-  .cover-page-container {
-    -prince-page-group: start;
-    page: cover_page;
-    counter-reset: page 1;
-  }  
+/* === All page defs and prince page groups === */
+/* ----- COVER PAGE -----*/
+.cover-page-container {
+  -prince-page-group: start;
+  page: cover_page;
+  counter-reset: page 1;
+  }
 
-
-  /* Legal page. */
+  /* ----- LEGAL PAGE ----- */
 div.legal_niagara_tridium {
     -prince-page-group: start;
       page:legal_page;
@@ -26,14 +25,20 @@ div.legal_niagara_tridium {
 }
 */
 
-
-  /* PREFACE PAGE START */
+  /* ----- PREFACE PAGE ----- */
 .topic.reference.nested0, .topic.concept.nested0 {
     -prince-page-group: start; /* Start a new page group */
     page: preface; /* Assign a named page for special styling */
 }
 
-/* Start MAIN DOCUMENT CHAPTERS ********/
+/* ----- TOC PAGES ----- */
+
+nav > ul:first-of-type {
+    -prince-page-group: start;
+    page: toc;
+}
+
+/* ===== MAIN DOCUMENT CHAPTERS =====/
 
 /* Chapter "chapter_start" main document Add more specificity to prioritize over preface page*/
 article.topic.reference.nested0, article.topic.concept.nested0.chapter_start {
@@ -41,10 +46,9 @@ article.topic.reference.nested0, article.topic.concept.nested0.chapter_start {
     page: main; /* Assign a named page for special styling */
 }
 
-/** TOC GROUP START PAGE TOC definition **/
+/* ===== GLOSSARY =====/
 
-nav > ul:first-of-type {
-    -prince-page-group: start;
-    page: toc;
+article.topic.reference.glossentry.nested0, article.topic.concept.glossentry.nested0 {
+  -prince-page-group: start; /* Start a new page group */
+  page:main; /* Assign a named page for special styling */
 }
-

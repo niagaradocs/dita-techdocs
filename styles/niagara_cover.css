@@ -91,7 +91,7 @@ div.bookmeta-metadata {
   /* Style the bottom area of the cover. */
   .bottom-stripe {
     margin-top: 0.5in;
-	display: block;
+    display: block;
     clear: both;
     background-color: #f3f;
     height: 200px;
@@ -126,55 +126,6 @@ div.bookmeta-metadata {
     width: 100%;
   }
   
-.cover-page-container {
-  -prince-page-group: start;
-  page: cover_page;
-  counter-reset: page 1;
-  }
-/* ---------------- LEGAL PAGE STYLING ----------------*/
-#legal_niagara_tridium--en--1__address p + p {
-    margin-top: 0pt;
-	margin-bottom: 0pt;
-	padding-top: 0pt;
-	padding-bottom: 0pt;
-}
-
-#ariaid-title1 {
-    font-family: "Avenir", Arial, Helvetica, sans-serif;
-    font-size: 16pt;
-	color: #000;
-	margin-bottom: 12pt;
-}
-
-.legal_niagara_tridium section h2 {
-    font-family: "Avenir", Arial, Helvetica, sans-serif;
-    font-size: 12pt;
-    font-weight: 800;
-    color: #000;
-    margin-top: 12pt; 
-    margin-bottom: 0pt;
-    padding: 0pt;
-}
-
-#legal_niagara_tridium--en--1__address .p {
-    font-family: "Avenir", Arial, Helvetica, sans-serif;
-    margin: 0pt;
-    padding: 0pt;
-}
-.legal_niagara_tridium section h2 + p {
-    margin-top: 5pt; /* Reduced top margin for the paragraph following an h2 */
-}
-
-.legal_niagara_tridium section p {
-    margin-top: 8pt; /* Slightly larger than the first paragraph, but still reduced */
-}
-
-/**** legal page title ****/
-h1#ariaid-title1 {
-    font-size: 16pt;
-    font-weight: 800;
-    padding: #000;
-}
 
 /* About this Guide, Change Log, Rel docs, but exclude chapter_start on ariaid-title4 */
 #ariaid-title2, #ariaid-title3, #ariaid-title4:not(.chapter_start) {
