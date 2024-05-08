@@ -7,9 +7,9 @@ Assert consistent styling of their children. */
 .userinput,
 .userinput * {
   font-family: var(--font-family-monospace);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: normal;
+  font-size: var(--font-size-body);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-normal);
   word-break: break-word;
 }
 
