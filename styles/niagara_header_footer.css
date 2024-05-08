@@ -91,7 +91,7 @@ nav ul li ul li {
     }
     @bottom-left {
         content: string(revision-date);
-        text-align: right; 
+        text-align: left; 
         margin-left: 0.0in;
         padding-left: 0.0in;
     }
