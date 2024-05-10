@@ -57,13 +57,13 @@ nav ul {
 }*/
 
 /* Level-1 (chapter). */
+/* Level-1 (chapter). */
 nav ul li {
     list-style-type: none;
     padding: inherit;
-/*  padding: 2px 0px 2px 0px; */
+    padding-top: 0.1in;
     font-size: 10pt;
     margin-left: 0in;
-    color: #000;
   }
 /* ---- Increment toc_level1 only for direct children list items of the top ul */
 nav > ul > li:before {

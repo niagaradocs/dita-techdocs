@@ -66,6 +66,7 @@ figcaption:not(figcaption > .desc) {
 .topictitle2 * {
   font-weight: var(--font-weight-normal);
   font-size: var(--font-size-h1);
+  margin: 0em 0em 0.25em 0em;
 }
 
 .topictitle3,
