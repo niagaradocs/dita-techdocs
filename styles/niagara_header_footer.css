@@ -36,19 +36,22 @@ nav ul li ul li {
         text-align: right;
     }
 }
-
-@page preface:right {
+@page preface:left {
     @top-left{
-		content: "";
+    	content: string(chapter-title); 
     }
-	@top-right{
-		content: "";
+    @top-right{
+    	content: string(document-title);
 	}
-    @bottom-left{
-        content: string(revision-date);
-        text-align: left;
-	}    
+    @bottom-left {
+        content: counter(page);
+    }
     @bottom-right {
+        content: string(revision-date);
+        text-align: right;
+    }
+}
+
         content: counter(page);      
     }
 }

@@ -25,7 +25,8 @@
 }
 
 #legal_niagara_tridium--en--1__address .p {
-    font-family: "Avenir", Arial, Helvetica, sans-serif;
+    font-family: var(--font-family-body);
+    font-weight: var(--font-size-h3);
     margin: 0pt;
     padding: 0pt;
 }
@@ -39,7 +40,7 @@
 
 /**** legal page title ****/
 h1#ariaid-title1 {
-    font-size: 16pt;
+    font-size: 14pt;
     font-weight: 800;
     padding: #000;
 }
