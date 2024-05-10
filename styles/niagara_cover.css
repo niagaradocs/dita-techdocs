@@ -132,6 +132,7 @@ div.bookmeta-metadata {
   font-size: var(--font-size-h1);
   font-weight: var(--font-weight-normal);
   line-height: var(--line-height-title);
+  margin-top: 0.25em;
   padding-bottom: .1in;
 }
 
