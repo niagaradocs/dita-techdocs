@@ -36,27 +36,22 @@ nav ul li ul li {
         text-align: right;
     }
 }
-@page preface:left {
+@page preface:right {
     @top-left{
-    	content: string(chapter-title); 
+    	content: string(document-title); 
     }
     @top-right{
-    	content: string(document-title);
+    	content: string(chapter-title);
 	}
     @bottom-left {
-        content: counter(page);
+        content: string(revision-date);
+        text-align: left;
+        
     }
     @bottom-right {
-        content: string(revision-date);
-        text-align: right;
+        content: counter(page);
     }
 }
-
-        content: counter(page);      
-    }
-}
-
-/* Alternating header footers */
 
 /*********** MAIN PAGE HEADER FOOTER ****************/
 @page main:left {

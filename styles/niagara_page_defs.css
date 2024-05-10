@@ -32,12 +32,18 @@ nav > ul:first-of-type {
     page: toc;
 }
 
+  /* ----- PREFACE PAGE ----- */
+  article.topic.reference.nested0, article.topic.concept.nested0 {
+    -prince-page-group: start; /* Start a new page group */
+    page: preface; /* Assign a named page for special styling */
+}
+
 /* ===== MAIN DOCUMENT CHAPTERS =====/
 
-/* Chapter "chapter_start" main document Add more specificity to prioritize over preface page*/
-article.topic.reference.nested0, article.topic.concept.nested0.chapter_start {
-    -prince-page-group: start; /* Start a new page group */
-    page: main; /* Assign a named page for special styling */
+/* ============= Chapter "chapter_start" main document Add more specificity to prioritize over preface page ======= */
+article.topic.reference.nested0.chapter_start, article.topic.concept.nested0.chapter_start {
+  -prince-page-group: start; /* Start a new page group */
+  page: main; /* Assign a named page for special styling */
 }
 
 /* ===== GLOSSARY ===== */
