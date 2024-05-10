@@ -1,7 +1,7 @@
 /* Legal Page */
 /* ---------------- LEGAL PAGE STYLING ----------------*/
 #legal_niagara_tridium--en--1__address p + p {
-    margin-top: 0pt;
+    margin-top: 0.25em;
 	margin-bottom: 0pt;
 	padding-top: 0pt;
 	padding-bottom: 0pt;
@@ -27,9 +27,10 @@
 #legal_niagara_tridium--en--1__address .p { /* address spacing for legal */
     font-family: var(--font-family-body);
     font-weight: var(--font-size-h3);
-    margin-bottom: -0.25em;
+    margin-bottom: 0.25em;
     padding: 0pt;
 }
+
 .legal_niagara_tridium section h2 + p {
     margin-top: 5pt; /* Reduced top margin for the paragraph following an h2 */
 }
