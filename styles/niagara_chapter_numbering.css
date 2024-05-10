@@ -51,17 +51,12 @@ nav ul li ul li ul li ul li ul li:before {
   content: none; /* Removes level 5 topics (and deeper) from the table of contents */
 }
 
-
 /***DOCUMENT BODY NUMBERING***/
 /* Level 1 (chapter-level) topic title numbering. */
-article:not(.glossentry) > .topictitle1:before {
+article.topic.reference.nested0:not(.glossentry) > h1.title.topictitle1:not(.glossterm)::before, article.topic.concept.nested0:not(.glossentry) > h1.title.topictitle1:not(.glossterm)::before {
   counter-increment: section_level1;
   content: "Chapter " counter(section_level1) ". ";
 }
-article:not(.glossentry) > .topictitle1 {
-  counter-reset: section_level2;
-}
-
 
 /* Level 2 topic title (subchapter-level) numbering. */
 .topictitle2::before {

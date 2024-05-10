@@ -47,8 +47,17 @@ article.topic.reference.nested0, article.topic.concept.nested0.chapter_start {
 }
 
 /* ===== GLOSSARY =====/
-
 article.topic.reference.glossentry.nested0, article.topic.concept.glossentry.nested0 {
   -prince-page-group: start; /* Start a new page group */
-  page:main; /* Assign a named page for special styling */
+  page: gloss; /* Assign a named page for special styling */
+}
+
+article.glossentry > h2.glossterm {
+  font-weight: var(--font-weight-heavy);
+  font-size: var(--font-size-h2);
+  margin-top: .025em;
+  margin-bottom: .025em;
+}
+article.glossentry > h1.glossterm::before {
+  display: none;
 }

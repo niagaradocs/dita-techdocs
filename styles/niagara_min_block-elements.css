@@ -1,0 +1,357 @@
+
+/****  ELEMENT STYLE *****/
+
+/*---------------------------------------- DEFAULT STYLE -------------------------------------------  */
+
+/*DEFINITION STYLES****/
+
+
+/* default */
+dl.dl{margin: 20px;padding: 0px;}
+dl dt.dt{position: relative; padding: 15px 0px 0px 20px; width: 15%; font-weight: bold; float: left;}
+dl dd.dd{border-left: 1px solid #ccc; margin: 2% 0% 2% 17%; padding: 0px 20px;}
+
+/* Nested default */
+dl.default_nested{ margin: 20px 0px; padding: 0px; }
+.default_nested dt{ width: 450px !important; color: #404040; font-weight: bold; text-align: left;background-color: #f7f7f7;; border-left: 1px solid #DBD8D8; border-right: 1px solid #DBD8D8; border-top: 1px solid #DBD8D8; font-size: .9rem; display:inline-block;}
+
+.default_nested dd{ width: 430px; text-align: left; padding-top: 10px !important; padding-bottom:10px !important; left: -42px; top: -10px; position: relative;  border-left: 1px solid #DBD8D8; border-right: 1px solid #DBD8D8; border-bottom: 1px solid #DBD8D8; font-size: .9rem; display: inline-block; overflow: auto; line-height: 1.3rem;}
+/* end Nested default */
+
+/* AVOID PAGE BREAK ELEMENT ****/
+@media print {
+.note, figure, dl, dt, dd,  table{page-break-inside: avoid;} 
+}
+
+
+/* STEPS  *********/
+.large_num{list-style:none; margin: 0px; padding: 0px; counter-reset: my-counter; margin-left: 40px; }
+.large_num .step:first-child{margin-top: 35px;}
+.large_num .step{counter-increment: my-counter; margin-bottom: 20px; }
+.large_num .step::before{content: counter(my-counter); position: absolute; left: 40px; margin-right: 0px; border-right:1px dotted #ccc; padding: 3px 8px 3px 0px; font-weight: bold; color: #ccc;font-size: 1.8rem; }
+
+
+/* sub-STEPS  *********/
+.sublist{list-style: none; list-style-position: outside; counter-reset: my-counter;  padding: 0px; margin-left: 30px;}
+.sublist .substep::before{content: counter(my-counter); position: absolute; left: 75px; border: 1px solid #aaa; border-radius: 50%; width: 12px; height: 10px; 
+padding: 6px 5px; font-size: 1rem; text-align: center; line-height: .7;  color: #aaa; }
+.sublist .substep{counter-increment:my-counter;  margin: 6px 0px 6px 0px; }
+.sublist .substep:first-child{margin-top: 15px;}
+/* END STEPS  *********/
+
+/* CHOICE *********/
+.choices{list-style: none; margin-left: 0px;}
+.choices .arrow::before{content:""; background-color: #09AFD6; display: inline-block; position: absolute; left: 80px; width: 10px; height: 2px; margin-right: 0px; margin-top: 12px;}
+.choices .arriw{font-size: 1rem; font-style: italic; overflow: auto;} 
+/* sub choice *****/
+.choices .sub_arrow::before{content:""; background-color: #09AFD6; display: inline-block; position: absolute; left: 80px; width: 10px; height: 2px; margin-right: 0px; margin-top: 12px; }
+.choices .sub_arrow{ font-size: 1rem; font-style: italic; overflow: auto;}
+/* END CHOICE ********/
+
+
+/* CHOICE TABLE*********/
+.choicetable{border-collapse: collapse;  border: solid 1px #ccc; left: -50px; position: relative;}
+.choicetable th{font-weight: bold; padding: 10px; background-color: #fff; border: none;}
+.choicetable tr:nth-child(odd){background-color: #f1f2f3;}
+.choicetable tr:last-child{border-bottom: solid 1px #f1f2f3;}
+.choicetable tr{border: none;}
+.choicetable td{padding: 10px; vertical-align: top; border: none;}
+/* Nested in step */
+.step:first-child>.choicetable{left: -50px; position: relative;}
+.step>.choicetable{left: -115px; position: relative;}
+.step>.fixed_table{left: -150px; position: relative;}
+/* END CHOICE TABLE*********/
+
+
+/*---CONTEXT-------*/
+.context{font-weight: normal; font-size: 1.1rem; border-left: solid 5px #f1f2f3; padding-left: 10px;}
+/*---END CONTEXT-------*/
+
+
+/* STEP EXAMPLE *********/
+div.stepxmp{ margin: 15px 0px 0px 0px; background-color: #f7f7f7; padding: 10px; -webkit-border-radius: 5px; border-radius: 5px; border: solid 1px #ebebeb;}
+/* END STEP EXAMPLE *********/
+
+/* STEP INFORMATION *********/
+div.info{margin: 15px 0px 0px 0px; background-color: #fff; padding: 10px; -webkit-border-radius: 5px; border-radius: 5px; border: dashed 1px #ccc; font-style: italic;}
+
+ /* STEP RESULT *********/
+.stepresult{margin: 15px 0px 0px 0px; padding-left: 10px; color: #aaa; border-left: dashed 2px #ccc; font-style: italic;}
+li>div.stepresult{margin: 10px 0px; padding-left: 10px; color: #aaa; border-left: dashed 2px #ccc; font-style: italic;} 
+
+/* STEP RESULT *********/
+div.stepresult{margin: 20px; overflow: auto;}
+/* END RESULT *********/
+
+/* SECTION *********/
+.section {margin: 20px; }
+.sectiontitle{left: -20px; position: relative; height: 10px; line-height: 1.4rem; border-left: solid 20px #eee; padding: 0px 5px;  display: block; clear: both; }
+.sectiontitle>.p{margin-top: 0px; padding-top: 0px;}
+.section>.p{left: 10px; position: relative;}
+/* END SECTION *********/
+
+
+/* SECTION RESULT *********/
+.result{margin: 5px 0px 0px 40px; border: solid 2px #ccc; padding: 10px; -webkit-border-radius: 5px; border-radius: 5px;}
+/* ---vertical style -------
+/* END SECTION RESULT *********/
+
+/* DEFINATION LIST-----*/
+.dl {margin: 20px; padding: 0px;}
+.dt {position: relative; padding: 15px 0px 0px 20px; width: 15%; font-weight: bold; float: left;}
+.dd { border-left: 1px solid #ccc; margin: 2% 0% 2% 17%; padding: 0px 20px;
+vertical-align: top;}
+
+/* Nested default */
+.dl .default_nested{ margin: 20px 0px; padding: 0px; display: block;}
+.default_nested dt{ width: 100px !important;; border-left: 2px solid #DBD8D8; border-top:none;  overflow: auto;display: block;  padding: 5px 15px 5px 10px !important; margin-bottom: 20px; clear: both;}
+.default_nested dd{ width: 400px; border:none; display: block; padding: 15px 0px !important; vertical-align: top;}
+/* end Nested default */
+/*  END DEFINATION LIST-----*/
+
+
+/* FIG *********/
+.fig{padding: 0px; margin: 0px; font-style: italic; font-size: .9rem; display: block; clear: both; overflow: auto;}
+.fig img{ padding: 10px 0px; left: 5px; position: relative; }
+.fig>figcaption{left: 10px; position: relative;}
+div>.fig img{left: -1px; position: relative;}
+div>.fig>figcaption{left: 0px; position: relative;}
+
+/* FIG Alignment *********/
+.fig-result{margin: 10px 0px 20px 75px; padding: 15px; display: table; width: 600px; }
+.fig-result>.fig img{width: 300px;}
+.fig-result>.fig{ display: block; }
+.fig-result>.fig_left{display: block; float: left; margin-bottom: 10px; clear: both;}
+.fig-result>.fig_right{display: block; float: right; margin-bottom: 10px; clear: both; padding-right: 10px;}
+.result>.fig_center{display: block; margin: 0px auto 10px auto; clear: both; width: 300px;}
+/* END FIG *********/
+
+
+/* IMAGES *********/
+/**** aligned-left *********/
+img.go_left{ margin-right: 15px; float: left; margin-bottom: 20px; margin-top: 20px; width: 500px; clear: both;}
+/**** center *********/
+img.go_right{ margin-left: 15px; float: right; margin-bottom: 20px; margin-top: 20px; width: 500px; clear: both;}
+/**** aligned-right *********/
+img.keep_center{display: block; margin: 5px auto;  width: 500px; clear: both;}
+
+
+/* Table ****/
+.table{margin:20px 0px;line-height: 1.3rem; border: solid 1px #ccc;}
+.thead{background-color: #f1f2f3; line-height: 1.1rem;  ;}
+.row{border-bottom: solid 1px #ccc; padding: 10px 15px 10px 3px;}
+.row:first-child{border-top: solid 1px #ccc;}
+.row:last-child{border-bottom: solid 1px #ccc;}
+/* Table label */
+.table--title-label{padding: 0px 0px 3px 0px; margin: 0px; font-style: italic; font-size: .9rem; display: block; }
+.title{font-weight: bold; font-size: 1.2rem; display: block; padding-bottom: 10px;}
+/* Table nested <p> and list */
+.entry .ul{margin-left: 20px;}
+.entry .ul .li{padding: 0px;}
+.entry .ul .li>p{padding: 0px; margin: 0px;}
+.entry .p:first-child{margin-top: 0px;}
+/* Table Combinations ****/
+.table--pgwide-1{width: 100%;}
+.table--pgwide-0{width:auto;}
+.rowsep-1{border-bottom: solid 1px #ccc;}
+.rowsep-1:last-child{border-bottom:none;}
+.colsep-0, .rowsep-0{border: 0px;}
+.colsep-1{border-right: solid 1px #ccc;}
+.colsep-1:last-child{border-right:none;}
+/* end Table ****/
+
+
+/* Reference table ****/
+.reference h2{margin-left: 20px; font-size: 1.2rem;}
+ div>p.ref_desc {border-bottom: dotted 1px #ccc; border-top: dotted 1px #ccc; overflow: auto; margin: 10px 20px;}
+.reference table {border: solid 1px #ccc; margin: 0px; padding: 0px; width: 100%;}
+.reference tbody{border: none;}
+.reference table th{background-color:#ebebeb; color: #404040; padding: 10px;  border: none; line-height: 1; text-align: left;}
+.reference table tr:nth-child(even){background-color: #f1f2f3; }
+.reference table tr:first-child{border-top: solid 1px #ccc;}
+.reference table tr td{border: none; vertical-align: top; padding: 10px;}
+/* end Reference table ****/
+
+/* Note */
+div.blue_note{padding: 5px; overflow: auto; margin: 40px 15px; border-left: solid 5px #ccc; font-style: italic; font-size: 0.9rem; margin-left: 0px; padding-left: 10px; clear: both;}
+div.blue_note span{font-weight: bold; }
+/* end Note */
+
+
+/*  shortdescribtion */
+.shortdesc{font-style: italic; font-size:1rem; border-bottom: 1px solid #cccccc; border-top: 1px solid #cccccc; margin: 5px auto 20px auto; line-height: 20px; padding: 10px 0px;}
+
+
+/* COVER PAGE *********/
+html, body { width: 100%;}
+* {font-family: "'Roboto", Helvetica, Arial !important;}
+html {margin-right: 2000px;}
+.coverPageContainer {width: 100%; height: 100%; page-break-after: always;}
+.centeredContainer {height: 100%; width: 100%; display: table; margin:0px; padding: 0px; }
+.centeredContainer .centered {
+  display: table-cell; vertical-align: middle; }
+/* Title style */
+.coverPage-title {font-family: "'Roboto", Helvetica, Arial;  padding: 60px ; font-size: 2.6rem; text-align:center; line-height: 3.2rem; }
+.leading-bar{ background-color: #f1f2f3; border-top: solid 1px #eee; border-bottom: solid 1px #eee; width: 100%; }
+/* END COVER PAGE *********/
+
+
+/* TABLE CONTENT *********/
+nav {
+page-break-after: always; padding-top: 40px ;
+}
+nav::before { content: "Contents"; font-size: 2rem; color: #ccc; 
+}
+nav a::after {
+  content: leader(".") target-counter(attr(href), page); margin-left:10px ;}
+nav a { color:#404040; text-decoration: none;}
+nav ul { margin-left: 20px;}
+nav li {
+  list-style-type: none; padding: 5px 0px; font-size: 1.2rem; font-style: italic;
+}
+nav li:first-child{margin-top: 20px;}
+nav li>ul li:first-child{margin-top: 5px; margin-left: 0px;}
+nav li>ul li{margin-left: 0px;}
+
+div.mini-toc-wrapper::before {
+  display: block;
+  content: "Chapter Contents";
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin: 0 0 5px -1.5px;
+  letter-spacing: 0.025em;
+  color: #ccc;
+}
+div.mini-toc-wrapper {
+  display: block;
+  margin: 15px 0 25px 0;
+}
+div.mini-toc-wrapper ul ul {
+  margin: 0 0 0 10px;
+  padding: 0px;
+}
+div.mini-toc-wrapper li {
+  list-style-type: none;
+  padding-right: 0;
+}
+div.mini-toc-wrapper a,
+div.mini-toc-wrapper a * {
+  text-decoration: none;
+  color:#404040;
+  font-weight: inherit;
+  font-family: inherit;
+  font-size: 1rem;
+  font-style: italic;
+}
+div.mini-toc-wrapper a::after {
+  content: leader(".") target-counter(attr(href), page); 
+  margin-left: 0px;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+/* END TABLE CONTENT *********/
+
+
+/* HEADER AND FOOTER *********/
+@page {
+  font-family: "Roboto", Helvetica, Arial;
+  size: a4;
+  /* marks: crop cross; */
+  margin: 80px 55px;
+  counter-reset: footnote;
+  @footnotes {
+    margin-top:10px;
+    border-top: solid black thin;
+    border-clip: 200px;
+    padding: 0px 10px 0px 12px;
+  }
+}
+
+/* FIRST PAGE- start on right *********/
+@page:first { margin: 0px; border: solid 15px #f1f2f3;
+}
+/* BLANK PAGE- start on left *********/
+/*@page :blank {
+  @top-center { 
+    content: "This page is intentionally left blank";
+    }*/
+       
+/* LEFT PAGE *********/
+@page:left{
+  /* Header ***/
+  @top-left {
+    content: "{map.title}";
+    font-size: .9rem; 
+    margin-left:-15mm; padding: 20px;
+   color:  #7c8d99; font-weight: bold;
+   text-transform: uppercase; letter-spacing: 1px;
+  }
+
+  @top-right {
+    content: "BUSINESS NAME";
+    font-size: .9rem;
+     margin-right:-15mm;
+    padding: 20px; color: #aaa;
+    text-transform: uppercase; letter-spacing: 1px;
+  }
+
+  @bottom-right {
+    font-size:1.2rem; font-weight: bold; border-top: solid 1px #d8d8d8; 
+    margin-right:-15mm;
+    content: counter(page);
+    background-color:#fff;
+    color:  #7c8d99;
+    padding: 20px;
+  }
+  @bottom-left {
+    font-size:.9rem; border-top: solid 1px #ccc; 
+    margin-left: -15mm;
+    content: "Copyright © yyyy-yyyy Business Name.";
+    background-color: #fff;
+    color: #aaa; font-style: italic;
+    padding-left: 20px;  letter-spacing: 1px;
+  }
+}
+
+/* RIGHT PAGE *********/
+@page:right{
+  /* Header ***/
+  @top-right {
+    content: "BUSINESS NAME";
+    font-size: .9rem; 
+     margin-right:-15mm; padding: 20px;
+   color:  #7c8d99; 
+   text-transform: uppercase; letter-spacing: 1px;
+  }
+  @top-left {
+    content: "{map.title}";
+    font-size: .9rem;
+     margin-left:-15mm;
+    padding: 20px; color: #7c8d99;font-weight: bold;
+    text-transform: uppercase; letter-spacing: 1px;
+  }
+  @bottom-left {
+  font-size:1.2rem; font-weight: bold; border-top: solid 1px #d8d8d8;
+  margin-left:-15mm;
+  content: counter(page);
+  background-color:#fff;
+  color:  #7c8d99;
+  padding-left:20px;
+}
+  @bottom-right{
+    font-size:.9rem; border-top: solid 1px #ccc;
+    margin-right:-15mm;
+    content: "Copyright © yyyy-yyyy Business Name.";
+    background-color: #fff;
+    color: #aaa; font-style: italic;
+    padding-right: 20px;  letter-spacing: 1px;
+  }
+}
+/* END HEADER AND FOOTER *********/
+/*---------------------------------------- END DEFAULT STYLE -------------------------------------------  */
+
+
+/*---------------------------------------- BASIC STYLE -------------------------------------------  */
+
+/*---------------------------------------- END BASIC STYLE -------------------------------------------  */
