@@ -58,6 +58,15 @@ figure.fig img {
   box-shadow: none;
 }
 
+/* Style inline images (icons mostly) in places other than task/command. */
+img.image.inline {
+  vertical-align: baseline; /* Aligns the image with the baseline of the text */      
+  display: inline-block;
+  max-height: 16px;
+  padding: 0px;
+  margin-bottom: -1px;
+  }
+
 /* Position images and figure titles horizontally. */
 .imageleft,
 .fig:has(.imageleft) * {
