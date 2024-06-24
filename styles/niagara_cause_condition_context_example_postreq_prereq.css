@@ -12,9 +12,9 @@
 .example::before {
   display: block;
   clear: both;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-heavy);
+  font-size: var(--font-size-h3);
   letter-spacing: 0.025em;
   color: #000;
 }
@@ -62,7 +62,7 @@
 
 /* Add captions before prerequisite elements. */
 .prereq::before {
-  content: "Before you begin";
+  content: "Prerequisite";
 }
 
 /* Add captions before postrequisite elements. */
@@ -76,12 +76,13 @@ article.process .steps-unordered::before {
   content: "Process";
 }
 
-/* Add captions before steps elements.
-Prevent the process-topic children from inheriting the "Process" caption. */
+/* NOT USING - Add captions before steps elements.
+Prevent the process-topic children from inheriting the "Process" caption. 
 article:not(.process) .steps::before,
 article:not(.process) .steps-unordered::before {
   content: "Procedure";
 }
+*/
 
 /* Hide the caption before steps elements if a stepsection element precedes the first step. */
 .stepsection ~ .steps::before,
@@ -95,26 +96,27 @@ article:not(.process) .steps-unordered::before {
   display: none;
 }
 
-/* Add captions before context elements. */
+/* NOT USING - Add captions before context elements. 
 .context::before {
   content: "Context";
 }
+*/
 
-/* Add captions before condition elements. */
+/* NOT USING - Add captions before condition elements. 
 .condition::before {
   content: "Condition";
 }
-
-/* Add captions before cause elements. */
+*/
+/* NOT USING - Add captions before cause elements.
 .cause::before {
   content: "Cause";
 }
-
-/* Add captions before remedy elements. */
+ */
+/* NOT USING - Add captions before remedy elements. 
 .remedy::before {
   content: "Remedy";
 }
-
+*/
 /* Add captions before stepxmp and example elements. */
 .example::before {
   content: "Example";
@@ -168,7 +170,7 @@ Style the cause and remedy titles. */
   color: #000;
 }
 
-/* Removee borders for paragraphs in remedy elements. */
+/* Remove borders for paragraphs in remedy elements. */
 .remedy .p > .cmd {
   border: none;
   padding-left: 0px;
