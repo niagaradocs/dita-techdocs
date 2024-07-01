@@ -8,8 +8,7 @@
 .remedy::before,
 .condition::before,
 .context::before,
-.result::before,
-.example::before {
+.result::before {
   display: block;
   clear: both;
   font-style: var(--font-style-normal);
@@ -18,6 +17,8 @@
   letter-spacing: var(--letter-spacing);
   color: #000;
 }
+
+/* Remove '.example::before ' for now. Put in above list if needed */
 
 /* Fix the placement of cause, remedy, and condition captions. */
 .cause::before,
@@ -62,7 +63,7 @@
 
 /* Add captions before prerequisite elements. */
 .prereq::before {
-  content: "Prerequisite";
+  content: "Prerequisites: ";
 }
 
 /* Add captions before postrequisite elements. */
