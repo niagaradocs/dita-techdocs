@@ -19,20 +19,12 @@ figure.fig {
   page-break-inside: avoid; /* Prevents breaking inside the figure */
 }
 
-figure.fig img {
-  max-height: 9in; /* Limit the height of the image to prevent it from taking too much space */
-  /* width: auto; Adjusts width automatically to maintain aspect ratio */
-  /* height: auto; Ensures the image height adjusts according to the width while maintaining aspect ratio */
-  display: block; /* Ensures the image does not inline with text which could disrupt the layout */
-}
-
 figure.fig img.image {
   max-height: 9in; /* Limit the height of the image to prevent it from taking too much space */
   /* width: auto; Adjusts width automatically to maintain aspect ratio */
-  /* height: auto; Ensures the image height adjusts according to the width while maintaining aspect ratio */
+  height: auto; /* Ensures the image height adjusts according to the width while maintaining aspect ratio */
   display: block; /* Ensures the image does not inline with text which could disrupt the layout */  
 }  
-
 
 /* Set smaller margins for figures and images in task topics. */
 .stepresult > figure,
