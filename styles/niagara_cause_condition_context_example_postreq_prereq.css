@@ -18,7 +18,7 @@
   color: #000;
 }
 
-/* Remove '.example::before ' for now. Put in above list if needed */
+/* Removed '.example::before ' for now. Put in above list if needed */
 
 /* Fix the placement of cause, remedy, and condition captions. */
 .cause::before,
@@ -121,6 +121,9 @@ article:not(.process) .steps-unordered::before {
 /* Add captions before stepxmp and example elements. */
 .example::before {
   content: "Example";
+}
+.example::before {
+  display: none;
 }
 
 /* Add captions before stepresult and result elements. */
