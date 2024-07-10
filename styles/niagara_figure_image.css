@@ -66,6 +66,18 @@ img.image.inline {
   padding: 0px;
   margin-bottom: -1px;
   }
+/* Style inline images (icons) in in paragraphs, not in commands. */
+.p > .image,
+.p  img {
+  display: inline-block;
+  border: none;
+  padding: 0px;
+  margin-bottom: -2px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
 
 /* Position images and figure titles horizontally. */
 .imageleft,
