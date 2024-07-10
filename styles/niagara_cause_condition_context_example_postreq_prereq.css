@@ -197,6 +197,15 @@ Style the cause and remedy titles. */
   margin: 0px;
   padding: 0px;
 }
+/* stepsection within a task */
+div.stepsection {
+  font-family: var(--font-family-light);
+  font-size: var(--font-size-h2);
+  font-style: var(--font-style-italic);
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-heading);
+  letter-spacing: var(--letter-spacing-wide);
+}
 
 /* Fix margins for single-step procedures. */
 .taskbody > div.step {

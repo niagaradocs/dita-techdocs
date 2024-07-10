@@ -4,7 +4,7 @@
  * Document body */
  :root {
     --font-family-monospace: "Courier New", Courier, monospace;
-	--font-family-body: "Avenir", Arial, Helvetica, sans-serif;
+    --font-family-body: "Avenir", Arial, Helvetica, sans-serif;
     --font-size-body: 10pt;
 	--font-size-title: 24pt;
 	--font-size-h1: 14pt;
@@ -12,6 +12,7 @@
 	--font-size-h2: 11pt;
 	--font-size-h3: 10pt;
 	--font-weight-normal: 500;
+    --font-weight-light: 400;
 	--font-weight-heavy: 800;
 	--font-style-normal: normal;
     --font-style-italic: italic;
@@ -22,8 +23,8 @@
     --text-color: #000;
     --text-align-normal: left;
     --letter-spacing: 0.025em;
-    --letter-spacing-wide: 0.1em;
-    --letter-spacing-mono: -0.025em;
+    --letter-spacing-wide: 0.05em;
+    --letter-spacing-mono: -0.05em;
     --background-color: #fff;
 	--padding-body: 0in;
 	--margin-default: 0.75in;
