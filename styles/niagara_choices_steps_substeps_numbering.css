@@ -32,6 +32,18 @@ ol.steps > li.step::before {
   margin-right: 0.3in; /* Provides spacing between the label and the list text */
 }
 
+/* Use this for restarting numbering after <stepsection> */
+ol[start] {
+	counter-reset:	list-item attr(start, integer, 0);
+}
+/* I am not using the below code but want to have it in case of need for 
+  specifiying a list item number -- have not actually tried it */
+ol>li[value]
+{
+	counter-increment:	list-item 0;
+	counter-reset:		list-item attr(value, integer, 0);
+}
+
 /* Fix the position of step element children. I'm not sure about these */
 .stepresult,
 .info,
