@@ -69,7 +69,7 @@ div {
 .ul:not(ul.choices, ul.steps-unordered),
 .ol:not(ol.substeps, .steps) {
   list-style-position: outside;
-  margin-left: 33px;
+  margin: 0 0 0 0.1in;
 }
 
 /* Fix issues with descriptions in step children elements */

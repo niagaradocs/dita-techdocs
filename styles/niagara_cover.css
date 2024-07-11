@@ -133,7 +133,7 @@ div.bookmeta-metadata {
   font-weight: var(--font-weight-normal);
   line-height: var(--line-height-title);
   margin-top: 0.25em;
-  padding-bottom: .1in;
+  margin-bottom: -0.5em;
 }
 
 /* Style topics nested on different levels. */
