@@ -197,6 +197,7 @@ Style the cause and remedy titles. */
   margin: 0px;
   padding: 0px;
 }
+
 /* stepsection within a task */
 div.stepsection {
   font-family: var(--font-family-light);
