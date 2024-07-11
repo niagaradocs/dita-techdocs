@@ -152,7 +152,7 @@ h2.title.sectiontitle, h3.title.sectiontitle {
   line-height: var(--line-height-heading);
 }
 p.shortdesc {
-  margin: 0.25em;;
+  margin: 0.25em;
   padding: 0;
 }
 /* Target strong tags with .ph.b classes specifically for font size and color adjustments */
