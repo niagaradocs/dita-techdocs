@@ -133,7 +133,7 @@ div.bookmeta-metadata {
   font-weight: var(--font-weight-normal);
   line-height: var(--line-height-title);
   margin-top: 0.25em;
-  margin-bottom: -0.5em;
+  margin-bottom: -0.25em;
 }
 
 /* Style topics nested on different levels. */
@@ -152,7 +152,7 @@ h2.title.sectiontitle, h3.title.sectiontitle {
   line-height: var(--line-height-heading);
 }
 p.shortdesc {
-  margin: 0.25em;
+  margin: 0.35em 0 0 0;
   padding: 0;
 }
 /* Target strong tags with .ph.b classes specifically for font size and color adjustments */
