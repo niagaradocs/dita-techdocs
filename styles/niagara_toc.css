@@ -60,8 +60,7 @@ nav ul {
 /* Level-1 (chapter). */
 nav ul li {
     list-style-type: none;
-    padding: inherit;
-    padding-top: 0.1in;
+    padding-top: 0.035in;
     font-size: 10pt;
     margin-left: 0in;
   }
