@@ -61,7 +61,7 @@ figure.fig img.image {
 /* Style inline images (icons mostly) in places other than task/command. */
 img.image.inline {
   vertical-align: baseline; /* Aligns the image with the baseline of the text */      
-  display: inline-block;
+  display: inline-block !important;
   max-height: 16px;
   padding: 0px;
   margin-bottom: -1px;
