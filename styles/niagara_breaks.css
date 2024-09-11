@@ -39,8 +39,8 @@ dd,
 .stepresult,
 .context,
 .prereq
-.postreq,
-article {
+.postreq
+ {
   break-inside: avoid;
 }
 

@@ -15,24 +15,24 @@
 
 /* Style every title in a consistent way.
 Ensure that the titles children are styled in a consistent way. */
-.title,
-.title *,
+/* .title,
+.title *, */
 .table--title-label,
-.fig--title-label,
-figcaption:not(figcaption > .desc) {
+.fig--title-label
+/* figcaption:not(figcaption > .desc) */ 
+{
   font-family: "Avenir", Helvetica, Arial;
   color: #000;
   border: none;
   text-align: left;
   font-style: var(--font-style-normal);
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-heavy);
   word-wrap: break-word;
   line-height: var(--line-height-body);
   background-color: transparent;
   padding: 0px;
-  margin: 8px 0px 0px 0px;
+  margin: 8px 6px 0px 0px;
 }
-
 /* Remove margins for image and table titles. */
 .table--title-label,
 .fig--title-label,
