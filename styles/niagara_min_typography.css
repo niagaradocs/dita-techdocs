@@ -53,7 +53,18 @@ img{padding: 10px auto; max-width: 100%; left:5px; position: relative; }
 /*---------------------------------------- END DEFAULT STYLE -------------------------------------------  */
 
 
-/*---------------------------------------- BASIC STYLE -------------------------------------------  */
-
+/*---------------------------------------- INLINE STYLES -------------------------------------------  */
+.parmname {
+  font-family: var(--font-family-monospace);
+  font-weight: var(--font-weight-heavy);
+  letter-spacing: var(--letter-spacing-mono);
+}
+.cite {
+  font-style: var(--font-style-italic);
+}
+.option {
+  font-family: var(--font-family-monospace);
+  letter-spacing: var(--letter-spacing-mono);
+}
 
 /*---------------------------------------- END BASIC STYLE -------------------------------------------  */
