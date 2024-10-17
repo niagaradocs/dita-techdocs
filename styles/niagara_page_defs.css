@@ -52,9 +52,11 @@ article.topic.reference.glossentry.nested0, article.topic.concept.glossentry.nes
   page: gloss; /* Assign a named page for special styling */
 }
 
-article.glossentry > h2.glossterm {
+article.glossentry > h2.glossterm,
+article.glossentry > h2.glossterm .term {
   font-weight: var(--font-weight-heavy);
   font-size: var(--font-size-h2);
+  font-style: var(--font-style-normal);
   margin-top: .025em;
   margin-bottom: .025em;
 }
