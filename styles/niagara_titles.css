@@ -87,6 +87,7 @@ h2.title.topictitle2,
   font-size: var(--font-size-h2);
   margin-top: .025em;
 }
+/* ----------- Change Log Headings ------------- */
 h3.title.topictitle3, h4.title.topictitle4,
 .topictitle3 * {
   font-weight: var(--font-weight-normal);
