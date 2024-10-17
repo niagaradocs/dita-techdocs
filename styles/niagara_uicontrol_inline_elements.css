@@ -30,7 +30,6 @@
 }
 cite.cite, cite.cite > span.ph {
   font-style: var(--font-style-italic);
-  color: blueviolet;
 }
 .option {
   font-family: var(--font-family-monospace);
