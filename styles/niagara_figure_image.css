@@ -64,7 +64,7 @@ img.image.inline {
   display: inline-block !important;
   max-height: 16px;
   padding: 0px;
-  margin-bottom: -1px;
+  margin-bottom: -2px;
   }
 /* Style inline images (icons) in in paragraphs, not in commands. */
 .p > .image,
