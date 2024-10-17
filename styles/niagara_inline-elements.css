@@ -1,0 +1,19 @@
+/*---------------------------------------- INLINE STYLES -------------------------------------------  */
+.parmname {
+  font-family: var(--font-family-monospace);
+  font-weight: var(--font-weight-heavy);
+  letter-spacing: var(--letter-spacing-mono);
+}
+.cite {
+  font-style: var(--font-style-italic);
+}
+cite.cite, cite.cite > span.ph {
+  font-style: var(--font-style-italic);
+  color: blueviolet;
+}
+.option {
+  font-family: var(--font-family-monospace);
+  letter-spacing: var(--letter-spacing-mono);
+}
+
+/*---------------------------------------- END BASIC STYLE -------------------------------------------  */

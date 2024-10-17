@@ -1,9 +1,0 @@
-/* Testing to show this file is imported to PDF Generator. */
-.coverPage-title {
-    width: 100%;
-    height: 100%;
-    color: #fff;    
-    background-color: blue;
-    page-break-after: always; /* Make the cover-page-container (h1) fill up the whole cover page. */
-  }
-  
