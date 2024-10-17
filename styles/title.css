@@ -125,3 +125,9 @@ article:has(.topictitle1, :not(article)) {
 .sectiontitle {
   margin-left: -0.05em;
 }
+/* Change Log */
+article > div > section > h3.title.sectiontitle
+  { margin: 12px 0px 0px 0px; 
+  font-size: h2;
+  font-weight: var(--font-weight-ui);
+}
