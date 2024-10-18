@@ -65,11 +65,11 @@ nav ul li {
     margin-left: 0in;
   }
 /* ---- Increment toc_level1 only for direct children list items of the top ul */
-nav > ul > li:before {
-  counter-increment: toc_level1;
-  content: "Chapter " counter(toc_level1) "";
-  padding-right: 0.125in;
-}
+/* nav > ul > li:before { */
+/*  counter-increment: toc_level1; */
+/*   content: "Chapter " counter(toc_level1) ""; */
+/*   padding-right: 0.125in; */
+/*}  */
 
 /* Style level-1 (chapter) topics that do not have children. */
 nav > ul > li:not(.notices):not(.about) > a,
