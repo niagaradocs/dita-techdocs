@@ -64,6 +64,11 @@ nav ul li {
     font-size: 10pt;
     margin-left: 0in;
   }
+
+/* hide toc entry for legal page. Use class of toc container and legal page <li> */
+.bookmap .notices {
+    display: none;
+}  
 /* ---- Increment toc_level1 only for direct children list items of the top ul */
 /* nav > ul > li:before { */
 /*  counter-increment: toc_level1; */

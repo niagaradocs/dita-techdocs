@@ -15,7 +15,6 @@ div.legal_niagara_tridium {
       width: 100%;
       height: 100%;
       page-break-after: always;
-      counter-reset: page 2;
   }
 /* 
   @page legal_page {    
