@@ -1,4 +1,3 @@
-/* ========= TABLE OF CONTENTS (TOC) NUMBERING ==========*/
 /* Level 1 (chapter-level) TOC numbering. */
 html {
   counter-reset: section_level1;
@@ -6,7 +5,8 @@ html {
 nav ul {
   counter-reset: toc_level1;
 }
-nav ul li:before {
+
+nav ul li:not(.notices):not(.about):before {
   counter-increment: toc_level1;
   content: "Chapter " counter(toc_level1) ". ";
 }
@@ -50,7 +50,7 @@ nav ul li ul li ul li ul li ul li:before {
   /*content        : counter(toc_level1)"."counter(toc_level2)"."counter(toc_level3)"."counter(toc_level4)"."counter(toc_level5)". ";*/
   content: none; /* Removes level 5 topics (and deeper) from the table of contents */
 }
-
+*/
 /***DOCUMENT BODY NUMBERING***/
 /* Level 1 (chapter-level) topic title numbering. */
 article.topic.reference.nested0:not(.glossentry) > h1.title.topictitle1:not(.glossterm)::before, article.topic.concept.nested0:not(.glossentry) > h1.title.topictitle1:not(.glossterm)::before {
