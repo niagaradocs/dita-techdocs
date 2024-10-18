@@ -1,3 +1,4 @@
+
 /* Level 1 (chapter-level) TOC numbering. */
 html {
   counter-reset: section_level1;
@@ -6,86 +7,62 @@ nav ul {
   counter-reset: toc_level1;
 }
 
-nav ul li:not(.notices):not(.about):before {
+/* Exclude content for notices and about classes */
+nav ul > li:not(.notices):not(.about):before {
   counter-increment: toc_level1;
   content: "Chapter " counter(toc_level1) ". ";
 }
+
 /***** only number top level Chapter no sublevel numbering *******/
-nav ul ul {
+
+/* Level 2 (subchapter-level) TOC numbering */
+nav ul li:not(.notices):not(.about) > ul {
   counter-reset: toc_level2;
 }
 
-/* Level 2 (subchapter-level) TOC numbering. */
-nav ul li ul li:before {
+nav ul li:not(.notices):not(.about) > ul > li:before {
   counter-increment: toc_level2;
-  content: "";
-}
-nav ul ul ul {
-  counter-reset: toc_level3;
+  content: ""; /* Adjust this as needed for subchapter content */
 }
 
-/* Level 3 TOC numbering. */
-nav ul li ul li ul li:before {
+/* Level 3 TOC numbering */
+nav ul li ul li:not(.notices):not(.about):before {
   counter-increment: toc_level3;
-  content: "";
-}
-nav ul ul ul ul {
-  counter-reset: toc_level4;
-  content: "";
+  content: ""; /* Adjust this if you want sub-subchapter content */
 }
 
-/* Level 4 TOC numbering. */
-nav ul li ul li ul li ul li:before {
+/* Level 4 TOC numbering */
+nav ul li ul ul li:not(.notices):not(.about):before {
   counter-increment: toc_level4;
-  content: "";
-}
-nav ul ul ul ul ul {
-  counter-reset: toc_level5;
-  content: "";
+  content: ""; /* Adjust as necessary */
 }
 
-/* Level 5 TOC numbering. */
-nav ul li ul li ul li ul li ul li:before {
+/* Level 5 TOC numbering */
+nav ul li ul ul ul li:not(.notices):not(.about):before {
   counter-increment: toc_level5;
-  /*content        : counter(toc_level1)"."counter(toc_level2)"."counter(toc_level3)"."counter(toc_level4)"."counter(toc_level5)". ";*/
   content: none; /* Removes level 5 topics (and deeper) from the table of contents */
 }
-*/
-/***DOCUMENT BODY NUMBERING***/
-/* Level 1 (chapter-level) topic title numbering. */
-article.topic.reference.nested0:not(.glossentry) > h1.title.topictitle1:not(.glossterm)::before, article.topic.concept.nested0:not(.glossentry) > h1.title.topictitle1:not(.glossterm)::before {
+
+/*** DOCUMENT BODY NUMBERING ***/
+article.topic.reference.nested0:not(.glossentry) > h1.title.topictitle1:not(.glossterm)::before,
+article.topic.concept.nested0:not(.glossentry) > h1.title.topictitle1:not(.glossterm)::before {
   counter-increment: section_level1;
   content: "Chapter " counter(section_level1) ". ";
 }
 
-/* Level 2 topic title (subchapter-level) numbering. */
+/* Other topic title styles */
 .topictitle2::before {
   counter-increment: section_level2;
   content: "";
 }
-.topictitle2 {
-  counter-reset: section_level3;
-}
-
-/* Level 3 topic title numbering.*/
 .topictitle3::before {
   counter-increment: section_level3;
   content: "";
 }
-.topictitle3 {
-  counter-reset: section_level4;
-}
-
-/* Level 4 topic title numbering. */
 .topictitle4::before {
   counter-increment: section_level4;
   content: "";
 }
-.topictitle4 {
-  counter-reset: section_level5;
-}
-
-/* Level 5 topic title numbering. */
 .topictitle5::before {
   counter-increment: section_level5;
   content: "";
