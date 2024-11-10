@@ -1,0 +1,40 @@
+import os
+from bs4 import BeautifulSoup
+
+def create_toc_xml():
+    doc_name = input("Enter the document name (this will be used to identify the folder): ")
+    base_path = f"C:\\_{doc_name}"
+    source_path = os.path.join(base_path, 'index.html')
+    target_path = os.path.join(base_path, 'toc.xml')
+
+    try:
+        with open(source_path, 'r', encoding='utf-8') as file:
+            soup = BeautifulSoup(file, 'html.parser')
+
+        toc_content = '<?xml version="1.0" encoding="UTF-8"?>\n<toc>\n'
+        toc_content += parse_ul(soup.find('ul'), '')  # Start parsing from the first <ul>
+        toc_content += '</toc>'
+
+        with open(target_path, 'w', encoding='utf-8') as file:
+            file.write(toc_content)
+        print(f"toc.xml created successfully in {base_path}")
+
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+def parse_ul(ul, indent):
+    items_xml = ''
+    for li in ul.find_all('li', recursive=False):
+        a = li.find('a')
+        if a:
+            href = a.get('href')
+            text = a.get_text(strip=True)
+            items_xml += f'{indent}<tocitem target="{href}" text="{text}">\n'
+            child_ul = li.find('ul')
+            if child_ul:
+                items_xml += parse_ul(child_ul, indent + '   ')
+            items_xml += f'{indent}</tocitem>\n'
+    return items_xml
+
+if __name__ == "__main__":
+    create_toc_xml()
