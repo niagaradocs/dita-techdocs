@@ -69,6 +69,8 @@ nav ul li {
 .bookmap .notices {
     display: none;
 }  
+/* hide glossentry topics from toc. Use 'gloss_start' class with <li> > <ul> */
+
 /* ---- Increment toc_level1 only for direct children list items of the top ul */
 /* nav > ul > li:before { */
 /*  counter-increment: toc_level1; */
