@@ -1,4 +1,11 @@
 # html_utils.py
+import os
+
+def transform_toc_html_to_xml(toc_html_path):
+    if not os.path.exists(toc_html_path):
+        # Handle the case where the file does not exist
+        raise FileNotFoundError(f'{toc_html_path} does not exist.')
+    # Additional code logic for transforming HTML to XML
 import re
 from bs4 import BeautifulSoup
 
