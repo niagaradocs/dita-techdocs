@@ -65,7 +65,7 @@ class HelpSystemProcessor:
 # Entry point to run the script
 if __name__ == "__main__":
     source_root_folder = "C:\\Users\\e333758\\Honeywell\\PUBLIC Tridium Tech Docs - Workbench_Help - Documents\\_zipfiles"
-    doc_list = ['docMqtt']
+    doc_list = ['docAlarms']
 
     # Ask for document name and output folder
     use_doc_list = input("Use document list? (y/n): ").strip().lower()
