@@ -1,14 +1,14 @@
-# file_utils.py
 import os
 import shutil
 import zipfile
+from bs4 import BeautifulSoup
 
 def find_and_unzip_files(source_root, doc_folder_name):
-    """Find zip files matching doc_folder_name and unzip only html5 contents into its own folder."""
+    '''Find zip files matching doc_folder_name and unzip only html5 contents into its own folder.'''
     zip_files = [f for f in os.listdir(source_root) if f.endswith('.zip') and f.startswith(doc_folder_name)]
 
     if not zip_files:
-        print(f"No zip files found in {source_root} with the prefix '{doc_folder_name}'.")
+        print(f'No zip files found in {source_root} with the prefix '{doc_folder_name}'.')
         return None
 
     doc_folder_path = os.path.join(source_root, doc_folder_name)
@@ -22,19 +22,82 @@ def find_and_unzip_files(source_root, doc_folder_name):
                 if member.startswith('ot-output/html5/'):
                     target_path = os.path.join(doc_folder_path, member.replace('ot-output/html5/', '', 1))
                     os.makedirs(os.path.dirname(target_path), exist_ok=True)
-                    with zip_ref.open(member) as source, open(target_path, "wb") as target:
+                    with zip_ref.open(member) as source, open(target_path, 'wb') as target:
                         shutil.copyfileobj(source, target)
 
-            print(f"Extracted contents of 'html5' from {zip_file} to {doc_folder_path}.")
+            print(f'Extracted contents of 'html5' from {zip_file} to {doc_folder_path}.')
 
     return doc_folder_path
 
 def copy_and_rename_index(renamed_folder_path, target_root_folder):
-    """Copy and rename index.html to toc.html."""
+    '''Copy and rename index.html to toc.html.'''
     index_path = os.path.join(renamed_folder_path, 'index.html')
     if os.path.exists(index_path):
         toc_path = os.path.join(target_root_folder, 'toc.html')
         shutil.copy(index_path, toc_path)
-        print(f"Copied and renamed 'index.html' to 'toc.html' in {target_root_folder}")
+        print(f'Copied and renamed 'index.html' to 'toc.html' in {target_root_folder}')
 
-# You can add other functions related to file handling here, like `remove_unnecessary_images`, `copy_images`, etc.
+def _get_file_content(file_path, cached_files):
+    '''Helper method to get the content of a file, with caching to avoid redundant reads.'''
+    if file_path not in cached_files:
+        try:
+            with open(file_path, 'r', encoding='utf-8') as file:
+                cached_files[file_path] = file.read()
+        except Exception as e:
+            print(f'Error reading {file_path}: {e}')
+            return None
+    return cached_files.get(file_path)
+
+def track_reuse_references(target_root_folder, renamed_folder_path, cached_files):
+    '''Track all necessary images from the reuse folder based on references in other files.'''
+    needed_images = set()
+    reuse_folder_path = os.path.join(renamed_folder_path, 'reuse')
+
+    # Step 1: Identify reuse files that are referenced by other files
+    for dirpath, _, filenames in os.walk(target_root_folder):
+        for filename in filenames:
+            if filename.endswith('.html'):
+                file_path = os.path.join(dirpath, filename)
+                content = _get_file_content(file_path, cached_files)
+
+                if content:
+                    # Check for references to reuse files (e.g., via href or xref)
+                    try:
+                        for reuse_file in os.listdir(reuse_folder_path):
+                            if reuse_file in content:
+                                # Step 2: Check if the reuse file itself references any images
+                                reuse_file_path = os.path.join(reuse_folder_path, reuse_file)
+                                reuse_content = _get_file_content(reuse_file_path, cached_files)
+                                if reuse_content:
+                                    soup = BeautifulSoup(reuse_content, 'html.parser')
+                                    for img_tag in soup.find_all('img'):
+                                        img_src = img_tag.get('src')
+                                        if img_src and img_src.startswith('graphics/'):
+                                            needed_images.add(os.path.basename(img_src))
+                    except FileNotFoundError:
+                        print(f'Warning: Reuse folder '{reuse_folder_path}' not found.')
+
+    return needed_images
+
+def copy_images(renamed_folder_path, target_root_folder, needed_images):
+    '''Copy only necessary image files to a graphics folder in the target directory.'''
+    graphics_folder = os.path.join(target_root_folder, 'graphics')
+    os.makedirs(graphics_folder, exist_ok=True)
+
+    for img_name in needed_images:
+        src_path = os.path.join(renamed_folder_path, 'graphics', img_name)
+        if os.path.exists(src_path):
+            shutil.copy(src_path, os.path.join(graphics_folder, img_name))
+            print(f'Copied image {img_name} to target graphics folder.')
+
+def remove_unnecessary_images(target_root_folder, needed_images):
+    '''Remove unnecessary image files from the target graphics folder.'''
+    graphics_folder = os.path.join(target_root_folder, 'graphics')
+    if not os.path.exists(graphics_folder):
+        return
+
+    for img_name in os.listdir(graphics_folder):
+        if img_name not in needed_images:
+            img_path = os.path.join(graphics_folder, img_name)
+            os.remove(img_path)
+            print(f'Removed unnecessary image {img_name} from target graphics folder.')
