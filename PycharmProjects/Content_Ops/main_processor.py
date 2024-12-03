@@ -1,10 +1,11 @@
+# main_processor.py
+
 import os
 import shutil
 import re
-import zipfile
 from bs4 import BeautifulSoup
-from file_utils import find_and_unzip_files, copy_and_rename_index, track_reuse_references, copy_images, remove_unnecessary_images  # Importing from file_utils
-from html_utils import transform_toc_html_to_xml, format_html  # Assuming you have other utilities in html_utils
+from file_utils import find_and_unzip_files, copy_and_rename_index, track_reuse_references, copy_images, remove_unnecessary_images, _get_file_content
+from html_utils import transform_toc_html_to_xml, format_html
 
 class HelpSystemProcessor:
     def __init__(self, source_root, target_base, doc_list, option):
@@ -13,8 +14,7 @@ class HelpSystemProcessor:
         self.doc_list = doc_list
         self.option = option
         self.file_name_mapping = {}
-        self.image_count = {}
-        self.cached_files = {}  # Cache to store HTML file content for efficiency
+        self.cached_files = {}
 
     def process_documents(self):
         '''Main entry point to process each document in the list.'''
@@ -32,30 +32,20 @@ class HelpSystemProcessor:
 
     def restructure_files(self, doc_folder_name, target_root_folder):
         '''Restructure and rename files based on topic IDs and prepare them for the help system.'''
-        # Step 1: Unzip files
         renamed_folder_path = find_and_unzip_files(self.source_root, doc_folder_name)
         if not renamed_folder_path:
             print('No files to process.')
             return
 
-        # Step 2: Copy and rename index.html to toc.html
         copy_and_rename_index(renamed_folder_path, target_root_folder)
-
-        # Step 3: Track required images based on reuse references
         needed_images = track_reuse_references(target_root_folder, renamed_folder_path, self.cached_files)
-
-        # Step 4: Copy images from 'graphics' folder to the target 'graphics' folder
         copy_images(renamed_folder_path, target_root_folder, needed_images)
-
-        # Step 5: Remove unnecessary images from the graphics folder
         remove_unnecessary_images(target_root_folder, needed_images)
 
-        # Assuming the rest of the functions for renaming HTML files, updating links, formatting, etc., are defined elsewhere
         self.rename_html_files(renamed_folder_path, target_root_folder)
         self.update_links_in_html(target_root_folder)
         self.format_html_files(target_root_folder)
 
-        # Step 9: Convert toc.html to toc.xml
         transform_toc_html_to_xml(os.path.join(target_root_folder, 'toc.html'), os.path.join(target_root_folder, 'toc.xml'))
 
     def rename_html_files(self, renamed_folder_path, target_root_folder):
@@ -70,7 +60,7 @@ class HelpSystemProcessor:
 
     def rename_html_file_based_on_topic_id(self, html_file_path, target_root_folder, original_filename):
         '''Renames the HTML file based on its topic ID extracted from the <body> or <html> tag.'''
-        content = self._get_file_content(html_file_path) 
+        content = _get_file_content(html_file_path, self.cached_files)
         if not content:
             return None
 
@@ -92,21 +82,20 @@ class HelpSystemProcessor:
 
     def update_links_in_html(self, target_root_folder):
         '''Update links in HTML files to match the new file structure.'''
-    for dirpath, _, filenames in os.walk(target_root_folder):
-        for filename in filenames:
-            if filename.endswith('.html'):
-                file_path = os.path.join(dirpath, filename)
-                content = self._get_file_content(file_path)
-                if content:
-                    updated_content = re.sub(
-                        r'(?P<attr>(href|src)=[\\''])(?P<url>.*?)([\\''])',
-                        lambda m: f"{m.group('attr')}{self.update_links(m.group('url'))}{m.group(4)}",
-                        content
-                    )
-
-                    with open(file_path, 'w', encoding='utf-8') as file:
-                        file.write(updated_content)
-                    print(f'Updated internal links in {filename}.')
+        for dirpath, _, filenames in os.walk(target_root_folder):
+            for filename in filenames:
+                if filename.endswith('.html'):
+                    file_path = os.path.join(dirpath, filename)
+                    content = _get_file_content(file_path, self.cached_files)
+                    if content:
+                        updated_content = re.sub(
+                            r'(?P<attr>(href|src)=["\'])(?P<url>.*?)(["\'])',
+                            lambda m: f"{m.group('attr')}{self.update_links(m.group('url'))}{m.group(4)}",
+                            content
+                        )
+                        with open(file_path, 'w', encoding='utf-8') as file:
+                            file.write(updated_content)
+                        print(f'Updated internal links in {filename}.')
 
     def format_html_files(self, target_root_folder):
         '''Ensure <head>, </head>, <title>, </title>, <body>, and </body> tags are on separate lines in all HTML files.'''
@@ -114,30 +103,12 @@ class HelpSystemProcessor:
             for filename in filenames:
                 if filename.endswith('.html'):
                     file_path = os.path.join(dirpath, filename)
-                    content = self._get_file_content(file_path)
+                    content = _get_file_content(file_path, self.cached_files)
                     if content:
-                        # Ensure specified tags are on separate lines
-                        content = re.sub(r'(\\\\s*<head>)', r'\\\\n\\\\1\\\\n', content)
-                        content = re.sub(r'(</head>)', r'\\\\n\\\\1\\\\n', content)
-                        content = re.sub(r'(\\\\s*<title>)', r'\\\\n\\\\1\\\\n', content)
-                        content = re.sub(r'(</title>)', r'\\\\n\\\\1\\\\n', content)
-                        content = re.sub(r'(\\\\s*<body[^>]*>)', r'\\\\n\\\\1\\\\n', content)
-                        content = re.sub(r'(</body>)', r'\\\\n\\\\1\\\\n', content)
-
+                        formatted_content = format_html(content)
                         with open(file_path, 'w', encoding='utf-8') as file:
-                            file.write(content)
+                            file.write(formatted_content)
                         print(f'Formatted {filename} to have specific tags on separate lines.')
-
-    def _get_file_content(self, file_path):
-        '''Helper method to get the content of a file, with caching to avoid redundant reads.'''
-        if file_path not in self.cached_files:
-            try:
-                with open(file_path, 'r', encoding='utf-8') as file:
-                    self.cached_files[file_path] = file.read()
-            except Exception as e:
-                print(f'Error reading {file_path}: {e}')
-                return None
-        return self.cached_files.get(file_path)
 
     def update_links(self, link):
         '''Update a link based on the file name mapping.'''
@@ -151,10 +122,9 @@ class HelpSystemProcessor:
 
 # Entry point to run the script
 if __name__ == '__main__':
-    source_root_folder = 'C:\\\\\\\\Users\\\\\\\\e333758\\\\\\\\Honeywell\\\\\\\\PUBLIC Tridium Tech Docs - Workbench_Help - Documents\\\\\\\\_zipfiles'
+    source_root_folder = 'C:\\Users\\e333758\\Honeywell\\PUBLIC Tridium Tech Docs - Workbench_Help - Documents\\_zipfiles'
     doc_list = ['docAlarms']
 
-    # Ask for document name and output folder
     use_doc_list = input('Use document list? (y/n): ').strip().lower()
     if use_doc_list == 'y':
         doc_list = doc_list
@@ -169,7 +139,7 @@ if __name__ == '__main__':
     print('1: _target_html folder')
     print('2: techdocsdev folder')
     option = input('Enter the option number (1 or 2): ')
-    target_base = 'c:\\\\\\\\_target_html' if option == '1' else 'C:\\\\\\\\niagara\\\\\\\\techdocsdev\\\\\\\\docs'
+    target_base = 'c:\\_target_html' if option == '1' else 'C:\\niagara\\techdocsdev\\docs'
 
     processor = HelpSystemProcessor(source_root_folder, target_base, doc_list, option)
     processor.process_documents()
