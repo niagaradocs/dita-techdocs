@@ -1,5 +1,5 @@
 # file_utils.py
-
+import re
 import os
 import shutil
 import zipfile
@@ -50,44 +50,72 @@ def _get_file_content(file_path, cached_files):
             return None
     return cached_files.get(file_path)
 
-def track_reuse_references(target_root_folder, renamed_folder_path, cached_files):
-    '''Track all necessary images from the reuse folder based on references in other files.'''
+def track_reuse_references(renamed_folder_path, cached_files):
+    '''Identify images referenced by HTML files in 'reuse' folder,
+       and also check if those files are referenced by any non-reuse folders.'''
+    
     needed_images = set()
+    referenced_files = {}
+    reuse_images = set()
+
     reuse_folder_path = os.path.join(renamed_folder_path, 'reuse')
 
-    for dirpath, _, filenames in os.walk(target_root_folder):
-        for filename in filenames:
-            if filename.endswith('.html'):
-                file_path = os.path.join(dirpath, filename)
-                content = _get_file_content(file_path, cached_files)
+    # Step 1: Track which images are referenced in which reuse files
+    if os.path.exists(reuse_folder_path):
+        for dirpath, _, filenames in os.walk(reuse_folder_path):
+            for filename in filenames:
+                if filename.lower().endswith('.html'):
+                    file_path = os.path.join(dirpath, filename)
+                    content = _get_file_content(file_path, cached_files)  # Use the caching function
+                    if content:  # Ensure content was retrieved successfully
+                        matches = re.findall(r'src=["\\"]([^"\\"]+\\.(?:png|jpg|jpeg|gif))["\\"]', content)
+                        reuse_images.update(matches)
+                        referenced_files[filename] = matches
 
-                if content:
-                    try:
-                        for reuse_file in os.listdir(reuse_folder_path):
-                            if reuse_file in content:
-                                reuse_file_path = os.path.join(reuse_folder_path, reuse_file)
-                                reuse_content = _get_file_content(reuse_file_path, cached_files)
-                                if reuse_content:
-                                    soup = BeautifulSoup(reuse_content, 'html.parser')
-                                    for img_tag in soup.find_all('img'):
-                                        img_src = img_tag.get('src')
-                                        if img_src and img_src.startswith('graphics/'):
-                                            needed_images.add(os.path.basename(img_src))
-                    except FileNotFoundError:
-                        print(f'Warning: Reuse folder \'{reuse_folder_path}\' not found.')
+    # Step 2: Check if these reuse files are called by any other folder (and thus keep their images)
+    all_referenced = set()
+
+    # Check all other folders excluding reuse
+    for folder in ['concept', 'reference', 'task', 'glossentry']:
+        folder_path = os.path.join(renamed_folder_path, folder)
+        if os.path.exists(folder_path):
+            for dirpath, _, filenames in os.walk(folder_path):
+                for filename in filenames:
+                    if filename.lower().endswith('.html'):
+                        file_path = os.path.join(dirpath, filename)
+                        content = _get_file_content(file_path, cached_files)  # Use the caching function
+                        if content:  # Ensure content was retrieved successfully
+                            for reuse_file, images in referenced_files.items():
+                                if reuse_file in content:
+                                    all_referenced.update(images)
+
+    # Step 3: Identify all necessary images
+    needed_images.update(all_referenced)  # Images that are shared between reuse and other folders
+    needed_images.update(reuse_images)  # Keep images referenced by any reuse files
 
     return needed_images
 
-def copy_images(renamed_folder_path, target_root_folder, needed_images):
-    '''Copy only necessary image files to a graphics folder in the target directory.'''
-    graphics_folder = os.path.join(target_root_folder, 'graphics')
+def copy_images(self, renamed_folder_path, target_root_folder):
+    '''Copy image files to a graphics folder in the target directory.'''
+    graphics_folder = os.path.join(target_root_folder, "graphics")
     os.makedirs(graphics_folder, exist_ok=True)
+    image_extensions = ('.png', '.jpg', '.jpeg', '.gif')
 
-    for img_name in needed_images:
-        src_path = os.path.join(renamed_folder_path, 'graphics', img_name)
-        if os.path.exists(src_path):
-            shutil.copy(src_path, os.path.join(graphics_folder, img_name))
-            print(f'Copied image {img_name} to target graphics folder.')
+    # Handle 'graphic' folder
+    folder_path = os.path.join(renamed_folder_path, 'graphic')
+    if os.path.exists(folder_path):
+        for dirpath, _, filenames in os.walk(folder_path):
+            for filename in filenames:
+                if filename.lower().endswith(image_extensions):
+                    # Copy all images by default
+                    src_image_path = os.path.join(dirpath, filename)
+                    dst_image_path = os.path.join(graphics_folder, filename)
+                    
+                    # Copy the image to the target graphics folder
+                    shutil.copy(src_image_path, dst_image_path)
+                    print(f"Copied image '{filename}' to '{graphics_folder}'.")
+
+                    # Here, you could implement additional logic to track or manage which images need to be removed based on your criteria
 
 def remove_unnecessary_images(target_root_folder, needed_images):
     '''Remove unnecessary image files from the target graphics folder.'''
@@ -99,4 +127,4 @@ def remove_unnecessary_images(target_root_folder, needed_images):
         if img_name not in needed_images:
             img_path = os.path.join(graphics_folder, img_name)
             os.remove(img_path)
-            print(f'Removed unnecessary image {img_name} from target graphics folder.')
+            print(f"Removed unnecessary image {img_name} from target graphics folder.")

@@ -38,7 +38,7 @@ class HelpSystemProcessor:
             return
 
         copy_and_rename_index(renamed_folder_path, target_root_folder)
-        needed_images = track_reuse_references(target_root_folder, renamed_folder_path, self.cached_files)
+        needed_images = track_reuse_references(renamed_folder_path, self.cached_files)
         copy_images(renamed_folder_path, target_root_folder, needed_images)
         remove_unnecessary_images(target_root_folder, needed_images)
 
