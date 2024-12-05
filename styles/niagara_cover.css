@@ -128,7 +128,7 @@ div.bookmeta-metadata {
   
 
 /* About this Guide, Change Log, Rel docs, but exclude chapter_start on ariaid-title4 */
-#ariaid-title2, #ariaid-title3, #ariaid-title4:not(.chapter_start) {
+.about, #ariaid-title2, #ariaid-title3, #ariaid-title4:not(.chapter_start) {
   font-size: var(--font-size-h1);
   font-weight: var(--font-weight-normal);
   line-height: var(--line-height-title);

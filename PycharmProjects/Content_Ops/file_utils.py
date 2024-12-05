@@ -97,7 +97,7 @@ def track_reuse_references(renamed_folder_path, cached_files):
 
 def copy_images(self, renamed_folder_path, target_root_folder):
     '''Copy image files to a graphics folder in the target directory.'''
-    graphics_folder = os.path.join(target_root_folder, "graphics")
+    graphics_folder = os.path.join(target_root_folder, 'graphics')
     os.makedirs(graphics_folder, exist_ok=True)
     image_extensions = ('.png', '.jpg', '.jpeg', '.gif')
 
