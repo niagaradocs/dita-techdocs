@@ -170,21 +170,7 @@ img.keep_center{display: block; margin: 5px auto;  width: 500px; clear: both;}
 .reference table tr:nth-child(even){background-color: #f1f2f3; }
 .reference table tr:first-child{border-top: solid 1px #ccc;}
 .reference table tr td{border: none; vertical-align: top; padding: 10px;}
-  /* Formatting for Reference table with data and monospace needs */
-table td.entry, table th.entry {
-  margin-left: 0px;
-  padding: 4px;
-  font-size: var(--font-size-table-medium);
-}
-ul.sl > li.sli {
-  list-style-type: none;  /* Removes bullet points */
-  font-size: var(--font-size-table-medium);
-  font-weight: var(--font-weight-normal);
-  font-family: var(--font-family-monospace);
-  letter-spacing: var(--letter-spacing-mono);
-  margin: 0;              /* Optional: Removes default margin */
-  padding: 0;             /* Optional: Removes default padding */
-}
+
 /* end Reference table ****/
 
 /* Note */
