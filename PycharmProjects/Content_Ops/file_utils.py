@@ -3,7 +3,7 @@ import shutil
 import zipfile
 
 def find_and_unzip_files(source_root, doc_folder_name):
-    """Find zip files matching doc_folder_name and unzip only html5 contents into its own folder."""
+    """Find zip files matching doc_folder_name and unzip all contents into its own folder."""
     zip_files = [f for f in os.listdir(source_root) if f.endswith('.zip') and f.startswith(doc_folder_name)]
     if not zip_files:
         print(f"No zip files found in {source_root} with the prefix '{doc_folder_name}'.")
@@ -24,12 +24,10 @@ def copy_and_rename_index(renamed_folder_path, target_root_folder):
     index_path = os.path.join(renamed_folder_path, 'index.html')
     toc_path = os.path.join(target_root_folder, 'toc.html')
 
-    # Check if the index file exists
     if not os.path.exists(index_path):
         print(f"Error: 'index.html' not found in {renamed_folder_path}.")
         return
 
-    # Ensure the target directory exists
     os.makedirs(target_root_folder, exist_ok=True)
 
     try:
@@ -37,7 +35,6 @@ def copy_and_rename_index(renamed_folder_path, target_root_folder):
         print(f"Copied and renamed 'index.html' to 'toc.html' in {target_root_folder}")
     except Exception as e:
         print(f"Error copying and renaming 'index.html' to 'toc.html': {e}")
-
 
 def copy_images(source_path, target_path):
     """Copy all images from 'graphic' to 'graphics'."""
@@ -51,3 +48,5 @@ def copy_images(source_path, target_path):
             tgt_img_path = os.path.join(graphics_folder, img_file)
             shutil.copy(src_img_path, tgt_img_path)
             print(f"Copied {img_file} to graphics folder.")
+    else:
+        print(f"Warning: No 'graphic' folder found in {source_path}.")
