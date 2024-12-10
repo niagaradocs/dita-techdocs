@@ -1,8 +1,5 @@
-Use document list? (y/n): n
-Enter the name of the document folder: docAlarms
-Select an output folder option:
-1: _target_html folder
-2: techdocsdev folder
-Enter the option number (1 or 2): 1
 Extracted contents from docAlarms_ditamap-11002-result.zip to C:\Users\e333758\Honeywell\PUBLIC Tridium Tech Docs - Workbench_Help - Documents\_zipfiles\docAlarms.
+Checking 'index.html' in C:\Users\e333758\Honeywell\PUBLIC Tridium Tech Docs - Workbench_Help - Documents\_zipfiles\docAlarms...
+Error: 'index.html' not found in C:\Users\e333758\Honeywell\PUBLIC Tridium Tech Docs - Workbench_Help - Documents\_zipfiles\docAlarms.
+Check completed for 'toc.html' in c:\_target_html\docAlarms.
 toc.html not found for conversion.
