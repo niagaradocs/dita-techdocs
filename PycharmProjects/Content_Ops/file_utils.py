@@ -19,13 +19,25 @@ def find_and_unzip_files(source_root, doc_folder_name):
         print(f"Extracted contents from {zip_file} to {doc_folder_path}.")
     return doc_folder_path
 
-def copy_and_rename_index(source_path, target_path):
+def copy_and_rename_index(renamed_folder_path, target_root_folder):
     """Copy and rename index.html to toc.html."""
-    index_path = os.path.join(source_path, "index.html")
-    if os.path.exists(index_path):
-        toc_path = os.path.join(target_path, "toc.html")
+    index_path = os.path.join(renamed_folder_path, 'index.html')
+    toc_path = os.path.join(target_root_folder, 'toc.html')
+
+    # Check if the index file exists
+    if not os.path.exists(index_path):
+        print(f"Error: 'index.html' not found in {renamed_folder_path}.")
+        return
+
+    # Ensure the target directory exists
+    os.makedirs(target_root_folder, exist_ok=True)
+
+    try:
         shutil.copy(index_path, toc_path)
-        print(f"Copied and renamed 'index.html' to 'toc.html'.")
+        print(f"Copied and renamed 'index.html' to 'toc.html' in {target_root_folder}")
+    except Exception as e:
+        print(f"Error copying and renaming 'index.html' to 'toc.html': {e}")
+
 
 def copy_images(source_path, target_path):
     """Copy all images from 'graphic' to 'graphics'."""

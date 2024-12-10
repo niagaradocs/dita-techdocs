@@ -32,7 +32,10 @@ class HelpSystemProcessor:
             return
 
         # Step 2: Copy and rename index.html to toc.html
+        print(f"Checking 'index.html' in {renamed_folder_path}...")
         copy_and_rename_index(renamed_folder_path, target_root_folder)
+        print(f"Check completed for 'toc.html' in {target_root_folder}.")
+
 
         # Step 3: Copy all images from 'graphic' to 'graphics'
         copy_images(renamed_folder_path, target_root_folder)
