@@ -6,17 +6,20 @@ Adjust the paths and options below to customize behavior.
 """
 
 # Source folder containing zip files
-SOURCE_ROOT = "C:\\Users\\e333758\\Honeywell\\PUBLIC Tridium Tech Docs - Workbench_Help - Documents\\_zipfiles"
+source_root = "C:\\_zipfiles"
 
 # Target base folder for processed documents
-TARGET_ROOT = {
+target_root = {
     "1": "c:\\_target_html",
     "2": "C:\\niagara\\techdocsdev\\docs"
 }
 
 # Predefined document list
-DOC_LIST = ['docAlarms']
+doc_list = ['docAlarms']
 
 # Logging options
 LOGGING_LEVEL = "DEBUG"  # Options: "DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"
 LOG_FILE = "processing.log"  # Log file path
+
+# Default processing option: 1 = '_target_html', 2 = 'techdocsdev'
+option = "1"  # Change this if you want to preselect an option
