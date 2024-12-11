@@ -71,8 +71,7 @@ class HelpSystemProcessor:
         for dirpath, _, filenames in os.walk(renamed_folder_path):
             for filename in filenames:
                 if filename.endswith(".html") and filename not in [
-                    "index.html",
-                    "WH_LegalNotices_Tridium_N4_0000009932.html",
+                    "index.html"
                 ]:
                     html_file_path = os.path.join(dirpath, filename)
                     new_filename = self.rename_html_file_based_on_topic_id(
