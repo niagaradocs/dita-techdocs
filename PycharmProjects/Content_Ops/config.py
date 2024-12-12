@@ -6,8 +6,8 @@ Adjust the paths and options below to customize behavior.
 """
 
 # Source folder containing zip files
-# source_root = "C:\\_zipfiles"
-source_root = "C:\\Users\\e333758\\Honeywell\\PUBLIC Tridium Tech Docs - Workbench_Help - Documents\\_zipfiles"
+source_root = "C:\\_zipfiles"
+# source_root = "C:\\Users\\e333758\\Honeywell\\PUBLIC Tridium Tech Docs - Workbench_Help - Documents\\_zipfiles"
 
 # Target base folder for processed documents
 target_root = {
