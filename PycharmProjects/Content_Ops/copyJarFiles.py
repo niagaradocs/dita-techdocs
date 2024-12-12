@@ -22,7 +22,7 @@ def get_incremented_filename(base_name, directory):
     return new_file_name
 
 
-docs = ['docAapup']
+docs = ['docAwsUtils']
 #  docs = ['docAlarms', 'docAwsUtils', 'docBacnet', 'docContainer', 'docJ9MtgWrg', 'docMqtt']
 
 for doc in docs:
