@@ -7,14 +7,56 @@ toc.html not found for conversion.
 def _get_target_root_folder(self, doc_folder_name):
     """Determine target root folder based on the selected option."""
     if self.option == "2":
-        # For Option 2, construct the target path without duplicating the doc_folder_name
+        # Target final 'doc' folder
         return os.path.join(
             self.target_root,
-            doc_folder_name,  # Main folder for the document
-            f"{doc_folder_name}-doc",  # Subfolder for processed content
-            "src",  # Standard subfolder structure
-            "doc"  # Target folder
+            doc_folder_name,  # Main document folder
+            f"{doc_folder_name}-doc",  # Specific subfolder for the processed document
+            "src",  # Standard structure
+            "doc"  # Final content folder
         )
     else:
-        # For Option 1, append doc_folder_name directly
+        # For Option 1, directly append the document folder
         return os.path.join(self.target_root, doc_folder_name)
+
+def restructure_files(self, doc_folder_name, target_root_folder):
+    """Restructure and rename files based on topic IDs and prepare them for the help system."""
+    # Step 1: Unzip files
+    renamed_folder_path = find_and_unzip_files(self.source_root, doc_folder_name)
+    if not renamed_folder_path:
+        print("No files to process.")
+        return
+
+    # Ensure we process only the html5 folder within the unzipped directory
+    html5_folder_path = os.path.join(renamed_folder_path, "ot-output", "html5")
+    if not os.path.exists(html5_folder_path):
+        print(f"Error: Expected 'html5' folder not found at {html5_folder_path}. Ensure the source archive contains the correct structure.")
+        return
+
+    # Step 2: Copy all contents of 'html5' folder into the final 'doc' target folder
+    if not os.path.exists(target_root_folder):
+        os.makedirs(target_root_folder)
+    
+    for item in os.listdir(html5_folder_path):
+        src_path = os.path.join(html5_folder_path, item)
+        tgt_path = os.path.join(target_root_folder, item)
+        
+        if os.path.isdir(src_path):
+            # Copy directory and its contents
+            shutil.copytree(src_path, tgt_path, dirs_exist_ok=True)
+        else:
+            # Copy individual file
+            shutil.copy(src_path, tgt_path)
+    
+    print(f"Copied contents of {html5_folder_path} to {target_root_folder}")
+
+    # Step 3: Proceed with other processing steps
+    copy_and_rename_index(target_root_folder, target_root_folder)
+    copy_images(target_root_folder, target_root_folder)
+    self.rename_html_files(target_root_folder, target_root_folder)
+    self.update_links_in_html(target_root_folder)
+    self.format_html_files(target_root_folder)
+    transform_toc_html_to_xml(
+        os.path.join(target_root_folder, "toc.html"),
+        os.path.join(target_root_folder, "toc.xml"),
+    )
