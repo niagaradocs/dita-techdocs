@@ -3,3 +3,18 @@ Checking 'index.html' in C:\Users\e333758\Honeywell\PUBLIC Tridium Tech Docs - W
 Error: 'index.html' not found in C:\Users\e333758\Honeywell\PUBLIC Tridium Tech Docs - Workbench_Help - Documents\_zipfiles\docAlarms.
 Check completed for 'toc.html' in c:\_target_html\docAlarms.
 toc.html not found for conversion.
+
+def _get_target_root_folder(self, doc_folder_name):
+    """Determine target root folder based on the selected option."""
+    if self.option == "2":
+        # For Option 2, construct the target path without duplicating the doc_folder_name
+        return os.path.join(
+            self.target_root,
+            doc_folder_name,  # Main folder for the document
+            f"{doc_folder_name}-doc",  # Subfolder for processed content
+            "src",  # Standard subfolder structure
+            "doc"  # Target folder
+        )
+    else:
+        # For Option 1, append doc_folder_name directly
+        return os.path.join(self.target_root, doc_folder_name)
