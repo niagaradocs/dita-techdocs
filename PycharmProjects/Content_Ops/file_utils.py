@@ -168,3 +168,20 @@ def copy_images(html5_folder_path, target_root_folder):
             tgt_img_path = os.path.join(graphics_folder, img_file)
             shutil.copy(src_img_path, tgt_img_path)
             print(f"Copied {img_file} to graphics folder.")
+
+def rename_legal_page(target_root_folder, file_name_mapping):
+    """
+    Rename the legal notice page to index.html.
+    Assumes the legal page is named 'legal_niagara_tridium.html'.
+    """
+    legal_page = "legal_niagara_tridium.html"
+    new_file_name = "index.html"
+    legal_page_path = os.path.join(target_root_folder, legal_page)
+    new_file_path = os.path.join(target_root_folder, new_file_name)
+
+    if os.path.exists(legal_page_path):
+        shutil.copy(legal_page_path, new_file_path)
+        print(f"Copied and renamed {legal_page} to {new_file_name}")
+        file_name_mapping[legal_page] = new_file_name
+    else:
+        print(f"Legal page '{legal_page}' not found in {target_root_folder}.")
