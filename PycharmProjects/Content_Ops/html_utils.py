@@ -19,3 +19,7 @@ def transform_toc_html_to_xml(toc_html_path, toc_xml_path):
             text = item.text.strip()
             file.write(f'  <tocitem target="{href}" text="{text}" />\n')
         file.write("</toc>\n")
+        print("toc.xml created successfully.")
+
+    os.remove(toc_html_path)
+    print("toc.html has been deleted after conversion.")
