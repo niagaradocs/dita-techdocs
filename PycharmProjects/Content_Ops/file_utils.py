@@ -3,7 +3,6 @@ import shutil
 import zipfile
 from bs4 import BeautifulSoup
 
-
 def find_and_unzip_files(source_root, doc_folder_name):
     """
     Finds zip files matching the document folder name and extracts only
@@ -14,14 +13,18 @@ def find_and_unzip_files(source_root, doc_folder_name):
         print(f"No zip files found in {source_root} with the prefix '{doc_folder_name}'.")
         return None
 
+    # Ensure the destination folder is correctly structured under the source root
     doc_folder_path = os.path.join(source_root, doc_folder_name)
     os.makedirs(doc_folder_path, exist_ok=True)
 
+    # Extract files from all matching zip archives
     for zip_file in zip_files:
         zip_file_path = os.path.join(source_root, zip_file)
         with zipfile.ZipFile(zip_file_path, "r") as zip_ref:
+            # Extract all contents into the target document folder
             zip_ref.extractall(doc_folder_path)
         print(f"Extracted contents from {zip_file} to {doc_folder_path}.")
+        
     return doc_folder_path
 
 
