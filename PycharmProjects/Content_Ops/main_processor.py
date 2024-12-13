@@ -1,4 +1,5 @@
 import os
+import zipfile
 from bs4 import BeautifulSoup
 from file_utils import (
     find_and_unzip_files,
@@ -6,6 +7,7 @@ from file_utils import (
     copy_images,
     flatten_and_process_files,
     clean_target_directory,
+    rename_legal_page,
 )
 from html_utils import transform_toc_html_to_xml
 
@@ -52,6 +54,9 @@ class HelpSystemProcessor:
 
         # Copy and rename index.html to toc.html
         copy_and_rename_index(html5_folder_path, target_root_folder)
+
+        # rename the legal page to index after using original index for toc.html
+        rename_legal_page(target_root_folder, self.file_name_mapping)
 
         # Copy images to the graphics folder
         copy_images(html5_folder_path, target_root_folder)
