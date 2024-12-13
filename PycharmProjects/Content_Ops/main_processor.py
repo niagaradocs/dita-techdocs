@@ -1,4 +1,5 @@
 import os
+from bs4 import BeautifulSoup
 from file_utils import (
     find_and_unzip_files,
     copy_and_rename_index,
@@ -32,13 +33,8 @@ class HelpSystemProcessor:
     def _get_target_root_folder(self, doc_folder_name):
         """Determine target root folder based on the selected option."""
         if self.option == "2":
-            return os.path.join(
-                self.target_root,
-                doc_folder_name,
-                f"{doc_folder_name}-doc",
-                "src",
-                "doc",
-            )
+            # Use the dynamically constructed path from the configuration
+            return self.target_root.format(doc_folder_name=doc_folder_name)
         else:
             return os.path.join(self.target_root, doc_folder_name)
 
