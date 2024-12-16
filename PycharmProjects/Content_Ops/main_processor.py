@@ -8,6 +8,7 @@ from file_utils import (
     flatten_and_process_files,
     clean_target_directory,
     rename_legal_page,
+    update_references_in_flattened_files,
 )
 from html_utils import transform_toc_html_to_xml
 
@@ -55,18 +56,23 @@ class HelpSystemProcessor:
         # Copy and rename index.html to toc.html
         copy_and_rename_index(html5_folder_path, target_root_folder)
 
-        # rename the legal page to index after using original index for toc.html
+        # Update references in toc.html to reflect the flattened structure
+        toc_path = os.path.join(target_root_folder, "toc.html")
+        if os.path.exists(toc_path):
+            update_references_in_flattened_files(target_root_folder, self.file_name_mapping)
+            print("Updated references in toc.html.")
+
+        # Rename the legal page to index.html after using original index for toc.html
         rename_legal_page(target_root_folder, self.file_name_mapping)
 
         # Copy images to the graphics folder
         copy_images(html5_folder_path, target_root_folder)
 
-        # Transform toc.html to toc.xml
+        # Transform updated toc.html to toc.xml
         transform_toc_html_to_xml(
             os.path.join(target_root_folder, "toc.html"),
             os.path.join(target_root_folder, "toc.xml"),
         )
-
 
 # Entry point to run the script
 if __name__ == "__main__":
