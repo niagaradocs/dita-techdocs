@@ -3,10 +3,12 @@ import shutil
 import zipfile
 from bs4 import BeautifulSoup
 
+import shutil
+
 def find_and_unzip_files(source_root, doc_folder_name):
     """
     Finds zip files matching the document folder name and extracts only
-    the HTML5 content into a corresponding folder.
+    the HTML5 content into a clean corresponding folder.
     """
     zip_files = [f for f in os.listdir(source_root) if f.endswith(".zip") and f.startswith(doc_folder_name)]
     if not zip_files:
@@ -15,6 +17,13 @@ def find_and_unzip_files(source_root, doc_folder_name):
 
     # Ensure the destination folder is correctly structured under the source root
     doc_folder_path = os.path.join(source_root, doc_folder_name)
+
+    # Clear the folder if it already exists
+    if os.path.exists(doc_folder_path):
+        shutil.rmtree(doc_folder_path)
+        print(f"Cleared existing directory: {doc_folder_path}")
+
+    # Recreate the folder
     os.makedirs(doc_folder_path, exist_ok=True)
 
     # Extract files from all matching zip archives
@@ -26,7 +35,6 @@ def find_and_unzip_files(source_root, doc_folder_name):
         print(f"Extracted contents from {zip_file} to {doc_folder_path}.")
         
     return doc_folder_path
-
 
 def flatten_and_process_files(source_folder, target_folder, file_name_mapping):
     """
