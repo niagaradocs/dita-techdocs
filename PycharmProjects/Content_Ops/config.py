@@ -22,4 +22,4 @@ LOGGING_LEVEL = "DEBUG"  # Options: "DEBUG", "INFO", "WARNING", "ERROR", "CRITIC
 LOG_FILE = "processing.log"  # Log file path
 
 # Default processing option: 1 = '_target_html', 2 = 'techdocsdev'
-option = "1"  # Change this if you want to preselect an option
+option = "2"  # Change this if you want to preselect an option
