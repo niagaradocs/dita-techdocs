@@ -2,8 +2,8 @@ import os
 import shutil
 import zipfile
 from bs4 import BeautifulSoup
-
 import shutil
+from html_utils import format_html
 
 def find_and_unzip_files(source_root, doc_folder_name):
     """
@@ -62,29 +62,29 @@ def flatten_and_process_files(source_folder, target_folder, file_name_mapping):
     # Update references in all flattened HTML files
     update_references_in_flattened_files(target_folder, file_name_mapping)
 
-
 def flatten_html_file(source_file_path, target_folder, file_name_mapping):
-    """
-    Copies an HTML file to the target folder and updates the file name if necessary.
-    """
     try:
-        with open(source_file_path, 'r', encoding='utf-8') as file:
-            soup = BeautifulSoup(file, 'html.parser')
+        with open(source_file_path, "r", encoding="utf-8") as file:
+            soup = BeautifulSoup(file, "html.parser")
 
-        # Extract topic ID from <body> or <html> tag
+        # Extract topic ID and determine new file name
         topic_id = soup.body.get('id', None) or soup.html.get('id', None)
         new_file_name = f"{topic_id}.html" if topic_id else os.path.basename(source_file_path)
         target_file_path = os.path.join(target_folder, new_file_name)
 
-        # Save the flattened file
-        with open(target_file_path, 'w', encoding='utf-8') as file:
-            file.write(str(soup))
-        print(f"Flattened and moved HTML: {source_file_path} -> {target_file_path}")
+        # Format the content for specific tags
+        formatted_content = format_html(str(soup))
 
-        # Update the mapping for reference updates
+        # Save the formatted content
+        with open(target_file_path, "w", encoding="utf-8") as file:
+            file.write(formatted_content)
+        print(f"Flattened and formatted HTML: {source_file_path} -> {target_file_path}")
+
+        # Update mapping
         file_name_mapping[os.path.basename(source_file_path)] = new_file_name
     except Exception as e:
         print(f"Error processing HTML file {source_file_path}: {e}")
+
 
 
 def update_references_in_flattened_files(target_folder, file_name_mapping):
