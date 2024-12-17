@@ -180,9 +180,12 @@ def copy_images(html5_folder_path, target_root_folder):
 import os
 import shutil
 
+import os
+import shutil
+
 def rename_legal_page(target_root_folder, file_name_mapping):
     """
-    Rename the legal notice page to index.html and add a CSS file link.
+    Rename the legal notice page to index.html.
     Assumes the legal page is named 'legal_niagara_tridium.html'.
     """
     legal_page = "legal_niagara_tridium.html"
@@ -197,21 +200,5 @@ def rename_legal_page(target_root_folder, file_name_mapping):
         print(f"Copied and renamed {legal_page} to {new_file_name}")
         file_name_mapping[legal_page] = new_file_name
         
-        # Now, add the CSS link to the new legal page
-        with open(new_file_path, 'r') as file:
-            content = file.readlines()
-
-        # Insert the CSS link after the closing </title> tag
-        css_link = "<link rel='StyleSheet' href='module://bajaui/doc/style.css' type='text/css' />\\n"
-
-        for i, line in enumerate(content):
-            if "</title>" in line:
-                content.insert(i + 1, css_link)  # Insert it after </title>
-                break
-
-        # Write the modified content back to index.html
-        with open(new_file_path, 'w') as file:
-            file.writelines(content)
-
     else:
         print(f"Legal page '{legal_page}' not found in {target_root_folder}.")
