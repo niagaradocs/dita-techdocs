@@ -15,7 +15,7 @@ def transform_toc_html_to_xml(toc_html_path, toc_xml_path):
     with open(toc_html_path, "r", encoding="utf-8") as file:
         soup = BeautifulSoup(file, "html.parser")
 
-    # Check for 'index.html' reference
+    # Check for 'index.html' reference in toc
     index_found = any("index.html" in link.get("href", "") for link in soup.find_all("a"))
     if index_found:
         print("Reference to 'index.html' found in toc.html.")
