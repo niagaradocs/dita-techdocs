@@ -1,55 +1,47 @@
 from bs4 import BeautifulSoup
 import os
-
-
-def transform_toc_html_to_xml(toc_html_path, toc_xml_path):
-    """Transform toc.html to toc.xml format."""
-    if not os.path.exists(toc_html_path):
-        print(f"Error: toc.html not found at {toc_html_path}.")
-        return
-
-    with open(toc_html_path, "r", encoding="utf-8") as file:
-        soup = BeautifulSoup(file, "html.parser")
-
-    toc_items = soup.find_all("a")
-    with open(toc_xml_path, "w", encoding="utf-8") as file:
-        file.write('<?xml version="1.0" encoding="UTF-8"?>\n<toc>\n')
-        for item in toc_items:
-            href = item.get("href")
-            text = item.text.strip()
-            file.write(f'  <tocitem target="{href}" text="{text}" />\n')
-        file.write("</toc>\n")
-        print("toc.xml created successfully.")
-
-    os.remove(toc_html_path)
-    print("toc.html has been deleted after conversion.")
-
-    from bs4 import BeautifulSoup
-import os
-
-def transform_toc_html_to_xml(toc_html_path, toc_xml_path):
-    """Transform toc.html to toc.xml format."""
-    if not os.path.exists(toc_html_path):
-        print(f"Error: toc.html not found at {toc_html_path}.")
-        return
-
-    with open(toc_html_path, "r", encoding="utf-8") as file:
-        soup = BeautifulSoup(file, "html.parser")
-
-    toc_items = soup.find_all("a")
-    with open(toc_xml_path, "w", encoding="utf-8") as file:
-        file.write('<?xml version="1.0" encoding="UTF-8"?>\n<toc>\n')
-        for item in toc_items:
-            href = item.get("href")
-            text = item.text.strip()
-            file.write(f'  <tocitem target="{href}" text="{text}" />\n')
-        file.write("</toc>\n")
-        print("toc.xml created successfully.")
-
-    os.remove(toc_html_path)
-    print("toc.html has been deleted after conversion.")
-
 import re
+
+
+def transform_toc_html_to_xml(toc_html_path, toc_xml_path):
+    """
+    Transform toc.html to toc.xml format.
+    Ensures 'index.html' is added as the first entry if it is not already present.
+    """
+    if not os.path.exists(toc_html_path):
+        print(f"Error: toc.html not found at {toc_html_path}.")
+        return
+
+    with open(toc_html_path, "r", encoding="utf-8") as file:
+        soup = BeautifulSoup(file, "html.parser")
+
+    # Check for 'index.html' reference
+    index_found = any("index.html" in link.get("href", "") for link in soup.find_all("a"))
+    if index_found:
+        print("Reference to 'index.html' found in toc.html.")
+    else:
+        print("No reference to 'index.html' found. Adding it as the first entry in toc.xml.")
+
+    # Generate the toc.xml file
+    with open(toc_xml_path, "w", encoding="utf-8") as file:
+        file.write('<?xml version="1.0" encoding="UTF-8"?>\n<toc>\n')
+
+        # Add 'index.html' as the first entry if not found
+        if not index_found:
+            file.write('  <tocitem target="index.html" text="Home" />\n')
+
+        # Write existing items
+        for item in soup.find_all("a"):
+            href = item.get("href", "")
+            text = item.text.strip()
+            file.write(f'  <tocitem target="{href}" text="{text}" />\n')
+
+        file.write("</toc>\n")
+        print("toc.xml created successfully with 'index.html' as the first entry (if not already present).")
+
+    os.remove(toc_html_path)
+    print("toc.html has been deleted after conversion.")
+
 
 def format_html(content):
     """
