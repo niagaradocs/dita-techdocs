@@ -109,9 +109,9 @@ dd {margin-left: 1em;}
 /* Nested default */
 .dl .default_nested{ margin: 20px 0px; padding: 0px; display: block;}
 .default_nested dt{ width: 100px !important;; border-left: 2px solid #DBD8D8; border-top:none;  overflow: auto;display: block;  padding: 5px 15px 5px 10px !important; margin-bottom: 20px; clear: both;}
-.default_nested dd{ width: 400px; border:none; display: block; padding: 15px 0px !important; vertical-align: top;}
+.default_nested dd{ width: 400px; border:none; display: block; padding: 15px 0px !important;}
 /* end Nested default */
-/*  END DEFINATION LIST-----*/
+/*  END DEFINITION LIST-----*/
 
 
 /* FIG *********/
