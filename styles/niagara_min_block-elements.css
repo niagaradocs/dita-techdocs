@@ -97,10 +97,14 @@ div.stepresult{margin: 20px; overflow: auto;}
 /* END SECTION RESULT *********/
 
 /* DEFINITION LIST-----*/
-.dl {margin: 20px; padding: 0px;}
-.dt {position: relative; padding: 15px 0px 0px 20px; width: 15%; font-weight: bold; float: left;}
-.dd { border-left: 1px solid #ccc; margin: 2% 0% 2% 17%; padding: 0px 20px;
-vertical-align: top;}
+dl {display: inline-block; clear:both; padding: 0.5em; background-color: rgba(211, 211, 211, 0.15);}
+dt {position: font-weight: var(--font-weight-heavy);}
+dd {margin-left: 1em;}
+
+/* Add space after .dd if followed by .dt */
+.dd + .dt {
+  margin-top: -0.25em; /* Adjust this value as needed for space */
+}
 
 /* Nested default */
 .dl .default_nested{ margin: 20px 0px; padding: 0px; display: block;}
