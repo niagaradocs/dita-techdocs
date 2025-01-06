@@ -97,7 +97,7 @@ div.stepresult{margin: 20px; overflow: auto;}
 /* END SECTION RESULT *********/
 
 /* DEFINITION LIST-----*/
-dl {display: inline-block; clear:both; padding: 0.5em; background-color: rgba(211, 211, 211, 0.15);}
+dl {display: inline-block; clear:both; padding: 0.5em; background-color: rgba(211, 211, 211, 0.20);}
 dt {font-weight: var(--font-weight-heavy);}
 dd {margin-left: 1em;}
 
