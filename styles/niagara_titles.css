@@ -139,6 +139,9 @@ h3.title.sectiontitle, h3.title.topictitle3, h4.title.sectiontitle, h4.title.top
   margin: 0px;
   padding: 10px 0px 0px 0px;
 }
+caption .table--title-label + .title {
+  padding-left: 0.5em;
+}
 
 /* Do not add margins before chapters (level-1 topics) that contain children topics.
 article:has(.topictitle1, :not(article)) {
