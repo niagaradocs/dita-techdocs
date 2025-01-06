@@ -177,6 +177,23 @@ img.keep_center{display: block; margin: 5px auto;  width: 500px; clear: both;}
 
 /* end Reference table ****/
 
+/* Formatting for Reference table with data and monospace needs */
+  table td.entry, table th.entry {
+    margin-left: 0px;
+    padding: 4px;
+    font-size: var(--font-size-table-medium);
+  }
+  ul.sl > li.sli {
+    list-style-type: none;  /* Removes bullet points */
+    font-size: var(--font-size-table-medium);
+    font-weight: var(--font-weight-normal);
+    font-family: var(--font-family-monospace);
+    letter-spacing: var(--letter-spacing-mono);
+    margin: 0;              /* Optional: Removes default margin */
+    padding: 0;             /* Optional: Removes default padding */
+  }
+  
+
 /* Note */
 div.blue_note{padding: 5px; overflow: auto; margin: 40px 15px; border-left: solid 5px #ccc; font-style: italic; font-size: 0.9rem; margin-left: 0px; padding-left: 10px; clear: both;}
 div.blue_note span{font-weight: bold; }
