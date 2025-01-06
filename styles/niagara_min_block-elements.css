@@ -98,7 +98,7 @@ div.stepresult{margin: 20px; overflow: auto;}
 
 /* DEFINITION LIST-----*/
 dl {display: inline-block; clear:both; padding: 0.5em; background-color: rgba(211, 211, 211, 0.15);}
-dt {position: font-weight: var(--font-weight-heavy);}
+dt {font-weight: var(--font-weight-heavy);}
 dd {margin-left: 1em;}
 
 /* Add space after .dd if followed by .dt */
