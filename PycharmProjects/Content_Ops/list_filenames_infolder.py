@@ -1,3 +1,5 @@
+# This script lists all the PDF file names in a folder and saves them as a CSV and Excel file.
+
 import os
 import pandas as pd
 
