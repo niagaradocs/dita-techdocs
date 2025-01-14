@@ -15,7 +15,7 @@ target_root = {
 }
 
 # Predefined document list
-doc_list = ['docAlarms', 'docAwsUtils', 'docAapup']
+doc_list = ['docMqtt']
 
 # Logging options
 LOGGING_LEVEL = "DEBUG"  # Options: "DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"

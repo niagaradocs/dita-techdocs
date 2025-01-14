@@ -1,5 +1,5 @@
 """
-CURRENT VERSION 1.1 BETA, 10/28/2024
+CURRENT VERSION 1.1 BETA, 14/01/2025
 
 This script processes DITA-OT HTML5 output to prepare files for a custom help system by:
 
