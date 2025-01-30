@@ -97,17 +97,21 @@ div.stepresult{margin: 20px; overflow: auto;}
 /* END SECTION RESULT *********/
 
 /* DEFINITION LIST-----*/
-.dl {margin: 20px; padding: 0px;}
-.dt {position: relative; padding: 15px 0px 0px 20px; width: 15%; font-weight: bold; float: left;}
-.dd { border-left: 1px solid #ccc; margin: 2% 0% 2% 17%; padding: 0px 20px;
-vertical-align: top;}
+dl {display: inline-block; clear:both; padding: 0.5em; background-color: rgba(211, 211, 211, 0.20);}
+dt {font-weight: var(--font-weight-heavy);}
+dd {margin-left: 1em;}
+
+/* Add space after .dd if followed by .dt */
+.dd + .dt {
+  margin-top: -0.25em; /* Adjust this value as needed for space */
+}
 
 /* Nested default */
 .dl .default_nested{ margin: 20px 0px; padding: 0px; display: block;}
 .default_nested dt{ width: 100px !important;; border-left: 2px solid #DBD8D8; border-top:none;  overflow: auto;display: block;  padding: 5px 15px 5px 10px !important; margin-bottom: 20px; clear: both;}
-.default_nested dd{ width: 400px; border:none; display: block; padding: 15px 0px !important; vertical-align: top;}
+.default_nested dd{ width: 400px; border:none; display: block; padding: 15px 0px !important;}
 /* end Nested default */
-/*  END DEFINATION LIST-----*/
+/*  END DEFINITION LIST-----*/
 
 
 /* FIG *********/
@@ -172,6 +176,23 @@ img.keep_center{display: block; margin: 5px auto;  width: 500px; clear: both;}
 .reference table tr td{border: none; vertical-align: top; padding: 10px;}
 
 /* end Reference table ****/
+
+/* Formatting for Reference table with data and monospace needs */
+  table td.entry, table th.entry {
+    margin-left: 0px;
+    padding: 4px;
+    font-size: var(--font-size-table-medium);
+  }
+  ul.sl > li.sli {
+    list-style-type: none;  /* Removes bullet points */
+    font-size: var(--font-size-table-medium);
+    font-weight: var(--font-weight-normal);
+    font-family: var(--font-family-monospace);
+    letter-spacing: var(--letter-spacing-mono);
+    margin: 0;              /* Optional: Removes default margin */
+    padding: 0;             /* Optional: Removes default padding */
+  }
+  
 
 /* Note */
 div.blue_note{padding: 5px; overflow: auto; margin: 40px 15px; border-left: solid 5px #ccc; font-style: italic; font-size: 0.9rem; margin-left: 0px; padding-left: 10px; clear: both;}

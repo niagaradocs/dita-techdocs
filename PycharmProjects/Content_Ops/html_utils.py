@@ -28,7 +28,7 @@ def transform_toc_html_to_xml(toc_html_path, toc_xml_path):
 
         # Add 'index.html' as the first entry if not found
         if not index_found:
-            file.write('  <tocitem target="index.html" text="Home" />\n')
+            file.write('  <tocitem target="index.html" text="Legal Notice" />\n')
 
         # Write existing items
         for item in soup.find_all("a"):
@@ -56,7 +56,11 @@ def format_html(content):
     def add_newline(match):
         # Add a newline before and after the matched tag
         tag = match.group(0)
+<<<<<<< HEAD
         return f"\n{tag}\n"
+=======
+        return f"\\n{tag}\\n"
+>>>>>>> 5e29ad312f794e9cba11b16803a5584d49ee9e48
 
     # Use regex to find and format the tags
     content = re.sub(tag_pattern, add_newline, content, flags=re.IGNORECASE)
