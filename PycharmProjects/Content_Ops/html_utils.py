@@ -54,9 +54,9 @@ def format_html(content):
     tag_pattern = r"(<(/?)(%s)([^>]*)>)" % "|".join(tags_to_format)
 
     def add_newline(match):
-        # Add a newline before the matched tag
+        # Add a newline before and after the matched tag
         tag = match.group(0)
-        return f"\n{tag}"
+        return f"\n{tag}\n"
 
     # Use regex to find and format the tags
     content = re.sub(tag_pattern, add_newline, content, flags=re.IGNORECASE)
