@@ -1,8 +1,4 @@
 
-/* AVOID PAGE BREAK ELEMENT ****/
-@media print {
-    .note, figure, dl, dt, dd,  table{page-break-inside: avoid;} 
-    }
     
     /*DEFINITION LIST STYLES */
     dl {
