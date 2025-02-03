@@ -218,50 +218,50 @@ class HelpSystemProcessor:
                         file.write(content)
                     print(f"Formatted {filename} to have specific tags on separate lines.")
 
-    def remove_unused_images(target_root_folder):
-    """Remove images in the 'graphics' folder that are not referenced in any HTML file."""
+    def remove_unused_images(self, target_root_folder):
+        """Remove images in the 'graphics' folder that are not referenced in any HTML file."""
     
-    graphics_folder = os.path.join(target_root_folder, 'graphics')
-    if not os.path.exists(graphics_folder):
-        print("Graphics folder does not exist, skipping cleanup.")
-        return
-    
-    # Collect all image references from HTML files
-    used_images = set()
-    for dirpath, _, filenames in os.walk(target_root_folder):
-        for filename in filenames:
-            if filename.endswith('.html'):
-                file_path = os.path.join(dirpath, filename)
-                try:
-                    with open(file_path, 'r', encoding='utf-8') as file:
-                        soup = BeautifulSoup(file, 'html.parser')
+        graphics_folder = os.path.join(target_root_folder, 'graphics')
+        if not os.path.exists(graphics_folder):
+            print("Graphics folder does not exist, skipping cleanup.")
+            return
+        
+        # Collect all image references from HTML files
+        used_images = set()
+        for dirpath, _, filenames in os.walk(target_root_folder):
+            for filename in filenames:
+                if filename.endswith('.html'):
+                    file_path = os.path.join(dirpath, filename)
+                    try:
+                        with open(file_path, 'r', encoding='utf-8') as file:
+                            soup = BeautifulSoup(file, 'html.parser')
+                        
+                        # Find all image tags
+                        for img in soup.find_all('img'):
+                            src = img.get('src')
+                            if src:
+                                image_name = os.path.basename(src)
+                                used_images.add(image_name)
                     
-                    # Find all image tags
-                    for img in soup.find_all('img'):
-                        src = img.get('src')
-                        if src:
-                            image_name = os.path.basename(src)
-                            used_images.add(image_name)
-                
-                except Exception as e:
-                    print(f"Error processing {file_path}: {e}")
+                    except Exception as e:
+                        print(f"Error processing {file_path}: {e}")
 
-    # Get list of all images in the graphics folder
-    all_images = {img for img in os.listdir(graphics_folder) if img.lower().endswith(('.png', '.jpg', '.jpeg', '.gif'))}
+        # Get list of all images in the graphics folder
+        all_images = {img for img in os.listdir(graphics_folder) if img.lower().endswith(('.png', '.jpg', '.jpeg', '.gif'))}
 
-    # Find unused images
-    unused_images = all_images - used_images
+        # Find unused images
+        unused_images = all_images - used_images
 
-    # Remove unused images
-    for img in unused_images:
-        img_path = os.path.join(graphics_folder, img)
-        try:
-            os.remove(img_path)
-            print(f"Deleted unused image: {img}")
-        except Exception as e:
-            print(f"Error deleting {img}: {e}")
+        # Remove unused images
+        for img in unused_images:
+            img_path = os.path.join(graphics_folder, img)
+            try:
+                os.remove(img_path)
+                print(f"Deleted unused image: {img}")
+            except Exception as e:
+                print(f"Error deleting {img}: {e}")
 
-    print("Unused image cleanup completed.")
+        print("Unused image cleanup completed.")
 
     def transform_toc_html_to_xml(self, target_root_folder):
         """Convert toc.html to a formatted toc.xml using the provided structure, and then delete toc.html."""
@@ -347,7 +347,7 @@ class HelpSystemProcessor:
 # Entry point to run the script
 if __name__ == "__main__":
     source_root_folder = "C:\\Users\\e333758\\Honeywell\\PUBLIC Tridium Tech Docs - Workbench_Help - Documents\\_zipfiles"
-    doc_list = ['docHardening','docJ9Startup','docPlatform','docUser']
+    doc_list = ['docKitControl','docMqtt','docProvisioning','docRdbms']
 
     # Ask for document name and output folder
     use_doc_list = input("Use document list? (y/n): ").strip().lower()
