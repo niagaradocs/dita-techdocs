@@ -8,7 +8,6 @@
 .note, figure, dl, dt, dd,  table{page-break-inside: avoid;} 
 }
 
-
 /*DEFINITION STYLES */
 /* default 
 dl.dl{margin: 20px;padding: 0px;}
