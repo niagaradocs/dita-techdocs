@@ -96,11 +96,12 @@ div.stepresult{margin: 20px; overflow: auto;}
 /* ---vertical style -------
 /* END SECTION RESULT *********/
 
-/* DEFINITION LIST-----*/
-dl {display: inline-block; clear:both; padding: 0.5em; background-color: rgba(211, 211, 211, 0.20);}
-dt {font-weight: var(--font-weight-heavy);}
+/*DEFINITION LIST STYLES */
+dl {
+  display: inline-block; clear:both; padding: 0.5em; background-color: rgba(211, 211, 211, 0.15);
+}
+dt.dt {font-weight: var(--font-weight-heavy);}
 dd {margin-left: 1em;}
-
 /* Add space after .dd if followed by .dt */
 .dd + .dt {
   margin-top: -0.25em; /* Adjust this value as needed for space */
