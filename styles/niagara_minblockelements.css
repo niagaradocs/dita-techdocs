@@ -1,0 +1,51 @@
+
+/* AVOID PAGE BREAK ELEMENT ****/
+@media print {
+.note, figure, dl, dt, dd,  table{page-break-inside: avoid;} 
+}
+
+/*DEFINITION LIST STYLES */
+dl {
+  display: inline-block; clear:both; padding: 0.5em; background-color: rgba(211, 211, 211, 0.15);
+}
+dt.dt {font-weight: var(--font-weight-heavy);}
+dd {margin-left: 1em;}
+/* Add space after .dd if followed by .dt */
+.dd + .dt {
+  margin-top: -0.25em; /* Adjust this value as needed for space */
+}
+
+/* Nested default */
+.dl .default_nested{ margin: 20px 0px; padding: 0px; display: block;}
+.default_nested dt{ width: 100px !important;; border-left: 2px solid #DBD8D8; border-top:none;  overflow: auto;display: block;  padding: 5px 15px 5px 10px !important; margin-bottom: 20px; clear: both;}
+.default_nested dd{ width: 400px; border:none; display: block; padding: 15px 0px !important;}
+/* end Nested default */
+/*  END DEFINITION LIST-----*/
+
+
+/* FIG *********/
+.fig{padding: 0px; margin: 0px; font-style: italic; font-size: .9rem; display: block; clear: both; overflow: auto;}
+.fig img{ padding: 10px 0px; left: 5px; position: relative; }
+.fig>figcaption{left: 10px; position: relative;}
+div>.fig img{left: -1px; position: relative;}
+div>.fig>figcaption{left: 0px; position: relative;}
+
+/* FIG Alignment *********/
+.fig-result{margin: 10px 0px 20px 75px; padding: 15px; display: table; width: 600px; }
+.fig-result>.fig img{width: 300px;}
+.fig-result>.fig{ display: block; }
+.fig-result>.fig_left{display: block; float: left; margin-bottom: 10px; clear: both;}
+.fig-result>.fig_right{display: block; float: right; margin-bottom: 10px; clear: both; padding-right: 10px;}
+.result>.fig_center{display: block; margin: 0px auto 10px auto; clear: both; width: 300px;}
+/* END FIG *********/
+
+
+/* IMAGES *********/
+/**** aligned-left *********/
+img.go_left{ margin-right: 15px; float: left; margin-bottom: 20px; margin-top: 20px; width: 500px; clear: both;}
+/**** center *********/
+img.go_right{ margin-left: 15px; float: right; margin-bottom: 20px; margin-top: 20px; width: 500px; clear: both;}
+/**** aligned-right *********/
+img.keep_center{display: block; margin: 5px auto;  width: 500px; clear: both;}
+
+

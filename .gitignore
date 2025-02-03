@@ -5,3 +5,6 @@ docAlarms/docAlarms.html
 docAlarms/docAlarms.html
 /_source
 /docMarketplace
+# Ignore Python bytecode files
+*.pyc
+__pycache__/

@@ -1,54 +1,68 @@
-# html_utils.py
-
+from bs4 import BeautifulSoup
 import os
 import re
-from bs4 import BeautifulSoup
 
-def format_html(content):
-    '''Ensure specific tags are on separate lines for clarity and readability.'''
-    content = re.sub(r'(\s*<head>)', r'\n\1\n', content)
-    content = re.sub(r'(</head>)', r'\n\1\n', content)
-    content = re.sub(r'(\s*<title>)', r'\n\1\n', content)
-    content = re.sub(r'(</title>)', r'\n\1\n', content)
-    content = re.sub(r'(\s*<body[^>]*>)', r'\n\1\n', content)
-    content = re.sub(r'(</body>)', r'\n\1\n', content)
-    return content
-
-def parse_ul(ul, indent):
-    '''Parse the <ul> elements to create the corresponding toc.xml structure.'''
-    items_xml = ''
-    for li in ul.find_all('li', recursive=False):
-        a = li.find('a')
-        if a:
-            href = a.get('href')
-            text = a.get_text(strip=True)
-            items_xml += f'{indent}<tocitem target="{href}" text="{text}">\n'
-            child_ul = li.find('ul')
-            if child_ul:
-                items_xml += parse_ul(child_ul, indent + '   ')
-            items_xml += f'{indent}</tocitem>\n'
-    return items_xml
 
 def transform_toc_html_to_xml(toc_html_path, toc_xml_path):
-    '''Convert toc.html to a formatted toc.xml and then delete toc.html.'''
+    """
+    Transform toc.html to toc.xml format.
+    Ensures 'index.html' is added as the first entry if it is not already present.
+    """
     if not os.path.exists(toc_html_path):
-        print('toc.html not found for conversion.')
+        print(f"Error: toc.html not found at {toc_html_path}.")
         return
 
-    try:
-        with open(toc_html_path, 'r', encoding='utf-8') as file:
-            soup = BeautifulSoup(file, 'html.parser')
+    with open(toc_html_path, "r", encoding="utf-8") as file:
+        soup = BeautifulSoup(file, "html.parser")
 
-        toc_content = '<?xml version="1.0" encoding="UTF-8"?>\n<toc>\n'
-        toc_content += parse_ul(soup.find('ul'), '')
-        toc_content += '</toc>'
+    # Check for 'index.html' reference in toc
+    index_found = any("index.html" in link.get("href", "") for link in soup.find_all("a"))
+    if index_found:
+        print("Reference to 'index.html' found in toc.html.")
+    else:
+        print("No reference to 'index.html' found. Adding it as the first entry in toc.xml.")
 
-        with open(toc_xml_path, 'w', encoding='utf-8') as file:
-            file.write(toc_content)
-            print('toc.xml created successfully.')
+    # Generate the toc.xml file
+    with open(toc_xml_path, "w", encoding="utf-8") as file:
+        file.write('<?xml version="1.0" encoding="UTF-8"?>\n<toc>\n')
 
-        os.remove(toc_html_path)
-        print('toc.html has been deleted after conversion.')
+        # Add 'index.html' as the first entry if not found
+        if not index_found:
+            file.write('  <tocitem target="index.html" text="Legal Notice" />\n')
 
-    except Exception as e:
-        print(f'An error occurred during toc.xml creation: {e}')
+        # Write existing items
+        for item in soup.find_all("a"):
+            href = item.get("href", "")
+            text = item.text.strip()
+            file.write(f'  <tocitem target="{href}" text="{text}" />\n')
+
+        file.write("</toc>\n")
+        print("toc.xml created successfully with 'index.html' as the first entry (if not already present).")
+
+    os.remove(toc_html_path)
+    print("toc.html has been deleted after conversion.")
+
+
+def format_html(content):
+    """
+    Ensures specific HTML tags start on a new line for improved readability.
+    Handles tags with attributes as well.
+    """
+    tags_to_format = ["head", "title", "body", "div"]
+
+    # Create a regex pattern to match opening and closing tags, with optional attributes
+    tag_pattern = r"(<(/?)(%s)([^>]*)>)" % "|".join(tags_to_format)
+
+    def add_newline(match):
+        # Add a newline before and after the matched tag
+        tag = match.group(0)
+<<<<<<< HEAD
+        return f"\n{tag}\n"
+=======
+        return f"\\n{tag}\\n"
+>>>>>>> 5e29ad312f794e9cba11b16803a5584d49ee9e48
+
+    # Use regex to find and format the tags
+    content = re.sub(tag_pattern, add_newline, content, flags=re.IGNORECASE)
+
+    return content

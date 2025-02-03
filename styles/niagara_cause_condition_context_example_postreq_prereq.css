@@ -225,3 +225,16 @@ div.example {
   margin-top: 15px;
   margin-left: 0;
 }
+
+/* Troubleshooting */
+section.condition {font-weight: var(--font-weight-heavy);}
+/* USING - Add captions before condition elements. */
+.condition::before {
+  content: "Condition";
+}
+.cause::before {
+  content: "Cause";
+}
+.remedy::before {
+  content: "Remedy";
+}
