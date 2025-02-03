@@ -1,26 +1,8 @@
 
-/****  ELEMENT STYLE *****/
-
-/*---------------------------------------- DEFAULT STYLE -------------------------------------------  */
-
 /* AVOID PAGE BREAK ELEMENT ****/
 @media print {
 .note, figure, dl, dt, dd,  table{page-break-inside: avoid;} 
 }
-
-/*DEFINITION STYLES */
-/* default 
-dl.dl{margin: 20px;padding: 0px;}
-dl dt.dt{position: relative; padding: 15px 0px 0px 20px; width: 15%; font-weight: bold; float: left;}
-dl dd.dd{border-left: 1px solid #ccc; margin: 2% 0% 2% 17%; padding: 0px 20px;}
-*/
-/* Nested default 
-dl.default_nested{ margin: 20px 0px; padding: 0px; }
-.default_nested dt{ width: 450px !important; color: #404040; font-weight: bold; text-align: left;background-color: #f7f7f7;; border-left: 1px solid #DBD8D8; border-right: 1px solid #DBD8D8; border-top: 1px solid #DBD8D8; font-size: .9rem; display:inline-block;}
-
-.default_nested dd{ width: 430px; text-align: left; padding-top: 10px !important; padding-bottom:10px !important; left: -42px; top: -10px; position: relative;  border-left: 1px solid #DBD8D8; border-right: 1px solid #DBD8D8; border-bottom: 1px solid #DBD8D8; font-size: .9rem; display: inline-block; overflow: auto; line-height: 1.3rem;}
-end Nested default 
-*/
 
 /*DEFINITION LIST STYLES */
 dl {
@@ -66,9 +48,4 @@ img.go_right{ margin-left: 15px; float: right; margin-bottom: 20px; margin-top: 
 /**** aligned-right *********/
 img.keep_center{display: block; margin: 5px auto;  width: 500px; clear: both;}
 
-/*---------------------------------------- END DEFAULT STYLE -------------------------------------------  */
 
-
-/*---------------------------------------- BASIC STYLE -------------------------------------------  */
-
-/*---------------------------------------- END BASIC STYLE -------------------------------------------  */
