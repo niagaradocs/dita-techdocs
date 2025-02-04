@@ -90,10 +90,12 @@ div>p.ref_desc {border-bottom: dotted 1px #ccc; border-top: dotted 1px #ccc; ove
 /* end Reference table ****/
 
 /* Formatting for Reference table with data and monospace needs */
- table td.entry, table th.entry, table td.entry > .keyword {
-   margin-left: 0px;
-   padding: 4px;
-   font-size: var(--font-size-table-medium);
- }
+td.entry .keyword, td.entry .ph.uicontrol {
+  font-size: var(--font-size-table-medium);
+}
+
+table thead.thead tr > th.entry {
+  font-weight: var(--font-weight-heavy) !important;
+}
 
     /* END TABLE STYLES *********/
