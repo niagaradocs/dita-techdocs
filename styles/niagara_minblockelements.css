@@ -48,4 +48,24 @@ img.go_right{ margin-left: 15px; float: right; margin-bottom: 20px; margin-top: 
 /**** aligned-right *********/
 img.keep_center{display: block; margin: 5px auto;  width: 500px; clear: both;}
 
+    
+/* Reference table ****/
+.reference h2{margin-left: 20px; font-size: 1.2rem;}
+div>p.ref_desc {border-bottom: dotted 1px #ccc; border-top: dotted 1px #ccc; overflow: auto; margin: 10px 20px;}
+.reference table {border: solid 1px #ccc; margin: 0px; padding: 0px; width: 100%;}
+.reference tbody{border: none;}
+.reference table th{background-color:#ebebeb; color: #404040; padding: 10px;  border: none; line-height: 1; text-align: left;}
+.reference table tr:nth-child(even){background-color: #f1f2f3; }
+.reference table tr:first-child{border-top: solid 1px #ccc;}
+.reference table tr td{border: none; vertical-align: top; padding: 10px;}
 
+/* end Reference table ****/
+
+/* Formatting for Reference table with data and monospace needs */
+ table td.entry, table th.entry, table td.entry > .keyword {
+   margin-left: 0px;
+   padding: 4px;
+   font-size: var(--font-size-table-medium);
+ }
+
+    /* END TABLE STYLES *********/
