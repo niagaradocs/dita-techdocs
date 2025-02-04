@@ -178,7 +178,7 @@ img.keep_center{display: block; margin: 5px auto;  width: 500px; clear: both;}
 /* end Reference table ****/
 
 /* Formatting for Reference table with data and monospace needs */
-  table td.entry, table th.entry {
+  table td.entry, table th.entry, table td.entry > .keyword {
     margin-left: 0px;
     padding: 4px;
     font-size: var(--font-size-table-medium);
@@ -192,7 +192,10 @@ img.keep_center{display: block; margin: 5px auto;  width: 500px; clear: both;}
     margin: 0;              /* Optional: Removes default margin */
     padding: 0;             /* Optional: Removes default padding */
   }
-  
+  /*** For keyword or ph variables in table ***/
+  td.entry .keyword, td.entry .ph.uicontrol {
+    font-size: var(--font-size-table-medium);
+  }
 
 /* Note */
 div.blue_note{padding: 5px; overflow: auto; margin: 40px 15px; border-left: solid 5px #ccc; font-style: italic; font-size: 0.9rem; margin-left: 0px; padding-left: 10px; clear: both;}
