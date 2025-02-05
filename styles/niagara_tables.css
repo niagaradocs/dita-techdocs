@@ -4,7 +4,60 @@
 @media print {
     .note, figure, dl, dt, dd,  table{page-break-inside: avoid;} 
     }
-     
+ 
+   /* Default TABLE STYLES *********/
+   table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+
+thead.thead > tr.row > th.entry {
+    background-color: #3d3d3d;
+    font-size: var(--font-size-table-medium);
+    font-weight: var(--font-weight-heavy);
+    padding: 0.25em;
+}
+table.table > tbody.tbody > tr.row > td.entry {
+    font-size: var(--font-size-table-medium);
+    font-weight: var(--font-weight-normal);
+    padding: 0.25em;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table td span.ph, table td span.uicontrol, table td span.keyword, table th span.ph, table th span.keyword, table th span.uicontrol {
+    font-size: var(--font-size-table-medium);
+}
+
+    
+/* Heretto default Reference table ****/
+.reference h2 {margin-left: 20px; font-size: 1.2rem;}
+div>p.ref_desc {border-bottom: dotted 1px #ccc; border-top: dotted 1px #ccc; overflow: auto; margin: 10px 20px;}
+.reference table {border: solid 1px #ccc; margin: 0px; padding: 0px; width: 100%;}
+.reference tbody{border: none;}
+.reference table th{background-color:#ebebeb; color: #404040; padding: 10px;  border: none; line-height: 1; text-align: left;}
+.reference table tr:nth-child(even){background-color: #f1f2f3; }
+.reference table tr:first-child{border-top: solid 1px #ccc;}
+.reference table tr td{border: none; vertical-align: top; padding: 10px;}
+
+
+
+/* Niagara Formatting for Reference table with data and monospace needs */
+td.entry .keyword, td.entry .ph.uicontrol {
+  font-size: var(--font-size-table-medium);
+}
+
+table thead.thead tr > th.entry {
+  font-weight: var(--font-weight-heavy) !important;
+}
+/* end Reference table ****/
+
+
+    /* END TABLE STYLES *********/
+    
+
     /*DEFINITION LIST STYLES */
     dl {
       display: inline-block; clear:both; padding: 0.5em; background-color: rgba(211, 211, 211, 0.15);
@@ -22,15 +75,7 @@
     .default_nested dd{ width: 400px; border:none; display: block; padding: 15px 0px !important;}
     /* end Nested default */
     /*  END DEFINITION LIST-----*/
-    
-    /* BLOCKQUOTE STYLES */
-    blockquote {
-        margin: 1em 2em;
-        padding: 0.5em 10px;
-        border-left: 5px solid #ccc;
-        background-color: #f9f9f9;
-        font-style: italic;
-    }
+
     /* FIG *********/
     .fig{padding: 0px; margin: 0px; font-style: italic; font-size: .9rem; display: block; clear: both; overflow: auto;}
     .fig img{ padding: 10px 0px; left: 5px; position: relative; }
@@ -56,46 +101,4 @@
     /**** aligned-right *********/
     img.keep_center{display: block; margin: 5px auto;  width: 500px; clear: both;}
     
-    
-    /* TABLE STYLES *********/
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-bottom: 1em;
-    }
-    th, td {
-        padding: 0.5em;
-        border: 1px solid #ddd;
-        text-align: left;
-    }
-    th {
-        background-color: #202020;
-        font-weight: bold;
-    }
-    tr:nth-child(even) {
-        background-color: #f9f9f9;
-    }
-
-    
-/* Heretto default Reference table ****/
-.reference h2 {margin-left: 20px; font-size: 1.2rem;}
-div>p.ref_desc {border-bottom: dotted 1px #ccc; border-top: dotted 1px #ccc; overflow: auto; margin: 10px 20px;}
-.reference table {border: solid 1px #ccc; margin: 0px; padding: 0px; width: 100%;}
-.reference tbody{border: none;}
-.reference table th{background-color:#ebebeb; color: #404040; padding: 10px;  border: none; line-height: 1; text-align: left;}
-.reference table tr:nth-child(even){background-color: #f1f2f3; }
-.reference table tr:first-child{border-top: solid 1px #ccc;}
-.reference table tr td{border: none; vertical-align: top; padding: 10px;}
-
-
-
-/* Niagara Formatting for Reference table with data and monospace needs */
-td.entry .keyword, td.entry .ph.uicontrol {
-  font-size: var(--font-size-table-medium);
-}
-
-table thead.thead tr > th.entry {
-  font-weight: var(--font-weight-heavy) !important;
-}
-/* end Reference table ****/
-    /* END TABLE STYLES *********/
+   
