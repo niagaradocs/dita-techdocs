@@ -1,5 +1,17 @@
 /* Style unordered lists (including: steps-unordered, choices).
 Align unordered lists with ordered lists. */
+
+ /* for lists in reference tables  */
+ul.sl > li.sli {
+  list-style-type: none;  /* Removes bullet points */
+  font-size: var(--font-size-table-medium);
+  font-weight: var(--font-weight-normal);
+  font-family: var(--font-family-monospace);
+  letter-spacing: var(--letter-spacing-mono);
+  margin: 0;              /* Optional: Removes default margin */
+  padding: 0;             /* Optional: Removes default padding */
+}
+
 .ul {
   list-style: disc;
 }

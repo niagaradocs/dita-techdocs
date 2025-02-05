@@ -136,8 +136,9 @@ h3.title.sectiontitle, h3.title.topictitle3, h4.title.sectiontitle, h4.title.top
 .table > caption > .title {
   display: inline-block;
   margin: 0px;
-  padding: 10px 0px 0px 0px;
+  padding: 10px 0px 4px 0px;
 }
+
 caption .table--title-label + .title {
   padding-left: 0.5em;
 }
