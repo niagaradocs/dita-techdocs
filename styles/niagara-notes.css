@@ -9,6 +9,16 @@
 /*padding: 10px; */
   width: 100%;
 }
+/**  NOTES in Table **/
+/* Style any note type. */
+td.note {
+  clear: both;
+  display: block; /* inline-block breaks notes in tables */
+  color: #000;
+  margin: 10px 0px 10px 0px;
+/*padding: 10px; */
+  width: 100%;
+}
 /* Style note captions (the text and optional image preceding the note contents). */
 .note__title {
   font-weight: bold;

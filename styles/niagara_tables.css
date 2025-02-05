@@ -31,8 +31,33 @@ table td span.ph, table td span.uicontrol, table td span.keyword, table th span.
     font-size: var(--font-size-table-medium);
 }
 
-    
-/* Heretto default Reference table ****/
+/* Simple Table ****/
+   table.properties, table.simpletable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+
+thead > tr.sthead > th.stentry, tr.prophead > th.propvalue, th.pth.propdesc, th.stentry {
+    background-color: #3d3d3d;
+    font-size: var(--font-size-table-normal);
+    font-weight: var(--font-weight-heavy);
+    padding: 0.25em;
+}
+td.proptype, td.propvalue, td.propdesc, td.stentry, td > a.xref, td > div.note  {
+    font-size: var(--font-size-table-normal);
+    font-weight: var(--font-weight-normal);
+    padding: 0.25em;
+    margin: 0px;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+/* Niagara formatting for choice table */
+
+/* Heretto original default Reference table ****/
 .reference h2 {margin-left: 20px; font-size: 1.2rem;}
 div>p.ref_desc {border-bottom: dotted 1px #ccc; border-top: dotted 1px #ccc; overflow: auto; margin: 10px 20px;}
 .reference table {border: solid 1px #ccc; margin: 0px; padding: 0px; width: 100%;}
@@ -52,9 +77,7 @@ td.entry .keyword, td.entry .ph.uicontrol {
 table thead.thead tr > th.entry {
   font-weight: var(--font-weight-heavy) !important;
 }
-/* end Reference table ****/
-
-
+    /* end Reference table ****/
     /* END TABLE STYLES *********/
     
 
@@ -100,5 +123,5 @@ table thead.thead tr > th.entry {
     img.go_right{ margin-left: 15px; float: right; margin-bottom: 20px; margin-top: 20px; width: 500px; clear: both;}
     /**** aligned-right *********/
     img.keep_center{display: block; margin: 5px auto;  width: 500px; clear: both;}
-    
-   
+
+    /* END IMAGES *********/
