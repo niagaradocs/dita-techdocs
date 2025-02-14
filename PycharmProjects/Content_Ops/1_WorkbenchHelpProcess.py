@@ -1,5 +1,5 @@
 """
-CURRENT VERSION 1.1 Active, 14/01/2025
+CURRENT VERSION 1.1 Active, 7/2/2025
 
 This script processes DITA-OT HTML5 output to prepare files for a custom help system by:
 
@@ -347,7 +347,7 @@ class HelpSystemProcessor:
 # Entry point to run the script
 if __name__ == "__main__":
     source_root_folder = "C:\\Users\\e333758\\Honeywell\\PUBLIC Tridium Tech Docs - Workbench_Help - Documents\\_zipfiles"
-    doc_list = ['docKitControl','docMqtt','docProvisioning','docRdbms']
+    doc_list = ['docPlatform','docJ9Startup']
 
     # Ask for document name and output folder
     use_doc_list = input("Use document list? (y/n): ").strip().lower()
