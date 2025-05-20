@@ -1,0 +1,24 @@
+A Strategic Map: How Your Product Taxonomy Fits into a Bigger Picture
+
+1. Internal Product Taxonomy
+   → Core structure of Tridium products, serving as the authoritative source for categorization.
+
+2. Functional Tags
+   → Describe what each product does—such as scheduling, alarming, analytics, protocol integration, etc.
+   → Enable cross-cutting classification that complements the hierarchy.
+
+3. Standards Tagging (BRICK, Haystack, Niagara Dictionary)
+   → Represents external tagging schemas commonly used by Tridium customers.
+   → Mapped through compatibility flags or crosswalks, not embedded in hierarchy.
+
+4. Documentation Metadata
+   → Supports content reuse, faceted search, and intelligent delivery in systems like Heretto and Zoomin.
+   → Fields like Platform Compatibility, Deployment Model, Intended Audience derive from the taxonomy.
+
+5. OEM/Partner Mapping
+   → Enables crosswalks between Tridium SKUs and rebranded products sold by OEMs or partners.
+   → Supports consistent naming, documentation reuse, and cross-system integration.
+
+Notes:
+- Each layer builds on the next to create a flexible, extensible metadata strategy.
+- This strategic framework supports both internal clarity and external interoperability.
