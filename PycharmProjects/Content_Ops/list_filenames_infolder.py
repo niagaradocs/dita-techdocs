@@ -5,7 +5,7 @@ import pandas as pd
 
 # Define the folder path
 # folder_path = r'C:\\path\\to\\your\\folder'  # Update this path to your folder
-folder_path = r'C:\\Users\\e333758\\Honeywell\\PUBLIC Tridium Tech Docs - Release - Documents\\Release\\PDF-in_work\\4.15\\4.15-beta'
+folder_path = r'C:\\Users\\e333758\\Honeywell\\PUBLIC Tridium Tech Docs - Release - Documents\\Release\\PDF-in_work\\4.15\\oem_distech\\BrandedPDFs'
 
 # Initialize a list to store file names
 pdf_filenames = []

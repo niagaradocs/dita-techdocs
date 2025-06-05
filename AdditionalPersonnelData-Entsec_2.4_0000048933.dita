@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN"
+ "reference.dtd">
+<reference id="prsninfo" xml:lang="en">
+<title>Additional Personnel Data view</title>
+<shortdesc>This view lists all the existing Person Info Templates.
+These templates create custom properties that are added to personnel
+(people) records.</shortdesc>
+<prolog>
+<metadata><keywords><indexterm>additional personnel data</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody>
+<section><fig id="ID-fig-00000045">
+<title>Additional Personnel Data view</title>
+<image href="../graphic/viewAdditionalPersonData2.4_0000060332.png"
+placement="break" scale="65"></image>
+</fig><note type="note">You can use the column chooser mode to add
+up to 10 additional data rows for a person.</note></section>
+<section><title>Control buttons</title><p>The following are the control
+buttons for this view:</p><ul>
+<li><image href="../graphic/buttonPlus2.4_0000050962.png" scale="65"></image
+> Add opens a view or window for creating a new record in the database.</li>
+<li><image href="../graphic/buttonHyperlink2.4_0000052857.png" scale="65"></image
+> Hyperlink links to the edit view or window for the selected item.
+It is the same as double-clicking the table row. This button is available
+when a single record is selected.</li>
+<li><image href="../graphic/buttonSummary2.4_0000052879.png" scale="65"></image
+> Summary opens the Summary window for the selected item, which shows
+how item properties are currently configured. Double-clicking on any
+row in a table opens the Summary tab, which contains the same information
+as the Summary window.</li>
+<li><image href="../graphic/buttonDelete2.4_0000052846.png" scale="65"></image
+> Delete removes the selected record (row) from the database table.
+This button is available when you select an item.</li>
+</ul></section>
+<section><title>Columns</title><table id="ID-table-0000001a">
+<title>Additional Personnel Data columns</title>
+<tgroup cols="2"><colspec colname="C1" colwidth="1.45in"/><colspec
+colname="C2" colwidth="5.02in"/>
+<thead>
+<row>
+<entry colname="C1">Column</entry>
+<entry colname="C2">Description</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="C1">Info Template Name</entry>
+<entry colname="C2">Provides a descriptive title (display name) for
+the template.</entry>
+</row>
+<row>
+<entry colname="C1">Default Value</entry>
+<entry colname="C2">Reports the text that by default displays for
+the property in the Add New Person and edit person views.</entry>
+</row>
+</tbody>
+</tgroup>
+</table></section>
+</refbody>
+</reference>
