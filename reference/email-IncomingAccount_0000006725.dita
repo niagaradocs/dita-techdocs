@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="IncomingAccount" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">email-IncomingAccount</title>
+<shortdesc class="- topic/shortdesc ">This component is required for a station to receive email.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">IncomingAccount</indexterm><indexterm class="- topic/indexterm ">email<indexterm class="- topic/indexterm ">receiving at a station</indexterm></indexterm>
+</keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><fig class="- topic/fig ">
+<title class="- topic/title ">Incoming Account Property Sheet</title>
+<image href="../graphic/Figure14IncomingAccountPropertySheet_0000031391.png" placement="break" scale="80" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Hostname</proptype><?Pub Caret 5?>
+<propvalue class="- topic/stentry     reference/propvalue ">mail.<varname class="+ topic/keyword sw-d/varname ">name</varname>.com, where <varname class="+ topic/keyword sw-d/varname ">name</varname> varies depending on the host.</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsHostname" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsHostname" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Port</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">The number of the port that the system associates with the
+email account. Typically, the incoming email account number is 110.
+If you leave the setting at its default value of minus one (-1), the <apiname class="+ topic/keyword pr-d/apiname ">IncomingAccount</apiname> searches for and uses a valid port. </propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Email Authenticator</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">additional properties (defaults to <option class="+ topic/keyword pr-d/option ">O Auth Email
+Client Secret Authenticator</option>)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the type of email authenticator. For property descriptions,
+refer to “Email Authenticator” properties below.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Pollrate</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours: minutes: seconds</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Specifies how often the account executes a send action.
+Increasing the pollrate value increases the time between polls. During
+the time between polls, emails may be queued (up to the max queue
+size) until the next poll time. At the next poll time all queued emails
+are sent.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Enabled</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/Enabled-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/Enabled-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Status</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_Status-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_Status-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Last Poll Success, Last Poll Failure</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours and minutes</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Each of these properties displays the time of the last polling
+success and failure, respectively.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Last Poll Failure Cause</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays an error message to indicate the reason for the
+polling failure.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Debug</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Boolean property</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Turns debug mode on and off. When on, and the station sends
+or receives email, the system displays detailed information using
+the platform’s standard <wintitle class="+ topic/keyword ui-d/wintitle ">Application Director</wintitle> view.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Use start Tls</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">This property allows you to enable and disable communication
+security. The option must be set to <option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> according to the instructions provided by the email
+provider.<note class="- topic/note ">Use Ssl and Use Start Tls are mutually exclusive. Both
+may be false. To provide secure email, set one property to true, and
+the other false. Do not enable or disable the Use Ssl or Use Start
+Tls properties without configuring the Port.</note></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Tls Min Protocol</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">defaults to <option class="+ topic/keyword pr-d/option ">TLSv1.2+</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Determines the minimum acceptable TLS version to use.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Store</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">email retrieval standards</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Selects the email retrieval standard. Use the option supported
+by your mail server:<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Imap</p></li>
+<li class="- topic/li "><p class="- topic/p ">Pop3</p></li>
+</ul></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Delivery Policy</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">various</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Provides a list of options that control how the incoming
+email account handles incoming emails at the mail server.<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Delete</option> causes the account to remove all emails
+from the mail server when it checks the account to retrieve new email.
+This happens even if the emails are already marked as read by another
+email client.</p></li>
+<li class="- topic/li "><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Mark As Read</option> sets all emails to the read state
+when the account checks to retrieve new email from the server.</p></li>
+<li class="- topic/li "><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Mark as Unread</option> sets all emails to the unread
+state when the account checks to retrieve new email from the server</p></li>
+</ul></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Use Ssl</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">This encrypts the connection before it is opened. The encryption
+automatically uses either SSL v3 or TLS (depending on email server
+requirements). The option must be set to <option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> according to the instructions provided by the email
+provider.<note class="- topic/note ">Use Ssl and Use Start Tls are mutually exclusive. Both
+may be false. To provide secure email, set one property to true, and
+the other false. Do not enable or disable the Use Ssl or Use Start
+Tls properties without configuring the Port.</note></propdesc>
+</property>
+</properties>
+<section class="- topic/section "><title class="- topic/title ">Email Authentication Properties</title></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Type</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">drop-down list</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Selects the type of email authenticator.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Basic Email Client Authenticator</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">additional properties</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">account</parmname>: Specifies account details.</p><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">password</parmname>: Enter password.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">O Auth Email Client Secret Authenticator</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "/>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">authServerMetadataEndpoint</parmname>:Displays
+the URI (published by the Identity Provider) that is used to obtain
+metadata related to the authentication services provided by the Identity
+Provider. It is used to configure the authentication client for the
+services supported by the Identity Provider. When specifying this
+URI, leave off the ‘/.well-known/openid-configuration’ path segment,
+as it is appended to the property’s value by the authentication client
+when resolving the authorization server metadata.</p><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">account</parmname>: Specifies the email account/user name for which
+messages will be sent/received.</p><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">clientId</parmname>: Specifies the clientId of the application that has been registered
+with the Identity Provider. </p><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">scope</parmname>: Specifies
+the scopes for which an access token will be requested from the Identity
+Provider.</p><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">clientSecret</parmname>: Specifies the client
+secret that is associated with the OAuth client that has been registered
+with the Identity Provider.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">O Auth Email Client Certificate Authenticator</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "/>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">authServerMetadataEndpoint</parmname>: Displays
+the URI (published by the Identity Provider) that is used to obtain
+metadata related to the authentication services provided by the Identity
+Provider. It is used to configure the authentication client for the
+services supported by the Identity Provider. When specifying this
+URI, leave off the ‘/.well-known/openid-configuration’ path segment,
+as it is appended to the property’s value by the authentication client
+when resolving the authorization server metadata.</p><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">account</parmname>: Specifies the email account/user name for which
+messages will be sent/received.</p><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">clientId</parmname>: Specifies the clientId of the application that has been registered
+with the Identity Provider. </p><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">scope</parmname>: Specifies
+the scopes for which an access token will be requested from the Identity
+Provider.</p><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">clientCertificate</parmname>: Specifies
+the certificate that is associated with the OAuth client that has
+been registered with the Identity Provider, which is used as proof
+of identity during authentication.</p><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">privateKeyPassword</parmname>:</p><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">useJWTBearerAssertion</parmname>: When set to <option class="+ topic/keyword pr-d/option ">false</option>, token requests to the Identity Provider will use
+the OAuth Client Credentials grant. When set to <option class="+ topic/keyword pr-d/option ">true</option>, token requests will use the OAuth JWT Bearer grant, which must
+be supported by the Identity Provider for this feature to work.</p></propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--Arbortext, Inc., 1988-2019, v.4002--><reference id="TypesOfAlarmExtensions-AFC63D65" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Types of alarm extensions</title>
+<shortdesc class="- topic/shortdesc "/>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">alarm extension types</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">Find the alarm extensions in palettes <uicontrol class="+ topic/ph ui-d/uicontrol ">alarm</uicontrol>: <uicontrol class="+ topic/ph ui-d/uicontrol ">Extensions</uicontrol> and <uicontrol class="+ topic/ph ui-d/uicontrol ">kitControl</uicontrol>:<uicontrol class="+ topic/ph ui-d/uicontrol ">Alarm</uicontrol>. This table lists all alarm extension
+types and the applicable point parents.</p><table class="- topic/table ">
+<tgroup cols="4" class="- topic/tgroup "><colspec colname="col1" class="- topic/colspec "/><colspec colname="col2" class="- topic/colspec "/>
+<colspec colname="col3" class="- topic/colspec "/><colspec colname="col4" class="- topic/colspec "/>
+<thead class="- topic/thead ">
+<row class="- topic/row ">
+<entry class="- topic/entry ">Alarm extension type(palette: Folder)</entry>
+<entry nameend="col3" namest="col2" class="- topic/entry ">Applies to point types</entry>
+<entry class="- topic/entry ">General description</entry>
+</row>
+<row class="- topic/row ">
+<entry colsep="0" class="- topic/entry "/>
+<entry colsep="0" class="- topic/entry ">Read-only</entry>
+<entry colsep="0" class="- topic/entry ">Writable</entry>
+<entry class="- topic/entry "/>
+</row>
+</thead>
+<tbody class="- topic/tbody ">
+<row class="- topic/row ">
+<entry colsep="0" rowsep="0" class="- topic/entry ">OutOfRangeAlarmExt (alarm:Extensions)</entry><?Pub Caret 5?>
+<entry colsep="0" class="- topic/entry ">NumericPoint</entry>
+<entry colsep="0" class="- topic/entry ">NumericWritable</entry>
+<entry class="- topic/entry ">Provides alarming based upon numeric alarm high and low limits.
+Includes configurable deadband.</entry>
+</row>
+<row class="- topic/row ">
+<entry colsep="0" class="- topic/entry "/>
+<entry colsep="0" class="- topic/entry ">—</entry>
+<entry colsep="0" class="- topic/entry ">Any object with single numeric Out</entry>
+<entry class="- topic/entry ">For example, kitControl:Math object “Add”</entry>
+</row>
+<row class="- topic/row ">
+<entry colsep="0" class="- topic/entry ">FloatLimitAlarmExt (alarm:Extensions)</entry>
+<entry colsep="0" class="- topic/entry ">NumericPoint</entry>
+<entry colsep="0" class="- topic/entry ">NumericWritable</entry>
+<entry class="- topic/entry ">Provides alarming based upon numeric alarm high and low limits
+relative to a setpoint instead of absolute values. Includes configurable
+high and low difference limits and a deadband.</entry>
+</row>
+<row class="- topic/row ">
+<entry colsep="0" class="- topic/entry ">StringChangeOfValueAlarmExt(alarm:Extensions)</entry>
+<entry colsep="0" class="- topic/entry ">StringPoint</entry>
+<entry colsep="0" class="- topic/entry ">StringWritable</entry>
+<entry class="- topic/entry ">Provides alarming based upon either inclusion or exclusion
+of the entered string value (or “regular expression,” as needed).</entry>
+</row>
+<row class="- topic/row ">
+<entry colsep="0" rowsep="0" class="- topic/entry ">BooleanChangeOfStateAlarmExt(alarm:Extensions)</entry>
+<entry colsep="0" class="- topic/entry ">BooleanPoint</entry>
+<entry colsep="0" class="- topic/entry ">BooleanWritable</entry>
+<entry class="- topic/entry ">Provides alarming based upon one of two possible values (states)
+as an alarm condition.</entry>
+</row>
+<row class="- topic/row ">
+<entry colsep="0" class="- topic/entry "/>
+<entry colsep="0" class="- topic/entry ">—</entry>
+<entry colsep="0" class="- topic/entry ">Any object with single Boolean Out</entry>
+<entry class="- topic/entry ">For example, kitControl: Logic object “And.”</entry>
+</row>
+<row class="- topic/row ">
+<entry colsep="0" class="- topic/entry ">BooleanCommandFailureAlarmExt (alarm:Extensions) </entry>
+<entry colsep="0" class="- topic/entry ">—</entry>
+<entry colsep="0" class="- topic/entry ">BooleanWritable</entry>
+<entry class="- topic/entry ">Provides alarming based upon mismatch between commanded value
+and actual (sensed) value. Extension has feedbackValue input property
+for linking.</entry>
+</row>
+<row class="- topic/row ">
+<entry colsep="0" class="- topic/entry ">EnumChangeOfStateAlarmExt(alarm:Extensions)</entry>
+<entry colsep="0" class="- topic/entry ">EnumPoint</entry>
+<entry colsep="0" class="- topic/entry ">EnumWritable</entry>
+<entry class="- topic/entry ">Provides alarming based upon one of multiple possible values
+(states) as an alarm condition.</entry>
+</row>
+<row class="- topic/row ">
+<entry colsep="0" class="- topic/entry ">EnumCommandFailureAlarmExt (alarm:Extensions) </entry>
+<entry colsep="0" class="- topic/entry ">—</entry>
+<entry colsep="0" class="- topic/entry ">EnumWritable</entry>
+<entry class="- topic/entry ">Provides alarming based upon mismatch between commanded value
+and actual (sensed) value. Extension has feedbackValue input property
+for linking. </entry>
+</row>
+<row class="- topic/row ">
+<entry colsep="0" class="- topic/entry ">NumericChangeOfStateAlarmExt(alarm:Extenions)</entry>
+<entry colsep="0" class="- topic/entry ">NumericPoint</entry>
+<entry colsep="0" class="- topic/entry ">NumericWritable</entry>
+<entry class="- topic/entry ">Provides alarming if the floating-point out value rounded towards
+zero is equal to any of the specified alarm values.</entry>
+</row>
+<row class="- topic/row ">
+<entry colsep="0" class="- topic/entry ">StatusAlarmExt (alarm:Extensions) </entry>
+<entry colsep="0" class="- topic/entry ">Any type that accepts extensions</entry>
+<entry colsep="0" class="- topic/entry ">Any type that accepts extensions</entry>
+<entry class="- topic/entry ">Provides alarming based upon any combination of status flags,
+including overridden, null, etc. </entry>
+</row>
+<row class="- topic/row ">
+<entry colsep="0" class="- topic/entry ">LoopAlarmExt (kitControl:Alarm)</entry>
+<entry colsep="0" class="- topic/entry ">—</entry>
+<entry colsep="0" class="- topic/entry ">LoopPoint </entry>
+<entry class="- topic/entry ">Sliding alarm limit for LoopPoint based upon controlled process
+deviation from setpoint. </entry>
+</row>
+<row class="- topic/row ">
+<entry colsep="0" rowsep="0" class="- topic/entry ">ElapsedActiveTimeAlarmExt (kitControl:Alarm)</entry>
+<entry colsep="0" class="- topic/entry ">BooleanPoint with DiscreteTotalizerExt</entry>
+<entry colsep="0" class="- topic/entry ">BooleanWritable with DiscreteTotalizerExt </entry>
+<entry class="- topic/entry ">Provides alarming based upon accumulated runtime (elapsed active
+time). References a specific DiscreteTotalizerExt under same parent
+point. </entry>
+</row>
+<row class="- topic/row ">
+<entry colsep="0" class="- topic/entry "/>
+<entry colsep="0" class="- topic/entry ">—</entry>
+<entry colsep="0" class="- topic/entry ">any object with single Boolean Out (also with a
+DiscreteTotalizerExt)</entry>
+<entry class="- topic/entry ">For example, kitControl: Logic object "And." </entry>
+</row>
+<row class="- topic/row ">
+<entry colsep="0" rowsep="0" class="- topic/entry ">ChangeOfStateCountAlarmExt (kitControl:Alarm) </entry>
+<entry colsep="0" class="- topic/entry ">BooleanPoint with DiscreteTotalizerExt</entry>
+<entry colsep="0" class="- topic/entry ">BooleanWritable with DiscreteTotalizerExt </entry>
+<entry class="- topic/entry ">Provides alarming based upon accumulated COS (change of states).
+References a specific DiscreteTotalizerExt under same parent point. </entry>
+</row>
+<row class="- topic/row ">
+<entry colsep="0" class="- topic/entry "/>
+<entry colsep="0" class="- topic/entry ">—</entry>
+<entry colsep="0" class="- topic/entry ">any object with single Boolean Out (also with a
+DiscreteTotalizerExt)</entry>
+<entry class="- topic/entry ">For example, kitControl: Logic object "And" </entry>
+</row>
+</tbody>
+</tgroup>
+</table></section>
+</refbody>
+</reference>

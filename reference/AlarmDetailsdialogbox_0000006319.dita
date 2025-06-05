@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="AlarmDetailsDialogBox" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Alarm Details window</title>
+<shortdesc class="- topic/shortdesc ">The alarm details window displays read-only details about
+the alarm that is displayed in the <wintitle class="+ topic/keyword ui-d/wintitle ">Database Maintenance</wintitle> view. Double-clicking on any row in the <wintitle class="+ topic/keyword ui-d/wintitle ">Database Maintenance</wintitle> view opens this window. Alarm Details window supports pagination
+settings as previous alarm and next alarm.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Alarm Details window</indexterm>
+</keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p "/><image href="../graphic/alarmdetailsdialogbox_0000014084_0000006330.png" placement="break" scale="65" class="- topic/image "/></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Information</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Timestamp</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "/>
+<propdesc class="- topic/stentry     reference/propdesc "/>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Uuid</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the Unique Universal Identifier (UUID) the system
+uses to uniquely identify the alarm record.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">AckState</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "/>
+<propdesc class="- topic/stentry     reference/propdesc "/>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Ack Required</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "/>
+<propdesc class="- topic/stentry     reference/propdesc "/>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">AlarmClass</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "/>
+<propdesc class="- topic/stentry     reference/propdesc "/>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Priority</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "/>
+<propdesc class="- topic/stentry     reference/propdesc "/>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Normal Time or NormalTime</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">date and time</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the date and time (if applicable) that the alarm
+state returned to normal.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">ACkTime</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "/>
+<propdesc class="- topic/stentry     reference/propdesc "/>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">User [provisioning]</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">The station user that requested the job. This column displays <codeph class="+ topic/ph pr-d/codeph ">unknown</codeph> if job was triggered by a linked schedule.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">LastUpdate</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "/>
+<propdesc class="- topic/stentry     reference/propdesc "/>
+</property>
+</properties>
+</refbody>
+</reference>

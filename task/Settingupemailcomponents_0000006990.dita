@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!--Arbortext, Inc., 1988-2019, v.4002--><task id="SettingUpEmailComponents" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Setting up email components</title>
+<shortdesc class="- topic/shortdesc ">Use the incoming and outgoing email components to setup
+an email account in a <keyword conkeyref="reusekey/Niagara-B87E2283" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/Niagara-B87E2283" class="- topic/keyword ">niagara</keyword> station.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">email<indexterm class="- topic/indexterm ">setup</indexterm></indexterm>
+<indexterm class="- topic/indexterm ">messaging setup</indexterm></keywords></metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq ">Your station is licensed to use the email feature. <p class="- topic/p ">You
+have a Gmail account created.</p><p class="- topic/p ">You are not on a restricted network
+or VPN where Gmail use is restricted.</p></prereq>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">For email messaging, open the<uicontrol class="+ topic/ph ui-d/uicontrol ">email</uicontrol> palette and drag the<uicontrol class="+ topic/ph ui-d/uicontrol ">EmailService</uicontrol> to the <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol>
+</menucascade> container.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">From the <uicontrol class="+ topic/ph ui-d/uicontrol ">email</uicontrol> palette, drag the <uicontrol class="+ topic/ph ui-d/uicontrol ">IncomingAccount</uicontrol> and <uicontrol class="+ topic/ph ui-d/uicontrol ">OutgoingAccount</uicontrol> components to the <uicontrol class="+ topic/ph ui-d/uicontrol ">EmailService</uicontrol>.</cmd>
+<info class="- topic/itemgroup task/info ">You may have multiple incoming and outgoing accounts, which
+allows you to set up connections to servers that support secure communication
+and others that may not.</info>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Double-click the <uicontrol class="+ topic/ph ui-d/uicontrol ">OutgoingAccount</uicontrol> and configure following properties.</cmd>
+<substeps class="- topic/ol task/substeps ">
+<substep class="- topic/li task/substep "><cmd class="- topic/ph task/cmd "><parmname class="+ topic/keyword pr-d/parmname ">Hostname</parmname> enter the host name as <userinput class="+ topic/ph sw-d/userinput ">smtp.gmail.com</userinput>. </cmd></substep>
+<substep class="- topic/li task/substep "><cmd class="- topic/ph task/cmd "><parmname class="+ topic/keyword pr-d/parmname ">Port</parmname> enter port number as <userinput class="+ topic/ph sw-d/userinput ">587</userinput>.</cmd></substep>
+<substep class="- topic/li task/substep "><cmd class="- topic/ph task/cmd "><parmname class="+ topic/keyword pr-d/parmname ">Email Authenticator</parmname> select the
+email authenticator from the drop-down list. </cmd></substep>
+<substep class="- topic/li task/substep "><cmd class="- topic/ph task/cmd "><parmname class="+ topic/keyword pr-d/parmname ">Account</parmname> enter the gmail account
+ID.</cmd></substep>
+<substep class="- topic/li task/substep "><cmd class="- topic/ph task/cmd "><parmname class="+ topic/keyword pr-d/parmname ">Password</parmname> Use the generated App
+password as password (refer to the “Setting Up a Gmail Account for
+using Outgoing Email” topic for generating an App password).</cmd>
+</substep>
+</substeps>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd "><uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol> the configuration.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To send an email from <keyword conkeyref="wh_variables_n4/Workbench" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword ">workbench</keyword>, right-click <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">EmailService</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">OutgoingAccount</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Actions</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Send</uicontrol></menucascade>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Send</wintitle> window opens.<image href="../graphic/EmailService7.png" placement="break" scale="65" class="- topic/image ">
+</image></stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Enter the <userinput class="+ topic/ph sw-d/userinput ">email address</userinput> in <parmname class="+ topic/keyword pr-d/parmname ">From</parmname> and <parmname class="+ topic/keyword pr-d/parmname ">To</parmname> fields, type the subject
+and email body and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The email is sent to recipient and the number of emails
+sent are displayed in <parmname class="+ topic/keyword pr-d/parmname ">Number Sent</parmname>.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To prepare to send alarms via email, drag the <apiname class="+ topic/keyword pr-d/apiname ">EmailRecipient</apiname> from the <wintitle class="+ topic/keyword ui-d/wintitle ">email</wintitle> palette
+to the <uicontrol class="+ topic/ph ui-d/uicontrol ">EmailService</uicontrol> node in the Nav tree.</cmd>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To prepare to acknowledge alarms via email, drag the <apiname class="+ topic/keyword pr-d/apiname ">EmailAlarmAcknowledger</apiname> from the <wintitle class="+ topic/keyword ui-d/wintitle ">email</wintitle> palette to the <uicontrol class="+ topic/ph ui-d/uicontrol ">EmailService</uicontrol> node in the Nav
+tree.</cmd></step>
+</steps>
+</taskbody>
+</task>

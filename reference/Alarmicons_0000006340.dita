@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="AlarmIcons" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Alarm icons</title>
+<shortdesc class="- topic/shortdesc ">Alarm icons appear with color coding and symbolic images.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">alarm<indexterm class="- topic/indexterm ">icons</indexterm></indexterm>
+</keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><table class="- topic/table ">
+<tgroup cols="2" class="- topic/tgroup "><colspec colname="col1" colwidth="150.00pt" class="- topic/colspec "/><colspec colname="col2" colwidth="2.00*" class="- topic/colspec "/>
+<thead class="- topic/thead ">
+<row class="- topic/row ">
+<entry class="- topic/entry ">Icon</entry>
+<entry class="- topic/entry ">Description</entry>
+</row>
+</thead>
+<tbody class="- topic/tbody ">
+<row class="- topic/row ">
+<entry class="- topic/entry "><image href="../graphic/alarmred001_0000007726.png" placement="break" scale="65" class="- topic/image "/></entry>
+<entry class="- topic/entry ">Indicates a problem with the alarm source. The current state
+of the alarm source is offnormal and the alarm has not been acknowledged.</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry "><image href="../graphic/alarmorange001_0000007724.png" placement="break" scale="65" class="- topic/image "/></entry>
+<entry class="- topic/entry ">Indicates that the alarm source is no longer in alarm (an alert),
+and the alarm has not been acknowledged.</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry "><image href="../graphic/icon-alarmyellow_0000006614.png" placement="break" scale="65" class="- topic/image "/></entry>
+<entry class="- topic/entry ">Indicates that the current state of the alarm source is offnormal
+and acknowledged.</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry "><image href="../graphic/alarmgreen001_0000007725.png" placement="break" scale="65" class="- topic/image "/></entry>
+<entry class="- topic/entry ">Indicates that the current state of the alarm source is normal
+and the alarm has been acknowledged.</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry "><image href="../graphic/icon-alarmwhite_0000006616.png" placement="break" scale="65" class="- topic/image "/></entry>
+<entry class="- topic/entry ">Indicates that the current state of the alarm source is normal
+and acknowledged.</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry "><image href="../graphic/icon-alarmnote_0000006615.png" placement="break" scale="75" class="- topic/image "/></entry>
+<entry class="- topic/entry ">Indicates that a note is associated with the alarm. The bell
+icon may be any color.</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry "><image href="../graphic/iconYellowCheckMark_0000040541.png" placement="break" scale="75" class="- topic/image "/></entry>
+<entry class="- topic/entry ">May appear at the left end of the alarm record row. You set
+up this optional icon in alarm properties.</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry "><image href="../graphic/iconLink_0000040543.png" placement="break" scale="75" class="- topic/image "/></entry>
+<entry class="- topic/entry ">Indicates that the alarm has a link associated with it. When
+a link is available the system also activates the <uicontrol class="+ topic/ph ui-d/uicontrol ">Hyperlink</uicontrol> button.</entry>
+</row>
+</tbody>
+</tgroup>
+</table></section>
+</refbody>
+</reference>

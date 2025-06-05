@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="alarm-StationRecipient" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">alarm-StationRecipient</title>
+<shortdesc class="- topic/shortdesc ">This component manages the transfer of alarms between the <apiname class="+ topic/keyword pr-d/apiname ">AlarmService</apiname> and a remote station. For example, a station
+may send alarm notifications to a supervisor station – or any other
+remote station in the system. The <apiname class="+ topic/keyword pr-d/apiname ">StationRecipient</apiname> is available in the <wintitle class="+ topic/keyword ui-d/wintitle ">alarm</wintitle> palette.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">alarm<indexterm class="- topic/indexterm ">AlarmStationRecipient</indexterm></indexterm><indexterm class="- topic/indexterm ">components<indexterm class="- topic/indexterm ">AlarmStationRecipient</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">The station recipient component provides a place to specify
+the location and other details about that remote station. The properties
+on a station recipient include a field for selecting the remote station,
+as well as alarm collection options.</p><image href="../graphic/StationRecipient_0000031397.png" placement="break" scale="65" class="- topic/image "/></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Time Range</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Start Time and End Time [hours of the day (defaults to
+24 hours)]</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_alarmsTimeRange-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_alarmsTimeRange-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Days of the Week or Days of Week</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">check boxes</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_DaysOfWeek-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_DaysOfWeek-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Transitions</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">drop-down list</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmTransitions-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmTransitions-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Status</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "/>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_Status-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_Status-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Last Send Time</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">time</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">The date and time the system sent the last alarm to the
+station.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Last Failure Time</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">time</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">The date and time of any last failure.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Last Failure Cause</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">The reason for the failure.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Retry Interval</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours and minutes</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">In the case of a failed alarm transmission, the amount of
+time the system waits before attempting to send the alarm to the station
+again.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Queued Alarm Count</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">The number of alarms that are ready to be sent.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Remote Station</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "/>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays a list of eligible remote stations. Valid stations
+have a valid network connection between the <keyword conkeyref="wh_variables_n4/Supervisor" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Supervisor" class="- topic/keyword "/> and the station. The properties configured in the alarm
+class in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Alarms</uicontrol> component of the remote
+station’s <uicontrol class="+ topic/ph ui-d/uicontrol ">NiagaraNetwork</uicontrol> determine which station(s)
+receive the alarms.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

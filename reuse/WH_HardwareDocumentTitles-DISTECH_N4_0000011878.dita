@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd">
+<reference id="WHHardwareDocumentTitlesTridium-9A3181CB" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">WH: Hardware Document Titles — DISTECH</title>
+<shortdesc class="- topic/shortdesc ">This is a warehouse topic is the source for referencing
+Hardware Technical Documentation titles. These titles include references
+to hardware for inclusion in both NiagaraAX and Niagara 4 documentation.</shortdesc>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><title class="- topic/title ">Hardware documentation (non Security Specific)</title><simpletable frame="all" relcolwidth="50* 50*" class="- topic/simpletable ">
+<sthead class="- topic/sthead ">
+<stentry class="- topic/stentry ">Document Name</stentry>
+<stentry class="- topic/stentry ">Document Part Number</stentry>
+</sthead>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><b class="+ topic/ph hi-d/b ">CONTROLLERS</b></stentry>
+<stentry class="- topic/stentry "/>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph id="nc_security" class="- topic/ph ">Security JACE (10903) Mounting &amp;
+Wiring Guide</ph></stentry>
+<stentry class="- topic/stentry "><ph id="nc_security_pn" class="- topic/ph ">10903</ph></stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph id="nc2_mg" class="- topic/ph ">EC-BOS-2<sup class="+ topic/ph hi-d/sup ">AX</sup> Hardware Installation
+Guide</ph></stentry>
+<stentry class="- topic/stentry ">Legacy document for Distech (N/A)</stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry ">Not applicable to Distech (JACE-202 Express Mounting and
+Wiring Instructions)</stentry>
+<stentry class="- topic/stentry "/>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph id="nc6_mg" class="- topic/ph ">EC-BOS-6<sup class="+ topic/ph hi-d/sup ">AX</sup> Hardware Installation
+Guide</ph></stentry>
+<stentry class="- topic/stentry ">N/A for Distech - replaced with the EC-BOS-3AX and EC-BOS-6AX
+Mounting and wiring guide</stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph id="nc603_mg" class="- topic/ph ">EC-BOS-603<sup class="+ topic/ph hi-d/sup ">AX</sup> Hardware Installation
+Guide</ph></stentry>
+<stentry class="- topic/stentry ">N/A for Distech - replaced with the EC-BOS-3AX and EC-BOS-6AX
+Mounting and wiring guide</stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph id="nc645_mg" class="- topic/ph ">EC-BOS-645<sup class="+ topic/ph hi-d/sup ">AX</sup> Hardware Installation
+Guide</ph></stentry>
+<stentry class="- topic/stentry ">N/A for Distech - replaced with the EC-BOS-603AX and EC-BOS-645AX
+Retrofit Board Install Guide</stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph id="rb603645_ig" class="- topic/ph ">EC-BOS-603<sup class="+ topic/ph hi-d/sup ">AX</sup> and EC-BOS-645<sup class="+ topic/ph hi-d/sup ">AX</sup> Retrofit Board Hardware Installation Guide</ph></stentry>
+<stentry class="- topic/stentry "><ph class="- topic/ph ">05DI-HIBOSR2-11</ph></stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph class="- topic/ph ">Not applicable to Distech (JACE-with Integral I/O Mounting
+and Wiring Guide)</ph></stentry>
+<stentry class="- topic/stentry "/>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph class="- topic/ph ">Not applicable to Distech (JACE-NXT Mounting and Wiring
+Guide)</ph></stentry>
+<stentry class="- topic/stentry "/>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph class="- topic/ph ">Not applicable to Distech (M2M JACE Mounting and Wiring
+Instructions)</ph></stentry>
+<stentry class="- topic/stentry "/>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph id="nc_3e6e_mg" class="- topic/ph ">EC-BOS-3<sup class="+ topic/ph hi-d/sup ">AX</sup> and EC-BOS-6<sup class="+ topic/ph hi-d/sup ">AX</sup> Hardware Installation Guide</ph></stentry>
+<stentry class="- topic/stentry "><ph class="- topic/ph ">05DI-HIBS6AX-41</ph></stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph id="nc7_mg" class="- topic/ph ">EC-BOS-7<sup class="+ topic/ph hi-d/sup ">AX</sup> Hardware Installation
+Guide</ph></stentry>
+<stentry class="- topic/stentry "><ph class="- topic/ph ">05DI-HIBS7AX-12</ph></stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph id="JACE-8000QSInstall" class="- topic/ph ">EC-BOS-8 Quick Start Installation
+Guide</ph></stentry>
+<stentry class="- topic/stentry "><ph class="- topic/ph ">05DI-HIEC8QS-10</ph></stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph id="JACE-8000MWGuide" class="- topic/ph ">EC-BOS-8 Hardware Installation
+Guide</ph></stentry>
+<stentry class="- topic/stentry "><ph class="- topic/ph ">05DI-HIEC8MW-10</ph></stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph id="JACE-9000MWGuide" class="- topic/ph ">EC-BOS-9 Mounting and Wiring Guide</ph></stentry>
+<stentry class="- topic/stentry "><ph id="nc9000_qs_pn" class="- topic/ph ">15885</ph></stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph id="JACE-9000QSGuide" class="- topic/ph ">EC-BOS-9 Quick Start</ph></stentry><?Pub Caret -1?>
+<stentry class="- topic/stentry "/>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph id="Edge10MWGuide" class="- topic/ph ">Edge 10 Mounting and Wiring Guide<!--Placeholder: not sure if or when this will apply to Distech--></ph></stentry>
+<stentry class="- topic/stentry "><ph id="ncEdge10_mg_pn" class="- topic/ph "/></stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><b class="+ topic/ph hi-d/b ">OPTION CARDS &amp; MODULES</b></stentry>
+<stentry class="- topic/stentry "/>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry ">Not applicable to Distech (Dual RS485 Option Module (12979)
+Install Sheet)</stentry>
+<stentry class="- topic/stentry "><!--Assume this was ID: mo_dualRS485_12979_is--></stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry ">Not applicable to Distech (LON Option Module (12978) Install
+Sheet)</stentry>
+<stentry class="- topic/stentry "/>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry ">Not applicable to Distech (RS232 Option Module (12980) Install
+Sheet)</stentry>
+<stentry class="- topic/stentry "/>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph id="oc_npb232_is" class="- topic/ph ">EC-NPB-232 Hardware Installation Guide</ph></stentry>
+<stentry class="- topic/stentry "><ph class="- topic/ph ">05DI-HIEC232-11</ph></stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph id="oc_npb485_is" class="- topic/ph ">EC-NPB-2X-485 Hardware Installation
+Guide</ph></stentry>
+<stentry class="- topic/stentry "><ph class="- topic/ph ">05DI-HI2X485-13</ph></stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph id="oc_npblon_is" class="- topic/ph ">EC-NPB-LON Hardware Installation Guide</ph></stentry>
+<stentry class="- topic/stentry "><ph class="- topic/ph ">05DI-HIECLON-13</ph></stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry ">Not applicable to Distech (NPB-MDM Option Installation Sheet)<!--Assume this was ID: oc_npbmdm_is--></stentry>
+<stentry class="- topic/stentry "/>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph id="oc_nc7wifi_ig" class="- topic/ph ">EC-BOS-7<sup class="+ topic/ph hi-d/sup ">AX</sup> WiFi Option
+(EC-T7-WIFI) Hardware Installation Guide</ph></stentry>
+<stentry class="- topic/stentry "><ph class="- topic/ph ">05DI-HI7WIFI-10</ph></stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph id="mo_io16_ig" class="- topic/ph ">Remote IO-R-16 Module Mounting and Wiring
+Guide</ph></stentry>
+<stentry class="- topic/stentry "><ph class="- topic/ph ">05DI-HIIO16X-10</ph></stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph id="mo_io34_ig" class="- topic/ph ">Remote IO-R-34 Module Mounting and Wiring
+Guide</ph></stentry>
+<stentry class="- topic/stentry "><ph class="- topic/ph ">05DI-HIIO34X-10</ph></stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph id="mo_rio_mw" class="- topic/ph ">Remote IO Security Module Installation
+Guide</ph></stentry>
+<stentry class="- topic/stentry "><ph class="- topic/ph ">CDITR-SEIOXX0 (Distech RIO)</ph></stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph id="mo_rio16_wi" class="- topic/ph ">Remote I/O Module (T-IO-16-485) Mounting
+and Wiring Instructions</ph></stentry>
+<stentry class="- topic/stentry ">Not applicable to Distech (T-IO-16-485 Mounting and Wiring
+Instructions)</stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph id="mo_ps90240vac_is" class="- topic/ph ">EC-NPB-PWR-UN Hardware Installation
+Guide</ph></stentry>
+<stentry class="- topic/stentry "><ph class="- topic/ph ">05DI-HIPWRUN-11</ph></stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry ">Not applicable to Distech (LON Option Card Install Sheet)<!--Assume this was ID: oc_lon_is--></stentry>
+<stentry class="- topic/stentry "/>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph id="oc_npbgprs_is" class="- topic/ph ">EC-NPB-GPRS-W Hardware Installation
+Guide</ph></stentry>
+<stentry class="- topic/stentry "><ph class="- topic/ph ">05DI-HIGPRSX-13</ph></stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry ">Not applicable to Distech (Z-Wave Option Card Install Sheet)<!--Assume this was ID: oc_zwave_is--></stentry>
+<stentry class="- topic/stentry "/>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry ">Not applicable to Distech (NPB-SED-001 Option Card Install
+Sheet)<!--Assume this was ID: oc_npbsed001-is--></stentry>
+<stentry class="- topic/stentry "/>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph id="oc_sram_is" class="- topic/ph ">EC-NPB-SRAM Hardware Installation Guide</ph></stentry>
+<stentry class="- topic/stentry "><ph class="- topic/ph ">05DI-HINSRAM-10</ph></stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph id="r2rm_and_w" class="- topic/ph ">EC-Net Access Remote Reader Installation
+Guide</ph><ph id="r2rm_and_w_legacy" class="- topic/ph ">EC-Net Remote Reader Installation
+Guide</ph></stentry>
+<stentry class="- topic/stentry "><ph class="- topic/ph ">PDITR-SECR2R0 (Distech R2R)</ph></stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><b class="+ topic/ph hi-d/b ">BATTERY, POWER SUPPLY &amp; ENCLOSURES</b></stentry>
+<stentry class="- topic/stentry "/>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph id="mo_ps24vac_is" class="- topic/ph ">EC-NPB-PWR Hardware Installation Guide</ph></stentry>
+<stentry class="- topic/stentry "><ph class="- topic/ph ">05DI-HIPWRXX-11</ph> <draft-comment class="- topic/draft-comment ">24V Power Supply
+Module</draft-comment></stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph id="bt_nimh_is" class="- topic/ph ">EC-NPB-BATT Replacement Battery Hardware
+Installation Guide</ph></stentry>
+<stentry class="- topic/stentry "><ph class="- topic/ph ">05DI-HIECBAT-11</ph></stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph id="bt_npb7_is" class="- topic/ph ">EC-NPB-BATT-7 Replacement Battery Hardware
+Installation Guide</ph></stentry>
+<stentry class="- topic/stentry "/>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph id="bt_npbxpr_is" class="- topic/ph ">JACE NiMH Replacement Battery (NPB-XPR-BATT)
+Install Sheet</ph> <draft-comment class="- topic/draft-comment ">need Distech name</draft-comment></stentry>
+<stentry class="- topic/stentry "><ph class="- topic/ph ">11706</ph></stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph id="en1en2_ig" class="- topic/ph ">EC-Net Access Medium &amp; Large Enclosures
+Installation Guide</ph></stentry>
+<stentry class="- topic/stentry "><ph class="- topic/ph ">02DI-MESMEDX0, LRGX0 (Distech Mxx &amp; Lxx)</ph></stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry "><ph id="en_small_is" class="- topic/ph ">EC-Net Access Small Enclosure Installation
+Guide</ph> </stentry>
+<stentry class="- topic/stentry "><ph class="- topic/ph ">02DI-MESSMLX0 (Distech SML)</ph></stentry>
+</strow>
+</simpletable></section>
+</refbody>
+</reference>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="SettingUpAcknowledgmentRequirements" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Setting up acknowledgment requirements</title>
+<shortdesc class="- topic/shortdesc ">When an operator acknowledges an alarm, you can provide
+a set of common explanations to document the acknowledgment.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">acknowledgment<indexterm class="- topic/indexterm ">requirements</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Click <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Tools</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Options</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Alarm Console</uicontrol></menucascade>.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Locate the <parmname class="+ topic/keyword pr-d/parmname ">Notes Required on Ack</parmname> property
+and set it to <option class="+ topic/keyword pr-d/option ">true</option> and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult "/>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To open the <wintitle class="+ topic/keyword ui-d/wintitle ">Edit</wintitle> window, click the
+chevron (&gt;&gt;) to the right of the <parmname class="+ topic/keyword pr-d/parmname ">Alarm Ack Responses</parmname> property.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To create a note, click Add.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The system displays the <wintitle class="+ topic/keyword ui-d/wintitle ">Add</wintitle> window.<image href="../graphic/addalarmresponse1_0000014086_0000006349.png" placement="break" scale="65" class="- topic/image "/></stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Type a note in the add field. This information will help
+management track the alarm resolution process. You should provide
+realistic explanations for an acknowledgment without making the list
+too cumbersome.</cmd></step>
+</steps>
+<result class="- topic/section task/result "><p class="- topic/p ">When an operator acknowledges an alarm, the <wintitle class="+ topic/keyword ui-d/wintitle ">Notes</wintitle> window opens. This list provides standard alarm acknowledgment notes
+for the operator to include in the alarm record when acknowledging
+the alarm. </p></result>
+</taskbody>
+</task>

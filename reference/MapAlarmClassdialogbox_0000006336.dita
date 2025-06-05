@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="MapAlarmClassDialogBox" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Map Alarm Class window</title>
+<shortdesc class="- topic/shortdesc ">This window associates the alarm class with its definition.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Map Apparm Class dialog box</indexterm>
+</keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><image href="../graphic/mapalarmclassdialog_0000014087_0000006350.png" placement="break" scale="65" class="- topic/image "/></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Column</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm Class</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only used in Lists, console columns, or %alarmClass%
+on a report.</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_AlarmClass-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_AlarmClass-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Definition</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">The name of the definition.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

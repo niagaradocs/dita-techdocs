@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="AlarmState" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Alarm state</title>
+<shortdesc class="- topic/shortdesc ">Alarms may be in an alarm state or acknowledged. They may
+be open or cleared.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">alarm<indexterm class="- topic/indexterm ">state</indexterm></indexterm>
+</keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">Each alarm is a single record in the system database that changes
+among one of four states.</p>
+<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Alarm condition exists: the <b class="+ topic/ph hi-d/b ">alarm</b> state</p><p class="- topic/p ">When an
+event triggers an alarm, it remains in effect until it is acknowledged.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Alarm acknowledged: the <b class="+ topic/ph hi-d/b ">acknowledged</b> state</p><p class="- topic/p ">The
+alarm has been acknowledged by the recipient. Acknowledged alarms
+may be normal alarms.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Alarm status is normal: the <b class="+ topic/ph hi-d/b ">normal</b> state</p><p class="- topic/p ">Alarm
+is a normal alarm that has been acknowledged: <b class="+ topic/ph hi-d/b ">acknowledged normal
+alarm</b></p></li>
+<li class="- topic/li "><p class="- topic/p ">Alarm status is force clear: the <b class="+ topic/ph hi-d/b ">force clear</b> state</p><p class="- topic/p ">Alarm is cleared from the alarm console. The alarm state must
+be normal and acknowledged.</p></li>
+</ul>
+<p class="- topic/p ">In addition to these states, an alarm may be <i class="+ topic/ph hi-d/i ">open</i> or <i class="+ topic/ph hi-d/i ">cleared</i> (closed). An alarm is considered open when it is <i class="+ topic/ph hi-d/i ">not</i>:</p>
+<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">acknowledged and normal</p></li>
+<li class="- topic/li "><p class="- topic/p ">acknowledged and an alert</p></li>
+</ul>
+<p class="- topic/p ">Open alarms display in the alarm console. Cleared alarms do not
+display in the alarm console. The table shows the conditions that
+result in an alarm being open or cleared.</p>
+<table class="- topic/table ">
+<tgroup cols="3" class="- topic/tgroup "><colspec colname="col1" class="- topic/colspec "/><colspec colname="col2" class="- topic/colspec "/>
+<colspec colname="col3" class="- topic/colspec "/>
+<thead class="- topic/thead ">
+<row class="- topic/row ">
+<entry class="- topic/entry ">Alarm state</entry>
+<entry class="- topic/entry ">Acknowledge State</entry>
+<entry class="- topic/entry ">Open or cleared</entry>
+</row>
+</thead>
+<tbody class="- topic/tbody ">
+<row class="- topic/row ">
+<entry colsep="0" class="- topic/entry ">Offnormal or Fault</entry>
+<entry colsep="0" class="- topic/entry ">Unacknowledged</entry>
+<entry class="- topic/entry ">Open</entry>
+</row>
+<row class="- topic/row ">
+<entry colsep="0" class="- topic/entry ">Offnormal or Fault</entry>
+<entry colsep="0" class="- topic/entry ">Acknowledged</entry>
+<entry class="- topic/entry ">Open</entry>
+</row>
+<row class="- topic/row ">
+<entry colsep="0" class="- topic/entry ">Normal</entry>
+<entry colsep="0" class="- topic/entry ">Unacknowledged</entry>
+<entry class="- topic/entry ">Open</entry>
+</row>
+<row class="- topic/row ">
+<entry colsep="0" class="- topic/entry ">Normal</entry>
+<entry colsep="0" class="- topic/entry ">Acknowledged</entry>
+<entry class="- topic/entry ">Cleared</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</conbody>
+</concept>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="SchedulingAPeriodicEmailReportFromA" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Scheduling a periodic email report from a station</title>
+<shortdesc class="- topic/shortdesc ">Configuring the system to periodically email alarm data
+from a station to an operator or manager improves the chances that
+a human being will pay attention to the alarms and do something about
+them.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">email report<indexterm class="- topic/indexterm ">scheduling</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/><vrm version="4.6" class="- topic/vrm "/>
+</vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Open the <wintitle class="+ topic/keyword ui-d/wintitle ">report</wintitle> palette and drag the <uicontrol class="+ topic/ph ui-d/uicontrol ">ReportService</uicontrol> component to the <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol></menucascade> container.</cmd>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Drag the <uicontrol class="+ topic/ph ui-d/uicontrol ">ExportSource </uicontrol>component
+from the <wintitle class="+ topic/keyword ui-d/wintitle ">report</wintitle> palette to the <uicontrol class="+ topic/ph ui-d/uicontrol ">ReportService</uicontrol> component.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To open the <uicontrol class="+ topic/ph ui-d/uicontrol ">ExportSource</uicontrol> property
+sheet, double-click the <uicontrol class="+ topic/ph ui-d/uicontrol ">ExportSource</uicontrol> node in
+the Nav tree.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The <uicontrol class="+ topic/ph ui-d/uicontrol ">ExportSource</uicontrol> property sheet
+opens.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In <parmname class="+ topic/keyword pr-d/parmname ">Source</parmname> property, click double chevron.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Export Source Wizard</wintitle> window opens.<image href="../graphic/Step6_0000047700.png" placement="break" scale="65" class="- topic/image "/></stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Click the folder icon and select the <uicontrol class="+ topic/ph ui-d/uicontrol ">File Ord
+Chooser</uicontrol> option from the drop-down list.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">File Chooser</wintitle> window opens.<image href="../graphic/FileChooser_0000047599.png" placement="break" scale="65" class="- topic/image "/></stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Select the<uicontrol class="+ topic/ph ui-d/uicontrol "> Report (px file) </uicontrol> and
+click <uicontrol class="+ topic/ph ui-d/uicontrol ">Open</uicontrol>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Export Source Wizard</wintitle> window opens
+again.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Click <uicontrol class="+ topic/ph ui-d/uicontrol ">Next</uicontrol> and select the type of
+output from the <uicontrol class="+ topic/ph ui-d/uicontrol ">Exporter </uicontrol>drop-down list. </cmd>
+<stepresult class="- topic/itemgroup task/stepresult "><image href="../graphic/Exportsourcewizardselectfile_0000047598.png" placement="break" scale="65" class="- topic/image "/></stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Click the <uicontrol class="+ topic/ph ui-d/uicontrol ">Finish </uicontrol>button.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Access the view you wish to periodically send from the
+station to the recipient.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Click the Export icon on the toolbar or click <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">File</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Export</uicontrol></menucascade> from the main menu.</cmd></step>
+</steps>
+</taskbody>
+</task>

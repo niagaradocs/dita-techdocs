@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!--Arbortext, Inc., 1988-2019, v.4002--><task id="docGraphics_ConfigureEmailRecipientComponent-13C2D48C" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Configuring the EmailRecipient</title>
+<shortdesc class="- topic/shortdesc ">Two <uicontrol class="+ topic/ph ui-d/uicontrol ">EmailRecipient</uicontrol> components send
+email from the system. One is in the <uicontrol class="+ topic/ph ui-d/uicontrol ">email</uicontrol> palette.
+This component manages alarms that are configured to be sent via email.
+The second is in the <uicontrol class="+ topic/ph ui-d/uicontrol ">report</uicontrol> palette. It manages
+the sending of reports to one or more specific email addresses.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Reporting<indexterm class="- topic/indexterm ">EmailRecipient
+component</indexterm></indexterm><indexterm class="- topic/indexterm ">email<indexterm class="- topic/indexterm ">EmailRecipient</indexterm></indexterm><indexterm class="- topic/indexterm ">components<indexterm class="- topic/indexterm ">EmailRecipient (alarm)</indexterm></indexterm><indexterm class="- topic/indexterm ">EmailRecipient (report)</indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq ">The <uicontrol class="+ topic/ph ui-d/uicontrol ">EmailService</uicontrol> and <uicontrol class="+ topic/ph ui-d/uicontrol ">ReportService</uicontrol> are available in the station’s <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol> 
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol></menucascade> container.<p class="- topic/p ">You have
+a Gmail account created.</p><p class="- topic/p ">You are not on a network or VPN with
+restricted access to Gmail.</p></prereq>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Right-click the <uicontrol class="+ topic/ph ui-d/uicontrol ">EmailRecipient</uicontrol> under <uicontrol class="+ topic/ph ui-d/uicontrol ">ReportServices</uicontrol> or <uicontrol class="+ topic/ph ui-d/uicontrol ">EmailServices</uicontrol> nodes and click <?Pub _nolinebreak?><menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Views</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Property Sheet</uicontrol></menucascade><?Pub /_nolinebreak
+?>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The Property Sheet opens.<image href="../graphic/EmailRecipientPS.png" placement="break" scale="65" class="- topic/image ">
+</image></stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Enter the name and email address of recipient(s) configured
+in outgoing email service.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Select <userinput class="+ topic/ph sw-d/userinput ">OutgoingAccount</userinput> from the
+drop-down list for <parmname class="+ topic/keyword pr-d/parmname ">Email Account</parmname> and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol>.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To send alarms via email right—click <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">EmailRecipient</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Actions </uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Route Alarm</uicontrol></menucascade>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">This triggers an email to the recipient email Id.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Do the same for the alarm <uicontrol class="+ topic/ph ui-d/uicontrol ">EmailRecipient</uicontrol>s.</cmd></step>
+</steps>
+</taskbody>
+</task>

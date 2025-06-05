@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="emailComponents" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Components in email module</title>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata ">
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Email</p></li>
+<li class="- topic/li "><p class="- topic/p ">EmailAlarmAcknowledger</p></li>
+<li class="- topic/li "><p class="- topic/p ">EmailRecipient</p></li>
+<li class="- topic/li "><p class="- topic/p ">EmailService</p></li>
+<li class="- topic/li "><p class="- topic/p ">IncomingAccount</p></li>
+<li class="- topic/li "><p class="- topic/p ">OutgoingAccount</p></li>
+</ul></section>
+</refbody>
+</reference>

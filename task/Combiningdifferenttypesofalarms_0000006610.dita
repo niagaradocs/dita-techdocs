@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="CombiningDifferentTypesOfAlarms" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Combining different types of alarms</title>
+<shortdesc class="- topic/shortdesc ">Alarm class mapping allows you to set up the system so
+that you can import alarms from a variety of alarm classes and have
+them display, link, and sound in a common manner. You do this by creating
+alarm class definitions and associating (mapping) existing alarm classes
+to the definitions.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">alarm class<indexterm class="- topic/indexterm ">mapping</indexterm></indexterm><indexterm class="- topic/indexterm "> mapping alarm classes</indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq ">You are viewing the alarm console.</prereq>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Click <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Alarm</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">AlarmClass Mapping ...</uicontrol></menucascade>.</cmd>
+<info class="- topic/itemgroup task/info ">You can also access this window from the <wintitle class="+ topic/keyword ui-d/wintitle ">Alarm Console</wintitle> window inside the <wintitle class="+ topic/keyword ui-d/wintitle ">Options</wintitle> window.</info>
+<stepresult class="- topic/itemgroup task/stepresult ">The system displays the <wintitle class="+ topic/keyword ui-d/wintitle ">Alarm Class Mapper</wintitle> window. <image href="../graphic/alarmclassmapper_0000014089_0000006322.png" placement="break" scale="65" class="- topic/image "/></stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To create an alarm mapper definition, click <uicontrol class="+ topic/ph ui-d/uicontrol ">New</uicontrol> in the upper pane.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The system displays the <wintitle class="+ topic/keyword ui-d/wintitle ">New</wintitle> window.<image href="../graphic/alarmclassmapperedit_0000006627.png" placement="break" scale="65" class="- topic/image ">
+</image></stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Fill in the definition properties and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the upper pane, select a definition.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the lower pane, select the alarm class to associate
+with the definition and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Add Mapping</uicontrol>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult "> The system displays the <wintitle class="+ topic/keyword ui-d/wintitle ">Map Alarm Class</wintitle> window.<image href="../graphic/alarmclassmapperadd_0000006628.png" placement="break" scale="65" class="- topic/image "/></stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">For the selected <parmname class="+ topic/keyword pr-d/parmname ">Alarm Class</parmname>, select
+the <parmname class="+ topic/keyword pr-d/parmname ">Definition</parmname> and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd></step>
+</steps>
+<result class="- topic/section task/result "><note class="- topic/note ">The icons, hyperlinks, and sounds in the alarm mapper
+definition do not override those that are assigned in the alarm extension
+itself. If these parameters are assigned in both the alarm extension
+and in the alarm class mapper definition, the alarm class mapper definition
+parameters are ignored. </note></result>
+</taskbody>
+</task>

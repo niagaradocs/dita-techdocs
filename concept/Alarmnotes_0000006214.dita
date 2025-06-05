@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="AlarmNotes" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Alarm notes</title>
+<shortdesc class="- topic/shortdesc ">Notes are simple text entries that are associated with
+a particular alarm. They facilitate communication between operators
+and may provide historical context for the event that triggered the
+alarm.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">alarm<indexterm class="- topic/indexterm ">notes</indexterm></indexterm>
+</keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">An engineer or operator may add a note to one or more alarms simultaneously.
+Alarm records that have notes are indicated by a note icon.</p>
+</conbody>
+</concept>

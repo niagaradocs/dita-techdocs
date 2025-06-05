@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="onCall-OnCallList" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">onCall-OnCallList</title>
+<shortdesc class="- topic/shortdesc ">This component contains a set of one or more people (<apiname class="+ topic/keyword pr-d/apiname ">OnCallContact</apiname>s) to contact when an alarm event occurs.
+You create, edit, or delete unique on call lists using the <wintitle class="+ topic/keyword ui-d/wintitle ">On Call List Manager</wintitle> view.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">OnCallList</indexterm><indexterm class="- topic/indexterm ">component<indexterm class="- topic/indexterm ">OnCallList</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">When you create a list, it appears under the <uicontrol class="+ topic/ph ui-d/uicontrol ">OnCallService</uicontrol> node in the Nav tree and is also available
+as an option on the <parmname class="+ topic/keyword pr-d/parmname ">Event Output</parmname> property of
+the on-call list schedule’s <wintitle class="+ topic/keyword ui-d/wintitle ">Scheduler</wintitle> view from
+where you may select it as a scheduled event.</p><p class="- topic/p ">Like other scheduled
+outputs, you may assign more than one on-call list to a single day.
+The on call list is active only during the scheduled day and time.
+The on-call list active status is displayed in the on call <wintitle class="+ topic/keyword ui-d/wintitle ">List</wintitle> property sheet view as well as in the <wintitle class="+ topic/keyword ui-d/wintitle ">On
+Call List Manager</wintitle> view.</p><note class="- topic/note ">When assigning <apiname class="+ topic/keyword pr-d/apiname ">OnCallList</apiname> events in the <wintitle class="+ topic/keyword ui-d/wintitle ">Scheduler</wintitle> view, make sure <wintitle class="+ topic/keyword ui-d/wintitle ">OnCallList</wintitle> event times are
+contiguous.</note></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Active</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Active or Inactive</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsActive" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsActive" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Last Fault Cause</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/entsecLastFaultCause-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/entsecLastFaultCause-div" class="- topic/div "/></propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

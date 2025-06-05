@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="AckknowledgingAlarms" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Viewing and acknowledging alarms from the alarm console</title>
+<shortdesc class="- topic/shortdesc ">Acknowledging an alarm verifies human awareness that a
+potentially detrimental event has occurred or a condition exists with
+a device that is outside its normal range of operation. You cannot
+remove an alarm until you acknowledge it and until the alarm source
+returns to a normal state (no longer in alarm).This procedure acknowledges
+alarms from the alarm console.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">alarm<indexterm class="- topic/indexterm ">acknowledging from
+the alarm console</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq ">A ConsoleRecipient exists in the station.</prereq>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To display the <wintitle class="+ topic/keyword ui-d/wintitle ">AX Alarm Console</wintitle>, right–click
+the <uicontrol class="+ topic/ph ui-d/uicontrol ">ConsoleRecipient</uicontrol> node in Nav tree and click <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Views</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">AX Alarm Console</uicontrol>
+</menucascade>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">AX Alarm Console</wintitle> opens.<image href="../graphic/alrmconsoletable_0000031637.png" placement="break" scale="65" class="- topic/image ">
+</image><p class="- topic/p ">Each record that appears in the alarm console table represents
+one alarm source and one or more alarms from that source.</p></stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To silence an alarm, select it and click the <uicontrol class="+ topic/ph ui-d/uicontrol ">Silence</uicontrol> button at the bottom of the view.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To sort the alarms in order of any column, click the column
+title (once for ascending, twice for descending).</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To view all current alarms from a particular point, double-click
+point’s row in the table.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">This opens the <wintitle class="+ topic/keyword ui-d/wintitle ">Open Alarm Sources</wintitle> view.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To use sound options, click the sound icon in the toolbar
+of the <wintitle class="+ topic/keyword ui-d/wintitle ">AX Alarm Console</wintitle> window.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Select one or more alarms to acknowledge. You may select
+multiple alarms using the <uicontrol class="+ topic/ph ui-d/uicontrol ">Shift</uicontrol> or <uicontrol class="+ topic/ph ui-d/uicontrol ">Ctrl</uicontrol> keys.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To view details about the selected alarm, double-click
+the alarm row in the table or select the alarm and click the <uicontrol class="+ topic/ph ui-d/uicontrol ">Hyperlink</uicontrol> button at the bottom of the <wintitle class="+ topic/keyword ui-d/wintitle ">AX Alarm
+Console</wintitle> view.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To acknowledge one or more alarms, do one of the following:</cmd>
+<choices class="- topic/ul task/choices ">
+<choice class="- topic/li task/choice ">To acknowledge the latest (most recent) alarm(s), right-click
+the selected alarm(s) and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Alarm Acknowledge Most
+Recent</uicontrol> or click <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Alarm</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Acknowledge</uicontrol></menucascade> from the menu.</choice>
+<choice class="- topic/li task/choice ">To acknowledge all alarms that are reported from a single
+source, click <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Alarm</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Acknowledge All</uicontrol></menucascade> or click the <uicontrol class="+ topic/ph ui-d/uicontrol ">Acknowledge All</uicontrol> button at the bottom of the console.</choice>
+</choices>
+<stepresult class="- topic/itemgroup task/stepresult ">The system acknowledges the latest or all alarms from
+each selected alarm source.</stepresult>
+</step>
+</steps>
+</taskbody>
+</task>

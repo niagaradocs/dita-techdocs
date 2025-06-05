@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="onCall-OnCallSchedule" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">onCall-OnCallSchedule</title>
+<shortdesc class="- topic/shortdesc ">This component sets times for making <wintitle class="+ topic/keyword ui-d/wintitle ">On Call
+List</wintitle>s active. It is available in the <apiname class="+ topic/keyword pr-d/apiname ">onCall</apiname> palette.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">onCall-OnCallSchedule</indexterm>
+<indexterm class="- topic/indexterm ">alarm<indexterm class="- topic/indexterm ">on call schedule</indexterm></indexterm>
+</keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><title class="- topic/title ">Actions</title><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">Cleanup</uicontrol></p></section>
+</refbody>
+</reference>

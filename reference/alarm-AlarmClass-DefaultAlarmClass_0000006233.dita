@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="alarm-AlarmClass" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">alarm-AlarmClass (DefaultAlarmClass)</title>
+<shortdesc class="- topic/shortdesc ">An AlarmClass object is used to group alarms that have
+the same routing and handling characteristics. The AlarmClass is available
+in the alarm palette. </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">AlarmClass</indexterm><indexterm class="- topic/indexterm ">component<indexterm class="- topic/indexterm ">AlarmClass</indexterm></indexterm><indexterm class="- topic/indexterm ">DefaultAlarmClass</indexterm>
+</keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">The alarm class:</p><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Routes alarms with some similar set of properties along common
+routes that serve as channels for like data.</p></li>
+<li class="- topic/li "><p class="- topic/p "> Manages the persistence of the alarms as needed via the alarm
+archive, but otherwise merely chains alarms from the alarm source
+via a topic.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Manages which alarms require acknowledgement.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Is the basis for visual grouping in the alarm console.</p></li>
+</ul><image href="../graphic/alarmclass_0000009837.png" placement="break" scale="65" class="- topic/image "/><?Pub Caret 0?></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Ack Required</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsAckRequired-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsAckRequired-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Priority [on-call contact]</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">1–255 for each transition, default: 255; %priority% on
+a report</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsPriorityOnCall-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsPriorityOnCall-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Total Alarm Count</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsTotalAlarmCount-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsTotalAlarmCount-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Open Alarm Count</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsOpenAlarmCount-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsOpenAlarmCount-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In Alarm Count</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsInAlarmCount-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsInAlarmCount-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Unacked Alarm Count</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_UnackedAlarmCount-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_UnackedAlarmCount-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Time Of Last Alarm</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsTimeOfLastAlarm-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsTimeOfLastAlarm-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Escalation Level(n) Enable</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> (default) or <option class="+ topic/keyword pr-d/option ">false</option> and check box, where <varname class="+ topic/keyword sw-d/varname ">n</varname> is 1, 2 or 3</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_EscalLevelEnable-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_EscalLevelEnable-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Escalation Level(n) Delay</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours and minutes; one minute is the smallest increment
+you can set for this property.</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_EscalLevelDelay-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_EscalLevelDelay-div" class="- topic/div "/></propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

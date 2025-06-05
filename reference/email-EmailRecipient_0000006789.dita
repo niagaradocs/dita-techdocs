@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="Email-EmailRecipient" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">email-EmailRecipient</title>
+<shortdesc class="- topic/shortdesc ">This component manages the routing of all email messages
+from message sources to message recipients. It is like other alarm
+recipients except that it formats the alarm as an email message and
+delivers it to a destination other than the alarm console.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">email-EmailRecipient</indexterm>
+</keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><fig class="- topic/fig ">
+<title class="- topic/title ">EmailRecipient property sheet</title>
+<image href="../graphic/Figure12EmailRecipientpropertysheet_0000031393.png" placement="break" scale="65" class="- topic/image "/>
+</fig><p class="- topic/p ">Actions include Route Alarm.</p></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Time Range</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Start Time and End Time [hours of the day (defaults to
+24 hours)]</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_alarmsTimeRange-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_alarmsTimeRange-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Days of the Week or Days of Week</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">check boxes</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_DaysOfWeek-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_DaysOfWeek-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Transitions</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">drop-down list</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmTransitions-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmTransitions-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Route Acks</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> (default) or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/RouteAcks-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/RouteAcks-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">To</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">email address</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">This is the email address of the email recipient (person
+who is to receive the emailed alarm).</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Cc</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">email address</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">This is the email address of anyone that is to receive a
+carbon copy of the alarm.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Bcc</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">email address</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">This is the email address of anyone that should receive
+a carbon copy of the alarm, but whose name you do not want to display
+in the delivered email.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Language</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">two lower-case letters</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">This is the ISO 639 language code as two lower-case letters.
+For a list of codes, see the following: <filepath class="+ topic/ph sw-d/filepath ">http://www.loc.gov/standards/iso639-2/langcodes.html</filepath></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Email Account</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">drop-down list</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Selects the email account to use for sending the alarm.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Subject</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text (default: <codeph class="+ topic/ph pr-d/codeph "><keyword conkeyref="wh_variables_n4/niagara" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara" class="- topic/keyword "/> Alert From %alarmData.SourceName%</codeph>)</propvalue><?Pub Caret 16?>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the alarm subject line. </propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Body</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines as a bformat text of the body.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

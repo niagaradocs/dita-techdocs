@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="Alarm-FileAlarmDbConfig-92D9119A" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">alarm-FileAlarmDbConfig</title>
+<shortdesc class="- topic/shortdesc "/>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">alarm-FileAlarmDbConfig</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><image href="../graphic/alarmservicedbconfig__0000018438.png" placement="break" scale="65" class="- topic/image "/></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Capacity</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">1–250,000 records (defaults to 500)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the number of alarm records to store in the histories
+database. When the capacity is reached, newer alarm records overwrite
+the oldest records.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

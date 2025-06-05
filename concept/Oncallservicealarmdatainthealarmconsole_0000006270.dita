@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="OnCallServiceAlarmDataInTheAlarmCon" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">OnCallService data in the alarm console</title>
+<shortdesc class="- topic/shortdesc ">In addition to the default alarm console alarm columns,
+many on-call data facets are available for optional viewing directly
+in the alarm console.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">on call service<indexterm class="- topic/indexterm ">data in the
+alarm console</indexterm></indexterm><indexterm class="- topic/indexterm ">alarm<indexterm class="- topic/indexterm ">console</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<fig class="- topic/fig ">
+<title class="- topic/title ">Example of on call data facets viewed in the alarm console</title>
+<image href="../graphic/OnCallServicedatainthealarmconsole_0000044976.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig>
+<p class="- topic/p ">You add on-call data columns to the alarm console view by using
+the <wintitle class="+ topic/keyword ui-d/wintitle ">Add Alarm Data Column</wintitle> window.</p>
+</conbody>
+</concept>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="AlarmInstructions" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Alarm instructions</title>
+<shortdesc class="- topic/shortdesc ">Each alarm can have customized instructions assigned to
+it so that any time an alarm is generated, the instructions are presented
+with the alarm notification (in the <userinput class="+ topic/ph sw-d/userinput ">Alarm Record</userinput> window).</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">alarm<indexterm class="- topic/indexterm ">instructions</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">Alarm instructions provide information for the system operator.
+Usually they concern how to handle the condition that gave rise to
+the alarm. Instructions are created, assigned, and edited from the <wintitle class="+ topic/keyword ui-d/wintitle ">Instructions</wintitle> view.</p>
+</conbody>
+</concept>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="alarm-LinePrinterRecipient" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">alarm-LinePrinterRecipient</title>
+<shortdesc class="- topic/shortdesc ">This component prints alarms to a lineprinter that is attached
+to a station running on a Windows platform, or to a remote (networked)
+printer known to its Windows OS. To access this property sheet right-click
+the LinePrinterRecipient component in the Nav tree and click <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Views</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Property Sheet</uicontrol>
+</menucascade>.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">LinePrinterRecipient</indexterm>
+<indexterm class="- topic/indexterm ">components<indexterm class="- topic/indexterm ">LinePrinterRecipient</indexterm></indexterm>
+</keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">Alerts may be generated if the printing of an alarm fails,
+but the line printer recipient does not print alarms that it generates
+itself. The station must have permission to print on any printer chosen
+(which is typical).</p><p class="- topic/p ">A <apiname class="+ topic/keyword pr-d/apiname ">PrinterRecipient</apiname> component
+is also available. It provides more formatting options, applicable
+to most modern printers.</p><image href="../graphic/lineprinterrecipient_0000013737_0000006289.png" placement="break" scale="65" class="- topic/image "/></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Time Range</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Start Time and End Time [hours of the day (defaults to
+24 hours)]</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_alarmsTimeRange-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_alarmsTimeRange-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Days of the Week or Days of Week</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">check box</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_DaysOfWeek-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_DaysOfWeek-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Transitions</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">drop-down list</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmTransitions-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmTransitions-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Route Acks</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/RouteAcks-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/RouteAcks-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Printer</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">drop-down list</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_Printer-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_Printer-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Language</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">two lower-case letters</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_Language-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_Language-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Print Format</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsPrintFormat" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsPrintFormat" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alert On Failure</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsAlertOnFail" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsAlertOnFail" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm Source Info</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">true or false</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the set of properties for configuring and routing
+alarm source. (For example, Alerts for failed print attempt provided
+“Alert on Failure” is true).</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

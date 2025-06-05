@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!--Arbortext, Inc., 1988-2019, v.4002--><task id="ConfigureOnCallContacts-4D784E41" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">To Create and Configure the On Call Contacts</title>
+<shortdesc class="- topic/shortdesc ">This topic explains how to create and configure the OnCallContacts
+based on priority. It represents a pairing between the user and a
+contact. The user must adequately configure the contact method. When
+an alarm is raised in the station based on the configuration, contacts
+the particular user and the user receives a notification via email
+or sms.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm "><indexterm class="- topic/indexterm ">OnCallService</indexterm> OnCallList<indexterm class="- topic/indexterm ">OnCallContactManager</indexterm></indexterm>
+</keywords></metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq "> <p class="- topic/p ">The user must be an existing user configured in the <uicontrol class="+ topic/ph ui-d/uicontrol ">UserService</uicontrol>.</p><p class="- topic/p ">The <uicontrol class="+ topic/ph ui-d/uicontrol ">AlarmRecipient</uicontrol> for the desired contact method should be configured in the <uicontrol class="+ topic/ph ui-d/uicontrol ">AlarmService</uicontrol>.</p></prereq>
+<context class="- topic/section task/context "/>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To create a new <uicontrol class="+ topic/ph ui-d/uicontrol ">OnCallContacts</uicontrol>,
+do one of the following.</cmd>
+<choices class="- topic/ul task/choices ">
+<choice class="- topic/li task/choice ">In the Nav tree, expand <uicontrol class="+ topic/ph ui-d/uicontrol ">OnCallService</uicontrol>, right-click on any one of the OnCallLists and choose <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Views</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">On Call Contact Manager</uicontrol>
+</menucascade>.</choice>
+<choice class="- topic/li task/choice ">In the <wintitle class="+ topic/keyword ui-d/wintitle ">On Call List Manager</wintitle> view, double-click
+any one of the OnCallList.</choice>
+</choices>
+<stepresult class="- topic/itemgroup task/stepresult ">The <uicontrol class="+ topic/ph ui-d/uicontrol ">On Call Contact Manager</uicontrol> view
+opens.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To create a new OnCallContact, click <uicontrol class="+ topic/ph ui-d/uicontrol ">New</uicontrol>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The <uicontrol class="+ topic/ph ui-d/uicontrol ">New</uicontrol> window opens.<image href="../graphic/NewContactWindow.png" placement="break" scale="65" scope="local" class="- topic/image "/></stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the <wintitle class="+ topic/keyword ui-d/wintitle ">New</wintitle> window, configure the following
+parameters and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd>
+<substeps class="- topic/ol task/substeps ">
+<substep class="- topic/li task/substep "><cmd class="- topic/ph task/cmd "><parmname class="+ topic/keyword pr-d/parmname ">Priority</parmname> enter the desired priority
+level.</cmd></substep>
+<substep class="- topic/li task/substep "><cmd class="- topic/ph task/cmd "><parmname class="+ topic/keyword pr-d/parmname ">User</parmname> select the user from the drop-down
+list that has a configured contact method (email id or sms).</cmd>
+</substep>
+<substep class="- topic/li task/substep "><cmd class="- topic/ph task/cmd "><parmname class="+ topic/keyword pr-d/parmname ">User Alarm Recepient</parmname> select the
+contact method (<uicontrol class="+ topic/ph ui-d/uicontrol ">EmailRecepient</uicontrol> or <uicontrol class="+ topic/ph ui-d/uicontrol ">SMSRecepient</uicontrol>) based on the user configuration.</cmd>
+</substep>
+</substeps>
+<stepresult class="- topic/itemgroup task/stepresult ">Creates a new <wintitle class="+ topic/keyword ui-d/wintitle ">OnCallContact</wintitle> with
+the desired contact method in the <wintitle class="+ topic/keyword ui-d/wintitle ">On Call Contact Manager</wintitle> view.</stepresult>
+</step>
+</steps>
+</taskbody>
+</task>

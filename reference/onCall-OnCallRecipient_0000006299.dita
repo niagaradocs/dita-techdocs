@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="onCall-OnCallRecipient" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">onCall-OnCallRecipient</title>
+<shortdesc class="- topic/shortdesc ">This component manages the transfer of alarms between the <uicontrol class="+ topic/ph ui-d/uicontrol ">AlarmService</uicontrol> and on call contacts.</shortdesc><?Pub Caret 58?>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">OnCallRecipient</indexterm><indexterm class="- topic/indexterm ">components<indexterm class="- topic/indexterm ">OnCallRecipient</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p "> For example, a station sends alarm notifications by email
+or text message to one or more contacts that are in the on call contact
+list. You access this component’s property sheet by double-clicking
+the <uicontrol class="+ topic/ph ui-d/uicontrol ">OnCallRecipient</uicontrol> component.</p><note class="- topic/note "><p class="- topic/p ">Stations can send email by broadband (<keyword conkeyref="wh_variables_n4/niagara" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara" class="- topic/keyword ">Niagara</keyword> outgoing account configuration required) and Sms
+messages using a GPRS modem.</p></note><image href="../graphic/onCallRecipient_0000031396.png" placement="break" scale="65" class="- topic/image "/><p class="- topic/p ">The<uicontrol class="+ topic/ph ui-d/uicontrol ">OnCallRecipient</uicontrol> component
+is linked to an alarm class component that provides a place to specify
+the scheduling details and other routing options.</p><p class="- topic/p ">A special
+on call scheduling component is in the <uicontrol class="+ topic/ph ui-d/uicontrol ">OnCallRecipient</uicontrol> component. It provides a standard scheduling view that is like other
+schedule views.</p><image href="../graphic/OnCallReciepient_Propertysheet_0000031395.png" placement="break" scale="65" class="- topic/image "/></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Time Range</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Start Time and End Time [hours of the day (defaults to
+24 hours)]</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_alarmsTimeRange-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_alarmsTimeRange-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Days of the Week or Days of Week</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">check boxes</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_DaysOfWeek-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_DaysOfWeek-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Route Acks</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> (default) or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/RouteAcks-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/RouteAcks-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Enabled</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/Enabled-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/Enabled-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">On Call List</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsOnCallList" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsOnCallList" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Escalation Delay</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours: minutes: seconds</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Sets the time to wait for an alarm to be acknowledged by
+an <apiname class="+ topic/keyword pr-d/apiname ">OnCallContact</apiname> before escalating the alarm to
+the next contact in the <apiname class="+ topic/keyword pr-d/apiname ">OnCallList</apiname>.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">On Call List Schedule</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">drop-down list</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Determines if alarms are forwarded to the on-call contacts.<p class="- topic/p "><userinput class="+ topic/ph sw-d/userinput ">null</userinput> forwards no alarms to the on-call list.</p><p class="- topic/p "><userinput class="+ topic/ph sw-d/userinput ">On Call List</userinput> forwards all alarms to the
+on-call contacts as specified in the On Call List.</p></propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="OnCallContactManagerView" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">On Call Contact Manager view</title>
+<shortdesc class="- topic/shortdesc ">This view is the default view of the <uicontrol class="+ topic/ph ui-d/uicontrol ">OnCallList</uicontrol> component. The view displays a table listing of all contacts in
+the selected on-call list.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">On Call Contact Manager view</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><image href="../graphic/Oncalllistmanagerview_0000031634.png" placement="break" scale="65" class="- topic/image "/></section>
+<section class="- topic/section "><title class="- topic/title ">Columns</title><table class="- topic/table ">
+<tgroup cols="2" class="- topic/tgroup "><colspec colname="col1" class="- topic/colspec "/><colspec colname="col2" class="- topic/colspec "/>
+<thead class="- topic/thead ">
+<row class="- topic/row ">
+<entry class="- topic/entry ">Column Name</entry>
+<entry class="- topic/entry ">Description</entry>
+</row>
+</thead>
+<tbody class="- topic/tbody ">
+<row class="- topic/row ">
+<entry class="- topic/entry ">Path</entry>
+<entry class="- topic/entry ">Displays the path of the service.</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">Name</entry>
+<entry class="- topic/entry "><div conkeyref="reusekey/gen_Name-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_Name-div" class="- topic/div ">Provides
+descriptive text</div></entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">Status</entry>
+<entry class="- topic/entry "><div conkeyref="reusekey/gen_Status-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_Status-div" class="- topic/div "/></entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">Enabled</entry>
+<entry class="- topic/entry "><div conkeyref="reusekey/Enabled-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/Enabled-div" class="- topic/div "/></entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">Priority</entry>
+<entry class="- topic/entry "><div conkeyref="reusekey/alarmsPriorityOnCall-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsPriorityOnCall-div" class="- topic/div "/></entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">User</entry>
+<entry class="- topic/entry "><div conkeyref="reusekey/gen_User" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_User" class="- topic/div "/></entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">User Alarm Recipient</entry>
+<entry class="- topic/entry ">Displays the assigned recipient for each contact in the table.</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">Rotation Marker</entry>
+<entry class="- topic/entry ">Displays the rotation marker. <draft-comment class="- topic/draft-comment ">Please confirm</draft-comment></entry>
+</row>
+</tbody>
+</tgroup>
+</table></section>
+<section class="- topic/section "><title class="- topic/title ">Buttons</title><ul class="- topic/ul ">
+<li class="- topic/li "><p conref="../reuse/WH-guide-General_0000048987.dita#descGen/deviceNew-p" class="- topic/p "/></li>
+<li class="- topic/li "><p conref="../reuse/WH-guide-General_0000048987.dita#descGen/deviceManagerEdit-p" class="- topic/p "/></li>
+<li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">Rotate</uicontrol> Reassigns the priority value
+of each user in the contact list to the next user in the list in a
+revolving manner.</p></li>
+</ul></section>
+</refbody>
+</reference>

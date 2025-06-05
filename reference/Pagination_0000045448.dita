@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="Pagination-53E18B25" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Pagination</title>
+<shortdesc class="- topic/shortdesc ">Pagination is supported in singlesource and multisource
+view to set the default page size. To set the page size <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Setting icon</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Page Size</uicontrol>
+</menucascade> enter the number of pages.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm "> Pagination</indexterm><indexterm class="- topic/indexterm "> Alarm
+Console</indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="4.6" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><image href="../graphic/Pagination_0000045437.png" placement="break" scale="65" scope="local" class="- topic/image "/><image href="../graphic/Pagination_Result_0000045436.png" placement="break" scale="65" scope="local" class="- topic/image "/><p class="- topic/p ">To set the default <userinput class="+ topic/ph sw-d/userinput ">Page size</userinput>, enter the number of page and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>. In
+the above fig., Pagination page size is set to five.</p><p class="- topic/p ">In the
+fig. Pagination Result five records are displayed per page.</p></section>
+</refbody>
+</reference>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="alarm-AlarmConsole" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">AX Alarm Console</title>
+<shortdesc class="- topic/shortdesc ">This view of the console recipient displays all the alarms
+that have been routed to it. To open this view, right-click an <apiname class="+ topic/keyword pr-d/apiname ">alarmRecipient</apiname> under the <apiname class="+ topic/keyword pr-d/apiname ">AlarmService</apiname> and click <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Views</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">AX
+Alarm Console</uicontrol></menucascade>.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">AX Alarm Console view</indexterm>
+<indexterm class="- topic/indexterm ">view<indexterm class="- topic/indexterm ">AX Alarm Console</indexterm></indexterm>
+</keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">The <wintitle class="+ topic/keyword ui-d/wintitle ">AX Alarm Console</wintitle> manages alarms
+on a per–point basis. Each row in the table is the most recent alarm
+from a point.</p><image href="../graphic/alrmconsoletable_0000031637.png" placement="break" scale="65" class="- topic/image "/><p class="- topic/p ">This view displays BFormat text under the Message
+Text column of the window. This message text comes from the text entered
+using the console’s <wintitle class="+ topic/keyword ui-d/wintitle ">Property Sheet</wintitle>.</p><p class="- topic/p ">The <wintitle class="+ topic/keyword ui-d/wintitle ">AX Alarm Console</wintitle> supports alarm sounds when running in
+desktop browsers. For mobile support, browse to the page on the mobile.
+Web browsers like Chrome can play mp3 and ogg sound files. This is
+not recommended due to lack of support in <keyword conkeyref="wh_variables_n4/Workbench" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword "/>.</p><note class="- topic/note ">The only format that works in both <keyword conkeyref="wh_variables_n4/Workbench" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword "/> and in a browser is wav.</note><image href="../graphic/alrmconsole_0000031638.png" placement="break" scale="65" class="- topic/image "/><p class="- topic/p ">As with other tables, you can show or hide columns
+using the <wintitle class="+ topic/keyword ui-d/wintitle ">Table Options</wintitle> menu in the top right
+corner of the table.</p></section>
+<section class="- topic/section "><title class="- topic/title ">Alarm commands</title></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Command</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Icon</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Acknowledge</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><image href="../graphic/alarmack_0000007723.png" placement="break" scale="65" class="- topic/image "/></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Allows you to recognize the currently selected alarm(s).</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Hyperlink</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><image href="../graphic/link001_0000007722.png" placement="break" scale="65" class="- topic/image "/></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Allows you to open the alarm URL.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Add Notes</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><image href="../graphic/edit_0000007721.png" placement="break" scale="65" class="- topic/image "/></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Allows you to add explanatory text to a specific alarm.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Silence</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><image href="../graphic/alarmsilence_0000007750.png" placement="break" scale="65" class="- topic/image "/></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Allows you to quiet the sound issued by the currently selected
+alarm(s).</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Filter</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><image href="../graphic/filter_0000005851.png" placement="break" scale="65" class="- topic/image "/></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Allows you to limit the alarms displayed.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Live Update</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><image href="../graphic/LiveUpdate_0000044980.png" placement="break" scale="65" class="- topic/image "/></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Provides continuous alarm updating.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm Details</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><image href="../graphic/Showdetails_0000044979.png" placement="break" scale="65" class="- topic/image "/></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Allows you to view alarm details.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Refresh</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><image href="../graphic/Standardtoolbar-Refresh_0000069582.png" placement="break" scale="65" class="- topic/image "/></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Allows you to refresh the window.</propdesc>
+</property>
+</properties>
+<section class="- topic/section "><title class="- topic/title ">Columns</title></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Column</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Ack Required</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsAckRequired-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsAckRequired-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Ack Time</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><systemoutput class="+ topic/ph sw-d/systemoutput ">hours:minutes:seconds</systemoutput></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsAckTime" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsAckTime" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Ack State</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><systemoutput class="+ topic/ph sw-d/systemoutput ">Acked</systemoutput> or <systemoutput class="+ topic/ph sw-d/systemoutput ">Unacked</systemoutput></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsAckState" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsAckState" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm Class</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only used in Lists, console columns, or %alarmClass%
+on a report.</propvalue><?Pub Caret 62?>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_AlarmClass-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_AlarmClass-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm Data</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Presents a detailed list of alarm data, including this
+information: Status, toState, msgText, Count, fromState and Timezone.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Transistion</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmTrans" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmTrans" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Message Text</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the text message.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Export</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Generates the output of the present view.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Reset Column Width</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">n/a</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Resets the column width.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Add Alarm Data</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Appends alarm data column.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Remove Alarm Data</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Deletes alarm data column.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Normal Time or NormalTime</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">date and time</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsNormalTime-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsNormalTime-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Priority [on-call contact]</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">1–255 for each transition, default: 255; %priority% on
+a report</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsPriorityOnCall-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsPriorityOnCall-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Source</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">%alarmData.sourceName%</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the path to the point that is generating the alarm.<note class="- topic/note ">For how to format this information on a report, click on the help
+icon to the right of the field.</note></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Source State</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">NormalHigh Limit</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">The status of the entity at the time the event, such as
+an alarm, occurred.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">TimeStamp</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours:minutes:seconds%timestamp% (on a report)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_Timestamp-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_Timestamp-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">User [alarms]</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Drop-down list</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Identifies the person that acknowledged the alarm. An unacknowledged
+alarm displays “unknown.”</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Uuid</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsUuid" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsUuid" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Last Update</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the time the system most recently updated the alarm.</propdesc>
+</property>
+</properties>
+<section class="- topic/section "><title class="- topic/title ">Buttons</title></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Button</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Acknowledge</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">button</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Recognizes each selected alarm.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Hyperlink</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">button</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Changes the current view to the hyperlinked target associated
+with the selected alarm. If no hyperlink is associated with the alarm,
+the Hyperlink button is not available.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Notes</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">button</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the <uicontrol class="+ topic/ph ui-d/uicontrol ">Notes</uicontrol> dialog box for
+the purpose of adding a note to the selected alarm or alarms.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Close Button</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">button</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Saves and exits the current dialog.</propdesc>
+</property>
+</properties>
+<section class="- topic/section "><title class="- topic/title ">Alarm Report window</title><p class="- topic/p ">From the AX Alarm Console,
+you can view the <wintitle class="+ topic/keyword ui-d/wintitle ">Alarm Record</wintitle> to see all alarms
+on the point. Select an alarm and double-click it to see the <wintitle class="+ topic/keyword ui-d/wintitle ">Alarm Record</wintitle>.</p><p class="- topic/p ">You can sort the Alarms in order of
+any column by pressing the <uicontrol class="+ topic/ph ui-d/uicontrol ">column bar</uicontrol> (once
+for ascending, twice for descending). Available commands include:</p><ul class="- topic/ul ">
+<li class="- topic/li "><image height="0.271cm" href="../graphic/alarmack_0000007723.png" class="- topic/image ">
+</image>  Acknowledge</li>
+<li class="- topic/li "><image height="0.271cm" href="../graphic/link001_0000007722.png" class="- topic/image ">
+</image>  Hyperlink</li>
+<li class="- topic/li "><image height="0.271cm" href="../graphic/edit_0000007721.png" class="- topic/image ">
+</image>  Notes</li>
+<li class="- topic/li "><image height="0.271cm" href="../graphic/filter_0000007749.png" class="- topic/image ">
+</image>  Filter</li>
+</ul></section>
+<section class="- topic/section "><title class="- topic/title ">Viewing Alarm Record</title><p class="- topic/p ">From the <wintitle class="+ topic/keyword ui-d/wintitle ">Alarm Report</wintitle> window, you can view the alarm record to
+see all information on the alarm. Select an Alarm and double-click
+it to see the alarm record. Available commands include:</p><ul class="- topic/ul ">
+<li class="- topic/li "><image height="0.271cm" href="../graphic/alarmack_0000007723.png" class="- topic/image ">
+</image>  Acknowledge</li>
+<li class="- topic/li "><image height="0.271cm" href="../graphic/link001_0000007722.png" class="- topic/image ">
+</image>  Hyperlink</li>
+<li class="- topic/li "><image height="0.271cm" href="../graphic/edit_0000007721.png" class="- topic/image ">
+</image>  Notes</li>
+<li class="- topic/li "><image height="0.271cm" href="../graphic/Closeicon_0000044977.png" class="- topic/image ">
+</image> Close</li>
+</ul></section>
+<section class="- topic/section "><title class="- topic/title ">Clearing alarms</title>An alarm is cleared from the
+AX Alarm Console when both of the following conditions exist:<ul class="- topic/ul ">
+<li class="- topic/li ">The alarm is acknowledged.</li>
+<li class="- topic/li ">The point is in a normal state.</li>
+</ul></section>
+</refbody>
+</reference>

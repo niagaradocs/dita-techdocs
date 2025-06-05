@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="Sms-Sms" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">sms-Sms</title>
+<shortdesc class="- topic/shortdesc ">This component is a general use <apiname class="+ topic/keyword pr-d/apiname ">Sms</apiname> component
+to send text messages.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">SMS</indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><image href="../graphic/sms-smspropertysheet_0000007048.png" placement="break" scale="65" class="- topic/image "/>Available actions include:<ul class="- topic/ul ">
+<li class="- topic/li ">Send Default Message</li>
+<li class="- topic/li ">Send Message</li>
+</ul></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Phone Numbers</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">phone number international format</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the recipient's telephone number. It must be in
+international format.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Default Message</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text string</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the text of the default message.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

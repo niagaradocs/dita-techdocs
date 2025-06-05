@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="FoxAlarmExtensionManager" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Alarm Extension Manager</title>
+<shortdesc class="- topic/shortdesc ">The alarm extension manager presents alarm extensions in
+a table format to make it easy to see all the alarm extensions that
+are associated with the points in a station. To view this manager,
+right-click <uicontrol class="+ topic/ph ui-d/uicontrol ">AlarmService</uicontrol> in the Nav tree and
+select <uicontrol class="+ topic/ph ui-d/uicontrol ">Alarm Ext Manager</uicontrol> from the drop-down
+list of views.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">alarm<indexterm class="- topic/indexterm "> extension manager</indexterm></indexterm><indexterm class="- topic/indexterm ">extension manager<indexterm class="- topic/indexterm ">for alarms</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><image href="../graphic/alarmextensionmanager_0000014219_0000006347.png" placement="break" scale="65" class="- topic/image "/><p class="- topic/p ">Extension manager display
+features include: </p><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Color coding: A colored background on a row in the alarm extension
+manager table indicates that the alarm state of the parent component
+is not Normal.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Hyperlinking: Double-click on any row in the alarm extension
+manager to change to the property sheet view of the selected alarm
+extension. </p></li>
+</ul><p class="- topic/p ">As with other tables, you can show or hide columns and use
+other standard table controls and options that are provided in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Table Options</uicontrol> menu, which is located in the top right
+corner of each table. Also, the export toolbar icon is available on
+the toolbar when the alarm extension manager view is open.</p></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Column</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Point</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Identifies the point that is the parent of the listed alarm
+extension.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Extension</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Identifies the type of extension, for example: <apiname class="+ topic/keyword pr-d/apiname ">OutOfRangeAlarmExt</apiname>, <apiname class="+ topic/keyword pr-d/apiname ">StatusAlarmExt</apiname>,
+and others.. </propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm State</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Identifies the status of the extension, for example, High
+Limit or Normal.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">toOffnormal Enabled</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><systemoutput class="+ topic/ph sw-d/systemoutput ">true</systemoutput> or <systemoutput class="+ topic/ph sw-d/systemoutput ">false</systemoutput></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Indicates if the <parmname class="+ topic/keyword pr-d/parmname ">toOffnormal</parmname> property
+of the extension is enabled (true) or not (false).</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">toFault Enabled</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><systemoutput class="+ topic/ph sw-d/systemoutput ">true</systemoutput> or <systemoutput class="+ topic/ph sw-d/systemoutput ">false</systemoutput></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Indicates if the <parmname class="+ topic/keyword pr-d/parmname ">toFault</parmname> property of
+the extension is enabled (true) or not (false).</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm Class</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only used in Lists, console columns, or %alarmClass%
+on a report.</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_AlarmClass-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_AlarmClass-div" class="- topic/div "/></propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

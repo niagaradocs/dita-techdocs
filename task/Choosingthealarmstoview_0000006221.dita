@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="ChoosingTheAlarmsToView" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Choosing the alarms to view</title>
+<shortdesc class="- topic/shortdesc ">You use the <wintitle class="+ topic/keyword ui-d/wintitle ">Filters</wintitle> window to select
+which alarms to view in the alarm console. This view affects only
+which alarms display in the alarm console. It does not allow you to
+edit an alarm record or perform any alarm maintenance.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">filters</indexterm><indexterm class="- topic/indexterm ">alarms<indexterm class="- topic/indexterm ">filtering</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Open the <wintitle class="+ topic/keyword ui-d/wintitle ">Filters</wintitle> window.</cmd>
+<info class="- topic/itemgroup task/info ">The <parmname class="+ topic/keyword pr-d/parmname ">Source</parmname>, <parmname class="+ topic/keyword pr-d/parmname ">Alarm Class</parmname>, and <parmname class="+ topic/keyword pr-d/parmname ">User</parmname> properties are text strings that
+allow you to filter using wildcards.<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">The wildcard (%) appears by default. If you are using <parmname class="+ topic/keyword pr-d/parmname ">Source</parmname> with a wildcard, put the percent character (%)
+both before and after the text string. Otherwise, no records match.</p></li>
+<li class="- topic/li "><p class="- topic/p ">The drop-down list provides options. <option class="+ topic/keyword pr-d/option ">Must Not Equal</option> and <option class="+ topic/keyword pr-d/option ">Must Not be Like</option> do not support the wildcard.</p></li>
+<li class="- topic/li "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">Case Sensitive</parmname> defaults to enabled.</p></li>
+</ul></info>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Configure the filter to suit your needs and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd>
+<info class="- topic/itemgroup task/info ">For example, to filter out all Normal alarms, enable <parmname class="+ topic/keyword pr-d/parmname ">Source State</parmname>, click the chevron, select all states except <userinput class="+ topic/ph sw-d/userinput ">Normal</userinput>, and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</info>
+</step>
+</steps>
+<result class="- topic/section task/result "><note type="attention" class="- topic/note ">Filter settings do not reset automatically.
+To view all alarm records, open the Filters window and remove the
+check mark for any checked filter properties.</note></result>
+</taskbody>
+</task>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="AlarmDatabaseTroubleshooting-E371B2C0" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Alarm database troubleshooting</title>
+<shortdesc class="- topic/shortdesc ">If the alarm database encounters problems, this topic may
+help.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">troubleshooting</indexterm></keywords>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<section class="- topic/section "><title class="- topic/title ">When attempting to connect to the Orion Alarm Database
+I get this error: “[alarm.database] Database connection misconfigured”
+where [alarm.database] is the database name.</title><indexterm class="- topic/indexterm ">prepareSQLerror</indexterm><indexterm class="- topic/indexterm ">jTDS driver</indexterm><p class="- topic/p ">The <uicontrol class="+ topic/ph ui-d/uicontrol ">OrionAlarmService</uicontrol> checks the SQL server database prepareSQL property at startup. This
+check may generate this error.</p><p class="- topic/p ">If it is not present, the default
+value for the database’s prepareSQL property (extraConnectionProperties)
+is 3. Setting this property to 1 may result in increased performance.
+However, setting this property to 1 when using the jTDS driver may
+cause this warning. The extraConnectionProperties values are defined
+here: <xref format="html" href="http://jtds.sourceforge.net/faq.html" scope="external" class="- topic/xref ">http://jtds.sourceforge.net/faq.html</xref>. If you
+happen to see different results in performance, you can safely ignore
+the error message.</p></section>
+</conbody>
+</concept>

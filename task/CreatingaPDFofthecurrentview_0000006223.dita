@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="CreatingAPDFOfTheCurrentView" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Creating a PDF of the current view</title>
+<shortdesc class="- topic/shortdesc ">The system provides many lists of information. You can
+use the export feature to create a PDF for emailing or printing.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">export</indexterm><indexterm class="- topic/indexterm ">PDF<indexterm class="- topic/indexterm ">creating</indexterm></indexterm><indexterm class="- topic/indexterm ">view<indexterm class="- topic/indexterm ">creating
+a PDF</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Access the view you wish to save as a PDF.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Click the Export icon on the toolbar or click <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">File</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Export</uicontrol></menucascade> from the main menu.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Select the exporter to use.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult "><image href="../graphic/exportoncalluserreport_0000011509_0000006250.png" placement="break" scale="65" class="- topic/image "/></stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Select the additional options.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult "><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">View internal</uicontrol></p></li>
+<li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">View with external application</uicontrol></p></li>
+<li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">Save to file</uicontrol></p></li>
+</ul></stepresult>
+</step>
+</steps>
+</taskbody>
+</task>

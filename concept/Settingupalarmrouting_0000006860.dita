@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="SettingUpAlarmRouting" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">Alarm routing setup</title><shortdesc class="- topic/shortdesc ">You define who to notify when an alarm event occurs by
+setting up one or more AlarmClass components and AlarmRecipients.
+Station-to-station alarm routing requires setup in both stations.
+Routing to an email or Sms recipient is configured in the point extension
+of the source.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">alarm<indexterm class="- topic/indexterm ">routing</indexterm></indexterm></keywords><prodinfo class="- topic/prodinfo "><prodname class="- topic/prodname ">Niagara</prodname><vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist></prodinfo></metadata></prolog><conbody class="- topic/body  concept/conbody "><p class="- topic/p ">How many alarm classes and recipient components to connect depend
+on your needs. For routing to a remote station, you specify the alarm
+routing in the Alarms extension under the <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> Station that represents the remote <ph conkeyref="host_models/nc" class="- topic/ph "/>.</p><?Pub Caret 180?><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p "> To have a variety of alarming and routing options available
+for selection from the alarm extension properties, you would set up
+multiple alarm classes. For example, you may set up an alarm class
+that routes to the ConsoleRecipient and StationRecipient, while another
+alarm class routes alarms only to an email recipient.</p><image placement="break" scale="65" href="../graphic/Alarmroutingsetup_0000031399.png" class="- topic/image "/></li><li class="- topic/li "><p class="- topic/p ">To configure alarms in one station (usually a station on a
+controller) to be received in another station (usually the supervisor
+station), you would add an AlarmClass component and a StationRecipient
+in the AlarmService container of the sending (source) station. You
+then link the AlarmClass component to the StationRecipient.</p><p class="- topic/p ">It is not necessary to use the same AlarmClass components in the
+two stations (although that is one approach). In the receiving station,
+if desired, you can configure all alarms from a remote station to
+route to a single local AlarmClass. Or, you can also use a “prepend”
+or “append” scheme to route to different (but associated) AlarmClasses,
+where all schemes work based on the names of the AlarmClasses. </p><note class="- topic/note ">In the receiving station’s AlarmService, if you want the remotely-generated
+alarms to appear in any alarm consoles, be sure to link associated
+AlarmClass components to the necessary AlarmConsole components.</note></li></ul></conbody></concept>

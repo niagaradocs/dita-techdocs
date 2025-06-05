@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="alarm-FaultAlgorithm" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">alarm-FaultAlgorithm</title>
+<shortdesc class="- topic/shortdesc ">This component is the super-class of all fault detection
+mechanisms and contains properties that specify fault conditions.
+The default implementation does not generate any toFault alarms. A <apiname class="+ topic/keyword pr-d/apiname ">FaultAlgorithm</apiname> is under each type of alarm extension, along
+with an <apiname class="+ topic/keyword pr-d/apiname ">OffnormalAlgorithm</apiname> container.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">FaultAlgorithm extension</indexterm>
+<indexterm class="- topic/indexterm ">extension<indexterm class="- topic/indexterm ">alarm FaultAlgorithm</indexterm></indexterm>
+</keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><title class="- topic/title "/></section>
+</refbody>
+</reference>

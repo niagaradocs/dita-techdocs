@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="Alarm-TextCustomizerAlarmsGuide-74D2D630" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">alarm-TextCustomizer</title>
+<shortdesc class="- topic/shortdesc ">This component creates a customized alarm source name using
+a BFormat string that obtains values from objects. This feature is
+primarily for developers.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">alarm-TextCustomizer</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><fig class="- topic/fig ">
+<title class="- topic/title ">Source Name properties</title>
+<image href="../graphic/propertiesAlarmsTextCustomizer_0000082522.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig><p class="- topic/p ">To access these properties, expand <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Drivers</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">NiagaraNetwork</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">NiagaraStation</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Alarms</uicontrol>
+</menucascade> and double-click <uicontrol class="+ topic/ph ui-d/uicontrol ">Source Name</uicontrol>.</p></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Op</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">drop-down list</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Selects where to apply <parmname class="+ topic/keyword pr-d/parmname ">Text</parmname>.<p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">Use Existing</parmname> ignores <option class="+ topic/keyword pr-d/option ">Text</option>.</p><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">Prepend</parmname> prefaces the name with <option class="+ topic/keyword pr-d/option ">Text</option>.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Append</option> places Text as a suffix to the name.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Replace</option> replaces the name altogether with <uicontrol class="+ topic/ph ui-d/uicontrol ">Text</uicontrol>.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Text</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">BFormat</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the format string as normal text with embedded scripts
+denoted by the percentage symbol (%). The driver maps calls within
+the script to an object’s methods. You can chain using the
+dot operator (.). To insert a percentage character itself, use two
+percentage symbols (%%).<p class="- topic/p ">Several special functions are available:</p><p class="- topic/p "><userinput class="+ topic/ph sw-d/userinput ">“%time()%”</userinput> formats the current
+time as BAbsTime.</p><p class="- topic/p ">“<userinput class="+ topic/ph sw-d/userinput ">%lexicon(mobile:key)%”</userinput> gets the specified lexicon text.</p></propdesc>
+</property>
+</properties>
+<section class="- topic/section "><title class="- topic/title ">Examples</title><p class="- topic/p ">“<userinput class="+ topic/ph sw-d/userinput ">my parent’s
+name is %parent.displayName%”</userinput> formats the display
+name of an object’s parent using calls to the <option class="+ topic/keyword pr-d/option ">getParent
+( )</option> and<option class="+ topic/keyword pr-d/option "> getDisplayName ( )</option> methods.</p><p class="- topic/p ">“%value% {%status.flagsToString%} @ %status.priority%”
+retrieves the specified lexicon text.</p><p class="- topic/p ">More information is available
+in the class documentation for BFormat.</p></section>
+</refbody>
+</reference>

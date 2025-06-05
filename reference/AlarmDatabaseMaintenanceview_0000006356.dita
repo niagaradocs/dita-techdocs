@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="alarm-FoxAlarmDatabase" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Alarm Database Maintenance view</title>
+<shortdesc class="- topic/shortdesc ">This view presents alarm data in a table to make it easy
+to monitor and edit the alarm database.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Alarm Database Maintenance view</indexterm>
+<indexterm class="- topic/indexterm ">view<indexterm class="- topic/indexterm ">Alarm Database Maintenance</indexterm></indexterm>
+</keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">The alarm database resides in a station file system under
+the station’s alarm folder. </p><image href="../graphic/alarmdatabasemaintenance_0000008830.png" placement="break" scale="65" class="- topic/image "/><p class="- topic/p ">The upper portion of the window
+contains the alarm history table. As with other tables, you can show
+or hide columns and use other standard table controls and options
+that are provided in the Table Options menu. The Table Options menu
+is located in the top right corner of the table and the export toolbar
+icon is available on the toolbar.</p><p class="- topic/p ">The lower portion of the screen
+provides controls for managing the history database.</p></section>
+<section class="- topic/section "><title class="- topic/title ">Alarm History columns</title></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Column</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Ack Required</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsAckRequired-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsAckRequired-div" class="- topic/div "><div conkeyref="reusekey/alarmsAckState" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsAckState" class="- topic/div "/></div></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Ack Time</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><systemoutput class="+ topic/ph sw-d/systemoutput ">hours:minutes:seconds</systemoutput></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsAckTime" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsAckTime" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Ack State</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><systemoutput class="+ topic/ph sw-d/systemoutput ">Acked</systemoutput> or <systemoutput class="+ topic/ph sw-d/systemoutput ">Unacked</systemoutput></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsAckState" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsAckState" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm Class</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only used in Lists, console columns, or %alarmClass%
+on a report.</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_AlarmClass-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_AlarmClass-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm Data</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsAlarmData-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsAlarmData-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm Transition</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmTrans" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmTrans" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Normal Time or NormalTime</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">date and time</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsNormalTime-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsNormalTime-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Priority [alarm]</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">four fields for configuring importance</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsPriorityAlarm-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsPriorityAlarm-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Source</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">%alarmData.sourceName%</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the path to the point that is generating the alarm.<note class="- topic/note ">For how to format this information on a report, click on the help
+icon to the right of the field.</note></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Source State or sourceState</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">NormalHigh Limit</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">The status of the entity at the time the event, such as
+an alarm, occurred.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Timestamp</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours:minutes:seconds%timestamp% (on a report)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_Timestamp-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_Timestamp-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">User [provisioning]</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">The station user that requested the job. This column displays <codeph class="+ topic/ph pr-d/codeph ">unknown</codeph> if job was triggered by a linked schedule.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Uuid</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsUuid" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsUuid" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Last Update</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the time the system most recently updated the alarm.</propdesc>
+</property>
+</properties>
+<section class="- topic/section "><title class="- topic/title ">Alarm History maintenance</title></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Option</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Clear Old Records and Before property</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">selection bullet</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Deletes alarm records before the date and time you define
+in the <parmname class="+ topic/keyword pr-d/parmname ">Before</parmname> property.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Clear All Before Selected Record</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">selection bullet</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Deletes all records with a timestamp that is earlier than
+the timestamp of the currently-selected record in the table.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Clear All Records</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">selection bullet</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Deletes all records regardless of the date.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Run Maintenance</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">button</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Executes the maintenance action.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

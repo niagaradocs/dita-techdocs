@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="RowHighlighting-53DDB70E" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Row Highlighting</title>
+<shortdesc class="- topic/shortdesc ">Row Highlighting provides a way to highlight one or more
+newly added alarms in alarms table. To highlight row <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Alarm Console</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol "> Alarms</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol "> Points</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol "> Actions</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol "> Set</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol "> True</uicontrol></menucascade></shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm "> Row highlighting, </indexterm>
+<indexterm class="- topic/indexterm "> Alarm Console</indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="4.6" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><title class="- topic/title ">Row Highlighting</title><image href="../graphic/RowHighlighting_normaltooffnormal_0000045440.png" placement="break" scale="65" scope="local" class="- topic/image "/><image href="../graphic/RowHighlighting_Offnormaltonormal_0000045439.png" placement="break" scale="65" scope="local" class="- topic/image "/><p class="- topic/p ">Row is highlighted
+in the above figures to<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">red when the alarm turns from normal to offnormal.</p></li>
+<li class="- topic/li "><p class="- topic/p ">green when the alarm turns from offnormal to normal.</p></li>
+</ul></p></section>
+</refbody>
+</reference>

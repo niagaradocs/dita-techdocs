@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="email-EmailAlarmAcknowledger" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">email-EmailAlarmAcknowledger</title>
+<shortdesc class="- topic/shortdesc ">The <apiname class="+ topic/keyword pr-d/apiname ">EmailAlarmAcknowledger</apiname> component
+provides a way to acknowledge alarms by sending an email reply to
+an email alarm notification. This component is available in the <wintitle class="+ topic/keyword ui-d/wintitle ">email</wintitle> palette and works with alarm notifications that
+are sent out using the <apiname class="+ topic/keyword pr-d/apiname ">OnCallService</apiname> or directly
+from the <apiname class="+ topic/keyword pr-d/apiname ">EmailService</apiname>.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">EmailAlarmAcknowledger</indexterm>
+</keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><image href="../graphic/emailalarmacknowledger_0000013739_0000006241.png" placement="break" scale="65" class="- topic/image "/></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Status</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_Status-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_Status-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Enabled</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/Enabled-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/Enabled-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Ack Alarms From Same Source</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">drop-down list</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><option class="+ topic/keyword pr-d/option ">true</option> acknowledges the current and all previous
+alarms from this source with a single email reply. For example, a
+single control point may go in and out of alarm repeatedly generating
+23 unacknowledged alarms reported and displayed in the alarm console.
+With this property set to <option class="+ topic/keyword pr-d/option ">true</option>, a single email acknowledgment
+can acknowledge all 23 alarms.<p class="- topic/p "><option class="+ topic/keyword pr-d/option ">false</option>acknowledges
+a single alarm. Each alarm must be acknowledged separately.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Last Alarm Acked</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the identity of the last alarm that was acknowledged.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Last Alarm Acked Time</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only time</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the identity of the last alarm that was acknowledged.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Last Alarm Acked Failure Time</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only time</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">If an attempt to acknowledge an alarm failed, a message
+with the time of the last failure displays.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Last Alarm Acked Failure Cause</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">If there has been a failure in the attempt to acknowledge
+an alarm, this field displays a message indicating the possible reason
+for the last failure.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Total Alarms Acked Today</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only number</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the current number of alarms that have been acknowledged
+for the day. This number is reset to zero at midnight.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Total Messages Received Today</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only number</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the current number of email messages that have
+been received for the day. This number is reset to zero at midnight.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

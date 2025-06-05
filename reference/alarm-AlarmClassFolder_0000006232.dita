@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="alarm-AlarmClassFolder" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">alarm-AlarmClassFolder</title>
+<shortdesc class="- topic/shortdesc ">This is a container object provided for organizing groups
+of alarm class objects. The <apiname class="+ topic/keyword pr-d/apiname ">AlarmClassFolder</apiname> is
+available in the alarm palette.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">AlarmClassFolder</indexterm><indexterm class="- topic/indexterm ">component<indexterm class="- topic/indexterm ">AlarmClassFolder</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+</reference>

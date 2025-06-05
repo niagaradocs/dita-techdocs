@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--Arbortext, Inc., 1988-2019, v.4002--><reference id="TypesOfAlarmRecipients-B1E83B28" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Types of alarm recipients</title>
+<shortdesc class="- topic/shortdesc ">Alarm recipients are linked to an alarm class (from the
+alarm topic on the alarm class to the route Alarm action on <apiname class="+ topic/keyword pr-d/apiname ">AlarmRecipient</apiname>). Recipients may be configured to receive
+alarms at certain times of the day, certain days of the week, and
+to receive alarms of only specified transitions. There are several
+subclasses of the alarm recipient.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">alarm<indexterm class="- topic/indexterm ">recipients</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+</prodinfo><?Pub Caret -1?>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "/>
+</refbody>
+</reference>

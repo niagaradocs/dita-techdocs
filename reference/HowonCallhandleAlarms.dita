@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="OnCall-OnCallrecepient-4E05AB06" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">How onCall Handle Alarms</title>
+<shortdesc class="- topic/shortdesc ">The topic explains how the <uicontrol class="+ topic/ph ui-d/uicontrol ">OnCallRecipient</uicontrol> receives an alarm. When an alarm is acknowledged, the On Call user
+receives a notification based on the priority and configured time.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Alarms</indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">When an <uicontrol class="+ topic/ph ui-d/uicontrol ">OnCallRecipient</uicontrol> receives
+an alarm, it handed to the current <uicontrol class="+ topic/ph ui-d/uicontrol ">OnCallList</uicontrol>.</p><p class="- topic/p ">The<uicontrol class="+ topic/ph ui-d/uicontrol ">OnCallList</uicontrol> sends the alarm to the<uicontrol class="+ topic/ph ui-d/uicontrol ">OnCallContact</uicontrol> with the highest priority. (Here, high
+priority means a low number for the <uicontrol class="+ topic/ph ui-d/uicontrol ">OnCallContact</uicontrol> with priority one will receive the alarm before an <uicontrol class="+ topic/ph ui-d/uicontrol ">OnCallContact</uicontrol> with priority two.) The users are contacted simultaneously if multiple
+contacts have the same priority number.</p><p class="- topic/p ">When the alarm is sent,
+a timer starts. The user or users notified for the alarm have a set
+amount of time acknowledge the alarm. If this time elapses and the
+alarm is not acknowledged, the subsequent user down the line, in priority
+order, is notified, and the timer starts again. This process continues
+until either the alarm is acknowledged, or there are no more users
+to notify.</p><?Pub Caret 380?><p class="- topic/p ">To configure how much time users
+have to acknowledge alarms, change the <parmname class="+ topic/keyword pr-d/parmname ">Escalation Delay</parmname> property in the <uicontrol class="+ topic/ph ui-d/uicontrol ">OnCallRecipient</uicontrol>. It defaults
+to 30 minutes, meaning an on-call user has 30 minutes to acknowledge
+an alarm before contacting the next on-call user.</p><image href="../graphic/OnCallRecepientPropertySheet.png" placement="break" scale="65" scope="local" class="- topic/image "/></section>
+</refbody>
+</reference>

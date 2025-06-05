@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="ConfiguringTheSmsAlarmAcknowledger" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Configuring the SmsAlarmAcknowledger</title>
+<shortdesc class="- topic/shortdesc ">The SmsAlarmAcknowledger provides a way to acknowledge
+ alarms by replying to an alarm text message.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">SmsAlarmAcknowledger</indexterm>
+</keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Double-click the <uicontrol class="+ topic/ph ui-d/uicontrol ">SmsAlarmAcknowledger</uicontrol>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult "><image href="../graphic/SmsAlarmAcknowleger_0000031398.png" placement="break" scale="65" class="- topic/image "/></stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Link the Received topic  on the <apiname class="+ topic/keyword pr-d/apiname ">SmsService</apiname> to the Received slot of  the <apiname class="+ topic/keyword pr-d/apiname ">SmsAlarmAcknowleger</apiname>.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To view the SmsAlarmAcknowledger property sheet, click <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">View</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Property Sheet</uicontrol>
+</menucascade></cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Configure how you want to acknowledge all alarms from the
+same source (one by one or all with a single reply).</cmd></step>
+</steps>
+</taskbody>
+</task>

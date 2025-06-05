@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="sms-BasicPingMonitor" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">sms-BasicPingMonitor</title>
+<shortdesc class="- topic/shortdesc ">A network’s <parmname class="+ topic/keyword pr-d/parmname ">Monitor</parmname> slot holds
+configuration for the ping mechanism used by the driver network.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">monitor<indexterm class="- topic/indexterm ">basic ping monitor</indexterm></indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><image href="../graphic/smsmonitorpropertysheet_0000007050.png" placement="break" scale="65" class="- topic/image "/></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Ping Enabled</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">drop-down list</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Verifies the general health of the network devices.  If
+true, (default) a ping occurs for each device under the network, as
+needed. If false, device status pings do not occur. Moreover, device
+statuses cannot change  from what existed when this property was last
+true.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Ping Frequency</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours:minutes:seconds</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Specifies the interval between periodic pings of all devices.
+Typical default value is every 5 minutes (05m 00s), you can adjust
+differently if needed.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

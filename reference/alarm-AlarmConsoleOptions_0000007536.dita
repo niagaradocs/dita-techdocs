@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="alarm-AlarmConsoleOptions" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">alarm-AlarmConsoleOptions</title>
+<shortdesc class="- topic/shortdesc ">This component configures the alarm console options. You
+access these options in <keyword conkeyref="wh_variables_n4/Workbench" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword "/> by clicking <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Tools</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol "> Options</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Alarm Console</uicontrol>
+</menucascade> .</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata ">
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">The component is stored under the <filepath class="+ topic/ph sw-d/filepath ">/users/{user}/options</filepath> directory.</p></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Notes Required On Ack</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> (default) or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsNotesRequiredOnAck-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsNotesRequiredOnAck-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Sounds Enabled</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><option class="+ topic/keyword pr-d/option ">true</option> <p class="- topic/p ">causes a sound to accompany an
+alarm. You can also set this value under the <uicontrol class="+ topic/ph ui-d/uicontrol ">Alarms</uicontrol> menu in the <keyword conkeyref="wh_variables_n4/Workbench" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword ">workbench</keyword> main menu when the <wintitle class="+ topic/keyword ui-d/wintitle ">Alarm Console</wintitle> view is active.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Default Sound File</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">file path</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Sets the path to the default sound file.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Continuous Alarm</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><option class="+ topic/keyword pr-d/option ">true</option> causes an alarm to repeat continually
+until it is acknowledged or cleared. This option works together with
+the <parmname class="+ topic/keyword pr-d/parmname ">Continuous Alarm Delay</parmname> property. You can
+also set this value under the <uicontrol class="+ topic/ph ui-d/uicontrol ">Alarms</uicontrol> menu in
+the <keyword conkeyref="wh_variables_n4/Workbench" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword ">workbench</keyword> main menu when the <wintitle class="+ topic/keyword ui-d/wintitle ">Alarm Console</wintitle> view is active.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Continuous Alarm Delay</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours minutes seconds</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><option class="+ topic/keyword pr-d/option ">true</option> interrupts the sound of the alarm
+for a time equal to the value of this property.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Low Priority Color</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">color</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the color to use for the least important alarms.
+Alarm priorities are numbered from 1–255. The system assigns colors
+to alarm priorities that fall between priority levels on a color-scale
+along a path defined by the three assigned colors.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Mid Priority Color</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">color</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the color to use for an alarm of medium importance.
+Alarm priorities are numbered from 1–255. The system assigns colors
+to alarm priorities that fall between priority levels on a color-scale
+along a path defined by the three assigned colors.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">High Priority Color</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">color</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the color to use for the highest priority (priority
+1). Alarm priorities are numbered from 1–255. The system assigns colors
+to alarm priorities that fall between priority levels on a color-scale
+along a path defined by the three assigned colors.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Time Zone Display</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">Console</option><?Pub _newline?><option class="+ topic/keyword pr-d/option ">Source</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the alarm record timestamp in the time zone of
+the alarm console view (Console) or in the time zone of the alarm
+source (Source).</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm Class Mapping</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">additional options</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Opens the <wintitle class="+ topic/keyword ui-d/wintitle ">Alarm Class Mapper</wintitle> window,
+which allows you to add alarm classes and map them.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm Ack Responses</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "/>
+<propdesc class="- topic/stentry     reference/propdesc ">Creates one or more text entries that you can use to populate
+the <wintitle class="+ topic/keyword ui-d/wintitle ">Notes</wintitle> window when acknowledging an alarm.
+When <parmname class="+ topic/keyword pr-d/parmname ">Notes Required on Ack</parmname> is set to <option class="+ topic/keyword pr-d/option ">true</option>, the <wintitle class="+ topic/keyword ui-d/wintitle ">Notes</wintitle> window displays an
+additional option list containing any entries you create with this
+property. To add, edit, or remove response options, use the <uicontrol class="+ topic/ph ui-d/uicontrol ">&gt;&gt;</uicontrol> button to open the associated <wintitle class="+ topic/keyword ui-d/wintitle ">Edit</wintitle> window. When <parmname class="+ topic/keyword pr-d/parmname ">Notes Required on Ack</parmname> is set to <option class="+ topic/keyword pr-d/option ">false</option>, these <parmname class="+ topic/keyword pr-d/parmname ">Alarm Ack Responses</parmname> are
+not visible.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">View Instructions</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><option class="+ topic/keyword pr-d/option ">true</option> causes the alarm Instructions pane
+to display across the bottom of the Alarm Console. Instructions display
+in the pane for any single selected alarm that has associated instructions.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

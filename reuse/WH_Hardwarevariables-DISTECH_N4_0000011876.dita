@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--Arbortext, Inc., 1988-2019, v.4002--><?Pub Inc?><reference id="WHHardwareVariables-DISTECH" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">WH: Hardware variables — DISTECH</title>
+<shortdesc class="- topic/shortdesc ">Host Models warehouse topic provides source reference “variables”
+for host model names as they appear in workbench platform views. This
+correlation of model names and descriptions should help users identify
+hardware from information displayed in workbench views. Use this topic
+source for <b class="+ topic/ph hi-d/b ">conkeyrefs</b> in Distech branded documents.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata ">
+<audience name="techwriter" type="warehouse" class="- topic/audience "/>
+<category class="- topic/category ">Hardware</category>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><title class="- topic/title ">Models of platforms</title><p class="- topic/p ">Among the two groups
+of controllers (QNX-based and Windows-based), there are different <term class="- topic/term ">models</term>, each of which has a “<term class="- topic/term ">host model</term>” text
+descriptor. You see this descriptor in the <wintitle class="+ topic/keyword ui-d/wintitle ">Station Manager</wintitle> view of a Niagara Network (<wintitle class="+ topic/keyword ui-d/wintitle ">Host Model</wintitle> column),
+and also in platform views such as Platform Administration, as well
+as the PlatformServices container of a station running on that host.</p><p class="- topic/p ">The following table lists platform models to use for CONKEYREFS..
+Add new models using the ph tag and id syntax shown here.</p><table class="- topic/table ">
+<title class="- topic/title ">Host models of controller platforms.</title>
+<tgroup cols="3" colsep="1" outputclass="FormatA" rowsep="1" class="- topic/tgroup "><colspec colname="1" colnum="1" colwidth="21*" class="- topic/colspec "/><colspec colname="2" colnum="2" colwidth="30*" class="- topic/colspec "/><colspec colname="3" colnum="3" colwidth="49*" class="- topic/colspec "/>
+<thead class="- topic/thead ">
+<row rowsep="1" class="- topic/row ">
+<entry colname="1" class="- topic/entry ">Host Model/Processor</entry>
+<entry colname="2" class="- topic/entry ">Brand Model</entry>
+<entry colname="3" class="- topic/entry ">Descriptions</entry>
+</row>
+</thead>
+<tbody class="- topic/tbody ">
+<row rowsep="1" class="- topic/row ">
+<entry colname="1" class="- topic/entry "><ph id="npm" class="- topic/ph ">NPM</ph></entry>
+<entry colname="2" class="- topic/entry "><ph id="nc" class="- topic/ph ">EC-BOS</ph></entry>
+<entry colname="3" class="- topic/entry ">Basic network controller</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry "/>
+<entry class="- topic/entry "><ph id="nc_wTM" class="- topic/ph ">EC-BOS®</ph></entry>
+<entry class="- topic/entry ">JACE network controller with registered trademark symbol. —
+used only in About this guide, Product Document section.</entry>
+</row>
+<row rowsep="1" class="- topic/row ">
+<entry colname="1" class="- topic/entry "><ph id="npm2" class="- topic/ph ">NPM2</ph></entry>
+<entry colname="2" class="- topic/entry "><ph id="nc2" class="- topic/ph ">EC-BOS-2<sup class="+ topic/ph hi-d/sup ">AX</sup></ph><ph id="nc202exp" class="- topic/ph "/></entry>
+<entry colname="3" class="- topic/entry "/>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry "/>
+<entry class="- topic/entry "/>
+<entry class="- topic/entry ">JACE-202 Express not sold by Distech</entry>
+</row>
+<row rowsep="1" class="- topic/row ">
+<entry colname="1" class="- topic/entry "/>
+<entry colname="2" class="- topic/entry "><ph id="ncm2m" class="- topic/ph "/></entry>
+<entry colname="3" class="- topic/entry ">M2M JACES are not sold by Distech. Keep empty tags
+here for profiling.</entry>
+</row>
+<row rowsep="1" class="- topic/row ">
+<entry colname="1" class="- topic/entry "><ph id="npm3" class="- topic/ph ">NPM3</ph></entry>
+<entry colname="2" class="- topic/entry "><ph id="nc3" class="- topic/ph ">EC-BOS-3<sup class="+ topic/ph hi-d/sup ">AX</sup></ph></entry>
+<entry colname="3" class="- topic/entry ">Supports earlier AX versions</entry>
+</row>
+<row rowsep="1" class="- topic/row ">
+<entry colname="1" class="- topic/entry "><ph id="npm3e" class="- topic/ph ">NPM3E</ph></entry>
+<entry colname="2" class="- topic/entry "><ph id="nc3e" class="- topic/ph ">EC-BOS-3<sup class="+ topic/ph hi-d/sup ">AX</sup></ph></entry>
+<entry colname="3" class="- topic/entry ">Supports N4 but Distech does not use the 3E notation</entry>
+</row>
+<row rowsep="1" class="- topic/row ">
+<entry colname="1" class="- topic/entry "><ph id="npm6" class="- topic/ph ">NPM6</ph></entry>
+<entry colname="2" class="- topic/entry "><ph id="nc6" class="- topic/ph ">EC-BOS-6<sup class="+ topic/ph hi-d/sup ">AX</sup></ph><ul class="- topic/ul ">
+<li class="- topic/li "><ph id="nc601sec" class="- topic/ph "/></li>
+<li class="- topic/li "><ph id="nc602exp" class="- topic/ph "/> </li>
+<li class="- topic/li "><ph id="ncm2m6" class="- topic/ph "/></li>
+</ul></entry>
+<entry colname="3" class="- topic/entry ">The SEC-J-601, JACE-602 Express and M2M JACE6 are
+not sold by Distech. The ph tags still need to be present to avoid
+unnecessary errors when making the PDF.</entry>
+</row>
+<row rowsep="1" class="- topic/row ">
+<entry colname="1" class="- topic/entry "><ph id="npm6e" class="- topic/ph ">NPM6E</ph></entry>
+<entry colname="2" class="- topic/entry "><ph id="nc6e" class="- topic/ph ">EC-BOS-6<sup class="+ topic/ph hi-d/sup ">AX</sup></ph><ph id="nc603" class="- topic/ph ">EC-BOS-603<sup class="+ topic/ph hi-d/sup ">AX </sup></ph><ph id="nc645" class="- topic/ph ">EC-BOS-645<sup class="+ topic/ph hi-d/sup ">AX</sup></ph></entry>
+<entry colname="3" class="- topic/entry "/>
+</row>
+<row rowsep="1" class="- topic/row ">
+<entry colname="1" class="- topic/entry "/>
+<entry colname="2" class="- topic/entry "/>
+<entry colname="3" class="- topic/entry "/>
+</row>
+<row rowsep="1" class="- topic/row ">
+<entry colname="1" class="- topic/entry "><ph id="jvln" class="- topic/ph ">JVLN</ph></entry>
+<entry colname="2" class="- topic/entry "><ph id="nc7" class="- topic/ph ">EC-BOS-7<sup class="+ topic/ph hi-d/sup ">AX</sup></ph> series <ph id="nc700" class="- topic/ph ">EC-BOS-7<sup class="+ topic/ph hi-d/sup ">AX</sup></ph></entry>
+<entry colname="3" class="- topic/entry "/>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry "><ph class="- topic/ph "><?Pub _nolinebreak?>Edge<?Pub /_nolinebreak?></ph></entry>
+<entry class="- topic/entry "><ph id="ncEdge" class="- topic/ph "><?Pub _nolinebreak?>Edge<?Pub /_nolinebreak
+?></ph></entry>
+<entry class="- topic/entry ">Generic name for Edge controller WITHOUT the word “device”
+or “controller” attached. Provides the option to add Edge as a variable
+but type in the word device or controller as regular text. <draft-comment class="- topic/draft-comment ">Not a DISTECH product (yet).</draft-comment></entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry "><ph class="- topic/ph "><?Pub _nolinebreak?>Edge device<?Pub /_nolinebreak?></ph></entry>
+<entry class="- topic/entry "><ph id="ncEdgeDevice" class="- topic/ph "><?Pub _nolinebreak?>Edge device<?Pub /_nolinebreak?></ph></entry>
+<entry class="- topic/entry ">generic name for Edge controller WITH the word “device” included. <draft-comment class="- topic/draft-comment ">Not a DISTECH product (yet).</draft-comment></entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry "><ph class="- topic/ph "><?Pub _nolinebreak?>Edge 10<?Pub /_nolinebreak?></ph></entry>
+<entry class="- topic/entry "><ph id="ncEdge10" class="- topic/ph "><?Pub _nolinebreak?>Niagara Edge 10<?Pub /_nolinebreak?></ph></entry>
+<entry class="- topic/entry ">Official product name for Niagara Edge 10 controller new in
+N4.7 <draft-comment class="- topic/draft-comment ">Not a DISTECH product (yet).</draft-comment></entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry "><ph class="- topic/ph "><?Pub _nolinebreak?>Edge 10<?Pub /_nolinebreak?></ph></entry>
+<entry class="- topic/entry "><ph id="ncEdge10short" class="- topic/ph "><?Pub _nolinebreak?>Edge 10<?Pub /_nolinebreak
+?></ph></entry>
+<entry class="- topic/entry ">Short product name for Niagara Edge 10 controller. <draft-comment class="- topic/draft-comment ">Not a DISTECH product (yet).</draft-comment></entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry "><ph class="- topic/ph "><?Pub _nolinebreak?>Edge 18<?Pub /_nolinebreak?></ph></entry>
+<entry class="- topic/entry "><ph id="ncEdge18short" class="- topic/ph "><?Pub _nolinebreak?>Edge 18<?Pub /_nolinebreak
+?></ph></entry>
+<entry class="- topic/entry ">Short product name for Niagara Edge 18 controller. <draft-comment class="- topic/draft-comment ">Not a DISTECH product (yet).</draft-comment></entry>
+</row>
+<row rowsep="1" class="- topic/row ">
+<entry colname="1" class="- topic/entry "><ph class="- topic/ph ">JACE-8000</ph></entry>
+<entry colname="2" class="- topic/entry "><ph id="nc8000" class="- topic/ph ">EC-BOS-8</ph></entry>
+<entry colname="3" class="- topic/entry "><image id="nc8000_photo" scale="65" href="../graphic/EC-BOS-8_0000093027.png" class="- topic/image "/></entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry "><ph class="- topic/ph ">WPM-8000</ph></entry>
+<entry class="- topic/entry "><ph id="wpm8000_1" class="- topic/ph "/><!--Placeholder: Not sold by Distech, inserted here for compatibility with Webs warehouse topic.--></entry><?Pub Caret 1?>
+<entry class="- topic/entry ">Wall-mount, Class 2 universal AC power adapter supplying 24Vdc
+to a cable with a barrel-connector plug.</entry>
+</row>
+<row rowsep="1" class="- topic/row ">
+<entry colname="1" class="- topic/entry "><ph class="- topic/ph ">Jsoft</ph></entry>
+<entry colname="2" class="- topic/entry "><ph id="nc_soft" class="- topic/ph ">Soft EC-BOS<sup class="+ topic/ph hi-d/sup ">AX</sup></ph> installed
+on  user-supplied PC</entry>
+<entry colname="3" class="- topic/entry "><p class="- topic/p ">Windows-based. This is different than a Supervisor
+for example, which appears instead as “Workstation”.</p></entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry "><ph class="- topic/ph ">JACE-NXS</ph></entry>
+<entry class="- topic/entry "><ph id="ncnxs" class="- topic/ph ">EC-BOS-NXS-FL<sup class="+ topic/ph hi-d/sup ">AX</sup></ph></entry>
+<entry class="- topic/entry ">JACE-NXS not sold by Distech. Keep empty tags for profiling.<p id="ncnxs_scansvc" class="- topic/p "><?Pub _kern?></p></entry>
+</row>
+<row rowsep="1" class="- topic/row ">
+<entry colname="1" class="- topic/entry "><ph class="- topic/ph ">JACE-NXT</ph></entry>
+<entry colname="2" class="- topic/entry "><ph id="ncnxt" class="- topic/ph ">EC-BOS-NXT-FL<sup class="+ topic/ph hi-d/sup ">AX</sup></ph></entry>
+<entry colname="3" class="- topic/entry "/>
+</row>
+<row rowsep="1" class="- topic/row ">
+<entry colname="1" class="- topic/entry "><ph class="- topic/ph ">JACE-x02 Express</ph></entry>
+<entry colname="2" class="- topic/entry "><ph id="ncx02exp" class="- topic/ph "> </ph></entry>
+<entry colname="3" class="- topic/entry ">JACE-x02 Express not sold by Distech. Keep empty
+tags for profiling.</entry>
+</row>
+<row rowsep="1" class="- topic/row ">
+<entry colname="1" class="- topic/entry ">JACE-403</entry>
+<entry colname="2" class="- topic/entry "><ph id="nc403" class="- topic/ph ">EC-BOS-403<sup class="+ topic/ph hi-d/sup ">AX</sup></ph></entry>
+<entry colname="3" class="- topic/entry "/>
+</row>
+<row rowsep="1" class="- topic/row ">
+<entry colname="1" class="- topic/entry ">JACE-545</entry>
+<entry colname="2" class="- topic/entry "><ph id="nc545" class="- topic/ph ">EC-BOS-545<sup class="+ topic/ph hi-d/sup ">AX</sup></ph></entry>
+<entry colname="3" class="- topic/entry "/>
+</row>
+<row rowsep="1" class="- topic/row ">
+<entry colname="1" class="- topic/entry "><ph class="- topic/ph ">JACE-9000</ph></entry>
+<entry colname="2" class="- topic/entry "><ph id="nc9000" class="- topic/ph ">EC-BOS-9</ph><ph id="pn9000" class="- topic/ph ">15885</ph></entry>
+<entry colname="3" class="- topic/entry "/>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry "><ph id="WPM-8000-8D4FAA22" class="- topic/ph ">WPM-8000</ph></entry>
+<entry class="- topic/entry "><ph id="wpm8000" class="- topic/ph ">WPM-8000</ph></entry>
+<entry class="- topic/entry ">Wall-mount, Class 2 universal AC power adapter supplying 24Vdc
+to a cable with a barrel-connector plug.</entry>
+</row>
+</tbody>
+</tgroup>
+</table></section>
+<section class="- topic/section "><title class="- topic/title ">Other Hardware (Option cards, power supplies, etc.)</title><table class="- topic/table ">
+<title class="- topic/title ">Hardware</title>
+<tgroup cols="3" class="- topic/tgroup "><colspec colname="col1" class="- topic/colspec "/><colspec colname="col2" class="- topic/colspec "/>
+<colspec colname="col3" class="- topic/colspec "/>
+<thead class="- topic/thead ">
+<row class="- topic/row ">
+<entry valign="bottom" class="- topic/entry ">Processor</entry>
+<entry valign="bottom" class="- topic/entry ">Brand Model</entry>
+<entry valign="bottom" class="- topic/entry ">Descriptions</entry>
+</row>
+</thead>
+<tbody class="- topic/tbody ">
+<row class="- topic/row ">
+<entry class="- topic/entry "><ph class="- topic/ph ">RIO-16–485</ph></entry>
+<entry class="- topic/entry "><ph id="mo_rio_16_485" class="- topic/ph ">T-IO-16-485</ph></entry>
+<entry class="- topic/entry "/>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry "><ph class="- topic/ph ">IO–R–16</ph></entry>
+<entry class="- topic/entry "><ph id="mo_io_r_16" class="- topic/ph ">IO–R–16</ph></entry>
+<entry class="- topic/entry ">External RS-485 connected I/O module used with J8000/N4.3+
+installations</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry "><ph class="- topic/ph ">IO–R–34</ph></entry>
+<entry class="- topic/entry "><ph id="mo_io_r_34" class="- topic/ph ">IO–R–34</ph></entry>
+<entry class="- topic/entry ">External RS-485 connected I/O module used with J8000/N4.3+
+installations</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry "/>
+<entry class="- topic/entry "><ph id="sm_SEC-INT-KP" class="- topic/ph ">EC-SEC-INT-KP</ph></entry>
+<entry class="- topic/entry ">Smartkey keypad (sm)</entry>
+</row>
+</tbody>
+</tgroup>
+</table></section>
+<section class="- topic/section "><title class="- topic/title ">Entsec accessories</title><table class="- topic/table ">
+<title class="- topic/title ">Remote (rem) modules</title>
+<tgroup cols="3" class="- topic/tgroup "><colspec colname="col1" class="- topic/colspec "/><colspec colname="col2" class="- topic/colspec "/>
+<colspec colname="col3" class="- topic/colspec "/>
+<thead class="- topic/thead ">
+<row class="- topic/row ">
+<entry valign="bottom" class="- topic/entry ">Module</entry>
+<entry valign="bottom" class="- topic/entry ">Model name</entry>
+<entry valign="bottom" class="- topic/entry ">Description</entry>
+</row>
+</thead>
+<tbody class="- topic/tbody ">
+<row class="- topic/row ">
+<entry class="- topic/entry ">Remote reader module</entry>
+<entry class="- topic/entry "><ph id="rem-SEC-R2R" class="- topic/ph ">EC-SEC-R2R</ph></entry>
+<entry class="- topic/entry ">DIN-mountable modules that expand the door reader capacity
+by two, with associated supervised inputs and outputs.</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">Remote input/output module</entry>
+<entry class="- topic/entry "><ph id="rem-SEC-RIO" class="- topic/ph ">EC-SEC-RIO</ph></entry>
+<entry class="- topic/entry ">DIN-mountable modules that expand capacity with eight supervised
+inputs and eight relay outputs.</entry>
+</row>
+</tbody>
+</tgroup>
+</table></section>
+<section class="- topic/section "><title class="- topic/title ">Phrases</title><table class="- topic/table ">
+<title class="- topic/title ">Phrases that include specific Hardware terms</title>
+<tgroup cols="2" class="- topic/tgroup "><colspec colname="col1" class="- topic/colspec "/><colspec colname="col2" class="- topic/colspec "/>
+<tbody class="- topic/tbody ">
+<row class="- topic/row ">
+<entry class="- topic/entry "><ph id="n4_host_models" class="- topic/ph "><ph conkeyref="host_models/nc3e" class="- topic/ph ">zxvczxczcnc3e</ph>, <ph conkeyref="host_models/nc6e" class="- topic/ph ">nc6e</ph>, <ph conkeyref="host_models/nc603" class="- topic/ph ">nc603</ph>, <ph conkeyref="host_models/nc645" class="- topic/ph ">nc645</ph>, and <ph conkeyref="host_models/nc7" class="- topic/ph ">nc7</ph></ph></entry>
+<entry class="- topic/entry ">This is a list of the hardware platforms that support Niagara
+4. It could be different for different brands because not all brands
+purchase and sell all these platforms.</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry "><ph id="host_models6_6E_7_8" class="- topic/ph ">EC-BOS 6/6E/7/8</ph></entry>
+<entry class="- topic/entry ">This is the way the hosts are listed in the Video Framework
+Guide</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry "><ph id="host_models602_616" class="- topic/ph ">EC-BOS 602/616 Security</ph></entry>
+<entry class="- topic/entry ">This is the way the hosts are listed in the Video Framework
+Guide</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry "/>
+<entry class="- topic/entry "/>
+</row>
+</tbody>
+</tgroup>
+</table></section>
+</refbody>
+</reference>

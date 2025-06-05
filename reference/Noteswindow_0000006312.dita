@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="NotesDialogBox" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Notes window</title>
+<shortdesc class="- topic/shortdesc ">This window adds notes to the alarm record. Use the toolbar
+or right-click menu to open the <wintitle class="+ topic/keyword ui-d/wintitle ">Notes</wintitle> window. </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Notes window</indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><image href="../graphic/notesdialogbox_0000014127_0000006325.png" placement="break" scale="65" class="- topic/image "/></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Name</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Message pane (upper half of the window)</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the text of any notes already associated with the
+selected row in the alarm console. If multiple alarms are associated
+with the selected source, the message pane displays <userinput class="+ topic/ph sw-d/userinput ">&lt;Multiple
+Alarms&gt;</userinput>.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Editor pane (lower half of the window)</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Provides a text field for adding the note.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Add Note</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">button</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">The system adds the new note to all the alarms associated
+with the selected alarm source.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Close Button</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">button</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Saves and exits the current dialog.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

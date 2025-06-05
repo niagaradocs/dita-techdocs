@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="email-Email" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">email-Email</title>
+<shortdesc class="- topic/shortdesc ">Email represents an email message.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata ">
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "/>
+</refbody>
+</reference>

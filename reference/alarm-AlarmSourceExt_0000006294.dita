@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="alarm-AlarmSourceExt" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">alarm-AlarmSourceExt</title>
+<shortdesc class="- topic/shortdesc ">This component is the abstract super-class of all Baja
+control alarming algorithms. It is available in the alarm module.
+Alarm extensions are contained in the <wintitle class="+ topic/keyword ui-d/wintitle ">alarm</wintitle> palette
+and in other component palettes.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">AlarmSourceExt</indexterm><indexterm class="- topic/indexterm ">extensions<indexterm class="- topic/indexterm ">AlarmSourceExt</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><fig class="- topic/fig ">
+<title class="- topic/title ">Example of Alarm Source Extension properties</title>
+<image href="../graphic/propertiesAlarmExtensionExampleN4_0000073242.png" placement="break" scale="65" class="- topic/image "/>
+</fig><p class="- topic/p ">To set up alarming on a component you add an alarm extension
+to the component’s property sheet. Alarm extension types must match
+their parent component type. For example, an <apiname class="+ topic/keyword pr-d/apiname ">OutOfRangeAlarmExt</apiname> goes with a Numeric point type and a <apiname class="+ topic/keyword pr-d/apiname ">BooleanChangeOfStateAlarmExt</apiname> goes with a Boolean point type.</p><p class="- topic/p ">Each alarm extension shares
+the same set of properties that specify the alarming conditions and
+certain routing options. Alarm extension properties define items such
+as alarm enable (annunciation) transition types, alarm delay times,
+associated alarm class, and alarm display text for different transition
+types. You define the actual alarm limits or state(s) in properties
+in the extension’s “<uicontrol class="+ topic/ph ui-d/uicontrol ">Offnormal Algorithm</uicontrol> slot.</p></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm Inhibit</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><option class="+ topic/keyword pr-d/option ">true</option> prevents all alarm generation due
+to any transition or state change, thus preventing unintended alarms
+in after-hours situations when a piece of equipment is turned off.<parmname class="+ topic/keyword pr-d/parmname ">Inhibit Time</parmname> qualifies this behavior. <p class="- topic/p ">For example,
+if set to <option class="+ topic/keyword pr-d/option ">true</option> and an Offnormal state is reached,
+a toOffNormal status is not communicated. When the state returns to
+Normal, a toNormal status also is not communicated. This property
+also prevents alarm generation during the fault state.</p><p class="- topic/p ">A difference
+between <parmname class="+ topic/keyword pr-d/parmname ">Alarm Inhibit</parmname> and <parmname class="+ topic/keyword pr-d/parmname ">Alarm Delay</parmname> is that the former is a boolean value (true/false) and may be controlled
+by another device (for example, the ON/OFF value of a fan).</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">false</option> allows alarm generation. This value prevents
+alarms from being inhibited (even if an <parmname class="+ topic/keyword pr-d/parmname ">Inhibit Time</parmname> is set).</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Inhibit Time</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours minutes seconds</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Controls the length of time that the current Alarm Inhibit
+state remains in effect after an Alarm Inhibit state change.<p class="- topic/p ">When
+an <parmname class="+ topic/keyword pr-d/parmname ">Alarm Inhibit</parmname> value changes from <option class="+ topic/keyword pr-d/option ">true</option> to <option class="+ topic/keyword pr-d/option ">false</option>, alarm generation continues to be inhibited
+for the time specified by the value set for <parmname class="+ topic/keyword pr-d/parmname ">Inhibit Time</parmname></p><p class="- topic/p ">When an <parmname class="+ topic/keyword pr-d/parmname ">Alarm Inhibit</parmname> value changes from <option class="+ topic/keyword pr-d/option ">false</option> to <option class="+ topic/keyword pr-d/option ">true</option>, alarm generation may continue
+to be inhibited for a time that is dependent on the point type. For
+discrete points, the system increases the <parmname class="+ topic/keyword pr-d/parmname ">Inhibit Time</parmname> value by a factor of three. If the point is a numeric point, nothing
+changes.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm State</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><uicontrol class="+ topic/ph ui-d/uicontrol ">Normal</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Low Limit</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">High Limit</uicontrol> or<uicontrol class="+ topic/ph ui-d/uicontrol ">Fault</uicontrol></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the current state of the alarms.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Time Delay</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours: minutes: seconds</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the minimum time period that an alarm condition
+must exist before the object alarms. In other words, the object status
+must meet the alarm criteria for a continuous period equal to or greater
+than defined in the this property before an alarm is generated. <parmname class="+ topic/keyword pr-d/parmname ">Time Delay</parmname> provides a way to prevent nuisance alarms that
+may be caused by a momentary change in a state value (Normal, Low
+Limit, High Limit).<note class="- topic/note "><parmname class="+ topic/keyword pr-d/parmname ">Time Delay</parmname> does not
+affect alarms generated by a fault. There is no delay when transitioning
+in or out of a Fault generated alarm. </note></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Time Delay to Normal</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours: minutes: seconds</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Sets the minimum time period that a normal condition must
+exist before the object may return to normal status.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm Enable</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">toOffnormal</option> or<?Pub _newline?><option class="+ topic/keyword pr-d/option ">toFault</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><option class="+ topic/keyword pr-d/option ">toOffnormal</option> turns on the ability of the
+alarm to transition from normal to the alarm state Offnormal.<p class="- topic/p "><option class="+ topic/keyword pr-d/option ">toFault</option> turns on the ability of the alarm to transition
+from normal to the alarm state Fault.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">To Offnormal Times</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_ToOffnormalTimes-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_ToOffnormalTimes-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">To Fault Times</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_ToFaultTimes-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_ToFaultTimes-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Time in Current State</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours: minutes: seconds</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the elapsed time since the component transition
+to the current state occurred. </propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Source Name</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">%parent.displayName% (default)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the name of the alarm source. If you use the default
+script setting, the source name field shows the display name of the
+alarm extension parent. You can edit this script or type in a multi-line
+literal string to display.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">To Normal Text</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_ToNormalText-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_ToNormalText-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">To Fault Text</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsToFalutText" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsToFalutText" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">To Offnormal Text</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsToOffText" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsToOffText" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Hyperlink Ord or Hyperlink</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Ord, BQL Query or path</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsHyperlink-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsHyperlink-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Sound File</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "/>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsSoundFile-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsSoundFile-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm Icon</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">ord</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the path to a graphic file to add to the display
+in the timestamp column of the alarm table in the Console Recipient
+view.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm Instructions</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Opens a window in which you can provide customized instructions
+to the building attendant concerning how to handle the alarm.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Fault Algorithm</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">additional properties</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays Fault options that depend on the alarm extension.
+You define the actual alarm limits or state(s) in subproperties in
+this slot.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Offnormal Algorithm</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">additional properties</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsOffAlgo" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsOffAlgo" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Ordinal</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Provides a unique identifier for the particular <apiname class="+ topic/keyword pr-d/apiname ">OnCallList</apiname>. The <apiname class="+ topic/keyword pr-d/apiname ">OnCallService</apiname> tracks
+the next free ordinal number.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm Class</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only used in Lists, console columns, or %alarmClass%
+on a report.</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_AlarmClass-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_AlarmClass-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Meta Data</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsMetaData-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsMetaData-div" class="- topic/div "/></propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

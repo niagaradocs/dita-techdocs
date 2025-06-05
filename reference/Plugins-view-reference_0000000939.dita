@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="Plugins-05676AE5" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Plugins (views)</title>
+<shortdesc class="- topic/shortdesc ">Plugins provide views of components and can be accessed
+in many ways. For example, double-click a component in the Nav tree
+to see its default view. In addition, you can right-click on a component
+and select from its <uicontrol class="+ topic/ph ui-d/uicontrol ">Views</uicontrol> menu.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">plugins</indexterm><indexterm class="- topic/indexterm ">views</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "/>
+</refbody>
+</reference>

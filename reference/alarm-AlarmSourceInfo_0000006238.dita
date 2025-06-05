@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="alarm-AlarmSourceInfo" xml:lang="en" class="- topic/topic       reference/reference ">
+<title id="alarm-AlarmSourceInfo" class="- topic/title ">alarm-AlarmSourceInfo</title>
+<shortdesc class="- topic/shortdesc ">This container slot is available on any network component,
+and each child device component. The slot’s properties populate the
+alarm record when the network or device does not respond to a monitor
+ping. This ping is configured at the network level.</shortdesc>
+<!--This topic is also used in the BACnet Guide.-->
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">AlarmSourceInfo</indexterm><indexterm class="- topic/indexterm ">component<indexterm class="- topic/indexterm ">AlarmSourceInfo</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">Each parent and child device object has its own <wintitle class="+ topic/keyword ui-d/wintitle ">Alarm Source Info</wintitle> slot with identical (but independently
+maintained) properties.</p><image href="../graphic/alarmsourceinfo_0000006434.png" placement="break" scale="65" class="- topic/image "/><note conkeyref="gen/AlarmSourceInfoNote" conref="../reuse/WH-guide-General_0000048987.dita#descGen/AlarmSourceInfoNote" class="- topic/note "/></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm Class</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only used in Lists, console columns, or %alarmClass%
+on a report.</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_AlarmClass-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_AlarmClass-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Source Name</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmSourceName" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmSourceName" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">To Fault Text</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsToFalutText" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsToFalutText" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Too Offnormal Text</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsToOffText" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsToOffText" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">To Normal Text</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_ToNormalText-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_ToNormalText-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Hyperlink Ord or Hyperlink</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Ord, BQL Query or path</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsHyperlink-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsHyperlink-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Sound File</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">ord</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsSoundFile-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsSoundFile-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm icon</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the path to a graphic file the system includes in
+the <uicontrol class="+ topic/ph ui-d/uicontrol ">Timestamp</uicontrol> column of the alarm table in
+the <wintitle class="+ topic/keyword ui-d/wintitle ">Console Recipient</wintitle> view. Use the folder icon
+to browse for the file. Use the right-arrow to test the location you
+entered.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm Instructions</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Advice that accompanies the alarm notification (<wintitle class="+ topic/keyword ui-d/wintitle ">Alarm Record</wintitle> window) that provides important information
+for the operator. Click the right-pointing arrow to view the instructions.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Meta Data [alarms]</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsMetaData-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsMetaData-div" class="- topic/div "/></propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

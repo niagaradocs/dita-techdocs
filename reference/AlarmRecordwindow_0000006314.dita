@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="AlarmRecordDialogBox" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Alarm Record window</title>
+<shortdesc class="- topic/shortdesc ">This window shows additional detailed information about
+a specific point alarm.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Alarm Record dialog box</indexterm>
+</keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "><keyword conkeyref="wh_variables_n4/NAF" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/NAF" class="- topic/keyword "/></prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="1.1" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><image href="../graphic/Alarmrecord_0000031636.png" placement="break" scale="65" class="- topic/image "/><title class="- topic/title ">Information</title></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Name</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Timestamp</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours:minutes:seconds%timestamp% (on a report)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_Timestamp-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_Timestamp-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Uuid</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsUuid" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsUuid" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Source State or sourceState</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">NormalHigh Limit</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">The status of the entity at the time the event, such as
+an alarm, occurred.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Ack State</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><systemoutput class="+ topic/ph sw-d/systemoutput ">Acked</systemoutput> or <systemoutput class="+ topic/ph sw-d/systemoutput ">Unacked</systemoutput></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsAckState" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsAckState" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Ack Required</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsAckRequired-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsAckRequired-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Source</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">%alarmData.sourceName%</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the path to the point that is generating the alarm.<note class="- topic/note ">For how to format this information on a report, click on the help
+icon to the right of the field.</note></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm Class</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only used in Lists, console columns, or %alarmClass%
+on a report.</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_AlarmClass-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_AlarmClass-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Priority [alarm]</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsPriorityAlarm-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsPriorityAlarm-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Normal Time or NormalTime</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">date and time</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the date and time (if applicable) that the alarm
+state returned to normal.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Ack Time</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><systemoutput class="+ topic/ph sw-d/systemoutput ">hours:minutes:seconds</systemoutput></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsAckTime" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsAckTime" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">User [alarms]</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Drop-down list</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Identifies the person that acknowledged the alarm. An unacknowledged
+alarm displays “unknown.”</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm Data</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsAlarmData-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsAlarmData-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm Transition</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmTrans" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmTrans" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Last Update</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the time the system most recently updated the alarm.</propdesc>
+</property>
+</properties>
+<section class="- topic/section "><title class="- topic/title ">Buttons</title></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Button</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">left and right arrows</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">buttons</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">If multiple records exist for an alarm, which can happen
+if repeated alarm transitions occur unacknowledged, arrow buttons
+may be enabled at the bottom corners of this dialog box:<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Go to previous alarm record (back in time)</p></li>
+<li class="- topic/li "><p class="- topic/p ">Go to next alarm record (forward in time)</p></li>
+</ul></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Acknowledge</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">button</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Recognizes each selected alarm.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Hyperlink</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">button</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Changes the current view to the hyperlinked target associated
+with the selected alarm. If no hyperlink is associated with the alarm,
+the Hyperlink button is not available.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Notes</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">button</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the <uicontrol class="+ topic/ph ui-d/uicontrol ">Notes</uicontrol> dialog box for
+the purpose of adding a note to the selected alarm or alarms.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

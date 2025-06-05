@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="RdbAlarmDatabaseConversion-7C87E417" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">RdbAlarmDatabaseConversion</title>
+<shortdesc class="- topic/shortdesc ">This component is used to convert a RDBMS to an Orion database.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">RdbAlarmDatabaseConversion</indexterm>
+<indexterm class="- topic/indexterm ">Converters</indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><fig class="- topic/fig ">
+<title class="- topic/title ">RdbAlarmDatabaseConversion Properties</title>
+<image href="../graphic/RdbAlarmDatabaseConversionpropertysheet_0000049748.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig><p class="- topic/p ">To access, expand <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">OrionAlarmService</uicontrol>
+</menucascade> and right-click <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">RdbAlarmDatabaseConversion</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Views</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">AX Property Sheet</uicontrol>
+</menucascade>.</p></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Running</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsRunning-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsRunning-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Remaining</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsRemaining-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsRemaining-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Succeeded</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsSucceeded-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsSucceeded-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Failed</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsFailed-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsFailed-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm Class</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">drop-down list</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_AlarmClassHow-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_AlarmClassHow-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Source Name (drop-down list)</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">drop-down list</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsSourceNameDropDown-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsSourceNameDropDown-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Source Name (BQL)</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text (defaults to %display%:)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmSourceNameBQL-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmSourceNameBQL-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Change Last Updated</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmChangeLastUpdated-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmChangeLastUpdated-div" class="- topic/div "/></propdesc>
+</property>
+</properties>
+<section class="- topic/section "><title class="- topic/title ">Action</title><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">Run</uicontrol> converts
+a RDBMS database to an Orion database.</p></section>
+</refbody>
+</reference>

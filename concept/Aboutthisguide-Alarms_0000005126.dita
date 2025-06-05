@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="AboutThisGuide-AlarmsGuide" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">About this Guide</title><shortdesc class="- topic/shortdesc "><ph conkeyref="wh_variables_n4/about_doc" class="- topic/ph "/></shortdesc><conbody class="- topic/body  concept/conbody "><section class="- topic/section ">
+            <title class="- topic/title ">Product Documentation</title><ph conkeyref="wh_variables_n4/techdoc_set" class="- topic/ph "/>
+        </section><section class="- topic/section "><title class="- topic/title ">Document Content</title><p class="- topic/p ">This guide explains how to set up, respond to, and manage the alarms that a system generates when a point enters an alarm condition. Sections in this guide include chapters about common alarm tasks, alarm concepts, and reference information. Also included are images and descriptions of the primary software user interface windows involved when working with alarms.</p></section></conbody></concept>

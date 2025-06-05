@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="OnCallManager" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">On Call List Manager view</title>
+<shortdesc class="- topic/shortdesc ">This view is the default view of the <apiname class="+ topic/keyword pr-d/apiname ">OnCallService</apiname>. It displays a table of all existing <apiname class="+ topic/keyword pr-d/apiname ">OnCallList</apiname>s. You use this view to create, edit, and delete unique on-call lists.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">On Call Manager</indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><image href="../graphic/oncallmanager_0000011365_0000006329.png" placement="break" scale="65" class="- topic/image "/><p class="- topic/p ">Double-click on any row to
+display the list in the <wintitle class="+ topic/keyword ui-d/wintitle ">On Call Contact Manager</wintitle> view. </p><note class="- topic/note ">If any <apiname class="+ topic/keyword pr-d/apiname ">OnCallContacts</apiname> are added,
+removed, deleted, reordered, or have any of their properties modified,
+any alarms that the <apiname class="+ topic/keyword pr-d/apiname ">OnCallList</apiname> is currently handling
+are resent to the contacts starting at the top of the list, by priority.</note></section>
+<section class="- topic/section "><title class="- topic/title ">Columns</title></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Column</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Name</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text string</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_Name-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_Name-div" class="- topic/div ">Provides descriptive text</div></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Active</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><systemoutput class="+ topic/ph sw-d/systemoutput ">Active</systemoutput> or <systemoutput class="+ topic/ph sw-d/systemoutput ">Inactive</systemoutput></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsActive" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsActive" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Status</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_Status-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_Status-div" class="- topic/div "/></propdesc>
+</property>
+</properties>
+<section class="- topic/section "><title class="- topic/title ">Buttons</title></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">New</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">button</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Opens the window used to create the entity you are working
+on.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Edit</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">button</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Opens the Edit dialog box. Use this dialog box to edit an
+entity. Which entity to edit depends on the context within the system.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Rotate Button</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">button</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Reassigns the priority value of each user in the contact
+list to the next user in the list in a revolving manner. All selected
+lists are affected when you click this button.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Tag It</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">button</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Allows to apply the tags to the selected network.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

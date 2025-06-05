@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!--Arbortext, Inc., 1988-2019, v.4002--><concept id="email-emailsetup" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Email setup</title>
+<shortdesc class="- topic/shortdesc ">Configuring a system to send and receive email involves
+adding the email-related components to the <uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol> container and configuring <apiname class="+ topic/keyword pr-d/apiname ">EmailRecipient</apiname> components. </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata ">
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">Email components are available in the <wintitle class="+ topic/keyword ui-d/wintitle ">email</wintitle> and <wintitle class="+ topic/keyword ui-d/wintitle ">report</wintitle> palettes.</p>
+</conbody>
+</concept>

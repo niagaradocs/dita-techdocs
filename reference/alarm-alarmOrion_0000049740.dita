@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="alarmOrion-OrionAlarmService" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">alarmOrion-OrionAlarmService</title>
+<shortdesc class="- topic/shortdesc ">The <uicontrol class="+ topic/ph ui-d/uicontrol ">alarmOrion</uicontrol> provides a way to
+handle a large number of alarms (i.e more than 200,000). It requires
+Orion database system. The alarmOrionService supports the RDBMS platform.
+The rdb provides database ords used to configure exported data in
+the RDBMS database.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Orionalarm<indexterm class="- topic/indexterm ">OrionAlarmService</indexterm></indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">The <uicontrol class="+ topic/ph ui-d/uicontrol ">OrionAlarmService</uicontrol> component
+is available in the <apiname class="+ topic/keyword pr-d/apiname ">alarmOrion</apiname> palette.</p><fig class="- topic/fig ">
+<title class="- topic/title ">OrionAlarmService Properties</title>
+<image href="../graphic/OrionAlarmServicePropertysheet_0000049750.png" placement="break" scale="65" class="- topic/image "/>
+</fig><p class="- topic/p ">In addition to the standard properties (Status, Enabled,
+and Fault Cause), this component provides these properties.</p><p class="- topic/p ">To access, expand <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol></menucascade> and right-click <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">OrionAlarmService</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Views</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">AX Property Sheet</uicontrol></menucascade>.</p></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Type</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm Db Config</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">1–250,000 records</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the number of alarm records to store in the histories
+database. When the capacity is reached, newer alarm records overwrite
+the oldest records.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm Class</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">drop-down list (defaults to Medium)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_AlarmClass-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_AlarmClass-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Master Alarm Instructions</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">additional properties</propvalue><?Pub Caret 15?>
+<propdesc class="- topic/stentry     reference/propdesc ">Click the <image href="../graphic/MasterAlarm_0000089109.png" scale="65" class="- topic/image "/>icon to open a window for adding and managing alarm
+instructions. Following are the instructions:<p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">Add</uicontrol> creates a new instruction.</p><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">Edit</uicontrol> edits
+a existing instruction.</p><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">Remove</uicontrol> deletes
+the selected instruction from the list.</p><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">Move Up/Down</uicontrol> changes the order of the instructions in the list.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Coalesce Alarms</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">When <option class="+ topic/keyword pr-d/option ">true</option> is selected and saved, this
+property combines alarm notifications, which may improve system performance
+and lower network traffic. However, by combining alarm notifications,
+in some cases (when an alarm is initiated and quickly cleared), you
+may only see the “alarm cleared” notification and not the original
+alarm. To see all alarm notifications individually, select false.
+When <option class="+ topic/keyword pr-d/option ">false</option> is selected and saved, the Coalesce Alarms
+does not combine the alarms, but sends individual alarm notifications.</p><p class="- topic/p "><note class="- topic/note ">If sequences or notifications in the Supervisor station
+are triggered by alarms, you should not coalesce alarms. You do not
+coalesce alarms if you may need to document security incidents.</note></p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Database</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">ord</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Provides the ord path to the database that is used by the
+Orion Alarm Service.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">RdbAlarmDatabaseConversion</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">additional properties</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Configures additional parameters to convert a RDBMS to an
+Orion database.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

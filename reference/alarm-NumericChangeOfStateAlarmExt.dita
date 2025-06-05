@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--Arbortext, Inc., 1988-2019, v.4002--><?Pub Inc?><reference id="Alarm-NumericChangeOfStateAlarmExt-CB3B756E" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">alarm-NumericChangeOfStateAlarmExt</title>
+<shortdesc class="- topic/shortdesc ">This extension implements a change of state alarm detection
+algorithm for numeric objects. Each algorithm instance defines a set
+of numeric values that should be considered offnormal conditions and,
+therefore, should generate an alarm. This alarm extension is available
+in the <apiname class="+ topic/keyword pr-d/apiname ">Extensions</apiname> folder of the <wintitle class="+ topic/keyword ui-d/wintitle ">alarm</wintitle> palette.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">alarm-NumericChangeOfStateAlarmExt</indexterm>
+<indexterm class="- topic/indexterm ">extensions<indexterm class="- topic/indexterm ">NumericChangeOfStateAlarmExt</indexterm></indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><image href="../graphic/OffnormalAlgorithmNum_Alarms.png" placement="break" scale="80" class="- topic/image "/>It raises an alarm if the floating-point
+out-value rounded towards zero is equal to any of the specified alarm
+values. This is useful when <keyword conkeyref="wh_variables_n4/niagara" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara" class="- topic/keyword "/> numeric points are exported as Integer or Positive Integer
+BACnet objects. The intrinsic algorithms for these objects are out
+of range, which means that you must handle the numeric change-of-state
+through event enrollment objects.<title class="- topic/title "/></section><?Pub Caret 297?>
+</refbody>
+</reference>

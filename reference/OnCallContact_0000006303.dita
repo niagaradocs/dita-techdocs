@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="on-callcontact" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">On-call contact</title>
+<shortdesc class="- topic/shortdesc ">This item in an on-call contact list represents a single
+user and provides properties you configure for routing alarm notifications.
+Only users that exist under the UserService may be assigned to an
+on-call contact list.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">OnCallContact</indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><image href="../graphic/oncallcontact_0000011364_0000006283.png" placement="break" scale="65" class="- topic/image "/><p class="- topic/p ">Any time an on-call contact
+property changes, the on-call list initiates a notification cycle.
+You may edit on-call contact properties using the contact’s property
+sheet or the <wintitle class="+ topic/keyword ui-d/wintitle ">Edit</wintitle> window that is available from
+the <wintitle class="+ topic/keyword ui-d/wintitle ">On Call Contact Manager</wintitle>.</p></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Status</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_Status-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_Status-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Last Fault Cause</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/entsecLastFaultCause-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/entsecLastFaultCause-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Enabled</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/Enabled-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/Enabled-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Priority [on-call contact]</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "/>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsPriorityOnCall-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsPriorityOnCall-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Unacked Alarm Count</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_UnackedAlarmCount-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_UnackedAlarmCount-div" class="- topic/div ">Displays the total number</div></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">User Alarm Recipient</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Specifies the method by which the user receives notification
+of an alarm: If they have been added under the AlarmService, <option class="+ topic/keyword pr-d/option ">EmailRecipient</option> or <option class="+ topic/keyword pr-d/option ">SmsRecipient</option> are the
+available options. The EmailRecipient component is available in the <wintitle class="+ topic/keyword ui-d/wintitle ">email</wintitle> palette and the SmsRecipient is available in the <wintitle class="+ topic/keyword ui-d/wintitle ">Sms</wintitle> palette. You must choose an alarm recipient to designate
+the way alarm notifications are routed to the selected On Call Contact.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

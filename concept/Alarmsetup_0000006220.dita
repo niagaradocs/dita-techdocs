@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="AlarmServiceSetup-AFDCA426" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Alarm setup</title>
+<shortdesc class="- topic/shortdesc ">Configuring a system to process alarms involves adding
+an alarm extension to each point's property sheet. Alarm extensions
+are contained in the <wintitle class="+ topic/keyword ui-d/wintitle ">alarm</wintitle> palette.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">AlarmService<indexterm class="- topic/indexterm ">setting up</indexterm></indexterm><indexterm class="- topic/indexterm ">alarm extensions</indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">An alarm extension on a point issues alarms to the AlarmService,
+and updates the alarm record to reflect a state change when the parent
+point goes back to a normal state. The extension also notifies the
+point that an acknowledgment has been received.</p>
+<p class="- topic/p ">These basic steps are required to set up the alarming process:</p>
+<ol class="- topic/ol ">
+<li class="- topic/li "><p class="- topic/p ">Add the proper alarm extension to each component.</p><p class="- topic/p ">Alarm
+extension types must match their parent component type. For example,
+an <apiname class="+ topic/keyword pr-d/apiname ">OutOfRangeAlarmExt</apiname> goes with a Numeric point
+type and a <apiname class="+ topic/keyword pr-d/apiname ">BooleanChangeOfStateAlarmExt</apiname> goes with
+a Boolean point type.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Configure each point’s alarm extension properties to
+define when the point meets an alarm condition (is in an alarmed state). </p></li>
+<li class="- topic/li "><p class="- topic/p ">Setting up alarm routing by defining where an alarm record
+is to be sent. This includes sending the alarm to the alarm console.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Configuring capacity and other alarm management properties.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Manage the alarm archive using the alarm archive management
+tools.</p></li>
+</ol>
+</conbody>
+</concept>

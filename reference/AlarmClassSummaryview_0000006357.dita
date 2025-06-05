@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="FoxAlarmClassSummary" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Alarm Class Summary view</title>
+<shortdesc class="- topic/shortdesc ">The alarm class summary provides a tabular presentation
+of data associated with all alarm classes that are assigned to the <apiname class="+ topic/keyword pr-d/apiname ">AlarmService</apiname>.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Alarm Class Summary view</indexterm>
+<indexterm class="- topic/indexterm ">views<indexterm class="- topic/indexterm ">Alarm Class Summary</indexterm></indexterm>
+</keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">As with other tables, you can show or hide columns and
+use other standard table controls and options that are provided in
+the Table Options menu. The Table Options menu is located in the top
+right corner of the table and the export toolbar icon is available
+on the toolbar.</p><image href="../graphic/Alarmclasssummary_0000031635.png" placement="break" scale="65" class="- topic/image "/><note class="- topic/note ">Double-click on any row
+in the view to change to the property sheet view of the alarm class
+that you clicked on. You can also use the popup menu to select a view.</note></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Column</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Name</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Identifies the alarm class.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Total</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the total number of alarms associated with the
+alarm class.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Open</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the total number of open alarms associated with
+the alarm class.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In Alarm</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the total number of alarms (points) for the alarm
+class that are currently in the alarm state.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Unacked</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the total number of unacknowledged alarms associated
+with the alarm class.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Last Alarm</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">date and time</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the timestamp of the last alarm associated with
+the alarm class.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">alarm.Class.priority</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Lists the priority of each alarm transition type, for example:
+“toOffnoamrl=1,” “toFault=60,” “toNormal=220,”
+and so on.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">To Path String</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Identifies, as a string value, the path to the alarm class.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

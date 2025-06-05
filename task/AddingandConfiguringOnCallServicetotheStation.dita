@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!--Arbortext, Inc., 1988-2019, v.4002--><task id="OnCallConfiguration-495D264F" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Adding and Configuring OnCall Service to the Station</title>
+<shortdesc class="- topic/shortdesc ">This topic describes how to add the <uicontrol class="+ topic/ph ui-d/uicontrol ">OnCall Service</uicontrol> to the station and configure the <uicontrol class="+ topic/ph ui-d/uicontrol ">OnCallList</uicontrol>. The list contains people designated to be on-call during a particular
+period. When an alarm is raised in your station, the active people
+receive a notification about the alarm.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Configuring</indexterm></keywords>
+</metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq "><keyword conkeyref="wh_variables_n4/Workbench" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword ">Workbench</keyword> is open and you are connected to the station.</prereq>
+<context class="- topic/section task/context "/>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To add the <parmname class="+ topic/keyword pr-d/parmname ">OnCallService</parmname> to a station,
+open the <uicontrol class="+ topic/ph ui-d/uicontrol ">onCall</uicontrol> palette and drag the <uicontrol class="+ topic/ph ui-d/uicontrol ">OnCallService</uicontrol> component to the <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol></menucascade> container.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Name</wintitle> window opens.<image href="../graphic/OnCallService.png" placement="break" scale="65" scope="local" class="- topic/image "/></stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Rename the service, or use the default name, and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The added <wintitle class="+ topic/keyword ui-d/wintitle ">OnCallService</wintitle> is available
+in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol> container.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Right-click the <uicontrol class="+ topic/ph ui-d/uicontrol ">OnCallService</uicontrol> in
+the Nav tree, select <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Views</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">On Call List Manager</uicontrol></menucascade></cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">On Call List Manager</wintitle> window opens.<image href="../graphic/OnCallListMg.png" placement="break" scale="65" scope="local" class="- topic/image "/></stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To add the new list, click <uicontrol class="+ topic/ph ui-d/uicontrol ">New</uicontrol>,
+select <uicontrol class="+ topic/ph ui-d/uicontrol ">On Call List</uicontrol> and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">New</wintitle> window opens<image href="../graphic/OnCallList.png" placement="break" scale="65" scope="local" class="- topic/image "/></stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the <wintitle class="+ topic/keyword ui-d/wintitle ">New</wintitle> window, type the new <uicontrol class="+ topic/ph ui-d/uicontrol ">Name</uicontrol> or use the default name and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">You can see the added <wintitle class="+ topic/keyword ui-d/wintitle ">On Call List</wintitle> in the <wintitle class="+ topic/keyword ui-d/wintitle ">On Call List Manager</wintitle> view.<image href="../graphic/OnCallManagerList.png" placement="break" scale="65" scope="local" class="- topic/image "/></stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To edit the list, select the list from the existing <uicontrol class="+ topic/ph ui-d/uicontrol ">On Call Lists</uicontrol>, click <uicontrol class="+ topic/ph ui-d/uicontrol ">Edit</uicontrol>, type
+the new name and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Repeat the steps 4, 5 and 6 to add more number of <uicontrol class="+ topic/ph ui-d/uicontrol ">On Call Lists</uicontrol>.</cmd></step>
+</steps>
+<result class="- topic/section task/result "/>
+<example class="- topic/example "/>
+<postreq class="- topic/section task/postreq "/>
+</taskbody>
+</task>

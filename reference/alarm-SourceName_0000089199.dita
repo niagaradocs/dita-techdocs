@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="Alarm-SourceName-096B9744" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">alarm-SourceName</title>
+<shortdesc class="- topic/shortdesc ">This component creates a customized alarm source name using
+a BFormat string that obtains values from objects. This feature is
+primarily for developers.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Source name<indexterm class="- topic/indexterm ">TextCustomizer</indexterm></indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><fig class="- topic/fig ">
+<title class="- topic/title ">Source Name Properties<image href="../graphic/SourceName_0000089189.png" placement="break" scale="65" scope="local" class="- topic/image "/></title>
+</fig><p class="- topic/p ">To access, expand <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">OrionAlarmService</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">RdbAlarmDatabaseConversion</uicontrol></menucascade> and
+double-click <uicontrol class="+ topic/ph ui-d/uicontrol ">SourceName</uicontrol>.</p></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Op</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">drop-down list</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Selects where to appy text.<p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Use Existing</option> ignores text.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Prepend</option> prefaces the name with
+text.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Append</option> places text as a suffix to the
+name.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Replace</option> replaces the name altogether
+with text.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Text</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">BF Format</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Defines the format string as normal text with embedded
+scripts denoted by the percentage symbol (%). The driver maps calls
+within the script to an object’s methods. You can chain using
+the dot operator (.). To insert a percentage character itself, use
+two percentage symbols (%%).</p><p class="- topic/p ">Several special functions are available:</p><p class="- topic/p ">“%time()%” formats the current time as BAbsTime.</p><p class="- topic/p ">“%lexicon(mobile:key)%” gets the specified lexicon
+text.</p></propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

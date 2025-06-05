@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="AlarmConsoleMapping-A8ACE4C7" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">AlarmClassMapper</title>
+<shortdesc class="- topic/shortdesc ">Alarm class mapping provides a way to assign one or more
+alarm classes to a common set of alarm-handling parameters. You access
+this mapper from the alarm console by clicking <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Alarm</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">AlarmClass Mapping ...</uicontrol>
+</menucascade> or by clicking the chevron next to this property on
+the <wintitle class="+ topic/keyword ui-d/wintitle ">Alarm Console</wintitle> property sheet.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Alarm class mapping</indexterm>
+</keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><title class="- topic/title ">Alarm Class Mapper window</title><p class="- topic/p ">One benefit of
+this type of mapping is that you can import alarms from a variety
+of alarm classes and have them display, link, or sound in a common
+manner. You do this by creating alarm class definitions and then associating
+(mapping) existing alarm classes to these definitions.</p><image href="../graphic/alarmclassmapper_0000014089_0000006322.png" placement="break" scale="65" class="- topic/image "/><p class="- topic/p ">The window has two panes:</p><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Upper pane: <wintitle class="+ topic/keyword ui-d/wintitle ">Alarm Class Definitions</wintitle> allows
+you to create, delete, or edit alarm mapper definitions before assigning
+them to existing classes.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Lower pane: <wintitle class="+ topic/keyword ui-d/wintitle ">Alarm Class Definition Mapping</wintitle> assigns any existing alarm classes to the selected definition.</p></li>
+</ul></section>
+<section class="- topic/section "><title class="- topic/title ">Buttons</title></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Button</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">New</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">button</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Opens the window used to create the entity you are working
+on</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Edit</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">button</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Opens the Edit dialog box. Use this dialog box to edit an
+entity. Which entity to edit depends on the context within the system.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Delete</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">button</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Removes the selected record from the database.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Add Mapping</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">button</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Opens the <wintitle class="+ topic/keyword ui-d/wintitle ">Map Alarm Class</wintitle> window, which
+is where you associate an alarm class with a definition.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Remove Mapping</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">button</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Deletes the association between the selected alarm class
+and mapping definition.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

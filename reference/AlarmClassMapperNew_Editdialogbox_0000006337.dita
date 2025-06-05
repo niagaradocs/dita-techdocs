@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="AlarmClassMapperNewEditDialogBox" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Alarm Class Mapper New/Edit window</title>
+<shortdesc class="- topic/shortdesc ">This window creates or edits an alarm class mapper record.
+To access this window, click the <uicontrol class="+ topic/ph ui-d/uicontrol ">New</uicontrol> or <uicontrol class="+ topic/ph ui-d/uicontrol ">Edit</uicontrol> buttons on the<uicontrol class="+ topic/ph ui-d/uicontrol ">Alarm Class Mapper</uicontrol> window.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Alarm Class Mapper New/Edit window</indexterm>
+</keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><image href="../graphic/alarmclassmappereditdialog_0000014088_0000006321.png" placement="break" scale="65" class="- topic/image "/></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Column</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Name</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the name of an existing alarm class.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Icon</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">ord</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "> Enters or selects the path of an icon.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Hyperlink</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">ord</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Enters or selects an Ord, a BQL Query or a path to a component
+that you would like to associate with an alarm status on the component
+you are configuring.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Sound</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">ord</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Enters the path to a sound file that will execute when the
+current component is in an alarm state.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

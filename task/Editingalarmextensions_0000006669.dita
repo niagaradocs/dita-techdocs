@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="EditingAlarmExtensions" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Configuring alarm extensions</title>
+<shortdesc class="- topic/shortdesc ">You can change extension properties one at a time or as
+a group using the alarm extensions manager.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">alarm extensions<indexterm class="- topic/indexterm ">econfiguring</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq ">You are viewing the alarm extensions manager.</prereq>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Select and right-click one or more (for batch editing)
+alarm extensions.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Opens the popup menu and select a change to make to all
+selected extensions.</cmd>
+<stepxmp class="- topic/itemgroup task/stepxmp ">For example, the following selection turns on <option class="+ topic/keyword pr-d/option ">toOffnormal</option> for all selected extensions.<image href="../graphic/alarmextensionmanagerpopupmenu_0000014218.png" placement="break" scale="65" class="- topic/image "/></stepxmp>
+<info class="- topic/itemgroup task/info ">In addition to toOffnormal, you can enable and disable <option class="+ topic/keyword pr-d/option ">toFault</option>.</info>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To change the alarm class assignment of the selected alarm
+extension(s), click <option class="+ topic/keyword pr-d/option ">Edit Alarm Class</option>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The system opens another menu.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Assign the alarm class and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK.</uicontrol></cmd></step>
+</steps>
+</taskbody>
+</task>

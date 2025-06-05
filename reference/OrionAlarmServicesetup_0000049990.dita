@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="OrionAlarmServiceSetup-7F25D4D2" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Orion database setup</title><shortdesc class="- topic/shortdesc ">By default, the framework supports a standard file database
+for storing alarms. Storing open alarms in this local file alarm database
+and cleared alarms in a remote Orion alarm database provides an effective
+way to manage alarms.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Orion alarm database</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p ">Open alarms include alarms that have not been acknowledged
+and not yet transitioned back to normal. Cleared alarms are alarms
+that have been acknowledged and transitioned back to normal.</p><p class="- topic/p ">This table summarizes the possible alarm database configurations.</p><table class="- topic/table "><title class="- topic/title ">Configurations table</title><tgroup cols="4" class="- topic/tgroup "><colspec colname="col1" class="- topic/colspec "/><colspec colname="COLSPEC0" class="- topic/colspec "/><colspec colname="col2" class="- topic/colspec "/><colspec colname="COLSPEC1" class="- topic/colspec "/><thead class="- topic/thead "><row class="- topic/row "><entry class="- topic/entry ">Description</entry><entry class="- topic/entry ">Local alarm database</entry><entry class="- topic/entry ">Remote alarm database</entry><entry class="- topic/entry ">Comments</entry></row></thead><tbody class="- topic/tbody "><row class="- topic/row "><entry class="- topic/entry ">Station with the default local file alarm database and no remote
+database</entry><entry align="center" class="- topic/entry "><image width="150" href="../graphic/DatabaseArchive_0000089087.png" class="- topic/image "/></entry><entry align="center" class="- topic/entry ">None</entry><entry class="- topic/entry ">This configuration is for small installations that generate
+few alarms.</entry></row><row class="- topic/row "><entry class="- topic/entry ">Station is configured with an OrionAlarmDatabase component.
+All alarms are stored in the remote database</entry><entry align="center" class="- topic/entry ">N/A</entry><entry align="center" class="- topic/entry "><image scale="30" width="150" href="../graphic/DatabaseArchive_0000089087.png" class="- topic/image "/></entry><entry class="- topic/entry ">Disadvantage: connection ups and downs can disrupt open alarm
+storage and retrieval.</entry></row><row class="- topic/row "><entry class="- topic/entry ">Station with a local file alarm database for open alarms, and
+a remote Orion alarm database for cleared alarms</entry><entry align="center" class="- topic/entry "><image scale="30" width="150" href="../graphic/databaseOpen_0000089086.png" class="- topic/image "/></entry><entry align="center" class="- topic/entry "><image scale="40" width="150" href="../graphic/databaseClearedAlarms_0000089085.png" class="- topic/image "/></entry><entry class="- topic/entry ">This is the best configuration. The local Orion alarm database
+in the station stores open alarms. The remote, larger Orion alarm
+database stores cleared alarms.<p class="- topic/p ">Alarm transitions, acknowledgements,
+adding notes, etc. update the local alarm database for viewing on
+an alarm console. Over time these should only be a small percentage
+of the total alarms and the local file alarm database should be large
+enough to handle them. Connection ups and downs should not impact
+these alarms.</p><p class="- topic/p ">The station archives cleared alarms to the remote
+Orion alarm database on a regular schedule.</p></entry></row></tbody></tgroup></table><p class="- topic/p ">The first two rows may describe your current alarm database
+configuration. The tasks in this section explain how to migrate from
+the first two configurations to the third. Gold platters represent
+open alarms. Blue platters represent cleared alarms. Larger remote
+databases can store many more cleared alarms than can be stored locally.</p><p class="- topic/p ">The <apiname class="+ topic/keyword pr-d/apiname ">alarmOrion</apiname> palette provides the components
+to configure these databases. For more information about relational
+databases, refer to the <cite class="- topic/cite "><ph conkeyref="doctitles_drivers/docRdbmsN4" conref="../reuse/WH_DriverSWDocTitles-Tridium_N4_0000009935.dita#WHDriverSoftwareDocumentTitles-9A319330/docRdbmsN4" class="- topic/ph ">RDBMS Driver Guide</ph></cite>.</p></section></refbody></reference>

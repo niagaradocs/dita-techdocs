@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="alarm-AlarmUxConsole" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Alarm Console </title>
+<shortdesc class="- topic/shortdesc ">This view of the console recipient displays all the alarms
+that have been routed to it. To open this view, right-click an <apiname class="+ topic/keyword pr-d/apiname ">alarmRecipient</apiname> under the <apiname class="+ topic/keyword pr-d/apiname ">AlarmService</apiname> and click <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Views</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol "> Alarm
+Console</uicontrol></menucascade>.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Ux Alarm Console</indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><image href="../graphic/AlarmConsoleBahuux_0000049970.png" placement="break" scale="65" class="- topic/image "/><p class="- topic/p ">The alarm console manages
+alarms on a per–point basis. Each row in the table is the most
+recent alarm from a point. </p><p class="- topic/p ">To sort the alarms in order of any
+column, click the<uicontrol class="+ topic/ph ui-d/uicontrol "> column bar</uicontrol> (once for ascending,
+twice for descending). </p><p class="- topic/p ">To view all current alarms from a particular
+point, double-click a row in the table. This opens the <wintitle class="+ topic/keyword ui-d/wintitle ">Open
+Alarm Sources</wintitle> view.</p><p class="- topic/p ">To use sound options, click the
+sound icon in the toolbar of the <wintitle class="+ topic/keyword ui-d/wintitle ">Alarm Console</wintitle> window.</p><p class="- topic/p ">Use the right-click menu in the alarms table or <uicontrol class="+ topic/ph ui-d/uicontrol ">Hyperlink</uicontrol> at the bottom of the <wintitle class="+ topic/keyword ui-d/wintitle ">Alarm Console</wintitle> view.</p><p class="- topic/p ">This view displays BFormat text under the Message Text
+column of the window. This message text comes from the text entered
+using the console’s <wintitle class="+ topic/keyword ui-d/wintitle ">Property Sheet</wintitle>.</p><p class="- topic/p ">The <wintitle class="+ topic/keyword ui-d/wintitle ">AX Alarm Console</wintitle> supports alarm sounds
+when running in desktop browsers. For mobile support, browse to the
+page on the mobile. Web browsers like Chrome can play mp3 and ogg
+sound files. This is not recommended due to lack of support in <keyword conkeyref="wh_variables_n4/Workbench" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword "/>.</p><note class="- topic/note ">The only format that works in both <keyword conkeyref="wh_variables_n4/Workbench" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword "/> and in a browser is wav.</note></section>
+<section class="- topic/section "><title class="- topic/title ">Icons for managing alarms</title><table class="- topic/table ">
+<tgroup cols="3" class="- topic/tgroup "><colspec colname="col1" colwidth="0.51*" class="- topic/colspec "/><colspec colname="col2" colwidth="0.28*" class="- topic/colspec "/><colspec colname="col3" colwidth="2.20*" class="- topic/colspec "/>
+<thead class="- topic/thead ">
+<row class="- topic/row ">
+<entry valign="top" class="- topic/entry ">Actions</entry>
+<entry valign="top" class="- topic/entry ">Icon</entry>
+<entry valign="top" class="- topic/entry ">Description</entry>
+</row>
+</thead>
+<tbody class="- topic/tbody ">
+<row class="- topic/row ">
+<entry class="- topic/entry ">Force Clear</entry>
+<entry class="- topic/entry "><image href="../graphic/ForceClear_0000049969.png" class="- topic/image "/></entry>
+<entry class="- topic/entry ">Allows you to delete the alarm.</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">Details </entry>
+<entry class="- topic/entry "><image href="../graphic/Details_0000049967.png" class="- topic/image "/></entry>
+<entry class="- topic/entry ">Allows you to view the alarm details.</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">Sound off </entry>
+<entry class="- topic/entry "><image href="../graphic/Soundoff_0000049964.png" class="- topic/image "/></entry>
+<entry class="- topic/entry ">Allows you to toggle sound on or off.</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">Continuous alarm</entry>
+<entry class="- topic/entry "><image href="../graphic/Continiousalarm_0000049968.png" class="- topic/image "/></entry>
+<entry class="- topic/entry ">Allows you to configure an alarm sound to play continuously
+until silenced.</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">Options</entry>
+<entry class="- topic/entry "><image href="../graphic/Options_0000049966.png" class="- topic/image "/></entry>
+<entry class="- topic/entry ">Allows you to open <wintitle class="+ topic/keyword ui-d/wintitle ">MultiSourceViewOptions</wintitle> window.</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">Select all visible</entry>
+<entry class="- topic/entry "><image href="../graphic/Selectallvisible_0000049965.png" class="- topic/image "/></entry>
+<entry class="- topic/entry ">Allows you to select all visible alarms in <uicontrol class="+ topic/ph ui-d/uicontrol ">Alarm
+Console</uicontrol>.</entry>
+</row>
+</tbody>
+</tgroup>
+</table></section>
+</refbody>
+</reference>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="OnCallServiceDocumentation-495CFE48" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">onCall Overview</title><?Pub Caret 2?>
+<shortdesc class="- topic/shortdesc ">The <uicontrol class="+ topic/ph ui-d/uicontrol ">onCall</uicontrol> module allows you to
+configure on-call lists: lists of users who are designated to handle
+problems at different times of day. It contacts the appropriate user
+from the current on call list when an alarm condition is raised.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Overview</indexterm></keywords>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">The <apiname class="+ topic/keyword pr-d/apiname ">onCall</apiname> functionality is provided by the
+following component types:<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">OnCallService</parmname> added from the <apiname class="+ topic/keyword pr-d/apiname ">onCall</apiname> palette.</p></li>
+<li class="- topic/li "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">OnCallRecipient</parmname> added from the <apiname class="+ topic/keyword pr-d/apiname ">onCall</apiname> palette.</p></li>
+<li class="- topic/li "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">OnCallList</parmname> created using the <wintitle class="+ topic/keyword ui-d/wintitle ">OnCallListManager</wintitle> view on the <uicontrol class="+ topic/ph ui-d/uicontrol ">OnCallService</uicontrol>.</p></li>
+<li class="- topic/li "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">OnCallContact</parmname> created using the <wintitle class="+ topic/keyword ui-d/wintitle ">OnCallContactManager</wintitle> view on an <uicontrol class="+ topic/ph ui-d/uicontrol ">OnCallList</uicontrol>.</p></li>
+</ul></p>
+</conbody>
+</concept>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="InstructionsManagerView" xml:lang="en" class="- topic/topic       reference/reference ">
+<title id="alarm-AlarmInstructionsManager" class="- topic/title ">Alarm Instructions Manager</title>
+<shortdesc class="- topic/shortdesc ">This view displays a standard table-type report that provides
+a way to view, assign, and edit alarm instructions.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Instructions Manager view</indexterm>
+<indexterm class="- topic/indexterm ">views<indexterm class="- topic/indexterm ">Instructions Manager</indexterm></indexterm>
+</keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><image href="../graphic/instructionsmanagerview_0000014239_0000006345.png" placement="break" scale="65" class="- topic/image "/><p class="- topic/p "> The view is comprised of
+three primary panes:</p><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Points</wintitle> pane, located in the left half
+of the view, displays all points that are currently available for
+instruction assignment or editing. These points may have instructions
+assigned to them, or they may have no instructions. they are simply
+the points that are available.</p></li>
+<li class="- topic/li "><p class="- topic/p ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Point Instructions</wintitle> pane, located in
+the top right portion of the view, lists the instructions that are
+associated with the point or points currently selected in the <wintitle class="+ topic/keyword ui-d/wintitle ">Points</wintitle> pane. You add, remove, reorder, and edit these
+instructions using the buttons to the right. When selecting multiple
+points, all must have identical instructions for the instructions
+to appear in this pane. If there are differences between instructions
+for the selected points, nothing appears in the pane.</p></li>
+<li class="- topic/li "><p class="- topic/p ">The Master Instructions List displays all master instructions
+that are available for adding to the <wintitle class="+ topic/keyword ui-d/wintitle ">Point Instructions</wintitle> pane. Master instructions allow you to choose and assign a pre-listed
+set of instructions to one or more points.</p></li>
+</ul><note class="- topic/note ">Always click the <uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol> button immediately
+after making any changes. The Save action applies to all instructions
+and all points that are selected when you click <uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol>. Changes are lost if the screen or if just the pane is refreshed
+before saving.</note></section>
+<section class="- topic/section "><title class="- topic/title ">Points section</title></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Column</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">SecurityAlarm</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Identifies the name of the control point source that is
+associated with the alarm.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Condition</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Provides the name of the property that holds the alarm instructions.</propdesc>
+</property>
+</properties>
+<section class="- topic/section "><title class="- topic/title ">Point Instructions buttons</title></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Type</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Add</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">button</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Opens the <wintitle class="+ topic/keyword ui-d/wintitle ">Add</wintitle> window, which you can
+use to type in the text for an instruction.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Remove</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">button</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Deletes the selected instruction.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Edit</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">button</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Opens the <wintitle class="+ topic/keyword ui-d/wintitle ">Edit</wintitle> window, which you can
+use to change the text of an existing instruction.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Save</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">button</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Commits any changes you made to the point instructions.
+It applies to all instructions and points currently selected. Changes
+are lost if the screen, or just the pane, is refreshed before saving.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Move Up/Down</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">buttons</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Reorders the instructions in the window.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Add from Master List</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">button</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Adds instructions from the master list.</propdesc>
+</property>
+</properties>
+<section class="- topic/section "><title class="- topic/title ">Master Instructions List</title></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Item</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Add</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">button</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Opens the Add window, which allows you to enter the text
+for the Master Instructions list. These instructions are available
+to be added to individually-selected point instructions using the <uicontrol class="+ topic/ph ui-d/uicontrol ">Add From Master List</uicontrol> button.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Remove</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">button</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Removes the instruction from the Master Instructions list.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Edit</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">button</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Allows you to change an instruction in the Master Instructions
+list.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

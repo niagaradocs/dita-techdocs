@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="AddingAnExtensionToAComponent" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Adding an alarm extension to a point</title>
+<shortdesc class="- topic/shortdesc ">The procedure for adding an alarm extension to a point's
+property sheet is basically the same for all components.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">extension<indexterm class="- topic/indexterm ">setting up</indexterm><indexterm class="- topic/indexterm ">adding to a component</indexterm></indexterm><indexterm class="- topic/indexterm ">component<indexterm class="- topic/indexterm ">adding an extension</indexterm></indexterm>
+</keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq ">The <wintitle class="+ topic/keyword ui-d/wintitle ">alarm</wintitle> palette is open.</prereq>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To display the point’s property sheet view, select
+the component in the Nav tree and do one of the following:</cmd>
+<choices class="- topic/ul task/choices ">
+<choice class="- topic/li task/choice ">Right-click the component and click the property sheet view.</choice>
+<choice class="- topic/li task/choice ">Select the property sheet view from the view selector.</choice>
+</choices>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Expand the extensions folder in the palette and find the
+extension that matches your data type and collection method.</cmd>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Drag or copy and paste the extension onto the bottom of
+the properties sheet.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To view extension properties, expand or double-click the
+extension.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Fill in the property sheet.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Save your sheet.</cmd></step>
+</steps>
+</taskbody>
+</task>

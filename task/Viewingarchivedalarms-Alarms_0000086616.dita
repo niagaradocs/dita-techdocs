@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="ViewingArchivedAlarmsRDBMS-D3B23AC6" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Viewing alarms</title>
+<shortdesc class="- topic/shortdesc ">The Alarm Console is where you view open alarms. The <uicontrol class="+ topic/ph ui-d/uicontrol ">OrionAlarmArchiveProvider</uicontrol> includes views for displaying
+archived alarms. You can also use a BQL query.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">alarms<indexterm class="- topic/indexterm ">viewing alarms</indexterm></indexterm></keywords></metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq ">Your file alarm database contains open alarms. Your remote
+Orion alarm database contains archived alarms.</prereq>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To view archived alarms, double–click <uicontrol class="+ topic/ph ui-d/uicontrol ">OrionAlarmService</uicontrol>, click the drop-down list in the upper
+right corner of the view and select <uicontrol class="+ topic/ph ui-d/uicontrol ">Alarm Db View</uicontrol>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Alarm History</wintitle> view opens.<image href="../graphic/alarmhistoryview_0000014237_0000006343.png" placement="break" scale="65" class="- topic/image "/><p class="- topic/p ">The drop-down list indicates all the information
+this view can contain.</p></stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To query the Orion alarm database, use the openAlarms or
+ackPending extents.</cmd>
+<info class="- topic/itemgroup task/info ">For example:<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p "><userinput class="+ topic/ph sw-d/userinput ">alarm:archive|bql:select * where source like '%/control/temp/BooleanChangeOfStateAlarmExt'</userinput></p></li>
+<li class="- topic/li "><p class="- topic/p "><userinput class="+ topic/ph sw-d/userinput ">alarm:archive|bql:select * where (sourceState =
+'normal' or sourceState = 'alert') and ackState = 'acked'</userinput></p></li>
+<li class="- topic/li "><p class="- topic/p "><userinput class="+ topic/ph sw-d/userinput ">"alarm:archive|bql: select * where source = OrdList
+'slot:/control/temp'"</userinput></p></li>
+</ul><p class="- topic/p ">For any query looking for both open and closed alarms, you
+must run it against both the local database and the archive. Archived
+records are part of the openAlarms. For example, neither of the following
+queries results in any records from the archive alarm:</p><p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">alarm:|bql:select * from openAlarms</codeph></p><p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">alarm:archive|bql:select
+* from openAlarms</codeph></p></info>
+</step>
+</steps>
+</taskbody>
+</task>

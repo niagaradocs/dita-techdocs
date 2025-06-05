@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="AlarmService" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Alarm services</title>
+<shortdesc class="- topic/shortdesc ">Each station may contain a single <apiname class="+ topic/keyword pr-d/apiname ">AlarmService</apiname> that coordinates the routing of alarms within the framework, and
+maintains the alarm database. </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">AlarmService</indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">The standard <apiname class="+ topic/keyword pr-d/apiname ">AlarmService</apiname> stores alarms persistently
+on the station host (controller). The <apiname class="+ topic/keyword pr-d/apiname ">AlarmService</apiname> is available in the <wintitle class="+ topic/keyword ui-d/wintitle ">alarm</wintitle> palette.</p>
+<p class="- topic/p ">If you do not have an <apiname class="+ topic/keyword pr-d/apiname ">AlarmService</apiname> in your active
+station, drag a copy of it from the <wintitle class="+ topic/keyword ui-d/wintitle ">alarm</wintitle> palette.</p>
+<p class="- topic/p ">The <apiname class="+ topic/keyword pr-d/apiname ">AlarmService</apiname> may contain one or more alarm
+classes. An alarm class may route alarms to one or more alarm recipients.
+The routing process involves notifying the recipient of the alarm
+and receiving back from the recipient an alarm acknowledgement. The
+default view (wire sheet view) of the <apiname class="+ topic/keyword pr-d/apiname ">AlarmService</apiname> makes it easy to visualize the relationships between the alarm class
+and the alarm recipient. These relationships are created by linking
+the alarm class to the alarm recipient. In addition to the wire sheet
+and property sheet views, the system provides several other <apiname class="+ topic/keyword pr-d/apiname ">AlarmService</apiname> views.</p>
+</conbody>
+</concept>

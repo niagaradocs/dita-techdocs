@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="SilencingAlarms" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Silencing alarms</title>
+<shortdesc class="- topic/shortdesc ">This procedure turns off the alarm sound. It should be
+followed by resolving the alarm condition and acknowledging the alarm.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">alarms<indexterm class="- topic/indexterm ">silencing</indexterm></indexterm></keywords></metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq ">The alarm console is open.</prereq>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Select alarm source(s) to silence. You may select multiple
+alarms using the <uicontrol class="+ topic/ph ui-d/uicontrol ">Shift</uicontrol> or <uicontrol class="+ topic/ph ui-d/uicontrol ">Ctrl</uicontrol> keys.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To silence one or more alarms, click the <image height="0.271cm" href="../graphic/alarmsilence_0000007750.png" class="- topic/image "/><uicontrol class="+ topic/ph ui-d/uicontrol ">Alarm Silence</uicontrol> toolbar button or select <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Alarm</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol "> Silence</uicontrol>
+</menucascade> from the menu.</cmd></step>
+</steps>
+</taskbody>
+</task>

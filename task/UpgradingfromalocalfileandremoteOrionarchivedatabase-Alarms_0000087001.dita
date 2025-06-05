@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="StoringAndArchivingAlarms-D31D5679" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Upgrading from an Orion archive database</title>
+<shortdesc class="- topic/shortdesc ">If your station is configured to archive all alarms (open
+and cleared) on a regular basis to a remote Orion archive database,
+that database more than likely contains open alarms. This procedure
+migrates a local file alarm database with a remote Orion archive database
+to a new local file alarm database for open alarms and a remote Orion
+alarm database for cleared alarms. Use this procedure if you currently
+have both a local file alarm database a remote Orion archive database.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">open alarms</indexterm><indexterm class="- topic/indexterm ">cleared
+alarms</indexterm><indexterm class="- topic/indexterm ">archive database</indexterm></keywords>
+</metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq "> Your station is licensed for the archive alarm feature and
+configured with the RdbmsNetwork. You have an OrionAlarmService in
+your station’s <uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol> container that
+supports your remote Orion archive database. This database contains
+open alarms. You are working in <keyword conkeyref="wh_variables_n4/Workbench" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword "/> and are connected to the station.</prereq>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Open the <apiname class="+ topic/keyword pr-d/apiname ">alarm</apiname> palette and add an <uicontrol class="+ topic/ph ui-d/uicontrol ">AlarmService</uicontrol> to your <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol></menucascade> container.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">Temporarily you now have two alarm service components
+in your station.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Copy the alarm classes and recipients from the current <uicontrol class="+ topic/ph ui-d/uicontrol ">AlarmService</uicontrol> to the new <uicontrol class="+ topic/ph ui-d/uicontrol ">AlarmService</uicontrol>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">This sets up the new <uicontrol class="+ topic/ph ui-d/uicontrol ">AlarmService</uicontrol> with alarm priorities and recipients.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Add an <uicontrol class="+ topic/ph ui-d/uicontrol ">OrionArchiveAlarmProvider</uicontrol> to the newly-added <uicontrol class="+ topic/ph ui-d/uicontrol ">AlarmService</uicontrol> and double-click
+the provider.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The <uicontrol class="+ topic/ph ui-d/uicontrol ">OrionArchiveAlarmProvider</uicontrol> <wintitle class="+ topic/keyword ui-d/wintitle ">Property Sheet</wintitle> opens.<image href="../graphic/propertiesConfiguredOrionAlarmArchiveProvider_0000086627.png" placement="break" scale="65" class="- topic/image "/></stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Set <parmname class="+ topic/keyword pr-d/parmname ">Enabled</parmname> to <option class="+ topic/keyword pr-d/option ">true</option> and configure <parmname class="+ topic/keyword pr-d/parmname ">Rdb Ord</parmname> to point to the remote
+Orion alarms database used by the <uicontrol class="+ topic/ph ui-d/uicontrol ">OrionAlarmService</uicontrol>.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Expand <uicontrol class="+ topic/ph ui-d/uicontrol ">Execution Time</uicontrol> and configure
+when to trigger an archive of cleared alarms: <parmname class="+ topic/keyword pr-d/parmname ">Trigger Mode</parmname> (frequency) and <parmname class="+ topic/keyword pr-d/parmname ">Time Of Day</parmname> (time).</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Remove the original <uicontrol class="+ topic/ph ui-d/uicontrol ">AlarmService</uicontrol> by right-clicking it and clicking <uicontrol class="+ topic/ph ui-d/uicontrol ">Delete</uicontrol>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">You are back to having only one <uicontrol class="+ topic/ph ui-d/uicontrol ">AlarmService</uicontrol> in the station, which is required.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Save your changes and start or restart the station.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The station opens with the new alarms database configuration.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To move the open alarms from the remote Orion alarm database
+to the new file alarm database, right-click <uicontrol class="+ topic/ph ui-d/uicontrol ">OrionArchiveAlarmProvider</uicontrol> and click <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Actions</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Import Open Alarms</uicontrol></menucascade>.</cmd></step>
+</steps>
+<result class="- topic/section task/result ">The new local alarm database now contains all open alarms
+and the remote Orion alarm database contains only acknowledged alarms
+and alarms that have transitioned to normal.</result>
+</taskbody>
+</task>

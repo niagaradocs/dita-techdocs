@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="legal_niagara_tridium" outputclass="legal_niagara_tridium" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Legal Notice</title><?Pub Caret -2?><shortdesc class="- topic/shortdesc "/><refbody class="- topic/body        reference/refbody "><section id="address" class="- topic/section ">
+            <p class="- topic/p "><b class="+ topic/ph hi-d/b ">Tridium, Incorporated</b></p>
+            <p class="- topic/p ">3951 Western Parkway, Suite 350</p>
+            <p class="- topic/p ">Richmond, Virginia 23233</p>
+            <p class="- topic/p ">U.S.A.</p>
+        </section><section class="- topic/section ">
+            <title class="- topic/title ">Confidentiality</title>
+            <p class="- topic/p ">The information contained in this document is confidential information of Tridium, Inc., a Delaware corporation (Tridium). Such information and the software described herein, is furnished under a license agreement and may be used only in accordance with that agreement.</p>
+            <p class="- topic/p ">The information contained in this document is provided solely for use by Tridium employees, licensees, and system owners; and, except as permitted under the below copyright notice, is not to be released to, or reproduced for, anyone else.</p>
+            <p class="- topic/p ">While every effort has been made to assure the accuracy of this document, Tridium is not responsible for damages of any kind, including without limitation consequential damages, arising from the application of the information contained herein. Information and specifications published here are current as of the date of this publication and are subject to change without notice. The latest product specifications can be found by contacting our corporate headquarters, Richmond, Virginia.</p>
+        </section><section class="- topic/section ">
+            <title class="- topic/title ">Trademark notice</title>
+            <p class="- topic/p ">BACnet and ASHRAE are registered trademarks of American Society of Heating, Refrigerating and Air-Conditioning Engineers. Microsoft, Excel, Internet Explorer, Windows, Windows Vista, Windows Server, and SQL Server are registered trademarks of Microsoft Corporation. Oracle and Java are registered trademarks of Oracle and/or its affiliates. Mozilla and Firefox are trademarks of the Mozilla Foundation. Echelon, LON, LonMark, LonTalk, and LonWorks are registered trademarks of Echelon Corporation. Tridium, JACE, Niagara Framework, and Sedona Framework are registered trademarks, and Workbench are trademarks of Tridium Inc. All other product names and services mentioned in this publication that are known to be trademarks, registered trademarks, or service marks are the property of their respective owners.</p>
+        </section><section class="- topic/section ">
+            <title class="- topic/title ">Copyright and patent notice</title>
+            <p class="- topic/p ">This document may be copied by parties who are authorized to distribute Tridium products in connection with distribution of those products, subject to the contracts that authorize such distribution. It may not otherwise, in whole or in part, be copied, photocopied, reproduced, translated, or reduced to any electronic medium or machine-readable form without prior written consent from Tridium, Inc.</p>
+            
+            <p class="- topic/p ">Copyright © 2025 Tridium, Inc. All rights reserved. </p><p class="- topic/p ">The product(s) described herein may be covered by one or more U.S. or foreign patents of Tridium. </p><p class="- topic/p ">For an important patent notice, please visit: <xref href="http://www.honpat.com" scope="external" class="- topic/xref "/>.</p>
+        </section></refbody></reference>

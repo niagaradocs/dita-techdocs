@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!--Arbortext, Inc., 1988-2019, v.4002--><concept id="ConfigureContactMethods-4D6CDB99" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Configure Contact Methods in AlarmService</title>
+<shortdesc class="- topic/shortdesc ">The topic explains about how to contact the user when onCall
+contacts calls the particular on-call user in the scheduled list.
+The contact methods have been defined in the <uicontrol class="+ topic/ph ui-d/uicontrol ">AlarmService</uicontrol> to route alarms to users by adding the AlarmRecipients.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm "/></keywords></metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">To configure the AlarmRecipients in the <uicontrol class="+ topic/ph ui-d/uicontrol ">AlarmService</uicontrol>, drag the two recipients in the <uicontrol class="+ topic/ph ui-d/uicontrol ">AlarmService</uicontrol> folder which are shown in the below examples.<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">EmailRecipient</uicontrol> available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">email</uicontrol> palette. It sends an email to the user's own email
+address. Refer to <xref format="dita" href="../task/ConfiguringEmailRecipientcomponent_0000001918.dita" scope="local" type="task" class="- topic/xref "><?Pub _previewtext
+text="Configuring the EmailRecipient"?></xref> for more details.</p></li>
+<li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">SmsRecipient:</uicontrol> available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">sms</uicontrol> palette. It sends a text message to the user's own
+phone number. Refer to <xref format="dita" href="../task/ConfiguringanSmsRecipient_0000007039.dita" scope="local" type="task" class="- topic/xref "><?Pub _previewtext text="Configuring an SmsRecipient"
+?></xref> for more details.</p></li>
+</ul><image href="../graphic/OncallMethod.png" placement="break" scale="65" scope="local" class="- topic/image "/></p>
+<p class="- topic/p ">Although these <uicontrol class="+ topic/ph ui-d/uicontrol ">AlarmRecipients</uicontrol> are configured
+with their email addresses or phone numbers. When a user receives
+the onCall notifications, it sends the notification to the contact
+details configured on the users themselves, not to the contact details
+configured in the <uicontrol class="+ topic/ph ui-d/uicontrol ">AlarmRecipient</uicontrol>. Typically,
+users can configure multiple OnCallContacts for the same <uicontrol class="+ topic/ph ui-d/uicontrol ">AlarmRecipient</uicontrol>.</p>
+<note class="- topic/note ">Unlike other <uicontrol class="+ topic/ph ui-d/uicontrol ">AlarmRecipients</uicontrol>, it is not
+necessary to link anything to their route Alarm actions. You may use
+an existing <uicontrol class="+ topic/ph ui-d/uicontrol ">AlarmRecipient</uicontrol> that is already
+receiving alarms routed from an <uicontrol class="+ topic/ph ui-d/uicontrol ">AlarmClass</uicontrol>,
+or you may add an unlinked <uicontrol class="+ topic/ph ui-d/uicontrol ">AlarmRecipient</uicontrol> that
+is only used by onCall. Both will work.</note>
+</conbody>
+</concept>

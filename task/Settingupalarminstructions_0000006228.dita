@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="SettingUpAlarmInstructions" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Setting up alarm instructions</title>
+<shortdesc class="- topic/shortdesc ">Alarm instructions provide immediate assistance to the
+system operator regarding how to recover from an alarm condition.
+You add instructions to individual points so that when the point goes
+into an alarm condition the instruction is available to guide the
+operator.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">point instructions</indexterm><indexterm class="- topic/indexterm ">master instructions</indexterm><indexterm class="- topic/indexterm ">instructions<indexterm class="- topic/indexterm ">form managing alarms</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Access the <wintitle class="+ topic/keyword ui-d/wintitle ">Instructions Manager</wintitle> view.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult "><fig class="- topic/fig ">
+<image href="../graphic/instructionsmanagerview_0000014239_0000006345.png" placement="break" scale="65" class="- topic/image "/>
+</fig><p class="- topic/p ">The screen capture above shows an example of one point and
+one master instruction selected.</p></stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Add or edit point instructions using the control buttons
+in the <wintitle class="+ topic/keyword ui-d/wintitle ">Point Instructions</wintitle> pane.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Add any master instructions in the <wintitle class="+ topic/keyword ui-d/wintitle ">Master Instructions
+List</wintitle> pane.</cmd>
+<info class="- topic/itemgroup task/info ">The master instructions list allows you to enter instructions
+that are available to be assigned to any point.</info>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Select the points that require instructions.</cmd>
+<info class="- topic/itemgroup task/info ">You may hold the <uicontrol class="+ topic/ph ui-d/uicontrol ">Shift</uicontrol> and <uicontrol class="+ topic/ph ui-d/uicontrol ">Ctrl</uicontrol> keys to select multiple points that receive the
+same instructions.<note class="- topic/note ">If you are selecting multiple points to edit
+their assigned instructions, all must have identical instructions
+for the instructions to appear in the <wintitle class="+ topic/keyword ui-d/wintitle ">Point Instructions</wintitle> pane. If there are differences between instructions for the selected
+points, nothing appears in the pane.</note></info>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the <wintitle class="+ topic/keyword ui-d/wintitle ">Master Instructions List</wintitle> pane,
+select the master instruction(s) to associate with the selected point(s)
+and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Add From Master List</uicontrol>.</cmd>
+<info class="- topic/itemgroup task/info ">You may hold the <uicontrol class="+ topic/ph ui-d/uicontrol ">Shift</uicontrol> and <uicontrol class="+ topic/ph ui-d/uicontrol ">Ctrl</uicontrol> keys to select multiple instructions to assign.</info>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Click <uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol>.</cmd>
+<info class="- topic/itemgroup task/info "><note type="attention" class="- topic/note ">Click <uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol> immediately
+after making any change. If the screen refreshes and you have not
+saved, you lose any instructions you are in the process of entering.</note></info>
+</step>
+</steps>
+<result class="- topic/section task/result ">Once you add the instructions text to an alarm, the instructions
+appear in the <wintitle class="+ topic/keyword ui-d/wintitle ">Alarm Record</wintitle> window (accessible
+from the <wintitle class="+ topic/keyword ui-d/wintitle ">Open Alarm Sources</wintitle> window) for any new
+alarms associated with the point.</result>
+</taskbody>
+</task>

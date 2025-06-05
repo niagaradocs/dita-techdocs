@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="ReplacingTheStandardAlarmDatabase-7C390871" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Setting up a remote Orion alarm database</title>
+<shortdesc class="- topic/shortdesc ">Open alarms need to be easily accessible in a station and
+cleared alarms need to be archived for historical and regulatory purposes.
+This procedure sets up a remote Orion alarm database for cleared alarms
+and configures when to back up these alarms from the local file alarm
+database to the remote Orion alarm database. Use this procedure if
+you currently have only the default local file alarm database in your
+station.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">open alarms</indexterm><indexterm class="- topic/indexterm ">cleared
+alarms</indexterm><indexterm class="- topic/indexterm ">Orion alarm database</indexterm><indexterm class="- topic/indexterm ">file alarm database</indexterm></keywords></metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq ">Your station is licensed for the archive alarm feature. You
+are working in <keyword conkeyref="wh_variables_n4/Workbench" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword "/> and are connected to the station. You have a remote Orion
+database connected and ready to use for archiving cleared alarms.</prereq>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Open one of the relational database palettes based on your
+type of database.</cmd>
+<info class="- topic/itemgroup task/info ">The palettes are:<p class="- topic/p "><apiname class="+ topic/keyword pr-d/apiname ">rdbHsqlDb</apiname> supports the
+default HSQL database that comes by default with a controller.</p><p class="- topic/p "><apiname class="+ topic/keyword pr-d/apiname ">rdbMySQL</apiname> supports a MySQL database.</p><p class="- topic/p "><apiname class="+ topic/keyword pr-d/apiname ">rdbOracle</apiname> supports an Oracle database.</p><p class="- topic/p "><apiname class="+ topic/keyword pr-d/apiname ">rdbSqlServer</apiname> supports a Microsoft Sql Server.</p></info>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Add the <uicontrol class="+ topic/ph ui-d/uicontrol ">RdbmsNetwork</uicontrol> to your station’s <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Drivers</uicontrol>
+</menucascade> container.</cmd>
+<info class="- topic/itemgroup task/info ">The framework uses a network and device model to configure an
+RDBMS.</info>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Add the database component (<uicontrol class="+ topic/ph ui-d/uicontrol ">HsqlDbDatabase</uicontrol>, <uicontrol class="+ topic/ph ui-d/uicontrol ">MySQLDatabase</uicontrol>, <uicontrol class="+ topic/ph ui-d/uicontrol ">OracleDatabase</uicontrol> or <uicontrol class="+ topic/ph ui-d/uicontrol ">SqlServerDatabase</uicontrol>) to the <uicontrol class="+ topic/ph ui-d/uicontrol ">RdbmsNetwork</uicontrol>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">This defines the type of remote Orion alarm database on
+your network.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Configure the database component (device) to connect to
+your remote RDBMS server.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Open the <apiname class="+ topic/keyword pr-d/apiname ">Orion</apiname> palette and add an <uicontrol class="+ topic/ph ui-d/uicontrol ">OrionService</uicontrol> component to the <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol></menucascade> container.</cmd>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Open the <apiname class="+ topic/keyword pr-d/apiname ">AlarmOrion</apiname> palette and add
+the <uicontrol class="+ topic/ph ui-d/uicontrol ">OrionArchiveAlarmProvider</uicontrol> to the AlarmService
+and double-click the provider.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The <uicontrol class="+ topic/ph ui-d/uicontrol ">OrionArchiveAlarmProvider</uicontrol> <wintitle class="+ topic/keyword ui-d/wintitle ">Property Sheet</wintitle> opens.<image href="../graphic/propertiesConfiguredOrionAlarmArchiveProvider_0000086627.png" placement="break" scale="65" class="- topic/image "/></stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Set <parmname class="+ topic/keyword pr-d/parmname ">Enabled</parmname> to <option class="+ topic/keyword pr-d/option ">true</option> and configure <parmname class="+ topic/keyword pr-d/parmname ">Rdb Ord</parmname> to point to the RDBMS
+you configured earlier.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Expand <uicontrol class="+ topic/ph ui-d/uicontrol ">Execution Time</uicontrol> and configure
+when to trigger an archive of cleared alarms by setting: <parmname class="+ topic/keyword pr-d/parmname ">Trigger Mode</parmname> (frequency) and <parmname class="+ topic/keyword pr-d/parmname ">Time Of Day</parmname> (time).</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Save your changes and restart the station.</cmd></step>
+</steps>
+<result class="- topic/section task/result ">This configures the file alarm database in your station to
+store open alarms and to periodically transfer cleared alarms to the
+new remote Orion alarm database.</result>
+</taskbody>
+</task>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="alarm-StringChangeOfValueAlarmExt" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">alarm-StringChangeOfValueAlarmExt</title>
+<shortdesc class="- topic/shortdesc ">This extension generates an alarm upon inclusion or exclusion
+of a particular string value, or more accurately, regular expression
+(regexp) of a StringPoint’s or StringWritable’s Out
+slot (string type). This alarm extension is available in the <apiname class="+ topic/keyword pr-d/apiname ">Extensions</apiname> folder of the <wintitle class="+ topic/keyword ui-d/wintitle ">alarm</wintitle> palette.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">StringChangeOfValueAlarmExt</indexterm>
+<indexterm class="- topic/indexterm ">extension<indexterm class="- topic/indexterm ">StringChangeOfValueAlarmExt</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">By default, matching is case sensitive, but this is attribute
+may be configured using the <parmname class="+ topic/keyword pr-d/parmname ">Case Sensitive</parmname> property
+in the extension’s <parmname class="+ topic/keyword pr-d/parmname ">Offnormal Algorithm</parmname> and <parmname class="+ topic/keyword pr-d/parmname ">Fault Algorithm</parmname> container slots.</p><p class="- topic/p ">In addition to the standard alarm properties, this extension supports
+these properties.</p></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype "><uicontrol class="+ topic/ph ui-d/uicontrol ">Expression</uicontrol></proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">a value of: .*</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">This is the regexp value for any text.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype "><uicontrol class="+ topic/ph ui-d/uicontrol ">Normal On Match</uicontrol></proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option>, <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Matches when the condition is in the specified limits.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype "><uicontrol class="+ topic/ph ui-d/uicontrol ">Case Sensitive</uicontrol></proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> (default), <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Matching defaults to case sensitive.</propdesc>
+</property>
+</properties>
+<section class="- topic/section "><p class="- topic/p ">By default, status remains <systemoutput class="+ topic/ph sw-d/systemoutput ">ok</systemoutput> until an edit is made to one or both properties above.</p></section>
+<example class="- topic/example "><title class="- topic/title ">Simple string example</title><p class="- topic/p ">A hospital emergency
+room desires an alarm created whenever the moon enters a "full moon"
+phase. A StringWritable is created and given a StringChangeOfValueAlarmExt.
+In this extension:</p><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">In the Offnormal Algorithm's <parmname class="+ topic/keyword pr-d/parmname ">Expression</parmname> property, the following string is entered: <userinput class="+ topic/ph sw-d/userinput ">Full Moon</userinput>.</p></li>
+<li class="- topic/li "><p class="- topic/p ">The Offnormal Algorithm's <parmname class="+ topic/keyword pr-d/parmname ">Normal On Match</parmname> is set to <option class="+ topic/keyword pr-d/option ">false</option>, and <parmname class="+ topic/keyword pr-d/parmname ">Case Sensitive</parmname> is left at <option class="+ topic/keyword pr-d/option ">true</option>. </p></li>
+</ul><p class="- topic/p ">In the station's <apiname class="+ topic/keyword pr-d/apiname ">WeatherService</apiname>, a <apiname class="+ topic/keyword pr-d/apiname ">WeatherProvider</apiname> has a <apiname class="+ topic/keyword pr-d/apiname ">MoonPosition</apiname> component,
+which serves as the link source. A link is made from the <apiname class="+ topic/keyword pr-d/apiname ">MoonPosition</apiname>'s <parmname class="+ topic/keyword pr-d/parmname ">Phase</parmname> property to the
+In16 slot of the <apiname class="+ topic/keyword pr-d/apiname ">StringWritable</apiname>. On all phases
+of the moon but one, the <apiname class="+ topic/keyword pr-d/apiname ">StringWritable</apiname> has a normal
+status. When <apiname class="+ topic/keyword pr-d/apiname ">MoonPosition</apiname>'s phase changes to <option class="+ topic/keyword pr-d/option ">Full Moon</option>, the <apiname class="+ topic/keyword pr-d/apiname ">StringWritable</apiname> alarms,
+and remains in alarm until the next moon phase (Waning Gibbous).</p><note class="- topic/note ">If the <parmname class="+ topic/keyword pr-d/parmname ">Expression</parmname> string entry was simply:
+Moon, alarms would occur during both phases that include the string
+"Moon", namely "Full Moon" and "New Moon".</note></example>
+<example class="- topic/example "><title class="- topic/title ">Regexp examples</title><p class="- topic/p ">The <parmname class="+ topic/keyword pr-d/parmname ">Expression</parmname> property in both the <parmname class="+ topic/keyword pr-d/parmname ">Offnormal Algorithm</parmname> and <parmname class="+ topic/keyword pr-d/parmname ">Fault Algorithm</parmname> containers can process a simple string
+value, as in the example. The <parmname class="+ topic/keyword pr-d/parmname ">Expression</parmname> property
+also processes a value using regular expression (regexp) syntax. This
+provides even more flexibility, such as with use of "or" operators,
+among others.</p><p class="- topic/p ">Regexp syntax is beyond the scope of this document,
+but a few regexp examples are listed below:</p><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Contains the word "alarm":</p><p class="- topic/p "><userinput class="+ topic/ph sw-d/userinput ">(.*)(alarm)(.*)</userinput></p></li>
+<li class="- topic/li "><p class="- topic/p ">Contains the word "offnormal" or "fault":</p><p class="- topic/p "><userinput class="+ topic/ph sw-d/userinput ">(.*)(offnormal)¦(fault)(.*)</userinput></p></li>
+<li class="- topic/li "><p class="- topic/p ">Eight "1" or "0" characters, with the fourth and eighth characters
+being 1:</p><p class="- topic/p "><userinput class="+ topic/ph sw-d/userinput ">(1¦0){3}(1)(1¦0){3}(1)</userinput></p></li>
+<li class="- topic/li "><p class="- topic/p ">Empty text:</p><p class="- topic/p "><userinput class="+ topic/ph sw-d/userinput ">^$</userinput> </p></li>
+<li class="- topic/li "><p class="- topic/p ">Any text:</p><p class="- topic/p "><userinput class="+ topic/ph sw-d/userinput ">.*</userinput></p></li>
+</ul><p class="- topic/p ">This is the default <parmname class="+ topic/keyword pr-d/parmname ">Expression</parmname> property
+value, that is in an extension copied from the <wintitle class="+ topic/keyword ui-d/wintitle ">alarm</wintitle> palette.</p></example>
+</refbody>
+</reference>

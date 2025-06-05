@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="FiltersDislogBox" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Filters window</title>
+<shortdesc class="- topic/shortdesc ">This window displays the properties you can use to include
+or exclude alarms from the alarm console. This filter action only
+affects which alarms display in the alarm console; it cannot be used
+to edit an alarm record or perform alarm maintenance. To access it,
+click<uicontrol class="+ topic/ph ui-d/uicontrol "> Filter</uicontrol> in the bottom of the <wintitle class="+ topic/keyword ui-d/wintitle ">Alarm Console Window</wintitle> or in the top right-hand corner.
+If you set the<uicontrol class="+ topic/ph ui-d/uicontrol "> Filter</uicontrol> on, The <uicontrol class="+ topic/ph ui-d/uicontrol "> Filter</uicontrol> button turns to red. To select multiple enums, use ctrl+click.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Filters window</indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><note class="- topic/note ">If you are filtering on a field that uses a wildcard
+(<parmname class="+ topic/keyword pr-d/parmname ">Source</parmname>, <parmname class="+ topic/keyword pr-d/parmname ">Alarm Class</parmname> or <parmname class="+ topic/keyword pr-d/parmname ">User</parmname>), make sure to put the percent character (%) at both
+ends of the text string, otherwise, the filter does not work.</note><image href="../graphic/filtersdialogbox_0000006624.png" placement="break" scale="65" class="- topic/image "/></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Source State or sourceState</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">NormalHigh Limit</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">The status of the entity at the time the event, such as
+an alarm, occurred.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Ack State</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><systemoutput class="+ topic/ph sw-d/systemoutput ">Acked</systemoutput> or <systemoutput class="+ topic/ph sw-d/systemoutput ">Unacked</systemoutput></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsAckState" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsAckState" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Ack Required</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsAckRequired-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsAckRequired-div" class="- topic/div "><div conkeyref="reusekey/alarmsAckState" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsAckState" class="- topic/div "/></div></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Source</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">%alarmData.sourceName%</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the path to the point that is generating the alarm.<note class="- topic/note ">For how to format this information on a report, click on the help
+icon to the right of the field.</note></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm Class</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only used in Lists, console columns, or %alarmClass%
+on a report.</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_AlarmClass-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_AlarmClass-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Priority (for the on-call contact)</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">1–255 for each transition, default: 255; %priority% on
+a report</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsPriorityOnCall-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsPriorityOnCall-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Normal Time or NormalTime</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">date and time</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsNormalTime-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsNormalTime-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Ack Time</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><systemoutput class="+ topic/ph sw-d/systemoutput ">hours:minutes:seconds</systemoutput></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsAckTime" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsAckTime" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">User [provisioning]</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">The station user that requested the job. This column displays <codeph class="+ topic/ph pr-d/codeph ">unknown</codeph> if job was triggered by a linked schedule.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm Data</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsAlarmData-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsAlarmData-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm Transition</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmTrans" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmTrans" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Last Update</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the time the system most recently updated the alarm.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

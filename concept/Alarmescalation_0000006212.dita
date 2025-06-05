@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="AlarmEscalation" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Alarm escalation</title>
+<shortdesc class="- topic/shortdesc ">Alarm escalation is a feature that re-routes unacknowledged
+alarms if they have not been acknowledged within a specified amount
+of time. </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">unacknowledged alarms</indexterm>
+<indexterm class="- topic/indexterm ">alarm<indexterm class="- topic/indexterm ">escalation</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">Three levels of escalation provide up to three opportunities to
+re-route an alarm notification if the alarm remains unacknowledged:<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Escalation Level 1</p></li>
+<li class="- topic/li "><p class="- topic/p ">Escalation Level 2</p></li>
+<li class="- topic/li "><p class="- topic/p ">Escalation Level 3</p></li>
+</ul></p>
+<image href="../graphic/Alarmescalation_0000031400.png" placement="break" scale="65" class="- topic/image "/>
+<p class="- topic/p ">Each level may be routed to a different alarm recipient. So that
+if an alarm remains unacknowledged long enough, it may be sent to
+as many as four different recipients (including the original recipient).
+If a recipient acknowledges an alarm at any level, the system does
+not escalate the alarm to the next Level.</p>
+<p class="- topic/p ">In addition to having an <parmname class="+ topic/keyword pr-d/parmname ">Enable</parmname> property,
+each alarm escalation level has a <parmname class="+ topic/keyword pr-d/parmname ">Delay</parmname> property
+that allows you to set the amount of time that you want to allow an
+alarm to remain at any level before it is moved to the next escalation
+level.</p>
+</conbody>
+</concept>

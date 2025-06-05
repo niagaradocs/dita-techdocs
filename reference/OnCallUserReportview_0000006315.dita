@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="OnCallUserReportView" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">On Call User Report view</title>
+<shortdesc class="- topic/shortdesc ">This report is the default view of the<uicontrol class="+ topic/ph ui-d/uicontrol ">OnCallContact</uicontrol> component. This view provides a tabular presentation of the details
+associated with any <uicontrol class="+ topic/ph ui-d/uicontrol ">OnCallList</uicontrol> that the selected
+user is assigned to.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">On Call User Report view</indexterm>
+</keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">This view provides each <uicontrol class="+ topic/ph ui-d/uicontrol ">OnCallContact</uicontrol> with a table of information, which you may configure, and that shows
+the scheduled times and priorities associated with all of the lists
+to which the contact is assigned. As with other tables, contacts may
+show or hide columns and use other standard table controls and options
+provided in the <wintitle class="+ topic/keyword ui-d/wintitle ">Table Options</wintitle> menu located in
+the top right corner of the table.</p><p class="- topic/p ">The export function is available
+using the export icon on the toolbar or by selecting <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">File</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Export</uicontrol></menucascade> from the main menu.</p><image href="../graphic/oncalluserreportview_0000014129_0000006327.png" placement="break" scale="65" class="- topic/image "/><p class="- topic/p ">To access this view, expand <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">OnCallService</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">OnCallList</uicontrol>
+</menucascade> and double-click any user.</p></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Column</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">On Call Recipient</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">This is the name of the On Call Recipient being used to
+coordinate alarms.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">On Call List</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsOnCallList" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsOnCallList" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Priority [on-call contact]</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">1–255 for each transition, default: 255; %priority% on
+a report</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmsPriorityOnCall-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmsPriorityOnCall-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Start</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">date and time</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Indicates when the on-call list becomes active.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">End</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">date and time</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Indicates when the on-call list ceases to be active.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

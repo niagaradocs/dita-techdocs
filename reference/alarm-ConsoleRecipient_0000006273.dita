@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="alarm-ConsoleRecipient" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">alarm-ConsoleRecipient</title>
+<shortdesc class="- topic/shortdesc ">This component manages the transfer of alarms between the
+alarm history and the alarm console. The <apiname class="+ topic/keyword pr-d/apiname ">ConsoleRecipient</apiname> is available in the <wintitle class="+ topic/keyword ui-d/wintitle ">alarm</wintitle> palette. For example,
+the console recipient gets unacknowledged alarms from the alarm history
+and updates the history when they are acknowledged. To view this property
+sheet, right-click the <apiname class="+ topic/keyword pr-d/apiname ">ConsoleRecpiient</apiname> component
+in the Nav tree and click <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Views</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Property Sheet</uicontrol></menucascade>.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">AlarmConsoleRecipient</indexterm>
+<indexterm class="- topic/indexterm ">components<indexterm class="- topic/indexterm ">AlarmConsoleRecipient</indexterm></indexterm>
+</keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">The default view of the console recipient is the alarm
+console view.</p><p class="- topic/p ">Console recipient properties are displayed and
+edited in the console recipient property sheet.</p><image href="../graphic/Consolerecipientpropertysheet_0000045478.png" placement="break" scale="65" scope="local" class="- topic/image "/></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Time Range</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Start Time and End Time [hours of the day (defaults to
+24 hours)]</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_alarmsTimeRange-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_alarmsTimeRange-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Days of the Week or Days of Week</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">check box</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_DaysOfWeek-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_DaysOfWeek-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Transitions</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">drop-down list</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmTransitions-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmTransitions-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Route Acks</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/RouteAcks-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/RouteAcks-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Default Time Range</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">drop-down list of time options</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Provides a list of options for controlling how much information
+to display on the alarm console. If you select <option class="+ topic/keyword pr-d/option ">Time Range</option>, the system prompts you for a beginning and ending time.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

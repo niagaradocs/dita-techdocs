@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="alarmOrion-OrionArchiveAlarmProvider" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">alarmOrion-OrionArchiveAlarmProvider</title>
+<shortdesc class="- topic/shortdesc ">In <keyword conkeyref="wh_variables_n4/niagara4.11" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara4.11" class="- topic/keyword ">N4.11</keyword> and later, this component provides the alarm archive
+feature in the <uicontrol class="+ topic/ph ui-d/uicontrol ">AlarmService</uicontrol> where it archives
+cleared and closed alarms.<!--The RDBMS and Alarm Guides share this topic.--></shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">alarmOrion-OrionArchiveAlarmProvider</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><note class="- topic/note ">The Alarm Archive feature is available only on Supervisor
+stations.</note><p class="- topic/p ">This component stores open, unacknowledged alarms
+in the local alarm database where the system can update alarm transitions,
+acknowledgements, notes, etc. often, and display the alarms in the
+alarm console. A schedule triggers the system to update cleared alarms
+to a remote database where retries-on-failure resolve any remote connectivity
+issues.</p><fig class="- topic/fig ">
+<title class="- topic/title ">Example Alarm Archive architecture</title>
+<image href="../graphic/diagram_AlarmArchiveArchitecture_0000086988.png" placement="break" scale="75" class="- topic/image "/>
+</fig><p class="- topic/p ">An alarm becomes eligible to be archived once the <uicontrol class="+ topic/ph ui-d/uicontrol ">AlarmService</uicontrol> clears it from the alarm recipient console
+or alarm console (it returned to normal or was acknowledged). A cleared
+or closed alarm exists only temporarily in the local alarm database
+before being exported to the archive.</p><p class="- topic/p ">The <uicontrol class="+ topic/ph ui-d/uicontrol ">OrionArchiveAlarmProvider</uicontrol> archives alarm records in the configured relational database and
+can be extended to run periodically to export cleared alarms to a
+remote database.</p><fig class="- topic/fig ">
+<title class="- topic/title ">OrionAlarmArchiveProvider properties</title>
+<image href="../graphic/propertySheetView_OrionAlarmArchiveProvider_0000086987.png" placement="break" scale="65" class="- topic/image "/>
+</fig><p class="- topic/p ">To access these properties, expand <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">OrionAlarmService</uicontrol>
+</menucascade> and double-click <uicontrol class="+ topic/ph ui-d/uicontrol ">OrionAlarmArchiveProvider</uicontrol>.</p><p class="- topic/p ">In addition to the standard properties (Status, Enabled,
+Fault Cause and Alarm Source Info), these properties configure this
+component.</p></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">State</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/driversState-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/driversState-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Execution Time</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">additional time trigger properties</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/driversExecutionTime-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/driversExecutionTime-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Cleared Alarm Linger time</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours minutes seconds</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">The minimum time that an alarm should remain in the cleared
+state before it can be archived. On execution, the provider will only
+export the alarm records eligible for archival since the lastUpdate
+time minus the <parmname class="+ topic/keyword pr-d/parmname ">clearedAlarmLingerTime</parmname>.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Last Attempt</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/driversLastAttempt-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/driversLastAttempt-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Last Success</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/entsecLastSuccess-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/entsecLastSuccess-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Last Failure</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/entsecLastFailure-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/entsecLastFailure-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Retry Trigger</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">additional time trigger properties</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/gen_RetryTrigger-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/gen_RetryTrigger-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm on Failure</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> (default) or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/driversAlarmOnFailure-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/driversAlarmOnFailure-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm Source Info</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">additional properties</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/alarmSourceInfo-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/alarmSourceInfo-div" class="- topic/div "/></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Rdb Ord</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the archive’s database ORD.</propdesc>
+</property>
+</properties>
+<section class="- topic/section "><title class="- topic/title ">Actions</title><p class="- topic/p ">You can configure these actions
+in the <uicontrol class="+ topic/ph ui-d/uicontrol ">OrionArchiveAlarmProvider</uicontrol>’s <wintitle class="+ topic/keyword ui-d/wintitle ">Property Sheet</wintitle> or trigger them manually.</p><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">Execute</uicontrol> archives the alarm records in
+the configured RDBMS server.</p></li>
+<li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">Retry</uicontrol> exports the alarms that failed
+in the previous execution.</p></li>
+<li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">Import Open Alarms</uicontrol> imports the alarms
+that are still open for execution.</p></li>
+</ul></section>
+</refbody>
+</reference>

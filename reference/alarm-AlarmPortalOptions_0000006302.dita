@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="alarm-AlarmPortalOptions" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">alarm-AlarmPortalOptions</title>
+<shortdesc class="- topic/shortdesc ">Properties in this window allow you to customize both the
+appearance and behavior of the alarm console. To access this property
+sheet, click <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Tools</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Options</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Alarm Portal</uicontrol></menucascade></shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">AlarmPortalOptions</indexterm><indexterm class="- topic/indexterm ">component<indexterm class="- topic/indexterm ">AlarmPortalOptions</indexterm></indexterm>
+</keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><image href="../graphic/componentalarmportal1_0000014085_0000006282.png" placement="break" scale="65" class="- topic/image "/></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Tray Icon Enabled</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><div conkeyref="reusekey/TrayIcon-div" conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/TrayIcon-div" class="- topic/div "/><?Pub Caret -1?></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm Popup Enabled</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">When the alarm portal is active, turns on and off the display
+of an alarm popup window. </propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm Popup Always on Top</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">When the alarm portal is active, enables and disables the
+position of the alarm popup window.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm Popup Unclosable</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">When an alarm is active, prohibits and allows the alarm
+popup window from being/to be closed. When set to <option class="+ topic/keyword pr-d/option ">false</option>, an alarm popup window may be closed even when an alarm is active.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Kiosk Mode</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">When the alarm portal is active, enables and disables the
+display of the alarm icon in the system tray.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Reconnect Interval</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours:minutes:seconds</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the amount of time between alarm portal checks for
+disconnected alarm consoles. If a console is disconnected, a reconnect
+is attempted within this period of time.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Default Time Range</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">list of options</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Selects the most common interval for displaying alarm data.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

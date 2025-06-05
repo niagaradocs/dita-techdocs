@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!--Arbortext, Inc., 1988-2019, v.4002--><task id="RotatingOnCallLists-4E0DEE93" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">To Rotate OnCallLists</title>
+<shortdesc class="- topic/shortdesc ">You can use the <uicontrol class="+ topic/ph ui-d/uicontrol ">Rotate</uicontrol> button to
+rotate the <uicontrol class="+ topic/ph ui-d/uicontrol ">OnCallLists</uicontrol> manually. The list can
+be rotated based on your choice, but when you rotate the list the
+priority of the list changes. It indicates that every user in the
+list drops to the next configured priority level down, the user with
+the lowest priority is circle back up to the highest priority.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">OnCallLists<indexterm class="- topic/indexterm ">Rotate</indexterm></indexterm></keywords></metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<context class="- topic/section task/context "><p class="- topic/p ">There are two ways to rotate the list. Follow the instructions
+in the first bullet below to use the <wintitle class="+ topic/keyword ui-d/wintitle ">On Call List Manager</wintitle> view and follow the second bullet to use <uicontrol class="+ topic/ph ui-d/uicontrol ">On Call Contact
+Manager</uicontrol> view.</p><?Pub Caret 156?></context>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Use one of the following methods to rotate the <uicontrol class="+ topic/ph ui-d/uicontrol ">OnCallList</uicontrol>:</cmd>
+<choices class="- topic/ul task/choices ">
+<choice class="- topic/li task/choice ">Navigate to <wintitle class="+ topic/keyword ui-d/wintitle ">On Call List Manager</wintitle> view,
+double-click any one the existing <uicontrol class="+ topic/ph ui-d/uicontrol ">OnCallList</uicontrol>. The <wintitle class="+ topic/keyword ui-d/wintitle ">On Call Contact Manager</wintitle> view opens and
+click <uicontrol class="+ topic/ph ui-d/uicontrol ">Rotate</uicontrol>.</choice>
+<choice class="- topic/li task/choice ">Navigate to <uicontrol class="+ topic/ph ui-d/uicontrol ">On Call Contact Manager</uicontrol> view, select any one of the <uicontrol class="+ topic/ph ui-d/uicontrol ">OnCallList</uicontrol> from
+the existing list, and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Rotate</uicontrol> button.<image href="../graphic/RotateOncallList.png" placement="break" scale="65" scope="local" class="- topic/image "/></choice>
+</choices>
+<stepresult class="- topic/itemgroup task/stepresult ">You can see the list of the priority changes.</stepresult>
+</step>
+</steps>
+</taskbody>
+</task>

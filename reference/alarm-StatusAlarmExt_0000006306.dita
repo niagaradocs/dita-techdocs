@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="alarm-StatusAlarmExt" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">alarm-StatusAlarmExt</title>
+<shortdesc class="- topic/shortdesc ">This extension provides alarming based upon any combination
+of status flags, and applies to all points and objects that accept
+extensions. This alarm extension is available in the <apiname class="+ topic/keyword pr-d/apiname ">Extensions</apiname> folder of the <wintitle class="+ topic/keyword ui-d/wintitle ">alarm</wintitle> palette.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">StatusAlarmExt</indexterm><indexterm class="- topic/indexterm ">extension<indexterm class="- topic/indexterm ">StatusAlarmExt</indexterm></indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><note class="- topic/note ">The status values "disabled" and "stale" were available
+as options on StatusAlgorithm and StatusFaultAlgorithm (part of the
+StatusAlarmExt in the alarm palette) but alarm algorithms are never
+evaluated if a control point's status is "disabled" or "stale". Therefore,
+an alarm will never be raised for these status values. These status
+options have been removed from these alarm algorithms using an Integer
+facet named "filter" (status bits in the filter are not displayed).<image href="../graphic/HiddenCheckboxesDisabledStale_0000077583.png" placement="break" scale="80" class="- topic/image "/></note></section>
+</refbody>
+</reference>

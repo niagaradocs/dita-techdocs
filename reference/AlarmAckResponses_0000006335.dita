@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="AlarmAckResponses-AA25D69C" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Alarm Ack Responses</title>
+<shortdesc class="- topic/shortdesc ">Use this property to create one or more text entries that
+you can use to populate the <wintitle class="+ topic/keyword ui-d/wintitle ">Notes</wintitle> window when
+acknowledging an alarm.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">alarm ack responses</indexterm>
+</keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><image href="../graphic/addalarmresponse1_0000014086_0000006349.png" placement="break" scale="65" class="- topic/image "/><p class="- topic/p ">The text holds a short phrase.</p></section>
+</refbody>
+</reference>
