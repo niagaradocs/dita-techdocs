@@ -1,0 +1,80 @@
+Enterprise Product Taxonomy Summary – Tridium/Niagara
+
+PROJECT PURPOSE
+---------------
+Create a structured, governed product taxonomy for Tridium’s Niagara software, hardware, and services to:
+- Align internal documentation, product marketing, and support
+- Enable tagging for reuse and filtering in a CCMS/portal (e.g., Heretto, Zoomin)
+- Prepare for semantic metadata integration (e.g., iiRDS, BRICK, Haystack)
+
+HIERARCHY STRUCTURE
+-------------------
+Top-level product categories under Niagara Framework:
+- Niagara Supervisor
+- Niagara Cloud Suite
+  - Niagara Remote
+  - Niagara Recover
+  - Niagara Data Service
+- Niagara Analytics
+- Niagara Enterprise Security
+- Niagara Drivers
+  - Included Drivers
+  - Supervisor-Only Drivers
+  - JACE-Only Drivers
+- Niagara Video Integration
+- Hardware
+  - Controllers (JACE-8000, JACE-9000, Edge-10, JACE-834)
+  - I/O Modules (IO-R-16, IO-R-34)
+  - Accessories (deferred)
+
+FILE STRUCTURE
+--------------
+Excel Workbook Tabs:
+1. Taxonomy Data
+   - Fields: ID, Preferred Term, Parent Term, Tag Type, Platform Compatibility, License Type, Deployment Model,
+     Functionality Tags, Tridium Part No., Product Status, Intended Audience, Notes / Comments
+
+2. Controlled Vocabulary
+   - Used for tag standardization: Functionality Tags, Platform Compatibility, etc.
+   - Each entry now has a unique ID (CV-xxxx)
+
+GOVERNANCE DECISIONS
+--------------------
+- Unique IDs now assigned to all taxonomy and vocab rows
+- IDs must be unique and persistent, but need not remain sequential
+- New IDs will be assigned using next available number (e.g., TX-0066)
+- Tagging to follow full buildout, using comma-separated values where needed
+- Controlled Vocabulary will guide dropdowns and validation
+- External tagging vocabularies (BRICK, Haystack, iiRDS) will be supported via tags, not embedded in hierarchy
+- OEM crosswalks will be added later
+
+STRATEGIC MAP: TAXONOMY IN CONTEXT
+----------------------------------
+1. Internal Product Taxonomy → Core structure of Tridium products
+2. Functional Tags → Describe what each product does
+3. Standards Tagging → BRICK, Haystack, Niagara Dictionary
+4. Documentation Metadata → Drives filtering and reuse in Zoomin/Heretto
+5. OEM/Partner Mapping → Used for SKUs/variants and rebranded product support
+
+THOUGHT LEADER INFLUENCE
+------------------------
+- Heather Hedden: taxonomy IDs, controlled vocabularies
+- Patrick Lambe: strategic alignment, governance
+- David Diamond: content reuse, CMS integration
+- Joseph Busch: scalable enterprise taxonomy
+- iiRDS: metadata class alignment
+
+CURRENT STATUS
+--------------
+- Full product list populated
+- Controlled Vocabulary integrated
+- Metadata partially pre-filled
+- All IDs now unique and consistent
+- Ready for tagging and vocabulary refinement
+
+NEXT STEPS
+----------
+- Begin Functionality/Platform/Audience tagging
+- Refine or group vocabulary terms (e.g., Functionality Areas)
+- Create external crosswalks (OEMs, Haystack, BRICK)
+- Support downstream publishing and portal filtering
