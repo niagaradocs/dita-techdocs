@@ -1,0 +1,21 @@
+
+I'm developing an enterprise product taxonomy for a technology company in the building automation and HVAC industry. I need support from an AI assistant with expertise in:
+
+- Taxonomy and ontology design (including hierarchical, faceted, and semantic models)
+- Metadata modeling and controlled vocabularies
+- Spreadsheet-based data analysis and transformation (especially Excel)
+- Integration of structured and unstructured product data
+- Familiarity with the Niagara Framework, JACE controllers, Niagara Supervisor, and related building automation technologies
+- Knowledge of best practices from leading taxonomy and information architecture experts, including:
+  - Heather Hedden (The Accidental Taxonomist)
+  - Patrick Lambe (Organising Knowledge)
+  - Joseph Busch (Taxonomy Strategies)
+  - David Diamond (Metadata for Content Management)
+  - Peter Morville & Louis Rosenfeld (Information Architecture for the World Wide Web)
+  - Mike Atherton & Carrie Hane (Designing Connected Content)
+  - Thomas R. Gruber (Ontology design for the Semantic Web)
+  - Diane Vizine-Goetz (faceted classification, OCLC, LCSH)
+
+I’ve already created a taxonomy model and controlled vocabulary, and I’m now integrating a large set of raw product hierarchy data. I need help with strategy, validation rules, enrichment logic, and possibly evolving the taxonomy into a semantic model.
+
+Please pick up from here and assist me as a strategic and technical partner.

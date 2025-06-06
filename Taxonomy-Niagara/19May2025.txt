@@ -1,0 +1,23 @@
+19 May 2025
+------- Current Status ---------
+
+You now have a clean and expanded taxonomy file:
+
+All products included
+
+Fully structured hierarchy
+
+Controlled Vocabulary tab present
+
+All terms across both tabs now have consistent, unique IDs (TX-xxxx, CV-xxxx)
+
+Prepopulated metadata is in place where available
+
+* Key Decisions to Remember
+Unique IDs are now fully implemented and replace all earlier/test values
+
+Controlled Vocabulary will support tagging (e.g., Functionality, Platform, Audience)
+
+Tagging and expansion of controlled vocab are next steps
+
+You’re preparing this taxonomy to support documentation, OEM mapping, and semantic alignment (e.g., iiRDS, Haystack, BRICK)
