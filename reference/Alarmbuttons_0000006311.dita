@@ -13,6 +13,43 @@ to several alarm views.</shortdesc>
 </metadata>
 </prolog>
 <refbody class="- topic/body        reference/refbody ">
+<table frame="all" rowsep="1" colsep="1" id="table_ndc_h3p_4fc">
+<title>Test table</title>
+<tgroup cols="4">
+<colspec colnum="1" colname="c1" colwidth="1*"/>
+<colspec colnum="2" colname="c2" colwidth="1*"/>
+<colspec colnum="3" colname="newCol3" colwidth="1*"/>
+<colspec colnum="4" colname="newCol4" colwidth="1*"/>
+<thead>
+<row>
+<entry>Country</entry>
+<entry>Country Code</entry>
+<entry>Country</entry>
+<entry>Country Code</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>United States</entry>
+<entry>US</entry>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+</tbody>
+</tgroup>
+</table>
 <properties class="- topic/simpletable reference/properties ">
 <prophead class="- topic/sthead      reference/prophead ">
 <proptypehd class="- topic/stentry     reference/proptypehd ">Button</proptypehd>
