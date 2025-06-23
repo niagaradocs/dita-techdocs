@@ -11,7 +11,7 @@ output_directory = os.path.join(working_directory, 'output')
 script_directory = os.path.join(working_directory, 'script')
 
 # Define file paths
-source_file_path = os.path.join(source_directory, 'Tridium_Taxonomy_1.xlsx')
+source_file_path = os.path.join(source_directory, 'Tridium_Taxonomy_Source.xlsx')
 output_file_path = os.path.join(output_directory, 'Updated_Taxonomy_Data.xlsx')
 mapping_file_path = os.path.join(script_directory, 'column_mapping.json')
 
