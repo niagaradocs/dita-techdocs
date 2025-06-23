@@ -1,27 +1,27 @@
-Enterprise Product Taxonomy Summary – Tridium/Niagara
+Enterprise Product Taxonomy Summary
 
 PROJECT PURPOSE
 ---------------
-Create a structured, governed product taxonomy for Tridium’s Niagara software, hardware, and services to:
+Create a structured, governed product taxonomy for Acme’s Lightening software, hardware, and services to:
 - Align internal documentation, product marketing, and support
 - Enable tagging for reuse and filtering in a CCMS/portal (e.g., Heretto, Zoomin)
 - Prepare for semantic metadata integration (e.g., iiRDS, BRICK, Haystack)
 
 HIERARCHY STRUCTURE
 -------------------
-Top-level product categories under Niagara Framework:
-- Niagara Supervisor
-- Niagara Cloud Suite
-  - Niagara Remote
-  - Niagara Recover
-  - Niagara Data Service
-- Niagara Analytics
-- Niagara Enterprise Security
-- Niagara Drivers
+Top-level product categories under Lightening Framework:
+- Lightening Supervisor
+- Lightening Cloud Suite
+  - Lightening Remote
+  - Lightening Recover
+  - Lightening Data Service
+- Lightening Analytics
+- Lightening Enterprise Security
+- Lightening Drivers
   - Included Drivers
   - Supervisor-Only Drivers
   - JACE-Only Drivers
-- Niagara Video Integration
+- Lightening Video Integration
 - Hardware
   - Controllers (JACE-8000, JACE-9000, Edge-10, JACE-834)
   - I/O Modules (IO-R-16, IO-R-34)
@@ -32,7 +32,7 @@ FILE STRUCTURE
 Excel Workbook Tabs:
 1. Taxonomy Data
    - Fields: ID, Preferred Term, Parent Term, Tag Type, Platform Compatibility, License Type, Deployment Model,
-     Functionality Tags, Tridium Part No., Product Status, Intended Audience, Notes / Comments
+     Functionality Tags, Acme Part No., Product Status, Intended Audience, Notes / Comments
 
 2. Controlled Vocabulary
    - Used for tag standardization: Functionality Tags, Platform Compatibility, etc.
@@ -50,9 +50,9 @@ GOVERNANCE DECISIONS
 
 STRATEGIC MAP: TAXONOMY IN CONTEXT
 ----------------------------------
-1. Internal Product Taxonomy → Core structure of Tridium products
+1. Internal Product Taxonomy → Core structure of Acme products
 2. Functional Tags → Describe what each product does
-3. Standards Tagging → BRICK, Haystack, Niagara Dictionary
+3. Standards Tagging → BRICK, Haystack, Lightening Dictionary
 4. Documentation Metadata → Drives filtering and reuse in Zoomin/Heretto
 5. OEM/Partner Mapping → Used for SKUs/variants and rebranded product support
 
