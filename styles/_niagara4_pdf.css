@@ -1,0 +1,28 @@
+/* LAYOUT *****************************************************************/
+@import url(60bcb2e6-a6e1-483c-a0bf-6effd854c83c); /* niagara_cover.css */
+@import url(b52fe6b5-d2e7-49c0-a72a-9d62c8ea072d); /* niagara_legal_page */
+@import url(44af305c-c581-4cb1-9b1a-1a29faa4b4d0); /* niagara_page_defs */
+@import url(772bd769-c0aa-4dea-9a59-7d86cda31e63); /* niagara_orientation_size */
+@import url(f87687ff-95f1-4111-a000-aa791ff021ff); /* niagara_blanks */
+@import url(c7fe979f-56d7-4663-8f58-6344129de045); /* niagara_breaks */
+@import url(3c565da9-1933-49c8-9cf6-e2b0774abcaa); /* niagara_toc */
+@import url(6c9ba57f-4674-415e-ad99-2a57ffad52f3); /* niagara_header_footer */
+
+/* STYLING ****************************************************************/
+@import url(5676c773-1e1f-4580-b8ce-137c70400ec3); /* niagara_typography.css */ 
+@import url(70ae7bc1-c7cc-4be3-b583-7a60588972b0); /* niagara_color */
+@import url(d1047f8e-391e-4189-9629-4b22d5f46894); /* niagara_formatting */
+@import url(c1d0cbc1-e9b1-4a34-b172-a1840fda0308); /* niagara_chapter_numbering */ 
+@import url(b9a6e635-d30f-4746-ace6-eaf6000d9054); /* niagara_titles */
+@import url(e9b742db-f9b1-4188-bdfb-2eddcd3fd51c); /* niagara_figure_image */
+@import url(fd25aae2-8aed-410f-8014-fc3b9f35a135); /* niagara_hide_empty_elements */
+@import url(88700e0a-cd16-4a58-9ecd-0e2f93ec686f); /* niagara_tables */
+
+/* DITA *******************************************************************/
+@import url(86f8514e-8ca9-4501-b641-2ddd1482199d); /* niagara_ordered_list_unordered_list_step_substep_choice */
+@import url(03181e39-0e45-4629-b6e1-c7af797450f7); /* niagara_choices_steps_substeps_numbering */
+@import url(ae17f029-c565-4bd4-9264-923981d32be6); /* niagara-notes */
+@import url(55691711-d96e-4b47-adcd-31e8bbdbefd7); /* niagara_uicontrol_inline_elements */
+@import url(f522d9ef-608a-42d9-a402-1b4546831ddd); /* niagara_filepath_sysoutput_userinput_varname */
+@import url(c12144aa-e055-4575-ae82-a0e45f99f927); /* niagara_cause_condition_context_example_postreq_prereq */
+@import url(ea1971ba-20b9-4d95-8cf6-9ca35702eef3); /* niagara_min_elements */

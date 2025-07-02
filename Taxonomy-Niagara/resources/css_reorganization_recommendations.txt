@@ -1,0 +1,74 @@
+CSS Reorganization Recommendations for Heretto PDF Generator
+============================================================
+
+This document summarizes best practices and reorganization suggestions for modular CSS used in Heretto PDF Generator (Prince XML).
+
+Group-by-Group Analysis
+-----------------------
+
+1. LAYOUT
+---------
+Purpose: Defines the physical structure of the document (pages, breaks, headers/footers, etc.)
+
+Suggested Files:
+- niagara_cover.css
+- niagara_legal_page.css
+- niagara_page_defs.css
+- niagara_orientation_size.css
+- niagara_blanks.css
+- niagara_breaks.css
+- niagara_toc.css
+- niagara_header_footer.css
+
+Suggestions:
+- Consolidate repeated @page definitions.
+- Use variables for spacing (e.g., --margin-default).
+- Ensure consistent use of @page rules.
+
+2. STYLING
+----------
+Purpose: Controls the visual appearance of content elements.
+
+Suggested Files:
+- niagara_typography.css
+- niagara_color.css
+- niagara_formatting.css
+- niagara_chapter_numbering.css
+- niagara_titles.css
+- niagara_figure_image.css
+- niagara_hide_empty_elements.css
+- niagara_tables.css
+- niagara_min_elements.css
+- niagara_min_block-elements.css
+- niagara_minblockelements.css
+- niagara_inline-elements.css
+
+Suggestions:
+- Merge overlapping "min" element files.
+- Centralize font declarations in niagara_typography.css.
+- Standardize class naming conventions.
+
+3. DITA
+-------
+Purpose: Styles semantic DITA elements like steps, choices, notes, etc.
+
+Suggested Files:
+- niagara_ordered_list_unordered_list_step_substep_choice.css
+- niagara_choices_steps_substeps_numbering.css
+- niagara_notes.css
+- niagara_uicontrol_inline_elements.css
+- niagara_filepath_sysoutput_userinput_varname.css
+- niagara_cause_condition_context_example_postreq_prereq.css
+
+Suggestions:
+- Group all DITA semantic styles into one or two files.
+- Use consistent spacing and margin rules.
+- Prefix DITA-specific classes with .dita- for clarity.
+
+General Cleanup Recommendations
+-------------------------------
+- Add comment blocks at the top of each file describing its purpose.
+- Standardize file names (e.g., avoid mixing underscores and hyphens).
+- Use CSS custom properties consistently.
+- Eliminate duplicate rules across files.
+- Keep _niagara4_pdf.css as a clean index of imports, grouped and commented.

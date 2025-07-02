@@ -1,0 +1,1244 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns:jcm-link-man="http://jorsek.com/content-management/modules/linkmanagement" xmlns:table="http://dita-ot.sourceforge.net/ns/201007/dita-ot/table">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="copyright" content="(C) Copyright 2025">
+      <meta name="DC.rights.owner" content="(C) Copyright 2025">
+      <meta name="DC.Type" content="bookmap">
+      <meta name="DC.Format" content="HTML5">
+      <meta name="DC.Identifier" content="index">
+      <meta name="DC.Language" content="en">
+      <title></title>
+   </head>
+   <body class="hide" id="index">
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<h1 class="cover-page-container">
+  <div class="cover-page-content">
+    <div class="title-text">Niagara AWS Utils Guide</div>
+    <div class="bottom-stripe">
+      <div class="logo-container">
+        <div class="logo">
+          <img src="https://jorsek.github.io/pdfgen.github.io/styles1.1/media/logo_placeholder_150px_350px.png"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</h1> --><html/>
+      <h1 class="cover-page-container">
+         <div class="cover-page-content" data-publish-date="--">
+            <div class="cover-page-heading">Technical Document</div>
+            <div class="title-text">
+               <h1 class="title topictitle1"><span class="ph">Niagara AWS Utils Guide</span></h1>
+               <div class="bookmeta-metadata">
+                  <div class="meta-value">March&nbsp;
+                     3,
+                     2023
+                  </div>
+                  <div class="meta-value"></div>
+               </div>
+            </div>
+            <div class="logo-container">
+               <div class="logo"><img src="b4a02880-d4dd-11ee-8b55-0242f838b79f.png"></div>
+            </div>
+         </div>
+      </h1>
+      <div class="revision-date" data-latest-revision="March 3, 2023">March 3, 2023</div>
+      <div class="legal_niagara_tridium">
+         <h1 class="title topictitle1" id="ariaid-title1">Legal Notice</h1>
+         <div class="body refbody">
+            <p class="shortdesc"></p>
+            <section class="section" id="legal_niagara_tridium--en--1__address">
+               
+               <p class="p"><strong class="ph b">Tridium, Incorporated</strong></p>
+               
+               <p class="p">3951 Western Parkway, Suite 350</p>
+               
+               <p class="p">Richmond, Virginia 23233</p>
+               
+               <p class="p">U.S.A.</p>
+               
+            </section>
+            <section class="section">
+               <h2 class="title sectiontitle">Confidentiality</h2>
+               
+               
+               <p class="p">The information contained in this document is confidential information of Tridium,
+                  Inc., a Delaware corporation (Tridium). Such information and the software described
+                  herein, is furnished under a license agreement and may be used only in accordance
+                  with that agreement.
+               </p>
+               
+               <p class="p">The information contained in this document is provided solely for use by Tridium employees,
+                  licensees, and system owners; and, except as permitted under the below copyright notice,
+                  is not to be released to, or reproduced for, anyone else.
+               </p>
+               <p class="p">While every effort has been made to assure the accuracy of this document, Tridium
+                  is not responsible for damages of any kind, including without limitation consequential
+                  damages, arising from the application of the information contained herein. Information
+                  and specifications published here are current as of the date of this publication and
+                  are subject to change without notice. The latest product specifications can be found
+                  by contacting our corporate headquarters, Richmond, Virginia.
+               </p>
+               
+               
+            </section>
+            <section class="section">
+               <h2 class="title sectiontitle">Trademark notice</h2>
+               
+               
+               <p class="p">BACnet and ASHRAE are registered trademarks of American Society of Heating, Refrigerating
+                  and Air-Conditioning Engineers. Microsoft, Excel, Internet Explorer, Windows, Windows
+                  Vista, Windows Server, and SQL Server are registered trademarks of Microsoft Corporation.
+                  Oracle and Java are registered trademarks of Oracle and/or its affiliates. Mozilla
+                  and Firefox are trademarks of the Mozilla Foundation. Echelon, LON, LonMark, LonTalk,
+                  and LonWorks are registered trademarks of Echelon Corporation. Tridium, JACE, Niagara
+                  Framework, and Sedona Framework are registered trademarks, and Workbench are trademarks
+                  of Tridium Inc. All other product names and services mentioned in this publication
+                  that are known to be trademarks, registered trademarks, or service marks are the property
+                  of their respective owners.
+               </p>
+               
+            </section>
+            <section class="section">
+               <h2 class="title sectiontitle">Copyright and patent notice</h2>
+               
+               
+               <p class="p">This document may be copied by parties who are authorized to distribute Tridium products
+                  in connection with distribution of those products, subject to the contracts that authorize
+                  such distribution. It may not otherwise, in whole or in part, be copied, photocopied,
+                  reproduced, translated, or reduced to any electronic medium or machine-readable form
+                  without prior written consent from Tridium, Inc.
+               </p>
+               
+               
+               <p class="p">Copyright © 2025 Tridium, Inc. All rights reserved. </p>
+               <p class="p">The product(s) described herein may be covered by one or more U.S. or foreign patents
+                  of Tridium. 
+               </p>
+               <p class="p">For an important patent notice, please visit: <a xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:opentopic-func="http://www.idiominc.com/opentopic/exsl/function" class="xref j-external-link" href="http://www.honpat.com" target="_blank">http://www.honpat.com</a>.
+               </p>
+               
+            </section>
+         </div>
+      </div>
+      <nav>
+         <ul lang="en" class="map bookmap hide">
+            <li xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:opentopic-func="http://www.idiominc.com/opentopic/exsl/function" class="topicref notices"><a href="#legal_niagara_tridium--en--1">Legal Notices</a></li>
+            <li xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:opentopic-func="http://www.idiominc.com/opentopic/exsl/function" class="topicref about"><a href="#AboutThisGuideAWSUtilsModuleGuide-0D5A24DC--en">About this guide</a><ul>
+                  <li class="topicref"><a href="#DocumentChangeLog-0D5A6F57--en">Document change log</a></li>
+                  <li class="topicref"><a href="#reference-1-0D5D0C8C--en">Related Documentation</a></li>
+               </ul>
+            </li>
+            <li xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:opentopic-func="http://www.idiominc.com/opentopic/exsl/function" class="topicref chapter"><a href="#AboutAWSUtils-0D452A21--en">About AWS Utils</a><ul>
+                  <li class="topicref"><a href="#OverviewSigningService-078DA5FB--en">Overview</a></li>
+               </ul>
+            </li>
+            <li xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:opentopic-func="http://www.idiominc.com/opentopic/exsl/function" class="topicref chapter"><a href="#AWSUtils-079A56D8--en">AWS Utils</a><ul>
+                  <li class="topicref"><a href="#ProvisioningNiagaraNetworkWithAWSMQ-07A3958F--en">Provisioning NiagaraNetwork with AWS MQTT devices</a></li>
+                  <li class="topicref"><a href="#ConfiguringJustInTimeProvisioningJI-08076CF9--en">Configuring Just In Time Provisioning (JITP)</a><ul>
+                        <li class="topicref"><a href="#CommissioningControllersWithoutJITP-0812B407--en">Commissioning controllers without JITP</a></li>
+                        <li class="topicref"><a href="#CommissioningControllersWithJITP-082094B2--en">Commissioning controllers with JITP</a><ul>
+                              <li class="topicref"><a href="#SettingUpJITPForDevices-08255407--en">Setting up JITP for devices</a></li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="topicref"><a href="#ConfiguringSigningServiceForAWS-07B0BE95--en">Configuring Signing Service for AWS</a></li>
+                  <li class="topicref"><a href="#RunningInstallAWSMQTTDeviceTask-07B10905--en">Running Install AWS MQTT Device task</a></li>
+               </ul>
+            </li>
+            <li xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:opentopic-func="http://www.idiominc.com/opentopic/exsl/function" class="topicref chapter"><a href="#ComponentsViewsAndWindow-SigningService--en">Components, views and windows</a><ul>
+                  <li class="topicref"><a href="#Components-0567A524--en">Components</a><ul>
+                        <li class="topicref"><a href="#AwsServiceawsUtils-AwsService-0897C174--en">Aws Service (awsUtils-AwsService)</a></li>
+                        <li class="topicref"><a href="#AwsAccessKeyFolderawsUtils-AwsAcces-08A642A2--en">Aws Access Key Folder (awsUtils-AwsAccessKeyFolder)</a></li>
+                        <li class="topicref"><a href="#AwsStoredAccessKeyawsUtils-AwsStore-08AAD87B--en">Aws Stored Access Key (awsUtils-AwsStoredAccessKey)</a></li>
+                        <li class="topicref"><a href="#AwsIoTawsUtils-AwsIoT-08B57865--en">Aws IoT (awsUtils-AwsIoT)</a></li>
+                        <li class="topicref"><a href="#AwsSigningProfileawsUtils-AwsSignin-08BB0465--en">Aws Signing Profile (awsUtils-AwsSigningProfile)</a></li>
+                        <li class="topicref"><a href="#AwsJitpMqttAuthenticatorabstractMqt-061BB575--en">Aws Jitp Mqtt Authenticator (abstractMqttDriver-AwsJitpMqttAuthenticator)</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+            <li xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:opentopic-func="http://www.idiominc.com/opentopic/exsl/function" class="topicref chapter gloss_start"><a href="#concept-7242--en">Glossary</a></li>
+         </ul>
+      </nav>
+      <article class="topic reference nested0" aria-labelledby="ariaid-title2" lang="en" id="AboutThisGuideAWSUtilsModuleGuide-0D5A24DC--en">
+         <h1 class="title topictitle1" id="ariaid-title2">About this guide </h1>
+         <div class="body refbody">
+            <p class="shortdesc"><span class="ph">This topic contains important information about the purpose, content, context, and
+                  intended audience for this document.</span></p>
+            <section class="section">
+               <h2 class="title sectiontitle">Product Documentation</h2>
+               <span class="ph">This document is part of the <span class="ph">Niagara</span> technical documentation library. Released versions of <span class="keyword">Niagara</span> software include a complete collection of technical information that is provided
+                  in both online help and PDF format. The information in this document is written primarily
+                  for Systems Integrators. To make the most of the information in this book, readers
+                  should have some training or previous experience with <span class="keyword">Niagara</span> software, as well as experience working with <span class="ph">JACE</span> network controllers.</span>
+               
+            </section>
+            <section class="section">
+               <h2 class="title sectiontitle">Document Content</h2>This document describes how to move data to AWS IoT via MQTT drivers, provision MQTT
+               connectivity on a fleet of controllers without individual manual setup, and how to
+               renew onboarding for every controller before expiration.
+            </section>
+         </div>
+         <article class="topic reference nested1" aria-labelledby="ariaid-title3" lang="en" id="DocumentChangeLog-0D5A6F57--en">
+            <h2 class="title topictitle2" id="ariaid-title3">Document change log</h2>
+            <div class="body refbody">
+               <p class="shortdesc">Changes to this document are listed in this topic.</p>
+               <section class="section">
+                  <ul class="ul">
+                     <li class="li">
+                        <p class="p">Initial release publication: March 3, 2023</p>
+                        <p class="p"></p>
+                     </li>
+                  </ul>
+               </section>
+            </div>
+         </article>
+         <article class="topic reference nested1" aria-labelledby="ariaid-title4" lang="en" id="reference-1-0D5D0C8C--en">
+            <h2 class="title topictitle2" id="ariaid-title4">Related Documentation </h2>
+            <div class="body refbody">
+               <p class="shortdesc"></p>
+               <section class="section">
+                  <ul class="ul">
+                     <li class="li">
+                        <p class="p"><cite class="cite"><span class="ph">Niagara Signing Service Guide</span></cite></p>
+                     </li>
+                     <li class="li">
+                        <p class="p"><cite class="cite"><span class="ph">Abstract MQTT Driver Guide</span></cite></p>
+                     </li>
+                     <li class="li">
+                        <p class="p"><cite class="cite"><span class="ph">Niagara Station Security Guide</span></cite></p>
+                     </li>
+                  </ul>
+               </section>
+            </div>
+         </article>
+      </article>
+      <article class="topic reference nested0 chapter_start" aria-labelledby="ariaid-title5" lang="en" id="AboutAWSUtils-0D452A21--en">
+         <h1 class="title topictitle1" id="ariaid-title5">About AWS Utils</h1>
+         <div class="body refbody">
+            <p class="shortdesc"></p>
+            <section class="section"></section>
+         </div>
+         <article class="topic reference nested1" aria-labelledby="ariaid-title6" lang="en" id="OverviewSigningService-078DA5FB--en">
+            <h2 class="title topictitle2" id="ariaid-title6">Overview</h2>
+            <div class="body refbody">
+               <p class="shortdesc">As of <span class="keyword">Niagara 4.13</span>, you can use a simplified and quicker way to publish data
+                  to AWS IoT via MQTT drivers, provision MQTT connectivity on a series
+                  of controllers with zero touch, and renew onboarding for every controller
+                  when they come to expire.
+               </p>
+               <section class="section">Here are the simplified steps that will save you time: 
+                  <ol class="ol">
+                     <li class="li">
+                        <p class="p"><span class="keyword">Supervisor</span>: Job creates and registers CA (Certificate Authority).
+                        </p>
+                     </li>
+                     <li class="li">
+                        <p class="p">Provision each controller with the new MQTT device.</p>
+                     </li>
+                     <li class="li">
+                        <p class="p">Automatically request a certificate from the Signing Service.</p>
+                     </li>
+                     <li class="li">
+                        <p class="p">Admin user approves request. Certificate is signed (sealed)
+                           and delivered.
+                        </p>
+                     </li>
+                     <li class="li">
+                        <p class="p">Connect to AWS IoT.</p>
+                     </li>
+                     <li class="li">
+                        <p class="p">Certificate will be auto-renewed before expiry.</p>
+                     </li>
+                  </ol>
+               </section>
+            </div>
+         </article>
+      </article>
+      <article class="topic reference nested0" aria-labelledby="ariaid-title7" lang="en" id="AWSUtils-079A56D8--en">
+         <h1 class="title topictitle1" id="ariaid-title7">AWS Utils</h1>
+         <div class="body refbody">
+            <p class="shortdesc">The AWS (Amazon Web Services) Utils module provides utilities
+               and configuration to enable a <span class="keyword">Niagara</span> station to interact with certain services within
+               AWS. New features enable a fleet of <span class="keyword">Niagara</span> controller stations to be automatically commissioned
+               with MQTT devices and signed device certificates, which automatically
+               connect to AWS requiring no manual user setup on the controller station.
+               Those devices will also automatically renew their certificates prior
+               to expiration and remain connected.
+            </p>
+            <section class="section">
+               <h2 class="title sectiontitle">Use:</h2>
+               <ul class="ul">
+                  <li class="li">
+                     <p class="p">Using the service within the module, you can register access
+                        keys for authenticating with AWS.
+                     </p>
+                  </li>
+                  <li class="li">
+                     <p class="p">You can configure and execute service specific tasks, such
+                        as interaction with the AWS REST endpoints. These tasks may typically
+                        be one-off configuration tasks during station commissioning. Thus,
+                        by default access keys are only stored temporarily.
+                     </p>
+                  </li>
+               </ul>
+               <p class="p">This module also supplies a <span class="keyword">Niagara</span> provisioning task to furnish the various stations
+                  of your NiagaraNetwork with an AWS MQTT device that can utilize the
+                  benefits of <span class="ph uicontrol">Just In Time Provisioning</span> (JITP).
+               </p>
+            </section>
+            <section class="section">
+               <h2 class="title sectiontitle">Prerequisites:</h2>
+               <ul class="ul">
+                  <li class="li">
+                     <p class="p">You have installed the <span class="keyword">Niagara 4.13</span> version.
+                     </p>
+                  </li>
+                  <li class="li">
+                     <p class="p">You have installed the following modules: <span class="keyword apiname">awsUtils-rt,
+                           awsUtils-wb, awsUtils-ux</span>. 
+                     </p>
+                  </li>
+                  <li class="li">
+                     <p class="p">The station hosting the AWS Service must have access to <cite class="cite">amazonaws.*.com</cite> on <span class="keyword apiname">port 443</span> to interact
+                        with the REST endpoint.
+                     </p>
+                  </li>
+                  <li class="li">
+                     <p class="p">All remote target stations require to be at <span class="keyword">Niagara 4.13</span> or higher.
+                     </p>
+                  </li>
+               </ul>
+            </section>
+         </div>
+         <article class="topic task nested1" aria-labelledby="ariaid-title8" lang="en-us" id="ProvisioningNiagaraNetworkWithAWSMQ-07A3958F--en">
+            <h2 class="title topictitle2" id="ariaid-title8">Provisioning NiagaraNetwork with AWS MQTT devices</h2>
+            <div class="body taskbody">
+               <p class="shortdesc">There are three main steps to create a fleet of MQTT devices
+                  on your controller stations:
+               </p>
+               <div class="section prereq p">
+                  <p class="p">All remote target stations require to be at <span class="keyword">Niagara 4.13</span> or higher.
+                  </p>
+               </div>
+               <ol class="ol steps">
+                  <li class="li step"><span class="ph cmd">Register your account to use the <span class="ph uicontrol">Just In Time
+                           Provisioning</span> task using the AWS Service on a <span class="keyword">Supervisor</span>. See <a xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:opentopic-func="http://www.idiominc.com/opentopic/exsl/function" class="xref" href="#ConfiguringJustInTimeProvisioningJI-08076CF9--en">Configuring Just In Time Provisioning (JITP)</a> for more
+                        details.</span></li>
+                  <li class="li step"><span class="ph cmd">Set up the <span class="keyword">Niagara</span> Signing Service on a <span class="keyword">Supervisor</span> to supply signed device certificates. See <a xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:opentopic-func="http://www.idiominc.com/opentopic/exsl/function" class="xref" href="#ConfiguringSigningServiceForAWS-07B0BE95--en">page: Configure the Signing Service for
+                           AWS</a> for more details.</span></li>
+                  <li class="li step"><span class="ph cmd">Run the <span class="ph uicontrol">Install AWS MQTT Device</span> task
+                        to install MQTT devices on each controller. See <a xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:opentopic-func="http://www.idiominc.com/opentopic/exsl/function" class="xref" href="#RunningInstallAWSMQTTDeviceTask-07B10905--en">page: Running the AWS MQTT Provisioning Task</a> for
+                        more details.</span></li>
+               </ol>
+            </div>
+         </article>
+         <article class="topic reference nested1" aria-labelledby="ariaid-title9" lang="en" id="ConfiguringJustInTimeProvisioningJI-08076CF9--en">
+            <h2 class="title topictitle2" id="ariaid-title9">Configuring Just In Time Provisioning (JITP)</h2>
+            <div class="body refbody">
+               <p class="shortdesc"><span class="ph uicontrol">AWS Just In Time Provisioning</span> (JITP)
+                  allows you to provision your devices within AWS IoT upon first connection,
+                  thereby eliminating many manual configuration tasks. This is relevant
+                  in that the MQTT driver supports connections to AWS IoT, using certificates
+                  as means of authentication for each MQTT device.
+               </p>
+               <section class="section">
+                  <div class="p">The scenario is that you have many controller devices,
+                     which require a connection to AWS IoT. Consequently, each controller
+                     requires its own certificate signed by a trusted CA certificate*.
+                     These certificates in the past have required manual generation and
+                     setup within both <span class="keyword">Niagara</span> and AWS, and a repetition of the same task when
+                     they expire.<br><img class="image" src="4ee1af80-c14d-11ee-be84-42010af00059.png"><br></div>
+               </section>
+            </div>
+            <article class="topic task nested2" aria-labelledby="ariaid-title10" lang="en-us" id="CommissioningControllersWithoutJITP-0812B407--en">
+               <h3 class="title topictitle3" id="ariaid-title10">Commissioning controllers without JITP</h3>
+               <div class="body taskbody">
+                  <p class="shortdesc">The following minimum configuration is necessary to commission
+                     a network of controllers <strong class="ph b">without JITP</strong>.
+                  </p>
+                  <section class="section context">
+                     <div class="note note note_note"><span class="note__title">Note:</span> 
+                        <p class="p">*In 2022 it became possible to communicate with
+                           AWS IoT over MQTT without the requirement for a pre-registered CA
+                           certificate, however we recommend to use trusted certificates for
+                           security purposes.
+                        </p>
+                     </div>
+                  </section>
+                  <ol class="ol steps">
+                     <li class="li step"><span class="ph cmd">Set up IAM user.</span></li>
+                     <li class="li step"><span class="ph cmd">Create an AWS IoT policy for your devices.</span></li>
+                     <li class="li step"><span class="ph cmd">Attach various allowed actions and roles to the policy.</span></li>
+                     <li class="li step"><span class="ph cmd">Obtain a CA certificate.*</span></li>
+                     <li class="li step"><span class="ph cmd">In the AWS console or command line, obtain a <span class="ph uicontrol">verification code</span>. *</span></li>
+                     <li class="li step"><span class="ph cmd">Generate a verification certificate with the verification
+                           code as the <span class="ph uicontrol">Common Name</span>.*</span></li>
+                     <li class="li step"><span class="ph cmd">Sign the verification certificate with the CA certificate.*</span></li>
+                     <li class="li step"><span class="ph cmd">Upload CA certificate and verification certificate.*</span></li>
+                     <li class="li step"><span class="ph cmd">Activate certificates.*</span></li>
+                  </ol>
+                  <section class="section result"></section>
+                  <div class="example"></div>
+                  <section class="section postreq">
+                     <p class="p">Repeat the following steps for each device:</p>
+                     <ol class="ol">
+                        <li class="li">
+                           <p class="p">Install the MQTT network and device in your station.</p>
+                        </li>
+                        <li class="li">
+                           <p class="p">Create a <span class="ph uicontrol">Thing</span> to represent the device
+                              in AWS.
+                           </p>
+                        </li>
+                        <li class="li">
+                           <p class="p">Associate IoT policy with the <span class="ph uicontrol">Thing</span>.
+                           </p>
+                        </li>
+                        <li class="li">
+                           <p class="p">Generate a device-specific client certificate.</p>
+                        </li>
+                        <li class="li">
+                           <p class="p">Sign the device certificate with the CA certificate.</p>
+                        </li>
+                        <li class="li">
+                           <p class="p">Upload the device certificate to AWS and activate.</p>
+                        </li>
+                        <li class="li">
+                           <p class="p">Associate certificate with the <span class="ph uicontrol">Thing</span>.
+                           </p>
+                        </li>
+                        <li class="li">
+                           <p class="p">Combine CA certificate, device certificate, and key into a <code class="ph codeph">.pem</code> file.
+                           </p>
+                        </li>
+                        <li class="li">
+                           <p class="p">Upload the <code class="ph codeph">.pem</code> file to the <span class="keyword">Niagara</span> platform certificate manager.
+                           </p>
+                        </li>
+                        <li class="li">
+                           <p class="p">Set the alias of the imported certificate on the MQTT device
+                              authenticator.
+                           </p>
+                        </li>
+                        <li class="li">
+                           <p class="p">Connect.</p>
+                        </li>
+                     </ol>
+                     <p class="p">Prior to device certificate expiration, it is necessary to
+                        repeat these steps for each device .
+                     </p>
+                  </section>
+               </div>
+            </article>
+            <article class="topic reference nested2" aria-labelledby="ariaid-title11" lang="en" id="CommissioningControllersWithJITP-082094B2--en">
+               <h3 class="title topictitle3" id="ariaid-title11">Commissioning controllers with JITP</h3>
+               <div class="body refbody">
+                  <p class="shortdesc">The following process describes how you can commission
+                     controllers using Just In Time Provisioning.
+                  </p>
+                  <section class="section">
+                     <p class="p"></p>
+                  </section>
+                  <section class="section"><br><img class="image" src="483cc9d0-c14d-11ee-be84-42010af00059.png" height="NaN" width="NaN"><br><ol class="ol">
+                        <li class="li">
+                           <p class="p">The <span class="keyword parmname">AWSIoTThingsRegistration</span> role is assigned
+                              to an AWS access key.
+                           </p>
+                        </li>
+                        <li class="li">
+                           <p class="p">A CA certificate is registered along with a provisioning template
+                              policy by a process authorized by that role.
+                           </p>
+                        </li>
+                        <li class="li">
+                           <p class="p">Any device trying to connect to the AWS IoT endpoint for that
+                              account will initially have the connection rejected.
+                           </p>
+                        </li>
+                        <li class="li">
+                           <p class="p">However, if that certificate presented as authentication was
+                              signed by the CA registered in step 1, AWS will then automatically
+                              commission a Thing to represent your device according to the rules
+                              in the provisioning template, thereby using values from the certificate.
+                              When the device makes a subsequent connection attempt, it will be
+                              granted access.
+                           </p>
+                        </li>
+                     </ol>
+                     <p class="p">The functionality within the AWS service allows a <span class="keyword">Niagara</span> <span class="keyword">Workbench</span> user to perform the task of optionally generating a new
+                        CA certificate or using a user-imported one, and performing the CA
+                        registration and template creation with AWS via their REST API.
+                     </p>
+                  </section>
+                  <section class="section">
+                     <div class="p">The provisioning template created by <span class="keyword">Niagara</span> <span class="keyword">Workbench</span> will result in the following:
+                        <ul class="ul">
+                           <li class="li">
+                              <p class="p">The Thing name within AWS matches the <span class="keyword parmname">Common Name</span> value of the device certificate.
+                              </p>
+                           </li>
+                           <li class="li">
+                              <div class="p">The Thing will be granted a policy allowing the following permissions
+                                 for all resources:
+                                 <ul class="ul">
+                                    <li class="li">
+                                       <p class="p">iot:Connect</p>
+                                    </li>
+                                    <li class="li">
+                                       <p class="p">iot:Publish</p>
+                                    </li>
+                                    <li class="li">
+                                       <p class="p">iot:Subscribe</p>
+                                    </li>
+                                    <li class="li">
+                                       <p class="p">iot:Receive</p>
+                                    </li>
+                                    <li class="li">
+                                       <p class="p">iot:GetRetainedMessage</p>
+                                    </li>
+                                    <li class="li">
+                                       <p class="p">iot:ListRetainedMessages</p>
+                                    </li>
+                                    <li class="li">
+                                       <p class="p">iot:RetainPublish</p>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </section>
+               </div>
+               <article class="topic task nested3" aria-labelledby="ariaid-title12" lang="en-us" id="SettingUpJITPForDevices-08255407--en">
+                  <h4 class="title topictitle4" id="ariaid-title12">Setting up JITP for devices</h4>
+                  <div class="body taskbody">
+                     <p class="shortdesc">The following steps describe how to set up Just In Time
+                        Provisioning for <span class="keyword">Niagara</span> devices.
+                     </p>
+                     <div class="section prereq p">In AWS IoT:
+                        <ol class="ol">
+                           <li class="li">
+                              <p class="p">Create an IAM user with an access key and save the key value
+                                 for future step.
+                              </p>
+                           </li>
+                           <li class="li">
+                              <p class="p">Create an IAM service role with the following permissions: <code class="ph codeph">AWSIoTThingsRegistration, AWSIoTLogging, AWSIoTConfigAccess, AWSIoTRuleActions</code>.
+                              </p>
+                           </li>
+                           <li class="li">
+                              <p class="p">Copy role ARN string for future use.</p>
+                           </li>
+                           <li class="li">
+                              <div class="p">Create an IAM policy and use the following JSON, substituting
+                                 the value of your ARN string from the previous step:<pre class="pre codeblock"><code>  {
+      "Version": "2012-10-17",
+      "Statement": [{
+          "Effect": "Allow",
+          "Action": [
+              "iam:GetRole",
+              "iam:PassRole"
+          ],
+          "Resource": "yourArnString"
+      }]
+  }
+</code></pre></div>
+                           </li>
+                           <li class="li">
+                              <p class="p">Add the policy to your IAM user.</p>
+                           </li>
+                        </ol>
+                     </div>
+                     <section class="section context"> In <span class="keyword">Workbench</span>:
+                     </section>
+                     <ol class="ol steps">
+                        <li class="li step stepexpand"><span class="ph cmd">From the <span class="keyword apiname">awsUtils</span> palette, add an <span class="ph uicontrol">AWS Service</span> to the <span class="ph uicontrol">Services</span> container. </span></li>
+                        <li class="li step stepexpand"><span class="ph cmd">For the <span class="keyword parmname">Region</span>, select the AWS region to which your devices will be provisioned.</span></li>
+                        <li class="li step stepexpand"><span class="ph cmd">Right-click <span class="ph uicontrol">Access Keys</span> and select <span class="ph menucascade"><span class="ph uicontrol">Actions</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Add</span></span> to add the access key, which has the correct permissions configured
+                              above.</span></li>
+                        <li class="li step stepexpand"><span class="ph cmd">Expand the <span class="ph uicontrol">Aws IoT</span> component and
+                              populate the <span class="ph uicontrol">Ca Provisioning Params</span>. </span></li>
+                        <li class="li step stepexpand"><span class="ph cmd">Right-click <span class="ph uicontrol">Aws IoT</span> and select <span class="ph menucascade"><span class="ph uicontrol">Actions</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Setup Just In Time Provisioning</span></span>.</span><div class="itemgroup stepresult">The <span class="keyword">Niagara</span> job will be initiated and a <span class="keyword wintitle">Job Log</span> window will appear in <span class="keyword">Workbench</span>.
+                              <p class="p">The <span class="keyword parmname">Mqtt Data Endpoint</span> property of your <span class="ph uicontrol">Aws IoT</span> component will not
+                                 be populated with the endpoint that your MQTT devices can use to connect
+                                 to IoT.
+                              </p>
+                           </div>
+                        </li>
+                        <li class="li step stepexpand"><span class="ph cmd">You can now install your MQTT devices to communicate with
+                              AWS. If you choose to do this manually on each station, you will need
+                              to generate each device certificate and sign them individually with
+                              the CA. However with <span class="keyword">Workbench</span>, it is now possible to automate this. See <a xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:opentopic-func="http://www.idiominc.com/opentopic/exsl/function" class="xref" href="#ProvisioningNiagaraNetworkWithAWSMQ-07A3958F--en">Provisioning NiagaraNetwork with AWS MQTT devices</a> for
+                              more details.</span></li>
+                     </ol>
+                     <section class="section result"></section>
+                     <div class="example"></div>
+                     <section class="section postreq"></section>
+                  </div>
+               </article>
+            </article>
+         </article>
+         <article class="topic task nested1" aria-labelledby="ariaid-title13" lang="en-us" id="ConfiguringSigningServiceForAWS-07B0BE95--en">
+            <h2 class="title topictitle2" id="ariaid-title13">Configuring Signing Service for AWS</h2>
+            <div class="body taskbody">
+               <p class="shortdesc">This procedure enables the AWS MQTT devices to request
+                  signed certificates from the <span class="keyword">Supervisor</span>.
+               </p>
+               <section class="section context"></section>
+               <ol class="ol steps">
+                  <li class="li step stepexpand"><span class="ph cmd">From the <span class="keyword apiname">SigningService</span> palette, add
+                        a <span class="ph uicontrol">Signing Service</span> to your station’s <span class="ph uicontrol">Services</span> container.</span></li>
+                  <li class="li step stepexpand"><span class="ph cmd">From the <span class="keyword apiname">awsUtils</span> palette, drag <span class="ph uicontrol">AwsSigningProfile</span> to the <span class="ph uicontrol">Profiles</span> folder.</span></li>
+                  <li class="li step stepexpand"><span class="ph cmd">Expand <span class="ph uicontrol">Ca Alias And Password</span>, select
+                        the <span class="keyword parmname">Alias</span> from the drop-down menu, and enter
+                        the <span class="keyword parmname">Password</span> for the CA certificate. You may
+                        have generated or imported this during JITP setup.</span></li>
+                  <li class="li step stepexpand"><span class="ph cmd">To generate a unique certificate <span class="keyword parmname">Common Name</span> for each device, you can optionally change the settings in the <span class="keyword parmname">Common Name Template</span>.</span></li>
+                  <li class="li step stepexpand"><span class="ph cmd">Expand the <span class="keyword parmname">Country</span> certificate parameter
+                        and enter a value. You can add more certificate parameters from the <span class="keyword apiname">SigningService</span> palette, but <span class="keyword parmname">Country</span> is a minimum requirement.</span><div class="itemgroup info">To learn more about the Signing Service, see “Signing Service”
+                        in <span class="ph">Niagara Signing Service Guide</span>.
+                     </div>
+                  </li>
+               </ol>
+               <section class="section result"></section>
+               <div class="example"></div>
+               <section class="section postreq"></section>
+            </div>
+         </article>
+         <article class="topic task nested1" aria-labelledby="ariaid-title14" lang="en-us" id="RunningInstallAWSMQTTDeviceTask-07B10905--en">
+            <h2 class="title topictitle2" id="ariaid-title14">Running Install AWS MQTT Device task</h2>
+            <div class="body taskbody">
+               <p class="shortdesc">This task installs an MQTT device on each remote station,
+                  which will automatically onboard itself with the <span class="keyword">Supervisor</span>’s Signing Service, obtain a signed certificate, and connect
+                  to AWS.
+               </p>
+               <div class="section prereq p">
+                  <ul class="ul">
+                     <li class="li">
+                        <p class="p">You have an active NiagaraNetwork connection to each station
+                           on your <span class="keyword">Supervisor</span>.
+                        </p>
+                     </li>
+                     <li class="li">
+                        <p class="p">Each station has a reciprocal connection back to the <span class="keyword">Supervisor</span>.
+                        </p>
+                     </li>
+                     <li class="li">
+                        <p class="p">You have completed the previous steps to configure the AwsService
+                           and SigningService
+                        </p>
+                     </li>
+                  </ul>
+               </div>
+               <section class="section context">
+                  <p class="p"></p>
+               </section>
+               <ol class="ol steps">
+                  <li class="li step stepexpand"><span class="ph cmd">Navigate to your NiagaraNetwork and double-click <span class="ph uicontrol">ProvisioningNwExt</span>.</span></li>
+                  <li class="li step stepexpand"><span class="ph cmd">Optionally, you can add the provisioning step <span class="ph uicontrol">Setup Reciprocal Connection</span> to create the required connection
+                        back to the <span class="keyword">Supervisor</span> if the stations do not have this already.</span></li>
+                  <li class="li step stepexpand"><span class="ph cmd">Add the provisioning step <span class="ph uicontrol">Install AWS MQTT Device</span>.</span><div class="itemgroup stepresult">The <span class="keyword wintitle">Install AWS MQTT Device</span> windows
+                        opens.
+                     </div>
+                  </li>
+                  <li class="li step stepexpand"><span class="ph cmd">Fill in the following details in the window:</span><div class="itemgroup info">
+                        <ol class="ol" type="a">
+                           <li class="li">
+                              <p class="p"><span class="keyword parmname">Mqtt Device Name</span>: Name of the MQTT device. It will be uniform on each station.
+                              </p>
+                           </li>
+                           <li class="li">
+                              <p class="p"><span class="keyword parmname">Signing Service Station</span>: Name of the <span class="keyword">Supervisor</span> that contains the Signing Service.
+                              </p>
+                           </li>
+                           <li class="li">
+                              <p class="p"><span class="keyword parmname">Mqtt Broker Endpoint</span>: Your AWS MQTT endpoint. If you have run the JITP setup, this
+                                 will be pre-populated.
+                              </p>
+                           </li>
+                           <li class="li">
+                              <p class="p"><span class="keyword parmname">Certificate Password</span>: The password to use when storing your signed device certificate.
+                              </p>
+                           </li>
+                           <li class="li">
+                              <p class="p"><span class="keyword parmname">Signing Service Onboarding Comment</span>: A comment, which will appear in the Signing Service against
+                                 each device’s CSR.
+                              </p>
+                           </li>
+                           <li class="li">
+                              <p class="p">In the <span class="keyword wintitle">Stations to include in the job field</span>, add the stations you wish to provision and click <span class="ph uicontrol">Run Now</span>.
+                              </p>
+                           </li>
+                        </ol>
+                     </div>
+                  </li>
+                  <li class="li step stepexpand"><span class="ph cmd">Navigate to <span class="ph menucascade"><span class="ph uicontrol">Signing Service</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Transports</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">foxTransport</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Session Token Store</span></span> and approve
+                        the requests received shortly from each device.</span></li>
+               </ol>
+               <section class="section result">Now each created device on each station automatically obtains
+                  their signed certificate and connects to AWS.
+               </section>
+               <section class="section postreq"></section>
+            </div>
+         </article>
+      </article>
+      <article class="topic reference nested0" aria-labelledby="ariaid-title15" lang="en" id="ComponentsViewsAndWindow-SigningService--en">
+         
+         <h1 class="title topictitle1" id="ariaid-title15">Components, views and windows</h1>
+         
+         
+         
+         <div class="body refbody">
+            <p class="shortdesc">The user interface includes components, views and windows,
+               which provide the means for communicating with the system.
+            </p>
+            
+            <section class="section">
+               <p class="p">The Help topics include context sensitive information
+                  about each component and view, as well as information about individual
+                  windows.
+               </p>
+            </section>
+            
+         </div>
+         
+         <article class="topic reference nested1" aria-labelledby="ariaid-title16" lang="en" id="Components-0567A524--en">
+            <h2 class="title topictitle2" id="ariaid-title16">Components</h2>
+            <div class="body refbody">
+               <p class="shortdesc">Components include services, folders and other model building
+                  blocks associated with a module. You may drag them to a property or
+                  wire sheet from a palette.
+               </p>
+               <section class="section">
+                  <div class="p">Descriptions included in the following topics appear as
+                     context-sensitive help topics when accessed by:
+                     <ul class="ul">
+                        <li class="li">
+                           <p class="p">Right-clicking on the object and selecting <span class="ph menucascade"><span class="ph uicontrol">Views</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Guide Help</span></span></p>
+                        </li>
+                        <li class="li">
+                           <p class="p">Clicking <span class="ph menucascade"><span class="ph uicontrol">Help</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Guide On Target</span></span></p>
+                        </li>
+                     </ul>
+                  </div>
+               </section>
+            </div>
+            <article class="topic reference nested2" aria-labelledby="ariaid-title17" lang="en" id="AwsServiceawsUtils-AwsService-0897C174--en">
+               <h3 class="title topictitle3" id="ariaid-title17">Aws Service (awsUtils-AwsService)</h3>
+               <div class="body refbody">
+                  <p class="shortdesc">The <span class="ph uicontrol">Aws Service</span> provides utilities
+                     and configuration to enable a <span class="keyword">Niagara</span> station to interact with certain services within AWS. 
+                  </p>
+                  <section class="section">
+                     <p class="p">The service itself allows you to define the AWS region
+                        to which your assets belong for this station or site. The region is
+                        used when forming requests to the REST API. The spy page for the service
+                        contains details of REST requests made.
+                     </p><br><img class="image" width="700" src="46eace60-c14d-11ee-be84-42010af00059.png"><br><p class="p">To use the <span class="ph uicontrol">Aws Service</span> component, drag an instance from the <span class="keyword apiname">awsUtils</span> palette to the station’s <span class="ph uicontrol">Services</span> container.
+                     </p>
+                  </section>
+                  <table cellpadding="4" cellspacing="0" border="1" class="simpletable properties simpletableborder">
+                     <colgroup>
+                        <col style="width:33.33333333333333%">
+                        <col style="width:33.33333333333333%">
+                        <col style="width:33.33333333333333%">
+                     </colgroup>
+                     <thead>
+                        <tr class="sthead prophead">
+                           <th class="stentry proptypehd" scope="col">Property</th>
+                           <th class="stentry propvaluehd" scope="col">Value</th>
+                           <th class="stentry propdeschd" scope="col">Description</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr class="strow property">
+                           <td style="vertical-align:top;" class="stentry proptype">Enabled</td>
+                           <td style="vertical-align:top;" class="stentry propvalue"><span class="keyword option">true</span> or <span class="keyword option">false</span> (defaults
+                              to <span class="keyword option">true</span>)
+                           </td>
+                           <td style="vertical-align:top;" class="stentry propdesc">When false, no external requests will be made by the service
+                              or its children.
+                           </td>
+                        </tr>
+                        <tr class="strow property">
+                           <td style="vertical-align:top;" class="stentry proptype">Region</td>
+                           <td style="vertical-align:top;" class="stentry propvalue">drop-down menu</td>
+                           <td style="vertical-align:top;" class="stentry propdesc">Contains the list of AWS regions. Select the one in which
+                              your AWS assets and services belong for this station or site.
+                           </td>
+                        </tr>
+                        <tr class="strow property">
+                           <td style="vertical-align:top;" class="stentry proptype">Access Keys</td>
+                           <td style="vertical-align:top;" class="stentry propvalue">folder</td>
+                           <td style="vertical-align:top;" class="stentry propdesc">Holds references to AWS Access Keys.</td>
+                        </tr>
+                        <tr class="strow property">
+                           <td style="vertical-align:top;" class="stentry proptype">Aws IoT</td>
+                           <td style="vertical-align:top;" class="stentry propvalue">additional properties</td>
+                           <td style="vertical-align:top;" class="stentry propdesc">Contains properties for setup and execution of tasks to
+                              configure your AWS IoT service.
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </article>
+            <article class="topic reference nested2" aria-labelledby="ariaid-title18" lang="en" id="AwsAccessKeyFolderawsUtils-AwsAcces-08A642A2--en">
+               <h3 class="title topictitle3" id="ariaid-title18">Aws Access Key Folder (awsUtils-AwsAccessKeyFolder)</h3>
+               <div class="body refbody">
+                  <p class="shortdesc">To utilize some of the capabilities of the AWS Service,
+                     it is necessary to use an access key for authentication. These tasks
+                     may typically be one-off configuration tasks during station commissioning.
+                     Thus, by default access keys are only stored temporarily. This is
+                     in line with best practice as access keys should only be stored as
+                     long as you require them.
+                  </p>
+                  <section class="section">
+                     <p class="p">AWS Access Keys are stored securely in a dedicated encrypted
+                        key ring to which only the <span class="keyword apiname">awsUtils</span> module code
+                        has access. Keys are automatically purged from the key ring once their
+                        storage time has elapsed.
+                     </p>
+                     <p class="p">To add an access key, invoke the <span class="ph uicontrol">Add</span> action, paste the value in the <span class="keyword parmname">Access Key
+                           Id</span>, and select the period you wish for the station to securely
+                        store the key value. It is best practice to only store the key for
+                        the time in which it is required to configure the remote service in
+                        AWS.
+                     </p>
+                  </section>
+                  <section class="section">
+                     <h4 class="title sectiontitle">Actions</h4>
+                     <p class="p"><strong class="ph b">Add</strong>: Adds a new AWS access
+                        key
+                     </p>
+                     <p class="p"><strong class="ph b">Cleanup Purged Keys</strong>: Forces removal of any access
+                        keys that have passed their purge time.
+                     </p>
+                  </section>
+               </div>
+            </article>
+            <article class="topic reference nested2" aria-labelledby="ariaid-title19" lang="en" id="AwsStoredAccessKeyawsUtils-AwsStore-08AAD87B--en">
+               <h3 class="title topictitle3" id="ariaid-title19">Aws Stored Access Key (awsUtils-AwsStoredAccessKey)</h3>
+               <div class="body refbody">
+                  <p class="shortdesc"><span class="ph uicontrol">Aws Stored Access Key</span> represents
+                     an AWS access key securely stored in a dedicated key ring.
+                  </p>
+                  <section class="section">
+                     <p class="p">To add an access
+                        key, invoke the <span class="ph uicontrol">Add</span> action on the <span class="ph uicontrol">Aws Access Key Folder</span>, paste the value in the <span class="keyword parmname">Access Key Id</span>, and select the period you wish for <span class="keyword">Workbench</span> to securely store the key value. It is best practice
+                        to only store the key for the time in which it is required to configure
+                        the remote service in AWS.
+                     </p>
+                  </section>
+                  <table cellpadding="4" cellspacing="0" border="1" class="simpletable properties simpletableborder">
+                     <colgroup>
+                        <col style="width:33.33333333333333%">
+                        <col style="width:33.33333333333333%">
+                        <col style="width:33.33333333333333%">
+                     </colgroup>
+                     <thead>
+                        <tr class="sthead prophead">
+                           <th class="stentry proptypehd" scope="col">Property</th>
+                           <th class="stentry propvaluehd" scope="col">Value</th>
+                           <th class="stentry propdeschd" scope="col">Description</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr class="strow property">
+                           <td style="vertical-align:top;" class="stentry proptype">Access Key Id</td>
+                           <td style="vertical-align:top;" class="stentry propvalue">read-only</td>
+                           <td style="vertical-align:top;" class="stentry propdesc">Displays the unique Id of the access key.</td>
+                        </tr>
+                        <tr class="strow property">
+                           <td style="vertical-align:top;" class="stentry proptype">Stored</td>
+                           <td style="vertical-align:top;" class="stentry propvalue">read-only</td>
+                           <td style="vertical-align:top;" class="stentry propdesc">If <span class="keyword option">true</span>, the key is stored in the key ring.
+                              If <span class="keyword option">false</span>, the access key is purged.
+                           </td>
+                        </tr>
+                        <tr class="strow property">
+                           <td style="vertical-align:top;" class="stentry proptype">Purge Date</td>
+                           <td style="vertical-align:top;" class="stentry propvalue">read-only</td>
+                           <td style="vertical-align:top;" class="stentry propdesc">Displays the date and time at which the key will be purged
+                              from the key ring.
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </article>
+            <article class="topic reference nested2" aria-labelledby="ariaid-title20" lang="en" id="AwsIoTawsUtils-AwsIoT-08B57865--en">
+               <h3 class="title topictitle3" id="ariaid-title20">Aws IoT (awsUtils-AwsIoT)</h3>
+               <div class="body refbody">
+                  <p class="shortdesc">Aws IoT is a component used to set up and execute tasks
+                     for the configuration of your AWS IoT service.
+                  </p>
+                  <section class="section">
+                     <p class="p">After configuring the child <span class="ph uicontrol">Ca Provisioning
+                           Params</span>, use the <span class="ph uicontrol">Setup Just in Time Provisioning</span> action to execute a job to register a CA with AWS. The results of
+                        the task are populated in the properties below. See <a xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:opentopic-func="http://www.idiominc.com/opentopic/exsl/function" class="xref" href="#RunningInstallAWSMQTTDeviceTask-07B10905--en">Running the AWS MQTT Provisioning Task</a> for more details.
+                     </p><img class="image" width="700" src="46ea5930-c14d-11ee-be84-42010af00059.png"></section>
+                  <table cellpadding="4" cellspacing="0" border="1" class="simpletable properties simpletableborder">
+                     <colgroup>
+                        <col style="width:33.33333333333333%">
+                        <col style="width:33.33333333333333%">
+                        <col style="width:33.33333333333333%">
+                     </colgroup>
+                     <thead>
+                        <tr class="sthead prophead">
+                           <th class="stentry proptypehd" scope="col">Property</th>
+                           <th class="stentry propvaluehd" scope="col">Value</th>
+                           <th class="stentry propdeschd" scope="col">Description</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr class="strow property">
+                           <td style="vertical-align:top;" class="stentry proptype">Ca Provisioning Params</td>
+                           <td style="vertical-align:top;" class="stentry propvalue">additional properties (see property table below)</td>
+                           <td style="vertical-align:top;" class="stentry propdesc">Contains various properties to configure the provisioning
+                              job.
+                           </td>
+                        </tr>
+                        <tr class="strow property">
+                           <td style="vertical-align:top;" class="stentry proptype">Provisioning Ca Cert Alias</td>
+                           <td style="vertical-align:top;" class="stentry propvalue">read-only</td>
+                           <td style="vertical-align:top;" class="stentry propdesc">Displays the alias of the CA certificate that was registered
+                              with AWS.
+                           </td>
+                        </tr>
+                        <tr class="strow property">
+                           <td style="vertical-align:top;" class="stentry proptype">Mqtt Data Endpoint</td>
+                           <td style="vertical-align:top;" class="stentry propvalue">read-only</td>
+                           <td style="vertical-align:top;" class="stentry propdesc">Displays the retrieved endpoint to which MQTT devices can
+                              connect for this AWS account and region.
+                           </td>
+                        </tr>
+                        <tr class="strow property">
+                           <td style="vertical-align:top;" class="stentry proptype">Provisioning Last Run</td>
+                           <td style="vertical-align:top;" class="stentry propvalue">read-only</td>
+                           <td style="vertical-align:top;" class="stentry propdesc">Displays the date and time at which the provisioning job
+                              was last executed.
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <section class="section">
+                     <h4 class="title sectiontitle">Actions</h4>
+                     <p class="p"><strong class="ph b">Setup Just in Time Provisioning</strong>: Executes a job to register a CA with AWS.
+                     </p>
+                  </section>
+                  <section class="section">
+                     <h4 class="title sectiontitle">Ca Provisioning Params folder</h4><img class="image" width="700" src="47a0d7f0-c14d-11ee-be84-42010af00059.png"></section>
+                  <table cellpadding="4" cellspacing="0" border="1" class="simpletable properties simpletableborder">
+                     <colgroup>
+                        <col style="width:33.33333333333333%">
+                        <col style="width:33.33333333333333%">
+                        <col style="width:33.33333333333333%">
+                     </colgroup>
+                     <thead>
+                        <tr class="sthead prophead">
+                           <th class="stentry proptypehd" scope="col">Property</th>
+                           <th class="stentry propvaluehd" scope="col">Value</th>
+                           <th class="stentry propdeschd" scope="col">Description</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr class="strow property">
+                           <td style="vertical-align:top;" class="stentry proptype">Access Key Id</td>
+                           <td style="vertical-align:top;" class="stentry propvalue">drop-down menu</td>
+                           <td style="vertical-align:top;" class="stentry propdesc">Selects the access key to use for authenticating with AWS.</td>
+                        </tr>
+                        <tr class="strow property">
+                           <td style="vertical-align:top;" class="stentry proptype">Role Arn</td>
+                           <td style="vertical-align:top;" class="stentry propvalue">password</td>
+                           <td style="vertical-align:top;" class="stentry propdesc">Specifies the ARN string for the service role that has the
+                              AWS <span class="keyword apiname">AWSIoTThingsRegistration</span> permission.
+                           </td>
+                        </tr>
+                        <tr class="strow property">
+                           <td style="vertical-align:top;" class="stentry proptype">Ca Certificate Source</td>
+                           <td style="vertical-align:top;" class="stentry propvalue">drop-down menu</td>
+                           <td style="vertical-align:top;" class="stentry propdesc">Selects to generate a new CA certificate; or use an existing
+                              imported CA certificate.
+                           </td>
+                        </tr>
+                        <tr class="strow property">
+                           <td style="vertical-align:top;" class="stentry proptype">Existing Niagara Cert Alias</td>
+                           <td style="vertical-align:top;" class="stentry propvalue">drop-down menu</td>
+                           <td style="vertical-align:top;" class="stentry propdesc">Specifies the alias of the existing imported CA certificate
+                              if selected to be used.
+                           </td>
+                        </tr>
+                        <tr class="strow property">
+                           <td style="vertical-align:top;" class="stentry proptype">Ca Certificate Password</td>
+                           <td style="vertical-align:top;" class="stentry propvalue">password</td>
+                           <td style="vertical-align:top;" class="stentry propdesc">Specifies the password to use for the existing CA certificate,
+                              or password to use to secure the newly generated one.
+                           </td>
+                        </tr>
+                        <tr class="strow property">
+                           <td style="vertical-align:top;" class="stentry proptype">New Ca Certificate Dn</td>
+                           <td style="vertical-align:top;" class="stentry propvalue">string</td>
+                           <td style="vertical-align:top;" class="stentry propdesc">Populates the <span class="keyword parmname">Distinguished Name</span> attribute
+                              list to use for a newly generated CA certificate. May optionally populate
+                              only some of the fields. CN=,O=,OU=,L=,ST=,C=
+                           </td>
+                        </tr>
+                        <tr class="strow property">
+                           <td style="vertical-align:top;" class="stentry proptype">New Ca Certificate Expiry Days</td>
+                           <td style="vertical-align:top;" class="stentry propvalue">days, hours, minutes (defaults to 730 days)</td>
+                           <td style="vertical-align:top;" class="stentry propdesc">Defines the validity period for a newly generated CA certificate.</td>
+                        </tr>
+                        <tr class="strow property">
+                           <td style="vertical-align:top;" class="stentry proptype">Overwrites Certificates</td>
+                           <td style="vertical-align:top;" class="stentry propvalue"><span class="keyword option">true</span> or <span class="keyword option">false</span> (defaults
+                              to <span class="keyword option">false</span>)
+                           </td>
+                           <td style="vertical-align:top;" class="stentry propdesc">If <span class="keyword option">true</span>, it will overwrite an existing
+                              CA certificate in the Key Store when generating a new CA.
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </article>
+            <article class="topic reference nested2" aria-labelledby="ariaid-title21" lang="en" id="AwsSigningProfileawsUtils-AwsSignin-08BB0465--en">
+               <h3 class="title topictitle3" id="ariaid-title21">Aws Signing Profile (awsUtils-AwsSigningProfile)</h3>
+               <div class="body refbody">
+                  <p class="shortdesc">This component is an AWS-specific Signing Profile against
+                     which device certificates can be signed.
+                  </p>
+                  <section class="section">
+                     <p class="p">To use the <span class="ph uicontrol">AWS Signing Profile</span>,
+                        drag it from the <span class="keyword apiname">awsUtils</span> palette to the <span class="ph menucascade"><span class="ph uicontrol">Signing Service</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Profiles</span></span> folder, and populate the <span class="keyword parmname">CommonName</span> and <span class="keyword parmname">Country</span> settings to define the certificate
+                        distinguished name fields. You can further customize the profile by
+                        adding <span class="ph uicontrol">CertificateParameters</span> from the <span class="keyword apiname">Signing Service</span> palette. For more details, see “Signing
+                        Service” in <span class="ph">Niagara Signing Service Guide</span>.
+                     </p><br><img class="image" width="700" src="46eb1c80-c14d-11ee-be84-42010af00059.png"><br></section>
+                  <table cellpadding="4" cellspacing="0" border="1" class="simpletable properties simpletableborder">
+                     <colgroup>
+                        <col style="width:33.33333333333333%">
+                        <col style="width:33.33333333333333%">
+                        <col style="width:33.33333333333333%">
+                     </colgroup>
+                     <thead>
+                        <tr class="sthead prophead">
+                           <th class="stentry proptypehd" scope="col">Property</th>
+                           <th class="stentry propvaluehd" scope="col">Value</th>
+                           <th class="stentry propdeschd" scope="col">Description</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr class="strow property">
+                           <td style="vertical-align:top;" class="stentry proptype">Common Name</td>
+                           <td style="vertical-align:top;" class="stentry propvalue">additional properties</td>
+                           <td style="vertical-align:top;" class="stentry propdesc">Contains properties that you can use to optionally generate
+                              a unique certificate Common Name for each device.
+                           </td>
+                        </tr>
+                        <tr class="strow property">
+                           <td style="vertical-align:top;" class="stentry proptype">Country</td>
+                           <td style="vertical-align:top;" class="stentry propvalue">additional properties</td>
+                           <td style="vertical-align:top;" class="stentry propdesc">Contains the properties to define the Certificate Dn Field
+                              Parameter.
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </article>
+            <article class="topic reference nested2" aria-labelledby="ariaid-title22" lang="en" id="AwsJitpMqttAuthenticatorabstractMqt-061BB575--en">
+               <h3 class="title topictitle3" id="ariaid-title22">Aws Jitp Mqtt Authenticator (abstractMqttDriver-AwsJitpMqttAuthenticator)</h3>
+               <div class="body refbody">
+                  <p class="shortdesc">The <span class="ph uicontrol">Aws Jitp Mqtt Authenticator</span> component
+                     connects to Amazon Web Services (AWS) utilizing the <span class="ph uicontrol">Just
+                        In Time Provisioning</span> (JITP) functionality as configured
+                     in the <span class="keyword apiname">awsUtils</span> module. See “<cite class="cite">Configuring
+                        Just In Time Provisioning</cite>” in the “<span class="ph">Niagara AWS Utils Guide</span>” for more details.
+                  </p>
+                  <section class="section">
+                     <p class="p"><span class="ph uicontrol">Just In Time Provisioning</span> allows
+                        a fleet of devices to automatically connect to AWS with auto-generated
+                        certificates as means of authentication. The major difference to the
+                        existing AWS MQTT authenticator is that the JITP authenticator does
+                        not require an AWS user to manually configure the device in AWS IoT,
+                        or to generate and sign their device certificate. This is performed
+                        in conjunction with the Signing Service, which automatically supplies
+                        signing certificates to each authenticator. In addition, certificates
+                        are also renewed without any user intervention required. For more
+                        information, see “<cite class="cite">Signing Service</cite>” in the “<span class="ph">Niagara Signing Service Guide</span>”.
+                     </p>
+                     <div class="p"><br><img class="image" width="500" src="46e85d60-c14d-11ee-be84-42010af00059.png"><br><figure class="fig fignone" id="AwsJitpMqttAuthenticatorabstractMqt-061BB575--en__2cc53548-7fbf-45fa-83ae-bb51f465b585">
+                           <figcaption xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:opentopic-func="http://www.idiominc.com/opentopic/exsl/function"><span class="fig--title-label">Figure 1. </span>Aws Jitp Mqtt Authenticator properties
+                           </figcaption><img class="image" src="46e8ab80-c14d-11ee-be84-42010af00059.png"></figure>
+                     </div>
+                  </section>
+                  <table cellpadding="4" cellspacing="0" border="1" class="simpletable properties simpletableborder">
+                     <colgroup>
+                        <col style="width:33.33333333333333%">
+                        <col style="width:33.33333333333333%">
+                        <col style="width:33.33333333333333%">
+                     </colgroup>
+                     <thead>
+                        <tr class="sthead prophead">
+                           <th class="stentry proptypehd" scope="col">Property</th>
+                           <th class="stentry propvaluehd" scope="col">Value</th>
+                           <th class="stentry propdeschd" scope="col">Description</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr class="strow property">
+                           <td style="vertical-align:top;" class="stentry proptype">Broker Endpoint</td>
+                           <td style="vertical-align:top;" class="stentry propvalue">string</td>
+                           <td style="vertical-align:top;" class="stentry propdesc">Defines the broker endpoint with your AWS IoT service endpoint.</td>
+                        </tr>
+                        <tr class="strow property">
+                           <td style="vertical-align:top;" class="stentry proptype">Client ID</td>
+                           <td style="vertical-align:top;" class="stentry propvalue">read-only</td>
+                           <td style="vertical-align:top;" class="stentry propdesc">Automatically populated when the signed certificate is retrieved
+                              from the Signing Service. The value will match the Common Name of
+                              the certificate.
+                           </td>
+                        </tr>
+                        <tr class="strow property">
+                           <td style="vertical-align:top;" class="stentry proptype">Broker Port</td>
+                           <td style="vertical-align:top;" class="stentry propvalue">numeric value [0–100000]</td>
+                           <td style="vertical-align:top;" class="stentry propdesc">Automatically set to the AWS default port 8883.</td>
+                        </tr>
+                        <tr class="strow property">
+                           <td style="vertical-align:top;" class="stentry proptype">Callback Router</td>
+                           <td style="vertical-align:top;" class="stentry propvalue">additional properties</td>
+                           <td style="vertical-align:top;" class="stentry propdesc">Specifies <span class="ph uicontrol">Callback Type</span> and <span class="ph uicontrol">Point Callback Handler</span>.
+                           </td>
+                        </tr>
+                        <tr class="strow property">
+                           <td style="vertical-align:top;" class="stentry proptype">Certificate Alias and Password</td>
+                           <td style="vertical-align:top;" class="stentry propvalue">additional properties</td>
+                           <td style="vertical-align:top;" class="stentry propdesc">Specifies alias and password for the certificate used to
+                              authenticate with AWS. Alias is automatically generated in the format
+                              ‘aws_deviceName’
+                           </td>
+                        </tr>
+                        <tr class="strow property">
+                           <td style="vertical-align:top;" class="stentry proptype">Cert Requester</td>
+                           <td style="vertical-align:top;" class="stentry propvalue">additional properties</td>
+                           <td style="vertical-align:top;" class="stentry propdesc">Contains components that submit a CSR to the <span class="keyword">Supervisor</span> Signing Service and obtain the signed certificate
+                              to install in the <span class="keyword wintitle">User Key Store</span>.
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <section class="section">
+                     <h4 class="title sectiontitle">Automatic install</h4>
+                     <p class="p">To use this authenticator,
+                        you can automatically install an MQTT device on each <span class="keyword">Niagara</span> station in your network using a <span class="keyword">Niagara</span> provisioning task from a <span class="keyword">Supervisor</span> station. As the device is added to the station,
+                        it will automatically onboard with the Signing Service, obtain a signed
+                        device certificate and connect to AWS. For more information, see “Running
+                        Install AWS MQTT Device task” in the “<span class="ph">Niagara AWS Utils Guide</span>.
+                     </p>
+                  </section>
+                  <section class="section">
+                     <h4 class="title sectiontitle">Manual install</h4>
+                     <p class="p">You can also manually install
+                        a single device by dragging the <span class="ph uicontrol">AwsJitpMqttDevice</span> component from the <span class="keyword apiname">abstractMqttDriver</span> palette under the <span class="ph uicontrol">Devices</span> folder.
+                     </p>
+                     <div class="p">
+                        <ul class="ul">
+                           <li class="li">
+                              <p class="p">Populate the broker endpoint with your AWS IoT service endpoint
+                                 and change the port if different from the AWS default.
+                              </p>
+                           </li>
+                           <li class="li">
+                              <p class="p"><span class="keyword parmname">Certificate Alias</span> will be populated automatically.
+                                 We recommend that you enter a password to protect your device certificate
+                                 in the <span class="keyword">Niagara</span> <span class="keyword wintitle">User Key Store</span>.
+                              </p>
+                           </li>
+                           <li class="li">
+                              <p class="p">On <span class="keyword parmname">Cert Requester</span>, invoke the <span class="ph uicontrol">Onboard</span> action and expand this component to monitor progress.
+                                 An admin user will need to approve the onboarding request in the <span class="keyword">Supervisor</span>. For more details, see “<cite class="cite">Signing Service</cite>” in the “<span class="ph">Niagara Signing Service Guide</span>”.
+                              </p>
+                           </li>
+                        </ul>
+                     </div>
+                  </section>
+               </div>
+            </article>
+         </article>
+      </article>
+      <article class="topic concept nested0" aria-labelledby="ariaid-title23" lang="en-us" id="concept-7242--en">
+         <h1 class="title topictitle1" id="ariaid-title23">Glossary</h1>
+         <div class="body conbody">
+            <p class="shortdesc">The following glossary entries relate specifically to the topics that are included
+               as part of this document.
+            </p>
+            <p class="p">To find more glossary terms and definitions refer to  glossaries in other individual
+               documents.
+            </p>
+            <section class="section">
+               <h2 class="title sectiontitle">Alphabetical listing</h2>
+               <p class="p"></p>
+            </section>
+         </div>
+         <article class="topic concept glossentry nested1" aria-labelledby="ariaid-title24" lang="en" id="AccessKey-09388ABC--en">
+            
+            <h2 class="title glossterm topictitle2" id="ariaid-title24">Access Key</h2>
+            
+            <div class="abstract glossdef">A secret credential string that identifies an AWS (Amazon
+               Web Services) account and provides access to its services.
+            </div>
+            
+         </article>
+         <article class="topic concept glossentry nested1" aria-labelledby="ariaid-title25" lang="en" id="AccessKeyId-0938F119--en">
+            
+            <h2 class="title glossterm topictitle2" id="ariaid-title25">Access Key Id</h2>
+            
+            <div class="abstract glossdef">A unique string that identifies a particular access key.</div>
+            
+         </article>
+         <article class="topic concept glossentry nested1" aria-labelledby="ariaid-title26" lang="en" id="AmazonResourceNameARN-09397C8B--en">
+            
+            <h2 class="title glossterm topictitle2" id="ariaid-title26">Amazon Resource Name (ARN)</h2>
+            
+            <div class="abstract glossdef">A unique identifier of AWS resources. It is required to
+               specify a resource unambiguously across Amazon Web Services (AWS).
+            </div>
+            
+         </article>
+         <article class="topic concept glossentry nested1" aria-labelledby="ariaid-title27" lang="en" id="AmazonWebServicesAWS-09376B19--en">
+            
+            <h2 class="title glossterm topictitle2" id="ariaid-title27">Amazon Web Services (AWS)</h2>
+            
+            <div class="abstract glossdef">Cloud computing services offered by the <cite class="cite">Amazon Web
+                  Services</cite> company.
+            </div>
+            
+         </article>
+         <article class="topic concept glossentry nested1" aria-labelledby="ariaid-title28" lang="en" id="AWSIoT-0937D79C--en">
+            
+            <h2 class="title glossterm topictitle2" id="ariaid-title28">AWS IoT</h2>
+            
+            <div class="abstract glossdef">The Internet of Things service within <cite class="cite">Amazon Web Services</cite> (AWS) that offers the ability to connect to and manage remote devices
+               via MQTT.
+            </div>
+            
+         </article>
+         <article class="topic concept glossentry nested1" aria-labelledby="ariaid-title29" lang="en" id="JustInTimeProvisioningJITP-0D37B3CB--en">
+            
+            <h2 class="title glossterm topictitle2" id="ariaid-title29">Just In Time Provisioning (JITP)</h2>
+            
+            <div class="abstract glossdef">The ability to provision your devices within AWS IoT at
+               the time of first connection, thereby eliminating many manual configuration
+               tasks.
+            </div>
+            
+         </article>
+      </article>
+   </body>
+</html>
