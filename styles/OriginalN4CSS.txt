@@ -1,0 +1,33 @@
+Original css from Niagara4_PDF publishing
+
+
+/* *************** hide all 
+/* LAYOUT ***************************************************************/
+@import url(60bcb2e6-a6e1-483c-a0bf-6effd854c83c); /* niagara_cover.css */
+@import url(5676c773-1e1f-4580-b8ce-137c70400ec3); /* niagara_typography.css */ 
+
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara_legal_page.css");
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara_page_defs.css");
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara_orientation_size.css");
+
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara_blanks.css");
+
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara_breaks.css");
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara_toc.css");
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara_color.css");
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara_header_footer.css");
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara_formatting.css");
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara_ordered_list_unordered_list_step_substep_choice.css");
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara_choices_steps_substeps_numbering.css");
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara_chapter_numbering.css");  
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara-notes.css");
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara_titles.css");
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara_figure_image.css");
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara_uicontrol_inline_elements.css");
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara_filepath_sysoutput_userinput_varname.css");
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara_cause_condition_context_example_postreq_prereq.css");
+
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara_hide_empty_elements.css");
+@import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara_tables.css");
+
+/* @import url("https://niagaradocs.github.io/dita-techdocs/styles/niagara_min_elements.css"); */
