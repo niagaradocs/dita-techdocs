@@ -1,0 +1,63 @@
+
+Docs
+API reference
+Developer message
+# Project Handoff Summary: Tridium Product Taxonomy Initiative
+## Overview
+This summary provides a handoff-style update on the Tridium Product Taxonomy Project, structured to enable seamless continuity for myself or a future project manager after a break. The project focuses on building a **Master Taxonomy Framework** with two interconnected components: **Product Taxonomy** and **Document Taxonomy**. Please review the following content and attached files. Provide feedback on the viability of splitting the taxonomy into two parts and highlight any potential concerns with this approach. Note that column headings and terms have been reconfigured, a crosswalk table tab has been added, and a governance tab is planned to aid future management and evolution of the taxonomy. Insights based on prior work and referenced sources are especially appreciated.
+---
+## ✅ Workflow Checklist
+Begin with this conceptual checklist before engaging in detailed review or feedback:
+1. Review summary and attached files for context and completeness
+2. Evaluate the split between Product Taxonomy and Document Taxonomy
+3. Assess configuration of columns, terms, and new tabs (crosswalk, governance)
+4. Identify potential risks or issues regarding taxonomy division
+5. Suggest corrective actions or enhancements based on previous work and sources
+---
+## 🧭 Project Purpose
+The objective is to design and implement a Master Taxonomy Framework for Tridium products to ensure consistent tagging and classification across documentation, product data, and internal systems. This will enhance discoverability, governance, and alignment between product management and technical documentation.
+---
+## 🎯 Project Goals
+- **Develop a Unified Taxonomy Structure**
+- Define comprehensive fields (e.g., Product Family, SKU, Platform Compatibility, Intent, Audience) spanning product and documentation needs.
+- Align taxonomy fields with financial/product systems and documentation workflows.
+- **Enable Data Integration**
+- Use Python scripting to extract/transform raw product hierarchy data into a structured taxonomy.
+- Populate the taxonomy with current product data from financial sources.
+- **Support Governance and Scalability**
+- Integrate metadata (update frequency, ownership, guidelines) to support ongoing governance.
+- Enable evolution of taxonomy alongside product and documentation changes.
+---
+## 📂 Key Files
+- **Enhanced_Taxonomy_Workbook.xlsx**: Master taxonomy template with tabs for Product Taxonomy, Document Taxonomy, Crosswalk Table, Governance, and Terms. Finalized columns; data population ongoing.
+- **Updated_Taxonomy_Data.xlsx**: Output from the Python script; contains a “Taxonomy Data” sheet with 3,877 product records. Columns align to Product Taxonomy; documentation-specific fields are pending.
+- **Tridium_Taxonomy_1.xlsx**: Raw product hierarchy data from financial systems, used as script input.
+---
+## ✅ Current Progress
+- **Column Alignment:** Compared and documented columns across tabs in the “Terms” tab of the Enhanced Workbook.
+- **Data Readiness:**
+- *Product Taxonomy:* 6 columns matched and ready for import.
+- *Document Taxonomy:* No matched columns yet; needs further enrichment.
+- *Crosswalk Table:* Product Model matched; documentation tags, OEM Variant, and Intent need mapping or manual input.
+- *Governance Tab:* Update frequency and usage guidelines drafted.
+---
+## 🔄 Next Steps
+- **Import Product Taxonomy Data:** Script or copy aligned data from Updated_Taxonomy_Data.xlsx to the Product Taxonomy tab of the Enhanced Workbook.
+- **Plan for Document Taxonomy:** Identify information sources or stakeholders for Intent, Persona, and Glossary Terms fields; consider metadata from documentation systems like Heretto.
+- **Further Develop Crosswalk Table:** Define mapping rules or lookup tables linking product models to documentation tags and intent. Validate with product managers or technical writers as needed.
+- **Enhance Automation:** Extend Python scripts for multi-tab support and enrichment logic. Implement validation checks for taxonomy completeness and consistency.
+---
+## 🧐 Strategic Considerations
+- **Scalability:** Ensure adaptability for new product lines and documentation formats.
+- **Collaboration:** Maintain active input from product, documentation, and support teams for field definition and mapping.
+- **Governance:** Set a recurring review cadence (e.g., quarterly) and assign taxonomy maintenance ownership.
+---
+## Review Request
+- Assess whether treating Product and Document Taxonomies as distinct entities within the master framework is viable, and highlight any drawbacks or advantages to this approach.
+- Consider the impact of reconfigured columns/terms and upcoming crosswalk and governance features.
+- Share advice or corrective insight, referencing our shared sources and previous taxonomy work.
+Request changes (optional)
+Prompt Optimizer will apply best practices to your prompt.
+Draft
+Payment method needed
+You'll need to set up billing before you can use the playground.
