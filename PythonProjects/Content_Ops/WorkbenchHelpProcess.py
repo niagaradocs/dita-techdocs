@@ -5,6 +5,7 @@ This script processes DITA-OT HTML5 output to prepare files for a custom help sy
 
 1. Asking user for options: Use a pre-defined list or enter a single document name.
     a. User can select between two target folders: c:\_target_html or c:\niagara\techdocsdev.
+    b. Source zip files are assumed to be in the path defined by "source_root_folder" variable.
 2. Locating appropriate zip file(s) and extracting contents into the target folder for processing.
 3. Copying and renaming HTML files based on topic IDs, organizing images into a 'graphics' folder, and renaming the legal page to 'index.html'.
 4. Renaming the existing 'index.html' to 'toc.html' and updating all internal links to match the new file structure.
