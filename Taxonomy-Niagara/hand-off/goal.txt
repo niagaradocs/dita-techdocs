@@ -1,0 +1,6 @@
+docKey does not carry a version with it, but identifies a unique document. Software documents do not carry any version information but are simply identified by a cover date that should match the date of the latest change log entry. Software documents are published to PDF, online HTML, and to Workbench Help. The Workbench Help is built into a document that has the docKey name with a .jar suffix for use in the Niagara Workbench application. While every build of a software image contains software jar files (including doc.jar files), there is no visible version identity in the document and it is not really needed because the documentation content tries to match the version of the software release. 
+
+Most of our discussion about the document taxonomy has been about the document as a whole and less about the contents of the document. One of the goals of the project is to define the canonical terms, spelling, and meaning of the terminology used within the documents as well as tagging some of those terms with appropriate attribute values so the metadata can be used to filter search as well as inform AI. 
+
+goal
+Implement single taxonomy using terms to support consistent communication across Tridium's end-to-end vision for products on premise, in cloud, & throughout the enterprise. Work with Prod Mktg, Marcomm, Eng. to refine framework and implement accordingly.
