@@ -57,7 +57,3 @@ The objective is to design and implement a Master Taxonomy Framework for Tridium
 - Consider the impact of reconfigured columns/terms and upcoming crosswalk and governance features.
 - Share advice or corrective insight, referencing our shared sources and previous taxonomy work.
 Request changes (optional)
-Prompt Optimizer will apply best practices to your prompt.
-Draft
-Payment method needed
-You'll need to set up billing before you can use the playground.
