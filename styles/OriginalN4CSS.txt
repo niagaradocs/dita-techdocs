@@ -2,7 +2,7 @@ Original css from Niagara4_PDF publishing
 
 
 /* *************** hide all 
-/* LAYOUT ***************************************************************/
+/* LAYOUT **************************************************************/
 @import url(60bcb2e6-a6e1-483c-a0bf-6effd854c83c); /* niagara_cover.css */
 @import url(5676c773-1e1f-4580-b8ce-137c70400ec3); /* niagara_typography.css */ 
 
