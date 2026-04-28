@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="bacnetAws-BacnetAwsConfigFolder" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">AwsConfigFolder</title>
+<shortdesc class="- topic/shortdesc ">This component implements a folder under a BacnetAwsNetwork.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">AwsConfigFolder</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">Typically, you add <filepath class="+ topic/ph sw-d/filepath ">AwsConfigFolder</filepath> using the <apiname class="+ topic/keyword pr-d/apiname ">bacnetAws</apiname> palette and dragging it into
+the <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet Aws Config Manager</wintitle> view of the <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetAwsNetwork</uicontrol>. Each <filepath class="+ topic/ph sw-d/filepath ">AwsConfigFolder</filepath> has its own <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet Aws Config Manager</wintitle> view.</p></section>
+</refbody>
+</reference>

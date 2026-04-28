@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="OpcUaClientTasksOpcUa-D3DB8DAD" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">OPC UA client tasks</title>
+<shortdesc class="- topic/shortdesc ">The following topics describe how to set up the OPC UA
+client, connect to an OPC UA server, discover and add points with
+alarm and history extensions and subscribe for OPC UA alarm events.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">client tasks</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "/>
+</refbody>
+</reference>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="CreatingACustomTagGroup-37482506" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Creating a custom tag group</title><shortdesc class="- topic/shortdesc ">Use the <apiname class="+ topic/keyword pr-d/apiname ">tagdictionary</apiname> palette to create
+a custom tag group in a tag dictionary. This procedure describes how
+to edit an existing tag dictionary, add a custom tag group and configure
+it with tags. </shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Tag Group<indexterm class="- topic/indexterm ">creating custom</indexterm></indexterm><indexterm class="- topic/indexterm ">custom tag dictionary<indexterm class="- topic/indexterm ">editing</indexterm></indexterm></keywords></metadata></prolog><taskbody class="- topic/body task/taskbody "><prereq class="- topic/section task/prereq "><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">Existing tag dictionary</p></li><li class="- topic/li "><p class="- topic/p ">The <apiname class="+ topic/keyword pr-d/apiname ">tagdictionary</apiname> palette is open.</p></li></ul></prereq><context class="- topic/section task/context "><p class="- topic/p ">Once a tag group is applied to an object, it implies all
+of the individual tags in its tag list, as well as implying a marker
+tag that bears the name of the tag group. This allows you to easily
+define a NEQL search for the marker tag for that tag group rather
+than define a search by concatenating each of the tags in the tag
+group’s tag list.</p><p class="- topic/p ">Note that a recommended best practice
+for naming tag groups is to use a name that reflects its intended
+usage. For example, the Haystack <codeph class="+ topic/ph pr-d/codeph ">outsideAirTempSensor</codeph> tag group is typically applied to points representing outside air
+temperature.</p><p class="- topic/p ">Additionally, for tags that you add to a tag group
+a best practice is to use only “fully qualified” tag
+names. This means, add tags from a tag dictionary’s existing
+tag definitions and include the namespace of the source tag dictionary
+in the added tag’s name. This ensures that the tags will resolve
+correctly for NEQL queries.</p></context><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Expand the <uicontrol class="+ topic/ph ui-d/uicontrol ">TagDictionaryService</uicontrol> node,
+double-click the tag dictionary you intend to edit to open the <wintitle class="+ topic/keyword ui-d/wintitle ">Property Sheet</wintitle> view.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">From the palette, drag a <uicontrol class="+ topic/ph ui-d/uicontrol ">TagGroup</uicontrol> component onto the dictionary’s <parmname class="+ topic/keyword pr-d/parmname ">Tag Group Definitions</parmname> property and in the resulting popup, enter a name for this tag group
+(see recommended best practices above) and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Expand your new tag group and proceed with the following
+steps:</cmd><substeps class="- topic/ol task/substeps "><substep class="- topic/li task/substep "><cmd class="- topic/ph task/cmd ">Drag any previously defined tag one at a time from any
+tag dictionary’s tag definitions to the <parmname class="+ topic/keyword pr-d/parmname ">TagList</parmname> sub-property in the new tag group.</cmd></substep><substep class="- topic/li task/substep "><cmd class="- topic/ph task/cmd ">In the <wintitle class="+ topic/keyword ui-d/wintitle ">Name</wintitle> popup, edit the tag
+name to prepend its source dictionary’s namespace (ex.: change <codeph class="+ topic/ph pr-d/codeph ">site</codeph> to <codeph class="+ topic/ph pr-d/codeph "><b class="+ topic/ph hi-d/b ">hs:</b>site</codeph>).</cmd></substep><substep class="- topic/li task/substep "><cmd class="- topic/ph task/cmd ">Click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd></substep><substep class="- topic/li task/substep "><cmd class="- topic/ph task/cmd ">Repeat the steps a–c until you are finished adding
+tags to this tag group.</cmd></substep></substeps><stepresult class="- topic/itemgroup task/stepresult "/></step></steps><result class="- topic/section task/result "><p class="- topic/p ">On completion, the new custom tag group is immediately
+available for use. Changes made in this procedure are automatically
+saved to the tag dictionary (selected in step 1).</p><p class="- topic/p ">When applying
+the new tag group to an object, the multiple tags included in the
+group are implied at once on the object, as well as a marker tag bearing
+the name of that tag group.</p></result><example class="- topic/example "/></taskbody></task>

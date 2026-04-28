@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="opcUaServer-OpcUaServerDeviceFolder" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">opcUaServer-OpcUaServerDeviceFolder</title>
+<shortdesc class="- topic/shortdesc ">This component is the OPC UA server implementation of a
+standard folder under the <uicontrol class="+ topic/ph ui-d/uicontrol ">OpcUaServer</uicontrol> container.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">opcUaServer-OpcUaServerDeviceFolder</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section ">Typically, you add such folders using the&#160;<uicontrol class="+ topic/ph ui-d/uicontrol ">New Folder</uicontrol>&#160;button in the&#160;<wintitle class="+ topic/keyword ui-d/wintitle ">Opc Ua Server
+Device Manager</wintitle> of the <uicontrol class="+ topic/ph ui-d/uicontrol ">OpcUaServer</uicontrol>. This component is also available in the <apiname class="+ topic/keyword pr-d/apiname ">opcUaServer</apiname> palette.</section>
+</refbody>
+</reference>

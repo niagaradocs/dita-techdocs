@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="TimerComponents-282F0D26" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Timer components</title>
+<shortdesc class="- topic/shortdesc ">These components include three types of timers, and two
+components for working with Baja absolute time (AbsTime). </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">timer components</indexterm></keywords>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">Two of the timers are Boolean-types:</p>
+<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">BooleanDelay</p></li>
+<li class="- topic/li "><p class="- topic/p ">OneShot</p></li>
+</ul>
+<p class="- topic/p ">A third dimer is a Numeric-type: NumericDelay.</p>
+<p class="- topic/p ">To work with absolute time, kitControl provides two components:</p>
+<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">CurrentTime</p></li>
+<li class="- topic/li "><p class="- topic/p ">TimeDifference</p></li>
+</ul>
+</conbody>
+</concept>

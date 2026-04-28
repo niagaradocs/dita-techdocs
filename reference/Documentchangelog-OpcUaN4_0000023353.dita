@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="DocumentChangeLog-CED08D5B" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Document change log</title><shortdesc class="- topic/shortdesc ">Changes to this document are listed in this topic.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">document change log</indexterm></keywords></metadata><metadata class="- topic/metadata "/></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><title class="- topic/title ">February 27, 2026</title><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">Added Note to  "Discovering OPC UA server points" topic in the "OPC UA client tasks" chapter.</p></li><li class="- topic/li "><p class="- topic/p ">Added   properties: Subscription Batch Delay, Max Monitored Items Per Subscription, Subscription Retry Delay and  Active Subscription Count to "OpcUaClient-OpcUaClientPointDeviceExt" topic in the "Reference" chapter. </p></li></ul></section><section class="- topic/section ">
+        <title class="- topic/title ">November 26, 2025</title>
+            <ul class="- topic/ul "><li class="- topic/li ">
+                    <p class="- topic/p ">Added the following new topics: 
+                    <ul class="- topic/ul "><li class="- topic/li ">
+                                <p class="- topic/p ">"Certificate Management for OPCUA" in the "OPC UA Server tasks" and "OPC UA client tasks" chapter.</p>
+                            </li><li class="- topic/li ">
+                                <p class="- topic/p ">"Overview of Certificate Requirements" in the "OPC UA Server tasks" and "OPC UA client tasks" chapter.</p>
+                            </li><li class="- topic/li ">
+                                <p class="- topic/p ">"Certificate Usecase for OPCUA" in the "OPC UA Server tasks" and "OPC UA client tasks" chapter.</p>
+                            </li></ul>
+                    </p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Renamed the following topics:
+                    <ul class="- topic/ul "><li class="- topic/li ">
+                                <p class="- topic/p ">"Generate an OPC UA server certificate for Third-Party Clients" to " Generate an OPC UA server certificate using OpenSSL".</p>
+                        </li><li class="- topic/li ">
+                                <p class="- topic/p ">"Generate an OPC UA Client Certificate for Third-Party Servers" to " Generating OPCUA Client Certificates using OpenSSL".</p>
+                        </li></ul></p>
+                </li><li class="- topic/li "><p class="- topic/p ">Added two properties: <parmname class="+ topic/keyword pr-d/parmname ">Publish Interval</parmname> and <parmname class="+ topic/keyword pr-d/parmname ">Max Keep Alive Count</parmname> to "OpcUaClient-OpcUaClientPointDeviceExt" topic in the "Reference" chapter.</p></li></ul>
+        </section><section class="- topic/section ">
+            <title class="- topic/title ">February 10, 2025</title>
+            <ul class="- topic/ul "><li class="- topic/li ">
+                    <p class="- topic/p ">Added new topic "OPC UA Client Histories" in the "OPC UA client tasks" chapter.</p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Added update about OPC UA Server authentication changes with <keyword conkeyref="wh_variables_n4/niagara4.14u1" class="- topic/keyword "/> and <keyword conkeyref="wh_variables_n4/niagara4.15" class="- topic/keyword "/>.</p>
+                </li></ul>
+        </section><section class="- topic/section ">
+            <title class="- topic/title ">January 23, 2024</title>
+            <ul class="- topic/ul "><li class="- topic/li ">
+                    <p class="- topic/p ">Added new topic “ Configuring OPC UA Server Security Modes” to the “OPC UA server tasks” chapter.</p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Edited topic “Setting up certificate based authentication” to the “OPC UA server tasks” chapter.</p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Added new topic “Generating an OPC UA server certificate” to the “OPC UA server tasks” chapter.</p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Added new topic “Generate an OPC UA server certificate for Third-Party Clients” to the “OPC UA server tasks” chapter.</p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Edited “Connecting to an OPC UA server” topic in the “OPC UA client tasks” chapter.</p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Added new topic “Important note about OPC UA Histories” to the “OPC UA client tasks” chapter.</p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Edited “Generating an OPC UA client certificate” to the “OPC UA client tasks” chapter.</p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Edited “Generate an OPC UA Client Certificate for Third-Party Servers” to the “OPC UA client tasks” chapter.</p>
+                </li></ul>
+        </section><section class="- topic/section ">
+            <title class="- topic/title ">July 12, 2023</title>
+            <ul class="- topic/ul "><li class="- topic/li ">
+                    <p class="- topic/p ">Added column descriptions for all the manager views.</p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Added new topic “Generate an OPCUA Client Certificate for Third-Party Servers” to the “Opc Ua Client tasks” chapter.</p>
+                </li></ul>
+        </section><section class="- topic/section ">
+            <title class="- topic/title ">August 22, 2022</title>
+            <p class="- topic/p ">Added Discovery Preferences to two topics “Discovering OPC UA Server server points” and “opcUaClient-OpcUaClientPointDeviceExt.”</p>
+        </section><section class="- topic/section ">
+            <title class="- topic/title ">May 24, 2022</title>
+            <ul class="- topic/ul "><li class="- topic/li ">
+                    <p class="- topic/p ">In the “opcUaServer-OpcUaServertopic” component topic added “Max Monitored Items Per Subscription” property description.</p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Added new topic “Generating an OPC UA client certificate" to "OPC UA client tasks" Chapter</p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Created new topic for setting up certificate based authentication.</p>
+                </li></ul>
+        </section><section class="- topic/section ">
+            <title class="- topic/title ">March 17, 2021</title>
+            <p class="- topic/p ">Edited the introductory chapters, and added screen captures and properties to component topics.</p>
+        </section><section class="- topic/section ">
+            <title class="- topic/title ">October 27, 2020</title>
+            <p class="- topic/p ">In the “Connecting to an OPC UA Server” topic added the information about:<ul class="- topic/ul "><li class="- topic/li ">
+                        <p class="- topic/p ">How to set up the security settings and user name and password</p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p ">And in the “Third-party simulation software” updated OPC foundation’s Sample Applications download.</p>
+                    </li></ul></p>
+        </section><section class="- topic/section ">
+            <title class="- topic/title ">October 25, 2019</title>
+            <p class="- topic/p ">In the topic, “About this guide”, added a caution note alerting customers to restrict access to all computers, devices, field buses, components, etc., that manage their building model.</p>
+        </section><section class="- topic/section ">
+            <title class="- topic/title ">December 19, 2017</title>
+            <p class="- topic/p ">Initial publication.</p>
+        </section></refbody></reference>

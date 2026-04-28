@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="AlarmBestPractices" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Alarm best practices</title>
+<shortdesc class="- topic/shortdesc ">Beyond the basic procedures, this topic provides advice
+for useful alarm practices.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">best practices</indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Alarm Database Maintenance</wintitle> view allows
+users to clear records from the database. To provide information to
+an operator who should not be allowed to delete records, use the <wintitle class="+ topic/keyword ui-d/wintitle ">Alarm Db</wintitle> view.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Set up an alarm class that routes to the console recipient
+and station recipient. Then use another alarm class to route alarms
+to an email recipient.</p></li>
+</ul></section>
+</refbody>
+</reference>

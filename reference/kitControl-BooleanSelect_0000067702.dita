@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-BooleanSelect" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-BooleanSelect</title>
+<shortdesc class="- topic/shortdesc ">This component passes one of multiple inputs to a component’s <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> property. The component’s <parmname class="+ topic/keyword pr-d/parmname ">Select</parmname> property chooses the input. From three to 10 inputs can be specified.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">BooleanSelect</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">BooleanSelect is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Select</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p><p class="- topic/p ">All select
+objects require an enumerated input to perform the selection—the
+four select object types differ only by the type of input data selected
+and passed to the out slot.</p><fig class="- topic/fig ">
+<title class="- topic/title ">BooleanSelect properties</title>
+<image href="../graphic/kitControlBooleanSelect_0000067730.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window (defaults to <systemoutput class="+ topic/ph sw-d/systemoutput ">true</systemoutput> and <systemoutput class="+ topic/ph sw-d/systemoutput ">false</systemoutput>)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Defines the text to display for each Boolean value.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">trueText</option> configures the text to describe the
+state when the component returns <option class="+ topic/keyword pr-d/option ">true.</option></p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">falseText</option> configures the text to describe the state when
+the component returns <option class="+ topic/keyword pr-d/option ">false.</option></p>This configuration
+affects the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> property value.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Select</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number (defaults to zero(0))</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Selects one of the 10 input values to be transferred to
+the output. </propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only StatusBoolean <option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Provides a Boolean output value for linking into a component.<p class="- topic/p "><option class="+ topic/keyword pr-d/option ">false</option> indicates no input values.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">true</option> indicates at least one input value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In A through In J (10 inputs)</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Define the selected Boolean input values and null definition.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

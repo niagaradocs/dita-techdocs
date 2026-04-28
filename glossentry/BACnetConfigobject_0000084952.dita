@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="ConfigObject-B10EC7B2" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry ">
+<glossterm class="- topic/title concept/title glossentry/glossterm ">Config object</glossterm>
+<glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">A model of a physical item, process, calculation or operation
+in a client BACnet device where you can see all the properties of
+the object together.</glossdef>
+</glossentry>

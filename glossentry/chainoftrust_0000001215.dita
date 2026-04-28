@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="ChainOfTrust" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry "><glossterm class="- topic/title concept/title glossentry/glossterm ">chain of trust</glossterm><glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">Also called a web of trust, certification path, or trusted
+certificate tree is an approach to server verification that uses a
+self-signed certificate owned by a CA (Certificate Authority) to begin
+the authorized relationships. The private key of this root CA certificate
+signs a company’s server certificate(s). Intermediate certificates
+may be used to further isolate relationships, such as by geographic
+location or corporate division.</glossdef></glossentry>

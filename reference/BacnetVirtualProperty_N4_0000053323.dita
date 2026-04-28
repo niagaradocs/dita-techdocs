@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="bacnet-BacnetVirtualProperty" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">BacnetVirtualProperty (bacnet-BacnetVirtualProperty)</title>
+<shortdesc class="- topic/shortdesc ">This component represents a property under a <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetVirtualObject</uicontrol>. Essentially, each property represents
+an available virtual point under that <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetDevice</uicontrol>, via its parent <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetVirtualObject</uicontrol> and its
+parent <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetVirtualGateway</uicontrol>.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">BacnetVirtualProperty</indexterm>
+<indexterm class="- topic/indexterm ">virtual property</indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">Usage of BACnet virtual properties is anticipated for
+monitor access in Px views and for one-off read/write access to configuration
+properties.</p></section>
+</refbody>
+</reference>

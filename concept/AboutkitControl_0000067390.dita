@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="AboutKitControl-416168DF" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">About kitControl</title><shortdesc class="- topic/shortdesc ">The kitControl palette contains various components that
+you can use in combination with points, both simple control points
+and proxy points. Whereas proxy points read (and possibly write) data
+from (and to) remote devices, kitControl components provide the data
+manipulation building blocks that let you further process point data.
+Included are HVAC components like a PID loop and sequencers, a variety
+of Boolean logic components, math components for numeric values, and
+miscellaneous components. Together with proxy points and schedules,
+kitControl components provide the basic set of the common components
+for modeling control logic.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">kitControl</indexterm></keywords></metadata></prolog><conbody class="- topic/body  concept/conbody "><p class="- topic/p ">The usage of kitControl components is entirely optional. It is
+possible to build a monitoring-type application with only proxy points
+(and perhaps a few simple control points). This would allow real-time
+data monitoring, plus user-invoked action overrides through writable
+points’ right-click command menus. As needed, you could also
+add extensions to the proxy points for alarming and history collections.</p><p class="- topic/p "> Inside the common model there are
+three things:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">station points and proxy points</p></li><li class="- topic/li "><p class="- topic/p ">kitControl components.</p></li><li class="- topic/li "><p class="- topic/p ">Links between the points and kitControl components.</p></li></ul><p class="- topic/p ">Outside the common component model there are:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">Px graphics</p></li><li class="- topic/li "><p class="- topic/p ">Services</p></li><li class="- topic/li "><p class="- topic/p ">Histories</p></li><li class="- topic/li "><p class="- topic/p ">Alarms</p></li></ul></conbody></concept>

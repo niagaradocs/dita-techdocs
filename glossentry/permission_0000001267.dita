@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="Permission" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry "><glossterm class="- topic/title concept/title glossentry/glossterm ">permission</glossterm><glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">The right to access a component slot, folder, file or history.
+Three rights may be granted: the right to read information provided
+by the object, the right to write (change) the object, and the right
+to invoke an action on the object. Rights are granted using the <wintitle class="+ topic/keyword ui-d/wintitle ">Role Manager</wintitle>’s permissions map. Permissions are
+applied to users by assigning each user a role. A super user is automatically
+granted every permission in every category for every object.</glossdef></glossentry>

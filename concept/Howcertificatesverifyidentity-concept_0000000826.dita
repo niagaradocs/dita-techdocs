@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="SSLHowCertificatesVerifyIdentity" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">How certificates verify identity</title>
+<shortdesc class="- topic/shortdesc ">Once you set up a certificate tree, identity verification
+takes place during the client/server handshake, before transmission
+begins and before the system authenticates each user by prompting
+for credentials (user name and password). </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">certificate</indexterm><indexterm class="- topic/indexterm ">identity
+verification</indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "/>
+<vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">This is how digital certificates verify identity:</p>
+<ol class="- topic/ol ">
+<li class="- topic/li "><p class="- topic/p ">A unique server certificate resides with its public and private
+keys in the <wintitle class="+ topic/keyword ui-d/wintitle ">User Key Store</wintitle> of each server (platform/station
+and Supervisor).</p></li>
+<li class="- topic/li "><p class="- topic/p ">When a client connects to a server, the server sends its certificate
+to the client.</p></li>
+<li class="- topic/li "><p class="- topic/p ">The client station validates the server certificate against
+a root CA certificate in its <wintitle class="+ topic/keyword ui-d/wintitle ">System</wintitle> or <wintitle class="+ topic/keyword ui-d/wintitle ">User Trust Store</wintitle> by matching keys, ensuring that the <systemoutput class="+ topic/ph sw-d/systemoutput ">Subject</systemoutput> of the root CA certificate is the same as
+the <systemoutput class="+ topic/ph sw-d/systemoutput ">Issuer</systemoutput> of a server certificate, and
+confirming other factors. A client browser does the same. Each browser
+has a trust store of root CA certificates.</p></li>
+<li class="- topic/li "><p class="- topic/p ">If the server certificate is valid, the system establishes
+a trusted connection between the server and client, and encrypted
+communication begins. If the certificate is not valid, the station
+or browser notifies the client and communication does not begin.</p></li>
+<li class="- topic/li "><p class="- topic/p ">You may choose to approve a rejected certificate if you know
+that, although unsigned, it can be trusted.</p><note class="- topic/note ">Always verify
+the issuer name on any certificate presented by the system as untrusted.
+Do not approve a certificate from an entity that you do not recognize.</note></li>
+</ol>
+</conbody>
+</concept>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="SemanticInformation-5F71B6D6" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry ">
+<glossterm class="- topic/title concept/title glossentry/glossterm "><term id="glTerm" class="- topic/term "><text id="glText" class="- topic/text ">semantic information</text></term></glossterm>
+<glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">Metadata used to indicate the purpose of a device, that
+is, what the device is, what each of its data points means, and how
+devices are related to each other.</glossdef>
+</glossentry>

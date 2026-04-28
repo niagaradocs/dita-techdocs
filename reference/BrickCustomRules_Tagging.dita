@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="BrickCustomRules-797827EA" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Brick custom rules</title><shortdesc class="- topic/shortdesc ">The JSON file loaded as part of the import process contains
+a list of rules to be included in the Brick tag dictionary. If desired,
+you can add to or override the default rules with a custom rule set. </shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Brick custom rules</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section ">To add or override the default rules with a custom rule set,
+you create their own JSON rules file and select it in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Select a JSON file for custom rules (optional)</uicontrol> field
+in the <wintitle class="+ topic/keyword ui-d/wintitle ">Generate Brick Dictionary</wintitle> dialog window.<p class="- topic/p ">The brick module contains the default JSON file <apiname class="+ topic/keyword pr-d/apiname ">brickCombinedAsGroupsPlusClassTag.json</apiname>. You can view it in <keyword conkeyref="wh_variables_n4/WorkbenchAX" class="- topic/keyword ">Workbench</keyword> by opening it in the Nav tree.</p><p class="- topic/p ">The existing Brick tag rules are defined
+in the <apiname class="+ topic/keyword pr-d/apiname ">rules</apiname> object. The custom rules are defined
+as a JSON object with that same format. There is one JSON element
+for each <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> property in a tag rule. Each tag rule has an entry for
+“name”, “condition”, and then at least one entry for “tags”, “tagGroups”,
+or “relations”. These in turn have JSON elements for each of their
+respective <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> properties. <note class="- topic/note ">It is possible to declare a tag rule
+to be assigned to a specific <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> type, which allows you to develop any custom rules necessary
+as JAVA classes.</note></p></section><example class="- topic/example ">An example of a custom rules file for three custom rules:<codeblock class="+ topic/pre pr-d/codeblock ">{
+  "rules": [
+    {
+      "name": "id",
+      "condition": {
+        "type": "tagdictionary:IsTypeCondition",
+        "objectType": "control:ControlPoint"
+      },
+      "tags": [
+        {
+          "name": "id",
+          "type": "brickTest:BrickCustomIdTag",
+          "validity": {
+            "type": "tagdictionary:IsTypeCondition",
+            "objectType": "control:ControlPoint"
+          }
+        }
+      ]
+    },
+    {
+      "name": "enableStatus",
+      "condition": {
+        "type": "tagdictionary:IsTypeCondition",
+        "objectType": "control:BooleanPoint"
+      },
+      "tagGroups": [
+        {
+          "name": "enableStatus",
+          "tags": [
+            {
+              "name": "enable"
+            },
+            {
+              "name": "point"
+            },
+            {
+              "name": "status"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hasQUDTReference",
+      "condition": {
+        "type": "tagdictionary:Always"
+      },
+      "relations": [
+        {
+          "name": "hasQUDTReference",
+          "type": "brickTest:BrickCustomQUDTRelation"
+        }
+      ]
+    }
+  ]
+}
+</codeblock><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">The first <apiname class="+ topic/keyword pr-d/apiname ">id</apiname> rule declares the condition
+as any <apiname class="+ topic/keyword pr-d/apiname ">ControlPoint</apiname>, and the tag <apiname class="+ topic/keyword pr-d/apiname ">id</apiname> will be applied. This tag has a custom JAVA implementation declared
+as a <apiname class="+ topic/keyword pr-d/apiname ">BrickCustomId</apiname> type in a <apiname class="+ topic/keyword pr-d/apiname ">brickTest</apiname> module. The JAVA class for this would be named <apiname class="+ topic/keyword pr-d/apiname ">BBrickCustomId</apiname>.</p></li><?Pub Caret 211?><li class="- topic/li "><p class="- topic/p ">The second <apiname class="+ topic/keyword pr-d/apiname ">enableStatus</apiname> rule has a <apiname class="+ topic/keyword pr-d/apiname ">Boolean Point</apiname> condition and adds a tag group that contains
+the <apiname class="+ topic/keyword pr-d/apiname ">enable</apiname>, <apiname class="+ topic/keyword pr-d/apiname ">point</apiname>, and <apiname class="+ topic/keyword pr-d/apiname ">status</apiname> tags.</p></li><li class="- topic/li "><p class="- topic/p ">The third <apiname class="+ topic/keyword pr-d/apiname ">hasQUDTReference</apiname> rule has an <apiname class="+ topic/keyword pr-d/apiname ">Always</apiname> condition and adds a relation with a custom <apiname class="+ topic/keyword pr-d/apiname ">BrickCustomQUDTRelation</apiname> type in a <apiname class="+ topic/keyword pr-d/apiname ">brickTest</apiname> module.</p></li></ul></example></refbody></reference>

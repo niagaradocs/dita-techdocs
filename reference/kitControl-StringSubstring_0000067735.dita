@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-StringSubstring" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-StringSubstring</title>
+<shortdesc class="- topic/shortdesc ">This component outputs a portion of the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> slot StatusString value, as specified by integer properties <parmname class="+ topic/keyword pr-d/parmname ">Begin Index</parmname> and <parmname class="+ topic/keyword pr-d/parmname ">End Index</parmname>. </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">StringSubstring</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">StringSubstring is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">String</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p><p class="- topic/p ">By default, <parmname class="+ topic/keyword pr-d/parmname ">Begin Index</parmname>=0 and <parmname class="+ topic/keyword pr-d/parmname ">End Index</parmname>=-1, which
+means the component passes the entire <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> string. </p><fig class="- topic/fig ">
+<title class="- topic/title ">StringSubstring properties</title>
+<image href="../graphic/kitControlStringSubstring_0000067722.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text (defaults to blank) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the substring.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text (defaults to blank) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the string from which to extract the substring.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Begin Index</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number (defaults to zero (0))</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines where in the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> string the
+substring starts.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">End Index</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number (defaults to -1)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines where in the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> string the
+substring ends.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

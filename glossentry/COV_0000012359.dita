@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="COVOrCov" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry ">
+<glossterm class="- topic/title concept/title glossentry/glossterm ">COV or Cov</glossterm>
+<glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">Change-of-Value. Characterizes the option to track data
+based on when a value changes rather than at a consistent interval,
+such as every minute, 15 minutes, etc.</glossdef>
+</glossentry>

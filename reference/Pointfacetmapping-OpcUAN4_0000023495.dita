@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="PointFacetMappingOpcUAN4-55247706" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Point facet mapping</title>
+<shortdesc class="- topic/shortdesc ">The OpcUaClient driver will attempt to initialize facets
+for a point based on the setup of the OPC UA Variable being proxied.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">point facet mapping</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><table class="- topic/table ">
+<tgroup cols="2" class="- topic/tgroup "><colspec colname="1" colwidth="25%" class="- topic/colspec "/><colspec colname="2" colwidth="" class="- topic/colspec "/>
+<thead class="- topic/thead ">
+<row class="- topic/row ">
+<entry colname="1" morerows="0" nameend="1" namest="1" class="- topic/entry ">Control Point</entry>
+<entry colname="2" morerows="0" nameend="2" namest="2" class="- topic/entry ">Description</entry>
+</row>
+</thead>
+<tbody class="- topic/tbody ">
+<row class="- topic/row ">
+<entry colname="1" morerows="0" nameend="1" namest="1" class="- topic/entry ">BooleanPoint</entry>
+<entry colname="2" morerows="0" nameend="2" namest="2" class="- topic/entry ">Will set the
+TrueText and FalseText if the OPC UA variable has "TrueState" and
+"FalseState" properties.</entry>
+</row>
+<row class="- topic/row ">
+<entry colname="1" morerows="0" nameend="1" namest="1" class="- topic/entry ">EnumPoint</entry>
+<entry colname="2" morerows="0" nameend="2" namest="2" class="- topic/entry ">Will set the
+EnumRange if the OPC UA variable has an "EnumStrings" property.</entry>
+</row>
+<row class="- topic/row ">
+<entry colname="1" morerows="0" nameend="1" namest="1" class="- topic/entry ">NumericPoint</entry>
+<entry colname="2" morerows="0" nameend="2" namest="2" class="- topic/entry ">Will set the
+Units if the OPC UA variable has an EUInformation property and the
+Unit maps to a system Unit. Will set the Precision, Max, and Min values
+based on the OPC UA variable data type or a "Range" property if it
+exist for the variable.</entry>
+</row>
+</tbody>
+</tgroup>
+</table></section>
+</refbody>
+</reference>

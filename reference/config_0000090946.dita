@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--Arbortext, Inc., 1988-2016, v.4002--><reference id="Config-39E20EDA" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">config</title>
+<shortdesc class="- topic/shortdesc ">This component functions as the container for any config-type
+objects, which represent individual BACnet objects in the device.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Config</indexterm></keywords></metadata>
+</prolog>
+</reference>

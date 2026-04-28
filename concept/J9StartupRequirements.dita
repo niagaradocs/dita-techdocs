@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="Requirements-30E0F396" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">Requirements</title><shortdesc class="- topic/shortdesc ">These instructions assume that you have a PC that is running
+a licensed copy of     <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/><keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> and that the <option class="+ topic/keyword pr-d/option ">installation tool</option> option was chosen and included as part of the <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/>  installation. This option copies distribution
+files to the PC that are needed for commissioning various models of
+controllers. </shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">requirements</indexterm><indexterm class="- topic/indexterm ">PC<indexterm class="- topic/indexterm ">requirements</indexterm></indexterm></keywords></metadata></prolog><conbody class="- topic/body  concept/conbody "><p class="- topic/p ">Your PC must meet minimum hardware and operating system requirements.
+This includes a working Ethernet adapter with TCP/IP support (browser
+capable). An Ethernet TCP/IP connection to the controller is required
+to install <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword ">Niagara</keyword> software and configure other properties.</p><?Pub Caret -2?><p class="- topic/p ">For this initial Ethernet connection, you can use either:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">An Ethernet patch cable connected directly between your PC
+and the controller (if your PC Ethernet port is not auto-sensing,
+you will need an Ethernet crossover cable), or</p></li><li class="- topic/li "><p class="- topic/p ">A normal LAN connection, meaning that both your PC and the
+controller are physically connected to the same Ethernet hub or switch.</p></li></ul></conbody></concept>

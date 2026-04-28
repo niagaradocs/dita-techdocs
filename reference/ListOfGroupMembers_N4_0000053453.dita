@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="bacnet-BacnetListOf" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">List Of Group Members (bacnet-BacnetListOf)</title>
+<shortdesc class="- topic/shortdesc ">This component represents a BACnet list containing a non-indexed
+sequence of objects of a particular BACnet data type.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">list of</indexterm><indexterm class="- topic/indexterm ">synchronization
+recipients</indexterm><indexterm class="- topic/indexterm ">utc synchronization recipients</indexterm>
+<indexterm class="- topic/indexterm ">restart notification recipients</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">Multiple lists are supported including:</p><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Time Synchronization Recipients</p></li>
+<li class="- topic/li "><p class="- topic/p ">Utc Time Synchronization Recipients</p></li>
+<li class="- topic/li "><p class="- topic/p ">Restart Notification Recipients</p></li>
+<li class="- topic/li "><p class="- topic/p ">Device Address Binding</p></li>
+</ul></section>
+</refbody>
+</reference>

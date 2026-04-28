@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="tagdictionary-HasRelation" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">tagdictionary-HasRelation</title>
+<shortdesc class="- topic/shortdesc "><parmname class="+ topic/keyword pr-d/parmname ">HasRelation</parmname> is one of several possible
+TagRule conditions which are used to specify a tag rule or tag validity
+criteria.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">HasRelation</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">The <parmname class="+ topic/keyword pr-d/parmname ">Filter</parmname> subproperty contains a
+NEQL predicate. If this predicate is <systemoutput class="+ topic/ph sw-d/systemoutput ">true</systemoutput> for the target object or a related object, the HasRelation criteria
+is met. A related object is the endpoint of any inbound or outbound
+relations where the relation Id matches the one specified in the <parmname class="+ topic/keyword pr-d/parmname ">Relation Id</parmname> field. Endpoints of the endpoints, endpoints
+of those endpoints, and so on are also tested.</p><p class="- topic/p ">If the target
+object, or an object along the relation specified in the <parmname class="+ topic/keyword pr-d/parmname ">Relation Id</parmname> field, has the tags listed in the <parmname class="+ topic/keyword pr-d/parmname ">Filter</parmname> property and has the relation specified in the <parmname class="+ topic/keyword pr-d/parmname ">Relation Id</parmname> field, then the parent definition's tag(s)
+may be applied.</p></section>
+</refbody>
+</reference>

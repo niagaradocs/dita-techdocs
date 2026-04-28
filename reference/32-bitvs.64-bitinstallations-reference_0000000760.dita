@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="bitVs.64-bitInstallations-E987214F" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">32-bit vs. 64-bit installations</title><shortdesc class="- topic/shortdesc ">For earlier versions of <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/>, a number of factors can determine which type of installation
+is required. These restrictions do not apply to latest versions of <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/>, which require 64-bit PCs and <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword ">Niagara</keyword> 64-bit software.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">32-bit systems</indexterm><indexterm class="- topic/indexterm ">64-bit systems</indexterm><indexterm class="- topic/indexterm ">engineering workstation</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p ">Newer PCs run a 64-bit Windows operating system. On these
+computers, the <keyword conkeyref="wh_variables_n4/niagara4" class="- topic/keyword "/> 64-bit install provides certain advantages. Most notably,
+the 64-bit Java VM (Virtual Machine) does not have a 2 GB memory limit.
+Coupled with a typical configuration that has 4 GB or more of RAM
+installed in the host PC, this allows a <keyword conkeyref="wh_variables_n4/Supervisor" class="- topic/keyword "/> host to run more effectively in a large installation.
+Depending on the PC host hardware, a 64-bit OS may provide other performance
+benefits.</p><p class="- topic/p ">However, in the following cases, it may be more effective
+to install the 32-bit version on a 64-bit Windows PC:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">When installing earlier version of <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> on an engineering workstation that is licensed to run
+stations engineered for a Lonworks network (LonNetwork component)
+with the eventual intention of installing on a remote controller.</p><p class="- topic/p ">The term “engineering workstation” refers to an installation on
+a PC, which is used to commission controller hardware and perform
+application engineering on both offline and online stations. In some
+cases the “engineering workstation” may also be licensed to run a
+station to facilitate application development and testing.</p><note type="caution" class="- topic/note ">Although this configuration may work for some installations,
+be aware that the LON FTT-10 USB adapter is NOT supported. Consequently,
+results are not guaranteed. Use of the non-supported LON FTT-10 USB
+adapter is done at your own risk.</note></li><?Pub Caret 39?><li class="- topic/li "><p class="- topic/p ">When your <keyword conkeyref="wh_variables_n4/Supervisor" class="- topic/keyword "/> contains limited RAM (less than 4 GB). In this configuration,
+shorter 32-bit memory pointers could be advantageous. A station running
+in a 64-bit VM requires more memory than the exact same station running
+in a 32-bit VM.</p><p class="- topic/p "><note class="- topic/note ">If you install a 32-bit <keyword conkeyref="wh_variables_n4/niagara4" class="- topic/keyword "/> version on a 64-bit Windows OS, you could cause licensing
+confusion if you later install a 64-bit version on the same host.</note></p></li></ul><p class="- topic/p ">If you attempt to install the 64-bit <keyword conkeyref="wh_variables_n4/niagara4" class="- topic/keyword "/> version by selecting <filepath class="+ topic/ph sw-d/filepath ">Installer_x64.exe</filepath> on a 32-bit Windows OS, the Installer window displays an error,
+which alerts you that it is not a valid Win32 application.</p></section></refbody></reference>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="ImportantInformationInstallation-F1FF6B8A" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">Important information</title><shortdesc class="- topic/shortdesc ">The topics in this section include a short quick start
+task as well as hardware, licensing, and operating system requirements
+for installation. <ph id="supported_updates" class="- topic/ph ">Refer to the Niagara Community Resource Center at  <cite class="- topic/cite ">https://docs.niagara-community.com</cite> for the latest versions of the following information.</ph></shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">information</indexterm></keywords></metadata></prolog><conbody class="- topic/body  concept/conbody "><p class="- topic/p ">Before initiating a <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword ">Niagara</keyword> installation, verify that you can meet all hardware
+and software requirements described in this section.</p></conbody></concept>

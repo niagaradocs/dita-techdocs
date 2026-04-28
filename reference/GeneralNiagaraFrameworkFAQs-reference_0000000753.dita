@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="NiagaraFrameworkFAQs-F3584A94" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">General FAQs</title><shortdesc class="- topic/shortdesc ">Questions and answers on the framework.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Frequently Asked Questions<indexterm class="- topic/indexterm "> Framework</indexterm></indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><title class="- topic/title "/><p class="- topic/p "><b class="+ topic/ph hi-d/b ">Q: From my engineering workstation,
+I need to support different jobs at different software release levels. Is there a recommended method to do
+this?</b> </p><p class="- topic/p "><b class="+ topic/ph hi-d/b ">A :</b> You can install different release levels
+on your workstation, and keep them separate by installing them in
+different locations. To run stations locally, remember to check which
+platform daemon is running at the time (from command prompt: <userinput class="+ topic/ph sw-d/userinput ">services.msc</userinput> and look at <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword ">Niagara</keyword> service). As needed, use the shortcut <b class="+ topic/ph hi-d/b ">Install
+Platform Daemon</b> to start the appropriate platform daemon.</p><p class="- topic/p "><b class="+ topic/ph hi-d/b ">Q: Is it possible to select which modules are installed?</b></p><p class="- topic/p "><b class="+ topic/ph hi-d/b ">A: </b>By default, the installer installs all modules in your <filepath class="+ topic/ph sw-d/filepath ">!modules</filepath> folder. These include all the online versions
+of software documents, such as (<cite class="- topic/cite "><ph conkeyref="doctitles_coresw/Niagara4UserGuide-90E05C89" class="- topic/ph "/></cite>) and so on, various lexicon modules, and all the software
+modules, including ones for drivers and other features.</p><note class="- topic/note ">When
+you use <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> to install software in remote hosts (typically <ph conkeyref="host_models/nc" class="- topic/ph "/> controllers), you do select which modules to install, among
+them all the software modules in your <filepath class="+ topic/ph sw-d/filepath ">!modules</filepath> folder, as well as other items in your software database (<filepath class="+ topic/ph sw-d/filepath ">!sw</filepath> folder).</note><p class="- topic/p "><b class="+ topic/ph hi-d/b ">Q: Does <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword ">Niagara</keyword> require changes to my Windows Firewall?</b></p><p class="- topic/p "><b class="+ topic/ph hi-d/b ">A: </b>Most configurations work with the default ports. You
+would make changes to your firewall to run a station locally on a
+PC with other remote stations connected to it, or to allow a remote <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> client to connect to the station and platform on this
+host.</p><p class="- topic/p "><b class="+ topic/ph hi-d/b ">Q: When installing <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword ">Niagara</keyword> on a <keyword conkeyref="wh_variables_n4/Supervisor" class="- topic/keyword "/>, is the software supposed to be installed with the “use
+as install tool” box checked? Is there any reason not to check this
+box?</b></p><p class="- topic/p "><b class="+ topic/ph hi-d/b ">A: </b>This box is optional because the installation
+is 200MB bigger when it is selected. You need to have it checked if
+the <keyword conkeyref="wh_variables_n4/Supervisor" class="- topic/keyword "/> will be using provisioning to install software to subordinate
+controllers, or if you want to use <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> from that computer to upgrade software on a controller.</p><p class="- topic/p "><b class="+ topic/ph hi-d/b ">Q: What is the difference between wb_w.exe and wb.exe?</b></p><p class="- topic/p "><b class="+ topic/ph hi-d/b ">A: </b>Starting <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> using <filepath class="+ topic/ph sw-d/filepath ">wb.exe</filepath> starts an associated
+console window that provides debug information for the client <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> application in much the same way that the application
+director provides server-side debug information for the station. It
+is typical to start <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> using <filepath class="+ topic/ph sw-d/filepath ">wb.exe</filepath> when trouble shooting
+client side issues.</p><p class="- topic/p ">Starting <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> using <filepath class="+ topic/ph sw-d/filepath ">wb_w.exe</filepath> launches the program
+without a console window. You may prefer to use <filepath class="+ topic/ph sw-d/filepath ">wb.exe</filepath> because of the console. If <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> freezes with a console open, you can quickly terminate
+the program by closing the console window.</p><p class="- topic/p "><b class="+ topic/ph hi-d/b ">Q: I’ve got different
+versions of <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> installed. When is it really necessary to start the platform
+daemon?</b></p><p class="- topic/p "><b class="+ topic/ph hi-d/b ">A: </b>You only need to start the platform daemon
+when you are planning to run a station locally. However, it does not
+hurt to get in the habit of loading the platform daemon for the current
+release each time you launch <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/>. Some customers use batch files for starting the platform
+daemon followed by starting the program. This simplifies things because
+you can just double-click the shortcut icon for the particular version
+and brand of <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> you need. Customers share such solutions on <keyword conkeyref="wh_variables_n4/nc_community" class="- topic/keyword "/>.</p><?Pub Caret 484?></section></refbody></reference>

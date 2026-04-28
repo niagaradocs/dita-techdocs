@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="TaggableSpaces-5F787183" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry ">
+<glossterm class="- topic/title concept/title glossentry/glossterm "><term id="glTerm" class="- topic/term "><text id="glText" class="- topic/text ">taggable spaces</text></term></glossterm>
+<glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">The implementation of tags for all common data types: components,
+files, histories and alarms.</glossdef>
+</glossentry>

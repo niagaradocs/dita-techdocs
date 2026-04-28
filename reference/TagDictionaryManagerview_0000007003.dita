@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="tagdictionary-TagDictionaryManager" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Tag Dictionary Manager view</title><shortdesc class="- topic/shortdesc "><wintitle class="+ topic/keyword ui-d/wintitle ">Tag Dictionary Manager</wintitle>, the default
+view for the Tag Dictionary Service, lists all tag dictionaries installed
+on the station and their versions. The view provides functionality
+for creating, editing, importing/exporting tag dictionaries; and indicates
+the presence direct tags that could be replaced with a TagGroup relation.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo "><prodname class="- topic/prodname ">Niagara</prodname></prodinfo></metadata><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Tag Dictionary Manager view</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><fig class="- topic/fig "><title class="- topic/title ">Tag Dictionary Manager view</title><image placement="break" scale="80" width="500" href="../graphic/TagDictionaryMgr_N4.7_0000061869.png" class="- topic/image "/></fig></section><section class="- topic/section "><title class="- topic/title ">Buttons</title><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">New</uicontrol> — allows you to create a new smart
+tag dictionary, which you can then export to a .JSON file for editing.</p></li><li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">Edit</uicontrol> — at the bottom of the view allows
+you to change the tag dictionary properties: Name, Namespace, and
+Enabled status.</p></li><li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">Import</uicontrol> and <uicontrol class="+ topic/ph ui-d/uicontrol ">Export</uicontrol> — allow you to import or export tag dictionaries in a JSON
+file format.  You can edit an exported tag dictionary in any
+JSON-compatible editor (either online or offline) to add
+or remove tag definitions, tag groups definitions, relation definitions,
+as well as validity rules. Afterwards, you may import the edited JSON
+file, thereby updating the existing tag dictionary. </p></li><?Pub Caret -1?><li class="- topic/li "><p class="- topic/p "><menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Tags</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">TagGroups</uicontrol></menucascade> — examines the station component tree looking for individual
+direct tags on a component that match a TagGroup defined in an installed
+tag dictionary.  If any are found, a window opens listing the
+component, collection of direct tags, matching TagGroup and an indication
+if the component is contained in a deployed template. Also shown are
+two columns, <wintitle class="+ topic/keyword ui-d/wintitle ">Convert</wintitle> and <wintitle class="+ topic/keyword ui-d/wintitle ">RemoveTags</wintitle>.  </p><p class="- topic/p ">If the <wintitle class="+ topic/keyword ui-d/wintitle ">Convert</wintitle> column is checked,
+the direct tags will be replaced with a TagGroup relation.  When
+Convert is selected RemoveTags is automatically be selected. If the
+Convert is not selected but <wintitle class="+ topic/keyword ui-d/wintitle ">RemoveTags</wintitle> is, the
+tag collection will be removed from the component without converting
+to a TagGroup relation. This is to handle the case where a collection
+of tags can map to multiple TagGroups with some being subsets of others.
+ If neither Convert or RemoveTags is selected, no action is taken.</p><p class="- topic/p ">Make Convert and RemoveTag selections in the presented table and
+when you click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>, the selected Conversions
+and TagRemovals occur.</p></li></ul></section></refbody></reference>

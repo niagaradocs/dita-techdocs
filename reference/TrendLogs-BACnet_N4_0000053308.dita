@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="bacnet-BacnetHistoryDeviceExt" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Trend Logs (bacnet-BacnetHistoryDeviceExt)</title><shortdesc class="- topic/shortdesc ">This component is a frozen device extension under every <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetDevice</uicontrol>, and the container for <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetHistoryImport</uicontrol> components. </shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">trend logs</indexterm><indexterm class="- topic/indexterm ">Bacnet
+History Import Manager</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p ">The default view is the <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet History Import
+Manager</wintitle>, used to import data from trend log objects in
+the device, into the station as histories.</p><fig class="- topic/fig "><title class="- topic/title ">Bacnet History Device Ext</title><image placement="break" scale="65" width="700" href="../graphic/propertiesBACnetHistoryDeviceExt_0000084859.png" class="- topic/image "/></fig><p class="- topic/p ">This folder under the <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetNetwork</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetDevice</uicontrol></menucascade> node in the Nav
+tree serves as the container for BACnet history objects, which you
+import from a device into a station.</p><p class="- topic/p ">A BACnet device must contain
+trend log objects (and/or trend log multiple objects) to make use
+of histories. A Discover command determines this. If it finds no such
+objects, the trend logs extension has no practical application.</p><p class="- topic/p ">By default, this container also has a <uicontrol class="+ topic/ph ui-d/uicontrol ">Retry Trigger</uicontrol>, for automatic usage as needed.</p><p class="- topic/p ">For general information on
+this device extension and the retry trigger, refer to the <cite class="- topic/cite "><ph conkeyref="doctitles_coresw/NiagaraDriversGuide" class="- topic/ph "/></cite>.</p></section></refbody></reference>

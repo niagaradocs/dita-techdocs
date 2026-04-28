@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-RaiseLower" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-RaiseLower</title>
+<shortdesc class="- topic/shortdesc ">This component provides a staged analog output designed
+to be used with a third party two-relay hardware device. It also provides
+for the operation of two digital outputs from normal IO hardware such
+as NDIO as an alternative control method. The actuator should be able
+to sustain an overdrive at each boundary (for example, a clutch mechanism)
+as the Raise lower object does not have proportional feedback or limit
+switch features.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">RaiseLower</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">RaiseLower component is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">HVAC</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p><fig class="- topic/fig ">
+<title class="- topic/title ">RaiseLower properties</title>
+<image href="../graphic/kitControlRaiseLowerProperties_0000067602.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Selects units and configures how the value displays:</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">unit</option> defines the unit of measure from <option class="+ topic/keyword pr-d/option ">acceleration</option> to <option class="+ topic/keyword pr-d/option ">volumetric flow.</option></p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">precision </option> defines the number of decimal places. </p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">min</option> defines the lowest value allowed.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">max</option> defines the highest value allowed.</p>This configuration
+applies to the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> property value.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read only StatusNumeric number of volts</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the analog output value from the object. Valid
+voltage outputs of 0v, 4v, 7v and 10v depend on the function determined
+by the object.<p class="- topic/p ">When null is checked, the value displayed defaults
+to the incoming value from the device.If you remove the check mark
+you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In </parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">status numeric value for percentage from 0 to 100 (defaults
+to 0.00) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines an input percentage. This slot typically connects
+to a modulated output of a Control object such as a PID Loop.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Cancel Synchronization Offlimits</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><option class="+ topic/keyword pr-d/option ">true</option> prevents the doubling of the <parmname class="+ topic/keyword pr-d/parmname ">Drive Time</parmname> when moving to the limit positions: 0.0 or
+100.0.<p class="- topic/p "><option class="+ topic/keyword pr-d/option ">false</option> permits the doubling of <parmname class="+ topic/keyword pr-d/parmname ">Drive Time</parmname>.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Virtual Position</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">status numeric percentage value for percentage from 0 to
+100 (defaults to 0.00)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Represents the virtual position of the actuator as calculated
+by the RaiseLower component. </propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Raise</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">status Boolean value: <option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><option class="+ topic/keyword pr-d/option ">true</option> configures the output to raise the
+position of the actuator. The component maintains the raise output
+for a period of time determined by the positive differential of <parmname class="+ topic/keyword pr-d/parmname ">Virtual Position</parmname> subtracted from the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value, and is a relative proportion of the full-scale drive time.<p class="- topic/p ">If Virtual Position is 100 percent (fully raised), the component
+compensates for real time drift by asserting twice the drive time.
+This synchronizes the physical actuator with the calculated virtual
+position.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">false</option> leaves the position of the
+actuator unchanged.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Lower</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">status Boolean value: <option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><option class="+ topic/keyword pr-d/option ">true</option> configures the output to lower the
+position of the actuator. The component maintains the lower output
+for a period of time determined by the negative differential of <parmname class="+ topic/keyword pr-d/parmname ">Virtual Position</parmname> subtracted from the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value, and is a relative proportion of the full-scale drive time.<p class="- topic/p ">If <parmname class="+ topic/keyword pr-d/parmname ">Virtual Position</parmname> is 0 percent (fully lowered),
+the component compensates for real time drift by asserting twice the
+drive time. This synchronizes the physical actuator with the calculated
+virtual position.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">false</option> leaves the position
+of the actuator unchanged.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Function</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays operational information corresponding to the current
+activity of the object. Valid status values include: Off, Lower, Static,
+Raise.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Dead Band</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">single digit between 0 and 6 with two decimal places (defaults
+to 0.50)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Configures an interval where no action occurs and should
+be set to a value that corresponds to a percentage of full scale drive
+time. The <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value must exceed the <parmname class="+ topic/keyword pr-d/parmname ">Dead Band</parmname> value before the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> command
+raises or lowers the actuator.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Drive Time</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours minutes seconds (defaults to one minute)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">This should be set to a value that corresponds to the full
+scale drive time provided by the manufacturer.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Midnight Reset Enabled</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> (default) or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><option class="+ topic/keyword pr-d/option ">true</option> invokes a synchronization cycle at
+midnight to compensate for real time drift that may accumulate during
+normal operation of the actuator. The reset cycle overrides an input
+signal for a period of twice the full length <parmname class="+ topic/keyword pr-d/parmname ">Drive Time</parmname>.<p class="- topic/p "><option class="+ topic/keyword pr-d/option ">false</option> inhibits a reset. This is the desired
+setting.</p></propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

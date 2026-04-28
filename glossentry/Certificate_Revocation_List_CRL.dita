@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="glossentry-5218" xml:lang="en-us" class="- topic/topic concept/concept glossentry/glossentry "><glossterm class="- topic/title concept/title glossentry/glossterm ">Certificate Revocation List (CRL)</glossterm><glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">
+        <p class="- topic/p ">A list of digital certificates that are no longer valid, even if they are signed by a trusted CA.<ph class="- topic/ph "/></p>
+    </glossdef><glossBody class="- topic/body concept/conbody glossentry/glossBody "/></glossentry>

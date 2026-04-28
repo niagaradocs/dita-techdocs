@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-InterstartDelayMaster" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitcontrol-InterstartDelayMaster</title>
+<shortdesc class="- topic/shortdesc ">This component defines the master in an inter-start delay
+sequence. Use it in conjunction with one or more InterstartDelayControl
+objects.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">InterstartDelayMaster</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">InterstartDelayMaster is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">HVAC</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p><p class="- topic/p "> An available
+action for this component is <parmname class="+ topic/keyword pr-d/parmname ">DelayTimerExpired</parmname>. </p><fig class="- topic/fig ">
+<title class="- topic/title ">InterstartDelayMaster properties</title>
+<image href="../graphic/kitControlInterstartDelayMaster_0000067603.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Slave Link</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">ORD</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Links to the slave InterstartDelayControl components.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Default Delay</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours minutes seconds (defaults to zero)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the how long to wait before starting a request.
+The component uses this value only if <parmname class="+ topic/keyword pr-d/parmname ">Delay Time</parmname> is not defined.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Active Delay</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only <option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays if the delay is active.<p class="- topic/p "><option class="+ topic/keyword pr-d/option ">true</option> indicates that the interstart delay is active</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">false</option> indicates that the interstart delay is not active.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Delay Time</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only hours minutes seconds (defaults to zero)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the length of the current delay.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Delay Start Time</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only clock time</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the time that the current delay started.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Num Objects Waiting</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only number (defaults to zero (0))</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the number of objects currently waiting to start.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

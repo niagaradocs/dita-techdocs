@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="HaystackTagDictionary-472E1D82" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry ">
+<glossterm class="- topic/title concept/title glossentry/glossterm "><term id="glTerm" class="- topic/term "><text id="glText" class="- topic/text ">Haystack tag dictionary</text></term></glossterm>
+<glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">A smart tag dictionary (namespace) containing a collection
+of tags developed by Project Haystack, which can be used for semantic
+modeling of building control entities, i.e. site tags, building tags,
+equipment tags, point tags, geo-location tags, etc. <p class="- topic/p ">The Haystack
+dictionary is indicated by the <i class="+ topic/ph hi-d/i ">hs </i>character, followed by a
+colon character (:).</p><p class="- topic/p ">The Haystack dictionary is a result of
+the work of the Open Source Initiative (OSI) hosted on the website
+http://project-haystack.org.</p></glossdef>
+</glossentry>

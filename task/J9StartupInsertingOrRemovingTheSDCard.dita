@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="InsertingOrRemovingTheAnSDCard-346EAC19" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Inserting or removing the microSD card</title><shortdesc class="- topic/shortdesc ">The microSD card that ships with a new controller
+is inserted in the unit prior to the mounting process. However, it
+is possible to move an SD card from one unit to another. For example,
+you might want to remove the card from a unit that suffered a hardware
+failure and install it in a replacement controller.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">SD card<indexterm class="- topic/indexterm ">inserting and removing</indexterm></indexterm></keywords></metadata></prolog><taskbody class="- topic/body task/taskbody "><prereq class="- topic/section task/prereq ">All power to the controller is off. The controller has been
+removed from the DIN rail or screw-tab mounting. You have discharged
+any static electricity accumulated by touching a known, securely grounded
+object.</prereq><context class="- topic/section task/context ">To insert the microSD card:</context><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Slide the microSD card shutter open.</cmd><info class="- topic/itemgroup task/info ">The shutter should remain captive in the base, revealing the
+microSD card socket.<image placement="break" scope="local" width="450" href="../graphic/J9MicroSdCard.png" class="- topic/image "/><?Pub Caret 0?><simpletable expanse="textline" relcolwidth="5* 95*" class="- topic/simpletable "><?PubTbl table border-bottom-width="0.50pt" border-left-width="0.50pt"
+border-right-width="0.50pt" border-top-width="0.50pt"?><strow class="- topic/strow "><stentry class="- topic/stentry "><?PubTbl cell border-bottom-width="0.50pt" border-right-width="0.50pt"?>1</stentry><stentry class="- topic/stentry "><?PubTbl cell border-bottom-width="0.50pt"?>Shutter access
+to microSD card</stentry></strow><strow class="- topic/strow "><stentry class="- topic/stentry "><?PubTbl cell border-bottom-width="0.50pt" border-right-width="0.50pt"?>2</stentry><stentry class="- topic/stentry "><?PubTbl cell border-bottom-width="0.50pt"?>Card socket</stentry></strow><strow class="- topic/strow "><stentry class="- topic/stentry "><?PubTbl cell border-right-width="0.50pt"?>3</stentry><stentry class="- topic/stentry ">microSD card</stentry></strow></simpletable></info></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Make either of the following changes, as needed:</cmd><choices class="- topic/ul task/choices "><choice class="- topic/li task/choice ">Insert the microSD card by sliding the card into the card
+socket, label side up, until the spring catch engages. If properly
+inserted, the card is behind the shutter track.</choice><choice class="- topic/li task/choice ">Remove the microSD card by pushing the card in until the spring
+release pushes the card partially out of the card socket. Grasp the
+card and pull it completely out of the unit. Store the card in a static
+free protective case.</choice></choices></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Carefully slide the card shutter back over the card socket
+opening until it clicks securely into place.</cmd><info class="- topic/itemgroup task/info ">When properly closed, the shutter should not protrude behind
+the mounting base.</info></step></steps></taskbody></task>

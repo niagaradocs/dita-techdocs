@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="SSLCertificateChecklist" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Root and intermediate certificate checklist</title><shortdesc class="- topic/shortdesc ">This checklist assumes that you are serving as you own
+CA (Certificate Authority). It summarizes the steps for setting up
+digital certificates using the <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> <wintitle class="+ topic/keyword ui-d/wintitle ">User Key Store</wintitle> of a physically and
+electronically secure computer.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">secure communication<indexterm class="- topic/indexterm "><keyword conkeyref="wh_variables_n4/niagara" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara" class="- topic/keyword ">Niagara</keyword> check list</indexterm></indexterm><indexterm class="- topic/indexterm ">checklist<indexterm class="- topic/indexterm ">certificate creation and signing</indexterm></indexterm></keywords><prodinfo class="- topic/prodinfo "><prodname class="- topic/prodname "/><vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist></prodinfo></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p ">Use the checklist to make sure you perform all necessary
+configuration tasks.</p><ul outputclass="checkbox" class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">Computer and
+device network disconnected from the company LAN and global Internet.</p></li><li class="- topic/li "><p class="- topic/p ">Needed certificates
+identified: one root CA certificate, two or more intermediate certificates
+(optional) and one server certificate per controller. You need a code-signing
+certificate if you will be customizing the system by adding program
+objects.</p></li><li class="- topic/li "><p class="- topic/p ">Logical certificate
+naming convention established (a naming convention is not required,
+but it will help you differentiate among your certificates</p></li><li class="- topic/li "><p class="- topic/p ">CSR folder structure
+under the <uicontrol class="+ topic/ph ui-d/uicontrol ">certManagement</uicontrol> folder in the niagara_user_home
+created.</p></li><li class="- topic/li "><p class="- topic/p ">Root CA certificate
+and any intermediate certificates created.</p></li><li class="- topic/li "><p class="- topic/p ">CSR for each
+intermediate and code-signing certificate created.</p></li><li class="- topic/li "><p class="- topic/p ">Any intermediate
+and code-signing certificates signed using the root CA certificate.</p></li><li class="- topic/li "><p class="- topic/p ">Any signed intermediate
+certificates imported back into the <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> User Key Store where they were originally created.</p></li><li class="- topic/li "><p class="- topic/p ">Backup of the root CA certificate and the signed intermediate certificates created.</p></li><li class="- topic/li "><p class="- topic/p ">Root CA certificate with only its public key exported in preparation to import it into the platform/station
+Trust Stores.</p></li></ul></section></refbody></reference>

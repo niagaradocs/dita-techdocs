@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="AboutThisGuide-docOpcUa" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">About this Guide</title><shortdesc class="- topic/shortdesc "><ph conkeyref="wh_variables_n4/about_doc" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/about_doc" class="- topic/ph "/></shortdesc><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><title class="- topic/title ">Product Documentation</title><ph conkeyref="wh_variables_n4/techdoc_set" class="- topic/ph "/></section><section class="- topic/section "><title class="- topic/title ">Document Content</title><p class="- topic/p ">This document describes
+the procedures used to create an OPC UA Server in a station for the
+purpose of exposing control points, alarms, and histories to OPC UA
+clients. This document also describes the procedures used to create
+an OPC UA Client in the station which provides connectivity to OPC
+UA Servers for the purpose of integrating Opc UA data into the <keyword conkeyref="wh_variables_n4/niagara_fw-NoTM" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara_fw-NoTM" class="- topic/keyword ">Niagara Framework</keyword> for monitor and control operation. </p><note conkeyref="Gen/edge_RestrictAccess" type="note" class="- topic/note "/></section></refbody></reference>

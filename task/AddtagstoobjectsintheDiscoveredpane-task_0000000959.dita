@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<?xml-stylesheet href="file:///C:/Users/H477160/Honeywell/Tridium%20Tech%20Docs%20-%20Documents/General/Arbortext/com.tridium.atxcustom/doctypes/ditabase/N4-ditabase.style" type="text/x-styler" media="editor" alternate="yes"?><task id="AddTagsDuringDiscoveryAdd" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Add tags to objects in the Discovered pane</title>
+<shortdesc class="- topic/shortdesc ">Tagging is integrated into the <wintitle class="+ topic/keyword ui-d/wintitle ">Station Manager </wintitle>and <wintitle class="+ topic/keyword ui-d/wintitle ">Point Manager</wintitle> views to make it easier to
+tag editable stations or points in the <wintitle class="+ topic/keyword ui-d/wintitle ">Discovered</wintitle> pane before adding them to the <wintitle class="+ topic/keyword ui-d/wintitle ">Database</wintitle> pane.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">tag<indexterm class="- topic/indexterm ">adding in Discovered
+pane</indexterm></indexterm><indexterm class="- topic/indexterm ">Tag mode<indexterm class="- topic/indexterm ">in Manager
+views</indexterm></indexterm></keywords></metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq "><wintitle class="+ topic/keyword ui-d/wintitle ">Device Manager</wintitle> or <wintitle class="+ topic/keyword ui-d/wintitle ">Point Manager</wintitle> view is active with Tag Mode selected. Points or devices are discovered
+and listed in the <wintitle class="+ topic/keyword ui-d/wintitle ">Discovered</wintitle> pane.</prereq>
+<context class="- topic/section task/context ">Tagging during discovery is optional but it is a convenient
+way to add metadata as you add points or devices. This task describes
+how to add tags only. It does not describe all point or device fields
+that need to be reviewed or edited during an add process.</context>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">From the <wintitle class="+ topic/keyword ui-d/wintitle ">Point Manager</wintitle> or <wintitle class="+ topic/keyword ui-d/wintitle ">Station Manager</wintitle> view, in the <wintitle class="+ topic/keyword ui-d/wintitle ">Tag Dictionary</wintitle> pane, select the desired tag dictionary.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Select one or more discovered objects in the <wintitle class="+ topic/keyword ui-d/wintitle ">Discovered</wintitle> pane.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the <wintitle class="+ topic/keyword ui-d/wintitle ">Tag Dictionary</wintitle> pane, select
+one or more tags to add and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Add</uicontrol>.</cmd>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the <wintitle class="+ topic/keyword ui-d/wintitle ">Add</wintitle> dialog box, check that
+the appropriate tags are added (table in top pane) and add values
+to any tags that have editable fields. </cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol> and verify that your tags
+appear with the desired objects in the <wintitle class="+ topic/keyword ui-d/wintitle ">Database</wintitle> pane.</cmd></step>
+</steps>
+<result class="- topic/section task/result ">Devices or points are added to the station with tags.</result>
+</taskbody>
+</task>

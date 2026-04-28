@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="CreatingARootCACertificate-184F117C" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Creating a root CA certificate</title><shortdesc class="- topic/shortdesc ">A company’s root CA certificate is a self-signed certificate.
+Companies that serve as their own CA use its private key to sign their
+intermediate, server, client and code-signing certificates. The root
+CA certificate resides in the  <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword ">Workbench</keyword> Certificate Management <wintitle class="+ topic/keyword ui-d/wintitle ">User Key Store</wintitle> with both its public and private keys. You export it with only its
+public key so that you can import it into each platform/station’s <wintitle class="+ topic/keyword ui-d/wintitle ">User Trust Store</wintitle>.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">root CA certificate<indexterm class="- topic/indexterm ">creating</indexterm></indexterm><indexterm class="- topic/indexterm ">certificate<indexterm class="- topic/indexterm ">creating a root CA certificate</indexterm></indexterm><indexterm class="- topic/indexterm ">CA certificate</indexterm></keywords></metadata></prolog><taskbody class="- topic/body task/taskbody "><prereq class="- topic/section task/prereq ">You have the required authority to create certificates. You
+are working in <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword ">Workbench</keyword> on a computer that is dedicated to certificate
+management, is not on the Internet or the company’s LAN and is physically
+secure in a vault or other secure location.</prereq><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Access the <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword ">Workbench</keyword> <wintitle class="+ topic/keyword ui-d/wintitle ">Certificate Management</wintitle> view
+by clicking <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Tools</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Certificate
+Management</uicontrol></menucascade>.</cmd><stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Certificate Management</wintitle> view opens
+to the <wintitle class="+ topic/keyword ui-d/wintitle ">User Key Store</wintitle>.<p class="- topic/p ">The default <systemoutput class="+ topic/ph sw-d/systemoutput ">tridium</systemoutput> certificate
+was replaced by the <systemoutput class="+ topic/ph sw-d/systemoutput ">default</systemoutput> certificate,
+which has enhanced features and cannot be deleted. The installation
+of a new <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> version will not by default include a <systemoutput class="+ topic/ph sw-d/systemoutput ">tridium</systemoutput> certificate, but upgrading a system may have both, the <systemoutput class="+ topic/ph sw-d/systemoutput ">tridium</systemoutput> and the <systemoutput class="+ topic/ph sw-d/systemoutput ">default</systemoutput> certificate.</p></stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Confirm that you opened the <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword ">Workbench</keyword> <wintitle class="+ topic/keyword ui-d/wintitle ">User Key Store</wintitle> and click
+the <uicontrol class="+ topic/ph ui-d/uicontrol ">New</uicontrol> button at the bottom of the view.</cmd><info class="- topic/itemgroup task/info "><note class="- topic/note ">If you opened the platform/station <wintitle class="+ topic/keyword ui-d/wintitle ">Certificate
+Management</wintitle> view by mistake, you can still create a root
+CA certificate, but it will not be available to sign the other certificates.</note></info><stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Generate  Certificate</wintitle> window opens. <p class="- topic/p ">All certificates begin as self-signed certificates.
+Only the root CA certificate remains self-signed because it sits at
+the top of the certificate chain.</p></stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Fill in the form and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd><info class="- topic/itemgroup task/info "><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">Use <parmname class="+ topic/keyword pr-d/parmname ">Alias</parmname> to identify this as a root certificate.</p></li><li class="- topic/li "><p class="- topic/p "/>Use the <parmname class="+ topic/keyword pr-d/parmname ">Distinguished Name (CN)</parmname> edit
+mode to fill in the following information: <ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">The <parmname class="+ topic/keyword pr-d/parmname ">Common Name(CN)</parmname> becomes the <parmname class="+ topic/keyword pr-d/parmname ">Subject</parmname> (also known as the Distinguished Name). For a
+root CA certificate, the <parmname class="+ topic/keyword pr-d/parmname ">Common Name(CN)</parmname> may
+be the same as the <parmname class="+ topic/keyword pr-d/parmname ">Alias</parmname>.</p></li><li class="- topic/li "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">Organization</parmname> should be the name of the
+company.</p></li><li class="- topic/li "><p class="- topic/p ">Although <parmname class="+ topic/keyword pr-d/parmname ">Locality</parmname> and <parmname class="+ topic/keyword pr-d/parmname ">State/Province</parmname> are not required and are arbitrary, leaving them blank generates
+a warning message.</p></li><li class="- topic/li "><p class="- topic/p ">The two-character <parmname class="+ topic/keyword pr-d/parmname ">Country Code</parmname> is required
+and must be a known value, such as: US, IN, CA, FR, DE, ES, etc. (refer
+to the ISO CODE column at countrycode.org).</p></li></ul></li><li class="- topic/li "><p class="- topic/p ">Based on the <parmname class="+ topic/keyword pr-d/parmname ">Not Before</parmname> and <parmname class="+ topic/keyword pr-d/parmname ">Not After</parmname> dates, certificate validity defaults to a year.
+A longer period is not recommended and not tolerated by some browsers.
+Changing to a new certificate annually or even within a year makes
+it more likely that your certificate contains the latest cryptographic
+standards, and reduces the number of old, neglected certificates that
+can be stolen and re-used for phishing and drive-by malware attacks.</p></li><li class="- topic/li "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">Key Size</parmname> defaults to 2048. A larger key
+improves security and does not significantly affect communication
+time. The only impact it has is to lengthen the time it takes to create
+the certificate initially.</p></li><li class="- topic/li "><p class="- topic/p ">For <parmname class="+ topic/keyword pr-d/parmname ">Certificate Usage</parmname>, select <option class="+ topic/keyword pr-d/option ">CA</option>.</p></li></ul><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">The HTML5 <wintitle class="+ topic/keyword ui-d/wintitle ">Generate Certificate</wintitle> window
+allows you to add extensions, which specify information such as alternative
+subject names and usage restrictions to certificates.</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p "><cite class="- topic/cite ">Key Usage</cite>: defines the purpose (for example, encipherment,
+signature, certificate signing) of the key contained in the certificate.
+You can use it to restrict the usage of a certificate’s key only to
+permitted operations. For example, a key that should only be used
+for key management should have the keyEncipherment bit set.</p></li><li class="- topic/li "><p class="- topic/p "><cite class="- topic/cite ">Subject Alternative Name</cite>: allows identities to
+be bound to the subject of the certificate. Defined options include
+an Internet electronic mail address, a DNS name, an IP address, and
+a Uniform Resource Identifier (URI).</p></li><li class="- topic/li "><p class="- topic/p "><cite class="- topic/cite ">Extended Key Usage</cite>: indicates one or more purposes
+for which the certificate may be used in addition to or in place of
+the basic purposes indicated in the key usage extension. In general,
+this extension will appear only in end entity certificates. You can
+create a custom key usage extension that must be an OID with numbers
+separated by decimals (for example, 1.2.3).</p></li></ul></li><?Pub Caret 84?></ul></info><stepresult class="- topic/itemgroup task/stepresult ">The <parmname class="+ topic/keyword pr-d/parmname ">Private Key Password</parmname> window opens.</stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Enter and confirm a strong password, and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd><stepresult class="- topic/itemgroup task/stepresult ">The system informs you that the certificate has been submitted.
+Soon the certificate appears behind the Info message in the <apiname class="+ topic/keyword pr-d/apiname ">User Key Store</apiname> table.</stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To continue, click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd><stepresult class="- topic/itemgroup task/stepresult ">The root CA certificate now exists with both its keys
+in the <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword ">Workbench</keyword> <wintitle class="+ topic/keyword ui-d/wintitle ">User Key Store</wintitle>. From this
+location you can use it to sign other certificates (intermediate,
+server, client and code-signing).<note class="- topic/note ">The exclamation icon (<image outputclass="inline" placement="inline" scope="local" href="../graphic/iconExclamation_0000040180.png" class="- topic/image "/>) indicates that the certificate is not signed
+by a Certificate Authority. For a server, client, or code signing
+certificate, it means that the certificate will not be trusted by
+other parties. For a root CA, which itself is the source of trust,
+this is normal and expected.</note><p class="- topic/p ">For this certificate to authenticate
+the certificates it signs, you now need to export it with only its
+public key and import it into the <wintitle class="+ topic/keyword ui-d/wintitle ">User Trust Store</wintitle> of each client computer and platform/station.</p></stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Select the new root CA certificate and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Export</uicontrol>.</cmd><stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Certificate Export</wintitle> window opens.<note type="caution" class="- topic/note ">Do not click the check box
+to <parmname class="+ topic/keyword pr-d/parmname ">Export the private key</parmname>.The only time you click
+this check box is when you are backing up the certificate to another
+location for safe keeping.</note></stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To create the root CA certificate that will reside in each
+client’s <wintitle class="+ topic/keyword ui-d/wintitle ">User Trust Store</wintitle>, click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd><stepresult class="- topic/itemgroup task/stepresult ">The Certificate Export window opens with the file ready
+to export as a .pem file.<p class="- topic/p ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Current Path</wintitle> shows where the system stores the exported certificate.</p></stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Navigate to a <filepath class="+ topic/ph sw-d/filepath ">rootcert</filepath> folder or location
+on a thumb drive, and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol>.</cmd><stepresult class="- topic/itemgroup task/stepresult ">The system reports that it exported the certificate successfully.</stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To complete the export, click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd></step></steps><postreq class="- topic/section task/postreq ">When exported with only its public key, the root CA certificate
+may be freely distributed. You are ready to manually import the root
+CA certificate with only its public key into the <wintitle class="+ topic/keyword ui-d/wintitle ">User Trust
+Store</wintitle> of the computer, usually a <keyword conkeyref="wh_variables_n4/Supervisor" class="- topic/keyword "/> (or engineering) computer, from which to either manually,
+or with a provisioning job, install this certificate in the <wintitle class="+ topic/keyword ui-d/wintitle ">User Trust Store</wintitle> of all remote platforms/stations.</postreq></taskbody></task>

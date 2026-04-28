@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-AbsValue" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-AbsValue</title>
+<shortdesc class="- topic/shortdesc ">This math component performs the operation: <codeph class="+ topic/ph pr-d/codeph ">out
+= abs(inA)</codeph>, in other words, the absolute value of inA.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">AbsValue</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">AbsValue is in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Math</uicontrol> folder
+of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette. It inputs a value to
+a widget that is the same as the value output from another widget.</p></section>
+</refbody>
+</reference>

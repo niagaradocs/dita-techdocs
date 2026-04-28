@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<?xml-stylesheet href="file:///C:/Users/H477160/Honeywell/Tridium%20Tech%20Docs%20-%20Documents/General/Arbortext/com.tridium.atxcustom/doctypes/ditabase/N4-ditabase.style" type="text/x-styler" media="editor" alternate="yes"?><reference id="SmartTags-02A7269E" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Smart Tags</title>
+<shortdesc class="- topic/shortdesc ">The <uicontrol class="+ topic/ph ui-d/uicontrol ">Smart Tag</uicontrol> components, with the
+exception of historyMarker and scoped, are already included in the
+tag lists of rules of the NiagaraTagDictionary, which causes those
+tags to be implied throughout the station as long as the NiagaraTagDictionary
+is installed and enabled. While <uicontrol class="+ topic/ph ui-d/uicontrol ">SimpleTagInfo</uicontrol> components are tags that have just a static value, smart tags are
+tags whose values are based on some code and the values are usually
+derived from the objects on which they are applied. A smart tag dictionary
+includes tag rules that imply tags (both simple tags and smart tags)
+to components based on the conditions of the rules.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">smart tags</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">Smart Tag </uicontrol>components are available
+in the <apiname class="+ topic/keyword pr-d/apiname ">tagdictionary</apiname> palette.</p><note class="- topic/note ">Although
+not recommended, it is possible to replace the NiagaraTagDictionary
+with your own custom tag dictionary. In that situation, you could
+drop the smart tag components into the tag list of the rules in your
+custom tag dictionary so that the tags would be implied throughout
+your station.</note><p class="- topic/p ">You can add smart tag components to a tag dictionary
+by dragging them to the tag definitions list, and then drag them onto
+individual components using the <wintitle class="+ topic/keyword ui-d/wintitle ">Edit Tags</wintitle> dialog
+box. However, the tags would not be implied, only included in the
+tag definitions list. To be implied, the smart tags must be included
+in the tag lists of tag rules. As a rule, these tags are more effectively
+applied by including them in the tag lists of tag rules.</p></section>
+</refbody>
+</reference>

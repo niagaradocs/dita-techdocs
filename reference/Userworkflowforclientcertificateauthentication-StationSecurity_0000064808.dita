@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="UserWorkflowForClientCertificateAut-1094F80E" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">User workflow for client certificate authentication</title>
+<shortdesc class="- topic/shortdesc ">A user performs this workflow as a preliminary step prior
+to the station administrator setting up for client certificate authentication.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">client certificate<indexterm class="- topic/indexterm ">user workflow</indexterm></indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">The user generates a new client certificate and exports
+it with its public key, and again with its encrypted private key.</p><p class="- topic/p ">Afterwards, the user gives the certificate with public key to
+the station administrator who uses it to set up Client Certificate
+Authentication on the station.</p><p class="- topic/p ">The user saves the exported certificate
+with its encrypted private key in a safe location on our PC file system
+for later login use. The private key is sensitive information and
+should be kept well protected. As a user, do not store your certificate
+with its private key somewhere where it might be accessible to others.</p><p class="- topic/p ">In a subsequent procedure, the user installs the certificate with
+its private key in the web browser.</p></section>
+</refbody>
+</reference>

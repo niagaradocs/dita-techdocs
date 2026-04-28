@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="cat_BasicCategories" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Basic categories</title>
+<shortdesc class="- topic/shortdesc ">The system maintains basic categories as indexes in an
+array. You individually assign components in the station to each category.
+Subsequently, you set up roles to grant permission to access components
+based on the category you associated with each component. Finally,
+you assign a role to each user.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">category<indexterm class="- topic/indexterm ">basic</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "/>
+<vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">A new station (created using the New Station wizard) comes with
+two default basic categories:</p>
+<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p "><systemoutput class="+ topic/ph sw-d/systemoutput ">User</systemoutput> (Category 1)</p></li>
+<li class="- topic/li "><p class="- topic/p "><systemoutput class="+ topic/ph sw-d/systemoutput ">Admin</systemoutput> (Category 2)</p></li>
+</ul>
+<p class="- topic/p ">As the names imply, regular users may view and modify some station
+objects. Only administrators should have permission to access other
+objects. All objects default to the <systemoutput class="+ topic/ph sw-d/systemoutput ">User</systemoutput> category except for these, which default to the <systemoutput class="+ topic/ph sw-d/systemoutput ">Admin</systemoutput> category:</p>
+<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">The configuration services: <apiname class="+ topic/keyword pr-d/apiname ">UserService</apiname>, <apiname class="+ topic/keyword pr-d/apiname ">CategoryService</apiname>, and <apiname class="+ topic/keyword pr-d/apiname ">ProgramService</apiname></p></li>
+<li class="- topic/li "><p class="- topic/p ">All files (the entire file space)</p></li>
+</ul>
+<p class="- topic/p ">You may add basic categories as needed. For example, you could
+group components by equipment type, such as <userinput class="+ topic/ph sw-d/userinput ">Lighting</userinput>, <userinput class="+ topic/ph sw-d/userinput ">Door access</userinput>, and <userinput class="+ topic/ph sw-d/userinput ">HVAC</userinput>. An alternate scheme might group components by geography: <userinput class="+ topic/ph sw-d/userinput ">Floor 1</userinput>, <userinput class="+ topic/ph sw-d/userinput ">Floor 2</userinput>, and <userinput class="+ topic/ph sw-d/userinput ">Floor 3</userinput>. How you group components depends on your overall
+building model, and specifically on how you plan to set up roles,
+permissions and users.</p>
+<note class="- topic/note "> Basic categories use station memory. To improve system performance,
+minimize the number of categories, and keep category indexes contiguous.</note>
+</conbody>
+</concept>

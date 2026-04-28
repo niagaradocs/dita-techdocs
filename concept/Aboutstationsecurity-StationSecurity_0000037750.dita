@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="AboutStationSecurityStationSecurity-DD10A54C" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">About station security</title><shortdesc class="- topic/shortdesc ">Security starts with the configuration and monitoring of each station. It involves setting up secure communication, secure email, secure user credentials, and configuring components, categories, hierarchies, and roles to grant users access only to the system objects they need to do their jobs.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">secure communication</indexterm><indexterm class="- topic/indexterm ">user authentication</indexterm><indexterm class="- topic/indexterm ">component<indexterm class="- topic/indexterm ">permissions</indexterm></indexterm><indexterm class="- topic/indexterm ">authorization management</indexterm></keywords><prodinfo class="- topic/prodinfo "><prodname class="- topic/prodname ">Niagara</prodname></prodinfo></metadata></prolog><conbody class="- topic/body  concept/conbody "><section class="- topic/section ">
+            <title class="- topic/title "/>
+            <p class="- topic/p ">To secure a station effectively, you must both enable Niagara security features and configure your network correctly. The key areas you must configure include:<ul class="- topic/ul "><li class="- topic/li ">
+                        <p class="- topic/p ">Secure communication</p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p ">User authentication</p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p ">Authorization management</p>
+                    </li></ul></p>
+        </section><section class="- topic/section ">
+        <title class="- topic/title ">Secure communication</title>
+            <ul class="- topic/ul "><li class="- topic/li ">
+                    <p class="- topic/p "><i class="+ topic/ph hi-d/i ">Secure communication</i> provides:</p>
+                    <ul class="- topic/ul "><li class="- topic/li ">
+                            <p class="- topic/p ">Server identity verification prevents man-in-the-middle and spoofing attacks. To set up the digital certificates that verify server identity, use the <wintitle class="+ topic/keyword ui-d/wintitle ">Certificate Manager</wintitle> view.</p>
+                        </li><li class="- topic/li ">
+                            <p class="- topic/p ">Data encryption (foxs/https/platformtls) prevents eavesdropping during the actual transmission of data. You define the key size used to encrypt data transmission when you create each certificate.</p>
+                        </li><li class="- topic/li ">
+                            <p class="- topic/p ">Secure email communication to configure email security, you use the <apiname class="+ topic/keyword pr-d/apiname ">EmailService</apiname>.</p>
+                        </li></ul>
+                </li></ul>
+        </section><section class="- topic/section ">
+            <title class="- topic/title ">User authentication</title>
+            <ul class="- topic/ul "><li class="- topic/li ">
+                    <p class="- topic/p "><i class="+ topic/ph hi-d/i ">User authentication</i> protects against unauthorized access by ensuring that only legitimate users (human users or station) can log in using <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> or a web browser. <ul class="- topic/ul "><li class="- topic/li ">
+                                <p class="- topic/p ">Use the <apiname class="+ topic/keyword pr-d/apiname ">AuthenticationService</apiname> to enable the authentication schemes your station requires.</p>
+                            </li><li class="- topic/li ">
+                                <p class="- topic/p ">Use the <apiname class="+ topic/keyword pr-d/apiname ">UserService</apiname> to assign authentication schemes and login credentials to individual users (human users or stations).</p>
+                            </li></ul></p>
+                    <p class="- topic/p ">You can configure multiple authentication schemes and assign different schemes to different users.</p>
+                </li></ul>
+        </section><section class="- topic/section ">
+            <title class="- topic/title ">Authorization management</title>
+            <ul class="- topic/ul "><li class="- topic/li ">
+                    <p class="- topic/p "><i class="+ topic/ph hi-d/i ">Authorization management</i> controls what users can access and change. It does the following: <ul class="- topic/ul "><li class="- topic/li ">
+                                <p class="- topic/p ">Defines which component slots, files, and histories users can access</p>
+                            </li><li class="- topic/li ">
+                                <p class="- topic/p ">Defines which users can modify them</p>
+                            </li><li class="- topic/li ">
+                                <p class="- topic/p ">Defines what actions users are allowed to perform</p>
+                                <p class="- topic/p "/>
+                                <note class="- topic/note ">
+                                    <p class="- topic/p "><keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> uses role‑based access control. Users are assigned roles, and roles map to component permissions.</p>
+                                </note>
+                                <p class="- topic/p ">To configure authorization:<ul class="- topic/ul "><li class="- topic/li ">
+                                            <p class="- topic/p ">Use the <apiname class="+ topic/keyword pr-d/apiname ">CategoryService</apiname> to define component categories (groups of components).</p>
+                                        </li><li class="- topic/li ">
+                                            <p class="- topic/p ">Use the <apiname class="+ topic/keyword pr-d/apiname ">RoleService</apiname> to assign permissions to categories.</p>
+                                        </li><li class="- topic/li ">
+                                            <p class="- topic/p ">Use the <apiname class="+ topic/keyword pr-d/apiname ">UserService</apiname> to assign roles to users.</p>
+                                        </li></ul></p>
+                            </li><?Pub Caret 49?></ul></p>
+                </li></ul>
+            <note class="- topic/note ">Platform security is beyond the scope of this document.</note>
+        </section></conbody></concept>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="InsertingOrRemovingTheMicroSDCard-0B436F00" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Inserting or removing the microSD card</title><shortdesc class="- topic/shortdesc ">The microSD card is used to store backups. Backups, once
+generated, are encrypted with a system passphrase that is stored in
+the controller. You must re-enter this same passphrase to restore
+a backup from the microSD card, using a serial connection to the unit’s
+Debug port.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Inserting or removing the microSD card</indexterm></keywords></metadata></prolog><taskbody class="- topic/body task/taskbody "><prereq class="- topic/section task/prereq ">You are working in a static-free area and have discharged
+any static from your body. Otherwise, equipment damage is likely to
+occur.</prereq><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">If the unit is currently running, shut it down and unmount
+it from any DIN rail or screw-tab mounting.</cmd><info class="- topic/itemgroup task/info ">For the shutdown procedure refer to “Initiating a controller
+shutdown.” Accessing the card uses the space behind the mounting base.<image placement="break" scope="local" width="350" href="../graphic/J9MicroSdCard.png" class="- topic/image "/><simpletable relcolwidth="1* 30*" class="- topic/simpletable "><strow class="- topic/strow "><stentry class="- topic/stentry ">1</stentry><stentry class="- topic/stentry ">Access shutter for microSD card (slide to open or close)</stentry></strow><strow class="- topic/strow "><stentry class="- topic/stentry ">2</stentry><stentry class="- topic/stentry ">Card carrier inside controller</stentry></strow><strow class="- topic/strow "><stentry class="- topic/stentry ">3</stentry><stentry class="- topic/stentry ">microSD card to insert or remove from card carrier<p class="- topic/p ">Typically,
+the microSD card never needs removal. However, in the case where a
+controller has been electrically damaged or found to be faulty, you
+can remove the card and install it in another like unit, so it can
+become a functional replacement.</p></stentry></strow></simpletable></info></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To open the plastic shutter, carefully slide it open.</cmd><info class="- topic/itemgroup task/info ">The shutter should remain captive in the base, revealing the
+microSD card socket.</info></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To insert the microSD card, slide it into card carrier,
+label side up, until the spring catch engages.</cmd><stepresult class="- topic/itemgroup task/stepresult ">If properly inserted, the card is behind the shutter track.</stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To remove the microSD card, push it in until the spring
+release pushes it partially out of the card carrier, grasp the card,
+pull it completely out of the unit and store it in a static free protective
+case.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Carefully slide the card shutter back over the card carrier
+opening until it clicks in place.</cmd><stepresult class="- topic/itemgroup task/stepresult ">When properly closed, the shutter should not protrude
+behind the mounting base.</stepresult></step></steps></taskbody></task>

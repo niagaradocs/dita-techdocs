@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="SSLFixingErrorConditions" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Secure communication troubleshooting</title><shortdesc class="- topic/shortdesc ">This topic suggests solutions for common connection security
+problems.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">server authentication<indexterm class="- topic/indexterm ">fixing
+error conditions</indexterm></indexterm><indexterm class="- topic/indexterm ">troubleshooting<indexterm class="- topic/indexterm ">server authentication</indexterm></indexterm></keywords><prodinfo class="- topic/prodinfo "><prodname class="- topic/prodname "/></prodinfo></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p "><b class="+ topic/ph hi-d/b ">When I attempt to import the signed server certificate
+back into the host <wintitle class="+ topic/keyword ui-d/wintitle ">User Key Store</wintitle>, I get errors.</b></p><p class="- topic/p ">This may happen if you deleted the original certificate created
+on the host from which you created the CSR. If you backed up this
+certificate, import it back into the <wintitle class="+ topic/keyword ui-d/wintitle ">User Key Store</wintitle> and import the CSR again. Generating a new certificate with the
+same name does not generate the same key pair and will result in errors
+when you attempt to import a signed certificate whose keys do not
+match.</p><p class="- topic/p "><b class="+ topic/ph hi-d/b ">For months I have been able to log in without being
+prompted to accept a certificate. All of a sudden the software is
+asking me to accept the certificate again.</b></p><p class="- topic/p ">One or more of
+the following may be occurring:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">The client may no longer contain the host's root CA certificate
+in the <wintitle class="+ topic/keyword ui-d/wintitle ">User Trust Store</wintitle> (for whatever reason).
+Check the certificate and import a matching root CA certificate into
+the <wintitle class="+ topic/keyword ui-d/wintitle ">User Trust Store</wintitle>.</p></li><li class="- topic/li "><p class="- topic/p ">The root CA certificate may have expired or changed and you
+need to import new certificates. Check the server certificate carefully
+to make sure it is trusted and temporarily approve it, creating an
+exemption in the <wintitle class="+ topic/keyword ui-d/wintitle ">Allowed Hosts</wintitle> list. Create or
+acquire a new root CA certificate and create new server certificates.
+Get the new server certificates signed by the new root CA certificate.
+Finally, import the certificates into the appropriate stores, deleting
+any expired certificates and any temporary exemptions you approved
+in the <wintitle class="+ topic/keyword ui-d/wintitle ">Allowed Hosts</wintitle> list.</p></li><li class="- topic/li "><p class="- topic/p ">There may be a problem with the Fox port. Check the <apiname class="+ topic/keyword pr-d/apiname ">FoxService</apiname> on the client <uicontrol class="+ topic/ph ui-d/uicontrol ">NiagaraNetwork</uicontrol> to ensure the correct Fox port: 4911 for Foxs; 1911 for Fox.</p></li><li class="- topic/li "><p class="- topic/p ">You may be subject to a man-in-the-middle attack and no trusted
+root CA certificate exists for the attacker in the platform/station <wintitle class="+ topic/keyword ui-d/wintitle ">Trust Stores</wintitle>. Check the certificate’s <systemoutput class="+ topic/ph sw-d/systemoutput ">Issued
+By</systemoutput> and <systemoutput class="+ topic/ph sw-d/systemoutput ">Issuer DN</systemoutput> (Distinguished
+Name) carefully. Do not manually approve a certificate for an issuer
+you do not recognize.</p></li></ul><p class="- topic/p "><b class="+ topic/ph hi-d/b ">The Session Info window (right-click <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Station</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Session Info</uicontrol></menucascade>) shows a red shield with a white x in the section that reports host
+identity authentication.</b></p><p class="- topic/p ">There may be a number of reasons
+for this:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">If you are serving as your own Certificate Authority, a platform
+and station requires your root CA certificate in its <wintitle class="+ topic/keyword ui-d/wintitle ">User
+Trust Store</wintitle>. When you start the platform or station for
+the first time the <wintitle class="+ topic/keyword ui-d/wintitle ">User Trust Store</wintitle> is empty.
+This causes the system to generate a self-signed certificate and display
+it for you to approve before it establishes the connection. Compare
+the <systemoutput class="+ topic/ph sw-d/systemoutput ">Issued By</systemoutput> and <systemoutput class="+ topic/ph sw-d/systemoutput ">Subject</systemoutput> properties. They are the same for a self-signed certificate. If
+you recognize the name, you can manually approve the certificate and
+rest assured that communication is secure. If you do not recognize
+the name, do not manually approve the certificate. If you are configuring
+the host for the first time, import your root CA certificate to the
+host’s <wintitle class="+ topic/keyword ui-d/wintitle ">User Trust Store</wintitle> as soon as possible and
+delete the default, self-signed certificate.</p></li><li class="- topic/li "><p class="- topic/p "> If, in a hurry, you allowed a certificate without checking
+its <systemoutput class="+ topic/ph sw-d/systemoutput ">Issued By</systemoutput> and <systemoutput class="+ topic/ph sw-d/systemoutput ">Issuer
+DN</systemoutput> (Distinguished Name), and you are worried about
+what you approved, open the platform/station stores (<menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Platform Services</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">CertManagerService</uicontrol></menucascade>); click the <uicontrol class="+ topic/ph ui-d/uicontrol ">Allowed Hosts</uicontrol> tab;
+locate the certificate and, if you do not recognize it, click <uicontrol class="+ topic/ph ui-d/uicontrol ">Unapprove</uicontrol>.</p></li></ul><p class="- topic/p "><b class="+ topic/ph hi-d/b ">When running in a browser, the Https in the address is
+crossed through with a red X next to it.</b></p><p class="- topic/p ">This indicates
+that you are using a self-signed certificate for which no client certificate
+exists in the browser’s trust store. Using Google Chrome, the browser
+caches nothing. You can still access the platform and station, but
+system performance is less than desirable. To speed performance, set
+up and import your own root CA certificate into the browser’s trust
+store, or purchase and install a signed client certificate from a
+CA (Certificate Authority).</p><p class="- topic/p "><b class="+ topic/ph hi-d/b ">I enabled TLS and logged in using
+a secure connection, but the platform icon does not include the lock
+symbol. Why did the platform boot with a connection that is not secure?</b></p><p class="- topic/p ">Most likely there is something wrong with the certificate.
+If a certificate fails, or for any reason secure communication cannot
+start, rather than lock you out of the platform, the system enables
+a connection without security. Restart the platform.</p><note class="- topic/note ">If you
+have to replace a platform certificate, assuming you exported the
+keys, you can import them to configure the new platform for secure
+communication.  </note><p class="- topic/p "><b class="+ topic/ph hi-d/b ">I enabled TLS and logged in using a secure
+connection. The platform icon shows the lock symbol, but no communication
+is occurring.</b></p><p class="- topic/p ">A firewall or secure router may be blocking
+or ignoring a port. Consult your firewall or router documentation
+for a list of blocked ports, then either unblock the port in the firewall
+or router, or change the port using <keyword conkeyref="wh_variables_n4/Workbench" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword "/>.</p><p class="- topic/p "><b class="+ topic/ph hi-d/b ">I'm using a signed server certificate, but the
+message "Unable to verify host identity" still appears when connecting
+to the platform.</b></p><p class="- topic/p ">The system cannot find a root CA certificate
+in a <wintitle class="+ topic/keyword ui-d/wintitle ">Trust Store</wintitle> that matches the server certificate.
+Import the root CA certificate used to sign the server certificate
+into the <wintitle class="+ topic/keyword ui-d/wintitle ">User Trust Store</wintitle>.</p><p class="- topic/p "><b class="+ topic/ph hi-d/b ">My platform
+or Supervisor private key has been compromised, what should I do?</b></p><p class="- topic/p ">Get on site as quickly as possible. Take the entire network
+off the Internet. Configure security again for each compromised platform
+creating and signing all new certificates.</p><p class="- topic/p "><b class="+ topic/ph hi-d/b ">When importing
+a root CR certificate into a client User Trust Store I get the message,
+"The ‘Import’ command encountered an error" or the certificate simply
+did not import.</b></p><p class="- topic/p ">Click the <uicontrol class="+ topic/ph ui-d/uicontrol ">Details</uicontrol> button to view the <keyword conkeyref="wh_variables_n4/Workbench" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword "/> console. Investigate these possibilities:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">You may be attempting to import a private key into the <wintitle class="+ topic/keyword ui-d/wintitle ">User Trust Store</wintitle>. This cannot be done.</p><p class="- topic/p ">Export the
+root CA certificate from the <keyword conkeyref="wh_variables_n4/Workbench" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword "/> <wintitle class="+ topic/keyword ui-d/wintitle ">User Key Store</wintitle> without its private
+key and try to import it again into the client <wintitle class="+ topic/keyword ui-d/wintitle ">User Trust
+Store</wintitle>.</p></li><li class="- topic/li "><p class="- topic/p "> The <systemoutput class="+ topic/ph sw-d/systemoutput ">Issuer</systemoutput> of the certificate
+you are importing must be the same as the <systemoutput class="+ topic/ph sw-d/systemoutput ">Subject</systemoutput> of the certificate that is below it in the certificate tree (the
+certificate used to sign the one that is causing the error). This
+may be an intermediate certificate or the root CA certificate. Beginning
+at the bottom of the tree, the issuer-subject relationship is something
+like this:</p><p class="- topic/p ">Issuer, SubjectC, DB, CA, B</p><p class="- topic/p ">Where “A” is the
+root CA (Certificate Authority) at the root of the certificate tree.
+“D” is the subject of the final server certificate in the tree. The
+rest are intermediate certificates.</p><p class="- topic/p ">If necessary, delete the
+certificate, create a new certificate, sign it using the certificate
+below it in the trusted certificate tree, and attempt to import again.</p></li></ul><p class="- topic/p "><b class="+ topic/ph hi-d/b ">I'm trying to get two stations to connect and it is not
+working.</b></p><p class="- topic/p ">If this is the first time you are making this connection,
+check the <wintitle class="+ topic/keyword ui-d/wintitle ">Allowed Hosts</wintitle> list. The station serving
+as the client may not have a certificate in its <wintitle class="+ topic/keyword ui-d/wintitle ">User Trust
+Store</wintitle> for the station that is serving as the server. In
+the <wintitle class="+ topic/keyword ui-d/wintitle ">Allowed Hosts</wintitle> list, analyze the exemption,
+then select the certificate to make sure that you recognize its <systemoutput class="+ topic/ph sw-d/systemoutput ">Issued By</systemoutput> and <systemoutput class="+ topic/ph sw-d/systemoutput ">Issuer DN</systemoutput> (Distinguished Name) and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Approve</uicontrol>. Check
+the certificate for the correct name and port number in the Host column.</p><p class="- topic/p ">If you have been connecting successfully but suddenly you are
+unable to connect, try to figure out what changed. Check the daemon
+logs for an error message.</p><p class="- topic/p ">If you are using root and intermediate
+certificates, check the <systemoutput class="+ topic/ph sw-d/systemoutput ">Issuer</systemoutput> name on
+your signed intermediate and server certificates. It should be the
+same as the <systemoutput class="+ topic/ph sw-d/systemoutput ">Subject</systemoutput> name on the root
+CA certificate. When it is unable to validate the certificate tree,
+the software prevents communication.</p><p class="- topic/p "><b class="+ topic/ph hi-d/b ">We use self-signed certificates.
+All hosts are approved in the Allowed Hosts list, and we've been able
+to connect to our platforms without getting the message that our hosts
+are not trusted. All of a sudden we're getting that message again.
+What happened?</b></p><p class="- topic/p ">If the IP address of the platforms changed,
+the entry in the <wintitle class="+ topic/keyword ui-d/wintitle ">Allowed Hosts</wintitle> list is no longer
+valid.</p><p class="- topic/p "><b class="+ topic/ph hi-d/b ">I get the message, “Cannot connect. Ensure server
+is running on specified port.” when I attempt to log in to a secure
+station:</b></p><p class="- topic/p ">This is a general message. A number of things could
+be wrong: </p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">There may be a problem with the controller. Ensure that the
+controller is connected to power and the power is on.</p></li><li class="- topic/li "><p class="- topic/p ">You entered invalid credentials or, for some other reason,
+you are having difficulty logging on (the station may have stopped
+running). Confirm your credentials, start the platform and use the
+Platform Application Director to start the station, then connect again.</p></li><li class="- topic/li "><p class="- topic/p ">Your secure <apiname class="+ topic/keyword pr-d/apiname ">WebService</apiname> (Https) or <apiname class="+ topic/keyword pr-d/apiname ">FoxService</apiname> (Foxs) may not be enabled (set to <option class="+ topic/keyword pr-d/option ">true</option>). Both must be enabled to make a secure station connection. Make
+a regular station connection by clicking <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">File</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Open</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Open Station</uicontrol></menucascade>, select <option class="+ topic/keyword pr-d/option ">Station Connection</option>, provide
+credentials, then, on the <apiname class="+ topic/keyword pr-d/apiname ">FoxService</apiname> <wintitle class="+ topic/keyword ui-d/wintitle ">Property Sheet</wintitle>, confirm that <parmname class="+ topic/keyword pr-d/parmname ">Foxs</parmname> is enabled (set to <option class="+ topic/keyword pr-d/option ">true</option>), close the station and
+connect to it again. Make sure you select a <option class="+ topic/keyword pr-d/option ">Station TLS Connection</option> for <parmname class="+ topic/keyword pr-d/parmname ">Type</parmname> in the <wintitle class="+ topic/keyword ui-d/wintitle ">Connect</wintitle> window.<note class="- topic/note "> <b class="+ topic/ph hi-d/b ">Reverse Proxy Configuration:</b> If you are using a reverse proxy and experiencing issues with Fox protocol connections, ensure the system property <codeph class="+ topic/ph pr-d/codeph ">org.bouncycastle.jsse.client.assumeOriginalHostName=false</codeph> is set as described in the "Configuring secure station communication" section.</note></p></li></ul></section></refbody></reference>

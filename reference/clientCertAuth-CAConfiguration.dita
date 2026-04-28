@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference-6849" xml:lang="en-us" class="- topic/topic       reference/reference "><title class="- topic/title ">CA Configuration (clientCertAuth-CAConfiguration)</title><shortdesc class="- topic/shortdesc ">This component describes which CA should have signed
+the client certificates, to which rules the client certificate must conform 
+(for example,  required extension or key size), and how to find the username in the
+client certificate.</shortdesc><prolog class="- topic/prolog "><author translate="no" type="creator" class="- topic/author ">Claudia Serwe &lt;claudia.serwe@tridium.com&gt;</author><metadata class="- topic/metadata "><keywords class="- topic/keywords "/></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p "><image placement="break" width="700" href="../graphic/StationSecurity_CAConfiguration.png" class="- topic/image "/></p>
+    
+    
+    </section><properties class="- topic/simpletable reference/properties "><prophead class="- topic/sthead      reference/prophead "><proptypehd class="- topic/stentry     reference/proptypehd ">Name</proptypehd><propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd><propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd></prophead><property class="- topic/strow       reference/property "><proptype class="- topic/stentry     reference/proptype ">CA Cert and CRL</proptype><propvalue class="- topic/stentry     reference/propvalue ">text</propvalue><propdesc class="- topic/stentry     reference/propdesc ">Specifies the CA that must have signed the client certificates, and can be
+configured to use Certificate Revocation Lists (CRL) to allow revoked
+certificates to be rejected on login (see "<cite class="- topic/cite ">driver-CaCertAndCrl</cite>" component) </propdesc></property><property class="- topic/strow       reference/property "><proptype class="- topic/stentry     reference/proptype ">Username
+Extractor Type Selection</proptype><propvalue class="- topic/stentry     reference/propvalue ">drop-down menu</propvalue><propdesc class="- topic/stentry     reference/propdesc ">Determines how to
+find the username in the client certificate. The following options are
+available:<ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">UsernameExtractorCNFromDirectoryNameSan</option>: Looks for the username in the Common Name (CN) of a Directory Name
+(DN)  Subjective Alternative Name (SAN)</p></li><li class="- topic/li "><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">UsernameExtractorCNFromSubjectDN</option>: Looks for the username in the Common Name (CN) of the client certificate's
+Subject DN.</p></li><li class="- topic/li "><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">UsernameExtractorEmailAddressSan</option>: Looks for the username in an email format Subject Alternative Name
+extension. The entire email address (name@domain.com) will be used.</p></li><li class="- topic/li "><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">UsernameExtractorEmailUserSan</option>: Looks for the username in an email format Subject Alternative Name
+extension. Only the username portion of the email address will be used (for example, if
+the email address is name@domain.com, "name" will be used as the username).</p></li><li class="- topic/li "><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">UsernameExtractorUPNSan</option>: Looks for
+the username in  a UPN format Subject Alternative name.</p></li></ul></propdesc></property><property class="- topic/strow       reference/property "><proptype class="- topic/stentry     reference/proptype ">Validation Rules</proptype><propvalue class="- topic/stentry     reference/propvalue ">drop-down menu</propvalue><propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Contains
+validation rules that determine to what   rules the client certificate must conform. By default, the Validation Rules folder from the <apiname class="+ topic/keyword pr-d/apiname ">clientCertAuth</apiname>
+palette contains an <parmname class="+ topic/keyword pr-d/parmname ">Extended Key Usage validation Rule</parmname>, which you can remove or replace by adding others.  The following validation rules are supported:</p>
+    
+    <p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">Extended Key Usage Validation Rule</parmname>: If
+configured, the client certificate must contain the specified Extended Key
+Usage extensions. Smartcard and TLS Web Client are common options and are
+available as Boolean properties, but custom extension OIDs can also be added.
+Multiple OIDs can be specified, separated by semi-colons.</p>
+    
+    <p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">Key Size Validation Rule</parmname>: If configured, the
+key size of the client certificate must be at least as big as ("minimum"
+setting) or exactly ("exact" setting) than the specified key size.</p>
+    
+    <p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">Key Algorithm Validation Rule</parmname>: If configured,
+the key algorithm must be one of the algorithms specified in the semicolon-separated list.</p></propdesc></property><property class="- topic/strow       reference/property "/></properties></refbody></reference>

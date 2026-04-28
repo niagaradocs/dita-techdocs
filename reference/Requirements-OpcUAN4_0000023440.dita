@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="RequirementsOpcUAN4-548383D0" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Requirements</title><shortdesc class="- topic/shortdesc ">The OPC UA drivers require licensing and a set of core modules.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">requirements</indexterm><indexterm class="- topic/indexterm ">licensing</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section ">
+            <title class="- topic/title ">Platforms and software</title>
+            <p class="- topic/p ">The OPC UA drivers function on any QNX-based platform running on latest <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> version, such as the <ph conkeyref="host_models/nc8000" class="- topic/ph "/>, as well as Windows-based platforms (Windows 7 Service Pack One and later) running on latest <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> version.<i class="+ topic/ph hi-d/i "/></p>
+            <p class="- topic/p ">The OPC UA drivers function on any Ubuntu Core 20 platform running on latest <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> version, such as the <ph conkeyref="host_models/nc9000" class="- topic/ph "/>, as well as Windows-based platforms (Windows 7 Service Pack One and later) running on latest <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> version.</p>
+            <p class="- topic/p ">In addition to the framework software, the OPC UA server requires software, such as Prosys OPC UA Simulation Server, installed on your PC. You use this to configure and manage the OPC UA server.</p>
+        </section><section class="- topic/section ">
+            <title class="- topic/title ">License requirements</title>
+            <p class="- topic/p ">The <apiname class="+ topic/keyword pr-d/apiname ">opcUaClient</apiname> module requires a license for the “opcUaClient” feature. This license may have other OPC UA client device, proxy point, and history limits.</p>
+            <p class="- topic/p ">
+                <fig class="- topic/fig "><title class="- topic/title ">Example OPC UA license snippet</title><image width="750" href="../graphic/license_opcua.png" class="- topic/image "/></fig>
+            </p>
+        </section><section class="- topic/section ">
+            <title class="- topic/title ">Server modules</title>
+            <p class="- topic/p ">The server driver requires these modules in the host station:<ul class="- topic/ul "><li class="- topic/li ">
+                        <p class="- topic/p "><apiname class="+ topic/keyword pr-d/apiname ">opcUaCore-rt</apiname> contains Java Class files and resources common to both OPC UA client and OPC UA server functionality.</p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><apiname class="+ topic/keyword pr-d/apiname ">opcUaServer-rt</apiname> contains Java Class files and resources that support OPC UA server run-time functionality.</p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><apiname class="+ topic/keyword pr-d/apiname ">opcUaServer-wb</apiname> contains Java Class files and resources that support OPC UA server <keyword conkeyref="wh_variables_n4/Workbench" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword "/> functionality.</p>
+                    </li></ul></p>
+        </section><section class="- topic/section ">
+            <title class="- topic/title ">Client modules</title>
+            <p class="- topic/p ">The client driver requires these modules in the host station:</p>
+            <ul class="- topic/ul "><li class="- topic/li ">
+                    <p class="- topic/p "><apiname class="+ topic/keyword pr-d/apiname ">opcUaCore-rt</apiname> contains Java Class files and resources common to both OPC UA client and OPC UA server functionality.</p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p "><apiname class="+ topic/keyword pr-d/apiname ">opcUaClient-rt</apiname> contains Java Class files and resources that support OPC UA client run-time functionality.</p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p "><apiname class="+ topic/keyword pr-d/apiname ">opcUaClient-wb</apiname> contains Java Class files and resources that support OPC UA client <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> functionality.</p>
+                </li></ul>
+        </section></refbody></reference>

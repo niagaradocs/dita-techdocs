@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="SettingUpSAMLIdPServiceStatio-AF187578" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Setting up the SAML IdP Service</title><shortdesc class="- topic/shortdesc ">Setting up the SAML IdP Service on your <keyword conkeyref="wh_variables_n4/Supervisor" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Supervisor" class="- topic/keyword ">Supervisor</keyword> station makes it easy to configure an internal
+Niagara IdP that works with your SAML Authentication Scheme.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">SAMLIdPService<indexterm class="- topic/indexterm ">setting up</indexterm></indexterm></keywords></metadata></prolog><taskbody class="- topic/body task/taskbody "><prereq class="- topic/section task/prereq "><ul compact="yes" class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">The platform is licensed for <codeph class="+ topic/ph pr-d/codeph ">samlDP</codeph> (with
+the <parmname class="+ topic/keyword pr-d/parmname ">On/Off</parmname> attribute set to <option class="+ topic/keyword pr-d/option ">true</option>).</p></li><li class="- topic/li "><p class="- topic/p ">A Server Certificate has already been generated in the User
+Key Store for use with  SAML IdP.</p></li><li class="- topic/li "><p class="- topic/p ">The <keyword conkeyref="wh_variables_n4/Supervisor" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Supervisor" class="- topic/keyword ">Supervisor</keyword> station’s WebService is running.</p></li><li class="- topic/li "><p class="- topic/p ">The <apiname class="+ topic/keyword pr-d/apiname ">saml</apiname> palette is open.</p></li></ul></prereq><context class="- topic/section task/context "><note class="- topic/note ">Install the SAMLIdPService only on a <keyword conkeyref="wh_variables_n4/Supervisor" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Supervisor" class="- topic/keyword ">Supervisor</keyword> station.</note></context><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">From the <apiname class="+ topic/keyword pr-d/apiname ">saml</apiname> palette drag the <apiname class="+ topic/keyword pr-d/apiname ">SAMLIdPService</apiname> component to the <keyword conkeyref="wh_variables_n4/Supervisor" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Supervisor" class="- topic/keyword ">Supervisor</keyword> station’s <apiname class="+ topic/keyword pr-d/apiname ">Services</apiname> node, and when prompted, enter a name for the service. For example,
+Niagara IdP.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Open a <wintitle class="+ topic/keyword ui-d/wintitle ">Property Sheet</wintitle> view of the
+service and configure the following properties:</cmd><substeps class="- topic/ol task/substeps "><substep class="- topic/li task/substep "><cmd class="- topic/ph task/cmd "><parmname class="+ topic/keyword pr-d/parmname ">IdP Signing Cert</parmname> — click
+the drop-down list and select the existing Server Certificate from
+the station’s <wintitle class="+ topic/keyword ui-d/wintitle ">User Key Store</wintitle>. </cmd></substep><substep class="- topic/li task/substep "><cmd class="- topic/ph task/cmd "><parmname class="+ topic/keyword pr-d/parmname ">EntityID</parmname> — enter the station’s
+IP address (or hostname) plus the port the WebService is running on.</cmd><info class="- topic/itemgroup task/info "><note class="- topic/note ">The port number is required (for example, 443 for https). It must
+be included in the EntityID otherwise the service will fail. Also
+required are the characters “<userinput class="+ topic/ph sw-d/userinput ">/saml/</userinput>”
+which must be appended to the EntityID value. For example, if you
+entered “<userinput class="+ topic/ph sw-d/userinput ">https://192.68.19.20:443</userinput>”
+for the <parmname class="+ topic/keyword pr-d/parmname ">EntityID</parmname>, you then need to append it
+with “<userinput class="+ topic/ph sw-d/userinput ">/saml/</userinput>”, so that it reads:
+“<userinput class="+ topic/ph sw-d/userinput ">https://192.68.19.20:443/saml/</userinput>”.</note></info></substep><substep class="- topic/li task/substep "><cmd class="- topic/ph task/cmd "><parmname class="+ topic/keyword pr-d/parmname ">Time Skew</parmname> — set the number
+of minutes to extend the validity period of the SAML request from
+the subordinate station. This is intended to allow SAML message to
+be accepted when the supervisor and subordinate stations cannot synchronize
+their time. Use positive values. Default value is 3 minutes.</cmd></substep><substep class="- topic/li task/substep "><cmd class="- topic/ph task/cmd "><parmname class="+ topic/keyword pr-d/parmname ">Apply Skew to Response</parmname> —
+click the dropdown list and select “<option class="+ topic/keyword pr-d/option ">true</option>”
+to apply the specified Time Skew setting to the response. For cases
+where a time difference exists between the <keyword conkeyref="wh_variables_n4/Supervisor" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Supervisor" class="- topic/keyword ">Supervisor</keyword> and a subordinate station, this will apply the
+Time Skew to the response(s).</cmd></substep></substeps></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Double-click <apiname class="+ topic/keyword pr-d/apiname ">Circle of Trust</apiname> to open
+the <wintitle class="+ topic/keyword ui-d/wintitle ">Circle Of Trust Editor</wintitle> and configure the
+following properties.</cmd><substeps class="- topic/ol task/substeps "><substep class="- topic/li task/substep "><cmd class="- topic/ph task/cmd "><parmname class="+ topic/keyword pr-d/parmname ">Description</parmname> — (optional)
+enter a description for this Circle of Trust.</cmd></substep><substep class="- topic/li task/substep "><cmd class="- topic/ph task/cmd "><parmname class="+ topic/keyword pr-d/parmname ">Http Redirect Endpoint</parmname> —
+A read-only value that shows the URL for this Circle of Trust. </cmd></substep></substeps></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">The lower half of the view lists subordinate stations in
+the <uicontrol class="+ topic/ph ui-d/uicontrol ">NiagaraNetwork</uicontrol>. Click a checkbox for any
+station(s) to include it in this Circle of Trust. </cmd><info class="- topic/itemgroup task/info "><note class="- topic/note ">You are not limited to stations in your <uicontrol class="+ topic/ph ui-d/uicontrol ">NiagaraNetwork</uicontrol>. Click <uicontrol class="+ topic/ph ui-d/uicontrol ">Add Station</uicontrol> to select a non-<uicontrol class="+ topic/ph ui-d/uicontrol ">NiagaraNetwork</uicontrol> station. You will be prompted to enter
+a Name, Server Certificate public key, and Issuer URL for the station.
+Any stations not already in the <uicontrol class="+ topic/ph ui-d/uicontrol ">NiagaraNetwork</uicontrol> cannot be configured via the Configure Niagara IdP and SAML Scheme
+provisioning job and the SAMLAuthenticationSchemes on the remote station
+must be added manually.</note></info></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Click <uicontrol class="+ topic/ph ui-d/uicontrol ">Users</uicontrol> to select the user(s)
+from your UserService to include in this Circle of Trust. This allows
+those users to log into the specified stations in the COT. </cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Click <uicontrol class="+ topic/ph ui-d/uicontrol ">Auth Schemes</uicontrol> to specify which
+other authentication schemes may be used when logging in. </cmd><info class="- topic/itemgroup task/info "><note class="- topic/note ">This is to accommodate users who may not yet exist in
+the  <keyword conkeyref="wh_variables_n4/Supervisor" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Supervisor" class="- topic/keyword ">Supervisor</keyword> station. For example, you might specify the
+LdapScheme so that LDAP users can login. However, for typical (SAML
+Authentication Scheme) usage you can skip this step.</note></info></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Click <uicontrol class="+ topic/ph ui-d/uicontrol ">Prototypes</uicontrol> to specify one
+or more user prototypes that may be used when logging in.</cmd><info class="- topic/itemgroup task/info "><note class="- topic/note ">The specified prototypes should correspond to User Prototypes
+on the subordinate station(s). The User Prototype is used to create
+the user on the subordinate station on login and needs to exist on
+the station at that time.</note></info><stepresult class="- topic/itemgroup task/stepresult ">At this point you have completed configuring the SAMLIdPService
+and adding user prototypes to the Circle of Trust. </stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the <keyword conkeyref="wh_variables_n4/Supervisor" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Supervisor" class="- topic/keyword ">Supervisor</keyword>’s UserService, assign a SAML Prototype
+to each Circle of Trust user. Do this for each Circle of Trust that
+the user is in. </cmd><info class="- topic/itemgroup task/info "><note class="- topic/note ">You can choose from any of the prototype names that have
+been added to that Circle of Trust.</note></info></step></steps><result class="- topic/section task/result ">Completing the Circle of Trust configuration is the last item
+in the workflow for configuring the SAML IdP Service on the <keyword conkeyref="wh_variables_n4/Supervisor" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Supervisor" class="- topic/keyword ">Supervisor</keyword>. Additional configuration must be done on the
+subordinate station(s). For those details see “Configuring
+the subordinate station for SAMLIdPService”.</result><example class="- topic/example "/><postreq class="- topic/section task/postreq "/></taskbody></task>

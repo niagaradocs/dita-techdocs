@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="AssigningRolesToUsers" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Assigning roles to users</title>
+<shortdesc class="- topic/shortdesc ">This task associates the permissions defined by a specific
+role with each user.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">roles<indexterm class="- topic/indexterm ">assigning to users</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "/>
+<vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq ">Roles and users have already been created. In a multi-station
+system, each station has the same set of roles.</prereq>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Right-click <uicontrol class="+ topic/ph ui-d/uicontrol ">UserService</uicontrol> in the Nav
+tree, click <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Views</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">User
+Manager</uicontrol></menucascade>.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Double-click the user’s row in the <wintitle class="+ topic/keyword ui-d/wintitle ">User
+Manager</wintitle>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The user’s <wintitle class="+ topic/keyword ui-d/wintitle ">Property Sheet</wintitle> appears.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">For the <parmname class="+ topic/keyword pr-d/parmname ">Roles</parmname> property, select one
+or more role names by clicking in the check box and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd></step>
+</steps>
+</taskbody>
+</task>

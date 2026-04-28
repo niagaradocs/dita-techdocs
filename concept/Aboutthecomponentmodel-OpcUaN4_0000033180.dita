@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="AboutTheComponentModelOpcUaN4-AA91E3E3" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">Driver component model</title><shortdesc class="- topic/shortdesc "><keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword ">Niagara</keyword> provides a set of two OPC UA drivers: <apiname class="+ topic/keyword pr-d/apiname ">opcUaClient</apiname> and <apiname class="+ topic/keyword pr-d/apiname ">opcUaServer</apiname>. Both follow
+the <keyword conkeyref="wh_variables_n4/niagara_fw" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara_fw" class="- topic/keyword "/> model for drivers.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">model</indexterm></keywords></metadata></prolog><conbody class="- topic/body  concept/conbody "><p class="- topic/p ">The OPC UA specification provides a platform-independent, service-oriented
+architecture. It integrates all functionality from the existing OPC
+Classic specification, providing a more secure and scalable solution.
+The specification is backwards compatible with OPC Classic.</p><section class="- topic/section "><title class="- topic/title ">OpcUaServer driver component model</title><p class="- topic/p ">The two
+main components are the <uicontrol class="+ topic/ph ui-d/uicontrol ">OpcUaServer</uicontrol> and <uicontrol class="+ topic/ph ui-d/uicontrol ">OpcUaNamespace</uicontrol>. The <uicontrol class="+ topic/ph ui-d/uicontrol ">OpcUaServer</uicontrol> component models an OPC UA server instance in the driver framework.
+There should be only one instance of this driver in a station. </p><p class="- topic/p ">The <uicontrol class="+ topic/ph ui-d/uicontrol ">OpcUaServer</uicontrol> component models an Opc
+UA namespace in the parent OPC UA server. It typically provides a
+logical grouping of OPC UA variables, histories, and events that can
+be accessed by an OPC UA client.</p></section><section class="- topic/section "><title class="- topic/title ">OpcUaClient driver component model</title><p class="- topic/p ">The primary <apiname class="+ topic/keyword pr-d/apiname ">OpcUaClient</apiname> components are:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">OpcUaNetwork</uicontrol> serves as the parent container
+for all of OPC UA client devices.</p></li><li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">OpcUaDevice</uicontrol> represents an OPC UA client.</p></li><li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">OpcUaClientPointDeviceExt</uicontrol> contains proxy
+control points used to proxy values to and from the OPC UA server.</p></li><li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">OpcUaClientAlarmDeviceExt</uicontrol> subscribes
+the station to alarm events from the OPC UA server.</p></li><li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">OpcUaClientHistoryDeviceExt</uicontrol> imports
+histories from the OPC UA server.</p></li><li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">OpcUaClientProxyExt</uicontrol> is the control point
+proxy ext used to identify a specific OPC UA server data variable
+to proxy through this control point.</p></li><li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">ImportHistoryExt</uicontrol> is the history point
+extension that imports the history data associated with the specific
+OPC UA server data variable defined in the proxy ext.</p></li></ul></section><section class="- topic/section "><title class="- topic/title ">Supported profiles</title><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">UA Generic Client Profile</p></li><li class="- topic/li "><p class="- topic/p ">UA Data Access Client Profile</p></li><li class="- topic/li "><p class="- topic/p ">UA History Data Access Client Profile</p></li><li class="- topic/li "><p class="- topic/p ">UA Alarm </p></li></ul></section><section class="- topic/section "><title class="- topic/title ">Supported facets</title><p class="- topic/p ">The following table lists
+the OPC UA client facets supported by the <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> OPC UA drivers. This is a subset of available OPC UA facets.</p><table class="- topic/table "><tgroup cols="2" class="- topic/tgroup "><colspec colname="1" colwidth="0.53*" class="- topic/colspec "/><colspec colname="2" colwidth="1.47*" class="- topic/colspec "/><thead class="- topic/thead "><row class="- topic/row "><entry valign="top" class="- topic/entry ">OPC UA Facet</entry><entry valign="top" class="- topic/entry ">Description</entry></row></thead><tbody class="- topic/tbody "><row class="- topic/row "><entry colname="1" morerows="0" nameend="1" namest="1" class="- topic/entry ">Base Client
+Behavior Facet</entry><entry colname="2" morerows="0" nameend="2" namest="2" class="- topic/entry ">Defines client
+behavior for best use by operators and administrators. These behaviors
+include the ability to configure an endpoint for a server without
+using the discovery service set; support for manual security configuration
+and behavior with regard to security issues; support for automatic
+reconnection to a disconnected server.</entry></row><row class="- topic/row "><entry colname="1" morerows="0" nameend="1" namest="1" class="- topic/entry ">Core Client
+Facet</entry><entry colname="2" morerows="0" nameend="2" namest="2" class="- topic/entry ">Defines the
+core functionality required for any client. This Facet includes the
+core functions for security and session handling.</entry></row><row class="- topic/row "><entry colname="1" morerows="0" nameend="1" namest="1" class="- topic/entry ">AddressSpace
+Lookup Client Facet</entry><entry colname="2" morerows="0" nameend="2" namest="2" class="- topic/entry ">Defines the
+ability to navigate through the AddressSpace and includes the basic
+AddressSpace concepts: view and browse, and simple attribute read
+functionality.</entry></row><row class="- topic/row "><entry colname="1" morerows="0" nameend="1" namest="1" class="- topic/entry ">Attribute Read
+Client Facet</entry><entry colname="2" morerows="0" nameend="2" namest="2" class="- topic/entry ">This Facet
+defines the ability to read Attribute values of Nodes.</entry></row><row class="- topic/row "><entry colname="1" morerows="0" nameend="1" namest="1" class="- topic/entry ">DataChange
+Subscriber Client Facet</entry><entry colname="2" morerows="0" nameend="2" namest="2" class="- topic/entry ">This Facet
+defines the ability to monitor Attribute values for data change.</entry></row><row class="- topic/row "><entry colname="1" morerows="0" nameend="1" namest="1" class="- topic/entry ">DataAccess
+Client Facet</entry><entry colname="2" morerows="0" nameend="2" namest="2" class="- topic/entry ">This Facet
+defines the ability to utilize the DataAccess Information Model, i.e.,
+industrial automation data like analog and discrete data items and
+their quality of service.</entry></row><row class="- topic/row "><entry colname="1" morerows="0" nameend="1" namest="1" class="- topic/entry ">Alarm and Event
+Client Facet</entry><entry colname="2" morerows="0" nameend="2" namest="2" class="- topic/entry ">Partially supported.<p class="- topic/p ">This Facet defines the ability to subscribe for Event Notifications.
+This includes basic AddressSpace concept and the browsing of it, adding
+events and event filters as monitored items and adding subscriptions.</p></entry></row><row class="- topic/row "><entry colname="1" morerows="0" nameend="1" namest="1" class="- topic/entry ">Method Client
+Facet</entry><entry colname="2" morerows="0" nameend="2" namest="2" class="- topic/entry ">This Facet
+defines the ability to call arbitrary Methods.</entry></row><row class="- topic/row "><entry colname="1" morerows="0" nameend="1" namest="1" class="- topic/entry ">Historical
+Access</entry><entry colname="2" morerows="0" nameend="2" namest="2" class="- topic/entry ">This Facet
+defines the ability to read, process, and update historical data.</entry></row></tbody></tgroup></table></section></conbody></concept>

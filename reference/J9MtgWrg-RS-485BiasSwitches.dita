@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<?Pub UDT template _font?><reference id="RS485BiasSwitches-0B48DC84" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">RS485 bias switches</title>
+<shortdesc class="- topic/shortdesc ">Each RS485 port has an adjacent three-position biasing
+switch.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">RS485 bias switches</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">Each switch has these settings:<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">BIA</uicontrol> - (Default, middle) RS485 biasing
+and termination: 2.7K Ohm bias resistors with no termination resistor</p></li>
+<li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">END</uicontrol> - RS485 biasing and a termination:
+562 Ohm bias resistors and 150 Ohm termination resistor</p></li>
+<li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">MID</uicontrol> - RS485 biasing or termination:
+47.5K bias resistors with no termination resistor</p></li>
+</ul></p><p class="- topic/p ">Often, adding RS485 biasing can improve communications
+by eliminating indeterminate idle states. For example:<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">BIA</uicontrol> - (Default, middle) is often best
+if the RS485 trunk needs biasing when the controller is not installed
+at the end of the trunk.</p></li>
+<li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">END</uicontrol> - is often best if the controller
+is installed at the end of an RS485 trunk of devices that is not already
+biased.</p></li>
+<li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">MID</uicontrol> - is often best if the controller
+is put in the middle of an already-biased RS485 trunk.</p></li>
+</ul>If desired, you can change the position of an RS485 port’s bias
+switch while the controller is running. Each RS485 port has two LEDs.
+Refer to “RS485 LEDs” for details.</p></section>
+</refbody>
+</reference>

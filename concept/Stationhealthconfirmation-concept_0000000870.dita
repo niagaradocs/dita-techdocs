@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="SSLStationHealthConfirmation" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Station health confirmation</title>
+<shortdesc class="- topic/shortdesc ">When you finish configuring a client or server, stop and
+restart a secure station and check station health. The system does
+not validate existing connections against new certificates until you
+restart the station. The system does not automatically change connections
+from Http and Fox to Https and Foxs, even when you enable <parmname class="+ topic/keyword pr-d/parmname ">Https Only</parmname> and <parmname class="+ topic/keyword pr-d/parmname ">Foxs Only</parmname>, until you
+reestablish the connection.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">station<indexterm class="- topic/indexterm ">health</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "/>
+<vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p "/>
+</conbody>
+</concept>

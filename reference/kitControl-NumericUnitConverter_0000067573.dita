@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-NumericUnitConverter" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-NumericUnitConverter</title>
+<shortdesc class="- topic/shortdesc ">This component converts a StatusNumeric value from a definable <parmname class="+ topic/keyword pr-d/parmname ">In Facets</parmname> to a different definable <parmname class="+ topic/keyword pr-d/parmname ">Out Facets</parmname>. </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">NumericUnitConverter</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">NumericUnitConverter is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Conversion</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p><p class="- topic/p ">This
+component is unique in that it does not change the data type (both
+input and output are StatusNumeric). It changes the actual numeric
+value. To produce a valid numeric output, both configured facets must
+conform to the same category (such as temperature, power, and so forth).
+Otherwise, the NumericUnitConverter reports a fault status.</p><fig class="- topic/fig ">
+<title class="- topic/title ">NumberUnitConverter properties</title>
+<image href="../graphic/kitControlNumberUnitConverter_0000067585.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Configures the unit of measure for the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number and null definition (defaults to 0)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the source value based on the source unit of measure.<p class="- topic/p ">When null is checked, the value displayed defaults to the incoming
+value from the device. If you remove the check mark you can configure
+the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Configures the unit of measure for the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> value.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only number</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the converted out value based on its unit of measure.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

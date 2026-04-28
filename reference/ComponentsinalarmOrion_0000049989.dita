@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="ComponentsInAlarmOrion-7F2BA03E" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Components in an alarmOrion module</title>
+<shortdesc class="- topic/shortdesc ">An alarmOrion module contains components that allow you
+to set up a service for an Orion Alarm Database. The following components
+are included in the alarmOrion module:</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">alarmOrion module<indexterm class="- topic/indexterm ">components</indexterm></indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><ul class="- topic/ul ">
+<li class="- topic/li ">OrionAlarmService</li>
+<li class="- topic/li ">Converters</li>
+<li class="- topic/li ">OrionArchiveAlarmProvider</li>
+</ul></section>
+</refbody>
+</reference>

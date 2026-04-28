@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="bacnet-BacnetTrendMultipleView" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Bacnet Trend Multiple View</title>
+<shortdesc class="- topic/shortdesc ">This view is the default view for the BacnetTrendLogMultipleImport
+component.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Bacnet Trend Multiple View</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">To access this view, double-click the import descriptor
+in the Nav tree, or right-click the <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetTrendLogMultipleImport</uicontrol> component and click <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Views</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Bacnet Trend Multiple View</uicontrol></menucascade>.</p></section>
+</refbody>
+</reference>

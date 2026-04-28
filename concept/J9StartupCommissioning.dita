@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="Commissioning-30E1CE0B" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">Commissioning</title><!--JACE-8000 and JACE-9000 will share the same commissioning files. The procedure is the same.--><shortdesc class="- topic/shortdesc ">When you connect the controller for the first time, you
+first need to commission the controller. The commissioning of the
+controller loads drivers, configures password protection, installs
+the controller’s license, sets up platform users, configures TCP/IP,
+and installs software modules. The Commissioning Wizard works for
+commissioning a new controller or upgrading an existing controller.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">controller<indexterm class="- topic/indexterm ">commissioning</indexterm></indexterm><indexterm class="- topic/indexterm ">commissioning</indexterm></keywords></metadata></prolog><conbody class="- topic/body  concept/conbody "><p class="- topic/p ">Commissioning steps include:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">Request or install software licenses (preselected for any new
+controller).</p></li><li class="- topic/li "><p class="- topic/p ">Set enabled runtime profiles (preselected and read-only for
+any new unit).</p></li><li class="- topic/li "><p class="- topic/p ">Install a station from the local computer, recommended. Optionally,
+you can install station(s) at a later time.</p></li><li class="- topic/li "><p class="- topic/p ">Install lexicons to support additional languages, option to
+install file-based lexicon sets (alternative to lexicon modules).
+Typically, you leave this cleared. Lexicon modules are required in <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword ">n4</keyword>.</p></li><li class="- topic/li "><p class="- topic/p ">Install/upgrade modules (always preselected when you run the
+wizard). Used to select the software modules, and optionally any lexicon
+modules.</p></li><li class="- topic/li "><p class="- topic/p ">Install/upgrade core software from distribution files (preselected
+and read-only for any new unit).</p></li><li class="- topic/li "><p class="- topic/p ">Sync with my local system date and time (preselected in most
+cases). New <ph conkeyref="host_models/nc" class="- topic/ph ">nc</ph> for example, where
+controller time may greatly differ from actual time.</p></li><li class="- topic/li "><p class="- topic/p ">Configure TCP/IP network settings (recommended).</p></li><li class="- topic/li "><p class="- topic/p ">Remove platform default user account (preselected and read-only
+for a new unit). You cannot commission a unit with the factory default
+platform user.</p></li><li class="- topic/li "><p class="- topic/p ">Configure additional platform daemon users. That is the recommended option
+if you require additional platform admin user accounts, with unique
+user names and passwords (all have full equal privileges).</p></li></ul></conbody></concept>

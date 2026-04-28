@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="Factory-shippedState-3468FA83" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">Factory-shipped state</title><shortdesc class="- topic/shortdesc ">The controller is configured at the factory with an IP
+address, HTTP port, and platform credentials.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">factory-shipped state</indexterm></keywords></metadata></prolog><conbody class="- topic/body  concept/conbody "><p class="- topic/p ">When shipped, a new controller is pre-configured with an IPv4 address
+in the range: <systemoutput class="+ topic/ph sw-d/systemoutput ">192.168.1.140</systemoutput> with a primary <uicontrol class="+ topic/ph ui-d/uicontrol ">LAN1</uicontrol> port. Its <uicontrol class="+ topic/ph ui-d/uicontrol ">LAN2</uicontrol> port is disabled.
+The unit’s default subnet mask is: <systemoutput class="+ topic/ph sw-d/systemoutput ">255.255.255.0</systemoutput>. You change these IPv4 network settings during your startup commissioning
+of the controller.</p><p class="- topic/p ">When shipped, the controller’s, platform daemon is configured to
+listen on HTTPS port 5011. Often, this is left at default. However,
+if a different port is needed for a platform connection, perhaps for
+firewall reasons, you can change this during the commissioning of
+the controller.</p><p class="- topic/p ">Controllers are shipped with default platform daemon (administrator)
+username, password, and passphrase credentials. Following are the
+default credentials:<simpletable class="- topic/simpletable "><sthead class="- topic/sthead "><stentry class="- topic/stentry ">Default credential</stentry><stentry class="- topic/stentry ">Value</stentry></sthead><strow class="- topic/strow "><stentry class="- topic/stentry ">username</stentry><stentry class="- topic/stentry ">admin</stentry></strow><strow class="- topic/strow "><stentry class="- topic/stentry ">password</stentry><stentry class="- topic/stentry ">admin</stentry></strow><strow class="- topic/strow "><stentry class="- topic/stentry ">passphrase</stentry><stentry class="- topic/stentry ">admin</stentry></strow></simpletable></p><p class="- topic/p ">Initially, you use the factory default credentials to open (to
+log in) a platform connection to the controller. Like the factory-assigned
+IP address, default credentials are temporary. During your startup
+commissioning, you must replace this platform admin account with at
+least one different platform admin user. Be sure to guard the credentials
+for such platform users closely.</p><note class="- topic/note "> The <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/>   Commissioning Wizard does not allow you to commission and start up
+a controller while retaining the factory platform user.</note></conbody></concept>

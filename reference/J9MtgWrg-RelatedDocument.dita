@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<?Pub UDT template _font?><reference id="RelatedDocuments-JACE8000Startup" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Related documentation</title>
+<shortdesc class="- topic/shortdesc ">Additional information is available in the following documents.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">related documents</indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "><keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/></prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="4.13" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p "><cite class="- topic/cite "><ph conref="../reuse/WH_HardwareDocTitles_Tridium_N4_0000009936.dita#WHHardwareDocumentTitlesTridium-9A3181CB/JACE-9000QSGuide" class="- topic/ph "/></cite></p></li><?Pub Caret 4?>
+<li class="- topic/li "><p class="- topic/p "><cite class="- topic/cite "><ph conkeyref="doctitles_coresw/JACE-9000InstallSGuide" conref="../reuse/WH_CoreSWDocTitles_Tridium_N4_0000009937.dita#WHCoreSoftwareDocumentTitles-9A315B77/JACE-9000InstallSGuide" class="- topic/ph "/></cite></p></li>
+<li class="- topic/li "><cite class="- topic/cite "><ph conkeyref="doctitles_coresw/PlatformGuide-A0F6B991" conref="../reuse/WH_CoreSWDocTitles_Tridium_N4_0000009937.dita#WHCoreSoftwareDocumentTitles-9A315B77/PlatformGuide-A0F6B991" class="- topic/ph "/></cite></li>
+</ul></section>
+</refbody>
+</reference>

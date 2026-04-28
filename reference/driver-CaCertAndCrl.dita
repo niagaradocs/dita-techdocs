@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference-5609" xml:lang="en-us" class="- topic/topic       reference/reference "><title class="- topic/title ">Ca Cert And Crl (driver-CaCertAndCrl)</title><shortdesc class="- topic/shortdesc ">This component is a frozen slot on the CA Configuration. It lets you configure a CA and whether or not Certificate
+Revocation Lists (CRLs) will be used. Client certificates must be signed by at
+least one configured CA. If CRLs are used, any certificate in the CRL will be
+rejected and the user will not be able to log in or connect to the station
+while using that certificate.</shortdesc><prolog class="- topic/prolog "><author translate="no" type="creator" class="- topic/author ">Claudia Serwe &lt;claudia.serwe@tridium.com&gt;</author><metadata class="- topic/metadata "><keywords class="- topic/keywords "/></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p "><image placement="break" width="600" href="../graphic/StationSecurity_CaCertAndCrl.png" class="- topic/image "/></p><p class="- topic/p ">You do not directly add <parmname class="+ topic/keyword pr-d/parmname ">CaCertAndCrl</parmname> to the PKI
+Authentication Scheme. Instead, you add CA Configurations, which have a CA
+Cert and CRL frozen slot. <uicontrol class="+ topic/ph ui-d/uicontrol ">CaCertAndCrl</uicontrol> functions the same way as
+<uicontrol class="+ topic/ph ui-d/uicontrol ">bacnet-IssuerCertAndCrl</uicontrol>.</p>
+    
+    
+    </section><properties class="- topic/simpletable reference/properties "><prophead class="- topic/sthead      reference/prophead "><proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd><propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd><propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd></prophead><property class="- topic/strow       reference/property "><proptype class="- topic/stentry     reference/proptype ">Status</proptype><propvalue class="- topic/stentry     reference/propvalue ">read-only (<systemoutput class="+ topic/ph sw-d/systemoutput ">ok, fault, alarm, unacked</systemoutput>)</propvalue><propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Describes the current
+status of the CA Cert and CRL. </p></propdesc></property><property class="- topic/strow       reference/property "><proptype class="- topic/stentry     reference/proptype ">CA Certificate</proptype><propvalue class="- topic/stentry     reference/propvalue ">file choose</propvalue><propdesc class="- topic/stentry     reference/propdesc ">Selects a CA certificate, which should be  the CA that has signed or  will sign the client certificates. <note class="- topic/note ">The CA does not need to have directly signed the certificate. It can be a
+  root or intermediate CA.</note><note class="- topic/note ">Only the public certificate of the CA is needed. The private key should not be included in the selected file.</note></propdesc></property><property class="- topic/strow       reference/property "><proptype class="- topic/stentry     reference/proptype ">Use CRL Distribution Point in CA</proptype><propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option></propvalue><propdesc class="- topic/stentry     reference/propdesc ">
+    <p class="- topic/p ">If <option class="+ topic/keyword pr-d/option ">true</option>, the CA certificate will be parsed to find a
+CRL Distribution Point extension. If any are found, their values will be used
+in the CRL Distribution Point URLs property, which will be read-only.</p>
+    <p class="- topic/p ">If <option class="+ topic/keyword pr-d/option ">false</option>, the CRL Distribution Point URL property will
+be editable.</p>
+    </propdesc></property><property class="- topic/strow       reference/property "><proptype class="- topic/stentry     reference/proptype ">CRL Distribution Point URLs</proptype><propvalue class="- topic/stentry     reference/propvalue ">text</propvalue><propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Displays a list of URLs where a CRL may be found. Each URL
+should be on its own line. If <parmname class="+ topic/keyword pr-d/parmname ">Use CRL Distribution Point in CA</parmname> is set to
+<option class="+ topic/keyword pr-d/option ">true</option>, it is read-only and is set to the values found in the CA. If the CA does not have any CRL Distribution Point extension, it
+may be blank. If
+<parmname class="+ topic/keyword pr-d/parmname ">Use CRL Distribution Point in CA</parmname> is set to <option class="+ topic/keyword pr-d/option ">false</option>, you can manually enter the URLs.<note class="- topic/note ">If this property is not blank, CRLs are assumed
+to be configured and required. If this property is not blank and a CRL cannot be
+acquired (for example,  due to lack of connectivity or a bad URL), the Jetty Server will not start. An error message will be logged in the station
+output.</note></p>
+    
+    </propdesc></property><property class="- topic/strow       reference/property "><proptype class="- topic/stentry     reference/proptype ">CRL Descriptor</proptype><propvalue class="- topic/stentry     reference/propvalue ">text </propvalue><propdesc class="- topic/stentry     reference/propdesc ">Handles fetching the CRL from the specified <parmname class="+ topic/keyword pr-d/parmname ">CRL
+Distribution Point URLs</parmname>. You can configure the  time trigger  as
+needed. The default is to fetch a new CRL daily.</propdesc></property><property class="- topic/strow       reference/property "><proptype class="- topic/stentry     reference/proptype ">Alarm Source Info</proptype><propvalue class="- topic/stentry     reference/propvalue ">additional properties</propvalue><propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Generates an alarm if a CRL cannot be fetched. The alarm is created based on the information in
+this property.</p></propdesc></property></properties></refbody></reference>

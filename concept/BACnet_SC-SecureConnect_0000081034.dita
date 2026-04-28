@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="BACnetSCSecureConnect-4FC0439C" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">BACnet/SC (Secure Connect)</title><shortdesc class="- topic/shortdesc ">BACnet/SC provides a link layer for securing the messages communicated
+among the Secure Connect nodes of a BACnet network. BACnet Secure
+Connect (BACnet/SC) uses TLS (Transport Layer Security) version 1.3
+to provide strong data encryption and device authentication. With
+the increased likelihood of cyber attacks on critical infrastructure,
+including buildings, it is important to secure automation networks.
+BACnet/SC secures communication on TCP/IP networks using standard
+IT technologies that are used in critical applications, such as online
+banking.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">BACnet/SC</indexterm></keywords></metadata></prolog><conbody class="- topic/body  concept/conbody "><p class="- topic/p ">TLS is the widely-available protocol that uses PKI (Public Key
+Infrastructure) keys to encrypt and decrypt data transmissions, and
+certificates to ensure that only authorized devices can communicate
+with each other.</p><p class="- topic/p ">With TLS protecting a BACnet network, companies can use a service,
+such as Qualys, which is a web application and cloud-based service
+used to detect data breaches and critical misconfigurations across
+a company’s global hybrid environment. E-banking and other
+critical applications use such services to identify vulnerabilities
+including cross-site scripting (XSS) and SQL injection.</p></conbody></concept>

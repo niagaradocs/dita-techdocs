@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="J8ReviewingAndFinishingTheCommissioni-A70965EC" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Reviewing and finishing the Commissioning Wizard</title><!--This topic is shared by docJ8Startup and docJ9Startup.--><shortdesc class="- topic/shortdesc ">The Commissioning Wizard displays a summary of all the
+actions to be performed by the wizard.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">commissioning wizard<indexterm class="- topic/indexterm ">finishing
+the wizard</indexterm></indexterm></keywords><prodinfo class="- topic/prodinfo "><prodname class="- topic/prodname "><keyword conkeyref="wh_variables_n4/niagara" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara" class="- topic/keyword "/></prodname><vrmlist class="- topic/vrmlist "><vrm version="4.1" class="- topic/vrm "/></vrmlist></prodinfo></metadata></prolog><taskbody class="- topic/body task/taskbody "><prereq class="- topic/section task/prereq ">You are stepping through the Commissioning Wizard.</prereq><context class="- topic/section task/context "/><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Read through the summary of changes, using the scroll bar
+to see the steps near the end.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">If any change is needed, click the <uicontrol class="+ topic/ph ui-d/uicontrol ">Back</uicontrol> button until the step window to change opens, make the change and
+click the <uicontrol class="+ topic/ph ui-d/uicontrol ">Next</uicontrol> button until this review window
+opens again.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">If no change is needed, click <uicontrol class="+ topic/ph ui-d/uicontrol ">Finish</uicontrol>.</cmd><stepresult class="- topic/itemgroup task/stepresult ">The Commissioning Wizard commissions the controller. While
+the wizard works it posts progress updates in a <wintitle class="+ topic/keyword ui-d/wintitle ">Completing
+Commissioning</wintitle> widow. When completed, the wizard reboots
+the controller, and makes a <uicontrol class="+ topic/ph ui-d/uicontrol ">Close</uicontrol> button available.<p class="- topic/p ">Do not remove power from the controller during this reboot, which
+may take up to seven or more minutes to complete. Removing power could
+make the unit unrecoverable. If desired (and convenient), you can
+use a serial shell connection to the controller to monitor progress
+as files are installed and the unit is prepared.</p><p class="- topic/p ">Note that firmware
+upgrades occur before the platform daemon starts in the controller.
+Therefore, it is safe to interrupt power any time after you can re-open
+a platform connection to the controller.</p></stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To exit the wizard, click the <uicontrol class="+ topic/ph ui-d/uicontrol ">Close</uicontrol> button.</cmd><stepresult class="- topic/itemgroup task/stepresult ">When the controller reboots, your platform connection
+to it closes.<p class="- topic/p ">Notice that in the Nav tree,
+the platform instance for that  <ph conkeyref="host_models/nc" class="- topic/ph ">nc</ph> is now dimmed.</p></stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Assuming that you changed the <ph conkeyref="host_models/nc" class="- topic/ph ">nc</ph>’s IP address during commissioning, right-click and close
+that platform instance, as this would make that connection instance
+invalid.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Do one of the following:</cmd><choices class="- topic/ul task/choices "><choice class="- topic/li task/choice ">If you did not change its IP address, after several minutes
+you should be able to double-click the platform instance again to
+reconnect.</choice><choice class="- topic/li task/choice ">Open a platform connection using the controller’s new (changed)
+IP address.</choice></choices><stepresult class="- topic/itemgroup task/stepresult "><p class="- topic/p ">Going forward, you must access
+the controller by its new (assigned) IP address. <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/>  keeps a history of TCP/IP changes made.</p><p class="- topic/p ">Use the credentials for the new platform user you created to replace
+the factory-default platform user, or if you created additional platform
+users, log in with the credentials you created for one of them.</p><p class="- topic/p "/></stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">If you changed your PC’s IP address to commission the controller,
+be sure to reconfigure your PC’s TCP/IP settings back to appropriate
+settings to communicate with it. Otherwise, you will be unable to
+connect to the PC to commission another controller.</cmd></step><?Pub Caret 78?></steps></taskbody></task>

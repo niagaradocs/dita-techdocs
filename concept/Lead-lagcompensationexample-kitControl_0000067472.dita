@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="PumpControl-2488FF5F" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">Lead-lag compensation example – kitControl</title><shortdesc class="- topic/shortdesc ">This topic provides an example of how to use the LeadLagCycle
+component to control when three pumps run. The purpose of controlling
+the three is to prevent them from drawing excess electricity by all
+three running at the same time.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">pump control</indexterm><indexterm class="- topic/indexterm ">LeadLagCycle</indexterm></keywords></metadata></prolog><conbody class="- topic/body  concept/conbody "><p class="- topic/p ">The wire sheet for controlling the lag times for three pumps might
+look like this:</p><fig class="- topic/fig "><title class="- topic/title ">LeadLagCycle example with linked objects</title><image scope="local" href="../graphic/kitControlLeadLagRuntimeWS_0000067484.png" class="- topic/image "/></fig><p class="- topic/p ">Each of the three BooleanWritable points has a DiscreteTotalizerExt
+with its changeOfStateCount slot linked back to a Cycle Count x input
+on the LeadLagCycles object (not visible in the illustration). The
+feedback Or object simulates feedback, fed through a BooleanDelay
+object. </p><p class="- topic/p ">The wiresheet for controlling the runtime for three pumps might
+look like this: </p><image scope="local" href="../graphic/kitControlLeadLagCyclesWS_0000067483.png" class="- topic/image "/><p class="- topic/p ">Each of the three BooleanWritable points has a DiscreteTotalizerExt,
+with its elapsedActiveTime slot (1) exposed up in the composite of
+the parent point for link clarity. The feedback Or object (2) simulates
+feedback. </p></conbody></concept>

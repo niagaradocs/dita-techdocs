@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!--Arbortext, Inc., 1988-2019, v.4002--><task id="user_AddingANewUser" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Adding or editing a user</title><?Pub Caret -2?>
+<shortdesc class="- topic/shortdesc ">A network user defines the type of person or machine that
+is allowed access to a station. For example, admin, operator, machine-to-machine
+(M2M). Under the station's <uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol> container,
+the <uicontrol class="+ topic/ph ui-d/uicontrol ">UserService</uicontrol> provides a default <wintitle class="+ topic/keyword ui-d/wintitle ">User Manager</wintitle> view for you to add, delete, and edit network
+users.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">user<indexterm class="- topic/indexterm ">adding and editing</indexterm></indexterm></keywords></metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq ">Your system has at least one Supervisor station and one or
+more subordinate controller stations. Each station in your network
+provides access to a set of users who share configuration properties.
+These may include station-to-station users as well as an admin, operator,
+and other typical access functions. You are working in <keyword conkeyref="wh_variables_n4/Workbench" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword "/> and are connected to a local Supervisor station.</prereq>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To configure access permissions, expand <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">RoleService</uicontrol></menucascade> and add (click <uicontrol class="+ topic/ph ui-d/uicontrol ">New</uicontrol>) a role for each type of user.</cmd>
+<info class="- topic/itemgroup task/info ">Station-to-station users should have very limited roles. Other
+types of users, such as operators, may be allowed to view data but
+not make changes.</info>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Create the same roles in each subordinate controller station.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">Synchronization does not replicate roles in target, subordinate
+stations.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Configure the default prototype by expanding <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">UserService</uicontrol></menucascade>, and double-clicking <uicontrol class="+ topic/ph ui-d/uicontrol ">Default Prototype</uicontrol>.</cmd>
+<info class="- topic/itemgroup task/info ">The <uicontrol class="+ topic/ph ui-d/uicontrol ">UserService</uicontrol> uses this prototype to
+set up each system user. It should contain all the standard values
+for user properties.</info>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Make any changes to the default prototype required to support
+your company and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol>.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To make a custom user prototype, which the system will
+use to synchronize users across your network, right-click the <uicontrol class="+ topic/ph ui-d/uicontrol ">Default Prototype</uicontrol>, click <option class="+ topic/keyword pr-d/option ">Duplicate</option> and
+give the prototype a descriptive name based on its uniquely-configured
+properties.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Double-click the <uicontrol class="+ topic/ph ui-d/uicontrol ">UserService</uicontrol> node
+in the station Nav tree.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">User Manager</wintitle> view opens.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To create a new user, click the <uicontrol class="+ topic/ph ui-d/uicontrol ">New</uicontrol> button, otherwise, to edit an existing user select the user and
+click the <uicontrol class="+ topic/ph ui-d/uicontrol ">Edit</uicontrol> button.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">New</wintitle> or <wintitle class="+ topic/keyword ui-d/wintitle ">Edit</wintitle> window opens.<note class="- topic/note ">If the <parmname class="+ topic/keyword pr-d/parmname ">Secure Only Password Set</parmname> property is set to <option class="+ topic/keyword pr-d/option ">true</option>, and the connection to
+the station is not secure (using Fox or HTTP instead of Foxs or HTTPs),
+the <uicontrol class="+ topic/ph ui-d/uicontrol ">New</uicontrol> button is disabled.</note></stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Create or modify user properties and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol>.</cmd>
+<info class="- topic/itemgroup task/info ">Properties to configure include <parmname class="+ topic/keyword pr-d/parmname ">Prototype Name</parmname>, <parmname class="+ topic/keyword pr-d/parmname ">Network User</parmname>, <parmname class="+ topic/keyword pr-d/parmname ">Authentication Scheme
+Name</parmname>, and <parmname class="+ topic/keyword pr-d/parmname ">Roles</parmname>.<p class="- topic/p ">In a multi-station
+system, you could create this same user in each station or use synchronization
+to replicate the user changes in one station to all other stations
+in the network.</p></info>
+</step>
+</steps>
+</taskbody>
+</task>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="ConfiguringAStationToReceiveAlarmsB-5476B466" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Configuring a station to receive alarms</title>
+<shortdesc class="- topic/shortdesc ">The BACnet driver converts incoming alarms from remote
+BACnet devices to Framework alarms, which can then be routed through
+the Framework’s alarm subsystem to recipients (console, station,
+printer, email, and so on). A console operator acknowledges a BACnet
+alarm just as they acknowledge a native Framework alarm.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">alarms<indexterm class="- topic/indexterm ">configuring a station
+to receive</indexterm></indexterm></keywords></metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the receiving station, create <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetDevice</uicontrol> components for all devices from which the station will receive alarms.</cmd>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">It is also recommended to create BACnet proxy points for
+all BACnet objects that will send alarms to the station.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Under the station’s <uicontrol class="+ topic/ph ui-d/uicontrol ">AlarmService</uicontrol>, add <uicontrol class="+ topic/ph ui-d/uicontrol ">AlarmClass</uicontrol> components as needed, setting
+ack requirements and priorities.</cmd>
+<info class="- topic/itemgroup task/info ">Each <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetDevice</uicontrol> can use only one <uicontrol class="+ topic/ph ui-d/uicontrol ">AlarmClass</uicontrol> (either used by other devices, or unique to
+that device).</info>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Link the AlarmClass components into whatever alarm recipient
+objects are needed (AlarmConsole, etc.).</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">For each BacnetDevice in the station, in its <parmname class="+ topic/keyword pr-d/parmname ">Alarms</parmname> device extension:</cmd>
+<info class="- topic/itemgroup task/info "><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Specify the AlarmClass component to use.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Set the <parmname class="+ topic/keyword pr-d/parmname ">Niagara Process Id</parmname> to match the
+BACnet process identifier (integer value) used in sending alarms to
+the station.</p></li>
+</ul></info>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Using third-party tools for each remote BACnet device,
+configure the <parmname class="+ topic/keyword pr-d/parmname ">Notification Class</parmname> object that
+routes alarms to include (add) the device <parmname class="+ topic/keyword pr-d/parmname ">Object Id</parmname> of the station to its Recipient_List property.</cmd>
+<info class="- topic/itemgroup task/info "><p class="- topic/p ">This is the numerical value seen in the station’s <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetNetwork</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Local Device</uicontrol>
+</menucascade> <parmname class="+ topic/keyword pr-d/parmname ">Object Id</parmname> property.</p></info>
+</step>
+</steps>
+</taskbody>
+</task>

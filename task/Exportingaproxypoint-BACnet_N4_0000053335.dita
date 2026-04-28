@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="ExportDescriptor-547E5853" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Setting up a point export descriptor</title><shortdesc class="- topic/shortdesc ">You export point values (Analog Value, Binary Value, Multistate
+Value) from a server (remote controller) station to a client, such
+as a Supervisor station so that the client can view the current value
+of each point, and process historical trends. This is sometimes referred
+to as “exporting to BACnet” and “exposing objects
+in the host station.” This procedure sets up export descriptors
+in the station’s <uicontrol class="+ topic/ph ui-d/uicontrol ">Export Table</uicontrol>.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">proxy point<indexterm class="- topic/indexterm ">export descriptors</indexterm></indexterm><indexterm class="- topic/indexterm ">export descriptors<indexterm class="- topic/indexterm ">deleting</indexterm></indexterm><indexterm class="- topic/indexterm ">descriptors<indexterm class="- topic/indexterm ">for exporting data</indexterm></indexterm></keywords></metadata></prolog><taskbody class="- topic/body task/taskbody "><prereq class="- topic/section task/prereq ">You are using <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> connected to a remote host station with points to export.
+If this point is capable of generating alarms, you configured the
+AlarmService before exporting point values. If you are exporting large
+numbers of records, you are ready to set up a folder structure to
+facilitate export management.</prereq><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Expand <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Drivers</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetNetwork</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Local Device</uicontrol></menucascade> and double-click <uicontrol class="+ topic/ph ui-d/uicontrol ">Export Table</uicontrol>.</cmd><stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet Export Manager</wintitle> view opens.</stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To create a folder, click <uicontrol class="+ topic/ph ui-d/uicontrol ">New Folder</uicontrol>, give the folder a name and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd><info class="- topic/itemgroup task/info ">Logically organizing multiple BACnet export descriptors into
+folder containers saves time. For example, one or more folders may
+represent a driver network, and another folder may contain schedules.
+Each export folder provides the same set of export manager views as
+the Export Table.<p class="- topic/p ">The station exposes export folders to BACnet as
+Structured View Objects, allowing a hierarchical organization of BACnet
+objects.</p></info></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To create a descriptor, click <uicontrol class="+ topic/ph ui-d/uicontrol ">New</uicontrol>.</cmd><stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">New</wintitle> window opens.</stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Select the type of descriptor to add using the <parmname class="+ topic/keyword pr-d/parmname ">Type to Add</parmname> drop-down list and <parmname class="+ topic/keyword pr-d/parmname ">Number to Add</parmname>, then click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd><info class="- topic/itemgroup task/info "><parmname class="+ topic/keyword pr-d/parmname ">Type to Add</parmname> is the type of point to configure
+for export. By increasing the <parmname class="+ topic/keyword pr-d/parmname ">Number to Add</parmname> value
+you can create multiple instances of this point type in this single
+step.</info><stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">New</wintitle> point window with properties
+opens.</stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">For <parmname class="+ topic/keyword pr-d/parmname ">Object Name</parmname>, use the batch search and replace feature (<image placement="inline" scale="65" href="../graphic/Findandreplacebutton_0000054142.png" class="- topic/image "/>) to identify each point by its <parmname class="+ topic/keyword pr-d/parmname ">Object Name</parmname> or <parmname class="+ topic/keyword pr-d/parmname ">Description</parmname>.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To configure the descriptor to export a group of points
+at once, select them all in this window, enter the <parmname class="+ topic/keyword pr-d/parmname ">Inst
+Num</parmname> for the first one.</cmd><stepresult class="- topic/itemgroup task/stepresult ">The driver assigns each descriptor successive instance
+numbers as available.</stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Configure the other properties and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd></step></steps><result class="- topic/section task/result ">The manager automatically performs object ID maintenance on
+exported components, which ensures that the driver creates no duplicate
+combinations of object type and instance number. It also adds to each
+exported object an <uicontrol class="+ topic/ph ui-d/uicontrol ">OutOfServiceExt</uicontrol>.<p class="- topic/p ">Any exported
+points or components that contain an alarm extension are automatically
+exposed to BACnet with properties related to alarming available. For
+example, if you export a NumericPoint with an <uicontrol class="+ topic/ph ui-d/uicontrol ">OutOfRangeAlarmExt</uicontrol>, its exposed BACnet object (say, Analog Value) contains properties <parmname class="+ topic/keyword pr-d/parmname ">High Limit</parmname>, <parmname class="+ topic/keyword pr-d/parmname ">Low Limit</parmname>, <parmname class="+ topic/keyword pr-d/parmname ">Deadband</parmname>, and so on.</p><note type="note" class="- topic/note ">Before deleting
+any source (exported) component from the station, use the <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet Export Manager</wintitle> to delete its corresponding BACnet
+export descriptor. Otherwise, the export descriptor may remain orphaned
+in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Export Table</uicontrol>, showing <systemoutput class="+ topic/ph sw-d/systemoutput ">Invalid Ord!</systemoutput> in the Target Name and Value columns.
+If this occurs, delete the orphaned export descriptors manually.</note></result></taskbody></task>

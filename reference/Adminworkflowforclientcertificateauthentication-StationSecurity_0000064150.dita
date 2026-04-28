@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="AdminWorkflowForClientCertificateAu-1095430E" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Admin workflow for client certificate authentication</title>
+<shortdesc class="- topic/shortdesc ">The station administrator performs this workflow to configure
+the station for client certificate authentication.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">client certificate authentication<indexterm class="- topic/indexterm ">admin workflow</indexterm></indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">Client authentication is a method for users to securely
+access a remote station (via a browser) by exchanging a client certificate
+with the remote station. The certificate effectively represents a
+user identity and handles logging-in and authenticating to the station. </p><p class="- topic/p ">Only the user (client) should have access to the certificate with
+the private key for client certificate authentication. However, the
+certificate with the public key can be emailed and shared. For this
+workflow, the station administrator first gets the user's client certificate
+with its public key, creates the station user account, and assigns
+the certificate with the public key in the server authenticator. The
+following procedure details this configuration method.</p></section>
+</refbody>
+</reference>

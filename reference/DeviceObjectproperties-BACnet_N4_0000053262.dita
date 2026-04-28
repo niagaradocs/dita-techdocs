@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="bacnet-BacnetConfigDeviceExt" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Config container (bacnet-BacnetConfigDeviceExt)</title>
+<shortdesc class="- topic/shortdesc ">This frozen device extension under every <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetDevice</uicontrol> functions as the container for <uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol>-type
+objects, which represent individual BACnet objects in the device.
+By default, it contains a <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetDeviceObject</uicontrol> for the device’s sole <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetDevice</uicontrol> object.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">config</indexterm><indexterm class="- topic/indexterm ">BacnetConfigDeviceExt</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">A separate topic documents the <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetDeviceObject</uicontrol>.</p></section>
+</refbody>
+</reference>

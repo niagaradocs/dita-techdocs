@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="tagdictionary-IsType" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">tagdictionary-IsType</title><shortdesc class="- topic/shortdesc "><parmname class="+ topic/keyword pr-d/parmname ">IsType</parmname> is one of several possible
+validity conditions subproperties, which are used to specify a certain
+criteria to be met in order for a tag to be applied to an object.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">IsType</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p ">If the queried object is of the specified object type,
+then the parent definition's tag(s) may be applied.</p><image placement="break" scale="75" width="500" href="../graphic/N4Tagging_ConditionIsType_0000039160.png" class="- topic/image "/><p class="- topic/p ">The validity conditions are located in the <wintitle class="+ topic/keyword ui-d/wintitle ">tagdictionary</wintitle> palette.</p></section></refbody></reference>

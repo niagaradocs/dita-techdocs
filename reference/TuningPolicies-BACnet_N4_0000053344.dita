@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="bacnet-BacnetTuningPolicyMap" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Tuning Policies (bacnet-BacnetTuningPolicyMap)</title><shortdesc class="- topic/shortdesc ">This component is a container for one or more BACnet tuning
+policy. </shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">tuning policies</indexterm><indexterm class="- topic/indexterm ">tuning policy map</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p ">When using the BACnet driver you can create multiple tuning
+policies and assign specific tuning policies to BACnet proxy points
+as needed based on the <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Bacnet Comm</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Network</uicontrol></menucascade> port used (Ip Port, Ethernet
+Port, Mstp Port). The BACnet driver also supports virtual components
+that do not exist in the station. It is possible to assign the BACnet
+virtual components to the different tuning policies, where it requires
+encoding of the tuning policy as a parameter at the end of the ord
+in the widget binding (in the Px view). For example, <userinput class="+ topic/ph sw-d/userinput ">ord;policy=tuningPolicyName</userinput>. This is an actual ord in a widget binding: <userinput class="+ topic/ph sw-d/userinput ">Station:|slot:/Drivers/BacnetNetwork/AHU_24/virtual|virtual:/analogValue_184/presentValue;policy=myVirtualPolicy</userinput>.</p><p class="- topic/p ">Each BACnet network port has its own <uicontrol class="+ topic/ph ui-d/uicontrol ">PollService</uicontrol>, including three poll rates (<parmname class="+ topic/keyword pr-d/parmname ">Fast</parmname>, <parmname class="+ topic/keyword pr-d/parmname ">Normal</parmname>, and <parmname class="+ topic/keyword pr-d/parmname ">Slow</parmname>). This varies from
+other driver networks that use a single <uicontrol class="+ topic/ph ui-d/uicontrol ">PollService</uicontrol>.</p><p class="- topic/p ">For an explanation of driver tuning policies, refer to the <cite class="- topic/cite "><ph conkeyref="doctitles_coresw/NiagaraDriversGuide" class="- topic/ph "/></cite>.</p></section></refbody></reference>

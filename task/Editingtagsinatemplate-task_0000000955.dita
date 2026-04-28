@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<?xml-stylesheet href="file:///C:/Users/H477160/Honeywell/Tridium%20Tech%20Docs%20-%20Documents/General/Arbortext/com.tridium.atxcustom/doctypes/ditabase/N4-ditabase.style" type="text/x-styler" media="editor" alternate="yes"?><task id="EditingTagsInATemplate-30186173" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Editing tags in a template</title>
+<shortdesc class="- topic/shortdesc ">You can edit an existing template to add additional direct
+tags to the objects in it, or to remove or modify the existing tags.
+These changes are made on the template <wintitle class="+ topic/keyword ui-d/wintitle ">Configuration</wintitle> tab</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Editing tags in template</indexterm>
+</keywords></metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq "><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">An existing template </p></li>
+<li class="- topic/li "><p class="- topic/p ">One or more installed tag dictionaries</p></li>
+</ul></prereq>
+<context class="- topic/section task/context "><p class="- topic/p ">This task describes using the <wintitle class="+ topic/keyword ui-d/wintitle ">Template</wintitle> sidebar to access an existing template and invoke the <wintitle class="+ topic/keyword ui-d/wintitle ">Edit Tags</wintitle> window from the template <wintitle class="+ topic/keyword ui-d/wintitle ">Configuration</wintitle> tab. </p></context>
+<steps class="- topic/ol task/steps ">
+<step conref="Editingatemplate-task_0000000956.dita#LocatingTemplates-8724DCE4/ToLocateATemplateOpenTheTemplateSid-31A119A8" class="- topic/li task/step ">
+<cmd class="- topic/ph task/cmd "/></step>
+<step conref="Editingatemplate-task_0000000956.dita#LocatingTemplates-8724DCE4/InTheTemplateSideBarClickThePullDow-31A11E47" class="- topic/li task/step ">
+<cmd class="- topic/ph task/cmd "/></step>
+<step conref="Editingatemplate-task_0000000956.dita#LocatingTemplates-8724DCE4/Double-clickOnTheDesiredTemplate.Th-31A12BA1" class="- topic/li task/step ">
+<cmd class="- topic/ph task/cmd "/></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Click the <wintitle class="+ topic/keyword ui-d/wintitle ">Configuration</wintitle> tab in the <wintitle class="+ topic/keyword ui-d/wintitle ">Template</wintitle> view, right-click the object you want to change
+in the left pane, and select <uicontrol class="+ topic/ph ui-d/uicontrol ">Edit Tags</uicontrol>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Edit Tags</wintitle> dialog displays.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Proceed to add tags, remove tags, or modify values of existing
+tags and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol> to close the <wintitle class="+ topic/keyword ui-d/wintitle ">Edit Tags</wintitle> dialog.</cmd>
+<info class="- topic/itemgroup task/info "/>
+</step>
+<step conref="Editingatemplate-task_0000000956.dita#LocatingTemplates-8724DCE4/WhenFinishedClickSaveToSaveYourChan-31A14B58" class="- topic/li task/step ">
+<cmd class="- topic/ph task/cmd "/></step>
+</steps>
+<postreq class="- topic/section task/postreq "><note class="- topic/note ">For more details on using the <wintitle class="+ topic/keyword ui-d/wintitle ">Template</wintitle> view Configuration tab, refer to the <cite class="- topic/cite ">Template Guide</cite> sections “Creating a template” and “Template
+reference”.</note></postreq>
+</taskbody>
+</task>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-DegreeDays" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-DegreeDays</title>
+<shortdesc class="- topic/shortdesc ">This component provides degree day calculations, based
+upon temperature received at the Temp In slot and values of various
+other properties. </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">DegreeDays</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">DegreeDays is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Energy</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette. </p><p class="- topic/p ">Degree
+Days is a unit of measure that may be expressed as either Heating
+Degree Days (HDD) or Cooling Degree Days (CDD). You calculate Degree
+Days by taking the difference between the average temperature during
+a given time period (month, season, year) and a reference point, usually
+65 degrees Fahrenheit. Both cooling and heating degree day values
+are available, including totalized values. A Reset Totals action is
+available to clear (zero) totalized values.</p><fig class="- topic/fig ">
+<title class="- topic/title ">DegreeDays property sheet</title>
+<image href="../graphic/kitControlDegreeDays_0000067584.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig><p class="- topic/p ">The screen capture is an example of the DegreeDays property
+sheet.</p></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window (defaults to Fahrenheit, a single
+decimal place, negative and positive infinity respectively)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Selects units and configures how the value displays:</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">units</option> defaults to temperature.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">precision</option> defines number of decimal places in temperature.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">min</option> defines the lowest temperature allowed. </p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">max</option> defines the highest temperature allowed. </p>This configuration applies to the <parmname class="+ topic/keyword pr-d/parmname ">Temp In</parmname>, <parmname class="+ topic/keyword pr-d/parmname ">Min Temp</parmname>, <parmname class="+ topic/keyword pr-d/parmname ">Max Temp</parmname>, and <parmname class="+ topic/keyword pr-d/parmname ">Mean Temp</parmname> properties.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Base Temperature</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">degrees</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Specifies the base temperature used in the degree-day calculation.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Temp In</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number of degrees and null definition (defaults to 0)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the input for the outside air temperature used in
+the degree-day calculation. If this input is not valid temperature,
+the framework performs no calculations.<p class="- topic/p ">When null is checked, the
+value displayed defaults to the incoming value from the device. If
+you remove the check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Min Temp</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only degrees</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the minimum temperature recorded for the current
+day. The framework tests and sets this value on each calculation.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Max Temp</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only degrees</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the maximum temperature recorded for the current
+day. The framework tests and sets this value on each calculation.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Mean Temp</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only degrees</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the mean temperature recorded for the previous
+day. The framework calculates this value when the day changes. The
+calculation is:<p class="- topic/p ">Temp = (Max Temp + Min Temp) / 2.0</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Clg Deg Days</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only degrees</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the cooling degree-day calculated for the previous
+day. The framework calculates this value when the day changes using
+this formula:<p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">If (Mean Temp - Base Temperature) &gt; 0</codeph></p><p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">Clg Deg Days = Mean Temp - Base Temperature</codeph></p><p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">else</codeph></p><p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">Clg Deg Days = 0.0</codeph></p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Clg Deg Days Total</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only degrees</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the totalized cooling degree-days since the user
+invoked the last <option class="+ topic/keyword pr-d/option ">Reset Totals</option> action. The framework
+calculates this value when <parmname class="+ topic/keyword pr-d/parmname ">Clg Deg Days</parmname> changes.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Htg Deg Days</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only degrees</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the heating degree-day calculated for the previous
+day. The framework calculates this value when the day changes using
+this formula:<p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">If (Mean Temp - Base Temperature) &lt; 0</codeph></p><p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">Htg Deg Days = Base Temperature - Mean Temp</codeph></p><p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">else</codeph></p><p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">Htg Deg Days = 0.0</codeph></p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Htg Deg Days Total</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only degrees</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the totalized heating degree-days sincethe user
+invoked the last <option class="+ topic/keyword pr-d/option ">Reset Totals</option> action. The framework
+calculates this value when Htg Deg Days changes.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="bacnet-BacnetExportTable" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Export Table (bacnet-BacnetExportTable)</title><shortdesc class="- topic/shortdesc ">This frozen slot under <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetNetwork</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Local Device</uicontrol></menucascade> contains all the
+server (export) descriptors BACnet export folders used to export station
+objects as BACnet objects. You use different export manager views
+of this table to export station objects. It has no configuration properties
+but three important views.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">export table</indexterm><indexterm class="- topic/indexterm ">server descriptors</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><fig class="- topic/fig "><title class="- topic/title ">Example of Export Table properties</title><image placement="break" scale="65" width="650" href="../graphic/propertiesBACnetExportTable_0000084822.png" class="- topic/image "/></fig><p class="- topic/p ">You access this Property Sheet by expanding <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Drivers</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetNetwork</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Local Device</uicontrol></menucascade>, right-clicking <uicontrol class="+ topic/ph ui-d/uicontrol ">Export Table</uicontrol> and clicking <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Views</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol "> Property Sheet</uicontrol></menucascade>.</p></section><section class="- topic/section "><title class="- topic/title ">Server descriptors</title><indexterm class="- topic/indexterm ">server descriptors</indexterm><p class="- topic/p ">BACnet server descriptors are the components responsible for exporting
+station objects as BACnet objects. Each descriptor resides under the <uicontrol class="+ topic/ph ui-d/uicontrol ">Export Table</uicontrol> in the Nav tree, and corresponds to a particular
+component, file, or history in the station.</p><p class="- topic/p ">You add, edit, and
+manage server descriptors using the manager views of the <uicontrol class="+ topic/ph ui-d/uicontrol ">Export Table</uicontrol>. Each manager view simplifies selection
+and enforces object ID instance rules. The driver automatically gives
+server descriptors names (upon creation) using an <varname class="+ topic/keyword sw-d/varname ">&lt;ObjectType&gt;_&lt;InstanceNumber&gt;</varname> convention. For example: <systemoutput class="+ topic/ph sw-d/systemoutput ">analogValue_1</systemoutput>, <systemoutput class="+ topic/ph sw-d/systemoutput ">trendLog_0</systemoutput>, <systemoutput class="+ topic/ph sw-d/systemoutput ">schedule_2</systemoutput>, and so on.</p><note type="note" class="- topic/note ">Generally, it is recommended that
+you do not change the driver-assigned name of the export descriptor.
+If you wish to change the name by which the object is known to BACnet
+clients, do this in the <parmname class="+ topic/keyword pr-d/parmname ">objectName</parmname> property,
+which is initialized with the name of the exposed component.</note><p class="- topic/p ">There are three categories of BACnet server descriptors:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">Export descriptors (for components, reflecting the station
+object space)</p></li><li class="- topic/li "><p class="- topic/p ">File descriptors (for files)</p></li><li class="- topic/li "><p class="- topic/p ">Log descriptors (for histories)</p></li></ul><p class="- topic/p ">In addition, as needed, you can add BACnet export folders
+to organize BACnet server descriptors.</p></section><section class="- topic/section "><title class="- topic/title ">Export descriptors</title><indexterm class="- topic/indexterm ">export descriptors</indexterm><p class="- topic/p ">BACnet export descriptors include 15 different types to export
+components, including Boolean, Enum, and Numeric points (read-only
+and writable), and various Schedule types. You add them using the <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet Export Manager</wintitle> view.</p><p class="- topic/p ">Externally, to another
+BACnet device, the exported BACnet object opens with properties that
+source from two different areas of the station. For example, each
+exported component (point or schedule) exports as a BACnet object
+with properties from the component itself, plus additional properties
+in its export descriptor.</p><note type="note" class="- topic/note ">You do not see export
+(component) descriptors in the <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet File Export Manager</wintitle> and <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet Niagara Log Export Manager</wintitle> views.
+These views show other non-component server descriptors.</note></section><section class="- topic/section "><title class="- topic/title ">File descriptors</title><indexterm class="- topic/indexterm ">file descriptors</indexterm><p class="- topic/p ">A BACnet file descriptor exports a file under the station directory
+as a BACnet file object. You add file descriptors using the <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet File Export Manager</wintitle> view of the <uicontrol class="+ topic/ph ui-d/uicontrol ">Export
+Table</uicontrol>.</p><note type="note" class="- topic/note ">You do not see file descriptors
+in the <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet Export Manager</wintitle> and <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet
+Niagara Log Export Manager</wintitle> views, These views show other
+server descriptors.</note></section><section class="- topic/section "><title class="- topic/title ">Log descriptors</title><indexterm class="- topic/indexterm ">log descriptors</indexterm><p class="- topic/p ">A BACnet log descriptor exports a history as a BACnet trend log
+object. There are two log descriptors:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">The system creates a BacnetNiagaraHistoryDescriptor when you
+select and add a standard history using the <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet Niagara
+Log Export Manager</wintitle> view of the <uicontrol class="+ topic/ph ui-d/uicontrol ">Export Table</uicontrol>. The resulting exported trend log object is compliant only with
+the original broken specification for BACnet trend logs, which was
+superseded and fixed in Addendum B to the 2001 version of the spec.</p></li><li class="- topic/li "><p class="- topic/p ">The system creates a <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetTrendLogDescriptor</uicontrol> when you add a specialized <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetTrendLogExt</uicontrol> extension to a point. The resulting exported trend log object is
+fully-BACnet compliant with the 2004 version of the BACnet spec.</p></li></ul></section></refbody></reference>

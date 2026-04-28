@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="StationSecurityConfigurationCheckli" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Component permissions checklist</title>
+<shortdesc class="- topic/shortdesc ">Use this checklist to verify that you completed all required
+tasks to set up roles and permissions.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">component permissions checklist</indexterm>
+<indexterm class="- topic/indexterm ">permissions checklist</indexterm><indexterm class="- topic/indexterm ">authorization
+checklist</indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "/>
+<vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Categories have been set up and basic categories assigned to
+components.</p></li>
+<li class="- topic/li "><p class="- topic/p ">System components that require access control have been identified.</p></li>
+<li class="- topic/li "><p class="- topic/p ">The permission level config flag has been set on component
+slots.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Basic categories have been set up.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Basic categories have been assigned to components.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Roles have been created and permissions granted.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Roles have been assigned to users.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Station security has been tested.</p></li>
+</ul></section>
+</refbody>
+</reference>

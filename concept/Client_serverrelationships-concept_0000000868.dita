@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="SSLClientServerRelationships" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">Client/server relationships</title><shortdesc class="- topic/shortdesc ">Client/server relationships identify the connections that
+require protection.<keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> client/server relationships vary depending on how you
+configure and use a system. </shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">client/server relationships</indexterm></keywords><prodinfo class="- topic/prodinfo "><prodname class="- topic/prodname "/><vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist></prodinfo></metadata></prolog><conbody class="- topic/body  concept/conbody "><p class="- topic/p "><keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> is always a client. A platform is always a server. A station
+may be a client and a server.</p><fig class="- topic/fig "><title class="- topic/title ">Relationships</title><image keyref="oemRelationshipsImage" width="350" class="- topic/image "/><?Pub Caret 3?></fig><p class="- topic/p ">The system protocols that manage communications between these entities
+are:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">Platform connections from <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> (client) to controller or Supervisor PC platform daemon
+(server) use niagarad. A secure platform connection is sometimes referred
+to as platformtls. You enable platformtls using the Platform Administration
+view.</p></li><li class="- topic/li "><p class="- topic/p ">Local station connections (Supervisor and platform) use Foxs.
+You enable these connections in a station’s FoxService (<menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">FoxService</uicontrol></menucascade>).</p></li><li class="- topic/li "><p class="- topic/p ">Browser connections use Https, as well as Foxs if you are using
+Web Launcher with a WbWebProfile. You enable these connections using
+the station’s WebService (<menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">WebService</uicontrol></menucascade>).</p></li><li class="- topic/li "><p class="- topic/p ">Client connections to the station’s email server, if applicable.
+You enable secure email using the station’s EmailService (<menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">EmailService</uicontrol></menucascade>).</p></li></ul><p class="- topic/p ">These relationships determine an entity’s certificate requirements.
+For example, a station requires a signed server certificate, which
+it uses when it functions as a server, and a copy of the root CA certificate,
+which it uses when it functions as a client. Setting up digital certificates
+for identity verification involves creating separate certificates
+to verify the identity of each server. Each server’s unique certificate,
+signed by a CA (Certificate Authority), resides in its <wintitle class="+ topic/keyword ui-d/wintitle ">User
+Key Store</wintitle>. Each client requires the root CA certificate
+used to sign each server certificate. The root CA certificate resides
+in the platform/station <wintitle class="+ topic/keyword ui-d/wintitle ">System</wintitle> or <wintitle class="+ topic/keyword ui-d/wintitle ">User
+Trust Store</wintitle>.</p></conbody></concept>

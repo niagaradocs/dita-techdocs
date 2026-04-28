@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="InstallingPrivateClientCertificateI-109C6198" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Installing the private client certificate in your browser trust
+store</title>
+<shortdesc class="- topic/shortdesc ">This procedure describes the steps to install your client
+certificate with its <b class="+ topic/ph hi-d/b ">Private</b> key in your browser’s certificate
+trust store. When a station a station is configured for client certificate
+authentication, its login references this certificate via the browser.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">client certificate<indexterm class="- topic/indexterm ">installing
+in browser</indexterm></indexterm><indexterm class="- topic/indexterm ">installing <indexterm class="- topic/indexterm ">client certificate</indexterm></indexterm><indexterm class="- topic/indexterm ">browser trust
+store<indexterm class="- topic/indexterm ">installing client certificate in</indexterm></indexterm>
+</keywords></metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq "><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">You have previously generated a client certificate and exported
+it with its encrypted private key.</p></li>
+<li class="- topic/li "><p class="- topic/p ">If needed, you have used a third-party conversion tool to convert
+your private certificate <filepath class="+ topic/ph sw-d/filepath ">*.pem</filepath> file to the certificate
+file format required by your browser (for example, <filepath class="+ topic/ph sw-d/filepath ">*.pfx</filepath> or <filepath class="+ topic/ph sw-d/filepath ">*.p12</filepath> /<filepath class="+ topic/ph sw-d/filepath ">*.pkcs12</filepath>).</p></li>
+</ul></prereq>
+<context class="- topic/section task/context "><p class="- topic/p ">This procedure describes installing the private certificate
+in the Chrome web browser certificate stores using the Certificate
+import tool available there. The procedure varies somewhat depending
+on which browser you use, but it should be similar to what is described
+here.</p></context>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the Chrome browser’s <wintitle class="+ topic/keyword ui-d/wintitle ">Settings</wintitle> view, click on the <uicontrol class="+ topic/ph ui-d/uicontrol ">Main Menu</uicontrol> icon (upper
+left) and click <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Advanced</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Privacy and security</uicontrol></menucascade>.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">On the <wintitle class="+ topic/keyword ui-d/wintitle ">Privacy and security</wintitle> view,
+scroll down and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Manage certificates</uicontrol>.</cmd>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the <wintitle class="+ topic/keyword ui-d/wintitle ">Certificates</wintitle> window on the <wintitle class="+ topic/keyword ui-d/wintitle ">Personal</wintitle> tab, click <uicontrol class="+ topic/ph ui-d/uicontrol ">Import</uicontrol> and
+follow the prompts in the <wintitle class="+ topic/keyword ui-d/wintitle ">Certificate Import Wizard</wintitle> to import your converted private certificate file to the browser
+trust store.</cmd>
+<info class="- topic/itemgroup task/info ">Use the default file location indicated by the import tool.
+For example, by default the import tool in Chrome indicates the Personal
+trust store location.</info>
+<stepresult class="- topic/itemgroup task/stepresult ">Your private certificate is successfully installed in
+your browser’s certificate trust store.</stepresult>
+</step>
+</steps>
+<result class="- topic/section task/result "><p class="- topic/p ">At this point, you have completed the user workflow for
+client certificate authentication. If the station is properly configured,
+you should be able to log in via browser (or <keyword conkeyref="wh_variables_n4/Workbench" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword ">Workbench</keyword>) using client certificate authentication.</p></result>
+</taskbody>
+</task>

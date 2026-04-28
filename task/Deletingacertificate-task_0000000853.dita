@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="SSLUpdatingACertificate" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Deleting a certificate</title>
+<shortdesc class="- topic/shortdesc ">As a general rule, third-party certificates may be renewed
+but not changed. Some CAs will not allow any changes once the certificate
+is signed. If you need to make a change, delete the certificate and
+start again with a new certificate.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">certificate<indexterm class="- topic/indexterm ">deleting</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "/>
+<vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<context class="- topic/section task/context "><note type="attention" class="- topic/note ">Do not delete a certificate until
+its replacement is in place and configured. If you delete a certificate
+that is in use, the platform, <apiname class="+ topic/keyword pr-d/apiname ">FoxService</apiname> or <apiname class="+ topic/keyword pr-d/apiname ">WebService</apiname> could fail to restart. If you have the services
+configured for <parmname class="+ topic/keyword pr-d/parmname ">Https Only</parmname> a secure platform connection
+using TLS (Platform TLS settings) or <parmname class="+ topic/keyword pr-d/parmname ">Foxs Only</parmname>, a missing certificate could prohibit connectivity using encrypted
+connections. <keyword conkeyref="wh_variables_n4/Workbench" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword "/> gives no warning if you delete a certificate that is currently
+being used by <keyword conkeyref="wh_variables_n4/Workbench" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword "/> or the platform/station.</note></context>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Connect to the platform.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Do one of the following:</cmd>
+<choices class="- topic/ul task/choices ">
+<choice class="- topic/li task/choice ">To access the <keyword conkeyref="wh_variables_n4/Workbench" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword "/> stores for managing the root CA, intermediate, and code-signing
+certificates,  click <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Tools</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Certificate Management</uicontrol></menucascade>.</choice>
+<choice class="- topic/li task/choice ">To access the platform/station stores, expand <uicontrol class="+ topic/ph ui-d/uicontrol ">Platform</uicontrol> and double-click <uicontrol class="+ topic/ph ui-d/uicontrol ">Certificate Management</uicontrol> in
+the Nav tree. To access the stores this way, the station must be idle.</choice>
+</choices>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Select the certificate in the <wintitle class="+ topic/keyword ui-d/wintitle ">User Key Store</wintitle> and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Delete</uicontrol>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The system asks you to confirm the deletion.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Carefully consider your action and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Yes</uicontrol> (or <uicontrol class="+ topic/ph ui-d/uicontrol ">No</uicontrol>).</cmd></step>
+</steps>
+</taskbody>
+</task>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="Precautions-0CB3FF69" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">Precautions</title><shortdesc class="- topic/shortdesc ">The following precautions should be taken.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">precautions</indexterm></keywords></metadata></prolog><conbody class="- topic/body  concept/conbody "><note type="caution" class="- topic/note "><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">Work in a static-free area.</p></li><li class="- topic/li "><p class="- topic/p ">Discharge any static electricity you may have accumulated by
+touching a known, securely grounded object.</p></li></ul></note><note type="warning" class="- topic/note "><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">Disconnect power before installation or servicing to prevent
+electrical shock or equipment damage.</p></li><li class="- topic/li "><p class="- topic/p ">Use copper conductors only. Make all connections in accordance
+with local, national, and regional electrical codes.</p></li><li class="- topic/li "><p class="- topic/p ">To reduce the risk of fire or electrical shock, install in
+a controlled environment relatively free of contaminants.</p></li><li class="- topic/li "><p class="- topic/p ">This device is only intended for use as a monitoring and control
+device. To prevent data loss or equipment damage, do not use it for
+any other purpose.</p></li></ul></note><note type="caution" class="- topic/note "><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">Remove all power to controller before attaching (plugging in)
+or detaching (unplugging) any option module, to prevent possible equipment
+damage.</p></li><li class="- topic/li "><p class="- topic/p ">Removal of the controller’s cover is not required. No configurable
+or user-serviceable items (such as jumpers or a battery) require cover
+removal. All items are accessible as switches and connectors on the
+unit’s top, bottom, and side, or behind the unit’s front access door
+or microSD card shutter.</p></li></ul></note></conbody></concept>

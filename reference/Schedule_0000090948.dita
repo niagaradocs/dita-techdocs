@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--Arbortext, Inc., 1988-2019, v.4002--><reference id="bacnet-Schedule-39DE0D0C" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Schedule</title><?Pub Caret -1?>
+<shortdesc class="- topic/shortdesc ">Schedule include services, folders and other model building
+blocks associated with a module. You drag them to a property or wire
+sheet from a palette.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Scheduling</indexterm></keywords>
+</metadata>
+</prolog>
+</reference>

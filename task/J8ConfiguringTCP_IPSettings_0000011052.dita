@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="J8ConfiguringTCPIP-A68D1E84" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Configuring TCP/IP settings</title><!--This topic is shared by the docJ8Startup and docJ9Startup--><shortdesc class="- topic/shortdesc ">These steps allow changes in the TCP/IP settings for the
+platform to configure the IP address and TCP port parameters for the
+remote controller.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">TCP/IP settings<indexterm class="- topic/indexterm ">configuration
+step</indexterm></indexterm></keywords><prodinfo class="- topic/prodinfo "><prodname class="- topic/prodname "><keyword conkeyref="wh_variables_n4/niagara" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara" class="- topic/keyword "/></prodname><vrmlist class="- topic/vrmlist "><vrm version="4.1" class="- topic/vrm "/></vrmlist></prodinfo></metadata></prolog><taskbody class="- topic/body task/taskbody "><prereq class="- topic/section task/prereq ">You are stepping through the Commissioning Wizard.</prereq><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To change the <parmname class="+ topic/keyword pr-d/parmname ">Host Name</parmname>, enter the
+new name.</cmd><info class="- topic/itemgroup task/info ">If a <parmname class="+ topic/keyword pr-d/parmname ">Host Name</parmname> is entered, typically the
+name is unique for the domain. In some installations, changing <parmname class="+ topic/keyword pr-d/parmname ">Host Name</parmname> may result in unintended impacts on the network,
+depending on how the DHCP or DNS servers are configured. If in doubt,
+leave <parmname class="+ topic/keyword pr-d/parmname ">Host Name</parmname> at its default setting.</info></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To change the contents of the <parmname class="+ topic/keyword pr-d/parmname ">Hosts File</parmname>, click the control <image href="../graphic/iconDoubleDownArrow_0000063359.png" class="- topic/image "/>.</cmd><stepresult class="- topic/itemgroup task/stepresult ">The file opens.<p class="- topic/p ">The format of this file is a standard
+TCP/IP hosts file, where each line associates a particular IP address
+with a known <parmname class="+ topic/keyword pr-d/parmname ">Hosts File</parmname>. Each entry should be
+on an individual line. The IP address should be placed in the first
+column, followed by the corresponding <parmname class="+ topic/keyword pr-d/parmname ">Host Name</parmname>. The IP address and the <parmname class="+ topic/keyword pr-d/parmname ">Host Name</parmname> should be
+separated by at least one space. The <uicontrol class="+ topic/ph ui-d/uicontrol ">Undo Changes</uicontrol> button resets all settings (all Interfaces) back to the original
+pre-step values.</p></stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To add a new line, click at the end of the last line, press <uicontrol class="+ topic/ph ui-d/uicontrol ">Enter</uicontrol> and type the required data on the new line.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To enable use of IPv6, click the check box and configure
+any applicable IPv4 and IPv6 settings.</cmd><stepresult class="- topic/itemgroup task/stepresult ">Use IPv6 limits the station to receive only IPv6 requests. </stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Review the <wintitle class="+ topic/keyword ui-d/wintitle ">Interface 1</wintitle> settings and
+do one of the following:</cmd><info class="- topic/itemgroup task/info "><p class="- topic/p ">If you are enabling more than one LAN port (applicable to
+LAN1, LAN2, and WiFi) then the IP address for each must be configured
+on different subnets, otherwise the ports will not function correctly.
+For example, with a typical Class C subnet mask of 255.255.255.0,
+setting Interface 1=192.168.1.99 and Interface 2=192.168.1.188 is
+an invalid configuration, as both addresses are on the same subnet.</p></info><choices class="- topic/ul task/choices "><choice class="- topic/li task/choice ">Click <wintitle class="+ topic/keyword ui-d/wintitle ">IPv4 Settings</wintitle> tab, which includes
+the temporary factory-shipped IP address. <p class="- topic/p ">Assign the <ph conkeyref="host_models/nc9000" class="- topic/ph ">nc</ph> a unique IPv4 address for the network
+you are installing it on. No other device on this network should use
+this same IP address. Include the appropriate subnet mask used by
+the network.</p></choice><choice class="- topic/li task/choice ">If the network supports DHCP, you can enable it (click <parmname class="+ topic/keyword pr-d/parmname ">DHCP Enabled</parmname>). In this case, the IP address and subnet
+mask properties become read only. <p class="- topic/p ">in general (for stability, static
+IP addressing is recommended over DHCP. If DHCP is preferred, an IP
+Address Reservation should be entered for the controller in the DHCP
+Server. The controller IP address should not change.</p><note type="caution" class="- topic/note ">Do not enable DHCP unless you are certain that the
+network has DHCP servers! Otherwise, the controller may become unreachable
+over the network.</note><p class="- topic/p ">If your <ph class="- topic/ph "><ph conkeyref="host_models/nc" class="- topic/ph ">nc</ph></ph> has a wireless option
+that you plan to use for enterprise network connections, do not enable
+DHCP here. Instead, you need to configure the WiFi adapter for <ph class="- topic/ph "><ph conkeyref="host_models/nc9000" class="- topic/ph ">nc</ph></ph> DHCP as described in
+the appropriate controller WiFi Guide, for example, the <ph conkeyref="doctitles_coresw/JACE-9000WiFi" class="- topic/ph "/>.</p></choice></choices></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Review the <uicontrol class="+ topic/ph ui-d/uicontrol ">Interface 2</uicontrol> details.</cmd><info class="- topic/itemgroup task/info "><ph conkeyref="host_models/nc8000" class="- topic/ph "> </ph> and <ph conkeyref="host_models/nc9000" class="- topic/ph "/> controllers have two Ethernet ports, where <wintitle class="+ topic/keyword ui-d/wintitle ">Interface
+2</wintitle> is available for configuring the secondary (LAN2) Ethernet
+port. By default, this port is disabled, that is without a default
+address. The intended usage for this port, as for the secondary LAN
+port, as follows:<ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">To isolate a driver’s Ethernet traffic from the primary (LAN1)
+interface, or</p></li><li class="- topic/li "><p class="- topic/p ">To create a private network by daisy chaining multiple IP devices
+off of the controller’s secondary LAN port.This scenario requires
+that you configure the LAN2 port as a DHCP server in the <wintitle class="+ topic/keyword ui-d/wintitle ">DHCPDv4 Settings</wintitle> tab. </p></li><li class="- topic/li "><p class="- topic/p ">In some cases, LAN2 may be set up with a standard, fixed, IP
+address that is used only by a company’s service technician, when
+on site. This allows access to the controller without disconnecting
+it from the customer’s network, or without connecting the technician’s
+service PC to the customer’s network (which might go against local
+IT security policies).</p><p class="- topic/p ">If enabling LAN2, you must specify another
+(network) static IP address and the appropriate subnet mask, that
+is a different subnet mask for each enabled LAN port IP address.</p></li><li class="- topic/li "><p class="- topic/p ">The controller does not provide IP routing or a bridging operation
+between different Interfaces (LAN ports or WiFi).</p></li></ul></info><?Pub Caret 1?></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To enable the secondary Ethernet port <uicontrol class="+ topic/ph ui-d/uicontrol ">Interface
+2</uicontrol>, expand <uicontrol class="+ topic/ph ui-d/uicontrol ">Interface 2</uicontrol> and select
+the <parmname class="+ topic/keyword pr-d/parmname ">Adapter Enabled</parmname> check box.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To set up the secondary Ethernet port (<wintitle class="+ topic/keyword ui-d/wintitle ">Interface
+2</wintitle>) as a DHCP client, select the <uicontrol class="+ topic/ph ui-d/uicontrol ">Enabled</uicontrol> check box on the <wintitle class="+ topic/keyword ui-d/wintitle ">IPv4Settings</wintitle> tab.</cmd><info class="- topic/itemgroup task/info ">Make sure that the <uicontrol class="+ topic/ph ui-d/uicontrol ">DHCPDv4</uicontrol> is not enabled
+on the <wintitle class="+ topic/keyword ui-d/wintitle ">DHCPDv4 Settings</wintitle> tab.</info></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To set up the secondary Ethernet port (<wintitle class="+ topic/keyword ui-d/wintitle ">Interface
+2</wintitle>) as a DHCP server, make sure that the <wintitle class="+ topic/keyword ui-d/wintitle ">DHCP</wintitle> check box is not selected on the <wintitle class="+ topic/keyword ui-d/wintitle ">IPv4 Settings</wintitle> tab, configure the port with a static IP address, and configure
+the properties in <wintitle class="+ topic/keyword ui-d/wintitle ">DHCPDv4 Settings</wintitle>.</cmd><info class="- topic/itemgroup task/info ">For example:<ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">Subnet</parmname>: 192.168.111.0</p></li><li class="- topic/li "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">Netmask</parmname>: 255.255.255.0</p></li><li class="- topic/li "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">Client range low</parmname>: 192.168.111.15</p></li><li class="- topic/li "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">Max. number of clients</parmname>: 10</p></li></ul><p class="- topic/p ">Based on the example above, client IP pool is 192.168.111.15
+to 192.168.111.24</p><image placement="break" scale="65" href="../graphic/DHCPDv4Settings-Tab_0000061349.png" class="- topic/image "/><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">Default Lease Time</parmname> (in hours, minutes,
+and seconds) configures the a DHCPIP address lease. Before it expires,
+the lease must be renewed.</p></li><li class="- topic/li "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">Max Lease Time</parmname> (in hours, minutes, and
+seconds), configures a DHCPIP address lease.</p></li><li class="- topic/li "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">Subnet</parmname> defines the subnet of IP addresses
+assigned by the DHCP server. Configure this to assign addresses on
+a different subnet than that used in other LAN or Access Point configurations,
+otherwise the ports will not function correctly. </p></li><li class="- topic/li "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">Netmask</parmname> defines the IP addresses assigned
+by the DHCP Server.</p></li><li class="- topic/li "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">Client Range Low</parmname> defines the lowest IP
+address for the range. The order of assigning IPs from the Access
+Point DHCP is indeterminate.</p><p class="- topic/p ">The adapter IP should be in the
+same subnet, but not in the range of addresses defined here.</p></li><li class="- topic/li "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">Max Number of Clients</parmname> defines the maximum
+number of clients that can attach at a given time.</p></li></ul></info></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Under <wintitle class="+ topic/keyword ui-d/wintitle ">IPv4 Settings</wintitle> tab, enter the
+IPv4 address and subnet mask.</cmd><info class="- topic/itemgroup task/info ">For example,<ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">IPv4 Address</parmname>: 192.168.111.1</p></li><li class="- topic/li "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">IPv4 subnet mask</parmname>: 255.255.255.0</p></li></ul><p class="- topic/p ">Make sure that the secondary Ethernet port’s (<wintitle class="+ topic/keyword ui-d/wintitle ">Interface
+2</wintitle>) IP address is outside the DHCP server’s client IP pool.</p></info></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To disable a DHCP server running on the secondary Ethernet
+port (<wintitle class="+ topic/keyword ui-d/wintitle ">Interface 2</wintitle>): Under <wintitle class="+ topic/keyword ui-d/wintitle ">DHCPDv4 Settings</wintitle> Tab, uncheck the <uicontrol class="+ topic/ph ui-d/uicontrol ">DHCPDv4</uicontrol> check box. For the
+network settings to take effect, save and reboot the controller.</cmd><info class="- topic/itemgroup task/info "><p class="- topic/p ">These network settings will take effect when you finish the
+Commissioning Wizard and reboot the controller.</p></info></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To continue, click <uicontrol class="+ topic/ph ui-d/uicontrol ">Next</uicontrol>.</cmd><stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">System Passphrase</wintitle> step opens.</stepresult></step></steps></taskbody></task>

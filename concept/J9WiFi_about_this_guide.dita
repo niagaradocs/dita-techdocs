@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="AboutThisGuide-docJ9Wifi" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">About This Guide</title><shortdesc class="- topic/shortdesc ">
+    <ph conkeyref="wh_variables_n4/about_doc" class="- topic/ph "/></shortdesc><prolog class="- topic/prolog "><author translate="no" type="creator" class="- topic/author "/><metadata class="- topic/metadata "><keywords class="- topic/keywords "/><prodinfo class="- topic/prodinfo "><prodname class="- topic/prodname "/></prodinfo><prodinfo class="- topic/prodinfo "><prodname class="- topic/prodname "/></prodinfo><prodinfo class="- topic/prodinfo "><prodname class="- topic/prodname "/></prodinfo></metadata></prolog><conbody class="- topic/body  concept/conbody "><section class="- topic/section ">
+            <title class="- topic/title ">Product Documentation</title><ph conkeyref="wh_variables_n4/techdoc_set" class="- topic/ph "/>
+        </section><section class="- topic/section ">
+            <title class="- topic/title ">Document Content</title>
+            <p class="- topic/p ">This document provides basic information about configuring Wi-Fi options on the <ph conkeyref="host_models/nc9000" class="- topic/ph ">JACE-8000</ph>. Included in this document is a topic overview, as well as descriptions of requirements, operation notes, and configuration instructions for the WLAN-enabled models: North America, European Union or other regions (world wide). Refer to the <cite class="- topic/cite ">Regions, SKUs, and Country Codes</cite> section for related details.</p>
+            <p class="- topic/p ">This guide is intended for developers, systems engineers, and facility managers.</p>
+        </section></conbody></concept>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="PCPlatformHardwareRequirements-E98706A3" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">PC requirements</title><shortdesc class="- topic/shortdesc ">The <keyword conkeyref="wh_variables_n4/niagara_fw" class="- topic/keyword "/> requires an adequate processor, hard disk, memory and speed to run complex building models. </shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Hardware requirements</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section ">
+            <p class="- topic/p "><keyword conkeyref="wh_variables_n4/niagara4" class="- topic/keyword ">Niagara 4</keyword> Supervisors may run acceptably on lower-rated platforms or may even require more powerful platforms, depending on the application, number of data points integrated, data poll rate, trend collection rate, number of concurrent users, performance expectations, etc. The minimum hardware requirements include: </p>
+            <ul class="- topic/ul "><li class="- topic/li ">
+                    <p class="- topic/p ">Processor: Intel® Xeon® CPU E5-2640 x64 (or better), compatible with dual- and quad-core processors </p>
+                </li><?Pub Caret -2?><li class="- topic/li ">
+                    <p class="- topic/p ">Operating System: Windows 11 and 10 Pro x64-bit; Windows Server 2022 and 2019; Linux x64-bit: RedHat Enterprise Linux 8.7, Ubuntu 22.04 </p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Browser: Chrome, Firefox, Microsoft Edge </p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Mobile Browser: Safari on iOS, Chrome on Android Relational Database (optional): MS SQL Server 2019, 2016; Oracle 19c; MySQL 8.0.</p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Memory: 6 GB minimum, 8 GB or more recommended for larger systems </p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Hard drive space: 4 GB minimum, more recommended depending on archiving requirements.</p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Display: Video card and monitor capable of displaying 1024 x 768 pixel resolution, 1080p (1920 x 1080) minimum resolution recommended.</p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Ethernet 100 Mbit or 1Gbit NIC (network interface card) with TCP/IP support</p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Network Support: Ethernet adapter (10/100/1000 Mb with RJ-45 connector).</p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Container Engine (for Containerized Supervisors): Docker.</p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Valid license</p>
+                    <ul class="- topic/ul "><li class="- topic/li ">
+                            <p class="- topic/p ">Internet access for confirming your license.</p>
+                        </li></ul>
+                </li></ul>
+            <p class="- topic/p ">As a multi-threading Java application, the <keyword conkeyref="wh_variables_n4/niagara_fw" class="- topic/keyword "/> can take advantage of the added power available in multi-core processors. A processor that goes beyond minimum requirements, such as the current Intel Core i3, i5, i7 or AMD A6, A8, A10 series processors, can provide performance benefits.</p>
+        </section></refbody></reference>

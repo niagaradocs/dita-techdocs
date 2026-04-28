@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--Arbortext, Inc., 1988-2019, v.4002--><?Pub UDT template _font?><?Pub Inc?><reference id="TabMountingDimensions-2FAF77F1" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Tab mounting dimensions</title>
+<shortdesc class="- topic/shortdesc ">Tab mounting measurements shown below are in inches and
+millimeters (mm).</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm "/></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">DIN mounting is recommended over tab mounting. Refer to
+“Mounting on a DIN rail” for details.</p><fig class="- topic/fig ">
+<title class="- topic/title "><ph conkeyref="host_models/nc9000" conref="../reuse/WH_HardwareVariables_Tridium_N4_0000009933.dita#WHHardwareVariables-Tridium-9A32E735/nc9000" class="- topic/ph "/> controller tab mounting dimensions</title>
+<image href="../graphic/JACE-9000-TabMtgDims_A.png" placement="break" scope="local" width="650" class="- topic/image "/>
+<image href="../graphic/JACE-9000-TabMtgDims_B.png" placement="break" scope="local" width="500" class="- topic/image "/><?Pub Caret 0?>
+<simpletable relcolwidth="0.19* 1.81*" class="- topic/simpletable ">
+<sthead class="- topic/sthead ">
+<stentry class="- topic/stentry ">Callout</stentry>
+<stentry class="- topic/stentry ">Description</stentry>
+</sthead>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry ">1</stentry>
+<stentry class="- topic/stentry "><ph conkeyref="host_models/nc9000" conref="../reuse/WH_HardwareVariables_Tridium_N4_0000009933.dita#WHHardwareVariables-Tridium-9A32E735/nc9000" class="- topic/ph "/> with no option modules added. Allow at least 1.5” (38mm) clearance
+around all sides.</stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry ">2</stentry>
+<stentry class="- topic/stentry ">Option expansion module. Up to four (4) may be used. Refer
+to “Option module and capacity considerations” for details.</stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry ">3</stentry>
+<stentry class="- topic/stentry ">Distances between the center of the tabs from one unit to
+another unit.</stentry>
+</strow>
+</simpletable>
+</fig></section>
+</refbody>
+</reference>

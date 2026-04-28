@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="EDEStateTextsSupportFile-BACnet_4.9-C761BD97" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">EDE state texts support file</title><shortdesc class="- topic/shortdesc ">This file provides a reference number and lists enumeration
+state texts for multi-state and binary objects.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">state texts support file</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p ">The CSV file includes “State-Texts” in
+its name.</p><p class="- topic/p ">You cannot mix multi-state and binary texts under the same
+reference number, that is, in the same row.</p><p class="- topic/p ">Each row consists
+of <parmname class="+ topic/keyword pr-d/parmname ">Inactive-Text</parmname>, <parmname class="+ topic/keyword pr-d/parmname ">Active-Text</parmname> or <parmname class="+ topic/keyword pr-d/parmname ">Text 1</parmname> and so on. An empty column indicates
+unused or not-supported states.</p></section></refbody></reference>

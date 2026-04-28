@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="ConfiguringAnSmsRecipient" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Configuring an SmsRecipient</title>
+<shortdesc class="- topic/shortdesc "/>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">SmsRecipient</indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq ">The <apiname class="+ topic/keyword pr-d/apiname ">SmsService</apiname> is available in the station’s <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol>
+</menucascade> container.</prereq>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Right-click the <uicontrol class="+ topic/ph ui-d/uicontrol ">SmsRecipient</uicontrol> under
+the <uicontrol class="+ topic/ph ui-d/uicontrol ">SmsServices</uicontrol> and click <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Views</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Property Sheet</uicontrol>
+</menucascade>.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Enter the <parmname class="+ topic/keyword pr-d/parmname ">Name</parmname> of the user to receive
+the Sms.</cmd>
+<info class="- topic/itemgroup task/info ">When properly configured, the <apiname class="+ topic/keyword pr-d/apiname ">SmsAlarmAcknowledger</apiname> checks incoming text messages to see if the sender’s phone
+number matches the phone number of a User that is currently in the
+local <apiname class="+ topic/keyword pr-d/apiname ">UserService</apiname> database. No alarm is acknowledged
+unless it is first determined that a matching user and phone number
+sent the acknowledgement message. When validated, the user name is
+ assigned to the alarm database as the person who acknowledged the
+alarm</info>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Enter the <parmname class="+ topic/keyword pr-d/parmname ">Phone Number</parmname> of the recipient(s).</cmd>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Enter a <parmname class="+ topic/keyword pr-d/parmname ">UUID</parmname>.</cmd>
+<info class="- topic/itemgroup task/info ">The system assigns a unique UUID (Universally Unique Identifier)
+to each alarm. It uses this identifier to keep track of the  alarm.
+For the <apiname class="+ topic/keyword pr-d/apiname ">SmsRecipient</apiname>, the UUID must be in the body
+of the Sms, so that it is present  in the reply to message that acknowledges
+the alarm. This requires that the cell phone device be configured
+ to reply to sender with original text  (or the user may manually
+enter the UUID). <p class="- topic/p ">To ensure that the original text contains the
+required UUID, you must enter the following text in the  <apiname class="+ topic/keyword pr-d/apiname ">SmsRecipient</apiname>  <parmname class="+ topic/keyword pr-d/parmname ">Body</parmname> property:  <userinput class="+ topic/ph sw-d/userinput ">UUID:%uuid%</userinput>.</p> </info>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Click <uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol></cmd></step>
+</steps>
+</taskbody>
+</task>

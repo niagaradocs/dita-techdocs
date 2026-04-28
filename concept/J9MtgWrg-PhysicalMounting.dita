@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!--Arbortext, Inc., 1988-2019, v.4002--><?Pub UDT template _font?><?Pub Inc?><concept id="PhysicalMounting-0CB8BAC5" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Physical mounting</title>
+<shortdesc class="- topic/shortdesc ">Mount the controller in a location that allows clearance
+for wiring, servicing, and module removal.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">controller<indexterm class="- topic/indexterm ">mounting</indexterm></indexterm></keywords></metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<fig class="- topic/fig ">
+<title class="- topic/title ">Mounting dimensions of controller and option modules</title>
+<image href="../graphic/J9DimensionsOnDinRail.png" placement="break" scope="local" width="750" class="- topic/image "/>
+</fig>
+<p class="- topic/p ">Horizontal mounting (as shown) is required to achieve maximum heat
+dissipation and meet the operating temperature upper limit requirement.
+Any other mounting orientation reduces this upper limit.</p>
+<p class="- topic/p ">Mounting on a 35mm wide DIN rail is recommended. The controller’s
+unit base has a molded DIN rail slot and locking clip, as do option
+modules. DIN rail mounting ensures alignment of the connectors between
+each device.</p>
+<p class="- topic/p ">Up to four (4) option modules are supported. Refer to “Option module
+and capacity considerations” for details.</p>
+<p class="- topic/p ">The drawing above shows the dimensions of a unit with option modules.</p>
+</conbody>
+</concept>

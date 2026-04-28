@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-OptimizedStartStop" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-OptimizedStartStop</title>
+<shortdesc class="- topic/shortdesc ">This component uses <parmname class="+ topic/keyword pr-d/parmname ">Start Time Optimization</parmname> and <parmname class="+ topic/keyword pr-d/parmname ">Stop Time Optimization</parmname> to save energy.
+It uses a space temperature input and area characteristics to calculate
+an optimal amount of lead-time before a scheduled event. It can analyze
+area temperature changes and adjust the optimization parameters based
+on the actual temperature change rates after an optimized start or
+stop.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">OptimizedStartStop</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">OptimizedStartStop component is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Energy</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p><fig class="- topic/fig ">
+<title class="- topic/title ">OptimizedStartStop properties</title>
+<image href="../graphic/kitControlOptimizedStartStop_0000067581.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Heat Cool Mode</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">drop-down list and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Selects heating or cooling. The selected option applies
+only to optimized stop calculations. This means that optimized stop
+calculations are performed only for the selected mode. Optimized start
+calculations are performed for both heat and cool modes regardless
+of this property value.<p class="- topic/p ">When null is checked, the value displayed
+defaults to the incoming value from the device. If you remove the
+check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Parameter Reset Time</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">date hour:minute (defaults to 7 PM EST (Eastern Standard
+Time); includes date picker</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the time when any of the four runtime or driftime
+properties change to the user-defined values. This component copies
+the user defined drifttime and runtime property values to the corresponding
+actual drifttime and runtime property values.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Start Enable</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> and <option class="+ topic/keyword pr-d/option ">false</option> (default)
+and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Manually or automatically turns the optimized start function
+on (<option class="+ topic/keyword pr-d/option ">true</option>) and off (<option class="+ topic/keyword pr-d/option ">false</option>).<p class="- topic/p ">When
+null is checked, the value displayed defaults to the incoming value
+from the device. If you remove the check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Stop Enable</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> and <option class="+ topic/keyword pr-d/option ">false</option> (default)
+and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Manually or automatically turns the optimized stop function
+on (<option class="+ topic/keyword pr-d/option ">true</option>) and off (<option class="+ topic/keyword pr-d/option ">false</option>).<p class="- topic/p ">When
+null is checked, the value displayed defaults to the incoming value
+from the device. If you remove the check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Schedule Status</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> and <option class="+ topic/keyword pr-d/option ">false</option> (default)
+and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Monitors and displays the status of the schedule that is
+linked to this component.<p class="- topic/p ">When null is checked, the value displayed
+defaults to the incoming value from the device. If you remove the
+check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Next Event Time</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">date and time (defaults to EST (Eastern Standard Time))</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Links to a schedule for the time of the next scheduled event.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Next Event Value</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> and <option class="+ topic/keyword pr-d/option ">false</option> (default)
+and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Links to a schedule and reflects the value of the action
+for the next scheduled event.<p class="- topic/p ">When null is checked, the value displayed
+defaults to the incoming value from the device. If you remove the
+check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Outside Temp</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number of degrees (defaults to 0.00) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Links to outside temperature and displays the value for
+information only.<p class="- topic/p ">When null is checked, the value displayed defaults
+to the incoming value from the device. If you remove the check mark
+you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Space Temp</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number of degrees (defaults to 0.00) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Links to a space temperature output and displays the temperature
+of the area affected by equipment associated with this component.<p class="- topic/p ">When null is checked, the value displayed defaults to the incoming
+value from the device. If you remove the check mark you can configure
+the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Start Time Command</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> and <option class="+ topic/keyword pr-d/option ">false</option> (default)
+and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Links to a control for invoking an equipment start command.
+For example, you can link it to a  prioritized input of a Boolean
+writable, or directly to the equipment Start control.<p class="- topic/p ">When null
+is checked, the value displayed defaults to the incoming value from
+the device. If you remove the check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Stop time Command</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> and <option class="+ topic/keyword pr-d/option ">false</option> (default)
+and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Links to a control for invoking an equipment stop command.
+For example, you can link it to a  prioritized input of a Boolean
+writable, or directly to the equipment Stop control.<p class="- topic/p ">When null is
+checked, the value displayed defaults to the incoming value from the
+device. If you remove the check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Message</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Provides information that indicates the results of the latest
+start or stop command, the status of an optimized start analysis,
+or other possible messages. For example, the following message indicates
+that an optimized stop has occurred: <systemoutput class="+ topic/ph sw-d/systemoutput ">Optimized stop
+for 14-Jun-07 5:18 PM EDT schedule time. Space temp is 75.0.</systemoutput><p class="- topic/p ">When null is checked, the value displayed defaults to the incoming
+value from the device. If you remove the check mark you can configure
+the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Upper Comfort Limit</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">degrees to two decimal places (defaults to 0.00) (defaults
+to 77.00 F, 25.00 C)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the cooling mode target temperature.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Lower Comfort Limit</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">degrees to two decimal places (defaults to 0.00) (defaults
+to 68.00 F, 20.00 C)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the heating mode target temperature.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Dynamic Parameter Adjust</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> (default)or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Controls if calculation the component programmatically adjusts
+parameters after an execution. After the component completes a start
+or stop control, if this property is set to <option class="+ topic/keyword pr-d/option ">true</option>,
+the component evaluates the actual recovery rate (degrees/hour) and
+automatically adjusts the values of the runtime and drifttime properties
+so that they are influenced by actual drift time and run time.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Old Parameter Multiplier</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">single-digit number (defaults to 2)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Applies a weighting factor to the  dynamic parameter adjustment
+calculation. This value affects how much weight to assign to the previous
+runtime property value when the component uses it in a dynamic parameter
+adjustment calculation. A larger value increases the weighting factor
+given to the previous runtime value, and a smaller value decreases
+this weighting factor.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Earliest Start Time</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours minutes seconds (defaults to 12 and 10 seconds AM
+EDT (Eastern Daylight Time))</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Specifies a time, before which, the component may issue
+no optimized start command. If this value is set earlier than the <parmname class="+ topic/keyword pr-d/parmname ">Calculated Command Time</parmname>, the component adjusts the <parmname class="+ topic/keyword pr-d/parmname ">Calculated Command Time</parmname> to equal this time.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Earliest Stop Time</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours minutes seconds (defaults to 4 PM EDT (Eastern Daylight
+Time))</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Specifies a time, before which, the component may issue
+no stop command. If this value is set earlier than the <parmname class="+ topic/keyword pr-d/parmname ">Calculated
+Command Time</parmname>, the component adjusts the <parmname class="+ topic/keyword pr-d/parmname ">Calculated
+Command Time</parmname> to equal this time.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Drifttime Per Degree cooling User Defined</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">single-digit number to two decimal places (defaults to
+0.00)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Sets a default value for calculating the rate of drift in
+cooling mode. The component copies this value to the <parmname class="+ topic/keyword pr-d/parmname ">Drifttime
+Per Degree Cooling</parmname> property.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">DriftTime Per Degree Heating User Defined</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">single-digit number to two decimal places (defaults to
+0.00)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Sets a default value for calculating the rate of drift in
+heating mode. The component copies this value to the <parmname class="+ topic/keyword pr-d/parmname ">Drifttime
+Per Degree Heating</parmname> property.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Runtime Per Degree cooling User Defined</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">single-digit number to two decimal places (defaults to
+0.00)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Sets a default value for calculating the runtime value in
+cooling mode. The component copies this value to the <parmname class="+ topic/keyword pr-d/parmname ">Runtime
+Per Degree Cooling</parmname> property.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Runtime Per Degree Heating User Defined</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">single-digit number to two decimal places (defaults to
+0.00)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Sets a default value for calculating the runtime value in
+heating mode. The component copies this value to the <parmname class="+ topic/keyword pr-d/parmname ">Runtime
+Per Degree Heating</parmname> property.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Drifttime Per Degree Cooling</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">two-digit number to two decimal places (defaults to 10.00)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the actual value used to calculate an optimized
+stop time when the equipment is in cooling mode. The component automatically
+adjusts this value <parmname class="+ topic/keyword pr-d/parmname ">Dynamic Parameter Adjust</parmname> value
+is set to <option class="+ topic/keyword pr-d/option ">true</option>.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Drifttime Per Degree Heating</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">two-digit number to two decimal places (defaults to 10.00)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the actual value used to calculate an optimized
+stop time when the equipment is in heating mode. The component automatically
+adjusts this value if <parmname class="+ topic/keyword pr-d/parmname ">Dynamic Parameter Adjust</parmname> value is set to <option class="+ topic/keyword pr-d/option ">true</option>.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Runtime Per Degree Cooling</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">two-digit number to two decimal places (defaults to 10.00)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the actual value used to calculate an optimized
+start time when the equipment is in cooling mode. The component automatically
+adjusts this value if <parmname class="+ topic/keyword pr-d/parmname ">Dynamic Parameter Adjust</parmname> value is set to <option class="+ topic/keyword pr-d/option ">true</option>.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Runtime Per Degree heating</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">two-digit number to two decimal places (defaults to 10.00)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the actual value used to calculate an optimized
+start time when the equipment is in heating mode. The component automatically
+adjusts this value if <parmname class="+ topic/keyword pr-d/parmname ">Dynamic Parameter Adjust</parmname> value is set to <option class="+ topic/keyword pr-d/option ">true</option>.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Last Start Time</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">date, hours:minutes (defaults to 7 PM EST (Eastern Standard
+Time)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the last start time used to calculate an optimized
+start time. Since the component allows only one optimized start per
+day, this value does not display start times (restarts) that occur
+subsequent to the initial start time for the day.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Last Stop Time</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">date, hours:minutes (defaults to 7 PM EST (Eastern Standard
+Time))</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the last stop time used to calculate an optimized
+stop time. Since the component allows multiple optimized stops per
+day, this value changes to reflect the latest optimized stop time.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Outside Temp At Beginning</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number of degrees (defaults to 0.00) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the outside air temperature at the time of the
+last start or stop command. This is the temperature used in the dynamic
+parameter adjustment calculations.<p class="- topic/p ">When null is checked, the value
+displayed defaults to the incoming value from the device. If you remove
+the check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Space Temp At Beginning</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number of degrees (defaults to 0.00) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the space temperature at the time of the last start
+or stop command. This is the temperature used in the dynamic parameter
+adjustment calculations.<p class="- topic/p ">When null is checked, the corresponding
+value defines the default when a calculation returns null.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Calculated Command Time</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours:minutes (defaults to 7 PM EST (Eastern Standard Time))</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Shows the calculated time for the next command. This could
+be a start or a stop command.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Program Mode</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only single-digit number (defaults to zero (0))</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays one of five current heating or cooling states for
+an optimized start or stop. These states serve primarily in logic
+control and may also inform the system engineer.<p class="- topic/p "><systemoutput class="+ topic/ph sw-d/systemoutput ">0</systemoutput> (no calculation) indicates that no calculation is in progress.</p><p class="- topic/p "><systemoutput class="+ topic/ph sw-d/systemoutput ">1</systemoutput> (start calculation) indicates that
+the optimized start calculation is ongoing, but no optimized start
+or stop is yet in progress.</p><p class="- topic/p "><systemoutput class="+ topic/ph sw-d/systemoutput ">2</systemoutput> (start
+in process) indicates that the component initiated an optimized start.</p><p class="- topic/p "><systemoutput class="+ topic/ph sw-d/systemoutput ">3</systemoutput> (stop calculation) indicates that
+an optimized stop calculation is ongoing, but no optimized start or
+stop is yet in progress.</p><p class="- topic/p "><systemoutput class="+ topic/ph sw-d/systemoutput ">4</systemoutput> (stop
+in process) indicates that the component initiated an optimized stop.</p></propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="J8PlatformServicesstationAndAdministr-C146DBF1" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">Platform services and administration</title><!--This topic is shared by docJ8Startup and docJ9Startup.--><shortdesc class="- topic/shortdesc ">A few platform configuration features are not directly
+accessible in the <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/>  platform connection via the <wintitle class="+ topic/keyword ui-d/wintitle ">Commissioning
+Wizard</wintitle>. Instead, to access these features, you must install
+a station on the controller (any station). The <wintitle class="+ topic/keyword ui-d/wintitle ">Commissioning
+Wizard</wintitle> also performs most, but sometimes not all, needed
+configuration for a new controller platform. There are several items
+you should review (and optionally change) in a follow-up platform
+connection to each controller, using the <wintitle class="+ topic/keyword ui-d/wintitle ">Platform Administration</wintitle> view.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">PlatformServices</indexterm><indexterm class="- topic/indexterm ">PlatformAdministration</indexterm></keywords><prodinfo class="- topic/prodinfo "><prodname class="- topic/prodname ">Niagara</prodname><vrmlist class="- topic/vrmlist "><vrm version="4.1" class="- topic/vrm "/></vrmlist></prodinfo></metadata></prolog><conbody class="- topic/body  concept/conbody "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">PlatformServices</uicontrol> are different from all
+other components in a station in the following ways:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">The <uicontrol class="+ topic/ph ui-d/uicontrol ">PlatformServices</uicontrol> node acts as the
+station interface to specifics about the host platform (whether controller
+or a PC).</p></li><li class="- topic/li "><p class="- topic/p "><keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> builds these services dynamically at station runtime. You
+do not see <uicontrol class="+ topic/ph ui-d/uicontrol ">PlatformServices</uicontrol> in an offline station.</p></li><li class="- topic/li "><p class="- topic/p ">Any changes you make to <uicontrol class="+ topic/ph ui-d/uicontrol ">PlatformServices</uicontrol> or its child services are not stored in the station database. Instead,
+changes are stored in other files on the host platform, such as its
+platform.bog file.</p><note type="note" class="- topic/note ">Do not attempt to edit the
+platform.bog directly; always use <uicontrol class="+ topic/ph ui-d/uicontrol ">PlatformServices</uicontrol> views.</note></li></ul><p class="- topic/p ">These services support installations where all configuration must
+be possible using only a browser connection (and not <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/>  connected to the controller platform daemon).
+Included services are:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">TcpIpService</uicontrol> provides station (Fox)
+access to windows used to configure TCP/IP settings.</p></li><li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">LicenseService</uicontrol> for managing platform
+licenses.</p></li><li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">CertManagerService</uicontrol> for managing PKI
+certificate stores and/or allowed host exceptions, used in certificate-based
+(TLS) connections between the station/platform and other hosts. For
+details, see the <cite class="- topic/cite "><ph conkeyref="doctitles_coresw/StationSecurityGuide" class="- topic/ph "/></cite>.</p></li><li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">DataRecoveryService</uicontrol> for the operation
+and monitoring of ongoing SRAM backups for most (SRAM-equipped)  <ph conkeyref="host_models/nc" class="- topic/ph ">nc</ph> controllers. It includes a <parmname class="+ topic/keyword pr-d/parmname ">Service Enabled</parmname> configuration property, which you can
+disable, if needed. This is viable only if a backup battery is installed,
+or the unit is powered by an external UPS. </p></li></ul><p class="- topic/p ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Platform Administration</wintitle> view is one of
+several views for any platform, listed under the <uicontrol class="+ topic/ph ui-d/uicontrol ">Platform</uicontrol> node in the Nav tree and in the platform’s <wintitle class="+ topic/keyword ui-d/wintitle ">Nav Container
+View</wintitle>. This view provides a text summary of the <ph conkeyref="host_models/nc" class="- topic/ph ">nc</ph>’s current software configuration,
+including its model number, OS level, JVM version, installed modules,
+lexicons, licenses, certificates, and so on.</p><p class="- topic/p ">You may wish to review and configure the parent container’s <uicontrol class="+ topic/ph ui-d/uicontrol ">PlatformServices</uicontrol> and <uicontrol class="+ topic/ph ui-d/uicontrol ">PlatformAdministration</uicontrol> properties using <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/>.</p><p class="- topic/p ">The <cite class="- topic/cite "><ph conkeyref="doctitles_coresw/PlatformGuide-A0F6B991" class="- topic/ph "/></cite> documents the <uicontrol class="+ topic/ph ui-d/uicontrol ">PlatformServices</uicontrol> and <uicontrol class="+ topic/ph ui-d/uicontrol ">PlatformAdministration</uicontrol> properties.</p></conbody></concept>

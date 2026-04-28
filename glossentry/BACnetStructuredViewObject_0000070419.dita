@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="BACnetStructuredViewObject" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry ">
+<glossterm class="- topic/title concept/title glossentry/glossterm ">structured view object</glossterm>
+<glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">A presentation-related type of object. BACnet objects generally
+refer to sensors, actuators, and other functional elements that make
+up a BACnet device. Objects fall into categories specified by the
+protocol. Analog input and output objects are a couple of the most
+commonly used objects. (www.cismn.com)</glossdef>
+</glossentry>

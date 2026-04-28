@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-Counter" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-Counter</title>
+<shortdesc class="- topic/shortdesc ">This component counts Boolean inactive to active transitions.
+It supports counting up, counting down, presetting, and clearing. </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Counter</indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">The Counter is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Util</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette. </p><fig class="- topic/fig ">
+<title class="- topic/title ">Counter properties</title>
+<image href="../graphic/kitControlCounter_0000067844.png" scale="65" scope="local" class="- topic/image ">
+</image></fig><p class="- topic/p ">The screen capture shows a counter component property
+sheet.</p></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window (defaults to null units, a single
+decimal place, minimum to negative infinity, maximum to positive infinity)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Selects units and configures how the value displays:</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">units </option> defines the unit of measure from<option class="+ topic/keyword pr-d/option ">acceleration </option> to <option class="+ topic/keyword pr-d/option ">volumetric flow.</option></p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">precision </option>defines the number of decimal places. </p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">min</option> defines the lowest value allowed.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">max</option> defines the highest value allowed.</p><p class="- topic/p ">This definition
+applies to the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> value for this component.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number (defaults to 0.0) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Reports the current count. <p class="- topic/p ">When null value is checked,
+the value displayed defaults to the incoming value from the device.
+If you remove the check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Count Up</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default)
+and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines a StatusBoolean input. When this input transitions
+from inactive to active, the value of the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> property increments by the <parmname class="+ topic/keyword pr-d/parmname ">Count Increment</parmname> value.<p class="- topic/p ">When null value is checked, the value displayed defaults to the incoming
+value from the device. If you remove the check mark you can configure
+the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Count Down</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default)
+and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines a StatusBoolean input. When this input transitions
+from inactive to active, the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> property decrements
+by the <parmname class="+ topic/keyword pr-d/parmname ">Count Increment</parmname>.<p class="- topic/p ">When null value is
+checked, the value displayed defaults to the incoming value from the
+device. If you remove the check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Preset In</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default)
+and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines a StatusBoolean input. When this input transitions
+from inactive to active, the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> property decrements
+by the <parmname class="+ topic/keyword pr-d/parmname ">Count Increment</parmname>.<p class="- topic/p ">When null value is
+checked, the value displayed defaults to the incoming value from the
+device. If you remove the check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Clear In</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default)
+and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines a StatusBoolean input. When this input transitions
+from inactive to active, the framework sets the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> property to 0.0.<p class="- topic/p ">When null value is checked, the value displayed
+defaults to the incoming value from the device. If you remove the
+check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Preset Value</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number (defaults to 0.00) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the value of the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> property
+when <parmname class="+ topic/keyword pr-d/parmname ">Preset In</parmname> changes to active, or when a user
+invokes the Preset action.<p class="- topic/p ">When null value is checked, the value
+displayed defaults to the incoming value from the device. If you remove
+the check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Count Increment</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number (defaults to 1.00) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines how much the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> property increases
+or decreases when a StatusBoolean transitions from inactive to active.<p class="- topic/p ">When null value is checked, the value displayed defaults to the incoming
+value from the device. If you remove the check mark you can configure
+the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+</properties>
+<section class="- topic/section "><title class="- topic/title ">Actions</title><p class="- topic/p ">These actions are available when
+you right-click.</p><table class="- topic/table ">
+<tgroup cols="2" class="- topic/tgroup ">
+<?PubTbl tgroup dispwid="647.00px"?>
+<colspec colname="col1" colwidth="0.42*" class="- topic/colspec "/><colspec colname="col2" colwidth="1.58*" class="- topic/colspec "/>
+<thead class="- topic/thead ">
+<row class="- topic/row ">
+<entry class="- topic/entry ">Action</entry>
+<entry class="- topic/entry ">Description</entry>
+</row>
+</thead>
+<tbody class="- topic/tbody ">
+<row class="- topic/row ">
+<entry class="- topic/entry ">Preset</entry>
+<entry class="- topic/entry ">Sets the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> property value to the <parmname class="+ topic/keyword pr-d/parmname ">Preset Value</parmname>.</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">Clear</entry>
+<entry class="- topic/entry ">Sets the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> property value to 0.00.</entry>
+</row>
+</tbody>
+</tgroup>
+</table></section>
+<section class="- topic/section "><title class="- topic/title ">Examples</title><p class="- topic/p ">This wire sheet shows an application
+that ramps between the RampMaxValue and the RampMinValue. The period
+of the Multi Vibrator object sets how fast the ramp counts. The Clock
+input of the BooleanLatch object config flags is set to allow fan-in.</p><fig class="- topic/fig ">
+<title class="- topic/title ">Counter component ramp up and down</title>
+<image href="../graphic/kitControlCounterRampUpDown_0000067843.png" placement="break" scale="75" scope="local" class="- topic/image "/>
+</fig><p class="- topic/p ">The next wire sheet shows a count from the RampMaxValue down
+to zero (0), which is then reset back to the RampMaxValue and repeated.</p><fig class="- topic/fig ">
+<title class="- topic/title ">Counter component ramp down, reset and repeat</title>
+<image href="../graphic/kitControlCounterRampDown_0000067842.png" placement="break" scale="75" scope="local" class="- topic/image "/>
+</fig></section>
+</refbody>
+</reference>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="DeviceObject-B10BDB39" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry ">
+<glossterm class="- topic/title concept/title glossentry/glossterm ">Device object or device component</glossterm>
+<glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">Describes any component that represents an external device.
+It has several device extensions, one being the <uicontrol class="+ topic/ph ui-d/uicontrol ">Config
+Device Ext</uicontrol>. By default, this extension contains a (frozen)
+device object component, which represents the single BACnet device
+object in that device. You cannot delete this component. You can add
+and delete other Config objects as needed.<p class="- topic/p ">On the server side, the
+configuration of a station’s single <uicontrol class="+ topic/ph ui-d/uicontrol ">Local Device</uicontrol> component under its <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetNetwork</uicontrol> represents
+the station’s device object.</p></glossdef>
+</glossentry>

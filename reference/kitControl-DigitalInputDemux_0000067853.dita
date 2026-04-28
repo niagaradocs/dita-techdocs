@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-DigitalInputDemux" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-DigitalInputDemux</title>
+<shortdesc class="- topic/shortdesc ">This component provides four StatusBoolean outputs from
+one StatusNumeric input. </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">DigitalInputDemux</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">DigitalInputDemux is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Util</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p><p class="- topic/p ">A typical
+application for this demultiplexer object is in association with a
+multiplexer module to expand the IO capacity of a system. The multiplexer
+creates a single analog voltage output to represent the state of up
+to four digital inputs. The DigitalInputDemux component then de-multiplexes
+the analog voltage into four StatusBoolean outputs.</p><fig class="- topic/fig ">
+<title class="- topic/title ">DigitalInputDemux object application</title>
+<image href="../graphic/DIMUX_SystemBlockDiag_0000067841.png" placement="break" scale="90" scope="local" class="- topic/image "/>
+</fig><p class="- topic/p ">The illustration shows four volt-free contacts, such as door
+status, connected to a four-channel digital input multiplexer. The
+IO/DIM4 multiplexer device is manufactured by Titan Products Ltd.,
+although similar suitable devices are available from other equipment
+suppliers. The IO/DIM4 multiplexer is microprocessor-based and designed
+to convert four separate digital input signals into a single analog
+voltage output. Each combination of digital input signal is converted
+to an output voltage level, which is then connected to one universal
+input of an NDIO IO-16 module. The NDIO universal input is configured
+as a voltage input point. Its output feeds the DigitalInputDemux object.
+Finally, the DigitalInputDemux object provides four status Boolean
+outputs, which represent the status of the original four contacts.</p></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number (defaults to 0.00) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Provides a StatusNumeric value for this object to serve
+as the input analog value from the multiplexer, which represents the
+state of the four digital inputs. This input must be valid for the
+object to function.<p class="- topic/p ">When null is checked, the value displayed defaults
+to the incoming value from the device. If you remove the check mark
+you can configure the<parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In Offset</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">positive or negative number to two decimal places</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines an offset for the input.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out1</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only <option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Provides a status Boolean value, which the component sets
+to <option class="+ topic/keyword pr-d/option ">true</option> if the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> property contains
+a value equivalent to the value set as the <parmname class="+ topic/keyword pr-d/parmname ">Out1 Value</parmname> property.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out2</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only <option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Provides a status Boolean value, which the component sets
+to <option class="+ topic/keyword pr-d/option ">true</option> if the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> property contains
+a value equivalent to the value set as the <parmname class="+ topic/keyword pr-d/parmname ">Out2 Value</parmname> property.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out3</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only <option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Provides a status Boolean value, which the component sets
+to <option class="+ topic/keyword pr-d/option ">true</option> if the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> property contains
+a value equivalent to the value set as the <parmname class="+ topic/keyword pr-d/parmname ">Out3 Value</parmname> property.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out4</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only <option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Provides a status Boolean value, which the component sets
+to <option class="+ topic/keyword pr-d/option ">true</option> if the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> property contains
+a value equivalent to the value set as the <parmname class="+ topic/keyword pr-d/parmname ">Out4 Value</parmname> property.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out1 Value</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number to two decimal places (defaults to 4.80)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Sets a value, which corresponds with the equivalent setting
+in the multiplexer device to represent the status of the digital input
+1.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out2 Value</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number to two decimal places (defaults to 2.40)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Sets a value, which corresponds with the equivalent setting
+in the multiplexer device to represent the status of the digital input
+2.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out3 Value</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number to two decimal places (defaults to 1.20)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Sets a value, which corresponds with the equivalent setting
+in the multiplexer device to represent the status of the digital input
+3.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out4 Value</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number to two decimal places (defaults to 0.60)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Sets a value, which corresponds with the equivalent setting
+in the multiplexer device to represent the status of the digital input
+4.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Dead Band</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number to two decimal places (defaults to 0.10)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Sets a tolerance value to prevent output ‘chatter’
+due to a fluctuating input value. This property operates purely on
+the input <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value. </p></propdesc>
+</property>
+</properties>
+<section class="- topic/section "><title class="- topic/title ">Dead band example</title><p class="- topic/p ">An on-site multiplexer
+device with four digital inputs (DI) feeds the DigitalInputDemux component.
+DI1 and DI2 are open (off) and DI3 and DI4 are closed (on). The combined
+voltage weighting of DI3 and DI4 is 1.8v.  An NDIO universal input
+transmits the combined voltage weighting of DI3 and DI4 (1.8v) to
+the DigitalInputDemux component. The DigitalInputDemux object then
+faithfully de-multiplexes this signal, setting <parmname class="+ topic/keyword pr-d/parmname ">Out3</parmname> and <parmname class="+ topic/keyword pr-d/parmname ">Out4</parmname> to <option class="+ topic/keyword pr-d/option ">true</option>. In practice,
+a voltage drop occurs on the received signal and the <parmname class="+ topic/keyword pr-d/parmname ">Dead
+Band</parmname> property allows you to engineer in some protection
+for this fluctuation to prevent it from adversely upsetting your control
+strategy.</p><fig class="- topic/fig ">
+<title class="- topic/title ">Operation of the Dead Band property</title>
+<image href="../graphic/DIMUX_DeadBandTable1_0000067870.png" scope="local" class="- topic/image "/>
+</fig><p class="- topic/p ">The <parmname class="+ topic/keyword pr-d/parmname ">Dead Band</parmname> property in this example
+is set to 0.10, which is applied to the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.
+The dead band function operates equally in both positive and negative
+sense on the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value. In this example therefore,
+all values from 1.75 through to 1.85 are valid.</p></section>
+</refbody>
+</reference>

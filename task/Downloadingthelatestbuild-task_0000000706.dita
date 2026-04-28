@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="DownloadTheLatestBuild-E9872F0A" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Downloading the latest build</title><shortdesc class="- topic/shortdesc ">Unless you have a copy on physical media, first download
+the latest build from <keyword conkeyref="wh_variables_n4/nc_community" class="- topic/keyword "/>. This topic explains the importance of extracting the
+files from the download before running the installer program.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">software<indexterm class="- topic/indexterm ">downloading</indexterm></indexterm></keywords></metadata></prolog><taskbody class="- topic/body task/taskbody "><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">If you do not already have a copy, download the latest software
+zip file from <keyword conkeyref="wh_variables_n4/nc_community" class="- topic/keyword "/>.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Extract (unzip) its contents to a local folder.</cmd><info class="- topic/itemgroup task/info "><note class="- topic/note ">You must extract (unzip) the zip file to a local folder
+before starting the install, and use the unzipped files for the installation.
+Although Windows allows you to see the contents of a compressed zip
+file and even to launch an executable without extracting files, an
+attempt to install the software this way will fail.</note><?Pub Caret 157?></info></step></steps><result class="- topic/section task/result "/></taskbody></task>

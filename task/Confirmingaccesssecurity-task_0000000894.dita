@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="role_ConfirmingTheAccessSecurity" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Confirming access security</title>
+<shortdesc class="- topic/shortdesc ">You should test each user’s access rights before
+allowing users to use the system.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">roles<indexterm class="- topic/indexterm ">testing</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "/>
+<vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<context class="- topic/section task/context "/>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Log out of the station.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Log back in as a user that represents each role.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Confirm that the Nav tree shows only those components to
+which the user has read, write or invoke action rights.</cmd></step>
+</steps>
+<result class="- topic/section task/result "/>
+<example class="- topic/example "/>
+<postreq class="- topic/section task/postreq "/>
+</taskbody>
+</task>

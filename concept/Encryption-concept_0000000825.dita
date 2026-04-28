@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="SSLCryptography" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Encryption</title>
+<shortdesc class="- topic/shortdesc ">Encryption is the process of encoding data transmission
+so that it cannot be read by untrusted third parties. TLS uses encryption
+to transmit data between the client and server. While it is possible
+to make an unencrypted connection using only the fox or http protocols,
+you are strongly encouraged not to pursue this option. Without encryption,
+your communications are potentially subject to an attack. Always accept
+the default Foxs or Https connections.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">encryption</indexterm><indexterm class="- topic/indexterm ">secure
+communication<indexterm class="- topic/indexterm ">encryption</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "/>
+<vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">The following summarizes how encryption works:</p>
+<ol class="- topic/ol ">
+<li class="- topic/li "><p class="- topic/p ">At the start of a TLS session, the system encrypts the server/client
+handshake using the client and server certificates’ key pairs.</p></li>
+<li class="- topic/li "><p class="- topic/p ">During the handshake the system verifies server identity and
+negotiates encryption keys.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Once communication is established, identity verification is
+no longer needed, and encrypted data transmission begins using the
+negotiated keys.</p></li>
+</ol>
+<p class="- topic/p ">Key size is directly related to encryption security. The larger
+(more complex) the key, the more secure the data transmission. Large
+keys do not slow encryption, but they do take longer to initially
+generate.</p>
+</conbody>
+</concept>

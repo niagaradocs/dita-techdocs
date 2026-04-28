@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--Arbortext, Inc., 1988-2015, v.4002--><reference id="haystack-SiteRelation" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">haystack-SiteRelation</title>
+<shortdesc class="- topic/shortdesc ">Haystack tag dictionary is the addition of the smart site
+relation (<codeph class="+ topic/ph pr-d/codeph ">hs:siteRef</codeph>). </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">haystack-SiteRelation</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">The haystack module supports a smart site relation (<codeph class="+ topic/ph pr-d/codeph ">hs:siteRef</codeph>) that is valid for ControlPoints. If a ControlPoint
+has an <codeph class="+ topic/ph pr-d/codeph ">hs:equipRef</codeph> relation (direct or implied) to
+a component with the <codeph class="+ topic/ph pr-d/codeph ">hs:equip</codeph> tag and that equip
+component has an <codeph class="+ topic/ph pr-d/codeph ">hs:siteRef</codeph> relation to a component
+with the <codeph class="+ topic/ph pr-d/codeph ">hs:site</codeph> tag, an <codeph class="+ topic/ph pr-d/codeph ">hs:siteRef</codeph> relation is implied from the ControlPoint to that site component.</p></section>
+</refbody>
+</reference>

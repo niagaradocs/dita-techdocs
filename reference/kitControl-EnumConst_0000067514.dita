@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-EnumConst" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-EnumConst</title>
+<shortdesc class="- topic/shortdesc ">This component provides a constant EnumStatus value, with
+available action to Set. </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">EnumConst</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">EnumConst is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Constants</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p><p class="- topic/p ">It provides
+a linkable status-type output value, and two actions for changing
+its value: Active (true) and Inactive (false). A constant may be handy
+when the same target property of multiple components needs to be adjusted
+simultaneously. Constants may also help to clarify logic on a wire
+sheet.</p><fig class="- topic/fig ">
+<title class="- topic/title ">EnumConst properties</title>
+<image href="../graphic/kitControlEnumConst_0000067546.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window (defaults to zero (0))</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines a range of enumerated states (Enum values).</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">enumerated list (defaults to zero (0), that is, no list)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Shows the current enum value associated with the point.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

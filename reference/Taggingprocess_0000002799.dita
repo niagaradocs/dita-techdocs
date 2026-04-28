@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="TaggingProcess-474FC797" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Tagging process</title><shortdesc class="- topic/shortdesc ">This section describes the basic tagging process. Before
+adding tags, make sure that you have the dictionaries that you need
+to complete the process.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Tagging<indexterm class="- topic/indexterm ">process</indexterm></indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p ">The basic process for tagging involves the following:<ol class="- topic/ol "><li class="- topic/li "><p class="- topic/p ">Identify your purpose. Possible uses could be one or more of
+the following examples:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">Enterprise structure navigation: In this case you may want
+to focus on using tags that include geographical information.</p></li><li class="- topic/li "><p class="- topic/p ">Systems maintenance views: In this case you may need to use
+tags that include device or equipment information.</p></li><li class="- topic/li "><p class="- topic/p ">End user navigation: In this case you may use functionally
+related tags.</p></li></ul></li><li class="- topic/li "><p class="- topic/p ">Make sure you have the dictionaries you need.</p><p class="- topic/p ">In many
+cases, the <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> Tag Dictionary may be sufficient. By default, it is in
+the <filepath class="+ topic/ph sw-d/filepath ">TagDictionaryService</filepath> folder in a new station.
+You can add the <uicontrol class="+ topic/ph ui-d/uicontrol ">Haystack dictionary</uicontrol> from the <wintitle class="+ topic/keyword ui-d/wintitle ">haystack</wintitle> palette if needed. You can also create Ad Hoc
+tags or create your own custom dictionary if you wish to.</p><note class="- topic/note ">For new stations, you may need only the <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> and Haystack Smart Tag Dictionaries. However, you can
+reduce or eliminate your tagging efforts by looking for Smart Tag
+Dictionaries developed by the <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> community.</note><?Pub Caret 42?>.</li><li class="- topic/li "><p class="- topic/p ">Add tags to your components.</p><p class="- topic/p ">You can add tags one at
+a time or you can use Tag Groups (containers of various tags) to add
+multiple tags with each <uicontrol class="+ topic/ph ui-d/uicontrol ">Add</uicontrol> action. You can
+add tags during or after a discovery process and you can also use
+the Batch Editor to add tags.</p><note class="- topic/note "><p class="- topic/p ">Adding a tag group adds
+a relation between the component and the tag group definition. The
+tags in the group are implied on the component. If you change the
+tags in the group, the revised set of tags are implied on the component.</p></note></li></ol></p></section></refbody></reference>

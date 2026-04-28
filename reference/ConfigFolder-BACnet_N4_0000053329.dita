@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="bacnet-BacnetConfigFolder" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">ConfigFolder</title>
+<shortdesc class="- topic/shortdesc ">This component implements a folder under a BacnetConfigDeviceExt
+(Config). </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">ConfigFolder</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">Typically, you add such folders using the <uicontrol class="+ topic/ph ui-d/uicontrol ">New
+Folder</uicontrol> button in the <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet Config Manager</wintitle> view of the Config container. Each BacnetConfigFolder has its own <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet Config Manager</wintitle> view. </p></section>
+</refbody>
+</reference>

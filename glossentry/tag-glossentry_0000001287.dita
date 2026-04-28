@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="Tag-5F73C808" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry "><glossterm class="- topic/title concept/title glossentry/glossterm "><term id="glTerm" class="- topic/term "><text id="glText" class="- topic/text ">tag</text></term></glossterm><glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">A piece of semantic information (metadata) associated with
+a device or point (entity) for the purpose of filtering or grouping
+entities. Tags identify the purpose of the component or point and
+its relationship to other entities. For example, you may wish to view
+only data collected from meters located in maintenance buildings as
+opposed to those located in office buildings or schools. For this
+grouping to work, the metering device in each maintenance building
+includes a tag that associates the meter with all the other maintenance
+buildings in your system.<p class="- topic/p "><ph conkeyref="host_models/nc" class="- topic/ph ">JACE</ph>s are associated with Supervisors based on tags; searching
+is done based on tags.</p><p class="- topic/p ">Tags are contained in tag dictionaries.
+Each tag dictionary is referenced by a unique namespace.</p></glossdef></glossentry>

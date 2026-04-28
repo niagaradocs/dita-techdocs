@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="LatchComponents-26B577A5" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Latch components</title>
+<shortdesc class="- topic/shortdesc ">Components include services, folders and other model building
+blocks associated with a module. You may drag them to a property or
+wire sheet from a palette. These components capture an input value
+by using either the component's <parmname class="+ topic/keyword pr-d/parmname ">Clock</parmname> property
+or by using the component's <option class="+ topic/keyword pr-d/option ">Latch</option> action. In either
+case, latching means setting the value of the latch component’s <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> property to whatever the value of the latch component’s <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> property is at the time that the latch occurs. The
+framework ignores the value of the latch component <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> property unless a latch occurs.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">latch components</indexterm></keywords>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">Each latch component type has the same properties and function;
+they vary only to accommodate different point data types</p>
+<p class="- topic/p ">The descriptions included in the following topics appear as headings
+in documentation. They also appear as context-sensitive help topics
+when accessed by:<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Right-clicking on the object and selecting <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Views</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Guide Help</uicontrol>
+</menucascade></p></li>
+<li class="- topic/li "><p class="- topic/p ">Clicking <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Help</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Guide On Target</uicontrol></menucascade></p></li>
+</ul></p>
+</conbody>
+</concept>

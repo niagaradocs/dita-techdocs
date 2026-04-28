@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<?xml-stylesheet href="file:///C:/Users/H477160/Honeywell/Tridium%20Tech%20Docs%20-%20Documents/General/Arbortext/com.tridium.atxcustom/doctypes/ditabase/N4-ditabase.style" type="text/x-styler" media="editor" alternate="yes"?><reference id="Conditions-E41E29A1" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Conditions</title>
+<shortdesc class="- topic/shortdesc "><parmname class="+ topic/keyword pr-d/parmname ">Condition</parmname> is a validity subproperty
+used to specify criteria to be met in order for a parent definition’s
+tag to be applied to an object. It is used in conjunction with the <parmname class="+ topic/keyword pr-d/parmname ">Filter</parmname> subproperty. There may be one or more conditions
+under the Validity property.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">validity</indexterm><indexterm class="- topic/indexterm ">conditions</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">The <parmname class="+ topic/keyword pr-d/parmname ">Validity</parmname> property of a tag definition
+is primarily used to filter out tags in the <wintitle class="+ topic/keyword ui-d/wintitle ">Edit Tags</wintitle> dialog that should not be applied to an object. The criteria contained
+in this property does not prevent applying the tag to any object.Some
+smart tags, however, do not operate properly if they are applied to
+an object that does meet the criteria in the <parmname class="+ topic/keyword pr-d/parmname ">Validity</parmname> property. The <parmname class="+ topic/keyword pr-d/parmname ">Validity</parmname> property can be any
+tag rule condition including <codeph class="+ topic/ph pr-d/codeph ">And</codeph> and <codeph class="+ topic/ph pr-d/codeph ">Or</codeph>, which allow for combining other conditions.</p><p class="- topic/p ">The validity
+conditions are located in the <wintitle class="+ topic/keyword ui-d/wintitle ">tagdictionary</wintitle> palette.</p></section>
+</refbody>
+</reference>

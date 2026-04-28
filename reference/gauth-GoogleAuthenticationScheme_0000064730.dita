@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="gauth-GoogleAuthenticationScheme" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">TOTP authentication scheme (totpAuth-TotpAuthenticationScheme)</title><shortdesc class="- topic/shortdesc ">The TOTP Authentication Scheme is a two-factor authentication
+mechanism that requires the user to enter their password as well as
+a single-use token when logging in to a station. This protects a user’s
+account even if their password is compromised.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">gauth-GoogleAuthenticationScheme</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p ">Component location:  <apiname class="+ topic/keyword pr-d/apiname ">totpAuth</apiname> palette</p></section></refbody></reference>

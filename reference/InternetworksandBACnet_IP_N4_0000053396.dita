@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="InternetworksAndBACnetIP-5596D4D9" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Internetworks and BACnet/IP</title><shortdesc class="- topic/shortdesc ">The BACnet standard defines an internetwork (inter-network)
+as a set of two or more BACnet networks connected by BACnet routers.
+This chapter explains topics relating to BACnet internetworks and
+station configuration. Also included is information related to BBMDs
+(BACnet/IP Broadcast Management Device).</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">internetworks</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><title class="- topic/title ">Link layer types</title><p class="- topic/p ">All BACnet drivers support
+more than one link layer type using multiple network ports under the
+BACnet network’s <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Bacnet Comm</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Network</uicontrol></menucascade> child container. A new
+BACnet network defaults to BACnet/IP (<uicontrol class="+ topic/ph ui-d/uicontrol ">Ip Port</uicontrol>). The other port types (<uicontrol class="+ topic/ph ui-d/uicontrol ">EthernetPort</uicontrol>, <uicontrol class="+ topic/ph ui-d/uicontrol ">MstpPort</uicontrol>) are available in the <apiname class="+ topic/keyword pr-d/apiname ">bacnet</apiname> palette. The <uicontrol class="+ topic/ph ui-d/uicontrol ">MstpPort</uicontrol> component, which supports
+a BACnet MS/TP device trunk, requires a station hosted by a QNX-based
+host.</p></section><section class="- topic/section "><title class="- topic/title ">Network numbers</title><indexterm class="- topic/indexterm ">network<indexterm class="- topic/indexterm ">number</indexterm></indexterm><indexterm class="- topic/indexterm ">internetwork<indexterm class="- topic/indexterm ">network
+numbers</indexterm></indexterm></section><section class="- topic/section "><p class="- topic/p ">Each port must reference a unique BACnet network number
+across an internetwork. The range for BACnet network numbers is 1-65534.
+You define this <parmname class="+ topic/keyword pr-d/parmname ">Network Number</parmname> property in each
+port component’s <wintitle class="+ topic/keyword ui-d/wintitle ">Property Sheet</wintitle>. This
+property defaults to -1, which means that it is undefined or inactive.</p><p class="- topic/p ">If you are installing a station on an existing BACnet internetwork,
+where one or more BACnet routers already exist, you need to know the
+assigned network number(s), and enter them, as appropriate, in the
+network port(s) under the <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Bacnet Comm</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Network</uicontrol></menucascade> container. You can find
+the existing network number information in the configuration setup
+of the BACnet routers.</p><p class="- topic/p ">A station’s BACnet network is
+not limited to only BACnet networks defined by its own network ports.
+The BACnet network automatically learns other remote networks, from
+global BACnet I-Am messages received from the devices (and routers)
+on other remote networks. The station maintains a table of known BACnet
+networks under the network’s <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Bacnet
+Comm</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Network</uicontrol></menucascade> child
+in a <uicontrol class="+ topic/ph ui-d/uicontrol ">Router Table</uicontrol> component.</p><p class="- topic/p ">By default,
+the station automatically performs BACnet router functions across
+multiple BACnet networks. Often this is the desired behavior, especially
+when there are MS/TP trunks that attach to RS-485 ports on a remote
+controller. However, multiple BACnet routes to the same network segment
+result in message flood issues, and are considered a mis–configuration.
+If the driver detects this configuration, it automatically disables
+BACnet routing by setting the <parmname class="+ topic/keyword pr-d/parmname ">Routing Enabled</parmname> property (found in the BACnet network’s <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Bacnet Comm</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Network</uicontrol></menucascade> component slot) to <option class="+ topic/keyword pr-d/option ">false</option>.</p></section><section class="- topic/section "><title class="- topic/title ">Internetwork BACnet routers</title><indexterm class="- topic/indexterm ">internetwork<indexterm class="- topic/indexterm ">routers</indexterm></indexterm><p class="- topic/p ">The BACnet network maintains a
+table of BACnet routers in the <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Bacnet Comm</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Network</uicontrol></menucascade> component. Included is
+the ability to modify, add, and remove entries that represent BACnet
+routers.</p><p class="- topic/p ">A full listing of all BACnet router functions is extensive—refer
+to the BACnet specification for complete details on routers. From
+a general perspective, BACnet routers pass BACnet messages among BACnet
+networks. This applies to all directed messages as well as broadcast
+messages.</p><p class="- topic/p ">Usually, a BACnet router joins networks of different
+media/link-layer types, for example a router with RS-485 MS/TP port(s)
+and an Ethernet-BACnet/IP port.</p></section></refbody></reference>

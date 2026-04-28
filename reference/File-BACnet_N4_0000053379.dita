@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="bacnet-BacnetFile" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Config, File (Bacnet File)</title>
+<shortdesc class="- topic/shortdesc ">This component is a Config object that represents a BACnet
+File object.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">File</indexterm><indexterm class="- topic/indexterm ">Bacnet File</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody "/>
+</reference>

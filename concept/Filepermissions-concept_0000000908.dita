@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="role_FilePermissions" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">File permissions</title>
+<shortdesc class="- topic/shortdesc ">By default, the New Station Wizard assigns the entire station’s
+File space to category 2 (<systemoutput class="+ topic/ph sw-d/systemoutput ">Admin</systemoutput>). A station's
+config.bog file and config.bog.backup files are not accessible (even
+by super users) in the station's file space. If needed, other station
+files and folders may be hidden from a remote station.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">file permissions</indexterm><indexterm class="- topic/indexterm ">permissions<indexterm class="- topic/indexterm ">to access files</indexterm></indexterm>
+</keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "/>
+<vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">Users typically require that the role assigned to them have <systemoutput class="+ topic/ph sw-d/systemoutput ">operator</systemoutput>-level read permission on station file folders,
+such as ^nav, ^px, ^images, ^html, and so on. However, permissions
+higher than an <systemoutput class="+ topic/ph sw-d/systemoutput ">operator</systemoutput>-level read on
+the <systemoutput class="+ topic/ph sw-d/systemoutput ">Admin</systemoutput> category should only be assigned
+to selected users on an as-needed basis. In most situations, creating
+a new category containing <i class="+ topic/ph hi-d/i ">only</i> the components a user needs
+to access is a more appropriate solution.</p>
+<p class="- topic/p ">Largely, rights granted to access categories that are used by files
+and folders are <systemoutput class="+ topic/ph sw-d/systemoutput ">operator</systemoutput>-level permissions
+as follows:</p>
+<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Files require <systemoutput class="+ topic/ph sw-d/systemoutput ">operator</systemoutput>-level read
+(r) access to view, and <systemoutput class="+ topic/ph sw-d/systemoutput ">operator</systemoutput>-level
+write (rw) access to edit a file (if applicable). For instance, a
+user with <systemoutput class="+ topic/ph sw-d/systemoutput ">operator</systemoutput>-level write and write
+(rw) access to an .html file can modify it using the Text File Editor
+in <keyword conkeyref="wh_variables_n4/Workbench" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword "/>.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Folders (directories) require <systemoutput class="+ topic/ph sw-d/systemoutput ">operator</systemoutput>-level read (r) access to list and to copy child files, and <systemoutput class="+ topic/ph sw-d/systemoutput ">operator</systemoutput>-level write (rw) access to create new (or
+delete existing) child files.</p></li>
+</ul>
+<p class="- topic/p ">A few views of files require <systemoutput class="+ topic/ph sw-d/systemoutput ">admin</systemoutput>-level Write (rwRW) permissions to access, such as the <apiname class="+ topic/keyword pr-d/apiname ">Nav
+File Editor</apiname> for a Nav file. There are also these special
+case file permissions:</p>
+<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">The system automatically restricts any system module files
+to <systemoutput class="+ topic/ph sw-d/systemoutput ">operator</systemoutput>-level read (r) access.</p></li>
+<li class="- topic/li "><p class="- topic/p ">If a user is not a super user, the system denies all access
+outside of the station's home directory.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Users need <systemoutput class="+ topic/ph sw-d/systemoutput ">admin</systemoutput>-level Read (rwRW)
+access to see a Supervisor station's <filepath class="+ topic/ph sw-d/filepath ">^provisioningNiagara</filepath> folder (written to by the Supervisor's provisioning mechanism).</p></li>
+<li class="- topic/li "><p class="- topic/p ">If you have a developer license, your system includes an additional
+category called NModuleDevFilePermission. This category grants rwRW
+permission to access all system modules.</p></li>
+</ul>
+</conbody>
+</concept>

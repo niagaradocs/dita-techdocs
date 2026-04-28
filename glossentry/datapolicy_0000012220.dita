@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="DataPolicydataPolicy-AF3CF0AD" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry ">
+<glossterm class="- topic/title concept/title glossentry/glossterm "><term id="glTerm" class="- topic/term "><text id="glText" class="- topic/text ">data policy</text></term></glossterm>
+<glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">A data policy provides additional metadata that can be associated
+with a tagged component. For more details on tags and tagging, see
+the <ph conkeyref="doctitles_coresw/TaggingGuide-4741B597" conref="../reuse/WH_CoreSWDocTitles_Tridium_N4_0000009937.dita#WHCoreSoftwareDocumentTitles-9A315B77/TaggingGuide-4741B597" class="- topic/ph "/>.</glossdef>
+</glossentry>

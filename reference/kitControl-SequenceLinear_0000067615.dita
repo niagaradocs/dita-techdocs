@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-SequenceLinear" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-SequenceLinear</title>
+<shortdesc class="- topic/shortdesc ">This component provides sequenced rotating staging control
+of from two to 10 BooleanWritables based upon the status numeric <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value (0-100). An adjustable delay time is also provided. </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">SequenceLinear</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">SequenceLinear is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">HVAC</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.  A similar
+object is the SequenceBinary, which uses a weighted method (vs. a
+rotating method) for sequencing.</p></section>
+<section class="- topic/section "><p class="- topic/p ">This component supports applications that need to sequence
+two to 10 loads or stages in a linear or rotating sequence. With linear
+sequencing, the first stage on will be the last stage off. With rotating
+sequencing, the first stage on will be the first stage off. The <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> property, which is a StatusNumeric, controls the number
+of stages that should be on. The input range is defined by the In
+Minimum and In Maximum properties.</p><p class="- topic/p ">For example, On and Off setpoints
+are calculated for each stage by the following formulas (this assumes
+that five outputs are defined).</p><table class="- topic/table ">
+<tgroup cols="3" class="- topic/tgroup "><colspec colname="1" colwidth="177.39pt" class="- topic/colspec "/><colspec colname="2" colwidth="71.45pt" class="- topic/colspec "/><colspec colname="3" colwidth="73.09pt" class="- topic/colspec "/>
+<thead class="- topic/thead ">
+<row class="- topic/row ">
+<entry class="- topic/entry "><?PubTbl cell border-bottom-style="double"?></entry>
+<entry class="- topic/entry "><?PubTbl cell border-bottom-style="double"?>Linear</entry>
+<entry colsep="0" class="- topic/entry "><?PubTbl cell border-bottom-style="double"?>Rotating</entry>
+</row>
+</thead>
+<tbody class="- topic/tbody ">
+<row class="- topic/row ">
+<entry class="- topic/entry ">range = InMaximum - InMinimum</entry>
+<entry class="- topic/entry ">100 = 100 - 0</entry>
+<entry class="- topic/entry ">100 = 100 - 0</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">delta = range / NumberOutputs</entry>
+<entry class="- topic/entry ">20 = 100 / 5</entry>
+<entry class="- topic/entry ">20 = 100 / 5</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">OnSetpointA = 1 * delta</entry>
+<entry class="- topic/entry ">20</entry>
+<entry class="- topic/entry ">20</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">OnSetpointB = 2 * delta</entry>
+<entry class="- topic/entry ">40</entry>
+<entry class="- topic/entry ">40</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">OnSetpointC = 3 * delta</entry>
+<entry class="- topic/entry ">60</entry>
+<entry class="- topic/entry ">60</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">OnSetpointD = 4 * delta</entry>
+<entry class="- topic/entry ">80</entry>
+<entry class="- topic/entry ">80</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">OnSetpointE = 5 * delta</entry>
+<entry class="- topic/entry ">100</entry>
+<entry class="- topic/entry ">100</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">OffSetpointA = 0 * delta, 4 * delta</entry>
+<entry class="- topic/entry ">0</entry>
+<entry class="- topic/entry ">80</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">OffSetpointB = 1 * delta, 3 * delta</entry>
+<entry class="- topic/entry ">20</entry>
+<entry class="- topic/entry ">60</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">OffSetpointC = 2 * delta, 2 * delta</entry>
+<entry class="- topic/entry ">40</entry>
+<entry class="- topic/entry ">40</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">OffSetpointD = 3 * delta, 1 * delta</entry>
+<entry class="- topic/entry ">60</entry>
+<entry class="- topic/entry ">20</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">OffSetpointE = 4 * delta, 0 * delta</entry>
+<entry class="- topic/entry ">80</entry>
+<entry class="- topic/entry ">0</entry>
+</row>
+</tbody>
+</tgroup>
+</table><fig class="- topic/fig ">
+<title class="- topic/title ">SequenceBinary properties</title>
+<image href="../graphic/kitControlSequenceLinear_0000067630.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Defines text to display for each Boolean value.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">trueText</option> configures to describe the state when the
+component returns<parmname class="+ topic/keyword pr-d/parmname ">true.</parmname> </p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">falseText</option> configures to describe the state when the component returns<parmname class="+ topic/keyword pr-d/parmname ">false.</parmname> </p>This configuration applies to the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> property values.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number (defaults to 0.00) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Determines the number of stages that should currently be
+On.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In Minimum</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">single digit to two decimal places (defaults to 0.00)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value that turns all
+outputs off.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In Maximum</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">three-digit number to two decimal places (defaults to 100)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value that turns all
+outputs on.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Number Outputs</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number between 2 and 10 inclusive (defaults to 3)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the number of outputs or stages.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out A-J</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only StatusBoolean values: <option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Controls each of from two to 10 loads. The <parmname class="+ topic/keyword pr-d/parmname ">Number
+Outputs</parmname> property defines how many are available.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Delay</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours minutes seconds (defaults to no delay)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the amount of time that must pass between changes
+in outputs. The default time is 0 seconds.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">On Delay Active</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only StatusBoolean values: <option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Indicates <option class="+ topic/keyword pr-d/option ">true</option> when the on delay timer
+is active.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Off Delay Active</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only StatusBoolean values: <option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Indicates <option class="+ topic/keyword pr-d/option ">true</option> when the off delay timer
+is active.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Desired Stages On</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Indicates the calculated number of stages that should be
+on based on the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> property.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Current Stages On</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Indicates the number of stages that are currently on. Normally <parmname class="+ topic/keyword pr-d/parmname ">Current Stages On</parmname> and <parmname class="+ topic/keyword pr-d/parmname ">Desired Stages On</parmname> are the same. They differ when going through a transition with the
+delay timer active.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Next Stage On</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Indicates the next stage to be turned on if needed.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Next Stage Off</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Indicates the next stage to be turned off if needed.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Action</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">drop-down list</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Selects between Linear and Rotating action.<p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Linear</option> configures Out A (Stage 1) to always be the first stage to turn
+on and the last stage to turn off. </p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Rotating</option> configures the first stage to turn on and increment to the next
+stage each time <parmname class="+ topic/keyword pr-d/parmname ">Current Stages On</parmname> goes to 0.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Rotate Time</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours minutes seconds (defaults to one second)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Specifies the amount of time that the outputs remain in
+a fixed configuration before the component shifts them to the next
+configuration.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Rotate Timer Active</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only status Boolean values: <option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Indicates that the rotate timer is active.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

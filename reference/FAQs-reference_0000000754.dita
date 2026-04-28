@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="Niagara4-RelatedFAQs-F3584149" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title "> <keyword conkeyref="wh_variables_n4/niagara4" class="- topic/keyword "/> FAQs</title><shortdesc class="- topic/shortdesc ">Questions and answers specifically about <keyword conkeyref="wh_variables_n4/niagara4" class="- topic/keyword "/>.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Frequently Asked Questions<indexterm class="- topic/indexterm "><keyword conkeyref="wh_variables_n4/niagara4" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara4" class="- topic/keyword "/></indexterm></indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p "><b class="+ topic/ph hi-d/b ">Q: Why does an installation have so many “homes”?</b></p><p class="- topic/p "><b class="+ topic/ph hi-d/b ">A: </b>The multi-homed directory <?ezd-review-start 53de9b44-1eec-4840-b4a8-545f7dc1ac24:comment:Sweety.Joshi@Honeywell.com:1756812208260?>structure<?ezd-review-end 53de9b44-1eec-4840-b4a8-545f7dc1ac24?> results in improved
+security. Because configuration data is separated from runtime data,
+users do not require full access permissions to the installation.
+This allows administrators flexibility in regulating access. For more
+details on the homes, refer to the <cite class="- topic/cite "><ph conkeyref="doctitles_coresw/PlatformGuide-A0F6B991" class="- topic/ph "/></cite>.</p><p class="- topic/p "><b class="+ topic/ph hi-d/b ">Q: The new station that I just created does
+not show-up in the Application Director view. How am I supposed to
+start the station?</b></p><p class="- topic/p "><b class="+ topic/ph hi-d/b ">A: </b>The <uicontrol class="+ topic/ph ui-d/uicontrol ">New Station</uicontrol> Wizard creates the station in your <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> user_home. To start the station in the Application Director,
+you must first copy the station, using the platform <uicontrol class="+ topic/ph ui-d/uicontrol ">Station
+Copier</uicontrol>, to the platform daemon user_home . <note class="- topic/note ">The final (Finish) step of the wizard includes several action-on-Finish
+options, one of which is: <filepath class="+ topic/ph sw-d/filepath ">Copy station to secure platform
+for “localhost” on Finish</filepath>. If selected, on finishing the
+wizard closes and the platform <uicontrol class="+ topic/ph ui-d/uicontrol ">Station Copier</uicontrol> appears.</note></p><p class="- topic/p "><b class="+ topic/ph hi-d/b ">Q: Why on my <keyword conkeyref="wh_variables_n4/Supervisor" class="- topic/keyword "/> PC am I required to make a local platform connection and
+the Station Copier to copy (transfer) a station to the daemon user
+home from my <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> user home, when I could more easily just use Windows Explorer
+to copy and paste folders and files there?</b></p><p class="- topic/p "><b class="+ topic/ph hi-d/b ">A: </b>Bypassing
+platform tools, even with “localhost” operations, increases security
+risks.  In the example cited, if you simply copy and paste a
+station folder using Windows Explorer, client passwords in that station
+are left in a portable format. Whereas if you use the Station Copier,
+those passwords become encrypted with the unique keyring files for
+the opened platform.</p><p class="- topic/p "><b class="+ topic/ph hi-d/b ">Q: Will other Windows users with admin
+privileges who log on to the PC where the installation exists be able
+to see the Start menu shortcuts, installation folders, etc?</b> </p><p class="- topic/p "><b class="+ topic/ph hi-d/b ">A: </b>The shortcuts are visible only to the original installer.
+Other administrator-level users, logged on to the Windows PC, can
+make their own shortcuts to <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/>, etc., or simply navigate to the installation folders
+to start <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/>. The result is that the user gets their own unique <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> niagara_user_home (<filepath class="+ topic/ph sw-d/filepath ">C:\Windows\users\userName\<keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> 4.x</filepath>, a separate location from that of the user
+who installed the framework. </p><p class="- topic/p ">Different Windows logons have
+different niagara_user_homes, which is by design, it protects any
+passwords you may be using. This also means that sharing backups (and
+other items) with other users requires some thought.</p><p class="- topic/p "><b class="+ topic/ph hi-d/b ">Q: Is
+it possible to use <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> with an earlier release of <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword ">Niagara</keyword> installed on a controller?</b> </p><p class="- topic/p "><b class="+ topic/ph hi-d/b ">A: </b> No, you need to use a version of <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> that is compatible with the software on the controller.
+However, a remote  controller can be integrated in the <keyword conkeyref="wh_variables_n4/niagara4" class="- topic/keyword "/> <keyword conkeyref="wh_variables_n4/Supervisor" class="- topic/keyword "/>'s station, where you can discover points, schedules, and
+histories. Also if the <keyword conkeyref="wh_variables_n4/Supervisor" class="- topic/keyword "/>is configured for provisioning, it can do provisioning
+tasks on a remote  controller . Refer to the <cite class="- topic/cite "><ph conkeyref="doctitles_coresw/AXToN4MigrationGuide-F6F0D093" class="- topic/ph "/></cite> for related details.</p></section></refbody></reference>

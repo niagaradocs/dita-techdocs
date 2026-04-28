@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="MatchingDevices-BACnet-4FFD6DF3" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Matching a device</title>
+<shortdesc class="- topic/shortdesc ">If you added devices to a station database offline, you
+need to bring the devices online, discover them, and match them to
+the database records.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">devices<indexterm class="- topic/indexterm ">matching</indexterm></indexterm></keywords></metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">If the <wintitle class="+ topic/keyword ui-d/wintitle ">Discovered</wintitle> device table is
+empty, discover the device.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Select the device in the <wintitle class="+ topic/keyword ui-d/wintitle ">Discovered</wintitle> pane.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Select the device record in the <wintitle class="+ topic/keyword ui-d/wintitle ">Database</wintitle> pane.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To match the device with its record in the database, click
+the <uicontrol class="+ topic/ph ui-d/uicontrol ">Match</uicontrol> button, or type <uicontrol class="+ topic/ph ui-d/uicontrol ">Ctrl</uicontrol> + <uicontrol class="+ topic/ph ui-d/uicontrol ">m</uicontrol>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">If you clicked the <uicontrol class="+ topic/ph ui-d/uicontrol ">Match</uicontrol> button,
+the <parmname class="+ topic/keyword pr-d/parmname ">Match</parmname> window opens.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">If required, edit the properties in the <parmname class="+ topic/keyword pr-d/parmname ">Match</parmname> window, and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The discovered device appears dimmed, which indicates
+that it is present in the station database.</stepresult>
+</step>
+</steps>
+</taskbody>
+</task>

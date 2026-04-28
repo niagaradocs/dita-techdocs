@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="DocumentChangeLog-30DFE5BB" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Document change log</title><shortdesc class="- topic/shortdesc ">Updates (changes and additions) to this document are listed below.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm "/></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><title class="- topic/title ">May 13, 2025</title><p class="- topic/p ">Removed "optional" term from introduction in the  "Inserting or removing the microSD card" topic.</p></section><section class="- topic/section ">
+            <title class="- topic/title ">February 25, 2025</title>
+            <p class="- topic/p ">Added new topic "Install Current License for Controller" to the "Preparation" Chapter.</p>
+            <p class="- topic/p ">Edited the topic "Restoring factory defaults (<ph conkeyref="host_models/nc9000" class="- topic/ph "/>)" in the "Troubleshooting" Chapter.</p>
+        <p class="- topic/p ">Edited "Performing platform administration" and "About the <ph conkeyref="host_models/nc9000" class="- topic/ph "/> system shell menu" topics.</p></section><section class="- topic/section ">
+            <title class="- topic/title ">January 30, 2024</title>
+            <p class="- topic/p ">Added new topic “Legacy lexicon cannot be installed to <ph conkeyref="host_models/nc9000" class="- topic/ph "/> " to the "Preparation" chapter.</p><?Pub Caret 57?>
+        </section><section class="- topic/section ">
+            <title class="- topic/title ">August 14, 2023</title>
+            <p class="- topic/p ">Added an updated topic to the Troubleshooting Chapter, “Resetting platform credentials (<ph conkeyref="host_models/nc9000" class="- topic/ph "/>)”</p>
+        </section><section class="- topic/section ">
+            <title class="- topic/title ">July 15, 2023</title>
+            <p class="- topic/p ">Initial document release.</p>
+        </section></refbody></reference>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="PSK-A2FAB069" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry "><glossterm class="- topic/title concept/title glossentry/glossterm ">PSK</glossterm><glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">Referred to as <i class="+ topic/ph hi-d/i ">WPA-PSK</i> (Wi-Fi protected
+access-pre-shared key) mode, is a method of authentication key distribution. </glossdef></glossentry>

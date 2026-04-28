@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="ConfiguringSingleSignOnStationSecur-1333D086" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Configuring the SAML Authentication Scheme</title><shortdesc class="- topic/shortdesc ">SAML SSO is enabled by adding a SAML Authentication Scheme
+to the station. The scheme must be configured for a particular IdP
+(Identity Provider). You will need to obtain several configuration
+metadata from your IdP and use them in configuring the scheme. You
+will also need to provide the IdP with your station’s SP metadata.
+These SAML metadata are used to share configuration information between
+the IdP and the SP (for more details refer to the Prerequisites section
+in this topic.). XML files define the metadata. Once the SAML authentication
+scheme is properly configured, the station is able to exchange SAML
+authentication messages with the IdP.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">SAML Authentication Scheme<indexterm class="- topic/indexterm ">configure </indexterm></indexterm></keywords></metadata></prolog><taskbody class="- topic/body task/taskbody "><prereq class="- topic/section task/prereq "><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">You have the <apiname class="+ topic/keyword pr-d/apiname ">saml</apiname> palette open.</p></li><li class="- topic/li "><p class="- topic/p ">You have already obtained the necessary IdP configuration metadata
+that the IdP requires for authentication. Typically, the IdP SAML
+Server administrator provides these values. The configuration metadata,
+which may be provided in an XML file, are as follows:<ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">HTTP-Redirect URL (corresponds to IdP Host URL, IdP Host Port,
+and IdP Login Path properties)</p></li><li class="- topic/li "><p class="- topic/p ">IdP Cert</p></li></ul></p><p class="- topic/p ">Since SAML is an open standard, a number of third-party
+SAML Servers are available (i.e. OpenAM, Salesforce, etc.). </p></li><li class="- topic/li "><p class="- topic/p ">You have provided the IdP SAML server administrator with an
+XML file containing your station’s SP metadata and SAML public certificate.
+The SP metadata typically include the SP “Entity ID” and the “Assertion
+Consumer Service”. The IdP needs these metadata to uniquely identify
+the SP and validate the messages sent by the station.</p> <p class="- topic/p ">The Entity
+ID is a unique name that you choose as an SP, usually a URL. For example,
+the Entity ID typically is something like this: <codeph class="+ topic/ph pr-d/codeph ">https://controller.domain.com:portNumber/saml</codeph>, where you would use your controller’s hostname. A port number is
+required. The “Assertion Consumer Service” would be another URL, for
+example: <codeph class="+ topic/ph pr-d/codeph ">https://controller.domain.com:portNumber/saml/assertionConsumerService</codeph>, again using your controller’s hostname. Once you have generated
+your SP metadata, save it in XML format and share the file with the
+IdP SAML server administrator. </p></li><li class="- topic/li "><p class="- topic/p ">You have already created an Alternate Default Prototype for
+SAML authentication using the UserPrototype component in the <apiname class="+ topic/keyword pr-d/apiname ">baja</apiname> palette. This UserPrototype is required for SAML authentication. </p></li></ul></prereq><context class="- topic/section task/context "/><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the Nav tree, expand the station’s <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">AuthenticationService</uicontrol></menucascade> node and drag the <uicontrol class="+ topic/ph ui-d/uicontrol ">SAMLAuthenticationScheme</uicontrol> component from the <apiname class="+ topic/keyword pr-d/apiname ">saml</apiname> palette onto the <uicontrol class="+ topic/ph ui-d/uicontrol ">AuthenticationSchemes</uicontrol> folder.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the <wintitle class="+ topic/keyword ui-d/wintitle ">Name</wintitle> window, enter a name (or
+use the default text) and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Expand <uicontrol class="+ topic/ph ui-d/uicontrol ">AuthenticationSchemes</uicontrol> and
+double-click on the <uicontrol class="+ topic/ph ui-d/uicontrol ">SAMLAuthenticationScheme</uicontrol> to open the <wintitle class="+ topic/keyword ui-d/wintitle ">Property Sheet</wintitle> view.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Enter values for the following properties:</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">On completion, click <uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol>.</cmd><substeps class="- topic/ol task/substeps "><substep class="- topic/li task/substep "><cmd class="- topic/ph task/cmd ">For <parmname class="+ topic/keyword pr-d/parmname ">Login Button Text</parmname> enter the
+preferred text label for the SSO login button that appears on the<wintitle class="+ topic/keyword ui-d/wintitle ">Login</wintitle> window.</cmd></substep><substep class="- topic/li task/substep "><cmd class="- topic/ph task/cmd ">For <parmname class="+ topic/keyword pr-d/parmname ">IdP Host URL</parmname> enter the host
+of your Identity Provider (obtained from IdP admin).</cmd></substep><substep class="- topic/li task/substep "><cmd class="- topic/ph task/cmd ">For <parmname class="+ topic/keyword pr-d/parmname ">IdP Host Port</parmname> enter the port
+number of your Identity Provider (obtained from IdP admin).</cmd></substep><substep class="- topic/li task/substep "><cmd class="- topic/ph task/cmd ">For <parmname class="+ topic/keyword pr-d/parmname ">IdP Login Path</parmname> enter the location
+on the Identity Provider to which you must navigate to trigger the
+SAML authentication (obtained from IdP admin).</cmd></substep><substep class="- topic/li task/substep "><cmd class="- topic/ph task/cmd ">For <parmname class="+ topic/keyword pr-d/parmname ">IdP Cert</parmname> enter the certificate
+used to encrypt messages sent to the IdP, and to validate messages
+signed by the IdP (obtained from IdP admin).</cmd></substep><substep class="- topic/li task/substep "><cmd class="- topic/ph task/cmd ">For <parmname class="+ topic/keyword pr-d/parmname ">SAML Server Cert</parmname> enter the
+certificate used by the station to sign the messages being sent back
+to the IdP, and decrypt messages sent by the IdP.</cmd><info class="- topic/itemgroup task/info "><note class="- topic/note ">For the IdP to read and validate the messages sent by
+the station, the certificate with its public key must be provided
+to the IdP SAML server administrator as well.</note></info></substep></substeps></step></steps></taskbody></task>

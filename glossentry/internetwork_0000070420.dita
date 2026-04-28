@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="Internetwork-8664711A" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry ">
+<glossterm class="- topic/title concept/title glossentry/glossterm ">internetwork</glossterm>
+<glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">To be read: inter-network. Two or more BACnet networks connected
+by a BACnet router, or essentially “everything on your site
+that can be accessed via BACnet.”<p class="- topic/p ">The single <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetNetwork</uicontrol> in a station often represents an internetwork if any external BACnet
+routers exist or if it has multiple ports under its <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetComm</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Network</uicontrol>
+</menucascade> component. If the latter, the station can act as a
+BACnet router among its local networks.</p><p class="- topic/p ">In a BACnet internetwork,
+each network must have a unique <parmname class="+ topic/keyword pr-d/parmname ">Network Number</parmname>, from 0 to 65534. Each device must have a unique <parmname class="+ topic/keyword pr-d/parmname ">Object
+Id</parmname>, from 0 to 4194302.</p></glossdef>
+</glossentry>

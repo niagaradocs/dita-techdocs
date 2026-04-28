@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="OpcUaServerTasksOPCUA-D3DAF77D" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">OPC UA server tasks</title>
+<shortdesc class="- topic/shortdesc ">Setting up an OPC UA server involves configuring properties,
+adding server points with alarm and history extensions, and configuring
+OPC UA client users.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">server<indexterm class="- topic/indexterm ">setting up</indexterm></indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "/>
+</refbody>
+</reference>

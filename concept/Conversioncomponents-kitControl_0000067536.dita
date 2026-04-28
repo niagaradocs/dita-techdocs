@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="ConversionComponents-268B4DEA" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Conversion components</title>
+<shortdesc class="- topic/shortdesc ">Components include services, folders and other model building
+blocks associated with a module. You may drag them to a property or
+wire sheet from a palette. In most cases, a conversion object takes
+an input value and makes it available in the object’s output
+as a different type of data. Prior to AX-3.6, they typically served
+to link different data types. This functionality is now standard,
+which means that for most applications you do not need a conversion
+component. Instead, the framework automatically converts data type
+between linked components.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">conversion components</indexterm>
+</keywords></metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">The descriptions included in the following topics appear as headings
+in documentation. They also appear as context-sensitive help topics
+when accessed by:<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Right-clicking on the object and selecting <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Views</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Guide Help</uicontrol>
+</menucascade></p></li>
+<li class="- topic/li "><p class="- topic/p ">Clicking <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Help</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Guide On Target</uicontrol></menucascade></p></li>
+</ul></p>
+</conbody>
+</concept>

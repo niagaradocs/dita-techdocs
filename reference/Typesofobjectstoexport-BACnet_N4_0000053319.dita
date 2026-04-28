@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="TypesOfObjectsToExportBACnet-540D731F" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Types of objects to export</title>
+<shortdesc class="- topic/shortdesc ">To export components you use the <uicontrol class="+ topic/ph ui-d/uicontrol ">Export Table</uicontrol>’s <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet Export Manager</wintitle> view. To export
+files, you use the <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet File Export Manager</wintitle> view. To export histories you use the <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet Niagara Log
+Export Manager</wintitle> view.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">objects to export</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><table id="ID-table-00000001" class="- topic/table ">
+<title id="ID-000000c0" class="- topic/title ">Objects for export as BACnet objects</title>
+<tgroup cols="3" class="- topic/tgroup "><colspec colname="C1" colwidth="1.72in" class="- topic/colspec "/><colspec colname="C2" colwidth="1.60in" class="- topic/colspec "/><colspec colname="C3" colwidth="2.38in" class="- topic/colspec "/>
+<thead class="- topic/thead ">
+<row class="- topic/row ">
+<entry colname="C1" class="- topic/entry ">Station component, file, or history type</entry>
+<entry colname="C2" class="- topic/entry ">BACnet object choices</entry>
+<entry colname="C3" class="- topic/entry ">Notes</entry>
+</row>
+</thead>
+<tbody class="- topic/tbody ">
+<row class="- topic/row ">
+<entry colname="C1" class="- topic/entry ">Alarm Class</entry>
+<entry colname="C2" class="- topic/entry ">Notification Class</entry>
+<entry colname="C3" class="- topic/entry ">Alarm Class components (under the station’s
+AlarmService) export as BACnet Notification Class objects.</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">String Point, String Writable</entry>
+<entry class="- topic/entry ">String Input</entry>
+<entry class="- topic/entry ">Proxy points under any BACnet driver are supported. </entry>
+</row>
+<row class="- topic/row ">
+<entry colname="C1" morerows="1" class="- topic/entry ">BooleanPoint, BooleanWritable, various
+kitControl components (that is, Logic), which have a null ProxyExt.</entry>
+<entry colname="C2" class="- topic/entry ">Binary Input</entry>
+<entry colname="C3" morerows="3" class="- topic/entry ">Proxy points under any driver are
+supported.<p class="- topic/p ">Acceptable kitcontrol components to export include all
+Logic components. Typically, you export these as value-type objects
+(Analog Value, Binary Value, Multistate Value). </p></entry>
+</row>
+<row class="- topic/row ">
+<entry colname="C2" class="- topic/entry ">Binary Value</entry>
+</row>
+<row class="- topic/row ">
+<entry colname="C1" morerows="1" class="- topic/entry ">BooleanWritable (additional choices)</entry>
+<entry colname="C2" class="- topic/entry ">Binary Output</entry>
+</row>
+<row class="- topic/row ">
+<entry colname="C2" class="- topic/entry ">Binary Value Prioritized</entry>
+</row>
+<row class="- topic/row ">
+<entry colname="C1" morerows="1" class="- topic/entry ">EnumPoint, EnumWritable</entry>
+<entry colname="C2" class="- topic/entry ">Multi State Input</entry>
+<entry colname="C3" morerows="3" class="- topic/entry ">Proxy points under any driver are
+supported. The facets, range, ordinal (integer) in the exported EnumPoint
+or EnumWritable must begin with 1, and not 0. The range must also
+be contiguous up to the maximum value (gaps in the range are not allowed).Otherwise,
+the object does not export to BACnet.</entry>
+</row>
+<row class="- topic/row ">
+<entry colname="C2" class="- topic/entry ">Multi State Value</entry>
+</row>
+<row class="- topic/row ">
+<entry colname="C1" morerows="1" class="- topic/entry ">EnumWritable (additional choices)</entry>
+<entry colname="C2" class="- topic/entry ">Multi State Output</entry>
+</row>
+<row class="- topic/row ">
+<entry colname="C2" class="- topic/entry ">Multi State Value Prioritized</entry>
+</row>
+<row class="- topic/row ">
+<entry colname="C1" morerows="1" class="- topic/entry ">NumericPoint, NumericWritable, various
+kitControl components (that is, Math)</entry>
+<entry colname="C2" class="- topic/entry ">Analog Input</entry>
+<entry colname="C3" morerows="3" class="- topic/entry ">Proxy points under any driver are
+supported. Acceptable kitcontrol components to export include all
+Math components.</entry>
+</row>
+<row class="- topic/row ">
+<entry colname="C2" class="- topic/entry ">Analog Value</entry>
+</row>
+<row class="- topic/row ">
+<entry colname="C1" morerows="1" class="- topic/entry ">NumericWritables (additional choices)</entry>
+<entry colname="C2" class="- topic/entry ">Analog Output</entry>
+</row>
+<row class="- topic/row ">
+<entry colname="C2" class="- topic/entry ">Analog Value Prioritized</entry>
+</row>
+<row class="- topic/row ">
+<entry colname="C1" morerows="2" class="- topic/entry ">LoopPoint</entry>
+<entry colname="C2" class="- topic/entry ">Loop</entry>
+<entry colname="C3" morerows="2" class="- topic/entry ">Loop object export is default. You
+can export a LoopPoint as a BACnet Loop object.</entry>
+</row>
+<row class="- topic/row ">
+<entry colname="C2" class="- topic/entry ">Analog Input</entry>
+</row>
+<row class="- topic/row ">
+<entry colname="C2" class="- topic/entry ">Analog Value</entry>
+</row>
+<row class="- topic/row ">
+<entry colname="C1" class="- topic/entry ">BooleanSchedule, EnumSchedule, NumericSchedule,
+StringSchedule</entry>
+<entry colname="C2" class="- topic/entry ">Schedule</entry>
+<entry colname="C3" morerows="1" class="- topic/entry "><p class="- topic/p ">In addition, you can selectively
+export the configuration of a standard schedule or calendar into an
+existing Schedule object or Calendar object in a client BACnet device,
+using the Bacnet Schedule Export Manager view of that BacnetDevice’s
+Schedules extension.</p><p class="- topic/p ">You cannot export a TriggerSchedule because
+BACnet has no object equivalent.</p></entry>
+</row>
+<row class="- topic/row ">
+<entry colname="C1" class="- topic/entry ">CalendarSchedule</entry>
+<entry colname="C2" class="- topic/entry ">Calendar</entry>
+</row>
+<row class="- topic/row ">
+<entry colname="C1" class="- topic/entry ">&lt;file&gt; (any)</entry>
+<entry colname="C2" class="- topic/entry ">File</entry>
+<entry colname="C3" class="- topic/entry ">Files under the station folder can be exported.</entry>
+</row>
+<row class="- topic/row ">
+<entry colname="C1" class="- topic/entry ">&lt;history&gt; (any)</entry>
+<entry colname="C2" class="- topic/entry ">Trend Log</entry>
+<entry colname="C3" class="- topic/entry ">Two different methods exist for exporting histories. </entry>
+</row>
+</tbody>
+</tgroup>
+</table></section>
+</refbody>
+</reference>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="ImportingTheSignedCertificatesBACne-1797F87A" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Importing the signed certificates</title>
+<shortdesc class="- topic/shortdesc ">Signing a certificate creates a .pem file, which is only
+intended for importing back into the <wintitle class="+ topic/keyword ui-d/wintitle ">User Key Store</wintitle> that contains the original certificate with the matching private
+key. For operational certificates, this is the platform/station <wintitle class="+ topic/keyword ui-d/wintitle ">User Key Store</wintitle> that originally created the certificate
+and CSR.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">certificate<indexterm class="- topic/indexterm ">importing signed
+into the User Key Store</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "/>
+<vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq ">You have the signed .pem file(s). The platform/station <wintitle class="+ topic/keyword ui-d/wintitle ">User Key Store</wintitle> is open.</prereq>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Click <uicontrol class="+ topic/ph ui-d/uicontrol ">Import</uicontrol>.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Using the <wintitle class="+ topic/keyword ui-d/wintitle ">Certificate Import</wintitle> browser,
+locate and select the signed certificate's .pem file and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Open</uicontrol>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Certificate Import</wintitle> window opens.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Confirm that you are importing the correct certificate
+and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult "><p class="- topic/p ">If the <systemoutput class="+ topic/ph sw-d/systemoutput ">Alias</systemoutput> of the certificate
+you are importing is not the same as the <systemoutput class="+ topic/ph sw-d/systemoutput ">Alias</systemoutput> of the certificate you are replacing, the system prompts you for
+the <systemoutput class="+ topic/ph sw-d/systemoutput ">Alias</systemoutput> of the certificate to replace.</p></stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">If needed, enter the <parmname class="+ topic/keyword pr-d/parmname ">Alias</parmname> and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The green shield icon (<image href="../graphic/IconGreenShield_0000040200.png" scale="85" class="- topic/image "/>) replaces
+the yellow shield icon (<image href="../graphic/iconExclamation_0000040180.png" scale="85" class="- topic/image "/>) next to the certificate <systemoutput class="+ topic/ph sw-d/systemoutput ">Alias</systemoutput> in the <wintitle class="+ topic/keyword ui-d/wintitle ">User Key Store</wintitle> tab.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Using the operating system, delete the .pem file(s) from
+the secure computer.</cmd></step>
+</steps>
+</taskbody>
+</task>

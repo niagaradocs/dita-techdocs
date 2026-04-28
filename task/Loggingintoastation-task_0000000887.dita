@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="auth_LoggingInAndOut" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Logging on to a station</title><shortdesc class="- topic/shortdesc ">Using TLS, a secure communication session is established
+before the system asks for your user credentials. When you log on
+using the station Authentication window, the system confirms your
+identity, which determines your Nav tree configuration and the components
+you have permission to access. The system is designed to require minimum
+interaction while providing a secure connection and ensuring authorized
+access.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">station<indexterm class="- topic/indexterm ">logging on</indexterm></indexterm><indexterm class="- topic/indexterm ">station<indexterm class="- topic/indexterm ">logging off</indexterm></indexterm><indexterm class="- topic/indexterm ">audit log</indexterm><indexterm class="- topic/indexterm ">authentication<indexterm class="- topic/indexterm ">audit log</indexterm></indexterm></keywords><prodinfo class="- topic/prodinfo "><prodname class="- topic/prodname "/><vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist></prodinfo></metadata></prolog><taskbody class="- topic/body task/taskbody "><prereq class="- topic/section task/prereq ">An authentication scheme has been assigned to each user, and
+a user name and password created.</prereq><context class="- topic/section task/context ">This procedure demonstrates user authentication using the
+default DigestScheme.</context><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Open the station.</cmd><stepresult class="- topic/itemgroup task/stepresult "><p class="- topic/p ">The system opens a station <wintitle class="+ topic/keyword ui-d/wintitle ">Connect</wintitle> window.</p><p class="- topic/p ">This window initiates the
+process of verifying the server.</p></stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Enter the IP address or confirm the default address and
+click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd><info class="- topic/itemgroup task/info "> If no matching root CA certificate can be found in the client’s
+System or User Trust Stores, the system presents a default certificate
+for your approval.</info></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">If you are presented with a certificate, make sure you
+recognize the certificate’s <parmname class="+ topic/keyword pr-d/parmname ">Issued By</parmname> and <parmname class="+ topic/keyword pr-d/parmname ">Subject</parmname> properties.</cmd><info class="- topic/itemgroup task/info "><note type="caution" class="- topic/note ">Do not approve a certificate if you do
+not recognize these properties. The weakest link in the security chain
+is the user who simply clicks OK without thinking.</note></info><stepresult class="- topic/itemgroup task/stepresult "><p class="- topic/p ">The system displays the station <wintitle class="+ topic/keyword ui-d/wintitle ">Authentication</wintitle> window.</p></stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">If you are logging on for the first time, enter your user
+name.</cmd><info class="- topic/itemgroup task/info ">Stations can have many authentication schemes. The first time
+you log on to a new station the system allows you to enter the <parmname class="+ topic/keyword pr-d/parmname ">Username</parmname>. It uses this information to determine what authentication
+scheme to use. After that initial logon, you cannot change the user
+because another user may use a different scheme with different credential
+requirements. The <systemoutput class="+ topic/ph sw-d/systemoutput ">Change User</systemoutput> link provides
+a way for a different user with a different authentication scheme
+to log on.</info></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To change to a different user, click the <systemoutput class="+ topic/ph sw-d/systemoutput ">Change User</systemoutput> link and enter a different name.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Enter your station password, select <parmname class="+ topic/keyword pr-d/parmname ">Remember
+these credentials</parmname> and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd><info class="- topic/itemgroup task/info ">When you select the <option class="+ topic/keyword pr-d/option ">Remember these credentials</option> check box, the system saves the last user name and password you
+entered and defaults to them the next time you log on.</info></step></steps><result class="- topic/section task/result ">This procedure establishes a secure TLS connection to the
+station using the Foxs protocol over port 4911 (this is the default
+port).<p class="- topic/p ">The default logon threshold is five attempts. If you make
+five unsuccessful attempts to log in during a 30-second period the
+system locks you out for 10 seconds. You may change the logon threshold
+in the <apiname class="+ topic/keyword pr-d/apiname ">UserService</apiname>.</p><p class="- topic/p ">To log off, close <keyword conkeyref="wh_variables_n4/Workbench" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword "/> or the browser.</p><p class="- topic/p ">Each authentication scheme supports
+its own audit log, including saving date, user, and event. This information
+is written to the AuditHistory in the following location: <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Station</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">History</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">&lt;station name&gt;</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">AuditHistory</uicontrol></menucascade>. Permission must be assigned to this file in the <apiname class="+ topic/keyword pr-d/apiname ">RoleService</apiname> to grant a user access to view it.</p></result></taskbody></task>

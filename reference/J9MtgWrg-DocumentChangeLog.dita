@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--Arbortext, Inc., 1988-2019, v.4002--><?Pub UDT template _font?><reference id="DocumentChangeLog-JACE8000Startup" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Document change log</title>
+<shortdesc class="- topic/shortdesc ">Updates (changes and additions) to this document are listed
+below.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata ">
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "><keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/></prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="4.13" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">document change log</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><title class="- topic/title ">June 7, 2024</title><?Pub Caret 6?><p class="- topic/p ">Initial release
+publication.</p></section>
+</refbody>
+</reference>

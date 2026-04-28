@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="PreparingToCommissionTheController-30E18F53" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Preparing to commission the controller</title><shortdesc class="- topic/shortdesc ">To commission a new controller requires a connection using
+an Ethernet patch cable and TCP/IP configuration.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">controller<indexterm class="- topic/indexterm ">prepare to commission</indexterm></indexterm></keywords></metadata></prolog><taskbody class="- topic/body task/taskbody "><prereq class="- topic/section task/prereq ">You have installed a version of  <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> on the PC including its permanent license. The license
+file for the controller is on the licensing server and you have Internet
+access or you received the license via email and copied the file to
+the license inbox.</prereq><context class="- topic/section task/context "/><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Mount the controller on a rack or table in your office
+near your PC.</cmd><info class="- topic/itemgroup task/info ">Please refer to the wiring details in the appropriate controller <cite class="- topic/cite "><ph conkeyref="doctitles_coresw/JACE-9000MtgWrgGuide" class="- topic/ph "/></cite> for information on temporary power wiring and Ethernet
+wiring connections.<note type="caution" class="- topic/note ">The <ph conkeyref="host_models/nc9000" class="- topic/ph "/> is not compatible with a Power-Over-Ethernet (POE) network.
+Connecting the controller on a network segment which carries power
+causes the unit to fail (lockup). In that event, you must disconnect
+it from the POE network segment and cycle power to the unit.</note><?Pub Caret 0?></info></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Attach one end of a standard category-5 Ethernet unshielded
+twisted pair (UTP) patch cable to the RJ-45 Ethernet connector for
+LAN1 (labeled PRI) on the <ph conkeyref="host_models/nc9000" class="- topic/ph ">nc</ph>.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Attach the other end of the patch cable to a network port
+or directly to an Ethernet hub.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Power up the controller.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Do one of the following:</cmd><choices class="- topic/ul task/choices "><choice class="- topic/li task/choice ">Record your PC’s current IP settings, then re-assign your
+PC’s IP address for its Ethernet NIC (network interface card). If
+necessary, refer to Windows online Help for details on configuring
+TCP/IP settings.</choice><choice class="- topic/li task/choice ">Obtain a USB-to-Ethernet network adapter (second network interface
+card, or NIC), and use it with an Ethernet crossover cable to commission
+the controller. In this case, configure this second NIC to use the
+settings in the remainder of this step.<p class="- topic/p ">Use a serial shell mode
+connection to the controller to re-assign its factory IP address settings.
+After making this change and rebooting the controller, you can continue
+commissioning using <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/>. This requires a USB-to-USB-C adapter cable,
+VCP driver, and a special power-up mode for the controller.</p><p class="- topic/p ">VCP (Virtual COM Port) drivers cause a USB device to be shown as
+an additional COM port available to the PC. Using terminal emulation
+software, such as PuTTY or ClearTerminal, the PC can access the USB
+device in the same way as it would access a standard COM port. VCP
+driver downloads are available at www.ftdichip.com and other sites.</p></choice></choices></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">For this initial connection to a factory-shipped <ph conkeyref="host_models/nc9000" class="- topic/ph "/>, configure your PC’s NIC to use an
+IP address in the same subnet as the <ph conkeyref="host_models/nc9000" class="- topic/ph ">nc</ph>, as well as a matching subnet mask.</cmd><info class="- topic/itemgroup task/info "><p class="- topic/p ">Set the IP address in the range: <userinput class="+ topic/ph sw-d/userinput ">192.168.1.1 </userinput> to <userinput class="+ topic/ph sw-d/userinput ">192.168.1.254</userinput>.</p><p class="- topic/p ">With a subnet mask
+of <userinput class="+ topic/ph sw-d/userinput ">255.255.255.0</userinput>.</p><note type="note" class="- topic/note ">Do not
+assign your PC the identical IP address as the <ph conkeyref="host_models/nc9000" class="- topic/ph ">nc</ph>’s factory-assigned IP address.</note></info></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">From your PC, start <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/>.</cmd><stepresult class="- topic/itemgroup task/stepresult ">The Nav tree should be visible in the side bar area (left
+pane).</stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">If the Nav tree is not visible, from the menu bar, select <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Window</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Side Bars</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol "> Nav</uicontrol></menucascade>.</cmd></step></steps></taskbody></task>

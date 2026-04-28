@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!--Arbortext, Inc., 1988-2019, v.4002--><map xml:lang="en" class="- map/map ">
+<title class="- topic/title ">Components in the bacnetOws module</title>
+<topicref format="dita" href="../reference/ComponentsinthebacnetOwsmodule_N4_0000053304.dita" navtitle="Components in the bacnetOws module" scope="local" type="reference" class="- map/topicref ">
+<topicref format="dita" href="../reference/BacnetOwsNetwork-BACnet_N4_0000053364.dita" navtitle="BacnetOwsNetwork (bacnetOws-BacnetOwsNetwork)" scope="local" type="reference" class="- map/topicref ">
+<topicref format="dita" href="../reference/LocalDevice-BacnetOws_N4_0000053356.dita" navtitle="Local Device (bacnetOws-LocalBacnetOwsDevice)" scope="local" type="reference" class="- map/topicref "/>
+</topicref>
+<topicref format="dita" href="../reference/BacnetOwsDeviceFolder-BACnet_N4_0000053333.dita" navtitle="BacnetOwsDeviceFolder (bacnetOws-BacnetOwsDeviceFolder)" scope="local" type="reference" class="- map/topicref "/>
+</topicref>
+</map><?Pub Caret -2?>

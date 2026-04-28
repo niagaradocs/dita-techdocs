@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="BBMD-8A77D9EB" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry "><glossterm class="- topic/title concept/title glossentry/glossterm ">BBMD</glossterm><glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">BACnet Broadcast Management Device is a device that receives
+and redistributes broadcast type BACnet messages (Who-Is, I-Am, etc.)
+to other B/IP devices on its own subnet and sends broadcasttype messages
+to BBMDs on other subnets. By having one BBMD on each subnet, a B/IP
+network can span subnets (between IP routers, which otherwise typically
+block broadcast type messages). A station supports operation as a
+BBMD.</glossdef></glossentry>

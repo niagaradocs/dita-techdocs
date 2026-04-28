@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="auth_Troubleshooting" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">User authentication troubleshooting</title>
+<shortdesc class="- topic/shortdesc ">Once authentication is configured and passwords assigned,
+very little can go wrong.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">password<indexterm class="- topic/indexterm ">troubleshooting</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "/>
+<vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p "><b class="+ topic/ph hi-d/b ">I am attempting to set up new users using a browser,
+and the <uicontrol class="+ topic/ph ui-d/uicontrol ">New</uicontrol> button is not available.</b></p><p class="- topic/p ">This is a security control. Most likely the <parmname class="+ topic/keyword pr-d/parmname ">Secure Only
+Password Set</parmname> is on (set to <option class="+ topic/keyword pr-d/option ">true</option>), and
+you have made a regular connection (http) to the platform/station.
+When a secure connection is required, you must make a secure connection
+(https) to the platform/station to set the password.</p><p class="- topic/p "><b class="+ topic/ph hi-d/b ">My credentials
+were working, but they no longer allow me to log in.</b></p><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Your password may have expired.</p></li>
+<li class="- topic/li "><p class="- topic/p ">You may not have permission to access this station. Check with
+your manager.</p></li>
+<li class="- topic/li "><p class="- topic/p ">The credentials cache may have become corrupted causing the
+saved credentials to no longer work. Clear the <option class="+ topic/keyword pr-d/option ">Remember these
+credentials</option> check box, re-type the password or clear your
+computer’s cache.</p></li>
+<li class="- topic/li "><p class="- topic/p ">There is a problem with the configuration of the authentication
+scheme. For example, if you are using the LDAP scheme, the port is
+blocked by a firewall or the wrong LDAP host name or port has been
+configured. Refer to the documentation for the LDAP scheme.</p></li>
+</ul></section>
+</refbody>
+</reference>

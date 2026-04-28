@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="OpcUaReference-D3DBE7A9" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Opc Ua Reference</title>
+<shortdesc class="- topic/shortdesc ">The following topics provide conceptual information on
+the OPC UA security architecture, including descriptions of the security
+policies, security mode, security profiles and user authentication.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm "/></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">Also covered is information on point type and facet mapping,
+server alarm processing and alarm acknowledgment processing, links
+for third-party simulation software, as well as descriptions of the
+components and views present in the <apiname class="+ topic/keyword pr-d/apiname ">opcUaServer</apiname> and <apiname class="+ topic/keyword pr-d/apiname ">opcUaClient</apiname> modules.</p></section>
+</refbody>
+</reference>

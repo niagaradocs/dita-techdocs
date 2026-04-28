@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="BACnet-B103659B" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry ">
+<glossterm class="- topic/title concept/title glossentry/glossterm ">BACnet</glossterm>
+<glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">Building Automation and Control NETworking protocol (ANSI/ASHRAE
+Standard 135- 2004) is an open communication protocol standard conceived
+by a consortium of manufacturers and system users under the auspices
+of ASHRAE. BACnet modles data a common set of objects, which can accessed
+using a standard set of services.</glossdef>
+</glossentry>

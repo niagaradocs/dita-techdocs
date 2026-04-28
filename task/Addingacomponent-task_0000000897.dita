@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="role_AddingANewComponent" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Adding a component</title>
+<shortdesc class="- topic/shortdesc ">Adding a component to your building model involves dragging
+the component from a palette, possibly setting the <wintitle class="+ topic/keyword ui-d/wintitle ">Config
+Flag</wintitle> on the component slot, and configuring the component
+to assign it to a category. A component may be a new network, device
+or service.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">component<indexterm class="- topic/indexterm ">adding a component</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "/>
+<vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq "><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">If required, you have a license to add the component to your
+model.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Any categories, roles (permissions) to assign to the component
+have been set up.</p></li>
+<li class="- topic/li "><p class="- topic/p ">The users who will access the component exist in the system.</p></li>
+</ul></prereq>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Open the palette that contains the component module.</cmd>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Expand the Nav tree to view the <uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol> or <uicontrol class="+ topic/ph ui-d/uicontrol ">Drivers</uicontrol> container.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Do one of the following:</cmd>
+<choices class="- topic/ul task/choices ">
+<choice class="- topic/li task/choice ">Drag the component from the palette to the <wintitle class="+ topic/keyword ui-d/wintitle ">Property
+Sheet</wintitle> or <wintitle class="+ topic/keyword ui-d/wintitle ">Driver Manager</wintitle>.</choice>
+<choice class="- topic/li task/choice ">Drag the component  to the appropriate <uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol> or <uicontrol class="+ topic/ph ui-d/uicontrol ">Driver</uicontrol> container in the Nav tree</choice>
+</choices>
+<stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Name</wintitle> window opens.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Change the name of the component, or use the default name
+and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">If you need to configure the permission level for the new
+component slot, right-click the component in the Nav tree and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Slot Sheet</uicontrol>, then right-click the slot and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Config Flags</uicontrol>.</cmd>
+<info class="- topic/itemgroup task/info "><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Leave the <option class="+ topic/keyword pr-d/option ">Operator</option> config flag unchecked for
+the <systemoutput class="+ topic/ph sw-d/systemoutput ">admin</systemoutput> permission level (this level
+allows read and write access).</p></li>
+<li class="- topic/li "><p class="- topic/p ">Toggle this flag (checked) for the <systemoutput class="+ topic/ph sw-d/systemoutput ">operator</systemoutput> permission level (this level restricts user access to a minimum
+of read-only permission).</p></li>
+</ul></info>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To assign the component to a category, do one of the following:</cmd>
+<choices class="- topic/ul task/choices ">
+<choice class="- topic/li task/choice ">Add the component to the category using the <uicontrol class="+ topic/ph ui-d/uicontrol ">Category
+Browser</uicontrol>.</choice>
+<choice class="- topic/li task/choice ">Add the component  to the category using the component’s <uicontrol class="+ topic/ph ui-d/uicontrol ">Category Sheet</uicontrol>. </choice>
+</choices>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">If you created a new basic category, update the role assigned
+to users of this component to include permissions for the new component,
+otherwise confirm that the role includes the category.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Confirm that component <uicontrol class="+ topic/ph ui-d/uicontrol ">Status</uicontrol> is <userinput class="+ topic/ph sw-d/userinput ">{ok}</userinput>.</cmd></step>
+</steps>
+<result class="- topic/section task/result ">You are ready to configure the component.</result>
+</taskbody>
+</task>

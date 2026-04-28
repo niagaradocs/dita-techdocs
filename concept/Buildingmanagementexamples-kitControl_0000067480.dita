@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="BuildingManagementExamples-28316FA3" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Building management examples</title>
+<shortdesc class="- topic/shortdesc ">The kitControl components facilitate the flexible modeling
+of building automation systems. This chapter provides practical examples
+to help you creatively construct an efficient model for your application.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">building management examples</indexterm>
+</keywords></metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p "/>
+</conbody>
+</concept>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="PlatformConnectWindow" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Platform Connect</title>
+<shortdesc class="- topic/shortdesc "><!--Appears in both Getting Started and Station Security Guide-->This
+window opens when you open a platform (supervisor PC or controller).</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">platform<indexterm class="- topic/indexterm ">connect window</indexterm></indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><fig class="- topic/fig ">
+<title class="- topic/title ">Platform connect window</title>
+<image href="../graphic/platformconnect_nologo_0000018448.png" placement="break" scale="65" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Name</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Type</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">drop-down list (defaults to <option class="+ topic/keyword pr-d/option ">Platform TLS Connection</option>.)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Selects the type of connection, standard or TLS secure.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Host (type)</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">type drop-down box and chooser (defaults to <option class="+ topic/keyword pr-d/option ">IP</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Identifies the platform.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">IP address</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">IP address</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Identifies the IP address or URL of the host platform.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Port </proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number (defaults to 5011)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Identifies the port for secure platform communication.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

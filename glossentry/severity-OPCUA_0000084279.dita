@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="Namespace-9F8F96EE" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry ">
+<glossterm class="- topic/title concept/title glossentry/glossterm ">severity</glossterm>
+<glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">In OPC UA, alarm severity is specified by an integer range
+between 1 and 1000. An alarm severity map assigns a level of urgency
+to each alarm event. An event that transitions: <ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">To Offnormal is urgent. By default it receives a severity index
+of 700.</p></li>
+<li class="- topic/li "><p class="- topic/p ">To Fault is the most urgent. By default it receives a severity
+index of 900.</p></li>
+<li class="- topic/li "><p class="- topic/p ">To Normal is the least urgent. By default it receives a severity
+index of 500.</p></li>
+<li class="- topic/li "><p class="- topic/p ">To Alert is moderately urgent. By default it receives a severity
+index of 600.</p></li>
+</ul><p class="- topic/p ">You can configure the severity index for each level of urgency.</p></glossdef>
+</glossentry>

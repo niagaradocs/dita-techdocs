@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="SecurityDashboardFeature-007FA7BB" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">Security Dashboard overview</title><shortdesc class="- topic/shortdesc ">In <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/>, the Security Dashboard feature provides (for admin and
+other authorized users) a bird’s eye view of the security configuration
+of your station. This allows you to easily monitor the security configuration
+in many station services, and identify any security configuration
+weaknesses on the station.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Security Dashboard<indexterm class="- topic/indexterm ">overview</indexterm></indexterm></keywords></metadata></prolog><conbody class="- topic/body  concept/conbody "><note conref="../reuse/WH-guide-General_0000048987.dita#descGen/securityDashbd-Caution" class="- topic/note "/><p class="- topic/p ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Security Dashboard</wintitle> view is the default
+view on the station’s <uicontrol class="+ topic/ph ui-d/uicontrol ">SecurityService</uicontrol>. It alerts
+you to security weaknesses such as the following: <ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">poor password strength settings</p></li><li class="- topic/li "><p class="- topic/p ">expired, self-signed, unobtained,  invalid certificates, or    certificates with incomplete chain (also see "<i class="+ topic/ph hi-d/i ">Viewing incomplete certificates on Security Dashboard</i>") </p></li><li class="- topic/li "><p class="- topic/p ">unencrypted transport protocols indicating areas where the
+configuration should be more secure</p></li></ul>Other reported data include: <ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">system health</p></li><li class="- topic/li "><p class="- topic/p ">information on certificate usage and associated security warnings,
+for example, certificates that are not encrypted with a unique password</p></li><li class="- topic/li "><p class="- topic/p ">number of active accounts</p></li><li class="- topic/li "><p class="- topic/p ">inactive accounts</p></li><li class="- topic/li "><p class="- topic/p ">number of accounts with super-user permissions</p></li></ul>Optionally, you may set the <parmname class="+ topic/keyword pr-d/parmname ">System</parmname> attribute
+on the <wintitle class="+ topic/keyword ui-d/wintitle ">Security Dashboard</wintitle> license feature to <option class="+ topic/keyword pr-d/option ">true</option>. This setting enables the <wintitle class="+ topic/keyword ui-d/wintitle ">System View</wintitle> of the station that provides security details for each subordinate
+station in the <uicontrol class="+ topic/ph ui-d/uicontrol ">NiagaraNetwork</uicontrol>.</p><?Pub Caret 44?><p class="- topic/p ">The summary pane in the upper left corner of the view summarizes
+the number and type of security status messages that each station
+service generates. Each pane in the view provides security configuration
+data for a particular service. Typically, this includes a hyperlink
+to the service (or to a component) so that you can easily change a
+configuration. <ph conref="../reuse/WH-guide-General_0000048987.dita#descGen/securityDashbd-noLink" class="- topic/ph "/></p></conbody></concept>

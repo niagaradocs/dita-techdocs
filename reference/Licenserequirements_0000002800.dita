@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="LicenseRequirements-474FC1B4" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">License requirements</title><shortdesc class="- topic/shortdesc "/><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Tagging<indexterm class="- topic/indexterm ">license requirements</indexterm></indexterm></keywords></metadata><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo "><prodname class="- topic/prodname "/><vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist></prodinfo></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p ">The <uicontrol class="+ topic/ph ui-d/uicontrol ">tags</uicontrol> license is required to
+use the <apiname class="+ topic/keyword pr-d/apiname ">TagDictionaryService</apiname> and tag dictionaries
+on a station. The <parmname class="+ topic/keyword pr-d/parmname ">Dictionary.limit</parmname> attribute
+limits the number of tag dictionaries available for the system. Any
+dictionaries added above the limit for the license will be in fault.
+When a dictionary is in fault, the tags in that dictionary are not
+available in the <wintitle class="+ topic/keyword ui-d/wintitle ">Edit Tags</wintitle> dialog. By default,
+you are limited to the first two tag dictionaries. However, the <parmname class="+ topic/keyword pr-d/parmname ">Dictionary.limit</parmname> attribute is configurable on the license
+in the same manner as are device limits. </p><p class="- topic/p ">For more licensing
+information, see licensing topics in the <ph conkeyref="doctitles_coresw/PlatformGuide-A0F6B991" class="- topic/ph "/>. </p></section></refbody></reference>

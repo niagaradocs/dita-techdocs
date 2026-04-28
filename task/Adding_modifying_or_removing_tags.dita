@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task-1205" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Adding, modifying, or removing tags</title><shortdesc class="- topic/shortdesc ">If you wish to create a customized version of the Haystack
+tag dictionary, you can create haystack import files that you can
+edit using a JSON-compatible editor.</shortdesc><taskbody class="- topic/body task/taskbody "><context class="- topic/section task/context "/><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To add a tag, create a new entry in the <codeph class="+ topic/ph pr-d/codeph ">tagDefinitions</codeph> section of the JSON file.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To modify a tag, edit its existing JSON definition.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To remove a tag, include it in the JSON with:</cmd></step></steps><result class="- topic/section task/result "><codeblock class="+ topic/pre pr-d/codeblock ">"remove": true
+</codeblock>
+<p class="- topic/p ">Simply omitting a tag from the JSON file does not remove it. You must declare a deletion  explicitly. 
+These same principles apply to tag groups and relation definitions.</p><p class="- topic/p ">
+Importing changes allows you to modify a tag's type, validity rule, and implied tag rule. In doing this, the tag name is key. You must use the same tag name to override an original tag. You can specify a different value for anything except the original tag name. 
+</p><p class="- topic/p ">
+You can also add new tag names to add tags to the haystack dictionary, and remove a tag name to remove the tag from the dictionary. To remove a tag, the TagsImportFile must have a row with the tag name and set the value  to "Remove". Simply omitting the tag from the TagsImportFile will not remove it from the dictionary. 
+</p><p class="- topic/p "/></result></taskbody></task>

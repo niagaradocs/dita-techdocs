@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="DeviceManagementBACnet-507F6BC0" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Device management</title>
+<shortdesc class="- topic/shortdesc ">Once the BACnet network is configured, devices and proxy
+points added to the database, network communication may require adjustments
+from time to time, including synchronizing time and configuring tuning
+policies. You can search for devices on the network and set up virtual
+components, which can improve network performance. </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">device management</indexterm></keywords>
+</metadata>
+</prolog>
+</reference>

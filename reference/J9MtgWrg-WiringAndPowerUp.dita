@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--Arbortext, Inc., 1988-2019, v.4002--><?Pub UDT template _font?><?Pub Inc?><reference id="EarthGroundAndPower-0B4723AA" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Wiring and power up</title>
+<shortdesc class="- topic/shortdesc ">When correctly mounted, the top of the controller contains
+the COM ports and the bottom of the controller the Ethernet ports.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">earth ground</indexterm><indexterm class="- topic/indexterm ">power options</indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><fig class="- topic/fig ">
+<title class="- topic/title ">Power and field communications ports</title>
+<image href="../graphic/JACE-9000-comm-cutout-RJ45.png" placement="break" scope="local" width="250" class="- topic/image "/>
+<simpletable relcolwidth="1* 30*" class="- topic/simpletable ">
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry ">1</stentry>
+<stentry class="- topic/stentry ">Earth Ground</stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry ">2</stentry>
+<stentry class="- topic/stentry ">Power</stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry ">3</stentry>
+<stentry class="- topic/stentry ">RS485 ports and bias switches. Refer to “RS485 wiring” and
+“RS485 bias switches” for details.</stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry ">4</stentry>
+<stentry class="- topic/stentry ">Secondary Ethernet port (Sec), 10/100/1000 Mbit, RJ–45</stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry ">5</stentry>
+<stentry class="- topic/stentry ">Primary Ethernet port (Pri), 10/100/1000 Mbit, RJ–45</stentry>
+</strow>
+</simpletable>
+</fig></section>
+</refbody>
+</reference>

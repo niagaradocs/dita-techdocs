@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="ChoiceTagsTaggingGuide-BDE5C340" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Choice tags</title><shortdesc class="- topic/shortdesc ">All of the choice values for a choice def subtype are added
+as separate tags in the dictionary.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Choice tags</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p ">If a choice def has an “of” value, such as <codeph class="+ topic/ph pr-d/codeph ">pipeFluid</codeph> where “of” is the fluid def, the choice values are all descendants
+of that “of” def. Otherwise, the choice values are simply the descendants
+of the choice def. </p><fig class="- topic/fig "><title class="- topic/title ">Haystack 4 choice tags</title><image placement="break" scale="90" width="500" href="../graphic/TaggingChoiceTags_0000097677.png" class="- topic/image "/></fig><p class="- topic/p ">The choice def is added as a <codeph class="+ topic/ph pr-d/codeph ">BDynamicEnum</codeph> tag with the choice values included in the value’s <codeph class="+ topic/ph pr-d/codeph ">BEnumRange</codeph>. Tag rules are added to imply the corresponding choice value tag
+based on the selected enum value.</p><p class="- topic/p ">For example,
+if the <codeph class="+ topic/ph pr-d/codeph ">pipeFluid</codeph> tag on a component is set to “water,”
+a water marker tag will be implied on that component.</p><title class="- topic/title "/></section></refbody></reference>

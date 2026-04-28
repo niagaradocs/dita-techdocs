@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-StatusEnumToStatusBoolean" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-StatusEnumToStatusBoolean</title>
+<shortdesc class="- topic/shortdesc ">This component converts a StatusEnum <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> value to a StatusBoolean <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value. </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">StatusEnumToStatusBoolean</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">StatusEnumToStatusBoolean is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Conversion</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette</p><fig class="- topic/fig ">
+<title class="- topic/title ">StatusEnumToStatusBoolean properties</title>
+<image href="../graphic/kitControlEnumToStatusBoolean_0000067563.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window (defaults to <systemoutput class="+ topic/ph sw-d/systemoutput ">true</systemoutput> and <systemoutput class="+ topic/ph sw-d/systemoutput ">false</systemoutput>)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Defines the text to display for each Boolean value.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">trueText</option> configures the text to describe the
+state when component returns <option class="+ topic/keyword pr-d/option ">true.</option></p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">falseText</option> configures the text to describe the state when
+components returns <option class="+ topic/keyword pr-d/option ">false.</option></p>This configuration applies
+to the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> property value.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Defines a range of enumerated states (enum values).</p>This configuration applies to the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> property
+value.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only StatusBoolean <option class="+ topic/keyword pr-d/option ">true</option> and <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the target converted status Boolean value.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">enumerated value (defaults to 0, that is, no value)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the source status enum value.<p class="- topic/p ">When null is checked,
+the value displayed defaults to the incoming value from the device.
+If you remove the check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">On Null In Value</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">drop-down list (defaults to Use In Value)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Configures how to handle null values.<p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Use In Value</option> outputs the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> default value when the result
+of the conversion is null. Normally, the <parmname class="+ topic/keyword pr-d/parmname ">Fallback</parmname> property for a given point defines the meaning of an Enum null as
+zero (0). If, during configuration, the null status check box is unchecked
+and another value entered and saved, the changed value becomes the
+new default null value for the point.</p><p class="- topic/p ">If this modified component
+links to another StatusEnum property, the framework ignores the null
+value. But, if connected to a StatusEnumToStatusBoolean component,
+the result of a null input value defaults to the changed value, which
+may not be what you intended.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Specify Out Value</option> adds the <parmname class="+ topic/keyword pr-d/parmname ">outValueOnNull</parmname> property to this component.
+Configure it to return a reasonable <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value
+when the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> value is null.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out Value On Null</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines an <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value for the conversion
+object when the input <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> value has a null status.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference-4270" xml:lang="en-us" class="- topic/topic       reference/reference "><title class="- topic/title ">Placing email address in certificates </title><shortdesc class="- topic/shortdesc ">When you import SSL/TLS certificates into the <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/>
+Certificate Store, include any email address in the Subject
+Alternative Name (SAN) extension, not in the Distinguished Name (DN) field.</shortdesc><prolog class="- topic/prolog "><author translate="no" type="creator" class="- topic/author ">ClaudiaSerwe &lt;claudia.serwe@tridium.com&gt;</author><metadata class="- topic/metadata "><keywords class="- topic/keywords "/></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section ">
+            <title class="- topic/title "/>
+            <p class="- topic/p "/><p class="- topic/p ">Including an
+email address in the DN (for example, <apiname class="+ topic/keyword pr-d/apiname ">E=email@domain.com</apiname> in the Subject) can cause compatibility issues, potentially preventing the certificate from importing successfully. The SAN extension is  the preferred method
+for specifying email addresses. </p><p class="- topic/p ">To ensure your certificate imports successfully, place all email addresses in
+     the SAN field when you create certificates or CSRs.</p>
+        </section></refbody></reference>

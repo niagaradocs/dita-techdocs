@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="bacnet-BacnetPointFolder" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">BacnetPointFolder (bacnet-BacnetPointFolder)</title>
+<shortdesc class="- topic/shortdesc ">This component is the BACnet implementation of a folder
+under a <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetDevice</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Points</uicontrol></menucascade> container of the BacnetPointDeviceExt.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">BacnetPointFolder</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">To add a point folder, use the <uicontrol class="+ topic/ph ui-d/uicontrol ">New Folder</uicontrol> button in the <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet Point Manager</wintitle> view of
+the <uicontrol class="+ topic/ph ui-d/uicontrol ">Points</uicontrol> component/container. Each <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetPointFolder</uicontrol> has its own <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet Point
+Manager</wintitle> view. The BacnetPointFolder is also available in
+the <apiname class="+ topic/keyword pr-d/apiname ">bacnet</apiname> palette.</p><p class="- topic/p ">This component is also
+available in the palette under the <uicontrol class="+ topic/ph ui-d/uicontrol ">Points</uicontrol> folder.</p></section>
+</refbody>
+</reference>

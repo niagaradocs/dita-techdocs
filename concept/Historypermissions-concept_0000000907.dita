@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="role_HistoryPermissions" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">History permissions</title>
+<shortdesc class="- topic/shortdesc ">Histories require that the <systemoutput class="+ topic/ph sw-d/systemoutput ">operator</systemoutput> permission level be set and <systemoutput class="+ topic/ph sw-d/systemoutput ">operator</systemoutput>-level read (r) permission granted by the role to access all available
+views.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">history permissions</indexterm>
+<indexterm class="- topic/indexterm ">permissions<indexterm class="- topic/indexterm ">to view history files</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "/>
+<vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">History views include History Chart, Collection Table, and History
+Table). This includes the ability to rename a history.</p>
+</conbody>
+</concept>

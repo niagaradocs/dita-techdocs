@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="DataLinkLayer-8A6A6A77" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry ">
+<glossterm class="- topic/title concept/title glossentry/glossterm ">data link layer</glossterm>
+<glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">This is the second layer of the OSI (Open Systems Interconnection)
+software model. This layer works between two hosts, which are directly
+connected (point-to-point or broadcast). At the sending end, the data
+link layer converts data into bit-by-bit signals that are compatible
+with the hardware. At the receiving end it re-assembles the electrical
+signals from the hardware into recognizable information for processing.
+The result hides the underlying hardware details, providing the communication
+medium to the upper layers of the model. (www.tutorialspoint.com)</glossdef>
+</glossentry>

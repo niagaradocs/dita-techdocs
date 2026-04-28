@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="InstallingSoftware-30E8011A" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Preparing software to install</title><!--This topic is shared by the docJ8Startup and docJ9Startup--><shortdesc class="- topic/shortdesc ">The topic explains installing software by stepping through
+the Commissioning Wizard. The next five wizard steps relate to installing
+software and a station.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Installing</indexterm><indexterm class="- topic/indexterm ">Enable
+Runtime Profiles</indexterm><indexterm class="- topic/indexterm ">Station</indexterm><indexterm class="- topic/indexterm ">Lexicons</indexterm><indexterm class="- topic/indexterm ">Software</indexterm><indexterm class="- topic/indexterm ">Distribution
+Files</indexterm></keywords></metadata></prolog><taskbody class="- topic/body task/taskbody "><prereq class="- topic/section task/prereq ">You are running the Commissioning Wizard and just completed
+the licensing step. If you plan to ask the wizard to install a station
+from your PC, you must know the station's passphrase.</prereq><context class="- topic/section task/context ">The Enabled Runtime Profiles step saves space in the controller
+by restricting the modules that can be installed.</context><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Do one of the following.</cmd><choices class="- topic/ul task/choices "><choice class="- topic/li task/choice ">To install the documentation JAR files, leave the <parmname class="+ topic/keyword pr-d/parmname ">DOC: Module JARs having to Java classes</parmname> box selected and
+click <uicontrol class="+ topic/ph ui-d/uicontrol ">Next</uicontrol> to continue.</choice><choice class="- topic/li task/choice ">To save space on the controller, remove the check mark from
+this option box and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Next</uicontrol>.</choice></choices><info class="- topic/itemgroup task/info "><p class="- topic/p ">The other options are pre-configured for best results.</p><p class="- topic/p ">All <keyword conkeyref="wh_variables_n4/niagara4.0" class="- topic/keyword ">niagara4</keyword> platforms require run time profiles. These runtime profiles should
+be used in the host:<ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">RUNTIME identifies the core modules with runtime Java classes
+only. These modules do not support the user interface.</p></li><li class="- topic/li "><p class="- topic/p ">UX identifies bajaUX modules that support the user interface
+only.</p></li><li class="- topic/li "><p class="- topic/p ">WB identifies the modules that support the <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/>  user interface.</p></li><li class="- topic/li "><p class="- topic/p ">SE identifies modules that support the full Java 8 Standard
+Edition. These are not available for QNX-based controllers.</p></li><li class="- topic/li "><p class="- topic/p ">DOC identifies documentation modules. These are not recommended
+for file space reasons on a controller.</p></li></ul></p></info><stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Station Installation</wintitle> (Install
+a station from the local computer) window opens.</stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Do one of the following:</cmd><choices class="- topic/ul task/choices "><choice class="- topic/li task/choice ">If this is a new controller and no station exists for it yet,
+click <uicontrol class="+ topic/ph ui-d/uicontrol ">Next</uicontrol>.</choice><choice class="- topic/li task/choice ">If you are upgrading and the station already exists in the
+controller, select <option class="+ topic/keyword pr-d/option ">Don't transfer station</option>.</choice><choice class="- topic/li task/choice ">If you have the station on your PC, select the <parmname class="+ topic/keyword pr-d/parmname ">Station</parmname> name and possibly give it a <parmname class="+ topic/keyword pr-d/parmname ">New Name</parmname>.</choice></choices><info class="- topic/itemgroup task/info "><p class="- topic/p ">Listed are station subfolders under in your <keyword conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword ">Workbench</keyword> <wintitle class="+ topic/keyword ui-d/wintitle ">User Home</wintitle>.</p></info></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">If the station is on your PC, enter its <parmname class="+ topic/keyword pr-d/parmname ">File
+Passphrase</parmname>.</cmd><info class="- topic/itemgroup task/info "><p class="- topic/p ">If the passphrase for the local copy of the station is different
+from the remote host’s system passphrase, you are prompted to enter
+the local copy’s passphrase. If there is no passphrase mismatch, you
+are not prompted to enter one.</p></info><stepresult class="- topic/itemgroup task/stepresult ">When you select the station, it automatically prompts
+to enter a passphrase.</stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Select or clear the check boxes <option class="+ topic/keyword pr-d/option ">START AFTER INSTALL</option>, <option class="+ topic/keyword pr-d/option ">AUTO-START</option> and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Next</uicontrol> to continue.</cmd><info class="- topic/itemgroup task/info "><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">START AFTER INSTALL</option> starts the station immediately
+after it is copied. When you select this check box, the station is
+restarted at the end of commissioning, even if you do not reboot the
+controller.</p></li><li class="- topic/li "><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">AUTO-START</option> starts the station every time the
+platform daemon starts. In some commissioning scenarios, you may wish
+to disable (clear) both start options when installing a station, especially
+if commissioning ends in a reboot. This way the Commissioning Wizard
+installs the software modules needed by the station, along with all
+station files, but leaves the station idle.</p><p class="- topic/p ">In this case, to
+start the station you must open a platform connection to the controller
+following the reboot and start the (now idle) station from the <wintitle class="+ topic/keyword ui-d/wintitle ">Application Director</wintitle> view. This allows you to see all
+standard output messages from the station as it transitions from idle
+to starting to started.</p><p class="- topic/p ">If doing this, in the <wintitle class="+ topic/keyword ui-d/wintitle ">Application
+Director</wintitle> be sure to enable <option class="+ topic/keyword pr-d/option ">AUTO-START</option> for
+the selected station. Otherwise, it will remain idle after the next
+controller reboot.</p></li></ul></info><stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Station Installation</wintitle> (Which station
+files are to be copied?) window opens.<p class="- topic/p ">This window offers different options from
+which to copy station files.</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Copy files from selected directories</option> specifies
+which subfolders under that local station that are copied. It opens
+a tree selection window upon <uicontrol class="+ topic/ph ui-d/uicontrol ">Next</uicontrol> button.</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">If you choose this, click folder controls to expand and contract
+as needed.</p></li><li class="- topic/li "><p class="- topic/p ">Selected folders are shown as X and unselected folders show
+an empty folder check box.</p></li></ul></li><li class="- topic/li "><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Copy every file in the station directory and its subdirectories</option></p><p class="- topic/p ">The default, and most typically used.</p><note type="note" class="- topic/note ">Copying identical alarm/history data to multiple controllers is not
+recommended. For this reason, Alarm and History data are not included
+(by default) in the station copying process. </note></li><li class="- topic/li "><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Copy only the config.bog station database file</option></p><p class="- topic/p ">Copies only the station configuration (components), and not
+any supporting folders/files like px files, html files, and so forth.</p></li></ul></stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Select one of the options and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Next</uicontrol>.</cmd><stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Lexicon Installation</wintitle> step window opens.<p class="- topic/p ">The table displays a list of language codes.</p></stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To use a language other than English, select the language
+code from the list and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Next</uicontrol>.</cmd><stepresult class="- topic/itemgroup task/stepresult ">A popup <wintitle class="+ topic/keyword ui-d/wintitle ">Rebuilding software list</wintitle> window
+briefly displays the dependencies of the controller compared with
+the available software modules in your PC’s software database. Then
+it opens the <wintitle class="+ topic/keyword ui-d/wintitle ">Software Installation</wintitle> step window.<p class="- topic/p ">The table in the window lists the available modules including their
+status, for example <systemoutput class="+ topic/ph sw-d/systemoutput ">Out of Date</systemoutput>. During
+commissioning, you add to the software modules that are preselected
+for installation. Sometimes you may not make any changes, as the wizard
+preselects all necessary core modules, plus any additional modules
+needed by the station you previously specified in the Install Station
+step.</p><p class="- topic/p ">A red text descriptor qualifies each core module:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">Install required platform module</p></li><li class="- topic/li "><p class="- topic/p ">Install required for runtime profile</p></li><li class="- topic/li "><p class="- topic/p ">Install module required by station</p><p class="- topic/p ">By default, these
+modules are at the top of the list. You cannot deselect them.</p></li></ul><p class="- topic/p ">You can select additional modules to install by clicking selection
+boxes. The description for each is in blue text, and displays as either:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">Not Installed (if not selected)</p></li><li class="- topic/li "><p class="- topic/p ">Install (if selected)</p></li></ul><p class="- topic/p ">You can select additional modules, including a few not directly
+related to the contents of the station selected for installation.
+Examples include lexicon module(s) and some modules related to <uicontrol class="+ topic/ph ui-d/uicontrol ">Platform Services</uicontrol>. Or, you may know that the controller
+will need one or more modules in the future (say for a driver), and
+you wish to install them now.</p><p class="- topic/p ">In general, do not select modules
+if you are not sure they are needed. You can manage software modules
+later, using the <wintitle class="+ topic/keyword ui-d/wintitle ">Software Manager</wintitle>. Also, if you
+install a station later, the <wintitle class="+ topic/keyword ui-d/wintitle ">Station Copier</wintitle> will
+automatically prompt for confirmation to install any additional modules
+deemed necessary.</p><p class="- topic/p ">For cases described below, install the following
+additional module(s) to enable options.</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">Select either (or both) theme-related modules: <codeph class="+ topic/ph pr-d/codeph ">themeLucid-ux</codeph>, <codeph class="+ topic/ph pr-d/codeph ">themeZebra-ux</codeph>, depending on how station users
+are assigned to Web Profiles (for example, Default Hx Profile, Hx
+Theme=Lucid).</p></li><li class="- topic/li "><p class="- topic/p ">If a station requires the <apiname class="+ topic/keyword pr-d/apiname ">Hardware Scan Service</apiname> in its <uicontrol class="+ topic/ph ui-d/uicontrol ">PlatformServices</uicontrol>, select the appropriate <codeph class="+ topic/ph pr-d/codeph ">platHwScan</codeph><codeph class="+ topic/ph pr-d/codeph ">Type</codeph> modules. For example, select <codeph class="+ topic/ph pr-d/codeph ">platHwScanTitan-rt</codeph> and <codeph class="+ topic/ph pr-d/codeph ">-wb</codeph> modules.</p></li><li class="- topic/li "><p class="- topic/p ">Standard lexicon modules are listed using a module name with
+this convention:</p><p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">niagaraLexicon</codeph><codeph class="+ topic/ph pr-d/codeph ">Lc</codeph><codeph class="+ topic/ph pr-d/codeph ">-rt</codeph></p><p class="- topic/p ">where <codeph class="+ topic/ph pr-d/codeph ">Lc</codeph> is a two-character
+language code, such as <codeph class="+ topic/ph pr-d/codeph ">Fr</codeph> for French or <codeph class="+ topic/ph pr-d/codeph ">Es</codeph> for Spanish. It is also possible to make custom lexicon modules
+using <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/>  lexicon tools (which can have different names).</p></li></ul><p class="- topic/p ">To reset the selection of modules to the original collection,
+click the <uicontrol class="+ topic/ph ui-d/uicontrol ">Reset</uicontrol> button.</p></stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Do one of the following:</cmd><choices class="- topic/ul task/choices "><choice class="- topic/li task/choice ">To sort the list alphabetically, click the Module header in
+the table. To return to the default sort order, click the table’s
+(blank) description header.</choice><choice class="- topic/li task/choice ">To review the list of modules, click each module’s check box
+to be updated   (<image outputclass="inline" placement="inline" scale="75" href="../graphic/SelectedCheckbox.png" class="- topic/image "/>) and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Next</uicontrol>.</choice><choice class="- topic/li task/choice ">Click <uicontrol class="+ topic/ph ui-d/uicontrol ">Upgrade All Out of Date</uicontrol> to upgrade
+all the modules at a time and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Next</uicontrol>.</choice><choice class="- topic/li task/choice ">To reset the selection of modules to the original collection,
+click the <uicontrol class="+ topic/ph ui-d/uicontrol ">Reset</uicontrol> button and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Next</uicontrol>.</choice><choice class="- topic/li task/choice ">Use the scroll bar to review the list.</choice></choices><info class="- topic/itemgroup task/info "><note conref="../reuse/WH-guide-General_0000048987.dita#descGen/SwMgr_moduleSigning" class="- topic/note "/></info><stepresult class="- topic/itemgroup task/stepresult ">When you click <uicontrol class="+ topic/ph ui-d/uicontrol ">Upgrade All Out of Date</uicontrol>, the status of the selected modules changes to identify the software
+version to be installed.<p class="- topic/p ">Next, the <wintitle class="+ topic/keyword ui-d/wintitle ">Distribution
+File Installation</wintitle> (Install/upgrade core software needs to be installed) step window opens.</p></stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Review the file installation list and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Next</uicontrol> to continue.</cmd><stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">TCP/IP Configuration</wintitle> step opens.<parmname class="+ topic/keyword pr-d/parmname ">Host Name</parmname> defaults to the name of the
+remote controller.</stepresult></step></steps></taskbody></task>

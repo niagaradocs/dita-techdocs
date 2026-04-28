@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="WorkbenchAndStationSetupForSSL" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">Certificate setup</title><shortdesc class="- topic/shortdesc ">Configuring a network for secure communication using digital
+certificates involves accessing the appropriate stores; creating certificates
+and certificate signing requests; signing certificates; importing
+them into hosts <wintitle class="+ topic/keyword ui-d/wintitle ">User Key Store</wintitle>s; and importing
+the root CA certificate (or intermediate certificate) into client <wintitle class="+ topic/keyword ui-d/wintitle ">User Trust Store</wintitle>s.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">server identity verification<indexterm class="- topic/indexterm ">setting up</indexterm></indexterm><indexterm class="- topic/indexterm ">station<indexterm class="- topic/indexterm ">set
+up server verification</indexterm></indexterm></keywords><prodinfo class="- topic/prodinfo "><prodname class="- topic/prodname "/><vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist></prodinfo></metadata></prolog><conbody class="- topic/body  concept/conbody "><note type="caution" class="- topic/note ">If the private key of your root CA and intermediate
+certificates fall into the wrong hands, your entire network can be
+in danger of a significant cyber attack. To ensure security, always
+create the root CA and intermediate certificates, and use them to
+sign other certificates in <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> running on a secure computer, which is located under lock
+and key. Use this computer for only one purpose: to manage and sign
+certificates. Never connect this computer to the Internet, and ever
+access it over your company network. Carefully protect any thumb drive
+that contains any certificate with its private key.</note><p class="- topic/p ">You may use a third-party CA (Certificate Authority), such as VeriSign
+or Thawte to sign your certificates, or you may serve as your own
+CA.</p><note class="- topic/note ">If you use a Supervisor or an engineering PC to access a controller
+remotely for the purpose of generating a server certificate and CSR,
+the private key remains on the remote station. Ensure you do not export
+the private key.</note><?Pub Caret 201?><p class="- topic/p "> The preferred best practice is to set up certificates before distributing
+each controller to its remote location. If controllers are already
+in the field, travel to the remote location, take the controller off
+the Internet and corporate LAN, then connect your engineering PC directly
+to the controller using a cross-over cable.</p></conbody></concept>

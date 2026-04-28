@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="RS485Wiring-0B48A1ED" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">RS485 wiring</title><shortdesc class="- topic/shortdesc ">On the controller’s top side, two RS485 ports operate as
+COM1 and COM2. Each port is capable of up to 115,200 baud, and uses
+a three-position screw terminal connector.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">RS485 wiring</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><fig class="- topic/fig "><title class="- topic/title ">RS–485 wiring example</title><image placement="break" scope="local" width="650" href="../graphic/JACE-9000-RS485WrgExample.png" class="- topic/image "/><simpletable relcolwidth="5* 95*" class="- topic/simpletable "><strow class="- topic/strow "><stentry class="- topic/stentry ">1</stentry><stentry class="- topic/stentry ">This RS485 port A (COM1) could support a trunk
+of IO-R-16 modules.<note class="- topic/note ">Do not mix different types of RS485 modules
+or devices on the same RS485 trunk</note></stentry></strow><strow class="- topic/strow "><stentry class="- topic/stentry ">2</stentry><stentry class="- topic/stentry ">This RS485 port B (COM2) supports a network of other field
+devices using RS485 communications.</stentry></strow><strow class="- topic/strow "><stentry class="- topic/stentry ">3</stentry><stentry class="- topic/stentry ">This port links to up to 32 or more devices, depending on
+device specifications.</stentry></strow></simpletable></fig><note class="- topic/note ">RS485 devices on the same network should use the same
+protocol and baud rate.</note><p class="- topic/p ">Use shielded, twisted-pair, 18-22
+AWG cabling to wire in a continuous multidrop fashion to other RS485
+devices: minus-to-minus, plus-to-plus, and shield-to-shield. Connect
+the shield wire to earth ground at one end only, for example, at the
+controller.</p></section></refbody></reference>

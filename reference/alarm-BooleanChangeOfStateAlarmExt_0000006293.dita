@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="alarm-BooleanChangeOfStateAlarmExt" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">alarm-BooleanChangeOfStateAlarmExt</title>
+<shortdesc class="- topic/shortdesc ">This extension implements a change of state alarm detection
+algorithm for Boolean objects as described in BACnet Clause 13.3.2.
+It is available in the <apiname class="+ topic/keyword pr-d/apiname ">Extensions</apiname> folder of the <wintitle class="+ topic/keyword ui-d/wintitle ">alarm</wintitle> palette.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">BooleanChangeOfStateAlarmExt</indexterm>
+<indexterm class="- topic/indexterm ">extension<indexterm class="- topic/indexterm ">BooleanChangeOfStateAlarmExt</indexterm></indexterm><indexterm class="- topic/indexterm ">change of state<indexterm class="- topic/indexterm ">boolean</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody "/>
+</reference>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="BACnetIPAndBBMDs-559C882C" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">BACnet/IP and BBMDs</title>
+<shortdesc class="- topic/shortdesc ">The driver’s BACnet/IP support includes the ability to
+host BBMDs (BACnet/IP Broadcast Management Device). If a station is
+configured for BBMD operation, you can review (and if necessary, modify)
+the broadcast distribution table common to all BBMDs on the BACnet/IP
+network, as well as the foreign device table used in the local host
+station.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">BBMD</indexterm><indexterm class="- topic/indexterm ">BACnet/IP</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">Use of BBMDs is the answer to a BACnet/IP network that
+needs to span multiple IP subnets. Each IP subnet with BACnet/IP devices
+requires one (and only one) BBMD.</p><p class="- topic/p ">A BBMD delivers BACnet broadcast
+messages, such as Who-Is and Who-Has. As a rule, standard IP routers
+inherently block globally broadcast messages used to connect separate
+IP subnets. This blockage does not exist for directed messages between
+devices on different subnets, such as a common ReadProperty request,
+which is not a broadcast message.</p><p class="- topic/p ">The BBMD resolves this issue
+by acting as a broadcast manager for its subnet, working in coordination
+with other peer BBMDs. Each other IP subnet that contains BACnet/IP
+devices has one BBMD. Each BBMD stores a table with the IP address
+and distribution mask of all BBMDs, itself included. This is called
+the BBMD’s BDT (Broadcast Distribution Table), and is identical in
+each BBMD for that entire BACnet/IP network. (The BDT in each BBMD
+is required to be identical in the original specification. However,
+Addendum 135-2008o (not currently implemented in the Framework) relaxes
+this requirement to allow BACnet/IP communication in the Network Address
+Translation (NAT) environment.)</p><p class="- topic/p ">A BBMD may be a device operating
+solely as a BBMD, or more typically, include BBMD functions in addition
+to other application/controller duties. This is the case with a host
+station running a BACnet network with its IpPort, Link container’s <parmname class="+ topic/keyword pr-d/parmname ">Ip Device Type</parmname> property set to <option class="+ topic/keyword pr-d/option ">Bbmd</option> (instead
+of the default <option class="+ topic/keyword pr-d/option ">Standard</option>, or <option class="+ topic/keyword pr-d/option ">Foreign Device</option>).</p><note type="note" class="- topic/note ">Often an installation with BBMDs is not an
+internetwork, but a single BACnet/IP network. If so, host stations
+on different subnets should specify the same network number for their
+associated IpPort.</note><p class="- topic/p ">When a device sends a
+global broadcast message, all devices on its local subnet automatically
+received it, including the BBMD. (Local devices reply as needed to
+the broadcast device without BBMD involvement.) The local BBMD forwards
+the broadcast message to the other subnets, using one of two methods
+(as defined for each remote subnet):</p><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">One-hop: the BBMD sends the message using a directed broadcast,
+whereby the IP router for the destination subnet broadcasts the message
+on its local subnet. The router must support directed broadcasts,
+otherwise the two-hop method must be used. One-hop is unusual, as
+IP routers rarely pass directed broadcasts from or to the local subnet.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Two-Hop: the BBMD sends the message to its peer BBMD on the
+remote subnet. The receiving BMMD broadcasts the message on its local
+subnet.</p></li>
+</ul><p class="- topic/p ">Replies to BACnet broadcast messages may or may not require
+BBMD involvement. Occasionally, these are directed messages back to
+the particular BACnet/IP device that generated the message. However,
+replies to a Who-Is broadcast are often broadcast I-Am messages, as
+is the case with the BACnet driver.</p></section>
+</refbody>
+</reference>

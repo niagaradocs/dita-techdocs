@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!--Arbortext, Inc., 1988-2019, v.4002--><map xml:lang="en" class="- map/map ">
+<title class="- topic/title ">Authorization management</title>
+<topicref format="dita" navtitle="Authorization management" scope="local" type="concept" href="../concept/Authorizationmanagement_0000000877.dita" class="- map/topicref ">
+<topicref format="dita" navtitle="Component permissions checklist" scope="local" type="reference" href="../reference/Componentpermissionschecklist-reference_0000000841.dita" class="- map/topicref "/>
+<topicref format="dita" navtitle="Component permission level" scope="local" type="concept" href="../concept/Componentpermissionlevel-concept_0000000876.dita" class="- map/topicref ">
+<topicref format="dita" navtitle="Changing a component Config flag" scope="local" type="task" href="../task/ChangingacomponentConfigflag-task_0000000885.dita" class="- map/topicref ">
+</topicref>
+<topicref format="dita" navtitle="UserService permission levels" scope="local" type="concept" href="../concept/UserServicepermissionlevels-concept_0000000875.dita" class="- map/topicref ">
+</topicref>
+</topicref>
+<topicref format="dita" navtitle="Categories" scope="local" type="concept" href="../concept/Categories-concept_0000000874.dita" class="- map/topicref ">
+<topicref format="dita" navtitle="Basic categories" scope="local" type="concept" href="../concept/Basiccategories-concept_0000000873.dita" class="- map/topicref "/>
+<topicref format="dita" navtitle="Adding and editing a basic category" scope="local" type="task" href="../task/Addingandeditingabasiccategory-task_0000000884.dita" class="- map/topicref ">
+</topicref>
+<topicref format="dita" navtitle="Assigning a component to a basic category" scope="local" type="task" href="../task/Assigningacomponenttoabasiccategory-task_0000000883.dita" class="- map/topicref "/>
+<topicref format="dita" navtitle="Deleting a category name" scope="local" type="task" href="../task/Deletingacategoryname-task_0000000899.dita" class="- map/topicref ">
+</topicref>
+</topicref>
+<topicref format="dita" navtitle="Roles and permissions" scope="local" type="concept" href="../concept/Rolesandpermissions-concept_0000000910.dita" class="- map/topicref ">
+<topicref format="dita" navtitle="Adding roles and permissions" scope="local" type="task" href="../task/Addingrolesandpermissions-task_0000000898.dita" class="- map/topicref ">
+</topicref>
+<topicref format="dita" navtitle="Adding a component" scope="local" type="task" href="../task/Addingacomponent-task_0000000897.dita" class="- map/topicref "/>
+<topicref format="dita" navtitle="Editing roles and permissions" scope="local" type="task" href="../task/Editingrolesandpermissions-task_0000000896.dita" class="- map/topicref ">
+</topicref>
+<topicref format="dita" navtitle="Assigning roles to users" scope="local" type="task" href="../task/Assigningrolestousers-task_0000000895.dita" class="- map/topicref ">
+</topicref>
+<topicref format="dita" navtitle="Confirming access security" scope="local" type="task" href="../task/Confirmingaccesssecurity-task_0000000894.dita" class="- map/topicref ">
+</topicref>
+<topicref format="dita" navtitle="Reviewing permissions" scope="local" type="task" href="../task/Reviewingpermissions-task_0000000893.dita" class="- map/topicref "/>
+<topicref format="dita" navtitle="Ancestor permissions" scope="local" type="concept" href="../concept/Ancestorpermissions-concept_0000000909.dita" class="- map/topicref "/>
+<topicref format="dita" navtitle="File permissions" scope="local" type="concept" href="../concept/Filepermissions-concept_0000000908.dita" class="- map/topicref "/>
+<topicref format="dita" navtitle="History permissions" scope="local" type="concept" href="../concept/Historypermissions-concept_0000000907.dita" class="- map/topicref "/>
+</topicref>
+<topicref format="dita" navtitle="Component permissions troubleshooting" scope="local" type="reference" href="../reference/Componentpermissionstroubleshooting-reference_0000000920.dita" class="- map/topicref "/><?Pub Caret -1?>
+</topicref>
+</map>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="bacnet-BacnetEnumScheduleDescriptor" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Bacnet Enum Schedule Descriptor (ServerEnumSchedDesc)</title><shortdesc class="- topic/shortdesc ">This component exposes a EnumSchedule to BACnet as a schedule
+object. You use the <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet Export Manager</wintitle> view
+of the BACnet <uicontrol class="+ topic/ph ui-d/uicontrol ">Export Table</uicontrol> to add, edit, delete,
+and access exported components. </shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Bacnet Enum Schedule Descriptor</indexterm><indexterm class="- topic/indexterm ">ServerEnumSchedDesc</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p ">You use the <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet Export Manager</wintitle> view of the BACnet <uicontrol class="+ topic/ph ui-d/uicontrol ">Export Table</uicontrol> to add, edit,
+delete, and access exported components.</p><fig class="- topic/fig "><title class="- topic/title ">Bacnet Enum Schedule Descriptor properties</title><image placement="break" scale="65" scope="local" width="700" href="../graphic/propertiesBacnetEnumScheduleDescriptor_0000070400.png" class="- topic/image "/></fig><p class="- topic/p ">For property descriptions, refer to the properties dictionary
+chapter in this document.</p></section></refbody></reference>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="EnablingTheNiagaraNetwork" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Enabling the NiagaraNetwork</title>
+<shortdesc class="- topic/shortdesc ">The <uicontrol class="+ topic/ph ui-d/uicontrol ">NiagaraNetwork</uicontrol> provides the
+physical connections for data transmission. Secure communication ensures
+that data are transmitted securely between trusted entities.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">secure communication<indexterm class="- topic/indexterm ">NiagaraNetwork
+enabling</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "/>
+</prodinfo>
+</metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Right-click the node in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Drivers</uicontrol> container and click <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Views</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Property Sheet</uicontrol></menucascade>.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Expand the <parmname class="+ topic/keyword pr-d/parmname ">NiagaraNetwork</parmname> property.</cmd>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Confirm that the <option class="+ topic/keyword pr-d/option ">true</option> check box is selected
+for <parmname class="+ topic/keyword pr-d/parmname ">Enabled</parmname>.</cmd></step>
+</steps>
+</taskbody>
+</task>

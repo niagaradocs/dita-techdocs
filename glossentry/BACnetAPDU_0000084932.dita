@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="APDU-B102A596" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry "><glossterm class="- topic/title concept/title glossentry/glossterm ">APDU</glossterm><glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">Application (layer) Protocol Data Unit is a BACnet message—that
+is, a unit of data specified within any of the BACnet link-layer protocols.
+It consists of protocol control information and possibly application
+user data.</glossdef></glossentry>

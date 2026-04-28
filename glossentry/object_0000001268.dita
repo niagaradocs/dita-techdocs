@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="Object-5F785C37" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry ">
+<glossterm class="- topic/title concept/title glossentry/glossterm "><term id="glTerm" class="- topic/term "><text id="glText" class="- topic/text ">object</text></term></glossterm>
+<glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">An object is the base class required for all system entities
+that conform to the baja model. Objects group information used to
+construct a model that includes building devices, virtual devices,
+individual points, users, system features and services. Objects appear
+in the Nav tree as files, modules, installers, administrators, copiers,
+drivers and apps. Metadata associated with objects, including categories,
+roles (permissions), and hierarchies, provide access control and configuration
+options to manage automated buildings efficiently.</glossdef>
+</glossentry>

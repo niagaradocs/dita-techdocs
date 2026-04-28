@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="CustomizingSAMLAttributeMapping-55051F4C" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Customizing SAML attribute mapping</title>
+<shortdesc class="- topic/shortdesc ">This optional procedure describes how to configure the
+station to map arbitrarily named SAML attributes to User properties.
+Useful when the default mappings are not suitable, you may customize
+the property and attribute mappings as described here.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">customize SAML attribute mapping</indexterm>
+</keywords></metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq "><ul compact="yes" class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">You have already configured the SAMLAuthenticationScheme for
+the station.</p></li>
+<li class="- topic/li "><p class="- topic/p ">You have identified which SAML attributes are coming in from
+the IdP.</p></li>
+<li class="- topic/li "><p class="- topic/p ">You have the <apiname class="+ topic/keyword pr-d/apiname ">saml</apiname> palette open.</p></li>
+</ul></prereq>
+<context class="- topic/section task/context ">Refer to the IdP-provided documentation to determine which
+SAML attributes are coming in from the IdP. As an alternative, you
+can install a SAML add-on to your web browser, which lets you view
+the attributes coming in from the IdP. For example, there is the SAML
+DevTools extension for Chrome, which you can use.</context>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the station, navigate to the <uicontrol class="+ topic/ph ui-d/uicontrol ">SAMLAuthenticationScheme</uicontrol>.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">From the <apiname class="+ topic/keyword pr-d/apiname ">saml</apiname> palette, drag the <uicontrol class="+ topic/ph ui-d/uicontrol ">SAMLAttributeMapper</uicontrol> to the <uicontrol class="+ topic/ph ui-d/uicontrol ">SAMLAuthenticationScheme</uicontrol>.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Click the plus (+) to expand the <uicontrol class="+ topic/ph ui-d/uicontrol ">SAMLAttributeMapper</uicontrol> field editor.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">An editor for a new mapping opens.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the editor, replace <codeph class="+ topic/ph pr-d/codeph ">attributeName</codeph> with
+the name of the attribute sent by the SAML IdP. For example, <codeph class="+ topic/ph pr-d/codeph ">employeeGroup</codeph>.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Expand the drop-down list to select a property in the user
+prototype. For example, <parmname class="+ topic/keyword pr-d/parmname ">PrototypeName</parmname>.</cmd>
+<info class="- topic/itemgroup task/info "><p class="- topic/p ">This maps the SAML attribute <codeph class="+ topic/ph pr-d/codeph ">employeeGroup</codeph> to the <codeph class="+ topic/ph pr-d/codeph ">PrototypeName</codeph> slot in the UserPrototype.</p><p class="- topic/p ">Certain properties may require additional information to map an
+attribute. In this case, an extra field editor or check box appears.
+For example, <codeph class="+ topic/ph pr-d/codeph ">Expiration</codeph> requires additional information
+- the format in which the expiration time is sent so that the date
+and time can be appropriately parsed. Similarly, <codeph class="+ topic/ph pr-d/codeph ">PrototypeName</codeph> provides a check box to be selected in cases where an IdP returns
+a Distinguished Name (DN) for the <codeph class="+ topic/ph pr-d/codeph ">prototypeName</codeph> attribute.
+For more details, refer to “saml-AttributeMapper” in
+the Components section of this document.</p></info>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Repeat these steps as needed to map additional attributes
+and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol> when finished.</cmd></step>
+</steps>
+</taskbody>
+</task>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference-4590" xml:lang="en-us" class="- topic/topic       reference/reference "><title class="- topic/title ">Wi-Fi references</title><shortdesc class="- topic/shortdesc "/><prolog class="- topic/prolog "><author translate="no" type="creator" class="- topic/author ">MikeMcGinnis &lt;mmcginnis@tridium.com&gt;</author><metadata class="- topic/metadata "><keywords class="- topic/keywords "/></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section ">
+            <title class="- topic/title ">Wi-Fi Configuration view</title>
+            <p class="- topic/p ">The topics that follow provide details about  <ph conkeyref="host_models/nc9000" class="- topic/ph "/>  Wi-Fi setup, configuration options and status  monitoring using <keyword conkeyref="wh_variables_n4/niagara4.15" class="- topic/keyword "/>.</p>
+        </section></refbody></reference>

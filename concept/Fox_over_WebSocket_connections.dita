@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept-7768" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">Fox Over WebSocket connection</title><shortdesc class="- topic/shortdesc ">Fox over Websocket is intended for <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/>-to-station and
+station-to-station bidirectional connections using the station's existing HTTPS
+port (defaults to 443), which is managed by the station's WebService. It allows for wrapping fox communication in a WebSocket so that you can communicate with
+the station through <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/>'s existing WebService.</shortdesc><prolog class="- topic/prolog "><author translate="no" type="creator" class="- topic/author ">Claudia Serwe &lt;claudia.serwe@tridium.com&gt;</author><metadata class="- topic/metadata "><keywords class="- topic/keywords "/></metadata></prolog><conbody class="- topic/body  concept/conbody "><p class="- topic/p ">The advantage of
+communicating between <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/>  hosts via WebSocket is that it exclusively uses secure HTTPS communication, typically over standard port 443, which is more friendly to modern IT network environments. </p><p class="- topic/p ">When you make a <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/>-to-station or station-to-station
+(NiagaraNetwork) connection, you can select the Fox over WebSocket (foxwss)
+connection type in addition to the existing fox/foxs connection options. If a
+firewall prevents a fox or foxs connection, the <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/>-to-station or
+station-to-station connection can fall through to a foxwss connection if an
+initial fox or foxs connection attempt fails  due to an unreachable host/port error. This allows existing <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/>
+bookmarks or existing ORDs containing fox/foxs sessions to continue to resolve
+via foxwss even when fox/foxs connections are prevented. <ph class="- topic/ph "/></p></conbody></concept>

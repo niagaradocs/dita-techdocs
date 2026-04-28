@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="Haystack-5F0355EE" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry ">
+<glossterm class="- topic/title concept/title glossentry/glossterm "><term id="glTerm" class="- topic/term "><text id="glText" class="- topic/text ">Haystack</text></term></glossterm>
+<glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">An extensible Semantic Web Browser developed by the Haystack
+research group at the MIT Computer Science and Artificial Intelligence
+Laboratory (http://haystack.lcs.mit.edu). The project explores how
+the Semantic Web data model (a Resource Description Framework —
+RDF) can be applied by users to better organize, navigate, and retrieve
+information, both personal and shared (www.w3.org/2005/04/swls/BioDash/Demo/What
+is Haystack.html).<p class="- topic/p "/></glossdef>
+</glossentry>

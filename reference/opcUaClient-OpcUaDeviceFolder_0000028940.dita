@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="opcUaClient-OpcUaDeviceFolder" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">opcUaClient-OpcUaDeviceFolder</title><shortdesc class="- topic/shortdesc ">This component is the OPC UA client implementation of a
+folder under an OpcUaNetwork. </shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">opcUaClient-OpcUaDeviceFolder</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p ">Typically, you add such folders using the <uicontrol class="+ topic/ph ui-d/uicontrol ">New Folder</uicontrol> button in the <wintitle class="+ topic/keyword ui-d/wintitle ">Opc Ua Client
+Device Manager</wintitle> view of the OPC UA network. The component
+is also available in the <apiname class="+ topic/keyword pr-d/apiname ">opcUaClient</apiname> palette.</p></section></refbody></reference>

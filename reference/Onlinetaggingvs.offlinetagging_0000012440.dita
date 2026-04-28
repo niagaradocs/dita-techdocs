@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="OnlineTaggingVs.OfflineTagging-B263A85D" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Online tagging versus offline tagging</title><shortdesc class="- topic/shortdesc ">There are three separate scenarios in which you apply tags:</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Online tagging</indexterm><indexterm class="- topic/indexterm ">Offline tagging</indexterm></keywords><prodinfo class="- topic/prodinfo "><prodname class="- topic/prodname "><keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword ">Niagara</keyword></prodname></prodinfo></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section ">
+            <ul class="- topic/ul "><li class="- topic/li ">
+                    <p class="- topic/p "><b class="+ topic/ph hi-d/b ">Online tagging</b>: The installed tag dictionaries in <uicontrol class="+ topic/ph ui-d/uicontrol ">TagDictionaryService</uicontrol> take effect.</p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p "><b class="+ topic/ph hi-d/b ">Offline tagging in a station with tag dictionaries</b>: The installed tag dictionaries in the <uicontrol class="+ topic/ph ui-d/uicontrol ">TagDictionaryService</uicontrol> take effect. You will also see implied tags in the <wintitle class="+ topic/keyword ui-d/wintitle ">Edit</wintitle> dialog.</p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p "><b class="+ topic/ph hi-d/b ">Offline tagging in a station when no dictionaries are found</b>: The system searches for tag dictionaries in the following locations: <ul class="- topic/ul "><li class="- topic/li ">
+                                <p class="- topic/p ">all palettes of installed tag dictionary modules</p>
+                            </li><li class="- topic/li ">
+                                <p class="- topic/p ">in the <filepath class="+ topic/ph sw-d/filepath ">user-home/tagDictionary</filepath> folder where custom tag dictionaries are stored</p>
+                            </li><li class="- topic/li ">
+                                <p class="- topic/p ">also searches for implied tags</p>
+                            </li></ul></p>
+                </li></ul>
+        </section></refbody></reference>

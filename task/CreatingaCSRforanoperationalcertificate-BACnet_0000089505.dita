@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="CreatingACSR-14851472" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Creating a CSR for an operational certificate</title>
+<shortdesc class="- topic/shortdesc ">A CSR (Certificate Signing Request) creates a .csr file
+for each operational certificate. This file can be signed by a site
+certificate.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">CSR <index-see class="+ topic/index-base indexing-d/index-see ">Certificate Signing
+Request</index-see></indexterm></keywords></metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq ">You have added operational certificates to the platform/station <wintitle class="+ topic/keyword ui-d/wintitle ">User Key Store</wintitle>.</prereq>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To open the platform/station certificate stores, do one
+of the following:</cmd>
+<choices class="- topic/ul task/choices ">
+<choice class="- topic/li task/choice ">Connect to your platform and double-click <uicontrol class="+ topic/ph ui-d/uicontrol ">Certificate
+Management</uicontrol> in the <wintitle class="+ topic/keyword ui-d/wintitle ">Nav Container View</wintitle>.</choice>
+<choice class="- topic/li task/choice ">In the <uicontrol class="+ topic/ph ui-d/uicontrol ">Platform</uicontrol> Nav tree, double-click <uicontrol class="+ topic/ph ui-d/uicontrol ">Certificate Management</uicontrol>.</choice>
+<choice class="- topic/li task/choice ">Connect to your station, expand <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">PlatformServices</uicontrol>
+</menucascade> and double-click <uicontrol class="+ topic/ph ui-d/uicontrol ">CertManagerService</uicontrol>.</choice>
+</choices>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Select the operational certificate and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Cert Request</uicontrol>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Certificate Request Info</wintitle> window
+opens.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Confirm that the certificate properties are correct and
+click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult "> the system displays the <uicontrol class="+ topic/ph ui-d/uicontrol ">certManagement</uicontrol> folder for you to choose the location to store the CSR.<p class="- topic/p ">The <parmname class="+ topic/keyword pr-d/parmname ">Alias</parmname> for the certificate is used as the file name of
+the CSR.</p></stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Use the default folder, or select a different folder in
+which to store the CSR and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The system displays, <systemoutput class="+ topic/ph sw-d/systemoutput ">CSR generation complete</systemoutput>.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To finish, click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd>
+<info class="- topic/itemgroup task/info "><note class="- topic/note ">Once you create a CSR, do not delete the original certificate
+from which you created the CSR. Later in the process you will import
+a signed certificate back into the <wintitle class="+ topic/keyword ui-d/wintitle ">User Key Store</wintitle> where its public key must match the private key of the original
+certificate. Creating a new certificate with the same name does not
+generate the same key pair and results in errors when you try to import
+the signed certificate. If it is absolutely necessary (for example,
+if the computer on which the certificate is stored is vulnerable),
+you may export the original certificate with its private key and import
+it into the <wintitle class="+ topic/keyword ui-d/wintitle ">User Key Store</wintitle> when you receive the
+signed certificate. But, ideally, you should leave the original certificate
+in the <wintitle class="+ topic/keyword ui-d/wintitle ">User Key Store</wintitle> of the original secure
+host.</note></info>
+</step>
+</steps>
+</taskbody>
+</task>

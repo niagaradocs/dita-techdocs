@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="cat_AboutCategories" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Categories</title>
+<shortdesc class="- topic/shortdesc ">Categories are groups to which each station component may
+be assigned for the purpose of managing who has permission to access
+the component.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">categories</indexterm><indexterm class="- topic/indexterm ">basic
+categories</indexterm><indexterm class="- topic/indexterm ">inherited categories</indexterm>
+</keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "/>
+<vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">The system provides two types of categories:</p>
+<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Basic (or explicit) categories are groups (collections) to
+which you assign each component.</p><p class="- topic/p ">Each component maintains a
+bitmap for basic category membership. The default eight categories
+consume one byte and each increment of eight categories you add consumes
+an additional byte (1–8, 9–16, 17–24, and so
+on) in the component record.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Inherited categories are passed down from component parent
+to component child.</p></li>
+</ul>
+<p class="- topic/p ">All components must be assigned to at least one basic category,
+either an explicit assignment, or an inherited assignment from a parent
+component. Beyond this assignment, which type of category to use depends
+on your needs. You may use explicit and inherited categories at the
+same time.</p>
+<p class="- topic/p "/>
+</conbody>
+</concept>

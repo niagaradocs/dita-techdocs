@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="CalculatedStartTime-25A04CF8" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Calculated start and stop times</title>
+<shortdesc class="- topic/shortdesc ">The OptimizedStartStop component optimizes only one start
+sequence per day. You can perform multiple stop operations but no
+optimized stop can occur before the time specified by the <parmname class="+ topic/keyword pr-d/parmname ">Earliest Stop Time</parmname> property.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">start time</indexterm><indexterm class="- topic/indexterm ">stop
+time</indexterm></keywords></metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">These factors define the calculated start time:</p>
+<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p "><b class="+ topic/ph hi-d/b ">Temperature differential</b></p><p class="- topic/p ">If the inside (space)
+temperature is outside the range defined by the lower and upper comfort
+limits, the difference between the space temperature and the closer
+limit represents the number of degrees the mechanical equipment must
+make up during the prestart (optimized) period.</p></li>
+<li class="- topic/li "><p class="- topic/p "><b class="+ topic/ph hi-d/b ">Run-time minutes</b></p><p class="- topic/p ">Whether to heat or cool depends
+on the direction that the space temperature must move. The component
+multiplies this run-time value by the temperature differential to
+determine the number of run-time minutes required to achieve the comfort
+limit at occupancy time, as defined by the schedule's start time.</p></li>
+<li class="- topic/li "><p class="- topic/p "><b class="+ topic/ph hi-d/b ">Optimum start time</b></p><p class="- topic/p ">This is the best time to start
+heating or cooling before the scheduled start for the day. If the
+system’s time is later than the schedule’s time offset
+by the calculated lead time, the component enables optimum start outputs.</p><note class="- topic/note ">If the calculated lead time is so large that an optimum start
+time prior to midnight is the result, the optimum start occurs at
+midnight. The component performs an optimum start only before the
+first scheduled start for the day.</note></li>
+</ul>
+<p class="- topic/p ">Similar factors define stop time:</p>
+<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p "><b class="+ topic/ph hi-d/b ">Temperature differential</b></p><p class="- topic/p ">If the inside (space)
+temperature is inside the range defined by the lower and upper comfort
+limits and if the schedule’s status is active, the difference
+between the space temperature and one of the limits (depending on
+the mode) represents the number of degrees the temperature can drift
+between the time the mechanical equipment is stopped and the schedule’s
+inactive event time.</p></li>
+<li class="- topic/li "><p class="- topic/p "><b class="+ topic/ph hi-d/b ">Drift time</b></p><p class="- topic/p ">The drift (lead time) calculation is
+similar to the one for start time but using the drift-time heating
+and cooling factors.</p></li>
+<li class="- topic/li "><p class="- topic/p "><b class="+ topic/ph hi-d/b ">Optimum stop time</b></p><p class="- topic/p ">The component invokes the optimum
+stop time for each of the schedule’s inactive events based
+on the drift time and <parmname class="+ topic/keyword pr-d/parmname ">Next Event Time</parmname> value.</p></li>
+</ul>
+</conbody>
+</concept>

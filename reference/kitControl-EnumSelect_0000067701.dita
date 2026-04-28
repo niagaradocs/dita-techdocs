@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-EnumSelect" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-EnumSelect</title>
+<shortdesc class="- topic/shortdesc ">This component passes one of multiple inputs to a component’s <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> property. The component’s <parmname class="+ topic/keyword pr-d/parmname ">Select</parmname> property chooses the input. From three to 10 inputs can be specified.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">EnumSelect</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">EnumSelect is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Select</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p><p class="- topic/p ">All select
+objects require an enumerated input to perform the selection—the
+four select object types differ only by the type of input data selected
+and passed to the out slot.</p><fig class="- topic/fig ">
+<title class="- topic/title ">BooleanSelect properties</title>
+<image href="../graphic/kitControlEnumSelect_0000067729.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window (defaults to blank)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines range of enumerated states (enum values). This configuration
+affects the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> property value.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Select</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number (defaults to zero (0))</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Selects one of the 10 input values to be transferred to
+the output. </propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only enumerated value (defaults to zero (0))</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Provides a numeric output value for linking into a component.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In A through In J (10 inputs)</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">enumerated value (defaults to zero (0))</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Define the selected enum input values and null definition.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

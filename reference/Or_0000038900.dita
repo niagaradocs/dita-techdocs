@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="tagdictionary-Or" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">tagdictionary-Or</title><shortdesc class="- topic/shortdesc "><parmname class="+ topic/keyword pr-d/parmname ">Or</parmname> is one of several possible validity
+conditions subproperties, which are used to specify a certain criteria
+to be met in order for a tag to be applied to an object.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Or</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p ">For the <parmname class="+ topic/keyword pr-d/parmname ">Or</parmname> condition, if the target
+object has any of the conditions listed under the <parmname class="+ topic/keyword pr-d/parmname ">Or</parmname> property, the parent definition's tag(s) may be applied.</p><p class="- topic/p ">The
+example below shows the <parmname class="+ topic/keyword pr-d/parmname ">And</parmname> tag rule which contains
+the condition <parmname class="+ topic/keyword pr-d/parmname ">And</parmname> with these additional combined
+conditions: <parmname class="+ topic/keyword pr-d/parmname ">And</parmname> and <parmname class="+ topic/keyword pr-d/parmname ">Or</parmname>.
+In this case, if all of the <parmname class="+ topic/keyword pr-d/parmname ">And</parmname> criteria plus
+any of the <parmname class="+ topic/keyword pr-d/parmname ">Or</parmname> criteria are met, the parent definition’s
+tag(s) may be applied.</p><image placement="break" scale="65" width="400" href="../graphic/N4Tagging_ConditionAnd-Or_0000039198.png" class="- topic/image "/></section></refbody></reference>

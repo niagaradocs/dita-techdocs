@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="HTML-5TagManagerViewTagging-5AA6DE39" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">HTML5 Tag Manager view</title><shortdesc class="- topic/shortdesc ">There is added support for the <wintitle class="+ topic/keyword ui-d/wintitle ">HTML5 Tag Manager</wintitle> view featuring an intuitive design that enables a more efficient overall tagging workflow.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">HTML-5 Tag Manager</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section ">
+            <fig class="- topic/fig "><title class="- topic/title ">HTML5 Tag Manager view in a browser</title><image placement="break" scale="80" scope="local" href="../graphic/view_Html5TagManager-taggedcomponents2_0000081603.png" class="- topic/image "/></fig>
+            <p class="- topic/p ">It provides the same functionality as the <wintitle class="+ topic/keyword ui-d/wintitle ">Edit Tags</wintitle> window in <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword ">WB</keyword>, but with some additional workflow enhancements. For example, the “context sensitive tagging” feature (as shown in the above image), is also available in the existing <wintitle class="+ topic/keyword ui-d/wintitle ">Edit Tags</wintitle> window via the dropdown list with either the <uicontrol class="+ topic/ph ui-d/uicontrol ">Show All</uicontrol>, <uicontrol class="+ topic/ph ui-d/uicontrol ">Best Only</uicontrol> or <uicontrol class="+ topic/ph ui-d/uicontrol ">Valid Only</uicontrol> option; and provides advanced tag filtering as well. </p>
+            <p class="- topic/p ">The following enhancements in the <wintitle class="+ topic/keyword ui-d/wintitle ">HTML5 Tag Manager</wintitle> result in a more efficient tagging workflow: </p>
+            <ul compact="yes" class="- topic/ul "><li class="- topic/li ">
+                    <p class="- topic/p ">Allows bulk tagging of components via the browser</p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Seamlessly view direct and implied tags </p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Export all direct and implied component tags  for templating and ongoing management </p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Integrates with the <wintitle class="+ topic/keyword ui-d/wintitle ">Search Service</wintitle> to improve workflow </p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Drag-n-drop functionality </p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Added as a default view on all station components for enhanced flexibility</p>
+                </li></ul>
+            <p class="- topic/p ">The manager view functions identically whether accessed from within <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword ">WB</keyword> or a browser.</p>
+            <fig class="- topic/fig "><title class="- topic/title ">HTML5 Tag Manager view in <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword ">WB</keyword></title><image placement="break" scope="local" width="500" href="../graphic/view_WbTagManagerView_0000081601.png" class="- topic/image "/></fig>
+        </section></refbody></reference>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-ElapsedActiveTimeAlarmAlgorithm" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">kitControl-ElapsedActiveTimeAlarmExt</title><shortdesc class="- topic/shortdesc ">This component is a special-purpose alarm extension, which
+is especially for use as a child of a BooleanPoint or BooleanWritable
+that has one or more <b class="+ topic/ph hi-d/b ">DiscreteTotalizerExt</b> extensions. It provides
+alarming on runtime (elapsed active time), using the offNormal property <parmname class="+ topic/keyword pr-d/parmname ">errorLimit</parmname>.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">ElapsedActiveTimeAlarmExt</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p ">ElapsedActiveTimeAlarmExt is available in the<uicontrol class="+ topic/ph ui-d/uicontrol ">Alarm</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette
+along with a ChangeOfstateCountAlarmExt extension for COS-based alarms.
+You can use both extensions to reference the same DiscreteTotalizerExt.</p><p class="- topic/p ">In the parent Boolean point, order the ElapsedActiveTimeAlarmExt
+slot below the DiscreteTotalizerExt slot that it references. In the
+ElapsedActiveTimeAlarmExt’s Offnormal container, use the <parmname class="+ topic/keyword pr-d/parmname ">Discrete Totalizer Select</parmname> property to reference the DiscreteTotalizerExt.</p><p class="- topic/p ">The properties for this extension are the same as those for a
+standard framework alarm extension. Refer to the <cite class="- topic/cite "><ph conkeyref="doctitles_coresw/NiagaraN4AlarmsGuide" class="- topic/ph "/>.</cite></p></section></refbody></reference>

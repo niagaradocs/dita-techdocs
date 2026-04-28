@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="MessageHandlingBACnetSC-4FC09B07" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">Message handling</title><shortdesc class="- topic/shortdesc ">BACnet/SC is not bound by IP network boundaries and subnet
+structures. Not having to depend on an IP subnet X or Y frees up network
+design across the IP infrastructure.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">BACnet/SC</indexterm><indexterm class="- topic/indexterm ">BACnet/IP</indexterm></keywords></metadata></prolog><conbody class="- topic/body  concept/conbody "><section class="- topic/section "><title class="- topic/title ">Traditional BACnet over the Internet</title><p class="- topic/p ">Even
+a network not connected to the Internet is vulnerable to a malicious
+attacker who has physical access to the facility.</p><fig class="- topic/fig "><title class="- topic/title ">BACnet/IP message flow</title><image placement="break" scope="local" width="500" href="../graphic/BACnetIP_0000081044.png" class="- topic/image "/><p class="- topic/p ">Without BACnet/SC, a BACnet network requires a VPN (Virtual Private
+Network) to protect its traffic from hackers.</p></fig></section><section class="- topic/section "><title class="- topic/title ">BACnet Secure Connect</title><indexterm class="- topic/indexterm ">message flow</indexterm><indexterm class="- topic/indexterm ">Secure Connect</indexterm><fig class="- topic/fig "><title class="- topic/title ">BACnet/SC single message flow</title><image placement="break" scope="local" width="500" href="../graphic/BACnetSCMessage_0000081043.png" class="- topic/image "/></fig><p class="- topic/p ">The BACnet/SC link layer is compatible with other link layer
+types and supports all BACnet application and network layer messages.
+BACnet/SC does not change message content. Messages sent over a BACnet/SC
+network are encrypted and travel in a secure channel using a hub.
+This contrasts with messages sent over BACnet MS/TP (Multidrop Serial
+Bus/Token Passing) or BACnet/IP using UDP (User Datagram Protocol),
+which are not encrypted and could be sniffed and tampered with.</p><fig class="- topic/fig "><title class="- topic/title ">BACnet/SC broadcast messages</title><image placement="break" scope="local" width="500" href="../graphic/BACnetSCBroadcast_0000081042.png" class="- topic/image "/></fig><p class="- topic/p ">Messages that have multiple recipients are very common in
+building automation. With BACnet/SC, all devices join the network
+by connecting to the hub. The hub then broadcasts the ‘who-is’ and
+‘who-has’ requests to all participants. This eliminates IP-level broadcast
+or multicast transmits through IP subnet boundaries. These broadcast
+messages do not require special firewall configuration. Since messages
+pass through without special configuration and a BACnet network maintains
+its communications pattern at the link level, the network uses whatever
+IP infrastructure is available. The IP infrastructure itself is not
+important. Only HTTPS needs to be open.</p></section><section class="- topic/section "><title class="- topic/title ">Backward message compatibility</title><indexterm class="- topic/indexterm ">message
+wrapper</indexterm><p class="- topic/p ">BACnet/SC provides a different kind of wrapper
+around the same message (orange boxes) than other link layers such
+as BACnet/IP.</p><fig class="- topic/fig "><title class="- topic/title ">BACnet message wrappers</title><image placement="break" scope="local" width="500" href="../graphic/BACnetCompatibility_0000081041.png" class="- topic/image "/></fig><p class="- topic/p ">BACnet/SC supports both traditional IP and secure connections
+(blue box).</p><note class="- topic/note "><p class="- topic/p ">The hub must accept inbound connections and
+if the hub is a <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> station it should not be on the public Internet. Best
+practice is for all devices to be on the same VPN.</p></note></section></conbody></concept>

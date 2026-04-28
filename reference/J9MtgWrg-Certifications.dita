@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<?Pub UDT template _font?><reference id="Certifications-0B4CCE0E" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Certifications</title>
+<shortdesc class="- topic/shortdesc ">The <ph conkeyref="host_models/nc9000" conref="../reuse/WH_HardwareVariables_Tridium_N4_0000009933.dita#WHHardwareVariables-Tridium-9A32E735/nc9000" class="- topic/ph ">JACE-8000</ph> (15885) controller has a number of agency listings,
+compliances, and certifications.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">certifications</indexterm><indexterm class="- topic/indexterm ">listings</indexterm><indexterm class="- topic/indexterm ">compliances</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">UL-916, Energy Management Equipment - Edition 4</p></li>
+<li class="- topic/li "><p class="- topic/p ">FCC Part 15, Class B - Federal Communications Commission, with
+FCC Part 15, Subpart C - WiFi</p></li>
+<li class="- topic/li "><p class="- topic/p ">ICES-003, Class B - Industry Canada Interference-Causing Equipment
+Standard</p></li>
+<li class="- topic/li "><p class="- topic/p ">RoHS 2 (Restriction of Hazardous Substances), Directive 2011/65/EU</p></li>
+<li class="- topic/li "><p class="- topic/p ">CE, Declaration of Conformity (Council Directive 004-108-EC)<image href="../graphic/J9MtgWrg-ManufacturerRepresentative.png" placement="break" class="- topic/image "/></p></li>
+<li class="- topic/li "><p class="- topic/p ">ACMA, complies with the requirements of the relevant ACMA Standards</p></li>
+</ul><p class="- topic/p ">For complete details on listings and compliances for this
+controller, refer to the document “Agency Listings and Approvals for
+Tridium Hardware Products”.</p></section>
+</refbody>
+</reference>

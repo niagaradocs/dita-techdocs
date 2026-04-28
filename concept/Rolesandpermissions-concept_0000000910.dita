@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="role_RoleAndPermissionConfiguration" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Roles and permissions</title>
+<shortdesc class="- topic/shortdesc ">Once a user has been authenticated, the user is granted
+or denied the right to access each protected object in the system
+using a permissions map (a category-based matrix), which is defined
+by the role assigned to the user. Permissions define the rights a
+user has within each category of station objects.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">roles<indexterm class="- topic/indexterm ">about their configuration</indexterm></indexterm><indexterm class="- topic/indexterm ">permissions</indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "/>
+<vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">Roles ease the management of permissions for a large number of
+users. The permissions for a group of users who are assigned to the
+same role can be updated by changing the role. This saves having to
+update each user’s permissions individually.</p>
+<p class="- topic/p ">For example, if 40 operators need access to a new component in
+the station, you may need to update only their shared operator role,
+and then only if a category has been added or permissions need to
+be changed. The initial configuration of a station’s security, which
+involves object permission levels, object categories, roles (permissions)
+and users may take time to design and set up in some configurations,
+but the trade off is worth the future time saved when updating the
+permissions of more than one user at a time.</p>
+<note conkeyref="gen/security_UserPermissionsOnRoleSvc" conref="../reuse/WH-guide-General_0000048987.dita#descGen/security_UserPermissionsOnRoleSvc" class="- topic/note "/>
+</conbody>
+</concept>

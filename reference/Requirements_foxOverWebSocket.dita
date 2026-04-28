@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference-8056" xml:lang="en-us" class="- topic/topic       reference/reference "><title class="- topic/title ">Requirements </title><shortdesc class="- topic/shortdesc "/><prolog class="- topic/prolog "><author translate="no" type="creator" class="- topic/author ">Claudia Serwe &lt;claudia.serwe@tridium.com&gt;</author><metadata class="- topic/metadata "><keywords class="- topic/keywords "/></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section ">
+    <title class="- topic/title "><keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> Version Information</title>
+    <p class="- topic/p "><keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> (<keyword conkeyref="wh_variables_n4/niagara4.15" class="- topic/keyword "/> and higher) -to-station (<keyword conkeyref="wh_variables_n4/niagara4.15" class="- topic/keyword "/> and higher)
+connections can use foxwss. 
+Station (<keyword conkeyref="wh_variables_n4/niagara4.15" class="- topic/keyword "/> and higher) -to-station (<keyword conkeyref="wh_variables_n4/niagara4.15" class="- topic/keyword "/> and higher) connections can use
+foxwss.
+A <keyword conkeyref="wh_variables_n4/niagara4.15" class="- topic/keyword "/> and higher <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> version or station can connect to an
+earlier version station using the existing fox/foxs connection types.</p>
+    </section><section class="- topic/section "><title class="- topic/title ">Security requirements and best practices</title><p class="- topic/p ">Follow the security requirements for FoxService and
+WebService. 
+Consider best practices for the certificate used by HTTPS as configured in the
+WebService. </p><p class="- topic/p ">Fox over WebSocket (foxwss) connects to the station's WebService
+instead of the station's FoxService, which means that you configure the server certificate
+used for the Fox over WebSocket connection in the WebService's   <parmname class="+ topic/keyword pr-d/parmname ">Main
+Https Cert</parmname>  property and not in the FoxService. FoxService is still used for
+fox/foxs connections, but not for foxwss connections. However, there is still a property to enable foxwss connections in the FoxService, and therefore you must set the <parmname class="+ topic/keyword pr-d/parmname ">Https Enabled</parmname> property in the WebService to <option class="+ topic/keyword pr-d/option ">true</option> in order for foxwss connections to be made to a station. For more information, see the
+"web-WebService" section in the "<ph conkeyref="doctitles_coresw/Niagara4UserGuide-90E05C89" class="- topic/ph "/>" guide.</p><note class="- topic/note "><p class="- topic/p ">If the WebService restarts, any active Fox over
+WebSocket connections to the station will be forced closed. For a
+Workbench-to-station foxwss connection, you may notice that because <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/>
+will disconnect and then you
+will need to re-login to the station after the WebService has finished
+restarting. WebService restarts are rare, but can happen for certain
+configuration changes. For example, new client cert auth users, two minutes
+after station startup, and certain WebService configuration property changes
+can trigger a WebService restart. </p></note><note class="- topic/note ">When you use a <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> or station version <keyword conkeyref="wh_variables_n4/niagara4.15" class="- topic/keyword "/> (or later) to connect to a remote station, here is what happens by default: If the initial fox or foxs connection attempt fails because  the remote host/port is unreachable, a foxwss fall-through connection attempt will automatically happen before considering the connection failed. This may cause an additional delay for truly unreachable (for example, misconfigured) connection attempts.  If the remote station's certificate used by its WebService is untrusted (self-signed), a new entry may appear in the client's Certificate Management's <wintitle class="+ topic/keyword ui-d/wintitle ">Allowed Hosts</wintitle> tab for the foxwss connection attempt made to the remote host's HTTPS port. This entry will be created if  an entry was not already one  from a prior connection to the HTTPS port for any other reason.</note></section><section class="- topic/section "><title class="- topic/title ">Prerequisites</title><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p "><keyword conkeyref="wh_variables_n4/niagara4.15" class="- topic/keyword "/> and later has been installed. Fox
+over WebSocket is enabled by default. </p></li><li class="- topic/li "><p class="- topic/p ">No new  license requirements are  needed.</p></li></ul></section></refbody></reference>

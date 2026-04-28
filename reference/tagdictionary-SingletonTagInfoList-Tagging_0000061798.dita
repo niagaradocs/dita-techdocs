@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="tagdictionary-SingletonTagInfoList" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">tagdictionary-SingletonTagInfoList</title>
+<shortdesc class="- topic/shortdesc ">The <parmname class="+ topic/keyword pr-d/parmname ">Singleton Tag Info List</parmname> is a frozen
+property in a <codeph class="+ topic/ph pr-d/codeph ">ScopedTag</codeph> smart tag component, available
+in the <wintitle class="+ topic/keyword ui-d/wintitle ">tagdictionary</wintitle> palette under the Smart
+Tags folder. Usage is optional.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">ScopedTag smart tag<indexterm class="- topic/indexterm ">SingletonTagInfoList</indexterm></indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">Each <parmname class="+ topic/keyword pr-d/parmname ">Singleton Tag Info List</parmname> has
+a particular use, and each can contain only a single tag. For more
+details, see <xref format="dita" href="tagdictionary-ScopedTag_0000048060.dita" scope="local" type="reference" class="- topic/xref "><?Pub _previewtext text="tagdictionary-ScopedTag"
+?></xref></p></section>
+</refbody>
+</reference>

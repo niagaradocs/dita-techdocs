@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="MathComponents-2BC86F7A" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Math components</title>
+<shortdesc class="- topic/shortdesc ">Math components process one or more StatusNumeric input
+values and provide a StatusNumeric output value. Each component type
+provides a specific math function, such as Add, Average, Divide, Minimum,
+Maximum, Reset, AbsValue, and so on.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">math components</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><fig class="- topic/fig ">
+<title class="- topic/title ">LogBase10, an example of a single-input math component</title>
+<image href="../graphic/kitControlLogBase10_0000067680.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig><p class="- topic/p ">These components perform an operation on a single input:</p><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">AbsValue</p></li>
+<li class="- topic/li "><p class="- topic/p ">ArcCosing</p></li>
+<li class="- topic/li "><p class="- topic/p ">ArcSine</p></li>
+<li class="- topic/li "><p class="- topic/p ">ArcTangent</p></li>
+<li class="- topic/li "><p class="- topic/p ">Cosine</p></li>
+<li class="- topic/li "><p class="- topic/p ">Exponential</p></li>
+<li class="- topic/li "><p class="- topic/p ">Factorial</p></li>
+<li class="- topic/li "><p class="- topic/p ">LogBase10</p></li>
+<li class="- topic/li "><p class="- topic/p ">LogNatural</p></li>
+<li class="- topic/li "><p class="- topic/p ">Negative</p></li>
+<li class="- topic/li "><p class="- topic/p ">Reset (uses four values of high and low limits, both input
+and output, also linkable as inputs)</p></li>
+<li class="- topic/li "><p class="- topic/p ">Sine</p></li>
+<li class="- topic/li "><p class="- topic/p ">SquareRoot</p></li>
+<li class="- topic/li "><p class="- topic/p ">Tangent</p></li>
+</ul><fig class="- topic/fig ">
+<title class="- topic/title ">Modulus, an example of a math component with two inputs</title>
+<image href="../graphic/kitControlModulus_0000067679.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig><p class="- topic/p ">These components perform an operation using two inputs:</p><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Divide</p></li>
+<li class="- topic/li "><p class="- topic/p ">Modulus</p></li>
+<li class="- topic/li "><p class="- topic/p ">Power</p></li>
+<li class="- topic/li "><p class="- topic/p ">Subtract</p></li>
+</ul><fig class="- topic/fig ">
+<title class="- topic/title ">Modulus, an example of a math component with two inputs</title>
+<image href="../graphic/kitControlMultiply_0000067678.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig><p class="- topic/p ">Math object types vary by number of inputs used, in addition
+to the math operation. These components perform an operation using
+one to four inputs:</p><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Add</p></li>
+<li class="- topic/li "><p class="- topic/p ">Average</p></li>
+<li class="- topic/li "><p class="- topic/p ">Maximum</p></li>
+<li class="- topic/li "><p class="- topic/p ">Minimum</p></li>
+<li class="- topic/li "><p class="- topic/p ">Multiply</p></li>
+</ul><p class="- topic/p ">If needed, you can add alarm and history extensions to any
+math component, in addition to the control extension NumericTotalizerExt.</p><p class="- topic/p ">As with logic components, you can individually configure math
+components to propagate status flags received on linked inputs (by
+default, status propagation does not occur). For more details refer
+to the Getting Started Guide.</p><p class="- topic/p ">The properties table summarizes
+the properties for all math components.</p></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window (defaults to null for units, one decimal
+place for precision, negative infinity for minimum, and positive infinity
+for maximum)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Selects units and configures how the value displays:</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">units</option> defines the unit of measure from <option class="+ topic/keyword pr-d/option ">acceleration </option> to <option class="+ topic/keyword pr-d/option ">volumetric flow.</option></p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">precision </option>defines the number of decimal places. </p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">min</option> defines the lowest value allowed.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">max</option> defines the highest value allowed.</p>This definition
+applies to the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value for this component.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only number (defaults to zero (0))</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the result of the calculation.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In A<?Pub _newline?>In A and In B<?Pub _newline?>In A through
+In D<?Pub _newline?>(depends on the operation)</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number (defaults to zero (0))</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Provides the input values for the calculation.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

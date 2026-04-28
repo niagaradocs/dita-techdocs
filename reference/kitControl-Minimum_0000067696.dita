@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-Minimum" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-Minimum</title>
+<shortdesc class="- topic/shortdesc ">This component determines the minimum value of valid inputs
+and writes that value to out. <codeph class="+ topic/ph pr-d/codeph ">Out = min (inA, inB, inC, inD)</codeph>. </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Minimum</indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">Minimum is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Math</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p></section>
+</refbody>
+</reference>

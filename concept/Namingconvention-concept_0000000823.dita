@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="SSLNamingConvention" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Naming convention</title>
+<shortdesc class="- topic/shortdesc ">The <wintitle class="+ topic/keyword ui-d/wintitle ">User Key Store</wintitle>, <wintitle class="+ topic/keyword ui-d/wintitle ">User
+Trust Store</wintitle>, and <wintitle class="+ topic/keyword ui-d/wintitle ">System Trust Store</wintitle> form the heart of the configuration. Certificates look a lot alike,
+and the various default self-signed certificates are named identically.
+While developing a naming convention is not a requirement (the system
+will function just fine if the certificates are called “cert1,”
+“cert2,” etc.), a consistent naming scheme can make
+the process much easier to follow.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">certificate<indexterm class="- topic/indexterm ">naming convention</indexterm></indexterm><indexterm class="- topic/indexterm ">naming convention<indexterm class="- topic/indexterm ">for certificates</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "/>
+<vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">Consider using the <parmname class="+ topic/keyword pr-d/parmname ">Alias</parmname> of each certificate
+to identify the certificate’s purpose. Certificate aliases
+might include:</p>
+<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">The words "root," "intermediate," “server,” “client,”
+“code-signing”</p></li>
+<li class="- topic/li "><p class="- topic/p ">The geographic location of the remote controllers protected
+by the certificate</p></li>
+<li class="- topic/li "><p class="- topic/p ">The host name of the server</p></li>
+<li class="- topic/li "><p class="- topic/p ">The IP address of the server</p></li>
+</ul>
+</conbody>
+</concept>

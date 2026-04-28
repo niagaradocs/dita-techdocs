@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="AboutTheSAMLIdPServiceStationSecuri-B5C6BDFE" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">About the SAML IdP Service</title><shortdesc class="- topic/shortdesc ">As of <keyword conkeyref="wh_variables_n4/niagara4.9" class="- topic/keyword "/>, there is added support for the <apiname class="+ topic/keyword pr-d/apiname ">SAML IdP Service</apiname>. Setting up this service on your <keyword conkeyref="wh_variables_n4/Supervisor" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Supervisor" class="- topic/keyword ">Supervisor</keyword> station allows you to take advantage of SAML
+functionality without having to set up an external Identity Provider
+(IdP). Installing and configuring the service allows you to set up
+an internal IdP that works with the <apiname class="+ topic/keyword pr-d/apiname ">SAML Authentication Scheme</apiname>. </shortdesc><?Pub Caret 8?><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">SAMLIdPService<indexterm class="- topic/indexterm ">about</indexterm></indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p ">The <codeph class="+ topic/ph pr-d/codeph ">samlDP</codeph> feature license is required
+to run the <uicontrol class="+ topic/ph ui-d/uicontrol ">SAMLIdPService</uicontrol>.</p><p class="- topic/p ">Within the
+service is the <apiname class="+ topic/keyword pr-d/apiname ">Circle of Trust</apiname> (COT) component.
+Once configuration is complete, the COT lists the collection of subordinate
+stations and the collection of users that are allowed to log in to
+those stations. For example, if a <keyword conkeyref="wh_variables_n4/Supervisor" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Supervisor" class="- topic/keyword ">Supervisor</keyword> that is connected to 100+ stations is using
+SAML authentication for just a few of them, you can group those few
+stations together within a <parmname class="+ topic/keyword pr-d/parmname ">Circle of Trust</parmname>. </p><p class="- topic/p ">You can configure the service with multiple <apiname class="+ topic/keyword pr-d/apiname ">Circle of
+Trust</apiname> components.</p><p class="- topic/p ">Additionally, you can add a remote
+station that is not in the <uicontrol class="+ topic/ph ui-d/uicontrol ">NiagaraNetwork</uicontrol> to
+any Circle of Trust, or specify other authentication schemes or other
+user prototypes that may be used when logging in.</p><p class="- topic/p ">Users not
+included in a <parmname class="+ topic/keyword pr-d/parmname ">Circle of Trust</parmname> cannot log in to
+the station(s) specified in that COT. Such attempts to log in are
+rejected by the IdP.</p><table class="- topic/table "><tgroup cols="1" class="- topic/tgroup "><colspec colname="col1" class="- topic/colspec "/><tbody class="- topic/tbody "><row class="- topic/row "><entry class="- topic/entry "><note conkeyref="gen/securitySamlIdPSvc-Caution" conref="../reuse/WH-guide-General_0000048987.dita#descGen/securitySamlIdPSvc-Caution" class="- topic/note "/></entry></row></tbody></tgroup></table><p class="- topic/p ">A provisioning job that is run on the <keyword conkeyref="wh_variables_n4/Supervisor" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Supervisor" class="- topic/keyword ">Supervisor</keyword> simplifies configuring subordinate stations
+to use SAML IdP as well.</p></section><section class="- topic/section "/></refbody></reference>

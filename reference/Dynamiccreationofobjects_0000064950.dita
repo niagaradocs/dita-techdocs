@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="DynamicCreationOfObjects-13FDF495" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Dynamic creation of objects</title><shortdesc class="- topic/shortdesc ">The BACnet driver provides a BACnet create-object
+service.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">dynamic creation of objects</indexterm><indexterm class="- topic/indexterm ">objects<indexterm class="- topic/indexterm ">dynamic creation</indexterm></indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p ">BACnet devices may request the creation or deletion of
+BACnet objects dynamically. Creation may dynamically initialize property
+values as part of the creation process or a separate write service
+may populate property values. New object receive a unique object identifier
+and are placed in a <uicontrol class="+ topic/ph ui-d/uicontrol ">dynamicObjects</uicontrol> folder,
+which is visible in the <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> Nav tree.</p><note importance="high" class="- topic/note ">Do not manually delete
+(remove) any dynamically-created descriptor or extension components.
+Always use a Delete-Object request to remove any dynamically created
+objects.</note><p class="- topic/p ">Once the create and delete services are enabled,
+a valid request from a BACnet device may dynamically create or delete
+five types of descriptors. These properties are valid for initial
+values:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p "><apiname class="+ topic/keyword pr-d/apiname ">Calendar</apiname> objects define a list of dates,
+such as holidays or special events, for scheduling.</p></li><li class="- topic/li "><p class="- topic/p "><apiname class="+ topic/keyword pr-d/apiname ">Event Enrollment</apiname> creates an event. Events
+are changes in the value of any property concerning any object that
+meets a certain defined criterion. The Event Enrollment object works
+with information related to the management of BACnet systems event.
+For example, this object can create: alarms, external alarms, and
+algorithmic alarms. </p></li><li class="- topic/li "><p class="- topic/p "><apiname class="+ topic/keyword pr-d/apiname ">Notification Class</apiname> sends event notifications.
+If a device has a fault, for example, a notification object may communicate
+that there is something wrong. Dynamic Notification Class objects
+can be created and initial values populated simultaneously.</p></li><li class="- topic/li "><p class="- topic/p "><apiname class="+ topic/keyword pr-d/apiname ">Schedule</apiname>s provide periodic timetables of
+events that may repeat within a range of dates. The schedule object
+is categorized into normal days in a week and exception days. Dynamic
+Schedules are available for creation and initial property value configuration.</p></li><li class="- topic/li "><p class="- topic/p "><apiname class="+ topic/keyword pr-d/apiname ">Trend Log</apiname>s support the dynamic creation
+of remote trending logs, with a unique trending log extension for
+each data type: numeric, Boolean, enum, and string. A client sends
+a request to a BACnet controller to create the Trend Log object using
+either <parmname class="+ topic/keyword pr-d/parmname ">Object Id</parmname> or <parmname class="+ topic/keyword pr-d/parmname ">Object Type</parmname>. The request may or may not include initial property values. Remote
+trending requests support only the present-value property.</p></li></ul></section></refbody></reference>

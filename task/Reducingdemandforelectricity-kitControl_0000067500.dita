@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="ReducingDemandForElectricity-22FDA9E2" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Reducing demand for electricity</title>
+<shortdesc class="- topic/shortdesc ">Configuring shed and restoration control using the ElectricalDemandLimit
+component can reduce peak demand for electricity and save money.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">electricity<indexterm class="- topic/indexterm ">managing demand</indexterm></indexterm></keywords></metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Drag the ElectricalDemandLimit component to the Nav tree
+or wire sheet and open its property sheet by double-clicking it.</cmd>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Enable the component by either linking to it in the wire
+sheet or by manually setting the <parmname class="+ topic/keyword pr-d/parmname ">Prediction Enabled</parmname> property value to <option class="+ topic/keyword pr-d/option ">true</option>.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Configure the component properties.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Set up any power input links including linking the Shed
+Out slot (output) to a ShedControl object.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">This provides equipment shed and restoration control.</stepresult>
+</step>
+</steps>
+<result class="- topic/section task/result ">Based on how you configure the EDL component, the calculations
+direct that load shedding, load restoration, or no action be taken.
+With each calculation, the component updates and displays the projected
+average demand.</result>
+</taskbody>
+</task>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="auth_AddingRoles" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Adding roles and permissions</title><shortdesc class="- topic/shortdesc ">You add roles using the station’s <wintitle class="+ topic/keyword ui-d/wintitle ">Role
+Manager</wintitle> view (<apiname class="+ topic/keyword pr-d/apiname ">RoleService</apiname>).</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">roles<indexterm class="- topic/indexterm ">adding</indexterm></indexterm></keywords><prodinfo class="- topic/prodinfo "><prodname class="- topic/prodname "/><vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist></prodinfo></metadata></prolog><taskbody class="- topic/body task/taskbody "><prereq class="- topic/section task/prereq ">You enabled the <option class="+ topic/keyword pr-d/option ">Operator</option> config flag enabled
+for any restricted components. Categories have been created and any
+basic categories assigned to components.</prereq><context class="- topic/section task/context ">Most companies require, as a minimum, an administrator (super
+user) role, a manager role, and a regular user or operator role.</context><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Right-click <uicontrol class="+ topic/ph ui-d/uicontrol ">RoleService</uicontrol> in the Nav
+tree, click <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Views</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Role
+Manager</uicontrol></menucascade>.</cmd><stepresult class="- topic/itemgroup task/stepresult "><p class="- topic/p ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Role Manager</wintitle> view opens.</p></stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Click  <uicontrol class="+ topic/ph ui-d/uicontrol ">New</uicontrol>, enter the
+number of roles to create in the pop-up window and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd><stepresult class="- topic/itemgroup task/stepresult ">The system displays the <wintitle class="+ topic/keyword ui-d/wintitle ">New</wintitle> window
+with a row for each role you are creating.</stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Name the role.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To configure a role as a super user, click the <option class="+ topic/keyword pr-d/option ">Permissions</option> check box for <option class="+ topic/keyword pr-d/option ">Super User</option>.</cmd><info class="- topic/itemgroup task/info "><p class="- topic/p ">The built-in <systemoutput class="+ topic/ph sw-d/systemoutput ">Admin</systemoutput> role grants
+all possible rights for every category (super user). Only when logged
+in as the <systemoutput class="+ topic/ph sw-d/systemoutput ">Admin</systemoutput> user, or another super
+user, can you assign super user rights using the <option class="+ topic/keyword pr-d/option ">Super User</option> check box.</p><p class="- topic/p ">In general, assigning super user rights should
+be strictly limited and based on special needs. For example, a Supervisor
+station may need super user rights to connect with other station clients
+(machine login vs. login by a person) in scenarios where Program objects
+are exported from stations using ExportTags. Human users may need
+super user rights to add and edit Program or Robot components.</p><note type="caution" class="- topic/note ">Do not make it a common practice to give station-to-station
+users admin privileges. If your network is breached, a station-to-station
+user could cause significant damage without drawing attention to what
+is happening.</note></info></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To set up individual permissions, click the chevron at
+the end of the <parmname class="+ topic/keyword pr-d/parmname ">Permissions</parmname> property.</cmd><stepresult class="- topic/itemgroup task/stepresult "><p class="- topic/p ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Permissions</wintitle> map opens.</p><p class="- topic/p ">The first column, Category,
+lists the groups to which you may grant permission. The Operator and
+Admin columns relate to the permissions level configured on each component.
+Below these headings are the cells to use for assigning one of three
+permissions to each category:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">R = Read allows the user to view the object.</p></li><li class="- topic/li "><p class="- topic/p ">W = Write allows the user to change the object.</p></li><li class="- topic/li "><p class="- topic/p ">I = Invoke allows the user to initiate an action related to
+the object.</p></li></ul><p class="- topic/p ">Depending on how the permission level is set on the slot,
+six permissions are derived:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">To allow a user to view <systemoutput class="+ topic/ph sw-d/systemoutput ">operator</systemoutput>-level information, check the <option class="+ topic/keyword pr-d/option ">Operator</option> config flag
+on the slot and select the Operator R column on the permission map.</p></li><li class="- topic/li "><p class="- topic/p ">To allow a user to modify <systemoutput class="+ topic/ph sw-d/systemoutput ">operator</systemoutput>-level information (if it is not read-only), check the <option class="+ topic/keyword pr-d/option ">Operator</option> config flag on the slot and select the Operator W column on the
+permission map.</p></li><li class="- topic/li "><p class="- topic/p ">To allow the user to view and invoke <systemoutput class="+ topic/ph sw-d/systemoutput ">operator</systemoutput>-level operations (actions), check the <option class="+ topic/keyword pr-d/option ">Operator</option> config
+flag on the slot and select the Operator I column on the permission
+map</p></li><li class="- topic/li "><p class="- topic/p ">To allow the user to view <systemoutput class="+ topic/ph sw-d/systemoutput ">admin</systemoutput>-level information, leave the <option class="+ topic/keyword pr-d/option ">Operator</option> config flag
+unchecked on the slot and select the Admin R column on the permission
+map.</p></li><li class="- topic/li "><p class="- topic/p ">To allow the user to modify <systemoutput class="+ topic/ph sw-d/systemoutput ">admin</systemoutput>-level information (if it is not read-only), leave the <option class="+ topic/keyword pr-d/option ">Operator</option> config flag unchecked on the slot and select the Admin W column
+on the permission map.</p></li><li class="- topic/li "><p class="- topic/p ">To allow the user to view and invoke <systemoutput class="+ topic/ph sw-d/systemoutput ">admin</systemoutput>-level operations (actions), leave the <option class="+ topic/keyword pr-d/option ">Operator</option> config
+flag unchecked on the slot and select the Admin I column on the permission
+map.</p></li></ul><p class="- topic/p ">When you assign permissions, higher-level permissions (green
+check marks) automatically include the lower-level ones (gray check
+marks). For example, if you enable <systemoutput class="+ topic/ph sw-d/systemoutput ">admin</systemoutput>-level write (W), the system automatically enables <systemoutput class="+ topic/ph sw-d/systemoutput ">admin</systemoutput>-level read (R), as well as <systemoutput class="+ topic/ph sw-d/systemoutput ">operator</systemoutput>-level read and write (RW).</p></stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Click the cell to assign a permission and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd><stepresult class="- topic/itemgroup task/stepresult ">The e <parmname class="+ topic/keyword pr-d/parmname ">Permissions</parmname> property displays
+the permissions.</stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To finalize permissions, click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In a multi-station system, perform these same steps in
+each station so that each station has the same set of roles.</cmd><info class="- topic/itemgroup task/info "><note class="- topic/note ">During the network user synchronization process the framework
+sends the user’s role assignment to the receiving station,
+however, it does not create the actual role(s) on the receiving station.
+You must set up matching roles on each receiving station before synchronizing
+network users.</note></info></step></steps></taskbody></task>

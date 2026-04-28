@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="sec_UserSecurityConfigChecklist" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">User authentication checklist</title><shortdesc class="- topic/shortdesc ">As the system administrator, use this checklist to verify
+that you completed all required tasks to set up user authentication.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">user authentication checklist</indexterm><indexterm class="- topic/indexterm ">checklist<indexterm class="- topic/indexterm ">user authentication</indexterm></indexterm></keywords><prodinfo class="- topic/prodinfo "><prodname class="- topic/prodname ">Niagara</prodname><vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist></prodinfo></metadata></prolog><conbody class="- topic/body  concept/conbody "><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">Connections are
+secure (https rather than http; foxs rather than fox).</p></li><li class="- topic/li "><p class="- topic/p ">The authentication
+scheme has been selected for each user.</p></li><li class="- topic/li "><p class="- topic/p ">User roles have
+been identified. You need to determine what each user can do with
+each component in the system. Objects to protect are components, files,
+and histories. Each of these is assigned a category.</p></li><li class="- topic/li "><p class="- topic/p ">Roles have been
+created and assigned to each user. This assignment grants permission
+for the user to access each category of object. The user's
+role defines exactly what each user can do with each object in the
+system.</p></li><li class="- topic/li "><p class="- topic/p ">If you are using
+client user authentication, each user has created a client certificate
+and submitted their certificate with its public key.</p></li><li class="- topic/li "><p class="- topic/p ">If you are using
+client user authentication, each user has created a client certificate
+and submitted their certificate with its public key.</p></li><li class="- topic/li "><p class="- topic/p ">The audit log
+has been set up for later analysis.</p></li></ul></conbody></concept>

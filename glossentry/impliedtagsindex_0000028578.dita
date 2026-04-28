@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="ImpliedTagsIndex-879F90D3" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry "><glossterm class="- topic/title concept/title glossentry/glossterm "><term id="glTerm" class="- topic/term "><text id="glText" class="- topic/text ">implied tags index</text></term></glossterm><glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">In <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> you can manually enable indexing on individual tags in
+the tag definitions of a custom smart tag dictionary. The index primarily
+improves performance of NEQL searches and speeds-up hierarchy refreshing. </glossdef><?Pub Caret 6?></glossentry>

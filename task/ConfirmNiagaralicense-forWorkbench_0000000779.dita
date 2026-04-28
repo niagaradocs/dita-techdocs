@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="ConfirmNiagaraLicense-E987B654" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">License confirmation</title><shortdesc class="- topic/shortdesc ">If you choose to launch <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> immediately and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Finish</uicontrol> to
+exit the installation wizard, a license check routine occurs. You
+may briefly see a <uicontrol class="+ topic/ph ui-d/uicontrol ">Check License</uicontrol> popup window,
+and possibly a <uicontrol class="+ topic/ph ui-d/uicontrol ">License Installed</uicontrol> window.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">license<indexterm class="- topic/indexterm ">confirming</indexterm></indexterm></keywords></metadata></prolog><taskbody class="- topic/body task/taskbody "><context class="- topic/section task/context "><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">License Installed</uicontrol> indicates that <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword ">Niagara</keyword> has successfully found a matching (bound) license
+for your Windows host on the licensing server, and installed it. When
+you click <uicontrol class="+ topic/ph ui-d/uicontrol ">Continue</uicontrol>, <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> should continue to open after another possible popup window
+(<uicontrol class="+ topic/ph ui-d/uicontrol ">Platform Daemon Restart Required</uicontrol> - click <uicontrol class="+ topic/ph ui-d/uicontrol ">Continue</uicontrol>).</p></li><li class="- topic/li "><p class="- topic/p ">If, instead, the <uicontrol class="+ topic/ph ui-d/uicontrol ">License Request</uicontrol> form
+appears in the browser, enter the <uicontrol class="+ topic/ph ui-d/uicontrol ">License Key</uicontrol> string you received for this installation, along with other information
+requested on the form. After submitting this form the licensing server
+should finalize (bind) your license and make it available for download,
+and also email it to you. If <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> successfully confirms the license online, you can restart
+it after receiving the email.</p></li></ul><p class="- topic/p "><keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> is now ready for use (without further license checks)
+on your host, for the duration of your license. </p></context><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Depending on which popup displays do the following: </cmd><choices class="- topic/ul task/choices "><choice class="- topic/li task/choice ">If the <uicontrol class="+ topic/ph ui-d/uicontrol ">License Installed</uicontrol> popup displays
+(shown below),  click <uicontrol class="+ topic/ph ui-d/uicontrol ">Continue</uicontrol>, <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> should continue to open after another possible popup window
+(<wintitle class="+ topic/keyword ui-d/wintitle ">Platform Daemon Restart Required</wintitle> - click <uicontrol class="+ topic/ph ui-d/uicontrol ">Continue</uicontrol>). <image placement="break" scale="65" href="../graphic/n4_licenseconfirmation_0000015350_0000000764.png" class="- topic/image "/></choice><choice class="- topic/li task/choice ">If the <uicontrol class="+ topic/ph ui-d/uicontrol ">License Request</uicontrol> form appears
+in the browser (shown below), enter the <uicontrol class="+ topic/ph ui-d/uicontrol ">License Key</uicontrol> string you received for this installation, along with other information
+requested on the form. After submitting this form the licensing server
+should finalize (bind) your license and make it available for download,
+and also email it to you. If <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> successfully confirms the license online, restart the
+program after receiving the email.<image placement="break" scale="65" scope="local" href="../graphic/n4_licenserequestform2_0000017504_0000000763.png" class="- topic/image "/></choice></choices></step></steps><result class="- topic/section task/result "><p class="- topic/p "><keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> is now ready for use (without further license checks)
+on your host, for the duration of your license. </p></result></taskbody></task>

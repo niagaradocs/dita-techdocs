@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="AddingATuningPolicyBACnet-4FD602EE" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Improving performance by adding a tuning policy</title><shortdesc class="- topic/shortdesc ">Tuning policies configure how a network evaluates write
+requests (for example, requests to write to writable proxy points)
+and the acceptable freshness of read requests. They associate with
+one of three poll rates in a network’s Poll Service. A BACnet
+network benefits from multiple tuning policies, especially if you
+enable multiple BACnet network ports.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">tuning policies<indexterm class="- topic/indexterm ">configuring</indexterm></indexterm></keywords></metadata></prolog><taskbody class="- topic/body task/taskbody "><prereq class="- topic/section task/prereq ">An appropriate palette is open.</prereq><context class="- topic/section task/context ">Configuring BACnet proxy points to reference different tuning
+policies under different networks (often with vastly different performance
+capabilities) allows you to improve overall performance. For example,
+points under a BACnet MS/TP network would likely use different tuning
+policies than those under a BACnet IP network.</context><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Do one of the following: </cmd><choices class="- topic/ul task/choices "><choice class="- topic/li task/choice ">Right-click an existing policy and choose <uicontrol class="+ topic/ph ui-d/uicontrol ">Duplicate</uicontrol> from the shortcut menu.</choice><choice class="- topic/li task/choice ">Drag a <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetTuningPolicy</uicontrol> from the
+palette to the network’s <uicontrol class="+ topic/ph ui-d/uicontrol ">Tuning Policies</uicontrol> container.</choice></choices></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Give the policy a name.</cmd><stepresult class="- topic/itemgroup task/stepresult "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">CovPolicyNoStartWrite</uicontrol> configures COV (Change of Value)
+data collection. If you have client <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetDevice</uicontrol>s that provide support for COV notifications, you can add at least
+one tuning policy that has its <parmname class="+ topic/keyword pr-d/parmname ">Use Cov</parmname> property
+set to <option class="+ topic/keyword pr-d/option ">true</option> (possibly with other adjustments). </p></stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Double-click the policy in the Nav tree, edit policy properties
+and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol>.</cmd></step></steps></taskbody></task>

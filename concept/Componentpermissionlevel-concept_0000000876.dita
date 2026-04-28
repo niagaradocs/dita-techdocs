@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="role_PermissionLevels" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Component permission level</title>
+<shortdesc class="- topic/shortdesc ">The component permission level is a config flag associated
+with the slot. The configuration of this flag begins the process of
+granting permission to access individual component slots.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">permission level</indexterm><indexterm class="- topic/indexterm ">roles<indexterm class="- topic/indexterm ">and permission level</indexterm></indexterm><indexterm class="- topic/indexterm ">component <indexterm class="- topic/indexterm ">permission level</indexterm></indexterm>
+<indexterm class="- topic/indexterm ">Operator config flag</indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "/>
+<vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">If the component slot’s <option class="+ topic/keyword pr-d/option ">Operator</option> config
+flag is cleared (unchecked), the slot is configured for the <systemoutput class="+ topic/ph sw-d/systemoutput ">admin</systemoutput> <i class="+ topic/ph hi-d/i ">permission level</i>. A user must be assigned
+a role with at least the minimum permission set in the <wintitle class="+ topic/keyword ui-d/wintitle ">Role
+Manager</wintitle> view to <systemoutput class="+ topic/ph sw-d/systemoutput ">admin</systemoutput>-level
+Read (R).</p></li>
+<li class="- topic/li "><p class="- topic/p ">If the slot’s <option class="+ topic/keyword pr-d/option ">Operator</option> config flag
+is set (checked), the slot is configured for the <systemoutput class="+ topic/ph sw-d/systemoutput ">operator</systemoutput> permission level, and can be accessed by a user who has been assigned
+a role with the minimum permission set in the <wintitle class="+ topic/keyword ui-d/wintitle ">Role Manager</wintitle> view to <systemoutput class="+ topic/ph sw-d/systemoutput ">operator</systemoutput>-level read (r).  In
+other words, any user assigned this role may access the slot at least
+to read it.</p></li>
+</ul>
+<p class="- topic/p ">With the <systemoutput class="+ topic/ph sw-d/systemoutput ">admin</systemoutput> permission level, users
+can see and change slot flags from the slot sheet of any component.
+By default, most slots are configured for the <systemoutput class="+ topic/ph sw-d/systemoutput ">admin</systemoutput> permission level (the out slot is typically set to the <systemoutput class="+ topic/ph sw-d/systemoutput ">operator</systemoutput> permission level).</p>
+</conbody>
+</concept>

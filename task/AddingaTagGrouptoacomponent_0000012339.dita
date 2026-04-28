@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<?xml-stylesheet href="file:///C:/Users/H477160/Honeywell/Tridium%20Tech%20Docs%20-%20Documents/General/Arbortext/com.tridium.atxcustom/doctypes/ditabase/N4-ditabase.style" type="text/x-styler" media="editor" alternate="yes"?><task id="AddingATagGroupToAComponent-AFD3150A" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Adding a Tag Group to a component</title>
+<shortdesc class="- topic/shortdesc ">Adding a Tag Group allows you add a predefined collection
+of tags to a component in a single action. Typically, tags are in
+a tag group because it is common for each of the tags to be assigned
+to the same component. The <wintitle class="+ topic/keyword ui-d/wintitle ">Device Manager</wintitle> and <wintitle class="+ topic/keyword ui-d/wintitle ">Point Manager</wintitle> views of a driver, and the <wintitle class="+ topic/keyword ui-d/wintitle ">Edit
+Tags</wintitle> dialog are the primary methods for adding a tag group
+to a component. This procedure describes how to use the <wintitle class="+ topic/keyword ui-d/wintitle ">Edit Tags</wintitle> dialog to add a tag group.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata ">
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "><keyword conkeyref="wh_variables_n4/niagara" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara" class="- topic/keyword "/></prodname>
+</prodinfo>
+</metadata>
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">adding<indexterm class="- topic/indexterm ">tag groups</indexterm></indexterm><indexterm class="- topic/indexterm ">tag group<indexterm class="- topic/indexterm ">adding</indexterm></indexterm>
+</keywords></metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq "><ul class="- topic/ul ">
+<li conref="Addingtagsfromaninstalleddictionary-task_0000000900.dita#AddTagsFromInstalledDictionary/MakeSureThatYouHaveOneOrMoreTagDict-30808C74" class="- topic/li "><p class="- topic/p "/></li>
+</ul></prereq>
+<context class="- topic/section task/context "/>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Right-click on the component that you want to tag and select <uicontrol class="+ topic/ph ui-d/uicontrol ">Edit Tags</uicontrol> from the popup menu.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the <uicontrol class="+ topic/ph ui-d/uicontrol "><wintitle class="+ topic/keyword ui-d/wintitle ">Edit Tags</wintitle></uicontrol> dialog box, select a dictionary from the option list in the top
+left corner <image href="../graphic/tag_dictionary_optionlist_0000015420_0000000837.png" scale="90" class="- topic/image ">
+</image>. </cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The top half of the dialog box shows a list of individual
+tags available from the selected dictionary.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Scroll down to see the list tag groups in the dictionary.</cmd>
+<info class="- topic/itemgroup task/info "><note type="tip" class="- topic/note ">To limit the number of tags displayed, use
+the <wintitle class="+ topic/keyword ui-d/wintitle ">Search</wintitle> and the <wintitle class="+ topic/keyword ui-d/wintitle ">Filter</wintitle> fields as needed.</note> </info>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To assign the selected collection of tags, select the desired
+tag group and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Add Tag</uicontrol>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The assigned tag group displays as an Ord on the <uicontrol class="+ topic/ph ui-d/uicontrol ">Direct Tags</uicontrol> tab (lower half).</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To save the added tag assignments. click <uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol>.</cmd></step>
+</steps>
+<result class="- topic/section task/result ">Once you save the added tag assignments, the set of tags in
+the tag group are implied tags on the component.</result>
+<postreq class="- topic/section task/postreq "/>
+</taskbody>
+</task>

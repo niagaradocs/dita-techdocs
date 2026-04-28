@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="DeviceInstance-8A88B09B" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry ">
+<glossterm class="- topic/title concept/title glossentry/glossterm ">device instance</glossterm>
+<glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">The logical address on an MS/TP link or IP network that
+matters to BACnet. This number is unique across all subnets and routed
+links. (www.csimn.com)</glossdef>
+</glossentry>

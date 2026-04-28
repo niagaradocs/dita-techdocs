@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="STA-91F25A25" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry "><glossterm class="- topic/title concept/title glossentry/glossterm ">STA</glossterm><glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">In the context of a <ph conkeyref="host_models/nc" class="- topic/ph "/>   client mode of operation, the term STA is synonymous with "client", "station", "station mode", or "wpa_supplicant". In this context, these terms may be used interchangeably.</glossdef></glossentry>

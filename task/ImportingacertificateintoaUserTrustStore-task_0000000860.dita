@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="SSLImportingACertificateIntoATrustS" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Manually importing a certificate into a User Trust Store</title><shortdesc class="- topic/shortdesc ">If your <wintitle class="+ topic/keyword ui-d/wintitle ">System Trust Stores</wintitle> already
+contain the root CA certificate of the CA (Certificate Authority)
+that signed your intermediate, server or code-signing certificates,
+you do not need to import anything. If you are serving as your own
+CA, you must import the root CA certificate you exported (without
+its private key) into the <wintitle class="+ topic/keyword ui-d/wintitle ">User Trust Store</wintitle> of
+each client. Each platform and station share the same stores. This
+procedure documents how to manually import the root CA certificate
+into an individual client.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">certificate<indexterm class="- topic/indexterm ">importing into
+a User Trust Store</indexterm></indexterm><indexterm class="- topic/indexterm ">User Trust Store<indexterm class="- topic/indexterm ">importing a certificate</indexterm></indexterm></keywords></metadata></prolog><taskbody class="- topic/body task/taskbody "><prereq class="- topic/section task/prereq ">The focus is on the User Trust Store in the appropriate stores
+location, which would be the platform/station User Trust Store for
+a server certificate and the <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> User Trust Store for a code-signing certificate.</prereq><context class="- topic/section task/context "><note class="- topic/note ">There is no need to import the server certificates
+or the intermediate CA certificates to any <wintitle class="+ topic/keyword ui-d/wintitle ">User Trust Store</wintitle>. Each signed server certificate carries within it any intermediate
+and root CA certificate information.</note></context><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Select the <wintitle class="+ topic/keyword ui-d/wintitle ">User Trust Store</wintitle> tab.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Click <uicontrol class="+ topic/ph ui-d/uicontrol ">Import</uicontrol>.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Locate and select the root CA certificate's .pem file on
+the thumb drive and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Open</uicontrol>.</cmd><stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Certificate Import</wintitle> window opens.</stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Confirm that the <uicontrol class="+ topic/ph ui-d/uicontrol ">Subject</uicontrol> property
+identifies the correct certificate and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd><stepresult class="- topic/itemgroup task/stepresult ">The system imports the certificate, identifying it with
+a green shield icon (<image outputclass="inline" placement="inline" scale="65" href="../graphic/IconGreenShield_0000040200.png" class="- topic/image "/>)</stepresult></step></steps><postreq class="- topic/section task/postreq ">You may repeat this procedure for each client platform/station,
+or use a provisioning job to automate the process.</postreq></taskbody></task>

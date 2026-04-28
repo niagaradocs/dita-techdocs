@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<?Pub UDT template _font?><reference id="STATStatusLED-0B4A80DB" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">STAT (Status) LED</title>
+<shortdesc class="- topic/shortdesc ">The green <uicontrol class="+ topic/ph ui-d/uicontrol ">STAT</uicontrol> LED provides a CPU
+machine status check, and should remain lit whenever the controller
+is powered. </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm "><uicontrol class="+ topic/ph ui-d/uicontrol ">STAT</uicontrol> (Status)
+LED</indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">If the status LED does not light while power is applied,
+contact System Engineering for technical support.</p></section>
+</refbody>
+</reference>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="NiagaraTagDictionary-472E554D" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry "><glossterm class="- topic/title concept/title glossentry/glossterm "><term id="glTerm" class="- topic/term "><text id="glText" class="- topic/text ">Niagara tag dictionary</text></term></glossterm><glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">A tag dictionary (namespace) containing a collection of
+tags developed for <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword ">Niagara</keyword> systems, that are used for semantic modeling of
+specific building control entities, i.e. networks, devices, equipment,
+points, sites, buildings, geo-location, histories, etc. <p class="- topic/p ">The Niagara
+dictionary is a type of Smart Tag dictionary, therefore it applies
+Implied Tags and Implied Relations to components and links. This allows
+queries to find these components based on type, linkage, hierarchy
+or combinations of these. The Niagara tag dictionary is included by
+default in all stations created using the New Station tool.</p><p class="- topic/p ">The Niagara dictionary is indicated by the <i class="+ topic/ph hi-d/i ">n </i>character, followed
+by a colon character (:).</p></glossdef></glossentry>

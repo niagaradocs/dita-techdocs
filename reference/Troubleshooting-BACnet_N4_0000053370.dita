@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="TroubleshootingBACnet-4FF09FBA" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Troubleshooting</title>
+<shortdesc class="- topic/shortdesc ">This topic provides suggestions for some issues you may
+encounter.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">troubleshooting</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><title class="- topic/title ">I configured Stale Time in my tuning policies for
+10 minutes, but the points in my graphic go stale well before 10 minutes
+are up.</title><p class="- topic/p ">The length of time a point value remains fresh depends
+on the stale time and on the poll cycle time. For each point, the
+system measures the stale time from the last time the point was updated.
+A 10-minute stale time, and an 8-minute poll cycle time can result
+in point values that are nearly eight minutes old. If you stop polling,
+those points begin going stale roughly two minutes, not 10 minutes
+later.</p><p class="- topic/p ">This can be confusing when viewers expect that the points
+in a graphic should stay up for the 10 full minutes (or the configured
+Stale Time) before going stale. However, the actual time depends on
+how long ago they were last polled.</p></section>
+<section class="- topic/section "><title class="- topic/title ">After discovering devices, some appear highlighted
+in orange.</title><p class="- topic/p ">The orange highlight indicates that the device
+is in fault. Often this is because of a duplicate Device ID (same
+Object_ID in the Device object of multiple devices). This is illegal
+in BACnet; each device must have a unique Object_ID for its device
+object.</p><p class="- topic/p ">You can still add such devices to the station, however,
+all but one will have a Device ID of -1 (unassigned), and be unreachable.
+Devices must be locally re-configured to have unique Device IDs. Then,
+in the station, each <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetDevice</uicontrol>’s
+corresponding (<uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol>) Device Object must have
+its <parmname class="+ topic/keyword pr-d/parmname ">Object Id</parmname> property set to match accordingly.
+Or, delete the devices, re-discover, and add then again.</p></section>
+<section class="- topic/section "><title class="- topic/title ">My station takes a long time to start up.</title><p class="- topic/p ">Upon station startup, the BACnet driver automatically uploads all
+Device object properties for each represented BACnet device, after
+which the station’s <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetNetwork</uicontrol> is
+fully initialized. Typically, such property uploads are inconsequential
+if there are mostly BACnet/IP or BACnet Ethernet devices.</p><p class="- topic/p ">However,
+if a <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetNetwork</uicontrol> includes many MS/TP devices,
+a long delay at station startup may result. During all these Device
+object uploads, more critical point data reads and writes cannot occur.</p><p class="- topic/p ">Any <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetDevice</uicontrol> with a Boolean slot named <parmname class="+ topic/keyword pr-d/parmname ">Skip Upload</parmname> with a value of <option class="+ topic/keyword pr-d/option ">true</option>, skips
+this upload at station startup. At any time you can still manually
+invoke the <uicontrol class="+ topic/ph ui-d/uicontrol ">Upload</uicontrol> action on any <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetDevice</uicontrol> to refresh these values—typically,
+most device object properties have static values.</p></section>
+<section class="- topic/section "><title class="- topic/title ">One or more of my proxy points reports a status, such
+as disabled, but the driver reports the opposite status: enabled.</title><p class="- topic/p ">BACnet proxy points are unique from proxy points in most other
+field bus drivers because the BACnet protocol reports its own native
+abnormal status for data objects. The Framework learns about a BACnet
+point’s abnormal status from the <parmname class="+ topic/keyword pr-d/parmname ">Status_Flags</parmname> property of the BACnet object.</p><p class="- topic/p ">Possible abnormal BACnet Status_Flags
+include the following:</p><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">IN_ALARM — appears as <systemoutput class="+ topic/ph sw-d/systemoutput ">{alarm}</systemoutput> in the Framework</p></li>
+<li class="- topic/li "><p class="- topic/p ">FAULT — appears as <systemoutput class="+ topic/ph sw-d/systemoutput ">{fault}</systemoutput> in the Framework</p></li>
+<li class="- topic/li "><p class="- topic/p ">OVERRIDDEN — appears as <systemoutput class="+ topic/ph sw-d/systemoutput ">{overridden}</systemoutput> in the Framework</p></li>
+<li class="- topic/li "><p class="- topic/p ">OUT_OF_SERVICE — appears as <systemoutput class="+ topic/ph sw-d/systemoutput ">{alarm, overridden}
+outOfService</systemoutput> in the Framework</p></li>
+</ul><p class="- topic/p ">To get this native status, you do not have to create a proxy
+point expressly for the status flags of a BACnet object. By default
+only the selected property is polled and reflected in the <parmname class="+ topic/keyword pr-d/parmname ">Read Value</parmname> of the <uicontrol class="+ topic/ph ui-d/uicontrol ">ProxyExt</uicontrol>. However,
+you can include the polling of other data (including statusFlags),
+by adding to the facets of the point.</p><p class="- topic/p ">When you add statusFlags
+to facets, the driver merges the native BACnet point status with the
+Framework’s status. Without adding the statusFlags key to the
+point’s facets, the driver returns only the default Framework
+status for the proxy point. For example, if the BACnet object is in
+alarm, the Framework may report it as <systemoutput class="+ topic/ph sw-d/systemoutput ">{ok}</systemoutput>.</p><p class="- topic/p ">The default behavior of BACnet proxy points using COV (Change
+of Value) instead of polling, matches polled-point behavior for status.</p></section>
+<section class="- topic/section "><title class="- topic/title ">I exported data from a Supervisor station to a remote
+schedule object and immediately the object went into fault.</title><p class="- topic/p ">By default, the Framework exports all schedule data to the BACnet
+schedule object. Depending on the target BACnet device’s implementation
+by vendor, some properties of its schedule objects may be read-only
+or may not exist. For example, a BACnet schedule object may allow
+writes to its weekly schedule events, but not to its exception schedule
+(special events, if they are read-only or perhaps do not even exist).
+The object may not even have a weekly schedule or an exception schedule
+(a Schedule must only have one or the other; it may have both). Finally,
+the object’s <parmname class="+ topic/keyword pr-d/parmname ">Priority_For_Writing</parmname> property
+may be read-only. A fault occurs if a target object cannot handle
+the data exported to it. </p></section>
+</refbody>
+</reference>

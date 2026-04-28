@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="ScopedTagRule-879EEF05" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry "><glossterm class="- topic/title concept/title glossentry/glossterm "><term id="glTerm" class="- topic/term "><text id="glText" class="- topic/text ">scoped tag rule</text></term></glossterm><glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">In <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> tag rules have a scope in which they apply. This means
+that an entity will only have tags implied by a tag rule if the entity
+is within the tag rule's scope. This focuses evaluation of NEQL queries
+on applicable entities, which reduces the amount of time it takes
+to complete a search or hierarchy refresh.</glossdef></glossentry>

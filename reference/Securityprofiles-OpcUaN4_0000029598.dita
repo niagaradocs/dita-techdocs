@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="SecurityProfilesN4OpcUA-9C1BC404" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Security profiles</title><shortdesc class="- topic/shortdesc ">In the <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword ">Niagara</keyword> OPC UA implementation the combination for security
+mode and security policy form a security profile. Different profiles
+specify different details, such as which encryption algorithms are
+required for which OPC UA functions. Some of the profiles specify
+security functions and others specify other functionality that is
+not related to security.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">security profiles</indexterm><indexterm class="- topic/indexterm ">profiles<indexterm class="- topic/indexterm ">security</indexterm></indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p ">A Sign with Security Policy profile offers these options:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">SignBasic128RSA15</option> provides medium channel
+security during commutation. It transports messages as plain text
+with a digital signature.</p></li><li class="- topic/li "><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">SignBasic256</option> provides medium to high channel
+security during commutation. It transports messages as plain text
+with a digital signature.</p></li><li class="- topic/li "><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">SignBasic256SHA256</option> provides high channel security
+during commutation. It transports messages as plain text with a digital
+signature.</p></li></ul><p class="- topic/p ">A Sign and Encrypt with Security Policy profile offers these
+options:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">SignEncryptBasic128RSA15</option> provides medium channel
+security during communication. It encrypts messages transports the
+data with a digital signature.</p></li><li class="- topic/li "><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">SignEncryptBasic256</option> provides medium to high
+channel security during commutation. It encrypts messages and transports
+data with a digital signature.</p></li><li class="- topic/li "><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">SignEncryptBasic256SHA256</option> provides the highest
+channel security during commutation. It encrypts messages and transports
+data with a digital signature.</p></li></ul><note class="- topic/note ">The default profile for OPC UA is Sign and Encrypt with
+Security using the <option class="+ topic/keyword pr-d/option ">SignEncryptBasic256SHA256</option> option
+for <parmname class="+ topic/keyword pr-d/parmname ">Security Mode</parmname>.<p class="- topic/p ">The other profiles include
+a warning message that points out the security risk involved. You
+or an administrator must acknowledge the warning, which the driver
+logs in the system for audit purposes.</p></note></section></refbody></reference>

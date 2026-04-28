@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-MinMaxAvg" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-MinMaxAvg</title>
+<shortdesc class="- topic/shortdesc ">This component has three StatusNumeric output slots that
+provide the current minimum, maximum, and average values of from 2
+to 10 linked StatusNumeric inputs.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">MinMaxAvg</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">It is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Util</uicontrol> folder
+of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p><fig class="- topic/fig ">
+<title class="- topic/title ">MinMaxAvg properties</title>
+<image href="../graphic/kitControlMinMaxAvg_0000067868.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window (defaults to null units, a single
+decimal place, minimum=negative infinity, maximum=positive infinity)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Selects units and configures how the value displays:</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">units </option> defines the unit of measure from<option class="+ topic/keyword pr-d/option ">acceleration </option> to <option class="+ topic/keyword pr-d/option ">volumetric flow.</option></p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">precision </option>defines the number of decimal places. </p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">min</option> defines the lowest value allowed.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">max</option> defines the highest value allowed.</p><p class="- topic/p ">This definition
+applies to the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> value for this component.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Number Values</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number (defaults to 2–10)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Select the number of inputs which need to be calculated.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Min</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only number</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Reports the lowest number in the set.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Max</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only number</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Reports the highest number in the set.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Avg</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only number</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Reports the average.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In A through In J</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number (defaults to 0) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the set of number upon which to calculate the average.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

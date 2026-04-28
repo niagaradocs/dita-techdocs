@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="BEATHeartbeatLED-0B4ACEA2" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">BEAT (Heartbeat) LED</title><shortdesc class="- topic/shortdesc ">In normal operation, the yellow heartbeat <uicontrol class="+ topic/ph ui-d/uicontrol ">BEAT</uicontrol> LED blinks at 1 Hz, with a 50%/50% on/off duty cycle.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm "><uicontrol class="+ topic/ph ui-d/uicontrol ">BEAT</uicontrol> (Heartbeat)
+LED</indexterm><indexterm class="- topic/indexterm ">heartbeat LED</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p ">After power is applied, during bootup, the “BEAT” LED
+flashes at a 1 Hz rate, at 50%/50% on/off duty cycle. The bootup process
+status is indicated by blink patterns as described in the table below.<table conkeyref="J9StatusLEDs/j9hbledtable" class="- topic/table "><tgroup cols="5" class="- topic/tgroup "><tbody class="- topic/tbody "><row class="- topic/row "><entry class="- topic/entry "/></row></tbody><?Pub Caret -2?></tgroup></table><note type="caution" class="- topic/note ">Do not remove power from the controller
+during bootup or during other critical operations, such as firmware
+upgrade to the controller or any attached modules. .</note></p><p class="- topic/p ">If the <uicontrol class="+ topic/ph ui-d/uicontrol ">BEAT</uicontrol> LED stays on constantly, does
+not light, or blinks very fast, contact System Engineering for technical
+support.</p></section></refbody></reference>

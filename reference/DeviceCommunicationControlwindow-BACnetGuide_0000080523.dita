@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="DeviceCommunicationControlWindow-BA-3A372D9D" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Device Communication Control window</title>
+<shortdesc class="- topic/shortdesc ">This window controls the configuration of communication
+properties.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Device Communication Control window</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><fig class="- topic/fig ">
+<title class="- topic/title ">Device Communication Control properties</title>
+<image href="../graphic/windowDeviceCommunicationControl_0000080513.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig><p class="- topic/p ">To open this window, in the Supervisor station, expand <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Drivers</uicontrol>
+</menucascade>, double-click <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetAwsNetwork</uicontrol> and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Comm Ctl</uicontrol>.</p></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Enable Disable</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">drop-down list (defaults to <option class="+ topic/keyword pr-d/option ">Enable</option>)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Permits and prohibits the configuration of communication
+properties.<p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Enable</option> permits configuration of these
+properties.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Disable</option> prohibits communication
+property configuration.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Disable Initiation</option> permits
+configuration for the amount of time defined by <parmname class="+ topic/keyword pr-d/parmname ">Duration</parmname>, after which the properties can no longer be configured.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Duration</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours minutes seconds</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines a period of time during which device communication
+control may be configured.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Password</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines a password to require when configuring communication
+control.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="PaletteDifferences-BACnetSupervisor-558BB22D" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Palette differences</title><shortdesc class="- topic/shortdesc ">Each BTL-certified BACnet Supervisor (OWS, AWS) uses much
+of the same software as the regular <apiname class="+ topic/keyword pr-d/apiname ">bacnet</apiname> module.
+The <apiname class="+ topic/keyword pr-d/apiname ">bacnetAWS</apiname> and <apiname class="+ topic/keyword pr-d/apiname ">bacnetOWS</apiname> modules
+extend the <apiname class="+ topic/keyword pr-d/apiname ">bacnet</apiname> module providing enhanced operations.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">palette (Supervisors)</indexterm><indexterm class="- topic/indexterm ">Supervisor palettes</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p ">For example, the <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetAwsDevice</uicontrol> enhances the regular <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetDevice</uicontrol> by replacing
+the <uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol> property with an AWS version that
+enables creating and deleting objects.</p><?Pub Caret 96?><p class="- topic/p ">For convenience,
+the palette in the <apiname class="+ topic/keyword pr-d/apiname ">bacnetOws</apiname> and <apiname class="+ topic/keyword pr-d/apiname ">bacnetAws</apiname> modules provide all available components, including all the shared <apiname class="+ topic/keyword pr-d/apiname ">bacnet</apiname> components (except server-related ones).</p><p class="- topic/p ">The
+network component and a few others differ between the <apiname class="+ topic/keyword pr-d/apiname ">bacnetOws</apiname> and <apiname class="+ topic/keyword pr-d/apiname ">bacnetAws</apiname> modules, often with a different
+default view. For example, there is a <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet Aws Device
+Manager</wintitle> view and a <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet Ows Device Manager</wintitle> view. The <apiname class="+ topic/keyword pr-d/apiname ">bacnetAws</apiname> palette provides additional
+components, which are not found in the <apiname class="+ topic/keyword pr-d/apiname ">bacnet</apiname> module.</p><p class="- topic/p ">Server-side (BACnet export) components found in the <apiname class="+ topic/keyword pr-d/apiname ">bacnet</apiname> palette are missing, as neither the BACnet AWS Supervisor nor the
+BACnet OWS Supervisor are licensed for server operation. Also, there
+is no <uicontrol class="+ topic/ph ui-d/uicontrol ">MstpPort</uicontrol> under the <uicontrol class="+ topic/ph ui-d/uicontrol ">NetworkPorts</uicontrol> folder. This port type is valid only for QNX-based hosts.</p><p class="- topic/p ">The various Bacnet manager views in the palette simplify component
+creation, enforcing proper component hierarchy. For example, the <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet Aws Config Manager</wintitle> view on the <uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol> device extension of a <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetAwsDevice</uicontrol> discovers
+the appropriate types of <uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol> objects to
+represent BACnet objects (including added ones).</p><p class="- topic/p ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet Aws Config Manager</wintitle> is also unique in that you can
+add BACnet objects and delete them from the selected device providing
+that the device supports these BACnet services.</p></section></refbody></reference>

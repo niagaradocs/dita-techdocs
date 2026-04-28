@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="BACnetClient-B103B535" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry ">
+<glossterm class="- topic/title concept/title glossentry/glossterm ">BACnet client</glossterm>
+<glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">An operational mode for a BACnet system that makes use of
+a BACnet device for some particular purpose via a service request
+instance.</glossdef>
+</glossentry>

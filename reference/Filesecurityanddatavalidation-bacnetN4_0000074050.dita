@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="FileSecurityAndDataValidation-CECCC682" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Validation criteria for data to be discovered</title>
+<shortdesc class="- topic/shortdesc ">You can create EDE comma-delimited EDE master configuration
+files by exporting them from another station (perhaps a station running
+older software that you are upgrading) or by using Microsoft™
+Excel™ or Notepad to create them from scratch.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">validation</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">Before you discover devices and points from your EDE configuration
+files, validate the data contained in the files for accuracy. Following
+are some validation criteria to give you an idea about what to check
+before importing an EDE master configuration file into a station database.</p><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">string value and string length: make sure all names are spelled
+the way you want them to appear in the interface and the string value
+is large enough to meet your needs.</p></li>
+<li class="- topic/li "><p class="- topic/p ">integer/float range: make sure this value is large enough to
+meet your needs.</p></li>
+<li class="- topic/li "><p class="- topic/p ">enum range: make sure that your enum values are spelled correctly
+and that you have one for each important characteristic.</p></li>
+</ul></section>
+</refbody>
+</reference>

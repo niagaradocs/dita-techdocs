@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-Add" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-Add</title>
+<shortdesc class="- topic/shortdesc ">This math component performs the operation: <codeph class="+ topic/ph pr-d/codeph ">out
+= (inA + inB + inC + inD)</codeph>.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Add</indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">AbsValue is in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Math</uicontrol> folder
+of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette. It adds together up
+to four input values, generating a single output value.</p><fig class="- topic/fig ">
+<title class="- topic/title ">Add properties</title>
+<image href="../graphic/kitControlAdd_0000067677.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Facets (Numeric)</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Selects units and configures how the value displays:</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">units</option> defines the unit of measure from <option class="+ topic/keyword pr-d/option ">acceleration </option> to <option class="+ topic/keyword pr-d/option ">volumetric flow.</option></p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">precision </option>defines the number of decimal places. </p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only number</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the sum of the four input values.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In A, In B, In C, In D</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">numbers (up to four values)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the numbers to add.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

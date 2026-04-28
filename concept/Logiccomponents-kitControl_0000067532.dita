@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="LogicComponents-28252981" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Logic components</title>
+<shortdesc class="- topic/shortdesc ">All 10 of the logic components process input values and
+provide a StatusBoolean output. Logic object types vary based on input
+type.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">logic components</indexterm></keywords>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">Four logic components receive StatusBoolean inputs:</p>
+<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">And</p></li>
+<li class="- topic/li "><p class="- topic/p ">Or</p></li>
+<li class="- topic/li "><p class="- topic/p ">Xor</p></li>
+<li class="- topic/li "><p class="- topic/p ">Not</p></li>
+</ul>
+<p class="- topic/p ">Six logic components receive StatusNumeric inputs:</p>
+<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Equal</p></li>
+<li class="- topic/li "><p class="- topic/p ">GreaterThan</p></li>
+<li class="- topic/li "><p class="- topic/p ">GreaterThanEqual</p></li>
+<li class="- topic/li "><p class="- topic/p ">LessThan</p></li>
+<li class="- topic/li "><p class="- topic/p ">LessThanEqual</p></li>
+<li class="- topic/li "><p class="- topic/p ">NotEqual</p></li>
+</ul>
+<p class="- topic/p ">An ExprLogic component is unlike all others—and technically
+not a logic component. Instead, it demonstrates how to use an Expr
+component (BqlExprComponent) with a 4-input logic AND function.</p>
+<p class="- topic/p ">You can add alarm and history extensions to any logic component,
+in addition to the control extension DiscreteTotalizerExt. If configured
+with a DiscreteTotalizerExt, you can also add special-purpose alarm
+extensions ChangeOfStateCountAlarmExt and/or ElapsedActiveTimeAlarmExt.</p>
+<p class="- topic/p ">As with math components, you can individually configure logic components
+to propagate status flags received on linked inputs (by default, status
+propagation does not occur). For more details, refer to the <cite class="- topic/cite "><ph conkeyref="doctitles_coresw/Niagara4UserGuide-90E05C89" conref="../reuse/WH_CoreSWDocTitles_Tridium_N4_0000009937.dita#WHCoreSoftwareDocumentTitles-9A315B77/Niagara4UserGuide-90E05C89" class="- topic/ph "/></cite>.</p>
+</conbody>
+</concept>

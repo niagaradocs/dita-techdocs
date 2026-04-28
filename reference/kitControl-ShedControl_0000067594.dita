@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-ShedControl" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-ShedControl</title>
+<shortdesc class="- topic/shortdesc ">This component receives inputs from a primary (network)
+EDL source and a local (secondary) EDL source (separate ElectricalDemandLimit
+objects) that specify the number of load levels that should be shed.
+The Secondary Shed Level backs up when the Primary Shed Level is not
+available</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">ShedControl</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">ShedControl is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Energy</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette, along with
+related objects.</p><p class="- topic/p ">ShedControl has StatusBoolean outputs for up
+to 16 contiguous levels, as specified in the <parmname class="+ topic/keyword pr-d/parmname ">Number Levels</parmname> property. A <parmname class="+ topic/keyword pr-d/parmname ">Status</parmname> slot provides an output
+message to indicate this component’s state in reference to
+the overall demand limiting control scheme.</p><fig class="- topic/fig ">
+<title class="- topic/title ">ShedControlProperties</title>
+<image href="../graphic/kitControlShedControl_0000067606.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Number Levels</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number from 1–32 (defaults to 16)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines </propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Shed Enable</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> (default) or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Turns execution of this component on and off.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Primary Shed Level</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number (defaults to 0.0) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the input to link to from an EDL component. Typically,
+this would be a component on the network.<p class="- topic/p ">When null is checked,
+the value displayed defaults to the incoming value from the device.
+If you remove the check mark you can configure the<parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Secondary Shed Level</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number (defaults to 0.0) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines an input to from a secondary (or backup) EDL component.
+Typically, this would be an EDL component with a locally available
+connection. The Secondary Shed level is used only if the Primary Shed
+Level property is not available.<p class="- topic/p ">When null is checked, the value
+displayed defaults to the incoming value from the device. If you remove
+the check mark you can configure the<parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Status (out1 through out16)</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">binary status values and null definitions</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Reflect the current active Shed Level. For example, a Shed
+Level of 3 (as indicated by the Primary Shed Level, or Secondary Shed
+Level when Primary is not available) sets the first three out properties
+(out1, out2, out3) to false. This false value may be used to turn
+off power by linking to an appropriate control. When a restore changes
+the Shed Level to 2, the out3 property returns to null, relinquishing
+control to the next (out2) priority level.<p class="- topic/p ">When null is checked,
+the value displayed defaults to the incoming value from the device.
+If you remove the check mark you can configure the<parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

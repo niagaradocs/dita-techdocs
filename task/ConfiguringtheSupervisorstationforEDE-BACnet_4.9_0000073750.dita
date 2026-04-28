@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="ConfiguringTheSupervisorStationForE-C7E4A4CD" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Configuring a station for EDE</title><shortdesc class="- topic/shortdesc ">Before you can use the EDE configuration utility to discover
+devices and points offline, the EDE tool must be enabled in the station.
+Both the controller and Supervisor stations require this configuration.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">EDE configuration</indexterm></keywords></metadata></prolog><taskbody class="- topic/body task/taskbody "><prereq class="- topic/section task/prereq ">The Supervisor or controller station is running and connected
+using <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/>.</prereq><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Click <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Tools</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Bacnet EDE</uicontrol></menucascade>.</cmd><stepresult class="- topic/itemgroup task/stepresult "><uicontrol class="+ topic/ph ui-d/uicontrol ">Bacnet EDE</uicontrol> appears as a node under
+the <uicontrol class="+ topic/ph ui-d/uicontrol ">My Tools</uicontrol> folder in the station. This component
+has a single property, <parmname class="+ topic/keyword pr-d/parmname ">Store Time</parmname>, which defaults
+to 30 minutes.</stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">If needed, adjust the time and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol>.</cmd></step></steps></taskbody></task>

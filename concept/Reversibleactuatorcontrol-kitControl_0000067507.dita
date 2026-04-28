@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="ReversibleActuatorControl-260D8EDB" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Reversible actuator control</title>
+<shortdesc class="- topic/shortdesc ">A typical application for the RaiseLower component is to
+control a reversible actuator to drive a coupled valve or damper either
+open or closed.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">reversible actuator control</indexterm>
+<indexterm class="- topic/indexterm ">RaiseLower</indexterm></keywords></metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">The external hardware device consists of two on-board relays with
+volt free contacts that switch to provide power to either the open
+or the close command of the actuator. The component activates either
+relay for a proportion of the full scale drive time of the actuator
+(drive time is pre-defined by the manufacturer). </p>
+<fig class="- topic/fig ">
+<title class="- topic/title ">RaiseLower component</title>
+<image href="../graphic/kitControlRaiseLower_0000067527.png" placement="break" scale="90" scope="local" class="- topic/image "/>
+</fig>
+<p class="- topic/p ">The acceptable input to this device is 0 to 10 volts, with staged
+control at 0v, 4v, 7v and 10v as detailed below:</p>
+<table class="- topic/table ">
+<tgroup cols="4" class="- topic/tgroup ">
+<?PubTbl tgroup dispwid="288.00px"?>
+<colspec colname="col1" colwidth="0.75*" class="- topic/colspec "/><colspec colname="col2" colwidth="1.13*" class="- topic/colspec "/><colspec colname="col3" colwidth="0.98*" class="- topic/colspec "/><colspec colname="col4" colwidth="1.16*" class="- topic/colspec "/>
+<thead class="- topic/thead ">
+<row class="- topic/row ">
+<entry class="- topic/entry ">Volts</entry>
+<entry class="- topic/entry ">Raise</entry>
+<entry class="- topic/entry ">Lower</entry>
+<entry class="- topic/entry ">Function</entry>
+</row>
+</thead>
+<tbody class="- topic/tbody ">
+<row class="- topic/row ">
+<entry class="- topic/entry ">0</entry>
+<entry class="- topic/entry ">Off</entry>
+<entry class="- topic/entry ">Off</entry>
+<entry class="- topic/entry ">Off</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">4</entry>
+<entry class="- topic/entry ">Off</entry>
+<entry class="- topic/entry ">On</entry>
+<entry class="- topic/entry ">Lower</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">7</entry>
+<entry class="- topic/entry ">Off</entry>
+<entry class="- topic/entry ">Off</entry>
+<entry class="- topic/entry ">Static</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">10</entry>
+<entry class="- topic/entry ">On</entry>
+<entry class="- topic/entry ">Off</entry>
+<entry class="- topic/entry ">Raise</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<fig class="- topic/fig ">
+<title class="- topic/title ">Example using the RaiseLower component</title>
+<image href="../graphic/kitControlRaiseLowerWireSheet_0000067526.png" placement="break" scale="90" scope="local" class="- topic/image "/>
+</fig>
+<p class="- topic/p ">The wire sheet is an example of an actuator configured for a 100
+second full-scale drive time. The initial actuator and virtual position
+values of are set at 0% (synchronized at fully lowered). Should the
+input signal increase to 40 percent, the raise output turns on for
+40 percent of the full scale drive time (40 sec). A subsequent input
+decrease to 15 percent lowers the output to 25 percent of full scale
+drive time (25 sec) moving the actuator to 15 percent open.</p>
+</conbody>
+</concept>

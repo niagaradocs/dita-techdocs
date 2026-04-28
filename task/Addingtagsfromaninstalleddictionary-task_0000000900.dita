@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="AddTagsFromInstalledDictionary" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Adding tags from an installed dictionary</title>
+<shortdesc class="- topic/shortdesc ">You can add <term class="- topic/term ">Direct Tags</term> to <term class="- topic/term ">components</term> to provide additional semantic information. There are many reasons
+to add tags to components. For example, it is by adding a tag that
+you set up a component to be included in a Tagged Category for the
+purpose of configuring component permissions. You add tags by selecting
+a component and using the <wintitle class="+ topic/keyword ui-d/wintitle ">Edit Tags</wintitle> window to
+select and add individual tags or tag groups to the component. <draft-comment class="- topic/draft-comment ">Belongs under Category management right after Adding and editing
+a tagged category.</draft-comment></shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">tags</indexterm><indexterm class="- topic/indexterm ">tagging</indexterm>
+<indexterm class="- topic/indexterm ">tag</indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "/>
+<vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq "><ul class="- topic/ul ">
+<li id="MakeSureThatYouHaveOneOrMoreTagDict-30808C74" class="- topic/li "><p class="- topic/p ">One or more
+installed tag dictionaries. If necessary, add required tag dictionaries
+to the <uicontrol class="+ topic/ph ui-d/uicontrol ">TagDictionaryService</uicontrol>.<note class="- topic/note ">If tagging
+offline, it is possible that no dictionaries are available. In that
+situation the system searches for tag dictionaries in alternate locations.</note></p></li>
+</ul></prereq>
+<context class="- topic/section task/context ">This task describes how to use the <wintitle class="+ topic/keyword ui-d/wintitle ">Edit Tags</wintitle> window to add individual tags or tag groups from a dictionary that
+is installed in the station <uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol> folder.<note class="- topic/note ">If you are using tags to support multiple hierarchical navigation
+schemes, you may add more than one type of tag to a component. You
+can use Tag Groups for adding multiple tags in a single add action.</note></context>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Right-click on the component that you want to tag and select <uicontrol class="+ topic/ph ui-d/uicontrol ">Edit Tags</uicontrol> from the window menu.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the <wintitle class="+ topic/keyword ui-d/wintitle ">Edit Tags</wintitle> window, select a
+dictionary from the option list in the top left corner <image href="../graphic/tag_dictionary_optionlist_0000015420_0000000837.png" scale="65" class="- topic/image ">
+</image>. </cmd>
+<info class="- topic/itemgroup task/info "><note type="tip" class="- topic/note ">In the <parmname class="+ topic/keyword pr-d/parmname ">Search</parmname> field, you
+can use a shortcut to designate the dictionary. Type <userinput class="+ topic/ph sw-d/userinput ">hs:</userinput> for Haystack, <userinput class="+ topic/ph sw-d/userinput ">n:</userinput> for Niagara, and similarly
+for other dictionaries.</note></info>
+<stepresult class="- topic/itemgroup task/stepresult ">The top half of the window shows a list of tags available
+from the selected dictionary. Once a tag is assigned to the active
+component, the tag icon appears dimmed.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Use the filter fields to limit the number of selections.</cmd>
+<choices class="- topic/ul task/choices ">
+<choice class="- topic/li task/choice ">Type in the <parmname class="+ topic/keyword pr-d/parmname ">Search</parmname> field. <image href="../graphic/tag_search_field_0000015419_0000000836.png" scale="65" scope="local" class="- topic/image "/> to filter by tag name. Tags are filtered immediately
+as you type.<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">If the list has only a single item, then it is selected by
+default.</p></li>
+<li class="- topic/li "><p class="- topic/p ">If a tag name is a subset of another tag, adding a space selects
+the shorter tag by name.</p><p class="- topic/p ">For example, if you have both “chiller”
+and “chillerPlant” tags, typing "chiller" shows both
+tags. Adding a space after “chiller” filters out “chillerPlant”
+and shows the “chiller” tag only.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Entering a colon ":" filters for the tag dictionary that has
+the prefixed namespace.</p><p class="- topic/p ">For example, if you enter <userinput class="+ topic/ph sw-d/userinput ">hs:temp</userinput> you select the “hs” (Haystack)
+dictionary and the "temp" tag.</p></li>
+</ul></choice>
+<choice class="- topic/li task/choice ">Select an option from the option list <image href="../graphic/tag_filter_field_0000015418_0000000835.png" scale="65" scope="local" class="- topic/image "/> to filter based on validity options.<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Show All</option>: no filtering applied when this option
+is selected.</p></li>
+<li class="- topic/li "><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Valid Only</option>: shows just the tags that are valid
+based on rules defined in the tag dictionary.</p></li>
+<li class="- topic/li "><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Best Only</option>: filters tags in appropriate manager
+views based on the identity of the component; for example, whether
+it is a point or device.</p></li>
+</ul></choice>
+</choices>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Select one or more tags from the <wintitle class="+ topic/keyword ui-d/wintitle ">Tag Dictionary</wintitle> (top) pane and click the <uicontrol class="+ topic/ph ui-d/uicontrol ">AddTag</uicontrol> button to
+assign the selected tags to the component.</cmd>
+<info class="- topic/itemgroup task/info "><note class="- topic/note ">Select a <term class="- topic/term ">Tag Group</term>, if appropriate, to add
+several tags at once. </note></info>
+<stepresult class="- topic/itemgroup task/stepresult ">The selected tags are added and appear in the <wintitle class="+ topic/keyword ui-d/wintitle ">Direct Tags</wintitle> table in lower half of the window.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Edit any tag value fields, as appropriate, and click the <uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol> button to save the tag assignments.</cmd></step>
+<step importance="optional" class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">For tags that have <term class="- topic/term ">Ord</term> type values (such as “hs:siteRef”), refer to the following
+image and steps as an example of how to add a link to your tag.<image href="../graphic/tagordrefexample_0000015848_0000000834.png" placement="break" scale="65" class="- topic/image "/></cmd>
+<substeps class="- topic/ol task/substeps ">
+<substep class="- topic/li task/substep "><cmd class="- topic/ph task/cmd ">Click the option list arrow located to the right of
+the tag value field.</cmd></substep>
+<substep class="- topic/li task/substep "><cmd class="- topic/ph task/cmd ">Select the appropriate link type from the options menu.</cmd>
+</substep>
+<substep class="- topic/li task/substep "><cmd class="- topic/ph task/cmd ">Browse to the desired link and select it.</cmd></substep>
+<substep class="- topic/li task/substep "><cmd class="- topic/ph task/cmd ">Select the <option class="+ topic/keyword pr-d/option ">Handle</option> option.</cmd></substep>
+<substep class="- topic/li task/substep "><cmd class="- topic/ph task/cmd ">Click the <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol> button.</cmd>
+</substep>
+</substeps>
+</step>
+</steps>
+<result class="- topic/section task/result ">The component is now tagged.</result>
+</taskbody>
+</task>

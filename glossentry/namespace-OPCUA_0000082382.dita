@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="Namespace-6E1C0A36" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry ">
+<glossterm class="- topic/title concept/title glossentry/glossterm ">namespace</glossterm>
+<glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">A container for node IDs (points in the framework). The
+OPC foundation specifies a predefined namespace with index 0. Many
+more namespaces belong to specific OPC UA specifications, for example,
+DI and PLCopen. Every OPC UA specification defines its own node IDs.
+(from https://stackoverflow.com).<p class="- topic/p ">The <uicontrol class="+ topic/ph ui-d/uicontrol ">OpcUaNamespace</uicontrol> component under the <uicontrol class="+ topic/ph ui-d/uicontrol ">OpcUaNetwork</uicontrol> node in
+the Nav tree configures the namespace. The <uicontrol class="+ topic/ph ui-d/uicontrol ">OpcUaServerPointDeviceExt</uicontrol> component uniquely identifies each specific node.</p></glossdef>
+</glossentry>

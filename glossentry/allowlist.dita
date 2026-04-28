@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="allowlist-xxx0r8om" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry "><glossterm class="- topic/title concept/title glossentry/glossterm ">allowlist</glossterm><glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">A layer of protection that can be added to a Wi-Fi network. An IP address can be re-assigned to any device but a MAC address is hard-coded to the device. A MAC allowlist is an inventory of known MAC addresses that are permitted access to the Wi-Fi access point.</glossdef></glossentry>

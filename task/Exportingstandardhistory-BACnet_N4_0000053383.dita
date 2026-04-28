@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="ExportingStandardHistoryBACnet-5418EA6E" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Exporting standard history</title><shortdesc class="- topic/shortdesc ">You typically use <uicontrol class="+ topic/ph ui-d/uicontrol ">Discover</uicontrol> in the <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet Niagara Log Export Manager</wintitle> for any standard history
+you wish to export to BACnet as trend log object—that is, without
+the ability for sequence number access from BACnet. Using a discovery
+job is not necessary for the history of any component in which you
+have already added one of the BacnetTrendLogExts—as the BACnet
+driver automatically added a BacnetTrendLogDescriptor under the root
+of the <uicontrol class="+ topic/ph ui-d/uicontrol ">Export Table</uicontrol>.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">history<indexterm class="- topic/indexterm ">standard export</indexterm></indexterm></keywords></metadata></prolog><taskbody class="- topic/body task/taskbody "><prereq class="- topic/section task/prereq ">You are working in <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> connected to a remote host station.</prereq><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Expand <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Drivers</uicontrol></menucascade> followed by expanding the BACnet
+network node in the Nav tree, right-clicking the <uicontrol class="+ topic/ph ui-d/uicontrol ">Export
+Table</uicontrol>, and clicking <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Views</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Bacnet Niagara Log Export Manager</uicontrol></menucascade></cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Click <uicontrol class="+ topic/ph ui-d/uicontrol ">Discover</uicontrol>.</cmd><stepresult class="- topic/itemgroup task/stepresult ">The top pane shows the histories under the station’s
+folder.<p class="- topic/p ">As with other manager views featuring online discovery,
+learn mode in <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet Niagara Log Export Manager</wintitle> has two panes:<image placement="break" scale="65" href="../graphic/LogExportManager_0000054209.png" class="- topic/image "/></p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">Top (discovered) <wintitle class="+ topic/keyword ui-d/wintitle ">Local Histories</wintitle> pane—listing
+all histories in the local station.</p></li><li class="- topic/li "><p class="- topic/p ">Bottom (database) <wintitle class="+ topic/keyword ui-d/wintitle ">Exported Objects</wintitle> pane—listing
+histories currently exported to BACnet. These include both types of
+log descriptor components—each essentially a pointer to the
+exposed history, with additional slots that determine how BACnet access/writes
+are handled.</p></li></ul></stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Select a history and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Add</uicontrol>.</cmd><stepresult class="- topic/itemgroup task/stepresult ">The system exports the history object.</stepresult></step></steps><result class="- topic/section task/result ">When exporting, the manager automatically performs object
+ID maintenance on exported files, ensuring that no duplicate combinations
+of object type and instance number are created.</result></taskbody></task>

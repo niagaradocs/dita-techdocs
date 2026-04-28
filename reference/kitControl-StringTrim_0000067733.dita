@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-StringTrim" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-StringTrim</title>
+<shortdesc class="- topic/shortdesc ">This component trims white space from both ends of the
+StatusString <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> property value. White space is
+typically leading or trailing space characters, but may also include
+control characters. </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">StringTrim</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">StringTrim is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">String</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p><fig class="- topic/fig ">
+<title class="- topic/title ">StringTrim properties</title>
+<image href="../graphic/kitControlStringTrim_0000067750.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text (defaults to blank) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Outputs the trimmed string.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text (defaults to blank) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Identifies the string from which to strip white space.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

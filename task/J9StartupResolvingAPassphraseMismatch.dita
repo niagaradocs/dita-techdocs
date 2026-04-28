@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="ResolvingAPassphraseMismatch-346D4B94" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Resolving a passphrase mismatch</title><!--This topic is NOT shared by docJ8Startup and docJ9Startup.--><?Pub Caret 18?><shortdesc class="- topic/shortdesc ">If a controller fails, you can remove its SD or microSD
+card and insert it into a replacement unit and keep your business
+running. However, the removable card contains the system passphrase
+for the original unit, which does not match the passphrase for a replacement
+unit. This results in a boot sequence failing due to a passphrase
+mismatch indicated by a Stat LED flashing with a 50% duty cycle and
+a 1 second period.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">passphrase<indexterm class="- topic/indexterm ">troubleshooting</indexterm></indexterm></keywords></metadata></prolog><taskbody class="- topic/body task/taskbody "><prereq class="- topic/section task/prereq ">A controller has failed. You removed its memory card and inserted
+it into a replacement unit, but the replacement unit will not boot
+due to a passphrase missmatch. You are working in <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/>  running on a PC that is on the same network as the controller.
+You know the passphrase for the original controller.</prereq><context class="- topic/section task/context "><p class="- topic/p ">If you are monitoring the debug port, this notification
+banner opens in the serial shell.</p><fig class="- topic/fig "><title class="- topic/title ">System passphrase mismatch warning in the serial shell</title><note class="- topic/note ">The following shows a <ph conkeyref="host_models/nc8000" class="- topic/ph "/> - shell connection. <ph conkeyref="host_models/nc9000" class="- topic/ph "/> message
+is similar.</note><image placement="break" href="../graphic/PassphraseMismatchError_0000080976.png" class="- topic/image "/></fig><p class="- topic/p ">This warning prompts you to log in using platform credentials
+and update the system passphrase via the serial connection.</p></context><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Make a serial connection to the unit’s DEBUG port.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Log in to the controller via the serial connection.</cmd><stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">System Decrypt Failure Menu</wintitle> opens
+with the following options:<p class="- topic/p ">1 <option class="+ topic/keyword pr-d/option ">Update system passphrase</option></p><p class="- topic/p ">2 <option class="+ topic/keyword pr-d/option ">Remove all encrypted data</option></p><p class="- topic/p ">3 <option class="+ topic/keyword pr-d/option ">Reboot</option></p><p class="- topic/p ">4 <option class="+ topic/keyword pr-d/option ">Logout</option></p></stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Choose <option class="+ topic/keyword pr-d/option ">Update system passphrase</option>.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Enter the system passphrase for the original controller.</cmd></step></steps><result class="- topic/section task/result ">Pre-configuring (via a serial connection) the replacement
+controller with a system passphrase that matches the one stored on
+the removable memory card (which you swapped out from the original
+unit) facilitates commissioning the replacement unit. In this situation,
+the commissioning process does not prompt for a passphrase since it
+detects a passphrase match.</result></taskbody></task>

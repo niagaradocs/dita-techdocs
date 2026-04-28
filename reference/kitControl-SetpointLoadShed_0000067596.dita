@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-SetpointLoadShed" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-SetpointLoadShed</title>
+<shortdesc class="- topic/shortdesc ">This component provides a convenient way to implement load
+shedding strategies. It causes a specified setpoint to be raised or
+lowered by a specific amount in response to an input link, that enables
+the SetpointLoadShed component. Generally, this component solves the
+problem often found in temperature control sequences where shutting
+down an output directly may be complicated by other control dependencies.
+By changing the setpoint based on a shed request, the control sequence
+directs the output when to shut down and maintains the interdependencies.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">SetpointLoadShed</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">SetpointLoadShed is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Energy</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p><fig class="- topic/fig ">
+<title class="- topic/title ">SetpointLoadShed property sheet</title>
+<image href="../graphic/kitControlSetpointLoadShed_0000067608.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Enabled</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> (default) or <option class="+ topic/keyword pr-d/option ">false</option> and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Turns changing the setpoint on and off.<p class="- topic/p "><option class="+ topic/keyword pr-d/option ">true</option> adjusts the setpoint by the offset value.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">false</option> ignores the setpoint.</p><p class="- topic/p ">When null is checked, the value displayed
+defaults to the incoming value from the device. If you remove the
+check mark you can configure the<parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Setpoint In</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number of degrees of temperature (defaults to 0.0 F) and
+null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the normal setpoint value to be adjusted by this
+object.<p class="- topic/p ">When null is checked, the value displayed defaults to the
+incoming value from the device. If you remove the check mark you can
+configure the<parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Htg Offset</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">signed (+ or -) number of degrees of temperature (defaults
+to 6.0 F) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the amount by which to adjust the setpoint when
+in heating mode.<p class="- topic/p ">When null is checked, the value displayed defaults
+to the incoming value from the device. If you remove the check mark
+you can configure the<parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Clg Offset</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">signed (+ or -) number of degrees of temperature (defaults
+to 3.0 F) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the amount by which to adjust the setpoint when
+in cooling mode.<p class="- topic/p ">When null is checked, the value displayed defaults
+to the incoming value from the device. If you remove the check mark
+you can configure the<parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Mode In</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">StatusEnum (drop-down list) with three options and null
+definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Selects the current need: Off, Heat, Cool.<p class="- topic/p ">When null is
+checked, the value displayed defaults to the incoming value from the
+device. If you remove the check mark you can configure the<parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Offset in Effect</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default)
+and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Indicates if the <parmname class="+ topic/keyword pr-d/parmname ">Setpoint Out</parmname> property
+value has been adjusted.<p class="- topic/p ">When null is checked, the value displayed
+defaults to the incoming value from the device. If you remove the
+check mark you can configure the<parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Setpoint Out</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number of degrees of temperature and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the adjusted setpoint value, if active, otherwise
+it passes through to the original setpoint.<p class="- topic/p ">When null is checked,
+the value displayed defaults to the incoming value from the device.
+If you remove the check mark you can configure the<parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

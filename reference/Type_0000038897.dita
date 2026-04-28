@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="tagdictionary-TypeTag" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">tagdictionary-TypeTag</title><shortdesc class="- topic/shortdesc ">The <parmname class="+ topic/keyword pr-d/parmname ">Type</parmname> smart tag is available in
+the <wintitle class="+ topic/keyword ui-d/wintitle ">tagdictionary</wintitle> palette under the <uicontrol class="+ topic/ph ui-d/uicontrol ">Smart Tags</uicontrol> folder. The value of the type tag is set to
+the type of the <codeph class="+ topic/ph pr-d/codeph ">baja:Complex</codeph> object.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Type<indexterm class="- topic/indexterm ">smart tag</indexterm></indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><image placement="break" scale="75" width="500" href="../graphic/typetag_0000038907.png" class="- topic/image "/><p class="- topic/p ">Note that the <parmname class="+ topic/keyword pr-d/parmname ">Type</parmname> smart
+tag is included in the object tag rules of the NiagaraTagDictionary.
+This rule applies to all objects that are type <codeph class="+ topic/ph pr-d/codeph ">baja:Complex</codeph>. The value type of this tag is string.</p></section></refbody></reference>

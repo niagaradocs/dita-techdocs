@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="bacnetAws-BacnetAwsDeviceFolder" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">BacnetAwsDeviceFolder</title>
+<shortdesc class="- topic/shortdesc ">This component implements a folder under a BacnetAwsNetwork.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">BacnetAwsDeviceFolder</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">You add such folders using the <uicontrol class="+ topic/ph ui-d/uicontrol ">New Folder</uicontrol> button in the <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet Aws Device Manager</wintitle> view.
+The BacnetDeviceFolder is also available in the <apiname class="+ topic/keyword pr-d/apiname ">bacnetAws</apiname> palette.</p></section>
+</refbody>
+</reference>

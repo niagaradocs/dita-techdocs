@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="TagRulesTaggingGuide-BFF0D9C8" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Tag rules</title><shortdesc class="- topic/shortdesc ">The following gives you an overview of standard and custom
+tag rules.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Tag rules</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><title class="- topic/title ">Standard</title><p class="- topic/p ">Rules for the choice value tags
+are automatically generated based on the choice values found in the <filepath class="+ topic/ph sw-d/filepath ">defs.json</filepath> file. Another set of rules is automatically
+generated based on the def type inheritance tree in Haystack 4.</p><p class="- topic/p ">For example, water is a subtype of liquid, which is a subtype
+of fluid, which is a subtype of substance, which is a subtype of phenomenon.
+As a result, there is a tag rule that implies the liquid tag if a
+component has the water tag, or a tag rule that implies the fluid
+tag if a component has the liquid tag (direct or implied).</p><fig class="- topic/fig "><title class="- topic/title ">Inheritance tree tag rules</title><image placement="break" scale="90" width="700" href="../graphic/TaggingStandardTagRules_0000097748.png" class="- topic/image "/></fig></section><section class="- topic/section "><title class="- topic/title ">Custom</title><p class="- topic/p ">The <keyword conkeyref="wh_variables_n4/niagara" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara" class="- topic/keyword "/> configuration file defines tag rules that unlock some
+tagging convenience features in the framework. There are rules that
+imply simple tags based on the component’s type such as the <codeph class="+ topic/ph pr-d/codeph ">point</codeph> tag on BControlPoints and the <codeph class="+ topic/ph pr-d/codeph ">bacnet</codeph> tag on BBacnetNetworks. There are rules implying smart tags that
+derive their value from something else such as the unit tag whose
+value is based on the component’s units facet. An alternate configuration
+file can be specified if you wish a different set of tag rules and/or
+if you want to change the tag types they imply.</p><fig class="- topic/fig "><title class="- topic/title ">Custom tag rules</title><image placement="break" scale="90" width="700" href="../graphic/TaggingCustomTagRules2_0000097772.png" class="- topic/image "/></fig></section></refbody></reference>

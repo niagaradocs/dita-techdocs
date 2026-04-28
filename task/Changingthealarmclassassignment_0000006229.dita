@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="EditingTheAlarmClass-B172D421" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Changing the alarm class assignment</title>
+<shortdesc class="- topic/shortdesc ">You change the alarm class assignment of the alarm extension
+through the alarm extension manager.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">alarm<indexterm class="- topic/indexterm ">class, editing</indexterm><indexterm class="- topic/indexterm ">alarm extension manager</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Right-click the <uicontrol class="+ topic/ph ui-d/uicontrol ">AlarmService</uicontrol> and
+click <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Views</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Alarm Ext
+Manager</uicontrol></menucascade>.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Select one or more alarm extensions.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Right-click and click <option class="+ topic/keyword pr-d/option ">Edit Alarm Class</option> on the popup menu.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Choose the desired alarm class from the option menu and
+click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd></step>
+</steps>
+</taskbody>
+</task>

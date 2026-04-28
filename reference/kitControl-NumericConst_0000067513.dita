@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-NumericConst" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-NumericConst</title>
+<shortdesc class="- topic/shortdesc ">This component provides constant StatusNumeric value, with
+available action to Set. </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">NumericConst</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">NumericConst is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Constants</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette</p><p class="- topic/p ">Constant
+components are far simpler than writable control points (no priorities,
+status processing, and so forth). Constant components provide a linkable
+status-type output value and a default Set action for changing that
+value. This type of object may be handy when the same target property
+of multiple components needs to be adjusted simultaneously. Constants
+may also help clarify logic on a wire sheet.</p><fig class="- topic/fig ">
+<title class="- topic/title ">NumericConst properties</title>
+<image href="../graphic/kitControlNumericConst_0000067545.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window (defaults to null for units, one decimal
+place for precision, negative infinity for minimum, and positive infinity
+for maximum)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Selects units and configures how the value displays:<p class="- topic/p "><option class="+ topic/keyword pr-d/option ">units</option> defines the unit of measure from <option class="+ topic/keyword pr-d/option ">acceleration</option> to <option class="+ topic/keyword pr-d/option ">volumetric flow.</option></p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">precision</option> defines the number of decimal places.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">min</option> defines the lowest value allowed.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">max</option> defines
+the highest value allowed.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number (defaults to zero (0))</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Shows the current binary state of the point (on or off).</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

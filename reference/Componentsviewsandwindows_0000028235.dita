@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="ComponentsViewsWindows-0567A524" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Components, views and windows</title>
+<shortdesc class="- topic/shortdesc ">The user interface includes components, views and windows,
+which provide the means for communicating with the system.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">components</indexterm><indexterm class="- topic/indexterm ">views</indexterm>
+<indexterm class="- topic/indexterm ">plugins</indexterm><indexterm class="- topic/indexterm ">windows</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">The Help topics include context sensitive information
+about each component and view, as well as information about individual
+windows.</p></section>
+</refbody>
+</reference>

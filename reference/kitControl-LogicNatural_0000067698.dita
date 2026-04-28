@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-LogNatural" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-LogicNatural</title>
+<shortdesc class="- topic/shortdesc ">This component performs the operation: <codeph class="+ topic/ph pr-d/codeph ">out = ln(inA)
+(log base e of inA)</codeph>. </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">LogicNatural</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">LogNatural is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Math</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p></section>
+</refbody>
+</reference>

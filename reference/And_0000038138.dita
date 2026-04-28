@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="tagdictionary-And" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">tagdictionary-And</title><shortdesc class="- topic/shortdesc "><parmname class="+ topic/keyword pr-d/parmname ">And</parmname> is one of several possible validity
+conditions properties. If all of the specified criteria are present
+in the queried object, the parent definition's tag(s) may be applied.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">And</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p ">For example, you can drag an <parmname class="+ topic/keyword pr-d/parmname ">AndRule</parmname> onto the rule definitions of a smart tag dictionary. Then, drag
+the <parmname class="+ topic/keyword pr-d/parmname ">And</parmname> condition (or other conditions) under
+the condition <parmname class="+ topic/keyword pr-d/parmname ">And</parmname> for that rule, as shown here.</p><image placement="break" scale="65" width="300" href="../graphic/N4Tagging_ConditionAnd-And_0000039199.png" class="- topic/image "/><p class="- topic/p ">The validity conditions are
+located in the <wintitle class="+ topic/keyword ui-d/wintitle ">tagdictionary</wintitle> palette.</p></section></refbody></reference>

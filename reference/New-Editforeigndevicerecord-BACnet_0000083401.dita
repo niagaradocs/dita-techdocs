@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="NewEditForeignDeviceRecordBACnet-8A864F84" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">New (and Edit) foreign device record</title>
+<shortdesc class="- topic/shortdesc ">This window manually creates a new foreign device record
+in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Foreign Device Table</uicontrol> of the <uicontrol class="+ topic/ph ui-d/uicontrol ">Link Ip</uicontrol> layer under the <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetNetwork</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Bacnet Comm</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Network</uicontrol>
+</menucascade> node.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">foreign device</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><fig class="- topic/fig ">
+<title class="- topic/title ">New BBMD window</title>
+<image href="../graphic/windowBACnetNewForeignDeviceTable_0000083315.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig><p class="- topic/p ">To open this window, expand <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Drivers</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetNetwork</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Bacnet Comm</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Network</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Ip Port</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Link</uicontrol></menucascade>, double-click <uicontrol class="+ topic/ph ui-d/uicontrol ">Foreign Device Table</uicontrol> and click <uicontrol class="+ topic/ph ui-d/uicontrol ">New</uicontrol> or select an existing BBMD record in the table and
+click <uicontrol class="+ topic/ph ui-d/uicontrol ">Edit</uicontrol>.</p></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Bacnet I P Address</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">IP address</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Identifies the foreign device IP address.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Time To Live</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">time (defaults to –1)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the period of time within which a foreign device
+must re-register or be purged from the database.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Purge Time</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Reports when the device is scheduled to be removed from
+the database.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

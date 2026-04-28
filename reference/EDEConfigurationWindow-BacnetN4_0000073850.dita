@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="EDEConfigurationWindow-CA2C12E5" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">EDE Configuration Window</title>
+<shortdesc class="- topic/shortdesc ">This window assigns a key to a pair of EDE configuration
+files to make discovery easier.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">EDE Configuration window</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><fig class="- topic/fig ">
+<title class="- topic/title ">EDE Configuration Window<image placement="break" scale="65" href="../graphic/EDEconfig_0000073858.png" class="- topic/image "/></title>
+<p class="- topic/p ">To access this window double-click the <uicontrol class="+ topic/ph ui-d/uicontrol ">Bacnet Network</uicontrol> node in the Nav tree, click <uicontrol class="+ topic/ph ui-d/uicontrol ">Discover</uicontrol>, select
+a discovered EDE device and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Add</uicontrol>.</p>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Key</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text (defaults to blank)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Sets up a short text string to identify the EDE master configuration
+file.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">EDE Master file Location</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text (defaults to null)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Selects the path to the EDE master configuration file.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">State text file</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text (defaults to null)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Selects to the state text file.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">CSV Delimiter</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">single-character (defaults to comma (,))</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Configures the symbol that separates (delimits) individual
+property values in the configuration files.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task-5202" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Setting up PKI authentication</title><shortdesc class="- topic/shortdesc ">The PKI Authentication (Public Key Infrastructure Authentication) allows you to log into the station using client certificate authentication (mTLS). This certificate is signed by a trusted authority (CA). 
+You can use PKI Authentication on any platform and it does not require a license feature. 
+</shortdesc><taskbody class="- topic/body task/taskbody "><prereq importance="required" class="- topic/section task/prereq ">
+            <ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">You have established TLS connections for PKI authentication.</p></li><li class="- topic/li "><p class="- topic/p ">The clientCertAuth palette is recommended.</p></li><li class="- topic/li "><p class="- topic/p ">You must have a CA signed client certificate installed in their browser.
+ The public certificate of the CA must be available to the station.</p></li><li class="- topic/li ">
+                    <p class="- topic/p "><note class="- topic/note ">Users can only log in to a station via PKI Authentication in the browser.</note></p></li></ul>
+        </prereq><context class="- topic/section task/context "><p class="- topic/p ">Use cases for PKI authentication:
+ </p>
+    <ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">User Authentication: You want your users to log in using a
+client certificate.</p></li><li class="- topic/li "><p class="- topic/p ">Trusted Certificates: The client certificates
+are signed by a known CA that can be configured in the station.</p></li><li class="- topic/li "><p class="- topic/p ">Pre-Configuration: Your users need to be set up
+in advance on the station.</p></li></ul>
+    
+    
+    </context><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/>, connect to the station and navigate to <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Authentication Service</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Authentication Schemes</uicontrol></menucascade>.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Open the <apiname class="+ topic/keyword pr-d/apiname ">clientCertAuth</apiname> palette, and add the <uicontrol class="+ topic/ph ui-d/uicontrol ">PKI
+     Authentication Scheme</uicontrol> to the <uicontrol class="+ topic/ph ui-d/uicontrol ">Authentication Schemes</uicontrol> folder.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Under  <uicontrol class="+ topic/ph ui-d/uicontrol ">PKI Authentication Scheme</uicontrol>, open the CA
+     Certificates folder. A CA Configuration should already be present if the
+     scheme was dragged from the palette. More can be added as needed.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In  <uicontrol class="+ topic/ph ui-d/uicontrol ">CA Configuration</uicontrol>, configure the CA  as needed (see
+"<cite class="- topic/cite ">clientCertAuth-CA Configuration</cite>" in the "Components, views and windows" chapter for more details). </cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">User Service</uicontrol></menucascade>, create a new user in the
+     station and assign  the PKI Authentication Scheme and a role to it.  </cmd><info class="- topic/itemgroup task/info ">The user's
+     name should match the username configured in the user's certificate (for more details on how the username is found, see
+"<cite class="- topic/cite ">clientCertAuth-CA Configuration</cite>" in the "Components, views and windows" chapter.)</info></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Restart the 
+Web Service. When the CA configurations are modified, the Web Service will
+restart automatically after 2 minutes, but you can also manually restart it at any
+time.</cmd></step></steps><result class="- topic/section task/result "><b class="+ topic/ph hi-d/b ">User login with PKI authentication</b><p class="- topic/p "><ol class="- topic/ol "><li class="- topic/li ">In the browser,
+     when a user attempts to access the login page, they will be prompted to
+     select their certificate from a list if 
+     the client certificate is properly installed in their browser, and
+     the CA is  configured on the station.</li><li class="- topic/li ">The user selects their
+     certificate.</li><li class="- topic/li ">To log into the
+     station, the user clicks <uicontrol class="+ topic/ph ui-d/uicontrol ">Log in with SSO</uicontrol> . The text may be
+     different if the <parmname class="+ topic/keyword pr-d/parmname ">Login Button Text</parmname> property on the PKI Authentication
+     Scheme was modified.</li></ol></p></result></taskbody></task>

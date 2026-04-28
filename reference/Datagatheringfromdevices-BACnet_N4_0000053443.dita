@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="DataGatheringFromDevicesBACnet-4FF88C4B" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Data gathering from devices</title>
+<shortdesc class="- topic/shortdesc ">Two mechanisms import data from BACnet devices: device
+polling and, for devices that support COV (Change of Value), a COV
+subscription, which is more efficient than polling for data. Each
+network’s tuning policies control these mechanisms.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">data gathering</indexterm><indexterm class="- topic/indexterm ">device polling</indexterm><indexterm class="- topic/indexterm ">COV subscriptions</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">Tuning policies configure how a network evaluates write
+requests (for example, requests to write to writable proxy points)
+and the acceptable freshness of read requests. They associate with
+one of three poll rates in a network’s Poll Service.</p><p class="- topic/p ">The BACnet driver is unique among drivers in that it supports multiple
+communication port types: Ip port, Ethernet port, Secure Connect port,
+and MS/TP port. All port types can coexist under one network-level
+component (<uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetNetwork</uicontrol>). The driver uses
+a separate BacnetMultiPoll (<apiname class="+ topic/keyword pr-d/apiname ">Poll Service</apiname>) under <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetComm</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Network</uicontrol>
+</menucascade> for each port. </p></section>
+<section class="- topic/section "><title class="- topic/title ">Device polling</title><p class="- topic/p ">A multi-thread capability
+exists in all BACnet poll services where point polling might involve
+a BACnet router (say, going between B/IP and slower MS/TP devices).
+This capability is sometimes needed even in a (typically speedy) Ip
+port or Ethernet port link layer.</p><p class="- topic/p ">Unique to BACnet polling is
+the interplay with BACnet COV services, where some server devices
+may offer COV for point updates—a desirable alternative to
+polling. This affects tuning policy configurations, and how you should
+assign tuning policies for points.</p><p class="- topic/p ">By default, any BACnet proxy
+point polls support only one configured polling property. Thus, if
+you specify presentValue, which displays all of a point’s out
+values, no native object status or currently-active level (<systemoutput class="+ topic/ph sw-d/systemoutput ">bac=n</systemoutput> (if a commandable object) affects the point
+display. However, as needed you can add either or both of these extra
+polled properties, and/or others, by editing the facets of your proxy
+points.</p></section>
+<section class="- topic/section "><title class="- topic/title ">COV subscription</title><p class="- topic/p ">For devices that support
+COV, the driver offers client support for BACnet COV services, which
+receive notifications when proxy point data change.</p></section>
+</refbody>
+</reference>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="Plugins-05676AE5" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Views</title>
+<shortdesc class="- topic/shortdesc ">Plugins provide views of components and can be accessed
+in many ways. For example, double-click a component in the Nav tree
+to see its default view. In addition, you can right-click on a component
+and select from its <uicontrol class="+ topic/ph ui-d/uicontrol ">Views</uicontrol> menu.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">plugins</indexterm><indexterm class="- topic/indexterm ">views</indexterm>
+</keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "><keyword conkeyref="wh_variables_n4/NAF" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/NAF" class="- topic/keyword "/></prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/><vrm version="4.1" class="- topic/vrm "/>
+<vrm version="4.2" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">For summary documentation on any view, select <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Help</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">On View</uicontrol></menucascade> (<uicontrol class="+ topic/ph ui-d/uicontrol ">F1</uicontrol>) from the menu or press <uicontrol class="+ topic/ph ui-d/uicontrol ">F1</uicontrol> while the view is open.</p></section>
+</refbody>
+</reference>

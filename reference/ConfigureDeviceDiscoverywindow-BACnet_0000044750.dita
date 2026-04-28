@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="ConfigureDeviceDiscoveryWindowBACne-505CF038" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Configure Device Discovery window</title>
+<shortdesc class="- topic/shortdesc ">This window filters the discovery process, allowing you
+to limit the range of device IDs or to enable discovery to find all
+networks (global search).</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Configure Device Discovery window</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><fig id="ID-fig-00000016" class="- topic/fig ">
+<title id="ID-000002ce" class="- topic/title ">Bacnet Configure Device Discovery</title>
+<image href="../graphic/bacnetDeviceDiscoveryConfig_0000044715.png" placement="break" scale="65" class="- topic/image "/>
+</fig><p class="- topic/p ">This window opens when you click <uicontrol class="+ topic/ph ui-d/uicontrol ">Discover</uicontrol> in the <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet Device Manager</wintitle>.</p></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Device Low Limit</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number (defaults to zero (0) )</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the device <parmname class="+ topic/keyword pr-d/parmname ">Instance Number</parmname> below
+which discovery ignores devices.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Device High Limit</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number (defaults to 4194302) (the maximum valid BACnet
+device <parmname class="+ topic/keyword pr-d/parmname ">Instance Number</parmname>)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the device <parmname class="+ topic/keyword pr-d/parmname ">Instance Number</parmname> above
+which discovery ignores devices.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Networks, Send Global?</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">check box</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Configures where to send messages.<p class="- topic/p ">Send Global? (All Networks)
+- Database searches on all possible BACnet networks segments, including
+all locally connected networks, as well as segments accessed over
+BACnet routers. </p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Networks, Select All, Clear All</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">buttons and check boxes (default to selected)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Selects &lt;Known networks (by network number) &gt; - Choices
+reflect the number of network ports available under Bacnet Comm, Network
+component, plus any additional remote networks discovered by receiving
+"I-am-router" messages. Click to include/exclude as needed. By default,
+all known networks are individually pre-selected.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Wait Response Time</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">seconds (defaults to 10)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Determines how many seconds the framework waits before determining
+that all BACnet devices that exist have responded to the discovery
+request.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="EditingSilent.propertiesFile-5776D74A" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Editing silent.properties file</title><shortdesc class="- topic/shortdesc ">In the <filepath class="+ topic/ph sw-d/filepath ">silent.properties</filepath> file, you
+have the following configuration options (presented in four sections)
+for the silent installation. It runs a windowless installation and
+no user input is required.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Editing silent.properties file</indexterm></keywords></metadata></prolog><taskbody class="- topic/body task/taskbody "><prereq class="- topic/section task/prereq "><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">You have administrator rights to run <filepath class="+ topic/ph sw-d/filepath ">Installer_x64.exe</filepath>.</p></li></ul></prereq><context class="- topic/section task/context "><note class="- topic/note "><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">As a quick overview, in the <filepath class="+ topic/ph sw-d/filepath ">silent.properties</filepath> file, you will set the <parmname class="+ topic/keyword pr-d/parmname ">passphrase</parmname> and <parmname class="+ topic/keyword pr-d/parmname ">installDirectory</parmname>.</p></li><li class="- topic/li "><p class="- topic/p ">You can uninstall the previous standard version using its <filepath class="+ topic/ph sw-d/filepath ">uninstall.exe</filepath> file or with the help of the Windows control
+panel. The <filepath class="+ topic/ph sw-d/filepath ">silent.properties</filepath> file allows you
+to configure the installation directory. If you do not change the
+default configuration settings, the installation will result in a
+new directory with the applicable <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> version number. As a consequence, it will not overwrite
+any existing installation. If you run the Silent Installer a second
+time on the same device, it will overwrite files.</p></li></ul></note></context><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">No editing needed in following section of the <filepath class="+ topic/ph sw-d/filepath ">silent.properties</filepath> file.</cmd><info class="- topic/itemgroup task/info "><note type="notice" class="- topic/note "><p class="- topic/p ">By default, the <filepath class="+ topic/ph sw-d/filepath ">silent.properties</filepath> file can be set to <codeph class="+ topic/ph pr-d/codeph ">silentInstall=false</codeph> because
+the Windows installer automatically attempts to use the <filepath class="+ topic/ph sw-d/filepath ">silent.properties</filepath> file.</p></note><codeblock class="+ topic/pre pr-d/codeblock "># Configure options for silent installation.
+# This will run a windowless installation. No user input is expected.
+
+# Set "silentInstall" to "true" to enable the installation without any user prompts.
+silentInstall=false
+silentInstallMessage=Proceed with silent installation.
+
+# The license agreement acceptance is provided by the following "acceptLicense" property.
+# Any value except "yes" will cause the installer to exit.
+acceptLicense=yes
+# Setting "showLicense" to "yes" will print out the entire license agreement 
+to the installation console.
+showLicense=no
+licenseAgreementAccept=Acceptance of the license agreement is assumed when 
+installing silently.
+licenseAgreementDecline=License agreement was not accepted.</codeblock></info></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Edit the <parmname class="+ topic/keyword pr-d/parmname ">passphrase</parmname> in the following
+section of the <filepath class="+ topic/ph sw-d/filepath ">silent.properties</filepath> file if the
+system passphrase value has not been previously configured on the
+host.</cmd><info class="- topic/itemgroup task/info "><codeblock class="+ topic/pre pr-d/codeblock "># The system passphrase value here is used only if one does not already exist 
+on the install target host ID.
+# Your passphrase must contain:
+#  at least 10 characters
+#  at least 1 lower case character
+#  at least 1 upper case character
+#  at least 1 digit
+systemPassphrase=Password10
+systemPassphraseFailureMessage=Error setting System Passphrase caused installation failure. </codeblock></info></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Edit <apiname class="+ topic/keyword pr-d/apiname ">installDirectory</apiname> in the following
+section of the <filepath class="+ topic/ph sw-d/filepath ">silent.properties</filepath> file.</cmd><info class="- topic/itemgroup task/info "><codeblock class="+ topic/pre pr-d/codeblock "># Set the "installDirectory" to a Windows path to override the default 
+installation directory.
+# Example: installDirectory=C:\Niagara\Niagara-%version%
+installDirectory=
+installDirectoryNotEnoughSpaceMessage=Insufficient space is available to 
+complete installation.
+</codeblock></info></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Review the following section of the <filepath class="+ topic/ph sw-d/filepath ">silent.properties</filepath> file.</cmd><info class="- topic/itemgroup task/info "><codeblock class="+ topic/pre pr-d/codeblock "># Set "createInstallDirectory" to "true" to create the install directory if it does 
+not exist.
+createInstallDirectory=true
+createInstallDirectoryDeclineMessage=Creating the install directory was 
+rejected in the configuration.
+distFileSizeMessage=Dist file space required
+
+# Set "installService" to "true" to install the Niagara daemon as a service.
+installService=true
+
+# Set "installDesktopShortcuts" to "true" to install Windows desktop shortcuts.
+installDesktopShortcuts=false
+
+# Set "installMenuShortcuts" to "true" to install the Windows Start menu shortcuts.
+installMenuShortcuts=true
+installStepCompleteMessage=Completed installation step 
+installFailureMessage=Installation failed.</codeblock></info><info class="- topic/itemgroup task/info "><codeblock class="+ topic/pre pr-d/codeblock "/></info></step><?Pub Caret 56?></steps><result class="- topic/section task/result "/><example class="- topic/example "/><postreq class="- topic/section task/postreq "/></taskbody></task>

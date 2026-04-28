@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="UsingRecordedAndProjectedValues-2307767F" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Using recorded and projected values</title>
+<shortdesc class="- topic/shortdesc ">This example uses projected and recorded values to calculate
+the <parmname class="+ topic/keyword pr-d/parmname ">Projected Demand Average</parmname>.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Projected Demand Average<indexterm class="- topic/indexterm ">using recorded and projected values</indexterm></indexterm></keywords>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">The EDL (Electrical Demand Limit) component defaults to a <parmname class="+ topic/keyword pr-d/parmname ">Percent Interval Elapsed</parmname> property value of 75%. This setting
+configures the component to calculate demand based 75% on actual recorded <parmname class="+ topic/keyword pr-d/parmname ">Power Input</parmname> property values and 25% on a projection, which
+assumes that demand will remain at the current level for the remaining
+minutes in the <parmname class="+ topic/keyword pr-d/parmname ">Demand Interval</parmname>.</p>
+</conbody>
+</concept>

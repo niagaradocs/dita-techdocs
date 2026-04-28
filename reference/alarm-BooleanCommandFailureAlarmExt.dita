@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="Alarm-BooleanCommandFailureAlarmExt" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">alarm-BooleanCommandFailureAlarmExt</title>
+<shortdesc class="- topic/shortdesc ">This alarm extension generates an alarm when a BooleanPoint's
+or BooleanWritable's Out slot does not match a feedback value, which
+can be linked to other points, for more than timeDelay. It applies
+it to points with a status boolean output.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">alarm-BooleanCommandFailureAlarmExt</indexterm>
+<indexterm class="- topic/indexterm ">extensions<indexterm class="- topic/indexterm ">alarm-BooleanCommandFailureAlarmExt</indexterm></indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><title class="- topic/title ">Algorithm properties</title>This property is unique
+to the <apiname class="+ topic/keyword pr-d/apiname ">BooleanCommandFailureAlarmExt</apiname>.</section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype "><uicontrol class="+ topic/ph ui-d/uicontrol ">Feedback Value</uicontrol></proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Provides <parmname class="+ topic/keyword pr-d/parmname ">FeedbackValue</parmname> input property
+for linking. The status is not used by the algorithm.</propdesc><?Pub Caret -1?>
+</property>
+</properties>
+</refbody>
+</reference>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="wbutil-CategoryBrowser" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Category Browser (wbutil-CategoryBrowser)</title>
+<shortdesc class="- topic/shortdesc ">This view is the default view of the station’s <apiname class="+ topic/keyword pr-d/apiname ">CategoryService</apiname>, and typically where you spend most of
+your time assigning categories to components after initially creating
+the categories.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Category<indexterm class="- topic/indexterm ">Browser</indexterm></indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><note conkeyref="gen/Categories_OperatorWritePrivilege" conref="../reuse/WH-guide-General_0000048987.dita#descGen/Categories_OperatorWritePrivilege" class="- topic/note "/><fig class="- topic/fig ">
+<title class="- topic/title ">Category Browser view</title>
+<image href="../graphic/categorybrowser_0000015880_0000000551.png" id="CategoryBrowserImage" placement="break" scale="65" class="- topic/image "/>
+</fig><p class="- topic/p ">To access this view, expand <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol>
+</menucascade> and double-click <uicontrol class="+ topic/ph ui-d/uicontrol ">CategoryService</uicontrol>.</p></section>
+<section class="- topic/section "><title class="- topic/title ">Columns</title><table class="- topic/table ">
+<tgroup cols="2" class="- topic/tgroup "><colspec colname="col1" colwidth="150.00pt" class="- topic/colspec "/><colspec colname="col2" colwidth="2.00*" class="- topic/colspec "/>
+<thead class="- topic/thead ">
+<row class="- topic/row ">
+<entry class="- topic/entry ">Column</entry>
+<entry class="- topic/entry ">Description</entry>
+</row>
+</thead>
+<tbody class="- topic/tbody ">
+<row class="- topic/row ">
+<entry class="- topic/entry ">Inherit</entry>
+<entry class="- topic/entry ">A check mark indicates that the object inherits the category
+from its parent in the table.</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">User</entry>
+<entry class="- topic/entry ">Indicates the category. All system objects except for those
+listed as assigned to <systemoutput class="+ topic/ph sw-d/systemoutput ">Admin</systemoutput> are assigned
+to this category.</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">Admin</entry>
+<entry class="- topic/entry "><p class="- topic/p ">These objects default to the <systemoutput class="+ topic/ph sw-d/systemoutput ">Admin</systemoutput> category:</p><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">The configuration services: <apiname class="+ topic/keyword pr-d/apiname ">UserService</apiname>, <apiname class="+ topic/keyword pr-d/apiname ">CategoryService</apiname>, and <apiname class="+ topic/keyword pr-d/apiname ">ProgramService</apiname></p></li>
+<li class="- topic/li "><p class="- topic/p ">All files (the entire file space)</p></li>
+</ul></entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">Categories 3–8</entry>
+<entry class="- topic/entry "><p class="- topic/p ">A bold bullet indicates that the object is assigned to the
+category.</p><p class="- topic/p ">A grayed out bullet indicates inheritance. </p><p class="- topic/p ">Blank indicates that the category has not been assigned.</p></entry>
+</row>
+</tbody>
+</tgroup>
+</table></section>
+</refbody>
+</reference>

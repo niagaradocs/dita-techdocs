@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-LeadLagRuntime" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-LeadLagRuntime</title>
+<shortdesc class="- topic/shortdesc ">This component provides lead-lag control of from two to
+10 BooleanWritables based upon their accumulated runtimes (elapsed
+active time). This object balances the active runtime of each of the
+devices. Only one of the controlled devices is active at a time based
+on runtime</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">LeadLagRuntime</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">LeadLagRuntime is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">HVAC</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette, along with
+a similar LeadLagCycles object.</p><fig class="- topic/fig ">
+<title class="- topic/title ">LeadLagRuntime properties</title>
+<image href="../graphic/kitControlLeadLagRuntime_0000067485.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Defines text to display for each Boolean value.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">trueText</option> configures the text to describe the state
+when the component returns <parmname class="+ topic/keyword pr-d/parmname ">true.</parmname></p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">falseText</option> configures the text to describe the state when
+the component returns <parmname class="+ topic/keyword pr-d/parmname ">false.</parmname></p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">status Boolean input: <option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Configures a control device to be on or off.<p class="- topic/p "><option class="+ topic/keyword pr-d/option ">true</option> indicates that one of the outputs is active based on the cycle count
+of each controlled device.</p><p class="- topic/p ">When null is checked, the value displayed
+defaults to the incoming value from the device.If you remove the check
+mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In </parmname> value. </p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Number Outputs</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number from 1–10 (defaults to 2)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Specifies the number of devices (outputs) to control.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Max Runtime</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours, minutes, seconds (defaults to six minutes)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Specifies the maximum amount of time a given output is active
+(its <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> property is set to <option class="+ topic/keyword pr-d/option ">true</option>) before switching to another output.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Feedback</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">status Boolean input: <option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Provides positive feedback that a controlled device actually
+started. If the feedback value does not show <option class="+ topic/keyword pr-d/option ">true</option> within the <parmname class="+ topic/keyword pr-d/parmname ">Feedback Delay</parmname> time, the current
+controlled output generates an alarm, and the component switches to
+the next controlled output. <p class="- topic/p ">Setting this value to <option class="+ topic/keyword pr-d/option ">true</option> without linking disables this alarm feature.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Feedback Delay</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours, minutes, seconds (defaults to 5 seconds)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Specifies the delay time used to evaluate the feedback link
+(if any).</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Clear alarm time </proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours, minutes, seconds</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">It clears alarm time.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out A-J</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only StatusBoolean outputs: <option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Each typically links to a BooleanWritable control point
+with a DiscreteTotalizerExt. Outputs usually control loads of some
+type, such as two or more pumps.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Cycle Count A-J</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">RelTime inputs</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">These inputs provide runtime feedback for the corresponding <parmname class="+ topic/keyword pr-d/parmname ">Out A - J</parmname> properties. They typically link to the <parmname class="+ topic/keyword pr-d/parmname ">ElapsedActiveTime</parmname> property of the DiscreteTotalizerExt
+that is measuring the runtime of the corresponding Out A - J properties.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

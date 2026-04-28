@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="ElectricalDemandReductionExamples-232C568F" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">Electrical demand reduction examples</title><shortdesc class="- topic/shortdesc ">This example shows a partial wiresheet view of an ElectricDemandLimit
+component configured for shedding energy loads. The current time period
+in this example is <parmname class="+ topic/keyword pr-d/parmname ">Demand  Period2</parmname>.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">shed level example</indexterm></keywords></metadata></prolog><conbody class="- topic/body  concept/conbody "><fig class="- topic/fig "><title class="- topic/title ">Wiresheet view of an EDL example application</title><image placement="break" scale="75" scope="local" width="750" href="../graphic/kitControlEDLwiresheet_0000067488.png" class="- topic/image "/></fig><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">Power Input</parmname> (1) reflects total demand, which
+is linked into the EDL component <parmname class="+ topic/keyword pr-d/parmname ">Power Input</parmname> property.
+This is a single input value, therefore the power sources need to
+be totaled before linking because there is more than one meter supplying
+actual electrical demand data. This demand level value is expected
+to change in response to load shedding.</p><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">Demand Interval</parmname> (2) is set to update every
+15 minutes.</p><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">Percent Interval Elapsed</parmname> (3) is set to 25
+percent, which adds more weight to current demand and less weight
+to historical demand for each calculation of the <parmname class="+ topic/keyword pr-d/parmname ">Projected
+Demand Average.</parmname></p><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">Demand Limit Periods 1 and 2</parmname> (4) are set to
+1000 and 2000, respectively. These values specify the demand levels
+that initiate power shedding.</p><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">Demand Period</parmname> (5) start times for periods
+1 and 2 are set to 0000 (midnight) and 0800 (8 am) respectively. <parmname class="+ topic/keyword pr-d/parmname ">Demand Period3 Start</parmname> time is not shown. These times specify
+the start time for each of the demand periods.</p><p class="- topic/p "> <parmname class="+ topic/keyword pr-d/parmname ">Power Shed Levels1–3</parmname> settings (6) are based
+on these estimates:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">By shedding loads associated with Power Shed Level 1, the amount
+of demand will decrease by 900 kW.</p></li><li class="- topic/li "><p class="- topic/p ">Power Shed Levels 2 and 3 should be set at 910 and 920 respectively.</p></li></ul><p class="- topic/p ">If these estimates are correct, shedding at level 3 reduces demand
+by the sum of all three shed levels: <codeph class="+ topic/ph pr-d/codeph ">(900+910+920)=270330
+kW</codeph>.</p><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">Projected Demand Average</parmname> (7) has a current
+value of 2051.</p><p class="- topic/p ">Since this value is greater than the demand limits, the component
+initiates shedding and displays this message (8): “<systemoutput class="+ topic/ph sw-d/systemoutput ">SHEDDING
+REQUIRED ! Projected demand is 2051</systemoutput>”.</p><p class="- topic/p ">The <parmname class="+ topic/keyword pr-d/parmname ">Shed Out</parmname> (9) value of 1.0 indicates that
+one level is to be shed. This property links to a Shed Control component,
+which configures the specific Shed Level (1–16) links into Boolean
+controls. In the example, these controls shut off power to Plant_A,
+Plant_B, and Plant_C, with Shed Level(1, 2, and 3), respectively.
+In addition, the ShedControl component’s <parmname class="+ topic/keyword pr-d/parmname ">out1</parmname> value (10) links to a SetpointLoadShed component that uses a setpoint
+offset to reduce power usage. </p><p class="- topic/p ">You can also link from the <parmname class="+ topic/keyword pr-d/parmname ">Shed Out</parmname> property
+to other energy components, such as a Setpoint Offset component (also
+shown here).</p><p class="- topic/p ">With a Shed Level1 in effect, Power Input is at 2100, and the Projected
+Average Demand value is 2051, still greater than the Demand Limit
+Period2 value of 2000. The Power Shed Level2 value (estimate) indicates
+that invoking a Power Shed Level2 yields a decrease of 910kW and brings
+the demand down below the limit. If this estimate is fairly accurate,
+actual power usage should drop and the Power Input value should lower
+to below the Demand Limit Period2 value.</p><p class="- topic/p ">The following wire sheet provides a close-up example of how to
+configure the ShedControl component.</p><fig class="- topic/fig "><title class="- topic/title ">ShedControl component example</title><image placement="break" scale="75" scope="local" width="500" href="../graphic/kitControlShedControlWiresheetAnnotated_0000067487.png" class="- topic/image "/></fig><p class="- topic/p ">The <parmname class="+ topic/keyword pr-d/parmname ">Primary Shed Level</parmname> (1) links from an EDL
+component. Its value is 1.0. No Secondary Shed Level is used.</p><p class="- topic/p ">Out1, 2, and 3 (2) link to Boolean controls that are set to turn
+off power to Plant_A, B, and C, respectively.</p><p class="- topic/p ">The current <parmname class="+ topic/keyword pr-d/parmname ">Primary Shed Level</parmname> of 1.0 sets
+out1 (3) to <option class="+ topic/keyword pr-d/option ">false</option> and the Plant_A Boolean control
+status (4) to <option class="+ topic/keyword pr-d/option ">false</option>. This should turn off power to
+any power consuming devices that are linked to this object.</p><p class="- topic/p ">The out1 value is also linked to the SetpointLoadShed component
+(5), which adjusts a setpoint to reduce the electrical demand.</p><p class="- topic/p ">If more shed levels are needed, the component sets out2 and out3
+to <option class="+ topic/keyword pr-d/option ">false</option>. If shed levels are no longer needed, the
+component invokes a restoration, which restores out3, out2, and out1,
+in that order, to null as allowed by the current shed level.</p><?Pub Caret 55?></conbody></concept>

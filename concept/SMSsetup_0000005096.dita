@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="SMSSetup" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">SMS setup</title>
+<shortdesc class="- topic/shortdesc ">The SmsService sends text messages to mobile (cellular)
+phones. The SMS driver allows  for the retransmitting of alarm information
+and the sending general text messages.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata ">
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">The term SMS (Simple Message Service) is a technology that is available
+on GSM (Global System for Mobile Communications) devices. For more
+details, refer to the  <cite class="- topic/cite ">Sms Users Guide</cite>.</p>
+</conbody>
+</concept>

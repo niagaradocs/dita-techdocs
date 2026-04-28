@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="CreatingACSRFolderStructure" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Creating a CSR folder structure</title>
+<shortdesc class="- topic/shortdesc ">A CSR (Certificate Signing Request) folder structure helps
+to organize a large number of server certificates for easy retrieval.
+You create this structure under the <parmname class="+ topic/keyword pr-d/parmname ">certManagement</parmname> folder, which is an automatically-created folder in your personal
+niagara_user_home.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">niagara_user_home</indexterm><indexterm class="- topic/indexterm ">certManagement folder</indexterm><indexterm class="- topic/indexterm ">CSR<indexterm class="- topic/indexterm ">folder
+structure</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "/>
+<vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<context class="- topic/section task/context "/>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Using Windows Explorer, locate your niagara_user_home: <filepath class="+ topic/ph sw-d/filepath ">C:\Users\<varname class="+ topic/keyword sw-d/varname ">username</varname>\niagara4.x\<varname class="+ topic/keyword sw-d/varname ">brand</varname>\certManagement</filepath>, where</cmd>
+<info class="- topic/itemgroup task/info "><p class="- topic/p "><varname class="+ topic/keyword sw-d/varname ">username</varname> is your name or other text used
+to identify you as the user of your computer.</p><p class="- topic/p "><varname class="+ topic/keyword sw-d/varname ">brand</varname> is your company name or other name used to label personal information.</p></info>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Create folders under <filepath class="+ topic/ph sw-d/filepath ">certManagement</filepath>.</cmd>
+<stepxmp class="- topic/itemgroup task/stepxmp ">For example:<codeblock class="+ topic/pre pr-d/codeblock ">certManagement<?Pub _newline?>	rootCertificate<?Pub _newline?>	intermediateCertificates<?Pub _newline?>	serverCertificates
+	code-signingCertificates</codeblock></stepxmp>
+</step>
+</steps>
+</taskbody>
+</task>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="WorkflowForSettingUpTheSAMLIdPServi-BBF91FA1" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Basic workflow for setting up the service</title>
+<shortdesc class="- topic/shortdesc ">Use this basic workflow for setting up the SAML IdP Service.
+Most of the workflow occurs on the <keyword conkeyref="wh_variables_n4/Supervisor" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Supervisor" class="- topic/keyword ">Supervisor</keyword> station. However, there are a few steps that
+must be completed on the remote station(s).</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">SAMLIdpService<indexterm class="- topic/indexterm ">workflow</indexterm></indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><title class="- topic/title ">On the <keyword conkeyref="wh_variables_n4/Supervisor" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Supervisor" class="- topic/keyword ">Supervisor</keyword> station</title><p class="- topic/p ">The platform must be licensed
+for <codeph class="+ topic/ph pr-d/codeph ">samlDP</codeph>.</p><ol compact="yes" class="- topic/ol ">
+<li class="- topic/li "><p class="- topic/p ">Install the SAML IdP Service.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Configure properties for the SAML IdP Service.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Configure the Circle Of Trust.<ol compact="yes" class="- topic/ol ">
+<li class="- topic/li "><p class="- topic/p ">Add subordinate stations.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Add users.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Specify any additional authentication schemes that may be used
+when logging in.</p><note class="- topic/note ">This is necessary only to add users that
+do not yet exist in the Supervisor, such as LDAP users.</note></li>
+<li class="- topic/li "><p class="- topic/p ">Specify the names of the user prototypes for all of the users
+that are included in this COT. These are the names of the prototypes
+that already exist in the subordinate station(s).</p></li>
+</ol></p></li>
+<li class="- topic/li "><p class="- topic/p ">Configure the subordinate station(s) for SAMLIdPService by
+running a provisioning job with this step: <apiname class="+ topic/keyword pr-d/apiname ">Configure Niagara
+IdP &amp; Saml Scheme</apiname>.</p></li>
+</ol></section>
+<section class="- topic/section "><title class="- topic/title ">On each Subordinate Station</title><ol compact="yes" class="- topic/ol ">
+<li class="- topic/li "><p class="- topic/p ">Set up User Prototypes. These will be used as templates to
+create the users upon login to the station.</p></li>
+<li class="- topic/li "><p class="- topic/p ">A signing Certificate (Server cert with both public and private
+keys) is required. The provisioning job runs on the <keyword conkeyref="wh_variables_n4/Supervisor" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Supervisor" class="- topic/keyword ">Supervisor</keyword> generates the necessary cert. </p></li>
+<li class="- topic/li "><p class="- topic/p ">The SAML Authentication Scheme must be installed and configured.
+The provisioning job runs on the <keyword conkeyref="wh_variables_n4/Supervisor" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Supervisor" class="- topic/keyword ">Supervisor</keyword> creates the necessary scheme. </p></li>
+</ol></section>
+</refbody>
+</reference>

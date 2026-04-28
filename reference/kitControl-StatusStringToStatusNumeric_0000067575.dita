@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-StatusStringToStatusNumeric" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-StatusStringToStatusNumeric</title>
+<shortdesc class="- topic/shortdesc ">This component converts a StatusString value to an StatusNumeric
+value.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">statusStringToStatusNumeric</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">StatusStringToStatusNumeric is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Conversion</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p><p class="- topic/p ">The input string must contain only numeral characters,
+and optionally one period (.) for decimal notation. Valid input strings
+examples are <systemoutput class="+ topic/ph sw-d/systemoutput ">145678</systemoutput> or <systemoutput class="+ topic/ph sw-d/systemoutput ">34.81</systemoutput>. Leading and/or trailing space characters are
+allowed and ignored. Any other input string characters (for example,
+alpha, punctuation) result in a fault status.</p><fig class="- topic/fig ">
+<title class="- topic/title ">StatusStringToStatusNumeric properties</title>
+<image href="../graphic/kitControlStatusStringToStatusNumeric_0000067587.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window (defaults to null for units and one
+decimal place of precision)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Selects unit and configures how the value displays:</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">units</option> define the unit of measure from <option class="+ topic/keyword pr-d/option ">acceleration </option> to <option class="+ topic/keyword pr-d/option ">volumetric flow.</option></p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">precision</option> defines the number of decimal places.</p>This configuration applies to the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> property
+value.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only number</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the converted target status numeric value.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number and null definition (defaults to 0)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the source status text.<p class="- topic/p ">When null is checked,
+the value displayed defaults to the incoming value from the device.
+If you remove the check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">On Null In Value</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">drop-down list (defaults to Use In Value)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Configures how to handle null values.<p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Use In Value</option> outputs the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> default value when the result
+of the conversion is null. Normally, the <parmname class="+ topic/keyword pr-d/parmname ">Fallback</parmname> property for a given point defines the meaning of null as 0.0. If,
+during configuration, the null status check box is unchecked and another
+value entered and saved, the changed value becomes the new null value
+for the point.</p><p class="- topic/p ">If this modified component links to another StatusString
+property, the framework ignores the null value. But, if connected
+to a StatusStringToStatusNumeric component, the result of a null input
+value defaults to the changed value, which may not be what you intended.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Specify Out Value</option> adds the <parmname class="+ topic/keyword pr-d/parmname ">Out Value
+On Null</parmname> property to this component. Configure it to return
+a reasonable value when the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> value is null.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out Value On Null</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines an <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value for the conversion
+object when its <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> value has a null status.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="SilentInstaller-577089FF" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">Silent Installer</title><!--used in docN4Install and docLinuxN4--><shortdesc class="- topic/shortdesc ">As of <keyword conkeyref="wh_variables_n4/niagara4.13" class="- topic/keyword "/>, Silent Installer allows for an automated and unattended
+installation of <keyword conkeyref="wh_variables_n4/niagara_fw-NoTM" class="- topic/keyword "/> via programming. </shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Silent Installer</indexterm></keywords></metadata></prolog><conbody class="- topic/body  concept/conbody "><p class="- topic/p ">It simplifies PC maintenance, automated testing, and bundling installations
+with additional applications. Running the <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> installer for Windows or Linux does not require user input.
+The properties file allows you to generate installation choices prior
+to execution using the command line.</p><note class="- topic/note ">You can find the <filepath class="+ topic/ph sw-d/filepath ">silent.properties</filepath> file
+in your installation file. For example, Windows images should include
+the <filepath class="+ topic/ph sw-d/filepath ">silent.properties</filepath> file under the <filepath class="+ topic/ph sw-d/filepath ">/overlay/...</filepath> folder since the Windows installer expects
+the file in that location. <p class="- topic/p ">The Linux images should include the <filepath class="+ topic/ph sw-d/filepath ">silent.properties</filepath> file in the root folder along with the <filepath class="+ topic/ph sw-d/filepath ">install.sh</filepath> and <filepath class="+ topic/ph sw-d/filepath ">install_common.sh</filepath> files
+since the Linux installer expects the file in that location.</p></note><?Pub Caret 135?></conbody></concept>

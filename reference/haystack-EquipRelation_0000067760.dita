@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--Arbortext, Inc., 1988-2015, v.4002--><reference id="haystack-EquipRelation" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">haystack-EquipRelation</title>
+<shortdesc class="- topic/shortdesc ">Haystack tag dictionary is the addition of the smart equipment
+relation (<codeph class="+ topic/ph pr-d/codeph ">hs:equipRef</codeph>). </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">haystack-EquipRelation</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">Typically you create an explicit direct relation between
+all points that belong to an equipment object and the component in
+the station that represents the equipment. Instead, you can use this
+smart equip type relation to automatically create an implied relation
+between a point and its ancestor if that ancestor has the <codeph class="+ topic/ph pr-d/codeph ">hs:equip</codeph> tag applied.</p><p class="- topic/p ">The smart EquipRef relation
+implies an <codeph class="+ topic/ph pr-d/codeph ">hs:equipRef</codeph> between a Control Point and
+the nearest ancestor with the <codeph class="+ topic/ph pr-d/codeph ">hs:equip</codeph> tag. This
+relation is not implied on a Control Point whose proxy extension is
+the NullProxyExt. This relation is not implied on a Control Point
+if the point already has a direct <codeph class="+ topic/ph pr-d/codeph ">hs:equipRef</codeph> relation.</p></section>
+</refbody>
+</reference>

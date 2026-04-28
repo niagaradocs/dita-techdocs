@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="SSLSetUpStationChecklist" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Platform and station checklist</title><shortdesc class="- topic/shortdesc ">Use this checklist to verify that you completed all required
+tasks to set up a new platform and station.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">server verification<indexterm class="- topic/indexterm ">station
+setup check list</indexterm></indexterm><indexterm class="- topic/indexterm ">platform/station<indexterm class="- topic/indexterm ">checklist for server verification</indexterm></indexterm><indexterm class="- topic/indexterm ">checklist<indexterm class="- topic/indexterm ">platform/station for server verification</indexterm></indexterm></keywords><prodinfo class="- topic/prodinfo "><prodname class="- topic/prodname "/><vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist></prodinfo></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">NiagaraNetwork</uicontrol> enabled.</p></li><li class="- topic/li "><p class="- topic/p ">Supervisor set
+up as controller client.</p></li><li class="- topic/li "><p class="- topic/p ">Server certificate(s)
+created on each platform/station.  If needed, a separate server certificate
+created for each communication protocol: foxs, https, and platformtls
+created.</p></li><li class="- topic/li "><p class="- topic/p ">CSR(s) generated
+on each platform/station.</p></li><li class="- topic/li "><p class="- topic/p ">CSR(s) signed
+by the root CA or intermediate certificate's private key.</p></li><li class="- topic/li "><p class="- topic/p ">Signed server
+certificate(s) imported back into the platform/station <wintitle class="+ topic/keyword ui-d/wintitle ">User
+Key Store</wintitle>.</p></li><li class="- topic/li "><p class="- topic/p ">Certificate(s)
+.pem files deleted.</p></li><li class="- topic/li "><p class="- topic/p ">If using a third-party
+CA, the existence of the third-party's root CA certificate in the
+platform/station's <wintitle class="+ topic/keyword ui-d/wintitle ">System Trust Store</wintitle> confirmed.</p></li><li class="- topic/li "><p class="- topic/p ">If serving as
+the CA, company's root CA certificate imported into the platform/station's <wintitle class="+ topic/keyword ui-d/wintitle ">User Trust Store</wintitle> either one at a time, or using a provisioning
+job.</p></li><li class="- topic/li "><p class="- topic/p ">Confirmed platform
+(Niagarad) enabled and correct certificate assigned.</p></li><li class="- topic/li "><p class="- topic/p ">Secure <apiname class="+ topic/keyword pr-d/apiname ">FoxService</apiname> confirmed (the default) and <parmname class="+ topic/keyword pr-d/parmname ">Foxs Cert</parmname> selected. For the specific procedure.</p></li><li class="- topic/li "><p class="- topic/p ">Secure <apiname class="+ topic/keyword pr-d/apiname ">WebService</apiname> confirmed (the default) and <parmname class="+ topic/keyword pr-d/parmname ">Https
+Cert</parmname> selected. For the specific procedure.</p></li></ul></section></refbody></reference>

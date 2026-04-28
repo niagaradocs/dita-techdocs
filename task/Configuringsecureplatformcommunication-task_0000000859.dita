@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="ConfiguringSecurePlatformCommunication" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Configuring secure platform communication</title><shortdesc class="- topic/shortdesc ">Platform and station security are independent of one another.
+The system defaults to enabling secure communication for both platform
+and station. Configuring a platform (Niagarad) for secure communication
+(platformtls) involves confirming the port, selecting the signed server
+certificate to use, and, if required, restricting the TLS protocol
+version.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">secure communication<indexterm class="- topic/indexterm ">configuring
+Supervisor and platforms</indexterm></indexterm></keywords><prodinfo class="- topic/prodinfo "><prodname class="- topic/prodname "/></prodinfo></metadata></prolog><taskbody class="- topic/body task/taskbody "><context class="- topic/section task/context ">A station's window into the platform-resident secure communication
+features is just like any other <uicontrol class="+ topic/ph ui-d/uicontrol ">Platform Service</uicontrol> under the station's <uicontrol class="+ topic/ph ui-d/uicontrol ">Platform Administration</uicontrol> node in the Nav tree. This means that anything configured for a
+platform is independent of whatever station is running. Follow this
+procedure for the Supervisor and all remote controller platforms.</context><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Double-click <uicontrol class="+ topic/ph ui-d/uicontrol ">Platform</uicontrol>, double-click <uicontrol class="+ topic/ph ui-d/uicontrol ">Platform Administration</uicontrol> and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Change TLS
+Settings</uicontrol>.</cmd><stepresult class="- topic/itemgroup task/stepresult "><p class="- topic/p ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Platform TLS Settings</wintitle> window
+opens. </p><p class="- topic/p ">The following settings are available:<ul compact="yes" class="- topic/ul "><li class="- topic/li "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">State</parmname>: <option class="+ topic/keyword pr-d/option ">TLS only</option>. This
+is the required, and only, option for the <ph conkeyref="host_models/nc9000" class="- topic/ph "/>. On the <ph conkeyref="host_models/nc8000" class="- topic/ph "/>, this can be changed to <option class="+ topic/keyword pr-d/option ">Enable</option> or <option class="+ topic/keyword pr-d/option ">Disable</option>.</p></li><li class="- topic/li "><p class="- topic/p ">Daemon HTTPS <parmname class="+ topic/keyword pr-d/parmname ">Port</parmname>: <option class="+ topic/keyword pr-d/option ">5011</option>. This is the required setting for the <ph conkeyref="host_models/nc9000" class="- topic/ph "/>. On the <ph conkeyref="host_models/nc8000" class="- topic/ph "/> this can be changed to <option class="+ topic/keyword pr-d/option ">3011</option>.</p></li><li class="- topic/li "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">Certificate Alias</parmname>: <option class="+ topic/keyword pr-d/option ">default</option>. If you are using a separate certificate for verifying niagarad
+communication, this is where you select the certificate which is already
+imported into the <wintitle class="+ topic/keyword ui-d/wintitle ">Certificate Management</wintitle> <wintitle class="+ topic/keyword ui-d/wintitle ">User Trust Store</wintitle>.</p></li><li class="- topic/li "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">Certificate Password</parmname>: </p>The password
+protects the certificate with a unique password or you can use the
+global certificate password (check box) to prompt the user to provide
+and verify this credential.</li><?Pub Caret -1?><li class="- topic/li "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">Protocol</parmname>: <option class="+ topic/keyword pr-d/option ">TLSv1.2+</option>. This
+can be set to another version via the drop-down list or set during
+the certificate generation process.<note conkeyref="gen/TlsVersionNote" class="- topic/note "/></p></li><li class="- topic/li "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">Use Extended Master Secret</parmname>: This is an
+enhanced security option available with TLS. Choose to use this option
+(<option class="+ topic/keyword pr-d/option ">True</option>) or not use (<option class="+ topic/keyword pr-d/option ">False</option>). </p></li><li class="- topic/li "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">TLS Cipher Suite Group</parmname>: Choose an option
+to control which cipher suites can be used during TLS negotiation.
+The <option class="+ topic/keyword pr-d/option ">Recommended</option> option is more secure than <option class="+ topic/keyword pr-d/option ">Supported</option> and should be used unless it causes compatibility
+issues with the client.</p></li></ul></p></stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Configure the properties as needed and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol>.</cmd></step></steps></taskbody></task>

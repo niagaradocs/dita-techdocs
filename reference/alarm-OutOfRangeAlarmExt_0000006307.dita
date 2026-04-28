@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--Arbortext, Inc., 1988-2019, v.4002--><?Pub Inc?><reference id="alarm-OutOfRangeAlarmExt" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">alarm-OutOfRangeAlarmExt</title>
+<shortdesc class="- topic/shortdesc ">This extension implements a standard out-of-range alarming
+algorithm, and applies it to points with a status numeric output.
+This alarm extension is available in the <apiname class="+ topic/keyword pr-d/apiname ">Extensions</apiname> folder of the <wintitle class="+ topic/keyword ui-d/wintitle ">alarm</wintitle> palette.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">OutOfRangeAlarmExt</indexterm><indexterm class="- topic/indexterm ">extension<indexterm class="- topic/indexterm ">OutOfRangeAlarmExt</indexterm></indexterm>
+</keywords></metadata><?Pub Caret -1?>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><title class="- topic/title ">Algorithm properties</title>These properties are unique
+to the <apiname class="+ topic/keyword pr-d/apiname ">OutOfRangeAlarmExt</apiname>.</section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype "><uicontrol class="+ topic/ph ui-d/uicontrol ">Fault Algorithm</uicontrol>, <uicontrol class="+ topic/ph ui-d/uicontrol ">High
+Limit</uicontrol></proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><userinput class="+ topic/ph sw-d/userinput ">true</userinput>, <userinput class="+ topic/ph sw-d/userinput ">false</userinput></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Enables and disables high limits for the fault algorithm.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype "><uicontrol class="+ topic/ph ui-d/uicontrol ">Low Limit</uicontrol></proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><userinput class="+ topic/ph sw-d/userinput ">true</userinput>, <userinput class="+ topic/ph sw-d/userinput ">false</userinput></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Enables and disables low limits.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype "><uicontrol class="+ topic/ph ui-d/uicontrol ">Deadband</uicontrol></proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines a band of input values where the output is zero.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype "><uicontrol class="+ topic/ph ui-d/uicontrol ">High Limit Text</uicontrol></proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text string</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines a bformat, which displays when a high limit is reached.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype "><uicontrol class="+ topic/ph ui-d/uicontrol ">Low Limit Text</uicontrol></proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text string</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines a bformat, which displays when low limit is reached.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype "><uicontrol class="+ topic/ph ui-d/uicontrol ">Offnormal Algorithm</uicontrol>, <uicontrol class="+ topic/ph ui-d/uicontrol ">High
+Limit</uicontrol></proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><userinput class="+ topic/ph sw-d/userinput ">true</userinput>, <userinput class="+ topic/ph sw-d/userinput ">false</userinput></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Enables and disables high limits for the offnormal algorithms.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype "><uicontrol class="+ topic/ph ui-d/uicontrol ">Limit Enable</uicontrol></proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">option box</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Enables the configuration of limits.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

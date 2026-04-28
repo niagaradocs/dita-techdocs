@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="ConfiguringVirtualPointsInPxViewsBA-5398ED55" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Configuring virtual points in Px views</title><shortdesc class="- topic/shortdesc ">BACnet virtual points can show real-time values in Px views.This
+includes an available right-click set action, as well as the poll
+status (<systemoutput class="+ topic/ph sw-d/systemoutput ">ok</systemoutput>, <systemoutput class="+ topic/ph sw-d/systemoutput ">stale</systemoutput>, <systemoutput class="+ topic/ph sw-d/systemoutput ">down</systemoutput>) of the polled property. A <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetVirtualGateway</uicontrol> cannot have its own Px view, but
+you can use its child virtual components in Px views for other components,
+for example on the BACnet device itself, or its points extension,
+and so on.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">virtual points in Px views<indexterm class="- topic/indexterm ">configuring</indexterm></indexterm><indexterm class="- topic/indexterm ">Px views and virtual
+points</indexterm></keywords></metadata></prolog><taskbody class="- topic/body task/taskbody "><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Drag a BACnet virtual component (<uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetVirtualProperty</uicontrol>) to the Px page, and make your selection in the popup Px <parmname class="+ topic/keyword pr-d/parmname ">Make Widget</parmname> window.</cmd><stepresult class="- topic/itemgroup task/stepresult ">The system automatically resolves the Ord. <image placement="break" scale="80" width="600" href="../graphic/virtualPx_0000054148.png" class="- topic/image "/><p class="- topic/p ">Often you may wish to include the presentValue property, as shown
+here. </p></stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the <wintitle class="+ topic/keyword ui-d/wintitle ">Make Widget</wintitle> window, select
+either a Bound label (as shown) or <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword ">Workbench</keyword> view for the <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet Virtual Property
+View</wintitle>.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">If you are using a bound label, edit the accompanying display
+name label (if that option was selected) to another text string.</cmd><stepresult class="- topic/itemgroup task/stepresult "><image placement="break" scale="65" width="600" href="../graphic/VirtualNameLable_0000054147.png" class="- topic/image "/><p class="- topic/p ">The screen captures shows
+binding to a BacnetVirtualProperty in a Px view.</p></stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Every BacnetVirtualProperty provides an action to write
+(set is default name), which may be useful in some scenarios.</cmd><stepresult class="- topic/itemgroup task/stepresult "><image placement="break" scale="65" href="../graphic/virtualAction_0000054146.png" class="- topic/image "/><p class="- topic/p ">The screen capture shows the default set action
+and resulting popup for write to a present_value property.</p><p class="- topic/p ">By
+default, in the case of a write to the presentValue property of a
+BACnet object with a priority_array (such as an Analog Output or Binary
+Output), the write action is issued at priority level 16. You can
+specify another priority level by editing the ord used in the Px binding
+(to the Bacnet virtual component).</p></stepresult></step></steps></taskbody></task>

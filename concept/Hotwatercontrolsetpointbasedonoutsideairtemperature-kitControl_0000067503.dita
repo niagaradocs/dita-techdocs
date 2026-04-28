@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="HotWaterControlSetpointBasedOnOutsi-2BC9BC4C" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">Hot water control setpoint based on outside air temperature</title><shortdesc class="- topic/shortdesc ">A Reset math object establishes a hot water control setpoint
+based on the outside air temperature at <parmname class="+ topic/keyword pr-d/parmname ">InA</parmname>.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">hot water control setpoint</indexterm><indexterm class="- topic/indexterm ">Reset</indexterm></keywords></metadata></prolog><conbody class="- topic/body  concept/conbody "><p class="- topic/p ">The Reset component is located in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Math</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p><p class="- topic/p ">When the outside air temperature is 0° F, the hot water setpoint
+is 200° F. When the outside air temperature is 75° F, the
+hot water setpoint is 100° F. The Reset object is configured
+as:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p "><userinput class="+ topic/ph sw-d/userinput ">Input Low Limit = 0.0</userinput></p></li><li class="- topic/li "><p class="- topic/p "><userinput class="+ topic/ph sw-d/userinput ">Input High Limit = 75.0</userinput></p></li><li class="- topic/li "><p class="- topic/p "><userinput class="+ topic/ph sw-d/userinput ">Output Low Limit = 200.0</userinput></p></li><li class="- topic/li "><p class="- topic/p "><userinput class="+ topic/ph sw-d/userinput ">Output High Limit = 100.0</userinput></p></li></ul><p class="- topic/p ">If the <parmname class="+ topic/keyword pr-d/parmname ">InA</parmname> value is beyond the input limits,
+the output is limited by the corresponding output limit (in this case,
+200 at 0° F or below, 100 at 75° F or above). When the input
+is at an intermediate value, the output scales linearly. For example,
+when the outside air temperature is at 38.2° F, the Reset output
+is 149.1° F.</p></conbody></concept>

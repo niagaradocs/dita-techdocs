@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="auth_AuthenticationSchemes" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">Authentication schemes</title><?Pub Caret -2?><shortdesc class="- topic/shortdesc ">An authentication scheme verifies that a user is authorized
+to access a station. All authentication requests are routed through
+the system’s <uicontrol class="+ topic/ph ui-d/uicontrol ">AuthenticationService</uicontrol>.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">authentication<indexterm class="- topic/indexterm ">schemes</indexterm></indexterm><indexterm class="- topic/indexterm ">user<indexterm class="- topic/indexterm ">authentication</indexterm></indexterm><indexterm class="- topic/indexterm ">AX authentication</indexterm><indexterm class="- topic/indexterm ">DigestScheme</indexterm><indexterm class="- topic/indexterm ">AXDigestScheme</indexterm><indexterm class="- topic/indexterm ">SAMLAuthenticationScheme</indexterm><indexterm class="- topic/indexterm ">GoogleAuthenticationScheme</indexterm><indexterm class="- topic/indexterm ">ClientCertAuthScheme</indexterm></keywords><prodinfo class="- topic/prodinfo "><prodname class="- topic/prodname "><keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword ">Niagara</keyword></prodname></prodinfo></metadata></prolog><conbody class="- topic/body  concept/conbody "><p class="- topic/p ">These authentication schemes are provided as standard components
+of the <uicontrol class="+ topic/ph ui-d/uicontrol ">AuthenticationService</uicontrol>:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">DigestScheme</option> (default authentication scheme)
+never sends a user password directly to the station. Instead, it sends
+proof that the user knows the password. This scheme connects a <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> Supervisor to a <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> station.</p></li><li class="- topic/li "><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">AXDigestScheme</option> (default authentication scheme)
+passes several messages back and forth to prove that the client knows
+the password. It never actually transmits the client’s password, which
+helps protect the system if another layer of security, such as secure
+TLS communication, fails.</p><p class="- topic/p ">This scheme provides compatibility
+with stations running previous software versions. Stations running <keyword conkeyref="wh_variables_n4/NiagaraAX" class="- topic/keyword "/> must have been upgraded with the following security updates:
+3.8, 3.7u1, 3.6u4, or 3.5u4. This scheme allows a <keyword conkeyref="wh_variables_n4/niagara4" class="- topic/keyword "/> supervisor to connect to a <keyword conkeyref="wh_variables_n4/NiagaraAX" class="- topic/keyword "/> station.</p></li><li class="- topic/li "><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">HTTPBasicScheme</option> performs HTTP-Basic authentication
+using standard HTTP headers. It only works via the web, and is intended
+for clients that cannot use cookies. This authentication scheme sends
+the user name and password over the connection. This component is
+located in the <apiname class="+ topic/keyword pr-d/apiname ">baja</apiname> palette.</p></li></ul><p class="- topic/p ">Both the <uicontrol class="+ topic/ph ui-d/uicontrol ">DigestScheme</uicontrol> and <uicontrol class="+ topic/ph ui-d/uicontrol ">AXDigestScheme</uicontrol> use SCRAM-SHA (Salted Challenge Response Authentication Mechanism)
+to secure the transmission of clear-text passwords over a channel
+protected by TLS (Transport Layer Security). This authentication mechanism
+conforms to the RFC 5802 standard as defined by the IETF (Internet
+Engineering Task Force). It is the same mechanism for both schemes.
+The main difference between the two schemes has to do with the order
+of operations that is required to support the differences between <keyword conkeyref="wh_variables_n4/NiagaraAX" class="- topic/keyword "/> and <keyword conkeyref="wh_variables_n4/niagara4" class="- topic/keyword "/>.</p><section class="- topic/section "><title class="- topic/title ">Additional schemes</title><p class="- topic/p ">A station can support
+more than one authentication scheme. Schemes may be added to or removed
+from the <uicontrol class="+ topic/ph ui-d/uicontrol ">AuthenticationSchemes</uicontrol> container in
+the <uicontrol class="+ topic/ph ui-d/uicontrol ">AuthenticationService</uicontrol> under the <uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol> container.</p><p class="- topic/p ">Each user account is associated
+with a specific scheme. This allows some user accounts to use one
+scheme, while other accounts use different schemes. For example, a
+digest scheme is appropriate for human users, whereas a Certificate
+or HTTP-Basic scheme is more appropriate for devices. The system supports
+only schemes that have been added to the <uicontrol class="+ topic/ph ui-d/uicontrol ">AuthenticationService</uicontrol>.</p><note type="caution" class="- topic/note ">Deleting a scheme may leave your users
+with an invalid reference to a non-existent scheme.</note><p class="- topic/p ">Additional
+schemes are in the <apiname class="+ topic/keyword pr-d/apiname ">baja</apiname>, <apiname class="+ topic/keyword pr-d/apiname ">ldap</apiname>, and <apiname class="+ topic/keyword pr-d/apiname ">saml</apiname>, and <apiname class="+ topic/keyword pr-d/apiname ">clientCertAuth</apiname> palettes. Other schemes may be found in other palettes, and developers
+may create new authentication schemes. Third-party schemes may also
+be available.</p><p class="- topic/p ">The following schemes (which require the use of
+an LDAP server and additional properties, which must be configured)
+are in the <apiname class="+ topic/keyword pr-d/apiname ">ldap</apiname> palette:</p><ul compact="yes" class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">LdapScheme</p></li></ul></section><section class="- topic/section "><title class="- topic/title ">Client Certificate Authentication Scheme</title><p class="- topic/p ">In <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword ">Niagara</keyword>, the <apiname class="+ topic/keyword pr-d/apiname ">clientCertAuth</apiname> palette contains the <uicontrol class="+ topic/ph ui-d/uicontrol ">ClientCertAuthScheme</uicontrol>, which provides authentication using
+a client certificate. Each user’s client certificate with its public
+key is directly bound to the user object. Each certificate’s public
+key matches its private key. During a login attempt, the system prompts
+the user to upload his or her certificate with its private key. To
+authenticate the user, the system verifies that the private key matches
+the public key stored on the user object.</p></section><section class="- topic/section "><title class="- topic/title ">TOTP Authentication Scheme</title><p class="- topic/p ">The <apiname class="+ topic/keyword pr-d/apiname ">totpAuth</apiname> palette contains the <uicontrol class="+ topic/ph ui-d/uicontrol ">TotpAuthenticationScheme</uicontrol> (TOTP  Authenticator), which provides two-factor authentication
+using a password and single-use token sent to the user’s mobile phone.
+The authenticator app is time based and automatically updates the
+tokens every 30 seconds.</p><p class="- topic/p ">In addition to adding the <uicontrol class="+ topic/ph ui-d/uicontrol ">TotpAuthenticationScheme</uicontrol> to the standard <uicontrol class="+ topic/ph ui-d/uicontrol ">AuthenticationService</uicontrol>, this scheme requires that the
+TOTP Authenticator app be installed on the user’s phone.</p></section><section class="- topic/section "><title class="- topic/title ">SAML Authentication Scheme</title><p class="- topic/p ">The <apiname class="+ topic/keyword pr-d/apiname ">saml</apiname> palette contains the <uicontrol class="+ topic/ph ui-d/uicontrol ">SAMLAuthenticationScheme</uicontrol>, which can be added to the <uicontrol class="+ topic/ph ui-d/uicontrol ">AuthenticationSchemes</uicontrol> container to configure the station for SAML SSO (Single Sign On).
+Authentication schemes that support SSO allow supported users to bypass
+entering a username in the pre-login step. Instead, the users are
+redirected to an alternate login page.</p></section></conbody></concept>

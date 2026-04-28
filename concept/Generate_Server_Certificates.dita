@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept-7228" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">Generating Server Certificates</title><conbody class="- topic/body  concept/conbody "><p class="- topic/p ">This topic explains how to generate server certificates to establish a connection between Server and Client. </p><p class="- topic/p ">The following way are used to generate certificate.<ol class="- topic/ol "><li class="- topic/li "><p class="- topic/p ">Using Certificate Management</p></li><li class="- topic/li "><p class="- topic/p ">Using External tools</p></li></ol></p></conbody></concept>

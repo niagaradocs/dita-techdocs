@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="PemFile-DD7CCCD1" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry "><glossterm class="- topic/title concept/title glossentry/glossterm ">pem file</glossterm><glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">A Privacy Enhanced Mail Certificate (PEM) is a certificate
+file for authenticating a secure server. It may contain: a private
+key and various certificates, such as a certificate authority (CA)
+certificate, primary certificate, and intermediate certificate. These
+certificates make up the chain of trust.</glossdef></glossentry>

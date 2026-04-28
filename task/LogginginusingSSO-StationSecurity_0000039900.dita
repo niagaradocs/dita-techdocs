@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="LoggingInWithSSO-14156B7A" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Logging in with SAML SSO</title><shortdesc class="- topic/shortdesc ">SAML SSO works via a browser connection to a station. With
+SSO, you log in to one station and you are automatically allowed access
+to all other networked stations that are also configured for SSO.
+You will not be prompted for credentials when logging in to the other
+networked stations.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Login with SSO</indexterm><indexterm class="- topic/indexterm ">SSO<indexterm class="- topic/indexterm ">login</indexterm></indexterm></keywords></metadata></prolog><taskbody class="- topic/body task/taskbody "><prereq class="- topic/section task/prereq "><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">Your station is already configured for SSO.</p></li><li class="- topic/li "><p class="- topic/p ">You have already provided your IdP admin with any required
+data.</p></li><li class="- topic/li "><p class="- topic/p ">You are using a web browser.</p></li></ul></prereq><context class="- topic/section task/context ">When entering the URL for the station in the browser, communications
+are bound by the domain specified by the Identity Provider (such as <userinput class="+ topic/ph sw-d/userinput ">station1.domain.com</userinput>). This means that you cannot make
+a local connection using <userinput class="+ topic/ph sw-d/userinput ">https:\\localhost</userinput>.
+Instead you would use <userinput class="+ topic/ph sw-d/userinput ">https:\\station1.domain.com</userinput>. This actually depends on the IdP requirements. Different IdPs may
+require different information and in a different format. For example,
+for the Salesforce IdP a field specifies the host name that you will
+use; and for the OpenAM IdP, you need to provide a specially-formatted
+XML file that supplies the host name and other data. You will need
+to ask the IdP administrator what information to provide.</context><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the web browser, open a station connection.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the <wintitle class="+ topic/keyword ui-d/wintitle ">Login</wintitle> window, enter your username
+and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Log In with SSO</uicontrol> (the actual button
+text may differ depending on the SSO scheme configuration).  </cmd><info class="- topic/itemgroup task/info "><p class="- topic/p "/>The <uicontrol class="+ topic/ph ui-d/uicontrol ">Remember my choice</uicontrol> option is most
+useful when there are multiple SAML authentication schemes in the
+station. In that situation, a separate SSO Login button displays for
+each SSO scheme. When checked, the login function remembers the chosen
+SSO Login button automatically uses it on subsequent attempts to access
+the station. This setting can also apply when there is just one SSO
+scheme. If the station is not set for auto-SSO, clicking this check
+box simulates auto-SSO by attempting to log in with the saved scheme.</info><stepresult class="- topic/itemgroup task/stepresult "><p class="- topic/p ">If you have already logged in with SSO, the station
+connects immediately.</p><p class="- topic/p ">If this is the first time you are logging
+in with SSO your browser redirects to the Identity Provider’s
+site.</p></stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the Identity Provider’s login window, enter your
+station credentials (username and password) and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Log
+In</uicontrol>. </cmd><stepresult class="- topic/itemgroup task/stepresult ">The example shown here shows the OpenAM IdP SSO Login
+window.<image placement="break" width="500" href="../graphic/3rdPartyIdPSSOLogIn_0000039878.png" class="- topic/image "/></stepresult></step></steps><result class="- topic/section task/result ">On successful authentication completion, you are logged in
+to the station and the browser is immediately redirected there. Also,
+you immediately gain access to this station and to all other networked
+stations. Additionally, you have an active session with the IdP, which
+allows you to bypass entering credentials the next time you log in
+to a station. Actually, you still are redirected to the IdP but it
+knows you have already logged in and redirects you right back to the
+station. </result></taskbody></task>

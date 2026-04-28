@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-ChangeOfStateCountAlarmAlgorithm" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-ChangeOfStateCountAlarmExt</title>
+<shortdesc class="- topic/shortdesc ">This special-purpose alarm extension is especially for
+use as a child of a BooleanPoint or BooleanWritable that has one or
+more DiscreteTotalizerExt extensions. It provides alarming on COS
+(change of state) counts, using the offNormal property errorLimit.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">ChangeOfStateCountAlarmExt</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">ChangeOfStateCountAlarmExt is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Alarm</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette,
+along with a ElapsedActiveTimeAlarmExt (for runtime-based alarms).
+Both extensions can reference the same DiscreteTotalizerExt.</p><p class="- topic/p ">In the parent Boolean point, order the ChangeOfStateCountAlarmExt
+slot below the DiscreteTotalizerExt slot that it references. In the
+ChangeOfStateCountAlarmExt’s Offnormal container, use the <parmname class="+ topic/keyword pr-d/parmname ">Discrete Totalizer Select</parmname> property to reference the DiscreteTotalizerExt.</p><p class="- topic/p ">The properties for this extension are the same as those for a
+standard framework alarm extension. Refer to the <cite class="- topic/cite ">.</cite></p></section>
+</refbody>
+</reference>

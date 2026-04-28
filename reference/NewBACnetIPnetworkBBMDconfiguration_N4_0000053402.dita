@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="NewBACnetIPNetworkBBMDConfiguration-55A1AC0E" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">New BACnet IP network BBMD configuration</title>
+<shortdesc class="- topic/shortdesc ">If configuring the host station while installing BACnet/IP
+devices for a new BACnet/IP network, there are probably no existing
+BBMDs. In this case, follow the instructions for configuring a station
+as a BBMD.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">BBMD<indexterm class="- topic/indexterm ">configuring</indexterm></indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">However, you would skip the step to specify a remote BBMD,
+unless one exists. This allows BACnet/IP devices on remote subnets
+to register with the station as foreign devices. You would not see
+other BBMDs in the <wintitle class="+ topic/keyword ui-d/wintitle ">Broadcast Distribution Table</wintitle>, but you could see them if other devices have registered as foreign
+devices in the <wintitle class="+ topic/keyword ui-d/wintitle ">Foreign Device Table</wintitle>.</p></section>
+</refbody>
+</reference>

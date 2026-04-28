@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="tagdictionary-HistoryIdTag" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">tagdictionary-historyIdTag</title><shortdesc class="- topic/shortdesc ">The <parmname class="+ topic/keyword pr-d/parmname ">historyId</parmname> smart tag is available
+in the <wintitle class="+ topic/keyword ui-d/wintitle ">tagdictionary</wintitle> palette under the Smart
+Tags folder. </shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">historyId</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><image placement="break" scale="75" width="500" href="../graphic/historyid_0000038905.png" class="- topic/image "/><p class="- topic/p ">The <parmname class="+ topic/keyword pr-d/parmname ">historyId</parmname> smart tag
+is included in the point tags rule of the NiagaraTagDictionary. This
+rule applies to all objects that are type <codeph class="+ topic/ph pr-d/codeph ">control:ControlPoint</codeph>. The value type of this tag is string and its value is set to the <codeph class="+ topic/ph pr-d/codeph ">historyId</codeph> of the first enabled history extension on the <codeph class="+ topic/ph pr-d/codeph ">control:ControlPoint</codeph> object.</p></section></refbody></reference>

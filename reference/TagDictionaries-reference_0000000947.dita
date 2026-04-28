@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="AboutTagDictionaries2-00A71F83" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">About tag dictionaries</title><shortdesc class="- topic/shortdesc ">The <apiname class="+ topic/keyword pr-d/apiname ">tagdictionary</apiname> module contains tag dictionary components which you can use to create custom tag dictionaries. A tag dictionary is the container for a collection of tag definitions, tag group definitions, and relation definitions. The tags in a tag dictionary may be associated with devices, components, and points. Typically, these associations are established when the device is discovered, registered, and fully subscribed but tags can be added to an object at any time. Tags also provide a vocabulary for searching.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm "> tag dictionary<indexterm class="- topic/indexterm ">about</indexterm><indexterm class="- topic/indexterm ">custom</indexterm></indexterm></keywords><prodinfo class="- topic/prodinfo "><prodname class="- topic/prodname "><keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword ">Niagara</keyword></prodname></prodinfo></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section ">
+            <note id="TheTagsLicenseIsRequiredInOrderToUs-3A70463D" class="- topic/note ">The <uicontrol class="+ topic/ph ui-d/uicontrol ">tags</uicontrol> license is required in order to use the TagDictionaryService and tag dictionaries on a station.</note>
+            <p class="- topic/p "> The <wintitle class="+ topic/keyword ui-d/wintitle ">Tag Dictionary Manager</wintitle>, the primary view of the Tag Dictionary Service, displays the dictionaries that are installed on the station. You can create and add custom tag dictionaries to the station via this view (or by dragging from the <apiname class="+ topic/keyword pr-d/apiname ">tagdictionary</apiname> palette). For example, you may create one or more custom dictionaries for a specific customer, for an OEM, or for a specific application. </p>
+        </section><section class="- topic/section ">
+            <title class="- topic/title ">Tag dictionary composition</title>
+            <p class="- topic/p ">A tag dictionary is composed of the following:</p>
+            <ul class="- topic/ul "><li class="- topic/li ">
+                    <p class="- topic/p ">A unique namespace, normally 1- or 2-characters, for example ”n” for <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/>, “hs” for Haystack</p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Tag definitions (contain individual Tag components added to the dictionary). This is the collection of standardized tags with an Id.name that has semantic meaning for the given domain or namespace. The dictionary also defines tag default values and any validation rules for applying tags.</p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">TagGroup definitions (optional and contain individual TagGroups components added to the dictionary). This is a collection of standardized groupings of tags (tag groups) that have semantic meaning for the given domain or namespace. The dictionary also defines any validation rules for applying these tag groups.</p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Relation efinitions (optional and contain individual relation components added to the dictionary). This is a collection of standardized relation Ids with semantic meaning for the given domain or namespace.</p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">TagRules (optional and in a smart tag dictionary only; they contain individual TagRule components added to the dictionary)</p>
+                </li></ul>
+        </section></refbody></reference>

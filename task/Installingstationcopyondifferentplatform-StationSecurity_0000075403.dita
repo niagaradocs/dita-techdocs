@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="InstallingACopiedStationOntoANewPla-E8BAAE3B" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Installing a station copy on another <?Pub _nolinebreak?>platform<?Pub /_nolinebreak?></title><shortdesc class="- topic/shortdesc ">You may need to install a copy of a station created on another platform. In such cases, the station bog file
+passphrase most likely differ from that of the target platform, and
+many times the passphrase and user credentials are unknown. In that
+event, before you can run the station, you must edit the bog file offline.
+This procedure describes the steps to edit the bog file offline, set
+a new passphrase, change the admin user password, and install the
+copied station on the target platform. This procedure works for a <keyword conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Supervisor" class="- topic/keyword ">Supervisor</keyword> or controller station, and assumes the copied
+station is provided as a ZIP file.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">install a copied station</indexterm><indexterm class="- topic/indexterm ">edit bog file passphrase offline</indexterm></keywords></metadata></prolog><taskbody class="- topic/body task/taskbody "><prereq class="- topic/section task/prereq "><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">The source and target controllers are running the latest <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/>  version.</p></li><li class="- topic/li "><p class="- topic/p ">You are using <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> running on a PC.</p></li><li class="- topic/li "><p class="- topic/p ">You have a <uicontrol class="+ topic/ph ui-d/uicontrol ">NiagaraStation</uicontrol> copy that
+was created on another platform and the BOG file passphrase is not
+known. </p><note class="- topic/note ">The copied station might be a single *.bog file but
+typically it is provided as a ZIP file containing a collection of
+files that may include any combination of the following: components
+(*.bog), templates (*.ntpl), Px files (*.px), graphic images, and
+etc.</note></li></ul></prereq><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Using Windows File Explorer, extract the downloaded ZIP
+file and copy the station folder to your User Home stations folder
+for your installation, (<filepath class="+ topic/ph sw-d/filepath ">C:\Users\UserName\Niagara4.x\brand\stations</filepath>).</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword ">Workbench</keyword> <wintitle class="+ topic/keyword ui-d/wintitle ">NavTree</wintitle>, expand <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">My Host</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">My File System</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">User Home</uicontrol></menucascade> and navigate to the
+station folder just copied to that location.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Expand the station folder and double-click <filepath class="+ topic/ph sw-d/filepath ">config.bog</filepath> to open the file.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">On the <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword ">Workbench</keyword> tool bar, click <image scale="65" href="../graphic/icon_WbToolBar_BogFileProtection_0000075413.png" class="- topic/image "/> (Bog File Protection tool).</cmd><info class="- topic/itemgroup task/info ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Bog File Protection</wintitle> tool allows you
+to enter, change, or add a bog file passphrase.<note type="caution" class="- topic/note ">Any password values that are encoded with the current passphrase
+will be cleared. So you will need to enter/re-enter the passwords
+that the station uses as a client, such as the passwords configured
+on a station-to-station connection or the Email Service.</note></info></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the <wintitle class="+ topic/keyword ui-d/wintitle ">Bog File Passphrase</wintitle> window,
+click <uicontrol class="+ topic/ph ui-d/uicontrol ">Force the file to start using a different passphrase
+that you specify</uicontrol>, enter the new Passphase and Passphrase
+Confirm values and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Update</uicontrol> and on the
+subsequent view, click <uicontrol class="+ topic/ph ui-d/uicontrol ">Close</uicontrol>.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the <wintitle class="+ topic/keyword ui-d/wintitle ">NavTree</wintitle>, expand <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">config.bog</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol></menucascade>, and double-click UserService. </cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the <wintitle class="+ topic/keyword ui-d/wintitle ">User Manager</wintitle>, double-click
+the admin user and under Authenticator, change the Password and Password
+Confirm values. </cmd><info class="- topic/itemgroup task/info ">Repeat this step as needed to change passwords for other users.</info></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Right-click the <filepath class="+ topic/ph sw-d/filepath ">config.bog</filepath> file and
+click <wintitle class="+ topic/keyword ui-d/wintitle ">Save</wintitle>.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Open the <wintitle class="+ topic/keyword ui-d/wintitle ">Station Copier</wintitle> and copy the
+station from the your User Home to the target platform.</cmd></step></steps><result class="- topic/section task/result ">On completion, you have successfully edited the station <filepath class="+ topic/ph sw-d/filepath ">config.bog</filepath> offline, set a new passphrase, and changed
+the admin user password. </result><example class="- topic/example "/><postreq class="- topic/section task/postreq "><p class="- topic/p ">Typically, the station will autostart after copying. If
+not, use <wintitle class="+ topic/keyword ui-d/wintitle ">Application Director</wintitle> to start it. At
+this point you can connect to the station.</p><?Pub Caret 64?></postreq></taskbody></task>

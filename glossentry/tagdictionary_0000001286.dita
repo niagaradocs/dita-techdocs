@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="TagDictionary-5F73E297" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry ">
+<glossterm class="- topic/title concept/title glossentry/glossterm "><term id="glTerm" class="- topic/term "><text id="glText" class="- topic/text ">tag dictionary</text></term></glossterm>
+<glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">Tag dictionaries contain a set of tag definitions, and may
+contain tag group definitions, relation definitions, as well as tag
+rules for smart tags.</glossdef>
+</glossentry>

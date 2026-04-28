@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="SAMLSingleSignOn-1A399ACC" xml:lang="en" class="- topic/topic concept/concept "><title class="- topic/title ">Single Sign On</title><shortdesc class="- topic/shortdesc "><keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword ">Niagara</keyword> has an extensible Single Sign On (SSO) framework
+that can support many types of SSO. For example, the  SAML (Security Assertion Markup Language) SSO is
+the main supported SSO scheme and the focus of this topic.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Single Sign On<indexterm class="- topic/indexterm ">about</indexterm></indexterm><indexterm class="- topic/indexterm ">SAML SSO<indexterm class="- topic/indexterm ">about</indexterm></indexterm><indexterm class="- topic/indexterm ">SSO</indexterm><indexterm class="- topic/indexterm ">authentication<indexterm class="- topic/indexterm ">SAML
+SSO</indexterm></indexterm></keywords></metadata></prolog><conbody class="- topic/body  concept/conbody "><section class="- topic/section "><p class="- topic/p ">SSO is an access control method that allows for automatic
+logging in to multiple related, but independent software systems.
+In the current implementation, SSO works via a browser connection
+to a station. When accessing multiple stations configured for SSO,
+you are required to enter credentials only once to access all stations.
+SSO also makes it possible to log in to individual stations without
+being prompted for user name or password each time.</p><p class="- topic/p ">The advantages of this are evident for customers with more
+than one remote controller:<ul compact="yes" class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">Users can log in to one controller, and not be prompted to
+log in to other controllers, which improves usability.</p></li><li class="- topic/li "><p class="- topic/p ">Centralized management of credentials means that users no longer
+need to maintain multiple copies of the same identity and role information,
+eliminating the errors inherent in duplication and being out of sync.</p></li><li class="- topic/li "><p class="- topic/p ">One controlled authentication point makes authentication less
+complicated and, ultimately, more secure.</p></li></ul></p><p class="- topic/p ">A result of using SSO is that all credentials (identity
+information, authorization information via roles) are stored and managed
+centrally, and authentication is controlled centrally as well.</p><note class="- topic/note ">Role names are managed centrally, but  the roles map 
+still needs to be managed by each individual station. For example,
+an Identity Provider might inform me that my role is "Party Planner",
+but the station needs to have a role with that name, which maps to
+categories, etc. on that station.</note></section></conbody></concept>

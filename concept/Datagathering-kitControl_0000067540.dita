@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="DataGathering-281AC0DF" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Data gathering</title>
+<shortdesc class="- topic/shortdesc ">These examples illustrate how to configure Latch components
+to collect Boolean and numeric data. Each latch component contains
+a <parmname class="+ topic/keyword pr-d/parmname ">Clock</parmname> property and a <option class="+ topic/keyword pr-d/option ">Latch</option> action. Either can trigger the collection of data (capturing the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value from a control point and making it available
+as an <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> value).</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">data gathering</indexterm><indexterm class="- topic/indexterm ">Latch components</indexterm></keywords></metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">The examples are similar, in that they all use a Schedule component
+to invoke a latch. Other components may be used to invoke a latch,
+however, any latch you invoke using the <parmname class="+ topic/keyword pr-d/parmname ">Clock</parmname> property must include a method for setting the <parmname class="+ topic/keyword pr-d/parmname ">Clock</parmname> property status back to <option class="+ topic/keyword pr-d/option ">false</option> before the clock
+is available for latching again. The third example illustrates the
+use of a latch component's latch action instead of using the <parmname class="+ topic/keyword pr-d/parmname ">Clock</parmname> property.</p>
+</conbody>
+</concept>

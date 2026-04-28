@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="VirtualComponentsBACnet-53942D00" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Performance improvements with virtual components</title><shortdesc class="- topic/shortdesc ">These components can improve the performance of embedded
+controllers with limited resources.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">virtual components</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p ">Most drivers contain a device network, devices, and proxy
+points (control points with proxy extensions). Linking proxy points
+to control logic makes it possible to monitor and control building
+assets. The problem is that every piece of driver data used to visualize
+and configure a sophisticated model requires that a persistent component
+(that is, a proxy point) exist somewhere in a station's component
+space. This overhead becomes prohibitive when running on small embedded
+platforms with limited memory.</p><p class="- topic/p ">Virtual components solve this
+problem because they exist in a station database only as long as needed.
+These transient, on-demand entities reside in their own virtual space
+with their own virtual Ords (Object Resolution Descriptors), which
+provide the information needed to create the components at runtime.
+A virtual gateway links each virtual component space to an actual
+component space in a one-to-one relationship. A station may have multiple
+virtual gateways and virtual component spaces.</p><p class="- topic/p ">Each BACnet device
+includes a child component that serves as its virtual gateway (<image scale="65" href="../graphic/ghost_0000044928.png" class="- topic/image "/>) providing access
+to the device’s virtual component space. The device’s
+virtual points are under this gateway. There are two primary uses
+for BACnet virtual points:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">To poll values in multiple Px view bindings. Only the Ords
+persist (using virtual syntax) in the Px widget bindings (including
+the BacnetVirtualGateway within the Ord). With replicated device applications,
+this allows a station to graphically monitor many more devices than
+it could monitor otherwise.</p></li><li class="- topic/li "><p class="- topic/p ">To efficiently review and adjust device property values. Configuring
+the <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword ">Workbench</keyword> property sheets of virtual components can speed
+system setup. Without virtual components you would need to create
+a persisted configuration-type object for each device, change object
+properties, and then delete the persisted object.</p></li></ul><p class="- topic/p ">You cannot link to virtual components and they do not support
+point extensions (alarm, history). Links and extensions require BACnet
+proxy points that persist in the station database.</p></section><section class="- topic/section "><title class="- topic/title ">Virtual Ord syntax</title><p class="- topic/p ">The syntax for a virtual
+Ord uses a specialized form as follows:</p><p class="- topic/p "><userinput class="+ topic/ph sw-d/userinput "><varname class="+ topic/keyword sw-d/varname ">&lt;ord to VirtualGateway&gt;</varname>|virtual:/<varname class="+ topic/keyword sw-d/varname ">objectType_Instance</varname><varname class="+ topic/keyword sw-d/varname ">[A]</varname>/<varname class="+ topic/keyword sw-d/varname ">propertyName</varname><varname class="+ topic/keyword sw-d/varname ">[B]</varname></userinput> </p><p class="- topic/p ">where:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p "><varname class="+ topic/keyword sw-d/varname ">&lt;ord to VirtualGateway&gt;</varname> identifies the
+path to the virtual gateway.</p></li><li class="- topic/li "><p class="- topic/p "><varname class="+ topic/keyword sw-d/varname ">objectType_Instance</varname> is the object type instance.</p></li><li class="- topic/li "><p class="- topic/p "><varname class="+ topic/keyword sw-d/varname ">[A]</varname> may be a semicolon-separated list of
+modifiers. Refer to<xref format="dita" scope="local" type="section" href="#VirtualComponentsBACnet-53942D00/AModifiers-53ACF8A4" class="- topic/xref "><?Pub _previewtext text="[A] Modifiers"
+?></xref>.</p></li><li class="- topic/li "><p class="- topic/p "><varname class="+ topic/keyword sw-d/varname ">propertyName</varname> identifies the name of the
+property.</p></li><li class="- topic/li "><p class="- topic/p "><varname class="+ topic/keyword sw-d/varname ">[B]</varname> may be a semicolon-separated list of
+modifiers. Refer to <xref format="dita" scope="local" type="section" href="#VirtualComponentsBACnet-53942D00/BModifiers-53AD24EB" class="- topic/xref "><?Pub _previewtext text="[B] Modifiers"
+?></xref></p></li></ul><p class="- topic/p ">For Example: <userinput class="+ topic/ph sw-d/userinput ">ip:xx.xx.xx.xx|foxs:|station:|slot:/Drivers/BacnetNetwork/StationName/virtual|virtual:/device_deviceID</userinput></p><p class="- topic/p ">Or in the special case of an arrayed property:</p><p class="- topic/p "><userinput class="+ topic/ph sw-d/userinput "><varname class="+ topic/keyword sw-d/varname ">&lt;ord to VirtualGateway&gt;</varname>|virtual:/<varname class="+ topic/keyword sw-d/varname ">objectType_Instance</varname>/<varname class="+ topic/keyword sw-d/varname ">propertyName</varname>/element<varname class="+ topic/keyword sw-d/varname ">N</varname></userinput></p><p class="- topic/p ">where <varname class="+ topic/keyword sw-d/varname ">N</varname> is the property array index.</p></section><section id="AModifiers-53ACF8A4" class="- topic/section "><title class="- topic/title ">[A] Modifiers</title><p class="- topic/p ">Valid
+modifiers include:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p "><userinput class="+ topic/ph sw-d/userinput ">priority=X</userinput>, which &#160;indicates the
+priority at which the point shall be written. Any set write to the
+polled present_value property of a Binary Output object occurs at
+priority level 10:</p><userinput class="+ topic/ph sw-d/userinput ">station:|slot:/Drivers/BacnetNetwork/BnetDev_99/virtual|virtual:/binaryOutput_2;priority=10/presentValue</userinput></li><li class="- topic/li "><p class="- topic/p "><userinput class="+ topic/ph sw-d/userinput ">policy=X</userinput>&#160;indicates the name of
+a tuning policy. Virtual points do not use COV. Polling of this Analog
+Input object’s present_value occurs using a Bacnet tuning policy
+named FastP:</p><userinput class="+ topic/ph sw-d/userinput ">station:|slot:/Drivers/BacnetNetwork/BnetDev_99/virtual|virtual:/analogInput_1;policy=FastP/presentValue</userinput></li></ul></section><section id="BModifiers-53AD24EB" class="- topic/section "><title class="- topic/title ">[B] Modifiers</title><p class="- topic/p ">Valid
+modifiers include: </p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p "><userinput class="+ topic/ph sw-d/userinput ">status=DOPR</userinput> &#160;(Device Object Property
+Reference) is encoded numerically, ignore line wrap: </p></li><li class="- topic/li "><p class="- topic/p "><userinput class="+ topic/ph sw-d/userinput ">objectType_instanceNumber_propertyId_[propertyArrayIndex]_[deviceObjectType_deviceInstance]</userinput>, where <userinput class="+ topic/ph sw-d/userinput ">[options in brackets]</userinput></p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p "><userinput class="+ topic/ph sw-d/userinput ">status=0_0_85_8_10</userinput> (AI0, PresentValue
+in Dev10)</p></li><li class="- topic/li "><p class="- topic/p "><userinput class="+ topic/ph sw-d/userinput ">status=0_0_111</userinput> (AI0, StatusFlags in
+local device)</p></li><li class="- topic/li "><p class="- topic/p "><userinput class="+ topic/ph sw-d/userinput ">status=1_3_87_10</userinput> (AO3, PriorityArray[10]
+in local device)</p></li></ul></li></ul><p class="- topic/p ">The system merges properties that are BACnetStatusFlags with
+the bits in the status portion of the BStatusValue. It adds the value
+of other properties to the facets of the status portion.</p></section></refbody></reference>

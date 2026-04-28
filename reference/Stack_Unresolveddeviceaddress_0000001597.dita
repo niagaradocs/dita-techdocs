@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="StackUnresolvedDeviceAddress" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Stack: Unresolved device address</title><shortdesc class="- topic/shortdesc ">Issue: Using offline discovery to add BACnet points into
+the station database while the BACnet device is offline creates a
+number of <option class="+ topic/keyword pr-d/option ">BacnetException:Stack:Unresolved device address</option> debug messages in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Application Director</uicontrol> view. The <option class="+ topic/keyword pr-d/option ">status flag type</option> and <option class="+ topic/keyword pr-d/option ">status flag
+colors</option> indicate the condition of the point.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">stack: unresolved device address</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p ">In these examples, offline discovery attempted to add
+BACnet proxy points to the station database. The BACnet device is
+initially offline and then afterwards brought online. Inspection of
+the <uicontrol class="+ topic/ph ui-d/uicontrol ">Application Director</uicontrol> view shows a number
+of messages, which occurred during the discovery job while the BacnetDevice
+was offline.</p><p class="- topic/p ">The BACnet proxy points report <systemoutput class="+ topic/ph sw-d/systemoutput ">{down}</systemoutput> indicating driver communications to the parent device are currently
+lost based upon the device status (Monitor) configuration for the
+network.</p><p class="- topic/p ">When driver communications to the parent device are subsequently
+established, based upon the device status (Monitor) configuration
+for the network, the BACnet proxy points report <systemoutput class="+ topic/ph sw-d/systemoutput ">{ok}</systemoutput> </p><p class="- topic/p ">The BACnet proxy points report <systemoutput class="+ topic/ph sw-d/systemoutput ">{fault}</systemoutput>, which typically indicates a configuration error or a native fault
+in the parent BACnet device.</p><p class="- topic/p ">When driver communications to the parent BACnet device are
+subsequently established, based upon the device status (Monitor) configuration
+for the network, the BACnet proxy points report <systemoutput class="+ topic/ph sw-d/systemoutput ">{ok}</systemoutput>. When you refresh the database view, the system updates the <systemoutput class="+ topic/ph sw-d/systemoutput ">Read: Stack:Unresolved device address</systemoutput>.</p></section></refbody></reference>

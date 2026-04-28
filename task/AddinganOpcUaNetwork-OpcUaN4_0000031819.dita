@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="SettingUpTheOpcUaNetworkOpcUaN4-A2EC27AC" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Adding the OPC UA network</title>
+<shortdesc class="- topic/shortdesc ">An OPC UA network manages OPC UA devices, points, alarms
+and histories.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">network<indexterm class="- topic/indexterm ">adding</indexterm></indexterm></keywords></metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq "><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">The <apiname class="+ topic/keyword pr-d/apiname ">opcUaCore</apiname> and <apiname class="+ topic/keyword pr-d/apiname ">opcUaClient</apiname> modules are in the <uicontrol class="+ topic/ph ui-d/uicontrol ">My Modules</uicontrol> folder.</p></li>
+<li class="- topic/li "><p class="- topic/p ">The controller is licensed with the <apiname class="+ topic/keyword pr-d/apiname ">opcUaClient</apiname> feature.</p></li>
+<li class="- topic/li "><p class="- topic/p ">You are connected to the Internet and working in <keyword conkeyref="wh_variables_n4/Workbench" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword "/> running on a PC or laptop computer.</p></li>
+</ul></prereq>
+<context class="- topic/section task/context "/>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Connect to the controller station.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Open the <apiname class="+ topic/keyword pr-d/apiname ">opcUaClient</apiname> palette (click
+the folder icon in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Palette</uicontrol> sidebar).</cmd>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the <keyword conkeyref="wh_variables_n4/Workbench" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword ">Workbench</keyword> Nav tree, expand <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol>
+</menucascade> and double-click on the <uicontrol class="+ topic/ph ui-d/uicontrol ">Drivers</uicontrol> folder.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Driver Manager</wintitle> opens.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To add the network, click <uicontrol class="+ topic/ph ui-d/uicontrol ">New</uicontrol>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">New</wintitle> window opens.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Select <uicontrol class="+ topic/ph ui-d/uicontrol ">OpcUaNetwork</uicontrol> from the drop-down
+list and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd></step>
+</steps>
+<result class="- topic/section task/result "><p class="- topic/p ">The driver adds the <uicontrol class="+ topic/ph ui-d/uicontrol ">OpcUaNetwork</uicontrol> to the station’s <wintitle class="+ topic/keyword ui-d/wintitle ">Driver Manager</wintitle>. The
+driver enables the network by default. If this is an initial network
+setup, network <parmname class="+ topic/keyword pr-d/parmname ">Status</parmname> will likely be <systemoutput class="+ topic/ph sw-d/systemoutput ">{down}</systemoutput> until you add an OPC UA device and configure
+the server connection.</p></result>
+</taskbody>
+</task>

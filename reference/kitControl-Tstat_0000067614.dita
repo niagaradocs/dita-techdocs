@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-Tstat" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-Tstat</title>
+<shortdesc class="- topic/shortdesc ">This component provides basic thermostatic (On/Off) control
+with a StatusBoolean Out property and StatusNumeric inputs for controlled
+variable (Cv), setpoint (Sp), and differential (Diff). An Action property
+configures the operation directly or in reverse. A <parmname class="+ topic/keyword pr-d/parmname ">Null
+On Inactive</parmname> property is also available. Default action
+is Direct (cooling). </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Tstat</indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">Tstat is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">HVAC</uicontrol> folder
+of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p><fig class="- topic/fig ">
+<title class="- topic/title ">Tstat properties</title>
+<image href="../graphic/kitControlTstat_0000067629.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window (defaults to <systemoutput class="+ topic/ph sw-d/systemoutput ">true</systemoutput> and <systemoutput class="+ topic/ph sw-d/systemoutput ">false</systemoutput>)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">This configuration applies to the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> property value. </propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only StatusBoolean <option class="+ topic/keyword pr-d/option ">true</option> and <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the result of the calculation.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Null On Inactive</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><option class="+ topic/keyword pr-d/option ">true</option> sets the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> value
+to null when the component is inactive.<p class="- topic/p "><option class="+ topic/keyword pr-d/option ">false</option> retains
+the last known setting.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Cv</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number (defaults to null) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines an input Control Variable (Cv).<p class="- topic/p ">When null is checked,
+the value displayed defaults to the incoming value from the device.If
+you remove the check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In </parmname> value. </p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Sp</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number (defaults to null) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the input thermostat Setpoint (Sp).<p class="- topic/p ">When null
+is checked, the corresponding value defines the default when a calculation
+returns null.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Dif</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number (defaults to null) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines an input differential (Dif).<p class="- topic/p ">When null is checked,
+the value displayed defaults to the incoming value from the device.If
+you remove the check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In </parmname> value. </p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Action</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">drop-down list</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><option class="+ topic/keyword pr-d/option ">Direct</option> performs the calculation directly
+on the input variables.<p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Reverse</option> reverses the calculation.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Null On In Control</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> (default) or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><option class="+ topic/keyword pr-d/option ">true</option> sets an <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value
+to null.<p class="- topic/p "><option class="+ topic/keyword pr-d/option ">false</option> retains the last known value.</p></propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

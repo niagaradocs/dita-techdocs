@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="TestingBACnetAlarmGeneration-547F95DB" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Testing BACnet alarm generation</title>
+<shortdesc class="- topic/shortdesc ">This procedure verifies that alarms are working properly.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">alarms<indexterm class="- topic/indexterm ">testing</indexterm></indexterm></keywords></metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq ">You should have access to third-party BACnet tools for the
+remote BACnet clients. In addition, the AlarmClasses involved are
+linked to a standard AlarmConsole recipient.</prereq>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Force into an alarm condition one of the exported control
+points that is exported to BACnet (and assigned to an exported AlarmClass). </cmd>
+<info class="- topic/itemgroup task/info ">For example, you can do this by adjusting an alarm high limit
+or low limit.</info>
+<stepresult class="- topic/itemgroup task/stepresult ">The station routes the alarm via the exported <uicontrol class="+ topic/ph ui-d/uicontrol ">AlarmClass</uicontrol> to the linked <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetDestination</uicontrol> (client) devices. This translates the alarm from a standard format
+to a BACnet format. At the same time, the alarm should be available
+in the standard alarm console.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Using a third-party tool to access the remote BACnet client,
+verify that the remote client receives the alarm.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Open the linked alarm console and verify that it received
+the alarm.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Using the third-party BACnet tool, issue an acknowledgment
+for the alarm.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Verify that the station received the acknowledgment. The
+alarm acknowledgment will be saved in the alarm database. </cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Remove the test alarm from the list of unacknowledged alarms
+in the alarm console.</cmd></step>
+</steps>
+</taskbody>
+</task>

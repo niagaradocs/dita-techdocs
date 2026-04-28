@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-EnumLatch" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-EnumLatch</title>
+<shortdesc class="- topic/shortdesc ">This component provides a latch for a status Enum input.
+It has the same properties and actions as all the latch components.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">EnumLatch</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">kitControl-EnumLatch  is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Latches</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p><fig class="- topic/fig ">
+<title class="- topic/title ">EnumLatch properties</title>
+<image href="../graphic/kitControlEnumLatch_0000067626.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window (defaults to blank)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines a range of enumerated states (enum values).This
+configuration applies to the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> property value.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Clock</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> and <option class="+ topic/keyword pr-d/option ">false</option> (default)
+and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Triggers the component to capture and send the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value to the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> value at the
+moment this property changes from <option class="+ topic/keyword pr-d/option ">false</option> to <option class="+ topic/keyword pr-d/option ">true</option>. Nothing happens when it changes from <option class="+ topic/keyword pr-d/option ">true</option> to <option class="+ topic/keyword pr-d/option ">false</option>. This is called “latching the input
+property to the output property on the rising edge.”<p class="- topic/p ">When
+null is checked, the value displayed defaults to the incoming value
+from the device.If you remove the check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In </parmname> value. </p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only enumerated value (defaults to 0)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Contains the value that is captured from the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> property at latch time. You link to this property to display the
+value on a graphic or to process the value with another component. </propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number (defaults to 0) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Contains the value to pass to <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname>.
+You link to this property from a data source, such as from a control
+point or a Schedule output.<p class="- topic/p ">When null is checked, the value displayed
+defaults to the incoming value from the device.If you remove the check
+mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In </parmname> value. </p></propdesc>
+</property>
+</properties>
+<section class="- topic/section "><title class="- topic/title ">Latch action</title><p class="- topic/p ">Latching triggers the component
+to capture the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value and send it to the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> value. In addition to the Clock property’s
+role in triggering a latch, you invoke this action:</p><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Manually, by right-clicking the latch component and clicking <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Actions</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Latch</uicontrol></menucascade>.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Automatically, by linking a Boolean value to the latch action
+slot on a Latch component. Any change of the Boolean status value
+invokes a latch action (<option class="+ topic/keyword pr-d/option ">false</option> to <option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">true</option> to <option class="+ topic/keyword pr-d/option ">false</option>). This is in
+contrast to using the <parmname class="+ topic/keyword pr-d/parmname ">Clock</parmname> property, which causes
+the component to latch only when its status changes from <option class="+ topic/keyword pr-d/option ">false</option> to <option class="+ topic/keyword pr-d/option ">true</option>. </p></li>
+</ul><p class="- topic/p ">The Latch action captures the input value any time that the
+Latch command is invoked.</p></section>
+</refbody>
+</reference>

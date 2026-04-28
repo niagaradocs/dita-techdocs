@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="BACnetMSTPOrMSTP-B107D83D" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry "><glossterm class="- topic/title concept/title glossentry/glossterm ">MS/TP or MSTP</glossterm><glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">BACnet link-layer protocol is used by lower-cost devices
+to pass master slave / tokens over RS-485 multidrop networks. QNX-based
+controllers and the <ph conkeyref="host_models/nc9000" class="- topic/ph "/> support direct MS/TP (network) trunks, one per RS-485
+port (if licensed for MS/TP).</glossdef></glossentry>

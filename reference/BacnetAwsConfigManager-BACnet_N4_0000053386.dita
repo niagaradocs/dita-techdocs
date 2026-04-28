@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="bacnet-BacnetAwsConfigManager" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Bacnet Aws Config Manager</title><shortdesc class="- topic/shortdesc ">The default view of the Bacnet Aws Config Device Ext is the <parmname class="+ topic/keyword pr-d/parmname ">Bacnet Aws Config Manager</parmname>.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Bacnet Aws Config Manager</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section ">
+            <fig class="- topic/fig "><title class="- topic/title ">Bacnet AWS config manager <image placement="break" scale="65" href="../graphic/BacnetAws_Config_mngr_0000074040.png" class="- topic/image "/></title></fig>
+            <p class="- topic/p ">The <parmname class="+ topic/keyword pr-d/parmname ">Bacnet Aws Config Manager</parmname> is also the default view for any <filepath class="+ topic/ph sw-d/filepath ">BacnetAwsConfigFolder</filepath> under the <uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol> container. To view, right-click BacnetAwsConfigDeviceExt or <filepath class="+ topic/ph sw-d/filepath ">BacnetAwsConfigFolder</filepath> and select <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Views</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Bacnet Aws Config Manager</uicontrol></menucascade>. </p>
+            <p class="- topic/p ">The <parmname class="+ topic/keyword pr-d/parmname ">Bacnet Aws Config Manager</parmname> provides all the same functions as the regular <parmname class="+ topic/keyword pr-d/parmname ">Bacnet Config Manager</parmname> for a BacnetDevice in a BacnetNetwork, plus allows the creation or deletion of BACnet objects (if supported by the target BACnet device). </p>
+        </section><section class="- topic/section ">
+            <title class="- topic/title ">Discovered pane</title>
+            <p class="- topic/p ">As in other manager views, when you click <uicontrol class="+ topic/ph ui-d/uicontrol ">Discover</uicontrol> this manager goes to Learn mode, splits into two panes, and executes a discover job. Discover also returns multiple aws device objects, each of which occupies one row in this view. Following are the columns in the Discovered pane:</p>
+            <table class="- topic/table "><title class="- topic/title ">Columns</title><tgroup cols="2" class="- topic/tgroup "><colspec colname="col1" colwidth="150.00pt" class="- topic/colspec "/><colspec colname="col2" colwidth="2.00*" class="- topic/colspec "/><thead class="- topic/thead "><row class="- topic/row "><entry class="- topic/entry ">Column name</entry><entry class="- topic/entry ">Description</entry></row></thead><tbody class="- topic/tbody "><row class="- topic/row "><entry class="- topic/entry ">Object name</entry><entry class="- topic/entry ">Displays the object’s unique name.</entry></row><row class="- topic/row "><entry class="- topic/entry ">Object ID</entry><entry class="- topic/entry ">Displays the identifier assigned to the object.</entry></row><row class="- topic/row "><entry class="- topic/entry ">Value</entry><entry class="- topic/entry ">Displays the value.</entry></row><row class="- topic/row "><entry class="- topic/entry ">Description</entry><entry class="- topic/entry ">Displays additional information about device.</entry></row></tbody></tgroup></table>
+        </section><section class="- topic/section ">
+            <title class="- topic/title ">Database Pane</title>
+            <p class="- topic/p ">Following are the columns and buttons in the database pane:</p>
+            <table class="- topic/table "><title class="- topic/title ">Columns</title><tgroup cols="2" class="- topic/tgroup "><colspec colname="col1" colwidth="150.00pt" class="- topic/colspec "/><colspec colname="col2" colwidth="2.00*" class="- topic/colspec "/><thead class="- topic/thead "><row class="- topic/row "><entry class="- topic/entry ">Column name</entry><entry class="- topic/entry ">Description</entry></row></thead><tbody class="- topic/tbody "><row class="- topic/row "><entry class="- topic/entry ">Name</entry><entry class="- topic/entry ">Display the name of the object.</entry></row><row class="- topic/row "><entry class="- topic/entry ">Type</entry><entry class="- topic/entry ">Displays the object type.</entry></row><row class="- topic/row "><entry class="- topic/entry ">Value</entry><entry class="- topic/entry ">Displays the current value.</entry></row><row class="- topic/row "><entry class="- topic/entry ">Object ID</entry><entry class="- topic/entry ">Displays the identifier assigned to the object.</entry></row><row class="- topic/row "><entry class="- topic/entry ">Object name</entry><entry class="- topic/entry ">Displays the object’s unique name.</entry></row><row class="- topic/row "><entry class="- topic/entry ">Description</entry><entry class="- topic/entry ">Displays additional information about device.</entry></row><row class="- topic/row "><entry class="- topic/entry ">Poll Frequency</entry><entry class="- topic/entry ">Displays how often the driver polls the device.</entry></row></tbody></tgroup></table>
+            </section><section class="- topic/section ">
+            <title class="- topic/title ">Buttons</title>
+            <ul class="- topic/ul "><li class="- topic/li ">
+                    <p conref="../reuse/WH-guide-General_0000048987.dita#descGen/deviceNewFolder-p" class="- topic/p "/>
+                </li><li class="- topic/li ">
+                    <p conref="../reuse/WH-guide-General_0000048987.dita#descGen/deviceNew-p" class="- topic/p "/>
+                </li><li class="- topic/li ">
+                    <p conref="../reuse/WH-guide-General_0000048987.dita#descGen/deviceManagerEdit-p" class="- topic/p "/>
+                </li><li class="- topic/li ">
+                    <p conref="../reuse/WH-guide-General_0000048987.dita#descGen/deviceManagerDiscover-p" class="- topic/p "/>
+                </li><li class="- topic/li ">
+                    <p conref="../reuse/WH-guide-General_0000048987.dita#descGen/deviceManagerCancel-p" class="- topic/p "/>
+                </li><li class="- topic/li ">
+                    <p conref="../reuse/WH-guide-General_0000048987.dita#descGen/deviceManagerAdd-p" class="- topic/p "/>
+                </li><li class="- topic/li ">
+                    <p conref="../reuse/WH-guide-General_0000048987.dita#descGen/deviceManagerMatch-p" class="- topic/p "/>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">Create</uicontrol> adds one or more new BACnet objects to the remote BACnet device. A popup <wintitle class="+ topic/keyword ui-d/wintitle ">New</wintitle> window selects the BACnet object type and numbers to add.</p>
+                </li><li class="- topic/li ">
+                    <p conref="../reuse/WH-guide-BACnet.dita#WH-guide-BACnet-0ED816BF/bacnetDelete-p" class="- topic/p "/>
+                    <note conref="../reuse/WH-guide-BACnet.dita#WH-guide-BACnet-0ED816BF/bacnetDeleteKey-note" class="- topic/note "/>
+                </li></ul>
+        </section></refbody></reference>

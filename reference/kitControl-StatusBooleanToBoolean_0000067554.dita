@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-StatusBooleanToBoolean" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-StatusBooleanToBoolean</title>
+<shortdesc class="- topic/shortdesc ">This component converts a StatusBoolean <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value to a simple Boolean <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> value. This component
+is the reverse of the BooleanToStatusBoolean component.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">StatusBooleanToBoolean</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">StatusBooleanToBoolean is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Conversion</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p><p class="- topic/p ">This component converts an units output from a source
+component to the units of the target component. Such conversion is
+automatic. But, if needed, you can use this component to convert between:</p><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Source <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> of a point, kitControl, or
+Schedule object (status value), to a</p></li>
+<li class="- topic/li "><p class="- topic/p ">Target non-status <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value of a property
+in an extension or other component.</p></li>
+</ul><p class="- topic/p ">For example, to link the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> of a Schedule
+object to the <parmname class="+ topic/keyword pr-d/parmname ">Enabled</parmname> property of a history extension
+of a point or object, you link a StatusBooleanToBoolean object between
+the two.</p><fig class="- topic/fig ">
+<title class="- topic/title ">StatusBooleanToBoolean properties</title>
+<image href="../graphic/kitControlStatusBooleanToBoolean_0000067566.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window (defaults to <systemoutput class="+ topic/ph sw-d/systemoutput ">true</systemoutput> and <systemoutput class="+ topic/ph sw-d/systemoutput ">false</systemoutput>)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Defines the text to display for each Boolean value.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">trueText</option> configures the text to describe the
+state when the component returns true.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">falseText</option> configures the text to describe the state when the component returns
+false.</p>This definition applies to the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> property
+value. What text to define depends on how you are using the component.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> and <option class="+ topic/keyword pr-d/option ">false</option> (default)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the source status Boolean value.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only StatusBoolean <option class="+ topic/keyword pr-d/option ">true</option> and <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the converted target simple Boolean value.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">On Null In Value</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">drop-down list (defaults to Use In Value)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Configures how to handle null values.<p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Use In Value</option> outputs the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> default value when the result
+of the conversion is null. Normally, the <parmname class="+ topic/keyword pr-d/parmname ">Fallback</parmname> property for a given point defines the meaning of null as 0.0. If,
+during configuration, the null status check box is unchecked and another
+value entered and saved, the changed value becomes the new null value
+for the point.</p><p class="- topic/p ">For example, a NumericWritable point (proxy point)
+positions a damper from 0 to 100% open. In the point’s configuration,
+its <parmname class="+ topic/keyword pr-d/parmname ">Fallback</parmname> property defaults to a null value
+of 0.0. If this null status is unchecked and another value, such as
+20, is entered and saved, the new value becomes the default when the
+value for the point is null.</p><p class="- topic/p ">If this modified component links
+to another StatusNumeric property, the framework ignores the null
+value. But, if connected to a StatusBooleanToBoolean, the result of
+a null input value defaults to the changed value, which may not be
+what you intended.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Specify Out Value</option> adds the <parmname class="+ topic/keyword pr-d/parmname ">Out Value On Null</parmname> property to this component. Configure
+it to return a reasonable value when the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value
+is null.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out Value On Null</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines an <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> value for the conversion
+object when its <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value has a null status.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

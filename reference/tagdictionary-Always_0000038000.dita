@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="tagdictionary-Always" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">tagdictionary-Always</title><shortdesc class="- topic/shortdesc "><parmname class="+ topic/keyword pr-d/parmname ">Always</parmname> is one of several possible
+validity conditions properties. If the <parmname class="+ topic/keyword pr-d/parmname ">Always</parmname> condition property is present in a tag definition, there is no criteria
+to be met. The condition is always <option class="+ topic/keyword pr-d/option ">true</option> and so the
+parent definition's tag(s) and/or relation(s) become implied for every
+object in the station.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Always</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><image placement="break" scale="80" width="300" href="../graphic/N4Tagging_ConditionAlways_0000038999.png" class="- topic/image "/><p class="- topic/p ">The validity conditions are
+located in the <wintitle class="+ topic/keyword ui-d/wintitle ">tagdictionary</wintitle> palette.</p><p class="- topic/p "/></section></refbody></reference>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--Arbortext, Inc., 1988-2019, v.4002--><reference id="alarm-OffnormalAlgorithm" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">alarm-OffnormalAlgorithm</title>
+<shortdesc class="- topic/shortdesc ">This super-class of algorithm extension checks for off
+normal conditions. You access this extension under each type of alarm
+extension along with a <parmname class="+ topic/keyword pr-d/parmname ">FaultAlgorithm</parmname> container.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">OffnormalAlgorithm</indexterm><indexterm class="- topic/indexterm ">extension<indexterm class="- topic/indexterm ">OffnormalAlgorithm</indexterm></indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">This extension’s properties specify which alarm conditions
+to check for.</p><?Pub Caret -1?></section>
+</refbody>
+</reference>

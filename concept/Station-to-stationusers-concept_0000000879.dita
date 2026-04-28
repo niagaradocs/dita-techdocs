@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="auth_Station-to-stationUsers" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Station-to-station users</title>
+<shortdesc class="- topic/shortdesc ">A station-to-station user is a machine user as opposed
+to a human user type or function.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">station-to-station user</indexterm>
+</keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "/>
+<vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">By convention, a station-to-station user should be named something
+memorable (perhaps a name that is unique to your company or even to
+a job site).</p>
+<p class="- topic/p ">As with all user, human and machine, you should carefully guard
+user passwords. Although frequently a station-to-station user is assigned
+a role with many <systemoutput class="+ topic/ph sw-d/systemoutput ">admin</systemoutput>-level Write permissions,
+every user, human and machine should be assigned roles that permit
+them (it) to access only the components required to do their job.
+To improve system security, do not make a station-to-station user
+a super user.</p>
+<p class="- topic/p "> When adding this user, properties, such as <parmname class="+ topic/keyword pr-d/parmname ">Facets</parmname>, <parmname class="+ topic/keyword pr-d/parmname ">Nav File</parmname>, and <parmname class="+ topic/keyword pr-d/parmname ">Web Profile</parmname>, which apply to browser access are inconsequential.<note class="- topic/note ">Do not
+use a station-to-station user to log in as a human user to a station!
+Instead, you reference this user in another station, when adding a
+device under a <uicontrol class="+ topic/ph ui-d/uicontrol ">NiagaraNetwork</uicontrol>.</note></p>
+</conbody>
+</concept>

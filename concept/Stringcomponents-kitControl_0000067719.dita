@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="StringComponents-282EA188" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">String components</title>
+<shortdesc class="- topic/shortdesc ">These process one or more status string inputs, and produce
+some form of output.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">string components</indexterm></keywords>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">String object types vary by type of output. Three string components
+perform a string function with a StatusString output:</p>
+<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">StringConcat</p></li>
+<li class="- topic/li "><p class="- topic/p ">StringSubstring</p></li>
+<li class="- topic/li "><p class="- topic/p ">StringTrim</p></li>
+</ul>
+<p class="- topic/p ">Two string components provide a logic function with a StatusBoolean
+output:</p>
+<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">StringIndexOf</p></li>
+<li class="- topic/li "><p class="- topic/p ">StringTest</p></li>
+</ul>
+<p class="- topic/p ">StringLen provides a StatusNumeric output equal to the number of
+non-null characters in the input string.</p>
+</conbody>
+</concept>

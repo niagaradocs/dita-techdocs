@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="alarm-EnumCommandFailureAlarmExt" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">alarm-EnumCommandFailureAlarmExt</title>
+<shortdesc class="- topic/shortdesc ">This extension implements a command failure alarm detection
+algorithm for enum objects as described in BACnet. If the feedback
+and output values of the enum point are not equal for more than <parmname class="+ topic/keyword pr-d/parmname ">timeDelay</parmname>, the system generates an offnormal alarm. This
+alarm extension is available in the <apiname class="+ topic/keyword pr-d/apiname ">Extensions</apiname> folder
+of the <wintitle class="+ topic/keyword ui-d/wintitle ">alarm</wintitle> palette.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">enumCommandFailureAlarmExt</indexterm>
+<indexterm class="- topic/indexterm ">extension<indexterm class="- topic/indexterm ">enumCommandFailureAlarmExt</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><title class="- topic/title "/></section>
+</refbody>
+</reference>

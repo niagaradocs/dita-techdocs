@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="bacnet-ForeignDeviceTable" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Link (Ip), Foreign Device Table (bacnet-ForeignDeviceTable)</title><shortdesc class="- topic/shortdesc ">This component  is a frozen child slot of the BACnet <uicontrol class="+ topic/ph ui-d/uicontrol ">Ip Port Link</uicontrol> layer node under a <uicontrol class="+ topic/ph ui-d/uicontrol ">Network</uicontrol> port, which itself is a child of <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetNetwork</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Bacnet Comm</uicontrol></menucascade>. If the station is
+operating as a BACnet foreign device, this FDT table contains information
+about other BACnet foreign devices registered with the station. Typically,
+this table is automatically populated, and devices are purged after
+the requested lifetime expires.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Foreign Device Table</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Fdt Manager</wintitle> is the default view.
+Using it you can manually enter foreign devices if they are incapable
+of self-registration. Manually entered foreign devices are not purged
+from the FDT table.</p><p class="- topic/p ">In a case of an IP subnet, where only a
+few (or perhaps just one) BACnet/IP device exists, a local BBMD may
+be considered excessive for BACnet broadcast message support. An alternative
+for that subnet is for each BACnet/IP device to register as a foreign
+device with a particular BBMD on a remote subnet. Once registered,
+the driver adds the device to that BBMD’s FDT (Foreign Device
+Table). It then becomes that BBMD’s responsibility to deliver
+global BACnet broadcast messages to the remote device.</p><p class="- topic/p ">Because
+this scheme is sometimes used for BACnet/IP devices that are not permanent,
+it was designed with a mandatory registration lifetime feature. When
+any BACnet/IP device registers as a foreign device with a BBMD, it
+must specify its <parmname class="+ topic/keyword pr-d/parmname ">Time To Live</parmname> value, in seconds.
+It is then expected to re-register within this period, otherwise the
+BBMD removes (purges) it from its FDT. This prevents unnecessary broadcast
+delivery attempts to part-time participants.</p><p class="- topic/p ">The FDT in any
+BBMD reflects the current list of its registered foreign devices,
+along with each device’s <parmname class="+ topic/keyword pr-d/parmname ">Time To Live</parmname> value
+and calculated purge time. If the host station is configured as a
+BBMD, you can see all entries in its FDT.</p><note type="note" class="- topic/note "><p class="- topic/p ">The term “foreign device” implies no stigma—it
+is purely BBMD-centric. The most expedient configuration for a station
+may well be as a foreign device, providing its local IP subnet has
+no BBMD and each additional BACnet/IP device (if any) is currently
+registered as a foreign device with a remote BBMD.</p><p class="- topic/p ">Unlike a
+BBMD’s broadcast distribution table, which is identical in
+each BBMD, the foreign device table in each BBMD is unique to that
+BBMD.</p></note><fig class="- topic/fig "><title class="- topic/title ">Foreign Device Table properties</title><image placement="break" scale="65" width="700" href="../graphic/propertiesBACnetForeignDeviceTable_0000083319.png" class="- topic/image "/></fig><p class="- topic/p ">You access these properties by expanding <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Drivers</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetNetwork</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Bacnet Comm</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Network</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Ip Port</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Link</uicontrol></menucascade>, right-click <uicontrol class="+ topic/ph ui-d/uicontrol ">Foreign Device Table</uicontrol> and click <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Views</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Property Sheet</uicontrol></menucascade>.</p></section><properties class="- topic/simpletable reference/properties "><prophead class="- topic/sthead      reference/prophead "><proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd><propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd><propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd></prophead><property class="- topic/strow       reference/property "><proptype class="- topic/stentry     reference/proptype ">FdtEntry, Bacnet IP Address</proptype><propvalue class="- topic/stentry     reference/propvalue ">IP address</propvalue><propdesc class="- topic/stentry     reference/propdesc ">Configures the IP address used by the FDT (Foreign Device
+Table).</propdesc></property><property class="- topic/strow       reference/property "><proptype class="- topic/stentry     reference/proptype ">FdtEntry, Time to Live</proptype><propvalue class="- topic/stentry     reference/propvalue ">seconds</propvalue><propdesc class="- topic/stentry     reference/propdesc ">Defines the period of time within which a foreign device
+must re-register or be purged from the database.</propdesc></property><property class="- topic/strow       reference/property "><proptype class="- topic/stentry     reference/proptype ">FdtEntry, Purge Time</proptype><propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue><propdesc class="- topic/stentry     reference/propdesc ">Reports when the device is scheduled to be removed from
+the database.</propdesc></property></properties></refbody></reference>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="AboutTheKitControlPalette-4161B48D" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">kitControl palette</title><shortdesc class="- topic/shortdesc ">The kitControl palette provides a toolkit with which to
+manage building automation systems. The palette is a standard feature.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">palette</indexterm></keywords></metadata></prolog><conbody class="- topic/body  concept/conbody "><p class="- topic/p ">The kitControl palette contains over 90 unique components across
+12 folder categories (not counting ControlPalette). The folders in
+the palette reflect the types of components:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">ControlPalette includes these subfolders: <uicontrol class="+ topic/ph ui-d/uicontrol ">Points</uicontrol>, <uicontrol class="+ topic/ph ui-d/uicontrol ">Extensions</uicontrol>, and <uicontrol class="+ topic/ph ui-d/uicontrol ">Trigger</uicontrol>. These standard control palette folders in the kitControl provide
+easy access to the simple control points, extensions, and timers,
+in addition to the kitControl components found under its other folders.</p></li><li class="- topic/li "><p class="- topic/p ">Alarm contains three extensions for alarming. One is expressly
+for a LoopPoint (setpoint-deviation) alarming. The others provide
+alarming options for a Boolean point with a DiscreteTotalizerExt.
+A fourth component provides alarm count monitoring of any Alarm Class,
+and includes a Boolean relay output.</p></li><li class="- topic/li "><p class="- topic/p ">Constants contains four components, one for each data category.
+Each provides a linkable status-type output, and a Set action for
+changing value.</p></li><li class="- topic/li "><p class="- topic/p ">Conversion contains 19 components that mainly convert status
+values to simple values, and vice versa. This folder also contains
+other special conversion types.</p></li><li class="- topic/li "><p class="- topic/p ">Energy contains 10 components for typical energy functions,
+such as degree day calculation and electrical demand limiting.</p></li><li class="- topic/li "><p class="- topic/p ">HVAC contains nine components for typical HVAC functions, such
+as interstart delay, lead-lag control, and sequence control. This
+folder includes Tstat (thermostat) and LoopPoint (PID loop) components.</p></li><li class="- topic/li "><p class="- topic/p ">Latches contains four components, one for each data category.</p></li><li class="- topic/li "><p class="- topic/p ">Logic contains 10 components, each with StatusBoolean output.</p></li><li class="- topic/li "><p class="- topic/p ">Math contains 23 components for processing one or more numeric
+input values to produce a StatusNumeric output.</p></li><li class="- topic/li "><p class="- topic/p ">Selects contains four components, one for each data category.</p></li><li class="- topic/li "><p class="- topic/p ">String contains six components with one or more StatusString
+inputs.</p></li><li class="- topic/li "><p class="- topic/p ">Timer contains five components. Three are timers: BooleanDelay,
+NumericDelay, and OneShot. Two are absolute timers: Current Time,
+and TimeDifference.</p></li><li class="- topic/li "><p class="- topic/p ">Util contains 16 various utility components including Expr
+(BQL Expression).</p></li></ul></conbody></concept>

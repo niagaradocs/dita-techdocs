@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="WhenACertificateExpires-0FED99A2" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">When a certificate expires</title><shortdesc class="- topic/shortdesc ">Each root, intermediate, server, and code-signing certificate
+remains valid for a specific period of time (<parmname class="+ topic/keyword pr-d/parmname ">Valid From</parmname> and <parmname class="+ topic/keyword pr-d/parmname ">Valid To</parmname> dates). When a certificate expires,
+system users receive error messages.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">certificate<indexterm class="- topic/indexterm ">expired</indexterm></indexterm></keywords></metadata></prolog><conbody class="- topic/body  concept/conbody "><p class="- topic/p ">Ensuring continued secure system access requires advance planning.
+For each expiring certificate, you must re-sign it and on signature,
+the CA can modify the expiration date. You can use the Signing Service to renew certificates
+(see <ph conkeyref="doctitles_coresw/NiagaraSigningService" class="- topic/ph "/>).If your company uses a third-party CA, the whole process can
+take a couple of weeks. As a best practice, keep track of each certificate
+expiration date, and plan ahead to replace old certificates before
+they expire.</p><?Pub Caret 245?><section class="- topic/section "><title class="- topic/title ">Additional details</title><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">FOXS connections between stations that are using Allowed Hosts
+exemptions will still connect even when a certificate has expired.</p></li><li class="- topic/li "><p class="- topic/p ">FOXS connections between stations not using Allowed Hosts exemptions
+will fail to reconnect. Certificates must be reissued for successful
+connections.</p></li><li class="- topic/li "><p class="- topic/p ">Browser connections will start showing messages that the certificate
+is no longer trusted, but will still connect.</p></li><li class="- topic/li "><p class="- topic/p "><keyword conkeyref="wh_variables_n4/Workbench" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword ">Workbench</keyword> will connect even though a certificate has expired.</p></li></ul><note class="- topic/note ">Using Allowed Hosts exemptions is not as secure as using
+signed certificates without exemptions. The use of signed certificates
+means that each certificate will need to be re-issued before they
+expire to avoid connection problems. It is important to note that
+using signed certificates without exemptions provides a much more
+secure environment.</note></section></conbody></concept>

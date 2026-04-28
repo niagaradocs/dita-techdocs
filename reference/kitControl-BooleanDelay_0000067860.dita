@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-BooleanDelay" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-BooleanDelay</title>
+<shortdesc class="- topic/shortdesc ">This component delays the status change of a Boolean status <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> property value by the amount of time configured in
+the associated <parmname class="+ topic/keyword pr-d/parmname ">Delay</parmname> property. </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">BooleanDelay</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">BooleanDelay is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Timer</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p><p class="- topic/p ">Delays
+relate to on (true) and off (false) statuses and are labeled <parmname class="+ topic/keyword pr-d/parmname ">On Delay</parmname> and <parmname class="+ topic/keyword pr-d/parmname ">Off Delay</parmname> respectively.
+The delay applies to any transition (status change from on to off
+or off to on) at the component’s status Boolean input. You
+configure both delay times in terms of hours, minutes and seconds.</p><fig class="- topic/fig ">
+<title class="- topic/title ">BooleanDelay property sheet</title>
+<image href="../graphic/kitControl-BooleanDelay_0000067850.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window (defaults to true and false)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Defines the text to display for each Boolean value.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">trueText</option> configures the text to describe the
+state when the component returns <option class="+ topic/keyword pr-d/option ">true.</option></p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">falseText</option> configures the text to describe the state when
+the component returns <option class="+ topic/keyword pr-d/option ">false.</option></p><p class="- topic/p ">For example, <option class="+ topic/keyword pr-d/option ">trueText</option> might display <systemoutput class="+ topic/ph sw-d/systemoutput ">ON</systemoutput> or <systemoutput class="+ topic/ph sw-d/systemoutput ">Enabled</systemoutput>, and <option class="+ topic/keyword pr-d/option ">falseText</option> <systemoutput class="+ topic/ph sw-d/systemoutput ">OFF</systemoutput> or <systemoutput class="+ topic/ph sw-d/systemoutput ">Disabled</systemoutput>.</p> </propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> and <option class="+ topic/keyword pr-d/option ">false</option> (default)
+and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Configures the default input value when no Boolean out value
+is linked to it. <p class="- topic/p ">Typically, you link a Boolean Out to this property,
+in which case, you do not need to manually configure it. You would
+set this property to <option class="+ topic/keyword pr-d/option ">true</option>, <option class="+ topic/keyword pr-d/option ">false</option> or <option class="+ topic/keyword pr-d/option ">null</option> if no out is linked to it.</p><p class="- topic/p ">When this
+property’s status changes, the framework passes this value
+to the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> and <parmname class="+ topic/keyword pr-d/parmname ">Out Not</parmname> properties
+after any <parmname class="+ topic/keyword pr-d/parmname ">On Delay</parmname> or <parmname class="+ topic/keyword pr-d/parmname ">Off Delay</parmname>.</p><p class="- topic/p ">When null is checked, the value displayed defaults to the
+incoming value from the device. If you remove the check mark you can
+configure the<parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">On Delay</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours, minutes, seconds (defaults to one second)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Sets the amount of time to wait before sending a <systemoutput class="+ topic/ph sw-d/systemoutput ">true</systemoutput> value to the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> property.
+Time begins to expire the moment the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> property
+changes from <systemoutput class="+ topic/ph sw-d/systemoutput ">false</systemoutput> or <systemoutput class="+ topic/ph sw-d/systemoutput ">null</systemoutput> to <systemoutput class="+ topic/ph sw-d/systemoutput ">true</systemoutput>.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Off Delay</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours, minutes, seconds (defaults to one second)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Sets the amount of time to wait before sending a false value
+to the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> property. Time begins to expire at
+the moment the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> property changes from <systemoutput class="+ topic/ph sw-d/systemoutput ">true</systemoutput> to <systemoutput class="+ topic/ph sw-d/systemoutput ">false</systemoutput> or from <systemoutput class="+ topic/ph sw-d/systemoutput ">false</systemoutput> to <systemoutput class="+ topic/ph sw-d/systemoutput ">true</systemoutput> .</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">On Delay Active</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only (normally <systemoutput class="+ topic/ph sw-d/systemoutput ">false</systemoutput>)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Shows if the <parmname class="+ topic/keyword pr-d/parmname ">On Delay</parmname> time is actively
+counting down. This value changes to <systemoutput class="+ topic/ph sw-d/systemoutput ">true</systemoutput> when the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> property transitions from <systemoutput class="+ topic/ph sw-d/systemoutput ">false</systemoutput> to <systemoutput class="+ topic/ph sw-d/systemoutput ">true</systemoutput> and stays
+unchanged until any <parmname class="+ topic/keyword pr-d/parmname ">Off Delay</parmname> time expires. If <parmname class="+ topic/keyword pr-d/parmname ">On Delay</parmname> is set to zero (0), this value does not change
+to <systemoutput class="+ topic/ph sw-d/systemoutput ">true</systemoutput>.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Off Delay Active</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only (normally <systemoutput class="+ topic/ph sw-d/systemoutput ">false</systemoutput>)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Shows if the <parmname class="+ topic/keyword pr-d/parmname ">Off Delay</parmname> time is actively
+counting down. This value changes to <systemoutput class="+ topic/ph sw-d/systemoutput ">true</systemoutput> when the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> property transitions from <systemoutput class="+ topic/ph sw-d/systemoutput ">true</systemoutput> to <systemoutput class="+ topic/ph sw-d/systemoutput ">false</systemoutput> and stays
+unchanged until any <parmname class="+ topic/keyword pr-d/parmname ">Off Delay</parmname> time expires. If <parmname class="+ topic/keyword pr-d/parmname ">On Delay</parmname> is set to zero (0), this value does not change
+to <systemoutput class="+ topic/ph sw-d/systemoutput ">true</systemoutput>.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> , <option class="+ topic/keyword pr-d/option ">false</option> and null
+definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Reflects the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> property value at the
+end of any <parmname class="+ topic/keyword pr-d/parmname ">On Delay</parmname> or <parmname class="+ topic/keyword pr-d/parmname ">Off Delay</parmname>.<p class="- topic/p ">When null is checked, the value displayed defaults to the incoming
+value from the device. If you remove the check mark you can configure
+the<parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out Not</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> , <option class="+ topic/keyword pr-d/option ">false</option> and null
+definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Reflects the inverse of the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> property
+value at the end of any <parmname class="+ topic/keyword pr-d/parmname ">On Delay</parmname> or <parmname class="+ topic/keyword pr-d/parmname ">Off Delay</parmname>. For example, when the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value is <systemoutput class="+ topic/ph sw-d/systemoutput ">true</systemoutput>, the <parmname class="+ topic/keyword pr-d/parmname ">Out Not</parmname> value is set to <systemoutput class="+ topic/ph sw-d/systemoutput ">false</systemoutput> after any delay
+expires.<p class="- topic/p ">When null is checked, the value displayed defaults to the
+incoming value from the device. If you remove the check mark you can
+configure the<parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

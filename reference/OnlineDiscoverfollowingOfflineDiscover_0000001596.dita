@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="OnlineDiscoverFollowingOfflineDisco" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Proxy point overwrite</title>
+<shortdesc class="- topic/shortdesc ">The station may discover BACnet devices and proxy points
+from online devices and add them to its database after offline discovery
+from the EDE configuration files.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">proxy point overwrite</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">Online discovery that overwrites offline-discovered proxy
+point data may break any previously made object or graphical link.</p></section>
+</refbody>
+</reference>

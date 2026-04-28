@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="SSLTCPPorts" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Default TCP/IP ports</title>
+<shortdesc class="- topic/shortdesc ">The various system protocols (fox, foxs, etc.) manage communication
+across specific ports. </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">TCP ports</indexterm><indexterm class="- topic/indexterm ">server
+authentication<indexterm class="- topic/indexterm ">TCP ports</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "/>
+<vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">This table summarizes the default TCP/IP port numbers
+following commissioning. You may change these ports as needed. If
+a firewall or router blocks a port, communication fails. Be aware
+of this potential and make appropriate exemption rules where necessary. </p><table class="- topic/table ">
+<tgroup cols="5" class="- topic/tgroup ">
+<?PubTbl tgroup dispwid="823.00px"?>
+<colspec colname="col1" colwidth="1.13*" class="- topic/colspec "/><colspec colname="col2" colwidth="0.86*" class="- topic/colspec "/><colspec colname="col3" colwidth="0.72*" class="- topic/colspec "/><colspec colname="col4" colwidth="0.63*" class="- topic/colspec "/><colspec colname="COLSPEC0" colwidth="1.63*" class="- topic/colspec "/>
+<thead class="- topic/thead ">
+<row class="- topic/row ">
+<entry class="- topic/entry ">Protocol</entry>
+<entry class="- topic/entry ">Default port</entry>
+<entry class="- topic/entry ">Type of communication</entry>
+<entry class="- topic/entry ">Security</entry>
+<entry class="- topic/entry ">To change this port...</entry>
+</row>
+</thead>
+<tbody class="- topic/tbody ">
+<row class="- topic/row ">
+<entry class="- topic/entry ">fox</entry>
+<entry class="- topic/entry ">1911</entry>
+<entry class="- topic/entry ">station</entry>
+<entry class="- topic/entry ">not secure</entry>
+<entry morerows="1" class="- topic/entry ">expand <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol></menucascade>, and double-click<uicontrol class="+ topic/ph ui-d/uicontrol ">FoxServices</uicontrol>.</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">foxs</entry>
+<entry class="- topic/entry ">4911</entry>
+<entry class="- topic/entry ">station</entry>
+<entry class="- topic/entry ">secure</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">platform daemon</entry>
+<entry class="- topic/entry ">3011</entry>
+<entry class="- topic/entry ">niagarad (platform)</entry>
+<entry class="- topic/entry ">not secure</entry>
+<entry class="- topic/entry ">use the <uicontrol class="+ topic/ph ui-d/uicontrol ">Change HTTP Port</uicontrol> button under <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Platform</uicontrol></menucascade><uicontrol class="+ topic/ph ui-d/uicontrol ">Platform Administration</uicontrol>.</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">platformtls (Platform Port)</entry>
+<entry class="- topic/entry ">5011</entry>
+<entry class="- topic/entry ">niagarad (platform)</entry>
+<entry class="- topic/entry ">secure</entry>
+<entry class="- topic/entry ">use the <uicontrol class="+ topic/ph ui-d/uicontrol ">Change TLS Settings</uicontrol> button under <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Platform</uicontrol></menucascade><uicontrol class="+ topic/ph ui-d/uicontrol ">Platform Administration</uicontrol>.</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">http</entry>
+<entry class="- topic/entry ">80</entry>
+<entry class="- topic/entry ">browser</entry>
+<entry class="- topic/entry ">not secure</entry>
+<entry morerows="1" class="- topic/entry ">expand <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol "/></menucascade>, and double-click<uicontrol class="+ topic/ph ui-d/uicontrol ">FoxServices</uicontrol>.</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">https</entry>
+<entry class="- topic/entry ">443</entry>
+<entry class="- topic/entry ">browser</entry>
+<entry class="- topic/entry ">secure</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">email, incoming account</entry>
+<entry class="- topic/entry ">110</entry>
+<entry class="- topic/entry ">receive</entry>
+<entry class="- topic/entry ">not secure</entry>
+<entry morerows="5" class="- topic/entry ">expand <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol "/></menucascade>, and double-click<uicontrol class="+ topic/ph ui-d/uicontrol ">EmailServices</uicontrol>. <note class="- topic/note ">Do not enable Use Ssl or Use Start
+Tls without configuring the port as indicated in this table. Refer
+to the <cite class="- topic/cite ">Secure Communication</cite> chapter for more information
+about these ports and properties.</note></entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">email, outgoing account</entry>
+<entry class="- topic/entry ">25</entry>
+<entry class="- topic/entry ">send</entry>
+<entry class="- topic/entry ">not secure</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">email, incoming account, <parmname class="+ topic/keyword pr-d/parmname ">Use Ssl</parmname></entry>
+<entry class="- topic/entry ">993 (IMAP), 995 (POP3)</entry>
+<entry class="- topic/entry ">receive</entry>
+<entry class="- topic/entry ">secure</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">email outgoing account, <parmname class="+ topic/keyword pr-d/parmname ">Use Ssl</parmname></entry>
+<entry class="- topic/entry ">465</entry>
+<entry class="- topic/entry ">send</entry>
+<entry class="- topic/entry ">secure</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">email, incoming account, <parmname class="+ topic/keyword pr-d/parmname ">Use Start Tls</parmname></entry>
+<entry class="- topic/entry ">143 (IMAP), 110 (POP3)</entry>
+<entry class="- topic/entry ">receive</entry>
+<entry class="- topic/entry ">secure</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry ">email, incoming account, <parmname class="+ topic/keyword pr-d/parmname ">Use Start Tls</parmname></entry>
+<entry class="- topic/entry ">587</entry>
+<entry class="- topic/entry ">send</entry>
+<entry class="- topic/entry ">secure</entry>
+</row>
+</tbody>
+</tgroup>
+</table><p class="- topic/p ">After changing a port for an individual station, disconnect
+from the station, and restart the station using <apiname class="+ topic/keyword pr-d/apiname ">Application
+Director</apiname>. If you change the fox or foxs port, when you reconnect,
+use <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">File</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Open</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Open Station</uicontrol></menucascade>. This gives you
+the opportunity to change the default communication port: 1911 for
+fox and 4911 for foxs. Otherwise, you will be unable to connect.</p></section>
+</refbody>
+</reference>

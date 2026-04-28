@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="Signature" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry "><glossterm class="- topic/title concept/title glossentry/glossterm ">signature</glossterm><glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">A digital signature combines a unique hash that is created using a cryptographic algorithm (such as SHA-512) with a public key. This is done by using a matching private key to encrypt the hash. The resulting signature is unique to both the certificate and the user. Finally, the signing process embeds the digital signature in the certificate.</glossdef></glossentry>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="opcUaClient-OpcUaClientPointFolder" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">opcUaClient-OpcUaClientPointFolder</title>
+<shortdesc class="- topic/shortdesc ">This component is the OPC UA cClient implementation of
+a folder under an OPC UA device <uicontrol class="+ topic/ph ui-d/uicontrol ">Points</uicontrol> extension.
+You add such folders using the <uicontrol class="+ topic/ph ui-d/uicontrol ">New Folder</uicontrol> button
+in this component’s <wintitle class="+ topic/keyword ui-d/wintitle ">Opc Ua Client Point Manager</wintitle>. This folder is also available in the <apiname class="+ topic/keyword pr-d/apiname ">opcUaClient</apiname> palette.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">opcUaClient-OpcUaClientPointFolder</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">This folder is also available in the <apiname class="+ topic/keyword pr-d/apiname ">opcUaClient</apiname> palette.</p></section>
+</refbody>
+</reference>

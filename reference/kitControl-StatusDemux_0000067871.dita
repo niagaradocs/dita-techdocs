@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-StatusDemux" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-StatusDemux</title>
+<shortdesc class="- topic/shortdesc ">This component provides a method to check for individual
+status flags of the In-linked object, and sets corresponding (demuxed)
+StatusBoolean out slots active (true) if that status as found.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">StatusDemux</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">StatusDemux is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Util</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p><fig class="- topic/fig ">
+<title class="- topic/title ">StatusDemux properties</title>
+<image href="../graphic/kitControlStatusDemux_0000067885.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In Status</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">check boxes</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Identifies the possible conditions of the In-linked object:
+disabled, fault, down, alarm, stale, overridden, null and unackedAlarm.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In Boolean</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default)
+and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Receives input from a connected Boolean object.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In Enum</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">enumerated value (defaults to zero) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Receives input from a connected Enum object.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In Numeric</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number (defaults to zero) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Receives input from a connected Numeric object.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In String</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text (defaults to blank) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Receives input from a connected String object.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">out property: <option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Activates (<option class="+ topic/keyword pr-d/option ">true</option>) if the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname>-linked object is in alarm.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Down</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">out property: <option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Activates (<option class="+ topic/keyword pr-d/option ">true</option>) if the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname>-linked object is down.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Fault</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">out property: <option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Activates (<option class="+ topic/keyword pr-d/option ">true</option>) if the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname>-linked object is in fault.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Null Status</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">out property: <option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Activates (<option class="+ topic/keyword pr-d/option ">true</option>) if the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname>-linked object is in null status.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Disabled</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">out property: <option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Activates (<option class="+ topic/keyword pr-d/option ">true</option>) if the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname>-linked object reports a disabled.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Overridden</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">out property: <option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Activates (<option class="+ topic/keyword pr-d/option ">true</option>) if the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname>-linked object has been overridden.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Unacked Alarm</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">out property: <option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Activates (<option class="+ topic/keyword pr-d/option ">true</option>) if the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname>-linked object has an unacknowledged alarm</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Stale</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">out property: <option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Activates (<option class="+ topic/keyword pr-d/option ">true</option>) if the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname>-linked object is stale (has not been updated in a timely manner).</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

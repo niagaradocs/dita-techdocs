@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!--Arbortext, Inc., 1988-2019, v.4002--><?Pub UDT template _font?><?Pub Inc?><task id="MountingOnDINRail-0B45EC17" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Mounting on a DIN rail</title>
+<shortdesc class="- topic/shortdesc ">The following steps describe how to mount the controller
+on a DIN rail.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">DIN rail<indexterm class="- topic/indexterm ">mounting</indexterm></indexterm></keywords></metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq ">The 35mm DIN rail is securely mounted with at least two screws
+near the rail ends. The microSD card is installed in the controller.
+Refer to “Inserting or removing the microSD card” for details.</prereq>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Pull the controller’s locking clip down.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult "><image href="../graphic/J9MountingOnDinRail.png" placement="break" scope="local" width="350" class="- topic/image "/></stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Tilt the controller to hook it over the DIN rail.</cmd>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Push down and in on the unit, fastening it to the rail.</cmd>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Push the locking clip up to secure the controller.</cmd>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To mount any option module onto the DIN rail, slide the
+module firmly into the controller’s connector to seat. </cmd>
+<info class="- topic/itemgroup task/info ">Repeat for other modules as needed (4 maximum).</info>
+<stepresult class="- topic/itemgroup task/stepresult "><image href="../graphic/J9MountMod.png" placement="break" scope="local" width="350" class="- topic/image "/></stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Carefully secure both ends of the final assembly with the
+DIN rail end-clips provided by the DIN rail vendor.</cmd></step>
+</steps>
+<result class="- topic/section task/result "><note class="- topic/note ">To remove a unit from the DIN rail, pull down its locking
+clip. Then swing the bottom out and lift the unit away from the DIN
+rail.</note></result>
+</taskbody>
+</task>

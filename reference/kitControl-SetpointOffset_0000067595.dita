@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-SetpointOffset" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-SetpointOffset</title>
+<shortdesc class="- topic/shortdesc ">This component provides setpoint control for electrical
+demand limiting applications. You use it with the ElectricalDemandLimit
+and ShedControl components.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">SetpointOffset</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p "> SetpointOffset is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Energy</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette</p><fig class="- topic/fig ">
+<title class="- topic/title ">SetpointOffset properties</title>
+<image href="../graphic/kitControlSetpointOffset_0000067607.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window (defaults to Fahrenheit temperature
+for units, a single decimal place, negative infinity for minimum and
+positive infinity for maximum)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Selects units and configures how the value displays:</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">units</option> defines the unit of measure from <option class="+ topic/keyword pr-d/option ">acceleration</option> to <option class="+ topic/keyword pr-d/option ">volumetric flow</option>.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">precision </option> defines the number of decimal places.</p><p class="- topic/p ">min and max refer to minimum and maximum temperatures.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Shed Level High Limit</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number between 2 and 32 (defaults to 32) based on the facets</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the maximum offset.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Shed Level Low Limit</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number between 1 and 31 (defaults to 1) based on the facets</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the level at which the offset begins.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Shed Inhibit</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (defaults
+to <option class="+ topic/keyword pr-d/option ">false</option>)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Turns adjustment of the setpoint on and off:<p class="- topic/p "><option class="+ topic/keyword pr-d/option ">true</option> disables the shedding ability.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">false</option> causes
+the setpoint to be adjusted by the offset.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Setpoint In</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number of degrees (defaults to zero (0.0))</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the source setpoint value linked in to this component.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Htg Offset</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number of degrees (defaults to zero (0.0))</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the maximum setpoint (plus or minus) offset if heating
+is active and in heating mode.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Clg Offset</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number of degrees (defaults to zero (0.0))</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines minimum setpoint (plus or minus) offset if cooling
+is active and in cooling mode.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Mode In</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">Off</option> (default) and <option class="+ topic/keyword pr-d/option ">On</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Selects the current need: Off, Heat, Cool.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Shed Level</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number of degrees (defaults to zero (0))</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the shed level that is in effect.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Offset In Effect</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default)
+and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Indicates if the <parmname class="+ topic/keyword pr-d/parmname ">Setpoint Out</parmname> property
+value has been adjusted.<p class="- topic/p ">When null is checked, the value displayed
+defaults to the incoming value from the device.If you remove the check
+mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In </parmname> value. </p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Setpoint Out</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number of degrees (defaults to zero (0))</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the adjusted setpoint if it is active. Otherwise,
+it pass through the original setpoint.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

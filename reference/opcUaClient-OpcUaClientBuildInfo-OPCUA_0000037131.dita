@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="opcUaClient-OpcUaBuildInfo" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">opcUaClient-OpcUaBuildInfo</title>
+<shortdesc class="- topic/shortdesc ">This component is a child of each <uicontrol class="+ topic/ph ui-d/uicontrol ">OpcUaDevice</uicontrol> component. Each OPC UA device has a frozen slot named <uicontrol class="+ topic/ph ui-d/uicontrol ">Server Info</uicontrol> (<uicontrol class="+ topic/ph ui-d/uicontrol ">OpcUaBuildInfo</uicontrol>) on
+the <uicontrol class="+ topic/ph ui-d/uicontrol ">OpcUaDevice</uicontrol> component.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">opcUaClient-OpcUaBuildInfo</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">This component displays read-only data read from the OPC
+UA server and configured for the device.</p><fig class="- topic/fig ">
+<title class="- topic/title ">OpcUaBuildInfo properties</title>
+<image placement="break" scale="65" scope="local" href="../graphic/OpcUaClientBuildInfo_0000037159.png" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Produce Name</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Reports the name of the OPC UA server.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Product Uri</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Reports the URI (Uniform Resource Identifier) for the server.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Manufacturer</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Reports the name of the manufacturer of the server.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Software Version</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Reports the version of software for the server.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Build Number</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Reports a number for the server data type.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Build Date</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Reports a date and time of the software build for the server.</propdesc>
+</property>
+</properties>
+<section class="- topic/section "><title class="- topic/title ">Action</title><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">Update</uicontrol> retreives
+the device data from the server.</p></section>
+</refbody>
+</reference>

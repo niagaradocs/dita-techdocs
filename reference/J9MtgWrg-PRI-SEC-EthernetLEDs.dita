@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="PRISECEthernetLEDs-0B4AFEB0" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">PRI, SEC (Ethernet) LEDs</title>
+<shortdesc class="- topic/shortdesc ">Two LEDs for each of the two LAN ports flash green and
+yellow.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm "><uicontrol class="+ topic/ph ui-d/uicontrol ">PRI</uicontrol> LED (Ethernet)</indexterm>
+<indexterm class="- topic/indexterm "><uicontrol class="+ topic/ph ui-d/uicontrol ">SEC</uicontrol> LED (Ethernet)</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">The green (left-side) Link LED operates as follows:</p><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Off indicates no Ethernet link is made.</p></li>
+<li class="- topic/li "><p class="- topic/p ">On indicates an Ethernet link is made.</p></li>
+</ul><p class="- topic/p ">The yellow (right-side) Activity LED operates as follows:</p><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Off indicates no Ethernet activity.</p></li>
+<li class="- topic/li "><p class="- topic/p ">On and blinking indicates activity (typical if the Link is
+on).</p></li><?Pub Caret 62?>
+</ul></section>
+</refbody>
+</reference>

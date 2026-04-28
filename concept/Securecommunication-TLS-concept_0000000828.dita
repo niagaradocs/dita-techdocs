@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="SSLSecurity" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">Secure communication</title><shortdesc class="- topic/shortdesc ">A Public Key Infrastructure (PKI) supports the distribution
+and identification of public encryption keys used to protect the exchange
+of data over networks, such as the Internet. PKI verifies the identity
+of the other party and encodes the actual data transmission. Identity
+verification provides non-repudiated assurance of the identity of
+the server. Encryption provides confidentiality during network transmission.
+Requiring signed code modules ensures that only expected code runs
+in the system.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Transport Layer Security protocol</indexterm><indexterm class="- topic/indexterm ">TLS<index-see class="+ topic/index-base indexing-d/index-see ">Transport Layer Security protocol</index-see></indexterm><indexterm class="- topic/indexterm ">cryptography</indexterm><indexterm class="- topic/indexterm ">identity
+verification</indexterm></keywords><prodinfo class="- topic/prodinfo "><prodname class="- topic/prodname "/></prodinfo></metadata></prolog><conbody class="- topic/body  concept/conbody "><p class="- topic/p ">To provide secure network communication using PKI, <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword ">Niagara</keyword> supports TLS (Transport Layer Security) versions
+1.2 and 1.3. <note class="- topic/note ">TLS versions 1.0 and 1.1 are still supported for
+backwards compatibility, but disabled by default. They are no longer
+recommended as they are not considered secure.</note></p><p class="- topic/p ">Each <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword ">Niagara</keyword> installation automatically creates a default certificate,
+which allows the connection to be encrypted immediately. However,
+these certificates generate warnings in the browser and <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> and are generally not suitable for end users. Creating
+and signing custom digital certificates allows a seamless use of TLS
+in the browser, and provides both encryption as well as server authentication.</p><p class="- topic/p ">Beyond communication security, each module of computer code that
+runs in the system is protected with a digital signature. Added program
+objects require this signature or they do not run.</p><note class="- topic/note ">Verifying the server, encrypting the transmission and ensuring
+that only signed code runs do not secure data stored on a storage
+device. You still need to restrict physical access to the computers
+and controllers that manage your building model, set up user authentication
+with strong passwords, and secure components by controlling permissions.</note><p class="- topic/p "><keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword ">Niagara</keyword> supports and uses secure communication and signed
+code by default. You do not need to purchase an additional license.</p><p class="- topic/p ">Security is an ongoing concern. While you will find much valuable
+information in the secure communication topics, expect future updates
+and changes.</p></conbody></concept>

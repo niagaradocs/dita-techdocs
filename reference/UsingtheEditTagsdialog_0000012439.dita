@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="UsingTheEditTagsDialog-B26465BD" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">About the Edit Tags dialog</title><shortdesc class="- topic/shortdesc ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Edit Tags</wintitle> dialog as well as the station and point manager views are the primary methods for adding a tag or a tag group to a component. The dialog lets you add individual tags or tag groups to the object, as well as remove them from the object. The lower half of the dialog provides tabs to view the direct and implied tags assigned to the object.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Edit Tags dialog</indexterm></keywords><prodinfo class="- topic/prodinfo "><prodname class="- topic/prodname "><keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/></prodname></prodinfo></metadata></prolog><refbody class="- topic/body        reference/refbody "><section id="UsingTheEditTagsDialog-3089A2E3" class="- topic/section ">
+            <p class="- topic/p ">Invoke the <wintitle class="+ topic/keyword ui-d/wintitle ">Edit Tags</wintitle> dialog box by right-clicking an object and selecting <wintitle class="+ topic/keyword ui-d/wintitle ">Edit Tags</wintitle>. </p>
+            <fig class="- topic/fig "><title class="- topic/title ">Edit Tags dialog</title><image placement="break" scale="55" href="../graphic/N4_Tagging_EditTagsDialog_0000012380.png" class="- topic/image "/></fig>
+            <p class="- topic/p ">In the <uicontrol class="+ topic/ph ui-d/uicontrol "><wintitle class="+ topic/keyword ui-d/wintitle ">Edit Tags</wintitle></uicontrol> dialog box, select a dictionary from the option list in the top left corner <image scale="65" href="../graphic/tag_dictionary_optionlist_0000015420_0000000837.png" class="- topic/image "/>. </p>
+            <note type="tip" class="- topic/note ">You can use this shortcut to select a dictionary. In the <uicontrol class="+ topic/ph ui-d/uicontrol ">Search</uicontrol> field type <userinput class="+ topic/ph sw-d/userinput ">hs:</userinput> for Haystack, <userinput class="+ topic/ph sw-d/userinput ">n:</userinput> for <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/>, or enter the namespace for another dictionary.</note>
+            <p class="- topic/p ">The top half of the dialog box shows a list of tags available from the selected dictionary. Once a tag is assigned to the active object, the tag icon appears dimmed.</p>
+            <p class="- topic/p ">To facilitate making selections, the dialog box includes filters that help by narrowing the list of tags from which you can choose. This is most useful when selecting from a dictionary containing a huge number of tags, such as the Haystack Tag Dictionary. </p>
+            <p class="- topic/p ">Type in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Search</uicontrol> field <image scale="65" scope="local" href="../graphic/tag_search_field_0000015419_0000000836.png" class="- topic/image "/> to filter by tag name. Tags are filtered immediately as you type.<ul class="- topic/ul "><li class="- topic/li ">
+                        <p class="- topic/p ">If the list has only a single item, it is selected by default.</p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p ">If a tag name is a subset of another tag, adding a space selects the shorter tag by name.</p>
+                        <p class="- topic/p ">For example, if you have both “chiller” and “chillerPlant” tags, typing "chiller" shows both tags. Adding a space after “chiller” filters out “chillerPlant” and shows the “chiller” tag only.</p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p ">Entering a colon ":" filters for the tag dictionary that has the prefixed namespace.</p>
+                        <p class="- topic/p ">For example, if you enter "hs:temp" you select the “hs” (Haystack) dictionary and the "temp" tag.</p>
+                    </li></ul></p>
+            <p class="- topic/p ">You can also select an option from the option list <image scale="65" scope="local" href="../graphic/tag_filter_field_0000015418_0000000835.png" class="- topic/image "/> to filter based on validity options.<ul class="- topic/ul "><li class="- topic/li ">
+                        <p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Show All</option>: no filtering applied when this option is selected.</p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Valid Only</option>: shows just the tags that are valid based on rules defined in the tag dictionary.</p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Best Only</option>: filters tags in appropriate manager views based on the identity of the component; for example, whether it is a point or device.</p>
+                    </li></ul></p>
+            <p class="- topic/p ">Methods for adding tags include the following:<ul class="- topic/ul "><li class="- topic/li ">
+                        <p class="- topic/p ">Add an individual tag from a dictionary.</p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p ">Add a tag group (predefined collection of tags) from a dictionary.</p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p ">Add a unique ad hoc tag which you create.</p>
+                    </li></ul></p>
+            <p class="- topic/p ">After clicking <uicontrol class="+ topic/ph ui-d/uicontrol ">Add Tags</uicontrol>, the selected tags are added and appear in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Direct Tags</uicontrol> table in lower half of the dialog box.</p>
+            <p class="- topic/p ">After editing any tag value fields as needed, click <uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol> to save the tag assignments.</p>
+            <p class="- topic/p ">For tags that have <term class="- topic/term ">Ord</term> type values such as “hs:siteRef”, refer to the following image and steps as an example of how to add a link to your tag.<image placement="break" scale="65" width="500" href="../graphic/tagordrefexample_0000015848_0000000834.png" class="- topic/image "/><ol class="- topic/ol "><li class="- topic/li ">
+                        <p class="- topic/p ">Click the option list arrow located to the right of the tag value field.</p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p ">Select the appropriate link type from the options menu.</p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p ">Browse to the desired link and select it.</p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p ">Select the <option class="+ topic/keyword pr-d/option ">Handle</option> option.</p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p ">Click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</p>
+                    </li></ol></p>
+        </section></refbody></reference>

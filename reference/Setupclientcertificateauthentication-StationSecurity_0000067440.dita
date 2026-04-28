@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="SetUpClientCertificateAuthenticatio-43012E8B" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Client certificate authentication setup</title>
+<shortdesc class="- topic/shortdesc ">Setting up client certificate authentication is a multi-step
+process where some procedures must be performed by the station administrator,
+and other procedures by the user. </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">client certificate authentication</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">The station administrator’s part in the process
+is to obtain several pieces of information from the local IT network
+administrator and then configure the user for client certificate authentication.</p><p class="- topic/p ">The user must complete several tasks as well as provide the station
+administrator with the client certificate and its public key.</p><p class="- topic/p ">Refer to the following administrator and user workflows for the list
+of procedures for each.</p></section>
+</refbody>
+</reference>

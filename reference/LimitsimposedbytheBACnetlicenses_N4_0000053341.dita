@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="LimitsImposedByTheBACnetLicenses-4D4C09BD" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Limits imposed by the BACnet licenses</title>
+<shortdesc class="- topic/shortdesc ">As with other drivers, the <apiname class="+ topic/keyword pr-d/apiname ">bacnet</apiname> feature
+of the license may define operational limits. </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">license</indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><title class="- topic/title ">Quantity limits</title><p class="- topic/p ">The license for a single
+BACnet network across all BACnet devices and related child components
+in the station regardless of the BacnetComm network port used to reach
+any device (<uicontrol class="+ topic/ph ui-d/uicontrol ">Ip Port</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">ScPort</uicontrol>, <uicontrol class="+ topic/ph ui-d/uicontrol ">EthernetPort</uicontrol>, <uicontrol class="+ topic/ph ui-d/uicontrol ">MstpPort</uicontrol>) includes these maximum limits:</p><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">number of devices</p></li>
+<li class="- topic/li "><p class="- topic/p ">number of proxy points</p></li>
+<li class="- topic/li "><p class="- topic/p ">number of histories</p></li>
+<li class="- topic/li "><p class="- topic/p ">number of imported schedules and calendars</p></li>
+<li class="- topic/li "><p class="- topic/p ">number of imported trend logs</p></li>
+</ul><p class="- topic/p ">Limits do not apply to the server operations of the BACnet
+driver, and any license entry value of <systemoutput class="+ topic/ph sw-d/systemoutput ">none</systemoutput>, indicates that no set limits apply for that item type.</p></section>
+<section class="- topic/section "><title class="- topic/title ">Server limits</title><p class="- topic/p ">The export property in the <apiname class="+ topic/keyword pr-d/apiname ">bacnet</apiname> license determines whether a station can provide
+BACnet server functions. When enabled (<option class="+ topic/keyword pr-d/option ">true</option>), components,
+files, or histories are exported to BACnet.</p><note type="note" class="- topic/note ">Server
+operation should be enabled for any controller ordered with the Enterprise
+Connectivity Pack, which supports communications to other controllers
+and/or a Supervisor.</note><p class="- topic/p ">If the export property is disabled (<option class="+ topic/keyword pr-d/option ">false</option>), no components, files, or histories are exported
+to BACnet apart from the single BACnet device object that represents
+the station (as configured by the BACnet <uicontrol class="+ topic/ph ui-d/uicontrol ">Local Device</uicontrol>). Although you can still use the various views of the local device’s <uicontrol class="+ topic/ph ui-d/uicontrol ">Export Table</uicontrol> to add BACnet export descriptors (and file
+and history descriptors), all descriptors report a fault status, with
+a fault cause of <systemoutput class="+ topic/ph sw-d/systemoutput ">Server capability not licensed</systemoutput>.</p></section>
+<section class="- topic/section "><title class="- topic/title ">Bacnet MS/TP limits</title><p class="- topic/p ">Bacnet MS/TP is a separately-licensed
+feature, requiring a feature named <apiname class="+ topic/keyword pr-d/apiname ">mstp</apiname> in the
+remote controller’s license file.</p><p class="- topic/p ">For example:</p><p class="- topic/p "><userinput class="+ topic/ph sw-d/userinput ">&lt;feature name="mstp" &#160;&#160;&#160;&#160;expiration="never" &#160;&#160;&#160;&#160;port.limit="5"/&gt; </userinput></p><p class="- topic/p "><userinput class="+ topic/ph sw-d/userinput ">port.limit</userinput> defines the number of MS/TP
+trunks (RS-485 ports) that can be used. This ranges from 1 to 6, varies
+based on the type of the host controller, and depends the license
+purchased.</p><p class="- topic/p ">Due too electrical considerations, the EIA-485 (or
+RS-485) load factor of connected MS/TP devices determines how many
+devices a trunk can physically support. This ranges from 31 (full
+load) to up to 127 (quarter load) devices.</p><p class="- topic/p ">Other device or platform
+limits in the license’s <apiname class="+ topic/keyword pr-d/apiname ">bacnet</apiname> feature also
+apply.</p></section>
+</refbody>
+</reference>

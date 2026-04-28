@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="AddingADeviceFromThePalette-505D850C" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Adding a device from the palette</title>
+<shortdesc class="- topic/shortdesc ">You can add a device to the station database using the
+palette.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">device<indexterm class="- topic/indexterm ">adding</indexterm></indexterm><indexterm class="- topic/indexterm ">bacnet palette</indexterm></keywords></metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq ">You are working in a controller station that has a BacnetNetwork.</prereq>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Open the <apiname class="+ topic/keyword pr-d/apiname ">bacnet</apiname> palette in the palette
+side bar.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Expand the <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Drivers</uicontrol></menucascade> node and double-click
+the BACnet network node.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet Device Manager</wintitle> view opens.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Drag a <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetDevice</uicontrol> component from
+the palette to the BACnet network node in the Nav tree.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The device appears in the <wintitle class="+ topic/keyword ui-d/wintitle ">Database</wintitle> tab of the <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet Device Manager</wintitle> view.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To rename the device, double-click the current name, change
+the name and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd>
+<info class="- topic/itemgroup task/info ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Edit</wintitle> window is like the <wintitle class="+ topic/keyword ui-d/wintitle ">Add</wintitle> device window.</info>
+<stepresult class="- topic/itemgroup task/stepresult ">The system updates the device in database.</stepresult>
+</step>
+</steps>
+</taskbody>
+</task>

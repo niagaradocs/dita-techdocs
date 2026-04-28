@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-AlarmCountToRelay" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-AlarmCountToRelay</title>
+<shortdesc class="- topic/shortdesc ">This component links from an Alarm Class component to monitor
+alarm count and send an associated Boolean output to a relay when
+the alarm count increases.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">AlarmCountToRelay</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">AlarmCountToRelay is in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Alarm</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p><p class="- topic/p ">The alarm
+count type to monitor is optional and includes the alarm states or
+statuses. Use this component in security applications or situations
+to connect the occurrence of a new alarm with an event, such as a
+light, horn, or other signal, which requires a relay connection.</p><fig class="- topic/fig ">
+<title class="- topic/title ">AlarmCountToRelay property sheet</title>
+<image href="../graphic/kitControl-AlarmCountToRelay_0000067548.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig><p class="- topic/p ">The screen capture shows an AlarmCountToRelay component that
+is linked to the <parmname class="+ topic/keyword pr-d/parmname ">Unacked Alarm Count</parmname> property.
+In this example, the unacknowledged Alarm Count is 46. Any increase
+in this number causes the <parmname class="+ topic/keyword pr-d/parmname ">Relay Out</parmname> property
+to change status from <systemoutput class="+ topic/ph sw-d/systemoutput ">false</systemoutput> to <systemoutput class="+ topic/ph sw-d/systemoutput ">true</systemoutput> for a time equal to the value of the <parmname class="+ topic/keyword pr-d/parmname ">Timer</parmname> property.</p></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm Count</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the current alarm count for an alarm class component
+that is linked to this component. The numeric value of this property
+dynamically displays the number of alarms of the type specified in
+the <parmname class="+ topic/keyword pr-d/parmname ">Alarm Type Count</parmname> property.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Relay Out</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only <systemoutput class="+ topic/ph sw-d/systemoutput ">true</systemoutput> or <systemoutput class="+ topic/ph sw-d/systemoutput ">false {ok}</systemoutput> (default)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Provides a Boolean output value for linking into a relay
+control component.<p class="- topic/p "><systemoutput class="+ topic/ph sw-d/systemoutput ">false</systemoutput> indicates
+no change in the alarm count.</p><p class="- topic/p "><systemoutput class="+ topic/ph sw-d/systemoutput ">true</systemoutput>  indicates a change in the Alarm Count (alarm count is active).
+When an Alarm Count increases, the framework changes this property
+from <systemoutput class="+ topic/ph sw-d/systemoutput ">false</systemoutput> to <systemoutput class="+ topic/ph sw-d/systemoutput ">true</systemoutput> and maintains this status for the amount of time specified by the <parmname class="+ topic/keyword pr-d/parmname ">Timer</parmname> property value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Timer</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours minutes seconds (defaults to two minutes)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines how long to hold the <parmname class="+ topic/keyword pr-d/parmname ">Relay Out</parmname> in the active (<systemoutput class="+ topic/ph sw-d/systemoutput ">true</systemoutput>) state.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Alarm Count Type</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">drop-down list</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Selects the type of alarm for which to monitor the count.<p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Any Count</option> links from any type of alarm to the Alarm
+Count property.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Unacked Alarm Count</option> links from
+the<parmname class="+ topic/keyword pr-d/parmname "> Unacked Alarm Count</parmname> property on an Alarm
+Class component to the <parmname class="+ topic/keyword pr-d/parmname ">Alarm Count</parmname> property of
+this component.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Open Alarm Count</option> links from
+the <parmname class="+ topic/keyword pr-d/parmname ">Open Alarm Count</parmname> property on an Alarm Class
+component to the <parmname class="+ topic/keyword pr-d/parmname ">Alarm Count</parmname> property of this
+component.</p><p class="- topic/p ">In Alarm Count links from the <parmname class="+ topic/keyword pr-d/parmname ">In Alarm
+Count</parmname> property on an Alarm Class component to the <parmname class="+ topic/keyword pr-d/parmname ">Alarm Count</parmname> property of this component.</p></propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

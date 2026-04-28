@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="tagdictionary-ScopedTag" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">tagdictionary-ScopedTag</title><shortdesc class="- topic/shortdesc ">The <parmname class="+ topic/keyword pr-d/parmname ">scoped</parmname> smart tag is available
+in the <apiname class="+ topic/keyword pr-d/apiname ">tagdictionary</apiname> palette under the <uicontrol class="+ topic/ph ui-d/uicontrol ">Smart Tags</uicontrol> folder. The <parmname class="+ topic/keyword pr-d/parmname ">scoped</parmname> smart
+tag can be applied to a <codeph class="+ topic/ph pr-d/codeph ">baja:Component</codeph> object.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">scoped<indexterm class="- topic/indexterm ">smart tag</indexterm></indexterm><indexterm class="- topic/indexterm ">tagdictionary-ScopedTag</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><fig class="- topic/fig "><title class="- topic/title ">Scoped  smart tag </title><image placement="break" scale="75" scope="local" width="500" href="../graphic/scopedTag_PropertySheet_0000060079.png" class="- topic/image "/></fig><p class="- topic/p ">When applied to a component, either directly or implied by
+a tag rule, the smart tag searches the component's ancestors looking
+for a tag with the "search ID". This tag is called the matching tag
+and the ancestor on which it is found is called "the matching ancestor".</p><p class="- topic/p ">Without specifying anything in the scoped tag's frozen properties,
+the basic behavior of this smart tag is as follows:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">The search ID will be the same as scoped tag itself.</p></li><li class="- topic/li "><p class="- topic/p ">If found, a tag with the scoped tag ID will be added to the
+component. The value of the added tag will be copied from the matching
+tag. If the matching tag is a marker tag, the added tag will be a
+marker tag. If the matching tag is a value tag, the added tag will
+have the same value as the matching tag.</p></li></ul><p class="- topic/p ">This basic behavior can be modified by adding a <parmname class="+ topic/keyword pr-d/parmname ">TagInfo</parmname> to the <parmname class="+ topic/keyword pr-d/parmname ">scoped</parmname> tag's frozen
+properties. Usage is optional and each can contain only a single tag.
+Only the ID of the <parmname class="+ topic/keyword pr-d/parmname ">TagInfo</parmname> added to these properties
+is of consequence and its type is ignored.</p></section><section class="- topic/section "><ul compact="yes" class="- topic/ul "><li class="- topic/li "><p class="- topic/p "><b class="+ topic/ph hi-d/b ">Search Tag List property</b></p><p class="- topic/p ">If a <parmname class="+ topic/keyword pr-d/parmname ">TagInfo</parmname> is added to <parmname class="+ topic/keyword pr-d/parmname ">Search Tag List</parmname> property, the ID
+of this <parmname class="+ topic/keyword pr-d/parmname ">TagInfo</parmname> will be used as the search ID
+instead of the ID of the scoped tag. If a matching tag is found, the
+tag added to the component will still have the same ID as the scoped
+tag. If this property is empty or the <parmname class="+ topic/keyword pr-d/parmname ">TagInfo</parmname> has the same ID as the scoped tag, only direct tags will be considered
+when searching the component's ancestors. Otherwise, both direct and
+implied tags will be considered.</p></li><li class="- topic/li "><p class="- topic/p "><b class="+ topic/ph hi-d/b ">Out Of ScopeTag List property</b></p><p class="- topic/p ">If a <parmname class="+ topic/keyword pr-d/parmname ">TagInfo</parmname> is added to the <parmname class="+ topic/keyword pr-d/parmname ">Out Of Scope Tag List</parmname> property,
+the ID of this <parmname class="+ topic/keyword pr-d/parmname ">TagInfo</parmname> is called the "out-of-scope
+ID". The scoped tag will not be added to the component if the component
+itself, the matching ancestor, or any ancestors between the component
+and the matching ancestor have a tag with the out-of-scope ID. If
+the out-of-scope ID is the same as the scoped tag ID, only direct
+tags will be considered. Otherwise, both direct and implied tags will
+be considered. If the out-of-scope ID is the same as the scoped tag
+ID, the scoped tag will never be added to a component.</p></li><li class="- topic/li "><p class="- topic/p "><b class="+ topic/ph hi-d/b ">Value Source Tag List property</b></p><p class="- topic/p ">If a <parmname class="+ topic/keyword pr-d/parmname ">TagInfo</parmname> is added to the <parmname class="+ topic/keyword pr-d/parmname ">Value Source Tag List</parmname> property, the ID of this <parmname class="+ topic/keyword pr-d/parmname ">TagInfo</parmname> is called
+the "value-source ID". If a tag exists on the matching ancestor with
+the value-source ID, called the "value-source tag", the value of the
+added tag will be copied from that tag instead of the matching tag.
+If a value-source tag does not exist on the matching ancestor, the
+value of the added tag will be copied from the matching tag. If the
+value-source ID is the same as the scoped tag ID, only direct tags
+will be considered for the value-source tag. Otherwise, both direct
+and implied tags will be considered.</p><p class="- topic/p ">For example, if the tag
+with the search ID is a double value tag set to 5.0, then a double
+value tag set to 5.0 with the scoped tag ID will be added to descendant
+components. If a <parmname class="+ topic/keyword pr-d/parmname ">TagInfo</parmname> is added to the <parmname class="+ topic/keyword pr-d/parmname ">ValueSourceTagList</parmname> property, the value of the scoped tag
+added to a component will be copied from the direct or implied tag
+with the same ID as the <parmname class="+ topic/keyword pr-d/parmname ">ValueSourceTagList</parmname> TagInfo
+(the value source ID) on the matching ancestor. Only direct tags (and
+not implied tags) will be used if the ValueSourceTagList TagInfo has
+the same ID as the scoped tag. If the matching ancestor does not have
+a tag with the value source ID, the value of the scoped tag will be
+copied from the tag with the search ID.</p></li></ul><p class="- topic/p ">In another example using the namespace of the custom dictionary
+is "<codeph class="+ topic/ph pr-d/codeph ">c:</codeph>". The <parmname class="+ topic/keyword pr-d/parmname ">Search Tag List</parmname> is populated so <codeph class="+ topic/ph pr-d/codeph ">c:stateRoot</codeph> will be used as the
+search ID instead of<codeph class="+ topic/ph pr-d/codeph ">hs:geoState</codeph>, which is the ID
+of the scoped tag. The <parmname class="+ topic/keyword pr-d/parmname ">Out Of Scope Tag List</parmname> is
+empty. The <parmname class="+ topic/keyword pr-d/parmname ">Value Source Tag List</parmname> is populated
+so the value-source ID is <codeph class="+ topic/ph pr-d/codeph ">n:name</codeph>. If a direct or
+implied tag with the ID <codeph class="+ topic/ph pr-d/codeph ">c:stateRoot</codeph> is found on an
+ancestor of a component, a <codeph class="+ topic/ph pr-d/codeph ">hs:geoState</codeph> tag will be
+added to that component with a value set to the <codeph class="+ topic/ph pr-d/codeph ">n:name</codeph> tag on the matching ancestor.</p><fig class="- topic/fig "><title class="- topic/title ">Example scoped tag: <codeph class="+ topic/ph pr-d/codeph ">hs:geoState</codeph></title><image placement="break" scale="75" width="300" href="../graphic/ScopedTag_TagInfoLists_0000060450.png" class="- topic/image "/></fig></section></refbody></reference>

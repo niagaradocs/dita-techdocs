@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="Namespace-7F7B9B00" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry ">
+<glossterm class="- topic/title concept/title glossentry/glossterm "><term id="glTerm" class="- topic/term "><text id="glText" class="- topic/text ">namespace</text></term></glossterm>
+<glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">A container for a set of names in a naming system. A tag
+dictionary is a namespace.</glossdef>
+</glossentry>

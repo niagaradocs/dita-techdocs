@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!--Arbortext, Inc., 1988-2019, v.4002--><map xml:lang="en" class="- map/map ">
+<title class="- topic/title ">Components and views</title>
+<topicref format="dita" navtitle="Components and views" scope="local" type="reference" href="../reference/ComponentsandViews-Reusable_0000026100.dita" class="- map/topicref ">
+<topicref format="dita" navtitle="opcUaServer-OpcUaServer" scope="local" type="reference" href="../reference/opcUaServer-OpcUaServer-OpcUaN4_0000031850.dita" class="- map/topicref ">
+</topicref>
+<topicref format="dita" navtitle="opcUaServer-OpcUaNamespace" scope="local" type="reference" href="../reference/opcUaServer-OpcUaNamespace_0000031858.dita" class="- map/topicref ">
+</topicref>
+<topicref format="dita" navtitle="opcUaServer-OpcUaServerPointDeviceExt" scope="local" type="reference" href="../reference/opcUaServer-OpcUaServerPointDeviceExt-OPCUA_0000037320.dita" class="- map/topicref "/>
+<topicref format="dita" navtitle="opcUaServer-OpcUaServerAlarmDeviceExt" scope="local" type="reference" href="../reference/opcUaServer-OpcUaServerAlarmDeviceExt-OPCUA_0000037135.dita" class="- map/topicref "/>
+<topicref format="dita" navtitle="opcUaServer-OpcUaServerDeviceFolder" scope="local" type="reference" href="../reference/opcUaServer-OpcUaServerDeviceFolder_0000037140.dita" class="- map/topicref "/>
+<topicref format="dita" navtitle="opcUaServer-OpcUaServerPointFolder" scope="local" type="reference" href="../reference/opcUaServer-OpcUaServerPointFolder-OpcUaN4_0000031980.dita" class="- map/topicref "/>
+<topicref format="dita" navtitle="opcUaServer-OpcUaAlarmClass" scope="local" type="reference" href="../reference/opcUaServer-OpcUaAlarmClass-OpcUaN4_0000031979.dita" class="- map/topicref ">
+</topicref>
+<topicref format="dita" navtitle="opcUaServer-OpcUaAlarmRecipient" scope="local" type="reference" href="../reference/opcUaServer-OpcUaAlarmRecipient-OpcUaN4_0000031978.dita" class="- map/topicref "/>
+<topicref format="dita" navtitle="opcUaServer-OpcUaAuthenticationScheme" scope="local" type="reference" href="../reference/opcUaServer-OpcUaAuthenticationScheme-OpcUAN4_0000036680.dita" class="- map/topicref "/>
+<topicref format="dita" navtitle="opcUaClient-OpcUaNetwork" scope="local" type="reference" href="../reference/opcUaClient-OpcUaNetwork_0000023498.dita" class="- map/topicref ">
+</topicref>
+<topicref format="dita" navtitle="opcUaCient-OpcUaDevice" scope="local" type="reference" href="../reference/opcUaClient-OpcUaDevice_0000023497.dita" class="- map/topicref ">
+</topicref>
+<topicref format="dita" navtitle="opcUaClient-OpcUaBuildInfo" scope="local" type="reference" href="../reference/opcUaClient-OpcUaClientBuildInfo-OPCUA_0000037131.dita" class="- map/topicref ">
+</topicref>
+<topicref format="dita" navtitle="opcUaClient-OpcUaClientAlarmDeviceExt" scope="local" type="reference" href="../reference/opcUaClient-OpcUaClientAlarmDeviceExt-OPCUA_0000037132.dita" class="- map/topicref "/>
+<topicref format="dita" navtitle="opcUaClient-OpcUaClientPointDeviceExt" scope="local" type="reference" href="../reference/opcUaClient-OpcUaClientPointDeviceExt-OPCUA_0000037319.dita" class="- map/topicref "/>
+<topicref format="dita" navtitle="opcUaClient-OpcUaDeviceFolder" scope="local" type="reference" href="../reference/opcUaClient-OpcUaDeviceFolder_0000028940.dita" class="- map/topicref ">
+</topicref>
+<topicref format="dita" navtitle="opcUaClient-OpcUaClientHistoryDeviceExt" scope="local" type="reference" href="../reference/opcUaClient-OpcUaClientHistoryExt-OPCUA_0000037139.dita" class="- map/topicref "/>
+<topicref format="dita" navtitle="opcUaClient-OpcUaClientPointFolder " scope="local" type="reference" href="../reference/opcUaClient-OpcUaClientPointFolder-OpcUAN4_0000028939.dita" class="- map/topicref "/>
+<topicref format="dita" navtitle="Opc Ua Server Device Manager" scope="local" type="reference" href="../reference/opcUaServer-OpcUaServerDeviceManager-OpcUaN4_0000031860.dita" class="- map/topicref ">
+</topicref>
+<topicref format="dita" navtitle="Opc Ua Server Alarm Manager" scope="local" type="reference" href="../reference/OpcUaServerAlarmManager-OPCUA_0000037138.dita" class="- map/topicref ">
+</topicref>
+<topicref format="dita" navtitle="Opc Ua Server Point Manager" scope="local" type="reference" href="../reference/OpcUaServerPointManager_0000031857.dita" class="- map/topicref ">
+</topicref><?Pub Caret -1?>
+<topicref format="dita" navtitle="Opc Ua Client Device Manager" scope="local" type="reference" href="../reference/OpcUaClientDeviceManager_0000026779.dita" class="- map/topicref ">
+</topicref>
+<topicref format="dita" navtitle="Opc Ua Client Alarm Manager" scope="local" type="reference" href="../reference/OpcUaClientAlarmManager-OPCUA_0000037134.dita" class="- map/topicref ">
+</topicref>
+<topicref format="dita" navtitle="Opc Ua Client Point Manager" scope="local" type="reference" href="../reference/OpcUaClientPointManager_0000026780.dita" class="- map/topicref ">
+</topicref>
+<topicref format="dita" navtitle="Opc Ua Client History Import Manager" scope="local" type="reference" href="../reference/OpcUaClientHistoryImportManager_0000026099.dita" class="- map/topicref "/>
+</topicref>
+</map>

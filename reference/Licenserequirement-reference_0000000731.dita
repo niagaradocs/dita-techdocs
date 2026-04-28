@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="LicenseRequirement-N4Install" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">License requirement</title><shortdesc class="- topic/shortdesc ">You can install <keyword conkeyref="wh_variables_n4/niagara4" class="- topic/keyword "/> on any PC with a supported Windows operating system. However,
+to successfully start <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> application framework, you must have a license file installed.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">license</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p ">You only have to license the application
+on your computer once, typically soon after you finish installation
+by starting <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/>.</p><p class="- topic/p ">Your product purchase creates an “unbound”
+license on the online licensing server. The server may email you a
+corresponding license key—a unique string that corresponds
+to your license.</p></section></refbody></reference>

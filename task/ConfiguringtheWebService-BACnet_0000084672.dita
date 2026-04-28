@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="SecuringMessagesFromTheInternet-AA371277" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Configuring the WebService</title><shortdesc class="- topic/shortdesc ">This procedure configures the hub station’s default <uicontrol class="+ topic/ph ui-d/uicontrol ">WebService</uicontrol> with a server.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm "><uicontrol class="+ topic/ph ui-d/uicontrol ">WebService</uicontrol></indexterm></keywords></metadata></prolog><taskbody class="- topic/body task/taskbody "><prereq class="- topic/section task/prereq ">The station’s <wintitle class="+ topic/keyword ui-d/wintitle ">User Key Store</wintitle> contains
+a certificate signed by your site Secure Connect CA certificate with
+which to authenticate incoming hub or direct connections.</prereq><context class="- topic/section task/context "><p class="- topic/p ">Configuring the SC server certificate as an additional
+certificate is not recommended because BACnet devices may not include
+an SNI header. You can configure additional server certificates in
+the <uicontrol class="+ topic/ph ui-d/uicontrol ">WebService</uicontrol> to be presented to browser connections
+using the <uicontrol class="+ topic/ph ui-d/uicontrol ">AdditionalHttpsCerts</uicontrol> component from
+the <apiname class="+ topic/keyword pr-d/apiname ">web</apiname> palette. The certificates presented to
+browsers are signed by a CA certificate in the browser's <wintitle class="+ topic/keyword ui-d/wintitle ">System Trust Store</wintitle>.</p></context><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Expand <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Station</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol></menucascade> and
+double-click <uicontrol class="+ topic/ph ui-d/uicontrol ">WebService</uicontrol>.</cmd><stepresult class="- topic/itemgroup task/stepresult ">The <uicontrol class="+ topic/ph ui-d/uicontrol ">WebService</uicontrol> <wintitle class="+ topic/keyword ui-d/wintitle ">Property
+Sheet</wintitle> opens.<?Pub Caret 0?></stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Select the hub’s server certificate from the <parmname class="+ topic/keyword pr-d/parmname ">Main Https Cert</parmname> drop-down list and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol>.</cmd><stepresult class="- topic/itemgroup task/stepresult ">This configures the <uicontrol class="+ topic/ph ui-d/uicontrol ">WebService</uicontrol>.</stepresult></step></steps><postreq class="- topic/section task/postreq ">The server certificate assigned to the <uicontrol class="+ topic/ph ui-d/uicontrol ">WebService</uicontrol> must be signed by the secure connect site CA certificate. In the <uicontrol class="+ topic/ph ui-d/uicontrol ">WebService</uicontrol>, you can configure additional certificates
+that are signed by a CA certificate in the system and/or a Browser
+Trust Store. The <parmname class="+ topic/keyword pr-d/parmname ">Subject Alternate Names</parmname> property
+in these additional certificates is configured to present the certificates
+to browser connections based on an SNI header in the browser's connection
+request.</postreq></taskbody></task>

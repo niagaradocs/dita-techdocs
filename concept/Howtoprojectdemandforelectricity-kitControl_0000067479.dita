@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="HowTheFrameworkProjectsDemandForEle-2302BF7D" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">How to project demand for electricity</title>
+<shortdesc class="- topic/shortdesc ">The kitControl’s ElectricalDemandLimit component
+monitors instantaneous electrical power, calculates a projected demand
+average over a specified demand interval, and directs the shedding
+of specific loads when the projected demand average exceeds a specified
+demand limit. As projected demand levels recede, the component prioritizes
+the restoration of loads. In addition, it records and saves peak demand
+times, dates and values for both the current and previous months.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">electricity<indexterm class="- topic/indexterm ">projecting demand</indexterm></indexterm></keywords></metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<fig class="- topic/fig ">
+<title class="- topic/title ">Demand interval illustration</title>
+<image href="../graphic/kitControlPercentDemandInt_0000067490.png" scope="local" class="- topic/image ">
+</image></fig>
+<p class="- topic/p ">On the left are actual historical electricity demand data. On the
+right are projected data. The component uses the two data sets across
+a 15 minute demand interval to calculate the <parmname class="+ topic/keyword pr-d/parmname ">Projected Demand
+Average</parmname>. In this example, the <parmname class="+ topic/keyword pr-d/parmname ">Percent Interval
+Elapsed</parmname> property is set to 67. This causes the actual minutes
+elapsed over the 15 minute demand interval to equal 10 minutes and
+the minutes remaining to equal five minutes. The component averages
+the actual historical demand data over 10 minutes and uses the instantaneous
+demand taken at minute 11 to calculate an average projected data value
+for the remaining third of the period. Using these two numbers, it
+calculates the <parmname class="+ topic/keyword pr-d/parmname ">Projected Demand Average</parmname>.</p>
+<p class="- topic/p ">You configure Percent Interval Elapsed on the property sheet of
+the ElectricalDemandLimit component.</p>
+</conbody>
+</concept>

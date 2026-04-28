@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-Equal" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-Equal</title>
+<shortdesc class="- topic/shortdesc ">This component performs the operation: <codeph class="+ topic/ph pr-d/codeph ">A = B</codeph>. Numeric.NaN values are never equal.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Equal</indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">Equal is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Logic</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette</p><fig class="- topic/fig ">
+<title class="- topic/title ">Equal properties</title>
+<image href="../graphic/kitControlEqual_0000067650.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window (defaults to <systemoutput class="+ topic/ph sw-d/systemoutput ">true</systemoutput> and <systemoutput class="+ topic/ph sw-d/systemoutput ">false</systemoutput>)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Defines the text to display for each Boolean value.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">trueText</option> configures the text to describe the
+state when component returns <option class="+ topic/keyword pr-d/option ">true.</option></p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">falseText</option> configures the text to describe the state when
+component returns <option class="+ topic/keyword pr-d/option ">false.</option></p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only <option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the result of the comparison.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In A and In B</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">StatusBoolean <option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Provides the input values for the comparison.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

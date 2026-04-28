@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="ExportingControllerDevices-C7687019" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Exporting controller device and point data</title><shortdesc class="- topic/shortdesc ">A remote controller connected to the BACnet network functions
+as a BACnet Controller Device (BCD). You would export device and point
+data from this controller’s station when upgrading the controller
+or preparing an EDE master configuration file to use to configure
+the Supervisor station. </shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">devices and points</indexterm></keywords></metadata></prolog><taskbody class="- topic/body task/taskbody "><prereq class="- topic/section task/prereq ">The controller station is running and all the devices and
+points are configured properly.</prereq><context class="- topic/section task/context ">The export function can collate all exported files into a
+single EDE master configuration file or you may prepare this file
+manually. Later, offline, you import the EDE master configuration
+file into the new controller station or the Supervisor station, BACnet
+AWS (Advanced Work Station).</context><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Open the station and navigate to <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Drivers</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetNetwork</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Local Device</uicontrol></menucascade>.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Right-click the <uicontrol class="+ topic/ph ui-d/uicontrol ">Export Table</uicontrol> and
+click <uicontrol class="+ topic/ph ui-d/uicontrol ">Export</uicontrol>.</cmd><stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Export</wintitle> window opens.</stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Select <uicontrol class="+ topic/ph ui-d/uicontrol ">Save to file</uicontrol>, click <uicontrol class="+ topic/ph ui-d/uicontrol ">Browse</uicontrol> to a secure location in which to save the EDE
+master configuration file, give the file a name and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol>.</cmd><info class="- topic/itemgroup task/info "><note type="caution" class="- topic/note ">Choose a secure location for the exported
+EDE master configuration file(s) where it/they cannot be modified
+by unknown users.</note></info><stepresult class="- topic/itemgroup task/stepresult ">The utility exports the EDE master configuration file(s).
+There is no option to export the state texts file, which must be prepared
+manually.</stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Click the <wintitle class="+ topic/keyword ui-d/wintitle ">Setup</wintitle> tab and enter the
+following properties.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To export the data, click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd><stepresult class="- topic/itemgroup task/stepresult ">The station exports the file(s) to the desired location.</stepresult></step></steps><postreq class="- topic/section task/postreq ">If you exported the EDE master configuration file(s) for
+the purpose of upgrading the controller, you may replace the controller
+now, then import data from the EDE master configuration file(s) to
+set up the station database. Your BACnet devices come online and work
+as expected. Once online, the driver updates the point values in the
+Supervisor station overriding the point read values that came from
+the EDE master configuration file.</postreq></taskbody></task>

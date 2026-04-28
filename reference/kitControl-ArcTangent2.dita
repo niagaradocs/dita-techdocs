@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-ArcTangent2" xml:lang="en-us" class="- topic/topic       reference/reference "><title class="- topic/title ">kitControl-ArcTangent2</title><shortdesc class="- topic/shortdesc ">This component  accepts two inputs, in In A and in In B, and returns the angle θ (theta) from the conversion of rectangular coordinates (x,y) to polar coordinates (r,θ).</shortdesc><prolog class="- topic/prolog "><author translate="no" type="creator" class="- topic/author ">Claudia Serwe &lt;claudia.serwe@tridium.com&gt;</author><metadata class="- topic/metadata "><keywords class="- topic/keywords "/></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section ">
+    <image placement="break" width="500" href="../graphic/kitControl-ArcTangent2.png" class="- topic/image "/><image placement="break" width="500" href="../graphic/kitControl-ArcTangent2_2.png" class="- topic/image "/>
+    <p class="- topic/p ">The ArcTangent2 is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Math</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p>
+    </section></refbody></reference>

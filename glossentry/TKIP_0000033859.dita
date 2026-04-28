@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="TKIP-A05307B2" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry "><glossterm class="- topic/title concept/title glossentry/glossterm ">TKIP</glossterm><glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">TKIP (Temporal Key Integrity Protocol) is an encryption protocol. The RC4 stream cipher is used with a 128-bit per-packet key, dynamically generates a new key for each packet. Used by WPA.</glossdef></glossentry>

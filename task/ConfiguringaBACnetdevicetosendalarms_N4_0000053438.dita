@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="ConfiguringABACnetDeviceToSendAlarm-5476840F" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Configuring a BACnet device to send alarms</title>
+<shortdesc class="- topic/shortdesc ">Sometimes a remote BACnet device may not allow this configuration.
+In this case, you must use third-party tools to configure Notification
+Class objects in a BACnet device as described below.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">device<indexterm class="- topic/indexterm ">configuring to send
+alarms</indexterm></indexterm></keywords></metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq ">The station is open and a BACnet device has been added and
+is communicating in the station.</prereq>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Expand <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Drivers</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetNetwork</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetDevice</uicontrol></menucascade> and double-click on the <uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol> node in the Nav tree.</cmd>
+<info class="- topic/itemgroup task/info "/>
+<stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet Config Manager</wintitle> view opens.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Discover the objects in the device.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Add the <parmname class="+ topic/keyword pr-d/parmname ">Notification Class</parmname> config
+object for the alarms you wish to receive.</cmd>
+<info class="- topic/itemgroup task/info ">To determine which one to add, add a config object for an object
+that will be alarming, and inspect its <parmname class="+ topic/keyword pr-d/parmname ">Notification Class</parmname> property. This specifies which notification class object will route
+those alarms.</info>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">After determining the referenced notification classes,
+delete unused config objects.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Right-click the <uicontrol class="+ topic/ph ui-d/uicontrol ">Notification Class</uicontrol> config object, and select <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Actions</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Add Destination</uicontrol></menucascade>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Add Destination</wintitle> window opens.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Expand the <parmname class="+ topic/keyword pr-d/parmname ">Recipient</parmname> property and
+enter the station’s device ID, replacing the <option class="+ topic/keyword pr-d/option ">-1</option> with value of the station’s <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetNetwork</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Local Device</uicontrol></menucascade>, <parmname class="+ topic/keyword pr-d/parmname ">Object
+Id</parmname> property.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Specify the (integer) <parmname class="+ topic/keyword pr-d/parmname ">Process Identifier</parmname> to use in sending alarms to the station (the default is <option class="+ topic/keyword pr-d/option ">0</option>). </cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Configure other properties, and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To save the changes, click <uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">Alarms are now configured to send to the client station.</stepresult>
+</step>
+</steps>
+<postreq class="- topic/section task/postreq "><note type="note" class="- topic/note ">For BACnet alarms from a device to be successfully
+received in a client station, the Process Identifier in the Recipient
+List entry for the station (in the BACnet notification class object
+of the sending device) must be matched when configuring the BacnetDevice’s
+Alarms device extension, <parmname class="+ topic/keyword pr-d/parmname ">Niagara Process Id</parmname> property.</note></postreq>
+</taskbody>
+</task>

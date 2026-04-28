@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="SSLCertificates" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">Certificates</title><shortdesc class="- topic/shortdesc ">A certificate is an electronic document that uses a digital
+signature to bind a <i class="+ topic/ph hi-d/i ">public key</i> with a person or organization.
+Certificates may serve a variety of purposes depending on how you
+configure the certificate’s <parmname class="+ topic/keyword pr-d/parmname ">Key Usage</parmname> property.
+Their primary purpose in this system is to verify the identity of
+a server so that communication can be trusted.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">certificate<indexterm class="- topic/indexterm ">types</indexterm></indexterm><indexterm class="- topic/indexterm ">server certificate</indexterm><indexterm class="- topic/indexterm ">client
+certificate</indexterm></keywords></metadata></prolog><conbody class="- topic/body  concept/conbody "><p class="- topic/p "> <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> supports these types of certificates:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">A <i class="+ topic/ph hi-d/i ">CA (Certificate Authority) certificate</i> is a self-signed
+certificate that belongs to a CA. This could be a third party or a
+company serving as its own CA.</p></li><li class="- topic/li "><p class="- topic/p ">A <i class="+ topic/ph hi-d/i ">root CA certificate</i> is a self-signed CA certificate
+whose private key is used to sign other certificates creating a trusted
+certificate tree. With its private key, a root CA certificate may
+be exported, stored on a USB thumb drive in a vault, and brought out
+only when certificates need to be signed. A root CA certificate’s
+private key requires the creation of a password on export and the
+provision of the same password when you use it to sign other certificates.</p></li><li class="- topic/li "><p class="- topic/p ">An <i class="+ topic/ph hi-d/i ">intermediate certificate</i> is a CA certificate signed
+by a root CA certificate that is used to sign server certificates
+or other intermediate CA certificates. Using intermediate certificates
+isolates a group of server certificates.</p></li><li class="- topic/li "><p class="- topic/p ">A <i class="+ topic/ph hi-d/i ">server certificate</i> represents the server-side of a
+secure connection.</p><p class="- topic/p ">While you may configure a platform and station
+(as server) with separate server certificates, for simplicity most
+systems usually use the same server certificate.</p></li><li class="- topic/li "><p class="- topic/p ">A <i class="+ topic/ph hi-d/i ">client certificate</i> represents the client-side of a
+secure connection. It is used by client systems to make authenticated
+requests to a server.</p></li><li class="- topic/li "><p class="- topic/p ">A <i class="+ topic/ph hi-d/i ">code-signing</i> certificate is a certificate used to
+sign program objects and modules. Systems integrators use this certificate
+to prevent the introduction of malicious code when they customize
+the framework.</p></li></ul><p class="- topic/p ">Identity verification uses multiple certificates in a trusted <i class="+ topic/ph hi-d/i ">certificate tree</i>. Setting up identity verification may involve
+a third-party CA (Certificate Authority) or you may decide to serve
+as your own CA.</p><image placement="break" width="500" href="../graphic/CertificateTree.png" class="- topic/image "/><p class="- topic/p "><?ezd-review-start 0975c0cd-aa60-494c-8094-4011fe816a78:comment:mmcginnis@tridium.com:1742237882311?>In<?ezd-review-end 0975c0cd-aa60-494c-8094-4011fe816a78?> the illustration above:</p><ol class="- topic/ol "><li class="- topic/li "><p class="- topic/p ">Below the ground is the root CA certificate.</p></li><li class="- topic/li "><p class="- topic/p ">The major branches represent intermediate certificates.</p></li><li class="- topic/li "><p class="- topic/p ">The leaves are server certificates.</p></li></ol><p class="- topic/p ">How many certificates you need depends on your configuration. At
+a minimum you need a unique server certificate for each server (controller)
+and a single root CA certificate to sign your server certificates.
+If your company is large, you may need an intermediate certificate
+for each geographical division or location. An individual server may
+have multiple certificates: one each to secure its Fox, Http and niagarad
+(platformtls) connections. Although each platform and station usually
+share the same certificate, you may create a separate platform certificate
+and a different station certificate.</p><p class="- topic/p ">If your network is large and thousands of certificates need to
+be signed, it is best to use the <uicontrol class="+ topic/ph ui-d/uicontrol ">Signing Service</uicontrol> (also see <ph conkeyref="doctitles_coresw/NiagaraSigningService" class="- topic/ph "/>) or provisioning jobs.</p><?Pub Caret 125?></conbody></concept>

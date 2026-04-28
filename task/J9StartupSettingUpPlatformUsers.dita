@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="SettingUpPlatformUsers-34CB0D4E" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Setting up platform users</title><!--This topic is shared by the docJ8Startup and docJ9Startup--><shortdesc class="- topic/shortdesc ">The Commissioning Wizard prevents commissioning a controller
+that retains the factory-default platform user account. In this Commissioning
+Wizard step, you specify platform login credentials (user name and
+password) to replace the factory-default platform user in this controller.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">user<indexterm class="- topic/indexterm ">replace the default
+user</indexterm></indexterm></keywords></metadata></prolog><taskbody class="- topic/body task/taskbody "><prereq class="- topic/section task/prereq ">You are stepping through the Commissioning Wizard.</prereq><context class="- topic/section task/context "/><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Enter the desired <parmname class="+ topic/keyword pr-d/parmname ">User Name</parmname> with which
+to log in to the platform.</cmd><info class="- topic/itemgroup task/info ">This name must be different from the default name. It can have
+a maximum of 14 alphanumeric characters (<userinput class="+ topic/ph sw-d/userinput ">a</userinput> - <userinput class="+ topic/ph sw-d/userinput ">z</userinput>, <userinput class="+ topic/ph sw-d/userinput ">A</userinput> - <userinput class="+ topic/ph sw-d/userinput ">Z</userinput>, <userinput class="+ topic/ph sw-d/userinput ">0</userinput> - <userinput class="+ topic/ph sw-d/userinput ">9</userinput>), where the
+first character must be alphabetic and following characters either
+alphanumeric or an underscore ( <userinput class="+ topic/ph sw-d/userinput ">_</userinput> ).</info></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Enter and confirm the <parmname class="+ topic/keyword pr-d/parmname ">Password</parmname>.</cmd><info class="- topic/itemgroup task/info ">Create a strong password with a minimum of 10 characters including:
+at least one uppercase character, at least one lowercase character,
+and at least one digit. Entry characters display only as asterisks
+(*). An error popup window reminds you if you attempt to enter a passphrase
+that does not meet the minimum rules:<ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">Use both upper and lower case.</p></li><li class="- topic/li "><p class="- topic/p ">Include numeric digits (a minimum of one).</p></li><li class="- topic/li "><p class="- topic/p ">Include special characters.</p></li><li class="- topic/li "><p class="- topic/p ">Don’t use dictionary words.</p></li><li class="- topic/li "><p class="- topic/p ">Don’t use company name.</p></li><li class="- topic/li "><p class="- topic/p ">Don’t make the password same as the user name.</p></li><li class="- topic/li "><p class="- topic/p ">Don’t use common numbers like telephone, address, birthday,
+and so on.</p></li></ul><p class="- topic/p ">User name and password entries are case sensitive.
+If you are not changing the controller’s IP address during commissioning,
+the credentials for your replacement platform user are remembered
+in the current session. This can simplify platform reconnection to
+the controller after it reboots from commissioning. This is useful
+in a migration scenario. However, if you are changing the IP address
+during commissioning, you need to remember/re-enter the new credentials
+for a platform user in order to reconnect. Always make careful note
+of any changed platform credentials, and guard them closely, as they
+provide the highest security level access to any <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword ">niagara4</keyword> platform.</p></info></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the (optional) <parmname class="+ topic/keyword pr-d/parmname ">Comment</parmname> property,
+enter an alphanumeric descriptor for this platform admin user and
+click <uicontrol class="+ topic/ph ui-d/uicontrol ">Next</uicontrol>.</cmd><info class="- topic/itemgroup task/info ">This alphanumeric descriptor displays in the <wintitle class="+ topic/keyword ui-d/wintitle ">Users</wintitle> table and helps differentiate users if you have more than one platform
+user. You cannot edit this property after adding a user, unlike with
+a user’s password.</info><stepresult class="- topic/itemgroup task/stepresult ">If, at the beginning of commissioning, you selected to <option class="+ topic/keyword pr-d/option ">Configure additional platform daemon users</option>, the <wintitle class="+ topic/keyword ui-d/wintitle ">Platform user account information</wintitle> window opens.<p class="- topic/p ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Users</wintitle> table in this
+window shows the replacement user you just created. </p></stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To create another user, click <uicontrol class="+ topic/ph ui-d/uicontrol ">New User</uicontrol>, fill in this user’s credentials, click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd><info class="- topic/itemgroup task/info ">You can also use this step to delete users and change user passwords.
+You can access this same configuration via the <uicontrol class="+ topic/ph ui-d/uicontrol ">User Accounts</uicontrol> button in the <wintitle class="+ topic/keyword ui-d/wintitle ">Platform Administration</wintitle> view,
+which is available any time after commissioning.</info></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To add another user, repeat these steps or else click the <uicontrol class="+ topic/ph ui-d/uicontrol ">Next</uicontrol> button for the final commissioning step.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Make a note of all platform user credentials and guard
+them carefully.</cmd><info class="- topic/itemgroup task/info ">Consider the platform daemon as the highest-level of access
+to the controller. <p class="- topic/p ">If you lose or forget these credentials, you
+may be unable to complete commissioning and start up this controller.
+In this case, you can restore the factory default platform user, provided
+you can serially connect to the controller (make a serial shell connection),
+then press and hold the <uicontrol class="+ topic/ph ui-d/uicontrol ">SHUT DOWN</uicontrol> button as
+you power up the device.</p></info></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To continue, press <uicontrol class="+ topic/ph ui-d/uicontrol ">Next</uicontrol>.</cmd><stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Completing Commissioning</wintitle> window
+opens.</stepresult></step></steps></taskbody></task>

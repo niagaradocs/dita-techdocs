@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="role_UserServiceComponentPermission" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">UserService permission levels</title>
+<shortdesc class="- topic/shortdesc ">By design, the <apiname class="+ topic/keyword pr-d/apiname ">UserService</apiname> component
+enjoys a special permission level scheme—one that varies from
+the scheme described for other component access.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">UserService<indexterm class="- topic/indexterm ">component permission
+level</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "/>
+<vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">By default, these user properties appear as slots in the <apiname class="+ topic/keyword pr-d/apiname ">UserService</apiname>:</p>
+<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Email</p></li>
+<li class="- topic/li "><p class="- topic/p ">Password</p></li>
+<li class="- topic/li "><p class="- topic/p ">Cell Phone Number</p></li>
+<li class="- topic/li "><p class="- topic/p ">Facets (time format and unit conversion)</p></li>
+</ul>
+<p class="- topic/p ">The <option class="+ topic/keyword pr-d/option ">Operator</option> config flag for these slots may be
+enabled (checked) and disabled (unchecked) just as you would configure
+the permission level on any other slot. The special scheme that applies
+only to the <apiname class="+ topic/keyword pr-d/apiname ">UserService</apiname> component yields the following
+results:</p>
+<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">If the <systemoutput class="+ topic/ph sw-d/systemoutput ">operator</systemoutput> permission level
+is enabled (<option class="+ topic/keyword pr-d/option ">Operator</option> checked) on the slot, and the
+role assigned to the user grants read permission (r), the user is
+allowed read-only access to the user properties (email, password,
+etc.) on their own user account (all other users are hidden).</p></li>
+<li class="- topic/li "><p class="- topic/p ">If the <systemoutput class="+ topic/ph sw-d/systemoutput ">operator</systemoutput> permission level
+is enabled (<option class="+ topic/keyword pr-d/option ">Operator</option> checked) on the slot, and the
+role assigned to the user grants write permissions (rw), the user
+is allowed both read and write access to the user properties on their
+own user account (all other users are hidden). This is the configuration
+required to allow a user to change their own password.</p></li>
+<li class="- topic/li "><p class="- topic/p ">If the <systemoutput class="+ topic/ph sw-d/systemoutput ">admin</systemoutput> permission level
+is enabled (<option class="+ topic/keyword pr-d/option ">Operator</option> unchecked) on the slot, and
+the role assigned to a user grants read permission (rR), the user
+is allowed read-only access to all user properties for all available
+users.</p></li>
+<li class="- topic/li "><p class="- topic/p ">If the <systemoutput class="+ topic/ph sw-d/systemoutput ">admin</systemoutput> permission level
+is enabled (<option class="+ topic/keyword pr-d/option ">Operator</option> unchecked) on the slot, and
+the role assigned to a user grants write permissions (rwRW), the user
+is allowed both read and write access to all properties for all available
+non-super users. Moreover, they have access to the <wintitle class="+ topic/keyword ui-d/wintitle ">User
+Manager</wintitle>, and can add new users and delete selected users.
+In addition, the <wintitle class="+ topic/keyword ui-d/wintitle ">Permissions Browser</wintitle> view of
+the <apiname class="+ topic/keyword pr-d/apiname ">UserService</apiname> is available to them.</p></li>
+</ul>
+<note class="- topic/note ">A user cannot assign permissions to other users that they do
+not have themselves. For example, a non-super user cannot make another
+user a super user.</note>
+<p class="- topic/p ">To allow each user to change their own password, but not have access
+to other users’ passwords, you would set the config flag for
+the <parmname class="+ topic/keyword pr-d/parmname ">Authenticator</parmname> slot to the <parmname class="+ topic/keyword pr-d/parmname ">operator</parmname> permission level (checked; this is the default for this slot), and
+assign a role to the user that grants <systemoutput class="+ topic/ph sw-d/systemoutput ">operator</systemoutput>-level write (rw) permissions. </p>
+<p class="- topic/p ">All non-super user roles should be configured for <systemoutput class="+ topic/ph sw-d/systemoutput ">operator</systemoutput>-level write (rw) permissions applied to the
+category that contains the <apiname class="+ topic/keyword pr-d/apiname ">UserService</apiname>. (By default,
+the <wintitle class="+ topic/keyword ui-d/wintitle ">New Station Wizard</wintitle> assigns the <apiname class="+ topic/keyword pr-d/apiname ">UserService</apiname> to the <systemoutput class="+ topic/ph sw-d/systemoutput ">Admin</systemoutput> named category (category
+2), along with the <apiname class="+ topic/keyword pr-d/apiname ">CategoryService</apiname>.)</p>
+<note class="- topic/note ">Any user granted super user permissions has access to all components,
+and can add more super users.</note>
+</conbody>
+</concept>

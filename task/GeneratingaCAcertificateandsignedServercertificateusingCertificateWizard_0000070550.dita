@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="GeneratingACACertificateAndSignedSe-89FC4303" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Generating a CA certificate and signed Server certificate using
+the Certificate Wizard</title><shortdesc class="- topic/shortdesc ">This procedure describes how to use the <wintitle class="+ topic/keyword ui-d/wintitle ">Certificate
+Wizard</wintitle> workflow to complete a series of certificate-related
+steps for a platform and/or station.<!--This topic is used in both the Station Security Guide and the Enterprise Security Installation and Maintenance Guide (System Security chapter)--></shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">certificate wizard<indexterm class="- topic/indexterm ">generate
+CA Root certificate</indexterm></indexterm></keywords></metadata></prolog><taskbody class="- topic/body task/taskbody "><prereq class="- topic/section task/prereq "><p class="- topic/p ">You have the required authority to create certificates.
+You are working in <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword ">Workbench</keyword> on a computer that is dedicated to certificate
+management, is not on the Internet or the company’s LAN and is physically
+secure in a vault or other secure location. You have a thumb drive
+ready to which to copy the root CA certificate for safe keeping.</p></prereq><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In <keyword conkeyref="wh_variables_n4/Workbench" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword ">Workbench</keyword>, open a localhost platform connection and in
+the <wintitle class="+ topic/keyword ui-d/wintitle ">Application Director</wintitle> view click <uicontrol class="+ topic/ph ui-d/uicontrol ">Stop</uicontrol> to stop any station that is running. </cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the Nav tree, right-click on the platform and click <wintitle class="+ topic/keyword ui-d/wintitle ">Certificate Wizard</wintitle>.</cmd><stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Certificate Wizard</wintitle> window opens
+displaying options for certificate creation and installation.</stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In addition to the default selections, configure two optional
+properties.</cmd><choices class="- topic/ul task/choices "><choice class="- topic/li task/choice ">To export the root CA certificate with its private key, click
+on <uicontrol class="+ topic/ph ui-d/uicontrol ">Export the CA certificate</uicontrol>. It is a good
+idea to back up this certificate for archival storage in a secure
+location.</choice><choice class="- topic/li task/choice ">To configure the TLS version, <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Set
+minimum TLS level for all services</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">TLSv1.2</uicontrol></menucascade>.<note conkeyref="gen/TlsVersionNote" class="- topic/note "/></choice></choices><stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Configure CA Certificate</wintitle> window
+opens for you to enter the root CA certificate information.</stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the <wintitle class="+ topic/keyword ui-d/wintitle ">Configure CA Certificate</wintitle> window,
+fill in the form, and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>. </cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">When prompted for a <wintitle class="+ topic/keyword ui-d/wintitle ">Private Key Password</wintitle>, enter and confirm a strong password (minimum 10 characters, include
+at least one of each: a number, lowercase, and uppercase character),
+and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>. For example, <userinput class="+ topic/ph sw-d/userinput ">Private123%</userinput>.</cmd><stepresult class="- topic/itemgroup task/stepresult ">The software creates the new root CA certificate in the
+background. When complete, the wizard opens another <wintitle class="+ topic/keyword ui-d/wintitle ">Configure
+CA Certificate</wintitle> window. This one is for the server certificate.</stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the <wintitle class="+ topic/keyword ui-d/wintitle ">Configure Server Certificate</wintitle> window, fill in the form, and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd><info class="- topic/itemgroup task/info "><p class="- topic/p ">This process generates a server certificate that is ready
+to be signed. The platform will never be a client, but the station
+will routinely function as a one, and, since the platform and the
+station share the same trust store, only one server certificate is
+required. You will need to run the wizard again when this certificate
+expires.</p></info><stepresult class="- topic/itemgroup task/stepresult ">Server certificate generation occurs in the background.
+When complete the wizard opens the <wintitle class="+ topic/keyword ui-d/wintitle ">Certificate Signing</wintitle> window.<note class="- topic/note ">The server certificate
+that is about to be signed is already selected. You cannot change
+the selection. Also, the root CA certificate and the CA password are
+already identified. There is no need to make other selections or entries.</note></stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the <wintitle class="+ topic/keyword ui-d/wintitle ">Certificate Signing</wintitle> window,
+review the details (similar to the example shown) and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol> to continue.</cmd><stepresult class="- topic/itemgroup task/stepresult ">Since we did not choose to export the CSR, the wizard
+does not display it but proceeds directly to import the signed CSR
+into the Supervisor station’s <wintitle class="+ topic/keyword ui-d/wintitle ">User Key Store</wintitle> and
+the new root CA certificate into its <wintitle class="+ topic/keyword ui-d/wintitle ">User Trust Store</wintitle>. When complete the wizard opens the <wintitle class="+ topic/keyword ui-d/wintitle ">Certificate Export</wintitle> window.</stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the <wintitle class="+ topic/keyword ui-d/wintitle ">Certificate Export</wintitle> window,
+in addition to the default selection, click the optional check box: <uicontrol class="+ topic/ph ui-d/uicontrol ">Export the private key</uicontrol>, enter the private key password,
+and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd><info class="- topic/itemgroup task/info ">By default, the wizard exports the root CA certificate with
+only its public key. This is appropriate for distributing the root
+CA certificate, which must be imported to the <wintitle class="+ topic/keyword ui-d/wintitle ">User Trust
+Store</wintitle> of every platform/station throughout the enterprise,
+any PC that hosts an instance of the <keyword conkeyref="wh_variables_n4/Workbench" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword ">Workbench</keyword>, and any browser used to monitor and control
+the system. You export a root CA certificate with its private key
+only for the purpose of backing it up to a secure location.</info><stepresult class="- topic/itemgroup task/stepresult ">The wizard opens the <wintitle class="+ topic/keyword ui-d/wintitle ">Certificate Export</wintitle> window.</stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Use the folder icon to locate the storage location for
+the exported root CA certificate in the localhost file system, such
+as an added subfolder in your <filepath class="+ topic/ph sw-d/filepath ">certManagement</filepath> folder
+(as shown) or a thumb drive, and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol>.</cmd><info class="- topic/itemgroup task/info ">Within the <filepath class="+ topic/ph sw-d/filepath ">certManagement</filepath> folder, you can
+create subfolders for storing certificates and certificate signing
+requests (CSRs). In the above example, the RootCerts folder is a suitable
+location for the root CA certificate with its public key, while the
+Vault folder simulates a secure storage location for the root CA certificate
+with its private key, which should be kept under lock and key.</info><stepresult class="- topic/itemgroup task/stepresult ">On completion, the wizard acknowledges that the export
+was successful. </stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To continue, click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd><stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Select Station</wintitle> window opens.</stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the <wintitle class="+ topic/keyword ui-d/wintitle ">Select Station</wintitle> window, click
+the drop-down list of all stations in the Platform Daemon Home, and
+select the station to Set the TLS levels on, and click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol>.</cmd><stepresult class="- topic/itemgroup task/stepresult ">The wizard displays a progress summary as you complete
+the various steps.</stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">When prompted with the message, “All operations are complete”,
+click <uicontrol class="+ topic/ph ui-d/uicontrol ">OK</uicontrol> and <uicontrol class="+ topic/ph ui-d/uicontrol ">Finish</uicontrol>.</cmd><info class="- topic/itemgroup task/info "/><stepresult class="- topic/itemgroup task/stepresult ">The wizard modifies the station’s .bog file in the Platform
+Daemon Home.</stepresult></step></steps><result class="- topic/section task/result ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Certificate Wizard</wintitle> successfully generated
+the new server certificate for the Supervisor PC, and the new root
+CA certificate for use in signing other server certificates. Those
+certificates are exported to the certManagment folder in the local
+file system for subsequent use. Additionally, the wizard set the TLS
+levels on the selected station to the selected value: TLSv1.2.</result></taskbody></task>

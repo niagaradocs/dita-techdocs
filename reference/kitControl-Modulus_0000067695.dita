@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-Modulus" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-Modulus</title>
+<shortdesc class="- topic/shortdesc ">This component provides a modulus operation based on values
+at its two statusNumeric inputs. The output is the remainder of dividing
+the inA value by the inB value. If the inB value is 0, the output
+is NaN (not a number). Operation is intended for integer input values,
+such as from the output of a Counter component.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Modulus</indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">Modulus is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Math</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette</p></section>
+</refbody>
+</reference>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="AuthenticationService-9BF2089B" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Authentication service</title><shortdesc class="- topic/shortdesc ">The Authentication Service routes all authentication requests
+and determines the types of authentication that a station supports.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Authentication Service</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section ">This service manages how users verify their identity to the
+station, using authentication schemes. For more information, see "<cite class="- topic/cite ">Authentication Service (baja-AuthenticationService)</cite>” in the “<ph conkeyref="doctitles_coresw/Niagara4UserGuide-90E05C89" class="- topic/ph "/>” guide.</section></refbody></reference>

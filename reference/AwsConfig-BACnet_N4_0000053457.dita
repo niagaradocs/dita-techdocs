@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="bacnetAws-BacnetAwsConfigDeviceExt" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Config</title>
+<shortdesc class="- topic/shortdesc ">BacnetAwsConfigDeviceExt s a frozen device extension under
+every <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetAwsDevice</uicontrol>. </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">config</indexterm><indexterm class="- topic/indexterm ">BacnetAwsConfigDeviceExt</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section ">This component functions as the container for any config-type
+objects, which represent individual BACnet objects in the device.</section>
+</refbody>
+</reference>

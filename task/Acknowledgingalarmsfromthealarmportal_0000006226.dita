@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="AcknowledgingAlarmsFromTheAlarmPort" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Acknowledging alarms from the alarm portal</title>
+<shortdesc class="- topic/shortdesc ">This procedure acknowledges alarms from the alarm portal.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">alarm<indexterm class="- topic/indexterm ">acknowledging from
+the alarm portal</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq "><p class="- topic/p ">The alarm portal must be running and configured to include
+all desired alarm consoles before it can be used to acknowledge alarms.</p></prereq>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Click <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Tools</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Alarm Portal</uicontrol></menucascade>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The <uicontrol class="+ topic/ph ui-d/uicontrol ">Alarm Portal</uicontrol> view displays
+in the view pane.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd "> If the Alarm Console does not appear in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Alarm Console Monitor</uicontrol> table (top portion of the <uicontrol class="+ topic/ph ui-d/uicontrol ">Alarm Portal</uicontrol>), follow these steps:</cmd>
+<substeps class="- topic/ol task/substeps ">
+<substep class="- topic/li task/substep "><cmd class="- topic/ph task/cmd ">Right–click in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Alarm Console Monitor</uicontrol> area and select <uicontrol class="+ topic/ph ui-d/uicontrol ">Add Alarm Console</uicontrol></cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The <uicontrol class="+ topic/ph ui-d/uicontrol ">Add Alarm Console</uicontrol> wizard appears.</stepresult>
+</substep>
+<substep class="- topic/li task/substep "><cmd class="- topic/ph task/cmd ">Complete the <uicontrol class="+ topic/ph ui-d/uicontrol ">Add Alarm Console</uicontrol> wizard by entering the following information:</cmd>
+<info class="- topic/itemgroup task/info "><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Host address information, as needed (IP or dialup)</p></li>
+<li class="- topic/li "><p class="- topic/p ">Credentials information (username and password)</p></li>
+<li class="- topic/li "><p class="- topic/p ">Choose the desired console, by Ord (if more than one is present
+at the host address)</p></li>
+</ul></info>
+</substep>
+<substep class="- topic/li task/substep "><cmd class="- topic/ph task/cmd ">Click the <uicontrol class="+ topic/ph ui-d/uicontrol ">Finish</uicontrol> button to complete
+the <uicontrol class="+ topic/ph ui-d/uicontrol ">Add Alarm Console</uicontrol> wizard.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The alarm console appears in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Alarm Console
+Monitor</uicontrol> table (top portion of the<uicontrol class="+ topic/ph ui-d/uicontrol "> Alarm Portal</uicontrol> view). Any alarms will appear in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Open Alarm Sources</uicontrol> table (bottom portion of the <uicontrol class="+ topic/ph ui-d/uicontrol ">Alarm Portal</uicontrol> view).</stepresult>
+</substep>
+</substeps>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the <uicontrol class="+ topic/ph ui-d/uicontrol ">Open Alarm Sources</uicontrol> table,
+select alarm the sources to acknowledge. To select multiple alarms,
+use the <uicontrol class="+ topic/ph ui-d/uicontrol ">Shift</uicontrol> or <uicontrol class="+ topic/ph ui-d/uicontrol ">Ctrl</uicontrol> keys.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Do one of the following:</cmd>
+<choices class="- topic/ul task/choices ">
+<choice class="- topic/li task/choice ">To acknowledge the latest (most recent) alarm, click <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Alarm</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Acknowledge</uicontrol>
+</menucascade> or click the <uicontrol class="+ topic/ph ui-d/uicontrol ">Acknowledge</uicontrol> button
+at the bottom of the console.</choice>
+<choice class="- topic/li task/choice ">To acknowledge all alarms that are reported from a single
+source, click <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Alarm</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Acknowledge All</uicontrol></menucascade> or click the <uicontrol class="+ topic/ph ui-d/uicontrol ">Acknowledge All</uicontrol> button at the bottom of the console.</choice>
+</choices>
+<stepresult class="- topic/itemgroup task/stepresult ">The latest or all alarms from each selected alarm source
+are acknowledged.</stepresult>
+</step>
+</steps>
+</taskbody>
+</task>

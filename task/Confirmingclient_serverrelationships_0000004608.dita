@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="SettingUpClientServerRelationships" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Confirming client/server relationships</title>
+<shortdesc class="- topic/shortdesc ">At any given time the Supervisor station may be the client
+of a controller station and vice versa. This procedure confirms that
+a client for the Supervisor station exists in the controller station
+and a client for the controller station exists in the Supervisor station.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">client/server relationships</indexterm>
+</keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "/>
+<vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<context class="- topic/section task/context "/>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Expand the <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Drivers</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">NiagaraNetwork</uicontrol></menucascade> node in the Supervisor
+Nav tree. It should contain a node for each controller.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Expand the <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Drivers</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">NiagaraNetwork</uicontrol></menucascade> in a controller
+Nav tree. It should contain a node for the Supervisor station.</cmd>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">If either node does not exist, discover the station.</cmd>
+</step>
+</steps>
+</taskbody>
+</task>

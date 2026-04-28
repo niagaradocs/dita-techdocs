@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<?Pub UDT template _font?><reference id="MaterialAndToolsRequirements-0B3AFD82" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Material and tools requirements</title>
+<shortdesc class="- topic/shortdesc ">The following material and tools are needed.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><keyword class="- topic/keyword ">prod-power-supply</keyword><keyword class="- topic/keyword ">prod-card-module</keyword>
+</keywords></metadata><?Pub Caret 0?>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><title class="- topic/title ">Power source</title><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">UL listed, Class 2, 24Vac transformer, rated at minimum of
+24Va. A dedicated transformer is required (cannot power additional
+equipment), or</p></li>
+<li class="- topic/li "><p class="- topic/p ">UL listed Class 2 or LPS 24Vdc power supply, capable of supplying
+at least 1A (24W), or</p></li>
+<li class="- topic/li "><p class="- topic/p "><ph conkeyref="host_models/wpm8000" conref="../reuse/WH_HardwareVariables_Tridium_N4_0000009933.dita#WHHardwareVariables-Tridium-9A32E735/wpm8000" class="- topic/ph "/> wall-mount AC power adapter with barrel connector plug.</p></li>
+</ul></section>
+<section class="- topic/section "><title class="- topic/title ">Mounting</title><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">DIN rail, type NS35/7.5 (35mm x 7.5mm)</p></li>
+<li class="- topic/li "><p class="- topic/p ">DIN rail end-clips (stop clips)</p></li>
+<li class="- topic/li "><p class="- topic/p ">Suitable tools, fasteners, and accessories for mounting.</p></li>
+</ul><p class="- topic/p ">The controller can also be panel mounted.</p></section>
+</refbody>
+</reference>

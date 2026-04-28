@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="ImpliedTagsIndexTagging-877CAF5A" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Implied tags index</title><shortdesc class="- topic/shortdesc ">Implied tags index improves performance of NEQL searches and hierarchy traversal. Implied tags originate from evaluating the tag rules in smart tag dictionaries and evaluating direct tag groups on an entity. Indexing implied tags limits the amount of tag rule re-evaluation that occurs on subsequent NEQL queries.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">implied tags index</indexterm><indexterm class="- topic/indexterm ">indexed tags</indexterm><indexterm class="- topic/indexterm ">clear indexed tags</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section ">
+            <p class="- topic/p ">For example, a NEQL search on an unindexed tag (ex.: <codeph class="+ topic/ph pr-d/codeph ">c:city</codeph>) requires that every tag rule that contains this tag be evaluated; every component throughout the station be evaluated for this tag; and this evaluation must be done every time a search for this tag is initiated. All of which adds up to a significant drain on performance.</p>
+            <p class="- topic/p "><ph conkeyref="host_models/nc" class="- topic/ph ">JACE</ph> is constrained not only by processor power but also by memory availability. To control the impact on memory, the Implied Tags Index is disabled by default.</p>
+            <note conkeyref="gen/tag_HeapMemory4Indexes" class="- topic/note "/>
+            <p class="- topic/p ">You can enable specific tags for indexing by entering those individual tagIDs in the <parmname class="+ topic/keyword pr-d/parmname ">Indexed Tags</parmname> field in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Tag Dictionary Service</uicontrol> property sheet. Entering tagIDs in this field enables those tags to be indexed for each component in the station. Use a semi-colon separated list to enter multiple tagIDs to be indexed. Tags that are not enabled for indexing will use normal tag rule and direct tag group evaluation.</p>
+            <p class="- topic/p "> To stop indexing from occurring on some or all tagIDs and reduce the memory used by this index, remove tagIDs from the <parmname class="+ topic/keyword pr-d/parmname ">Indexed Tags</parmname> field in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Tag Dictionary Service</uicontrol> property sheet.</p>
+            <p class="- topic/p ">Although there is no mechanism for clearing the index, you can reset the index whether a tag definition is implied or not via the following actions on the <uicontrol class="+ topic/ph ui-d/uicontrol ">Tag Dictionary Service</uicontrol>. These actions do not discontinue indexing for the tagIDs listed in the <parmname class="+ topic/keyword pr-d/parmname ">Indexed Tags</parmname> field but reset the index in regards to some or all of the tagIDs being indexed. The index will be rebuilt the next time a search for one of the indexed tagIDs is executed.<ul class="- topic/ul "><li class="- topic/li ">
+                        <p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">Invalidate All Implied Tags Indexes</uicontrol></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">Invalidate Single Implied Tags Index</uicontrol></p>
+                    </li></ul></p>
+            <note type="caution" class="- topic/note ">Memory use is strongly influenced by the number of components in the station and then also influenced by the number of tags being indexed. The implied tags index has the potential to grow large enough to exceed available memory. To avoid this, limit the number of tags enabled for indexing.</note>
+            <p class="- topic/p ">Either direct or implied tags can be added to the <parmname class="+ topic/keyword pr-d/parmname ">Indexed Tags</parmname> field. If an object contains an indexed tag as a direct tag, the index will not be used at all. If the entity does not contain the indexed tag as a direct tag, a search through the rules will be executed to determine if the tag is implied and the index will store whether or not the tag is implied.</p>
+            <note class="- topic/note ">The implied tag index is most helpful for tags that are implied (rather than direct tags), because the re-evaluation of any tag rules can be skipped.</note>
+            <p class="- topic/p ">Implied tags that are safe for indexing are those tags that will be implied and whose values will not change regardless of changes to the station. For example, tags that are related to the type of a component, which can never change, are very safe to index. Tags related to type of a component include:<ul class="- topic/ul "><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">n:type</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">n:point</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">n:input</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">n:output</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">n:device</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">n:network</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">n:schedule</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">hs:connection</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">hs:cur</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">hs:device</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">hs:equip</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">hs:kind</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">hs:network</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">hs:point</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">hs:writable</codeph></p>
+                    </li></ul>Tags used in GroupLevelDefinitions are good candidates for indexing because they are used frequently. However, that does not necessarily make them safe tags to index.</p>
+            <p class="- topic/p ">Other implied tags may be riskier because rule conditions and contents can be changed and the changes might not be reflected in the index. Tags that are implied using the <codeph class="+ topic/ph pr-d/codeph ">HasAncestorRule</codeph> or <codeph class="+ topic/ph pr-d/codeph ">HasRelationRule</codeph> conditions depend on the station configuration and, if the station configuration changes, might affect whether or not tags are implied.</p>
+            <p class="- topic/p ">Also, it is not the value of the tag that is indexed but the tag definition. So, if the value of the tag depends on something that changes, those changes will be reflected in the value of the tag when the tag is retrieved from the index. For example, if the history ID of a history extension changes, the new value will be reflected in the value of the <codeph class="+ topic/ph pr-d/codeph ">n:history</codeph> tag when it is retrieved. </p>
+            <p class="- topic/p ">Tags whose values are derived based on component and/or properties of the station are called smart tags. Other smart tags that are safe to index include the following: <ul class="- topic/ul "><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">n:name</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">n:displayName</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">n:ordInSession</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">n:station</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">hs:curErr</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">hs:curStatus</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">hs:curVal</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">hs:enum</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">hs:his</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">hs:hisErr</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">hs:hisInterpolate</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">hs:hisStatus</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">hs:id</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">hs:maxVal</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">hs:minVal</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">hs:tz</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">hs:unit</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">hs:writeErr</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">hs:writeLevel</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">hs:writeStatus</codeph></p>
+                    </li><li class="- topic/li ">
+                        <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">hs:writeVal</codeph></p>
+                    </li></ul></p>
+            <note type="note" class="- topic/note ">If you find that the <ph conkeyref="host_models/nc" class="- topic/ph "/> is at the limit of memory usage, it is best to clear any tags from the <parmname class="+ topic/keyword pr-d/parmname ">Indexed Tags</parmname> field in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Tag Dictionary Service</uicontrol> so that the indexing no longer occurs. If the station crashes before the <parmname class="+ topic/keyword pr-d/parmname ">Indexed Tags</parmname> field can be cleared, the station can be started with the system property <codeph class="+ topic/ph pr-d/codeph ">niagara.tagdictionary.disableTagIndexing</codeph> set to true. This will prevent any indexing and allow the <parmname class="+ topic/keyword pr-d/parmname ">Indexed Tags</parmname> field to be cleared. Then, this system property can be cleared and the station restarted to allow indexing again.</note>
+        </section></refbody></reference>

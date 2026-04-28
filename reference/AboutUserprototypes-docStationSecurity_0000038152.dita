@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="aUserPrototypes" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">User prototypes</title><shortdesc class="- topic/shortdesc ">A prototype groups users who share the same permissions
+and other characteristics. This grouping facilitates setting up system
+users under the <uicontrol class="+ topic/ph ui-d/uicontrol ">UserService</uicontrol>. Customizing the
+default prototype and creating custom user prototypes simplify user
+management.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">network user<indexterm class="- topic/indexterm ">prototypes</indexterm></indexterm><indexterm class="- topic/indexterm ">user<indexterm class="- topic/indexterm ">prototypes</indexterm></indexterm><indexterm class="- topic/indexterm ">prototype<indexterm class="- topic/indexterm ">network users</indexterm></indexterm></keywords><prodinfo class="- topic/prodinfo "><prodname class="- topic/prodname ">Niagara</prodname><vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/></vrmlist></prodinfo></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p ">The <uicontrol class="+ topic/ph ui-d/uicontrol ">User Prototypes</uicontrol> container is
+a frozen slot under a station’s <uicontrol class="+ topic/ph ui-d/uicontrol ">UserService</uicontrol>. It contains a frozen <uicontrol class="+ topic/ph ui-d/uicontrol ">Default Prototype</uicontrol> to
+support centralized users in the station’s <uicontrol class="+ topic/ph ui-d/uicontrol ">NiagaraNetwork</uicontrol> and allows for additional user prototypes that support user synchronization
+and remote authentication schemes, such as LDAP and SAML.</p><title class="- topic/title ">Default prototype</title><p class="- topic/p ">This set of user properties is
+a child component (<uicontrol class="+ topic/ph ui-d/uicontrol ">baja-user</uicontrol>) of the <uicontrol class="+ topic/ph ui-d/uicontrol ">User Prototypes</uicontrol> container under the <uicontrol class="+ topic/ph ui-d/uicontrol ">UserService</uicontrol>. Using the default prototype simplifies user management because
+its default values populate each new user. For example the default
+prototype can configure a set of minimum permissions that apply to
+all users and a typical Nav file to apply to all.</p><p class="- topic/p ">The only property
+value that does not serve as a default when creating a new user is <parmname class="+ topic/keyword pr-d/parmname ">Password</parmname>.</p><p class="- topic/p ">LDAP  supports the default
+user prototype, however, SAML does not.</p></section><section class="- topic/section "><title class="- topic/title ">User prototypes</title><p class="- topic/p ">These prototypes (also <uicontrol class="+ topic/ph ui-d/uicontrol ">baja-user</uicontrol> components) enable network user synchronization.
+To create this type of prototype you duplicate the default prototype,
+giving each duplicate a new name and then modify its properties. You
+should name duplicate prototypes using descriptive text that can be
+logically associated with groups of station users, such as AdminHvac,
+GenOperations, LtgAndAlarms, and so on.</p><p class="- topic/p ">User prototypes appear
+under the <uicontrol class="+ topic/ph ui-d/uicontrol ">UserService</uicontrol> in the Nav tree and on
+its <wintitle class="+ topic/keyword ui-d/wintitle ">Property Sheet</wintitle>, but the <wintitle class="+ topic/keyword ui-d/wintitle ">User Manager</wintitle> view does not list them. Instead, when you add a user, the property <parmname class="+ topic/keyword pr-d/parmname ">Prototype Name</parmname> provides a list of available prototypes
+from which to choose.</p><note type="note" class="- topic/note ">When you manually add a
+new user in the <wintitle class="+ topic/keyword ui-d/wintitle ">User Manager</wintitle> view, the user’s
+property values default to those of the default prototype regardless
+of the <parmname class="+ topic/keyword pr-d/parmname ">Prototype Name</parmname> you choose. The default
+prototype serves as a template to populate a new user’s properties
+(all except <parmname class="+ topic/keyword pr-d/parmname ">Password</parmname>). The <parmname class="+ topic/keyword pr-d/parmname ">Prototype
+Name</parmname> applies only when synchronizing users.</note></section><section class="- topic/section "><title class="- topic/title ">Authentication prototypes</title><p class="- topic/p ">This prototype
+(<uicontrol class="+ topic/ph ui-d/uicontrol ">baja-UserPrototype</uicontrol>) supports remote authentication
+schemes, including LDAP and SAML.</p><note class="- topic/note ">The SAML authentication
+scheme only supports the <uicontrol class="+ topic/ph ui-d/uicontrol ">baja-UserPrototype</uicontrol>. While LDAP supports this user prototype as well the
+default user prototype.</note><p class="- topic/p ">The properties provided by the <uicontrol class="+ topic/ph ui-d/uicontrol ">baja-UserPrototype</uicontrol> are similar to those of the default
+prototype with some exceptions. An <parmname class="+ topic/keyword pr-d/parmname ">Overridable</parmname> property prevents a value from being overwritten with a default
+value at next login.</p></section></refbody></reference>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--Arbortext, Inc., 1988-2019, v.4002--><?Pub UDT template _font?><?Pub Inc?><reference id="StatusLEDs-0B4A1585" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title "><ph conkeyref="host_models/nc9000" conref="../reuse/WH_HardwareVariables_Tridium_N4_0000009933.dita#WHHardwareVariables-Tridium-9A32E735/nc9000" class="- topic/ph "/> Status LEDs</title>
+<shortdesc class="- topic/shortdesc ">The <ph conkeyref="host_models/nc9000" conref="../reuse/WH_HardwareVariables_Tridium_N4_0000009933.dita#WHHardwareVariables-Tridium-9A32E735/nc9000" class="- topic/ph "/> provides a number of status LEDs and a heartbeat LED. All but
+one are visible with the front access door closed.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">status LEDs</indexterm><indexterm class="- topic/indexterm ">LEDs</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><fig class="- topic/fig ">
+<title class="- topic/title "><ph conkeyref="host_models/nc9000" conref="../reuse/WH_HardwareVariables_Tridium_N4_0000009933.dita#WHHardwareVariables-Tridium-9A32E735/nc9000" class="- topic/ph "/> LEDs and brief descriptions</title>
+<image href="../graphic/JACE-9000-LEDs.png" placement="break" scope="local" width="400" class="- topic/image "/>
+<simpletable id="j9ledtable" relcolwidth="1* 30*" class="- topic/simpletable ">
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry ">1</stentry>
+<stentry class="- topic/stentry "><uicontrol class="+ topic/ph ui-d/uicontrol ">RS485 A</uicontrol> (COM1): Transmit (TX, Yellow)
+and Receive (RX, Green). Refer to “RS485 LEDs.”</stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry ">2</stentry>
+<stentry class="- topic/stentry "><uicontrol class="+ topic/ph ui-d/uicontrol ">RS485 B</uicontrol> (COM2): Transmit (TX, Yellow)
+and Receive (RX, Green). Refer to “RS485 LEDs.”</stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry ">3</stentry>
+<stentry class="- topic/stentry "><uicontrol class="+ topic/ph ui-d/uicontrol ">STAT</uicontrol> (Green): Remains lit. Refer to
+“STAT (Status) LED.”</stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry ">4</stentry>
+<stentry class="- topic/stentry "><uicontrol class="+ topic/ph ui-d/uicontrol ">BEAT</uicontrol> (Yellow): Heartbeat LED that
+blinks at 1Hz during normal operation. Refer to “BEAT (Heartbeat)
+LED.”</stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry ">5</stentry>
+<stentry class="- topic/stentry "><uicontrol class="+ topic/ph ui-d/uicontrol ">SEC</uicontrol> Secondary Ethernet, (LAN2) Link
+(Green) and Activity (Yellow). See “PRI, SEC (Ethernet) LEDs.”</stentry>
+</strow>
+<strow class="- topic/strow ">
+<stentry class="- topic/stentry ">6</stentry>
+<stentry class="- topic/stentry "><uicontrol class="+ topic/ph ui-d/uicontrol ">PRI</uicontrol> Primary Ethernet (LAN1) Link (Green),
+Activity (Yellow). See “PRI, SEC (Ethernet) LEDs.”</stentry>
+</strow>
+</simpletable>
+</fig><p class="- topic/p ">After applying power to the controller, LED and heartbeat
+blink patterns are provided to indicate the status of communication
+and operation of the <ph conkeyref="host_models/nc9000" conref="../reuse/WH_HardwareVariables_Tridium_N4_0000009933.dita#WHHardwareVariables-Tridium-9A32E735/nc9000" class="- topic/ph "/>. The following table provides a summary description of 3 different
+heartbeat blink patterns, describing what each pattern indicates regarding
+the current state of controller operating system (system snap), Niagara
+daemon (niagarad), and station.</p><table id="j9hbledtable" class="- topic/table ">
+<title class="- topic/title "><ph conkeyref="host_models/nc9000" conref="../reuse/WH_HardwareVariables_Tridium_N4_0000009933.dita#WHHardwareVariables-Tridium-9A32E735/nc9000" class="- topic/ph "/> BEAT (heartbeat) LED blink pattern</title>
+<tgroup cols="5" class="- topic/tgroup "><colspec colname="COLSPEC0" colwidth="0.48*" class="- topic/colspec "/><colspec colname="COLSPEC1" colwidth="1.13*" class="- topic/colspec "/><colspec colname="COLSPEC2" colwidth="1.13*" class="- topic/colspec "/><colspec colname="COLSPEC3" colwidth="1.13*" class="- topic/colspec "/>
+<colspec colname="COLSPEC4" colwidth="1.13*" class="- topic/colspec "/>
+<tbody class="- topic/tbody ">
+<row class="- topic/row ">
+<entry class="- topic/entry ">Pattern</entry>
+<entry class="- topic/entry ">Blink pattern</entry>
+<entry class="- topic/entry ">System state</entry>
+<entry class="- topic/entry ">Niagara daemon</entry>
+<entry class="- topic/entry ">Station</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry "><option class="+ topic/keyword pr-d/option ">A</option></entry>
+<entry class="- topic/entry ">200ms on / 200ms off</entry>
+<entry class="- topic/entry ">system up</entry>
+<entry class="- topic/entry ">niagarad starting</entry>
+<entry class="- topic/entry ">no station running</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry "><option class="+ topic/keyword pr-d/option ">B</option></entry>
+<entry class="- topic/entry ">200ms on / 1000ms off</entry>
+<entry class="- topic/entry ">system up</entry>
+<entry class="- topic/entry ">niagarad running</entry>
+<entry class="- topic/entry ">no station running</entry>
+</row>
+<row class="- topic/row ">
+<entry class="- topic/entry "><option class="+ topic/keyword pr-d/option ">C</option></entry>
+<entry class="- topic/entry ">1000ms on / 1000ms off</entry>
+<entry class="- topic/entry ">system up</entry>
+<entry class="- topic/entry "/>
+<entry class="- topic/entry ">station running</entry>
+</row>
+</tbody>
+</tgroup>
+</table><p class="- topic/p ">LED blink patterns can change to indicate that a certain
+state has changed from running to stopped, or not running. For example:</p><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">If a station is killed or stopped, the heartbeat pattern should
+change from pattern <option class="+ topic/keyword pr-d/option ">C</option> to pattern <option class="+ topic/keyword pr-d/option ">B</option>.</p></li>
+<li class="- topic/li "><p class="- topic/p ">If a station is started, or restarted, the heartbeat pattern
+should change to pattern <option class="+ topic/keyword pr-d/option ">C</option>.</p></li>
+</ul><note class="- topic/note ">After Niagara daemon startup, niagarad is not monitored.</note></section>
+</refbody>
+</reference>

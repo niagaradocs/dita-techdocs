@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="ProportionalWithIntegralAndDerivati-24A75A7A" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">Proportional with Integral and Derivative (PID) control</title><shortdesc class="- topic/shortdesc ">PID loop control can be difficult to tune and (often for
+this reason) is seldom used. However, in certain cases, PID control
+may be needed. An example is the control of a process with a long
+reaction time, such as temperature control of a large mass. For such
+a lag-oriented system, the derivative component of the PID loop output
+can help prevent overshoot that might otherwise result from PI control.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">proportional with integral and derivative
+(PID) contro;</indexterm><indexterm class="- topic/indexterm ">PID<indexterm class="- topic/indexterm ">control with all
+three</indexterm></indexterm></keywords></metadata></prolog><conbody class="- topic/body  concept/conbody "><p class="- topic/p ">The derivative gain (K<sub class="+ topic/ph hi-d/sub ">D</sub>) exerts an anticipating braking
+effect on the loop output, based on the rate-of-change of the process.</p><p class="- topic/p ">PID loop output is calculated as follows:</p><p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">Output = K<sub class="+ topic/ph hi-d/sub ">P</sub> x (E<sub class="+ topic/ph hi-d/sub ">S</sub> + K<sub class="+ topic/ph hi-d/sub ">I</sub> x ErrorSum + K<sub class="+ topic/ph hi-d/sub ">D</sub> x ((E<sub class="+ topic/ph hi-d/sub ">S</sub> - LastE<sub class="+ topic/ph hi-d/sub ">S</sub>) / deltaT))</codeph> if action = direct) or</p><p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">Output = -(K<sub class="+ topic/ph hi-d/sub ">P</sub> x [E<sub class="+ topic/ph hi-d/sub ">S </sub>+ K<sub class="+ topic/ph hi-d/sub ">I</sub> x ErrorSum) + K<sub class="+ topic/ph hi-d/sub ">D</sub> x ((E<sub class="+ topic/ph hi-d/sub ">S</sub> - LastE<sub class="+ topic/ph hi-d/sub ">S</sub>) / deltaT)))</codeph> (if action = reverse)</p><p class="- topic/p ">where: &#160;<codeph class="+ topic/ph pr-d/codeph ">E<sub class="+ topic/ph hi-d/sub ">S</sub> = [PV - setpt]</codeph></p><p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">&#160;ErrorSum = Sum of E<sub class="+ topic/ph hi-d/sub ">S</sub> over time</codeph></p><p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">deltaT = time between samples</codeph></p><p class="- topic/p ">In the LoopPoint, the <parmname class="+ topic/keyword pr-d/parmname ">Derivative Constant</parmname> property
+specifies the derivative gain (K<sub class="+ topic/ph hi-d/sub ">D</sub>) directly in seconds
+(note this differs from some systems using derivative in minutes).</p><p class="- topic/p ">If using PID control, follow the same PI configuration as for Proportional
+with Integral (PI) control, with the addition of defining a positive
+value as the <parmname class="+ topic/keyword pr-d/parmname ">Derivative Constant</parmname>. In general,
+a <parmname class="+ topic/keyword pr-d/parmname ">Derivative Constant</parmname> less than 10 seconds should
+be tried first, and only then increased (if necessary), providing
+that the loop output remains stable at steady-state conditions.</p><fig class="- topic/fig "><title class="- topic/title ">Example LoopPoint in a wire sheet, linked to other components</title><image placement="break" scale="90" scope="local" href="../graphic/kitControlLoopPointExample_0000067482.png" class="- topic/image "/></fig></conbody></concept>

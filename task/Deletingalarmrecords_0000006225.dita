@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="DeletingAlarmRecords" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Deleting alarm records</title>
+<shortdesc class="- topic/shortdesc ">Alarms may not be deleted from the alarm database until
+they have been acknowledged and until the source device is in a normal
+(not alarm) state.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">alarm<indexterm class="- topic/indexterm ">deleting alarm records</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq ">The Alarm Data Maintenance view is open.</prereq>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Select one of the following three options:</cmd>
+<choices class="- topic/ul task/choices ">
+<choice class="- topic/li task/choice "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">Clear Old Records</uicontrol> clears alarm records
+before the date and time specified in the <parmname class="+ topic/keyword pr-d/parmname ">Before</parmname> field. This field is not available when you select either of the
+other options.</p></choice>
+<choice class="- topic/li task/choice "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">Clear All Before Selected Record</uicontrol> deletes all records that have a timestamp earlier than the timestamp
+of the record that you select in the <wintitle class="+ topic/keyword ui-d/wintitle ">Alarm History</wintitle> pane table. The selected record is not deleted.</p></choice>
+<choice class="- topic/li task/choice "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">Clear All Records</uicontrol> deletes all records
+that appear in the <wintitle class="+ topic/keyword ui-d/wintitle ">Alarm History</wintitle> pane table regardless
+of the date.</p></choice>
+</choices>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Click the <uicontrol class="+ topic/ph ui-d/uicontrol ">Run Maintenance</uicontrol> button
+to initiate the delete action.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Confirm Clear</wintitle> window displays
+to clarify that you are about to delete records and that the operation
+cannot be reversed.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">If the information in the <wintitle class="+ topic/keyword ui-d/wintitle ">Confirm Clear</wintitle> window confirms that you are deleting the desired alarm records,
+click the <uicontrol class="+ topic/ph ui-d/uicontrol ">Yes</uicontrol> button (otherwise click the <uicontrol class="+ topic/ph ui-d/uicontrol ">No</uicontrol> button).</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The alarm records are deleted and removed from the <wintitle class="+ topic/keyword ui-d/wintitle ">Alarm History</wintitle> table in the <wintitle class="+ topic/keyword ui-d/wintitle ">Alarm History</wintitle> pane.</stepresult>
+</step>
+</steps>
+</taskbody>
+</task>

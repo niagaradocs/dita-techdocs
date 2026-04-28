@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="UtilComponents-28306EF1" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Util components</title>
+<shortdesc class="- topic/shortdesc ">These components range from a Counter object with Boolean
+input and a numeric output (counts active transitions) to a Boolean-controlled
+NumericSwitch that selects one of two numeric values. A StatusDemux
+provides a method to logic test (true/false) a linked object for the
+presence of one or more status flags.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">util components</indexterm></keywords>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">Util components also include generator components for simulation/logic
+testing, such as the SineWave and Ramp (each with a numeric output)
+and MultiVibrator (Boolean output).</p>
+<p class="- topic/p ">The Expr (BqlExprComponent) component creates custom math and logic
+functions based upon one or more BQL expression statements.</p>
+</conbody>
+</concept>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="PIDLoopConfiguration-24A2E8F0" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">PID loop configuration</title>
+<shortdesc class="- topic/shortdesc ">The LoopPoint component implements a simple PID (Proportional,
+Integral, Derivative) control loop.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">PID loop configuration</indexterm>
+<indexterm class="- topic/indexterm ">LoopPoint</indexterm></keywords></metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">The following terms are used when describing the operation of the
+LoopPoint component.</p>
+<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p "><term class="- topic/term ">Process variable</term> (PV): the controlled process,
+in other words, the value at the setpoint input, your starting point.</p></li>
+<li class="- topic/li "><p class="- topic/p "><term class="- topic/term ">Setpoint</term> (setpt): the target for the process variable.
+In other words, the value at the setpoint output, your goal.</p></li>
+<li class="- topic/li "><p class="- topic/p "><term class="- topic/term ">Setpoint error</term>(E<sub class="+ topic/ph hi-d/sub ">S</sub>): the difference
+between the process variable and the setpoint acted upon by the loop
+algorithm.</p></li>
+<li class="- topic/li "><p class="- topic/p "><term class="- topic/term ">Loop output</term>: the correction signal produced by
+the loop algorithm. This value should be linked directly or indirectly
+to the NumericWritable component used to position a proportionally-modulated
+device, such as a valve or damper, that controls the process variable.</p></li>
+<li class="- topic/li "><p class="- topic/p "><term class="- topic/term ">Proportional gain</term> (K<sub class="+ topic/ph hi-d/sub ">P</sub>): the value of
+the property <parmname class="+ topic/keyword pr-d/parmname ">Proportional Constant</parmname> sets the overall
+gain of the loop as in this ratio: </p><p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">K<sub class="+ topic/ph hi-d/sub ">P</sub> =
+Output range / affected process range</codeph> 	(sometimes called
+throttling range)</p></li>
+<li class="- topic/li "><p class="- topic/p "><term class="- topic/term ">Throttling range</term>: the amount of process variable
+change expected as a result of throttling the system between the <parmname class="+ topic/keyword pr-d/parmname ">Minimum Output</parmname> and <parmname class="+ topic/keyword pr-d/parmname ">Maximum Output</parmname>.</p></li>
+<li class="- topic/li "><p class="- topic/p "><term class="- topic/term ">Bias</term>: the algorithm typically adds this value
+to the output to correct any offset error in proportional calculations
+and only as a control pivot output value for when PV = setpt.</p></li>
+<li class="- topic/li "><p class="- topic/p "><term class="- topic/term ">Action</term>: defines the direction of the output relative
+to any setpoint error, where:</p><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Direct means that the loop output increases when PV increases.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Reverse means that the loop output increases with PV decreases.</p></li>
+</ul></li>
+<li class="- topic/li "><p class="- topic/p "><term class="- topic/term ">Integral gain</term> (K<sub class="+ topic/ph hi-d/sub ">I</sub>): is the value of
+the property <parmname class="+ topic/keyword pr-d/parmname ">Integral Constant</parmname> used to set or
+reset the gain of the loop expressed in repeats per minute. This value
+reacts to the duration of the setpoint error.</p></li>
+<li class="- topic/li "><p class="- topic/p "><term class="- topic/term ">Derivative gain</term>: is the value of the property
+Derivative Constant used to set the derivative or rate gain of the
+loop expressed in repeats per minute. This value reacts to the rate
+of change of the setpoint error providing a dampening effect.</p></li>
+</ul>
+</conbody>
+</concept>

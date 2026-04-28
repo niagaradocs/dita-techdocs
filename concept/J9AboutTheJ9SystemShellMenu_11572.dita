@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="J8AboutTheNcSystemShellMenu-AA1F5AC0" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">About the <ph conkeyref="host_models/nc9000" class="- topic/ph "/> system shell menu</title><!--This topic is NOT shared by docJ8Startup and docJ9Startup.--><shortdesc class="- topic/shortdesc ">The system shell of the controller provides simple, menu-driven,
+text-prompt access to basic <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> platform settings, including IP network settings, platform
+credentials, system time,  and well as creating or restoring system backups. Also, you can use
+it to perform a TCP/IP ping from the controller to another host and, in Wi-Fi models,
+there is access to Wi-Fi configuration menus. </shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo "><prodname class="- topic/prodname "><keyword conkeyref="wh_variables_n4/niagara" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara" class="- topic/keyword "/></prodname><vrmlist class="- topic/vrmlist "><vrm version="4.1" class="- topic/vrm "/></vrmlist></prodinfo></metadata></prolog><conbody class="- topic/body  concept/conbody "><p class="- topic/p ">Changes issued in the system shell become immediately effective,
+except for IP address settings (Update Network Settings). You must
+reboot the controller for any changed network settings to become effective.</p><p class="- topic/p ">If SSH is enabled in the controller, you can also access the controller’s
+system shell using a remote terminal session using SSH. Platform login
+is still required (just as with the controller powered up in serial
+shell mode).</p><note type="caution" class="- topic/note ">Be careful when changing items from the system
+shell, in particular platform account (login credentials, system passphrase)
+and network settings. If you change platform login credentials and
+then lose or forget them, you may need to restore the factory default
+settings and possibly lose any non-backed up data.</note><p class="- topic/p ">Following, is an example of the system shell menu when connected
+to a <ph conkeyref="host_models/nc9000" class="- topic/ph "/>.</p><fig id="ID-fig-00000013" class="- topic/fig "><title class="- topic/title ">System shell menu (serial shell or Telnet access)</title><codeblock class="+ topic/pre pr-d/codeblock ">---------------------------------------------------
+1   Update System Time
+2   Update Network Settings
+3   Ping Host
+4   System Diagnostic Options
+5   Change Current User Password
+6   Change System Passphrase
+7   Create SD Backup
+8   Restore SD Backup
+9   Reboot
+L   Logout
+
+Enter Choice :</codeblock></fig><p class="- topic/p ">To select a menu option, type the associated number (<codeph class="+ topic/ph pr-d/codeph ">1</codeph> to <codeph class="+ topic/ph pr-d/codeph ">9</codeph>) or <codeph class="+ topic/ph pr-d/codeph ">L</codeph> for logout, then press <userinput class="+ topic/ph sw-d/userinput ">Enter</userinput>.</p><p class="- topic/p ">For example, <ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">type <userinput class="+ topic/ph sw-d/userinput ">2</userinput> (Update Network Settings) to
+recover IP access, or to set the IP settings of a new controller.</p></li><li class="- topic/li "><p class="- topic/p ">type <userinput class="+ topic/ph sw-d/userinput ">6</userinput> (Change System Passphrase) to
+change the system passphrase of the unit. You might do this if swapping
+in a microSD card from a previously configured unit, in order to change
+the passphrase of the unit to match the passphrase that is already
+stored on the card.</p></li></ul></p></conbody></concept>

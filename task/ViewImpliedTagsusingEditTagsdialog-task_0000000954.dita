@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="ViewImpliedTags" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">View implied tags using Edit Tags dialog</title><shortdesc class="- topic/shortdesc ">Viewing implied tags can be useful when designing a custom tag dictionary to confirm that certain objects are getting the desired tags, or when designing a NEQL query for a hierarchy definition or search. Implied tags do not appear in an object Property Sheet or other typical views. One way to view these tags is on the <wintitle class="+ topic/keyword ui-d/wintitle ">Implied Tags</wintitle> tab in the <wintitle class="+ topic/keyword ui-d/wintitle ">Edit Dialog</wintitle> box.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Implied Tags<indexterm class="- topic/indexterm ">viewing</indexterm></indexterm></keywords></metadata></prolog><taskbody class="- topic/body task/taskbody "><prereq class="- topic/section task/prereq ">
+            <ul class="- topic/ul "><li conref="Addingtagsfromaninstalleddictionary-task_0000000900.dita#AddTagsFromInstalledDictionary/MakeSureThatYouHaveOneOrMoreTagDict-30808C74" class="- topic/li ">
+                    <p class="- topic/p "/>
+                </li></ul>
+        </prereq><context class="- topic/section task/context ">Implied tags are automatically assigned to objects by <uicontrol class="+ topic/ph ui-d/uicontrol ">Smart Tag Rules</uicontrol> in the installed tag dictionaries.</context><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Right-click the object whose tags you want to examine and choose <uicontrol class="+ topic/ph ui-d/uicontrol ">Edit Tags</uicontrol> from the popup menu.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To view the <uicontrol class="+ topic/ph ui-d/uicontrol ">Implied Tags</uicontrol>, select the <uicontrol class="+ topic/ph ui-d/uicontrol ">Implied Tags</uicontrol> tab in the lower pane of the dialog box.</cmd><info class="- topic/itemgroup task/info "/><stepxmp class="- topic/itemgroup task/stepxmp ">
+                    <p class="- topic/p ">For example, the following lists five tags that are implied based on the dictionary rules for a <uicontrol class="+ topic/ph ui-d/uicontrol ">Component</uicontrol> object: The first four tags are implied from the <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> tag dictionary rules: <ul class="- topic/ul "><li class="- topic/li ">
+                                <p class="- topic/p "><systemoutput class="+ topic/ph sw-d/systemoutput ">n:name</systemoutput></p>
+                            </li><li class="- topic/li ">
+                                <p class="- topic/p "><systemoutput class="+ topic/ph sw-d/systemoutput ">n:displayName</systemoutput></p>
+                            </li><li class="- topic/li ">
+                                <p class="- topic/p "><systemoutput class="+ topic/ph sw-d/systemoutput ">n:type</systemoutput></p>
+                            </li><li class="- topic/li ">
+                                <p class="- topic/p "><systemoutput class="+ topic/ph sw-d/systemoutput ">n:ordInSession</systemoutput></p>
+                            </li></ul></p>
+                    <p class="- topic/p ">The final tag is implied based on Haystack tag dictionary rules:</p>
+                    <ul class="- topic/ul "><li class="- topic/li ">
+                            <p class="- topic/p "><systemoutput class="+ topic/ph sw-d/systemoutput ">hs:id</systemoutput></p>
+                        </li></ul>
+                </stepxmp></step></steps></taskbody></task>

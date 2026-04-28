@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="ConfiguringTheEthernetPort-4DD086BD" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Configuring a network with an Ethernet port</title>
+<shortdesc class="- topic/shortdesc ">The network needs an Ethernet port if all network connections
+use the Ethernet protocol and wired connections. This procedure configures
+the Ethernet port on a Supervisor and controller station. These properties
+include segment number and adapter type.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Ethernet port<indexterm class="- topic/indexterm ">configuration</indexterm></indexterm><indexterm class="- topic/indexterm ">ports</indexterm></keywords></metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq ">You are working in a Supervisor or controller station that
+has a network component.</prereq>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To add an Ethernet port, open one of the palettes, expand <uicontrol class="+ topic/ph ui-d/uicontrol ">NetworkPorts</uicontrol> and drag an <uicontrol class="+ topic/ph ui-d/uicontrol ">EthernetPort</uicontrol> component to the BACnet network <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Bacnet Comm</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Network</uicontrol></menucascade> folder in the Nav tree.</cmd>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Expand the BACnet network followed by expanding <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Bacnet Comm</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Network</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">EthernetPort</uicontrol></menucascade>.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Change <parmname class="+ topic/keyword pr-d/parmname ">Network Number</parmname> from <userinput class="+ topic/ph sw-d/userinput ">-1</userinput> to the BACnet network number for the network segment
+to which this local device connects and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol>.</cmd>
+<choices class="- topic/ul task/choices ">
+<choice class="- topic/li task/choice "><p class="- topic/p ">If this is an existing BACnet installation, make sure to
+use the same network segment number that is already in use.</p></choice>
+<choice class="- topic/li task/choice "><p class="- topic/p ">If this is a new BACnet installation, you can choose this
+number (for example: <option class="+ topic/keyword pr-d/option ">2</option>).</p></choice>
+</choices>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Double–click the <parmname class="+ topic/keyword pr-d/parmname ">Link</parmname> component
+in the <wintitle class="+ topic/keyword ui-d/wintitle ">Property Sheet</wintitle>.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To configure the Ethernet adapter, use the drop-down list
+of <parmname class="+ topic/keyword pr-d/parmname ">Adapter Title</parmname>, and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">This discovers and validates the adapter automatically.
+The properties <parmname class="+ topic/keyword pr-d/parmname ">Adapter Description</parmname> and <parmname class="+ topic/keyword pr-d/parmname ">Adapter Name</parmname> provide additional information about the
+selected adapter.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Right-click the <parmname class="+ topic/keyword pr-d/parmname ">EthernetPort</parmname> node
+in the property sheet or Nav side bar and click <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Actions</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Enable</uicontrol></menucascade>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The <parmname class="+ topic/keyword pr-d/parmname ">Status</parmname> property under <uicontrol class="+ topic/ph ui-d/uicontrol ">Ethernet Port</uicontrol> should report <systemoutput class="+ topic/ph sw-d/systemoutput ">{ok}</systemoutput>.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">When you are done, collapse the nodes you expanded in the
+Nav tree.</cmd></step>
+</steps>
+</taskbody>
+</task>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="role_AccessControlTroubleshooting" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Component permissions troubleshooting</title>
+<shortdesc class="- topic/shortdesc ">To begin troubleshooting component permissions, go back
+and review your original design and double-check all configuration
+properties.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">troubleshooting<indexterm class="- topic/indexterm ">component
+permissions</indexterm></indexterm><indexterm class="- topic/indexterm ">component<indexterm class="- topic/indexterm ">permissions, troubleshooting</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "/>
+<vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p "><b class="+ topic/ph hi-d/b ">I can successfully log in to a station, but I get the
+message, “User <varname class="+ topic/keyword sw-d/varname ">username</varname> does not have access
+to the station. Check permissions.”</b></p><p class="- topic/p ">The user name
+you used to log in with is an authentic user name, but either no role
+has been associated with the user or the permissions contained in
+the role configuration do not allow the user to access the station.
+Log in with a user that has permission to access the station and update
+the configuration. A role needs permissions on at least one component
+for a user to be able to access the station.</p><p class="- topic/p "><b class="+ topic/ph hi-d/b ">I set up categories
+and roles, but my users can still access some components they should
+not be able to access and cannot access others that they should be
+able to access.</b></p><p class="- topic/p ">Confirm that you configured the component
+permission level correctly for each component.</p><p class="- topic/p ">Open the <wintitle class="+ topic/keyword ui-d/wintitle ">Category Browser</wintitle> and review the categories the user has
+permission to access. Verify that there are no unexpected components
+in the categories.</p><p class="- topic/p "><b class="+ topic/ph hi-d/b ">My users cannot change their own passwords.</b></p><p class="- topic/p ">You need to assign a role to each user that grants write access
+(rw) to the <parmname class="+ topic/keyword pr-d/parmname ">Password</parmname> slot on the <apiname class="+ topic/keyword pr-d/apiname ">UserService</apiname>.</p><p class="- topic/p "/></section>
+</refbody>
+</reference>

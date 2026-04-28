@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="SettingTheSystemPassword-48BB7CE2" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Setting the system passphrase</title><shortdesc class="- topic/shortdesc ">If you are performing a new installation, the program prompts
+you to set a system passphrase for encryption purposes, as shown in
+the following image. Once the installation program sets the system
+passphrase, this step does not present again upon subsequent <keyword conkeyref="wh_variables_n4/niagara4" class="- topic/keyword "/> installations. </shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Setting system passphrase</indexterm></keywords></metadata></prolog><taskbody class="- topic/body task/taskbody "><context class="- topic/section task/context "><note class="- topic/note ">It is important to remember the system passphrase and
+keep it safe. If you lose the system passphrase, you will lose access
+to encrypted data.</note><p class="- topic/p ">The system passphrase is used to protect
+sensitive information stored on all <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword ">Niagara</keyword> systems, and on the memory card in <ph conkeyref="host_models/nc8000" class="- topic/ph "/> and <ph conkeyref="host_models/nc9000" class="- topic/ph "/> controllers. The system passphrase is assigned as the file
+passphrase for “portable” files, such as backups and station copies,
+and is used to encrypt those files. During operations in which you
+transfer encrypted files to a system (restoring backups, transferring
+a station, etc.) you are prompted to supply the file passphrase if
+it doesn’t match the system passphrase. The system passphrase defaults
+to the factory default platform password. During commissioning, you
+will be prompted to change the default system passphrase. You must
+remember the system password and keep it safe. If you lose the system
+passphrase, you will lose access to encrypted data. To change the
+system passphrase, use the Platform Administration tool. For more
+detailed information, see “System passphrase” in the <cite class="- topic/cite "><ph conkeyref="doctitles_coresw/PlatformGuide-A0F6B991" class="- topic/ph "/></cite>.</p><?Pub Caret 114?><image placement="break" scale="60" href="../graphic/n4_installer_syspwd2_0000018292_0000000768.png" class="- topic/image "/><note class="- topic/note "> Once the installation
+program sets the system passphrase, this step will not be presented
+again upon subsequent <keyword conkeyref="wh_variables_n4/niagara4" class="- topic/keyword "/> installations. <?Pub _newline?> </note></context><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the <parmname class="+ topic/keyword pr-d/parmname ">Passphrase</parmname> property, enter
+the passphrase and then repeat the entry in the <parmname class="+ topic/keyword pr-d/parmname ">Confirm
+Passphrase</parmname> property. </cmd><info class="- topic/itemgroup task/info "><note class="- topic/note ">A strong passphrase is required. Use 10 or more characters
+and include at least one of each of the following: uppercase, lowercase,
+and numeric.</note></info></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Write down the passphrase you created.</cmd><info class="- topic/itemgroup task/info "><note class="- topic/note ">It is important to remember the system passphrase and
+keep it safe. If you lose the system passphrase, you will lose access
+to encrypted data.</note></info></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Click <uicontrol class="+ topic/ph ui-d/uicontrol ">Next</uicontrol> to continue.</cmd></step></steps></taskbody></task>

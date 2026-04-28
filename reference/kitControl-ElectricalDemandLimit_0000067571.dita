@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-ElectricalDemandLimit" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">kitControl-ElectricalDemandLimit</title><shortdesc class="- topic/shortdesc ">This component provides load shedding calculations based
+upon projected electrical demand averaging. It uses a sliding window
+interval, which can be configured.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">ElectricalDemandLimit</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p ">ElectricalDemandLimit is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Energy</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette along with related
+objects SetpointOffset and ShedControl.</p><p class="- topic/p ">Electrical Demand Limiting
+(EDL) is an energy management tool for leveling out fluctuations that
+may occur in daily energy demand levels. Energy providers often set
+billing rates based on periodic maximum demand levels. It is possible
+that a single day (an anomaly) could dramatically increase a monthly
+billing rate. Reducing peak demand levels can significantly lower
+energy costs even if the total energy consumption does not change.
+To avoid costly spikes in demand level, this component monitors and
+controls building and enterprise energy usage.</p><p class="- topic/p ">To use the ElectricalDemandLimit
+component, as a minimum, you need to do the following:</p><fig class="- topic/fig "><title class="- topic/title ">ElectricalDemandLimit configuration properties</title><image placement="break" scale="65" scope="local" width="650" href="../graphic/kitControlElectricalDemandLimit_0000067583.png" class="- topic/image "/></fig></section><properties class="- topic/simpletable reference/properties "><prophead class="- topic/sthead      reference/prophead "><proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd><propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd><propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd></prophead><property class="- topic/strow       reference/property "><proptype class="- topic/stentry     reference/proptype ">Prediction Enabled</proptype><propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> (default) or <option class="+ topic/keyword pr-d/option ">false</option> and null definition</propvalue><propdesc class="- topic/stentry     reference/propdesc ">Turns this component on and off.<p class="- topic/p "><option class="+ topic/keyword pr-d/option ">true</option> enables this component. This value must be set to <option class="+ topic/keyword pr-d/option ">true</option> for the component to work.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">false</option> disables
+this component.</p><p class="- topic/p ">When null is checked, the value displayed defaults
+to the incoming value from the device. If you remove the check mark
+you can configure the<parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc></property><property class="- topic/strow       reference/property "><proptype class="- topic/stentry     reference/proptype ">Power Input</proptype><propvalue class="- topic/stentry     reference/propvalue ">kW rate and null definition (defaults to 0)</propvalue><propdesc class="- topic/stentry     reference/propdesc ">Defines the power demand (kW) rate. The component uses this
+value to average the demand rate over every minute for comparison
+with the <parmname class="+ topic/keyword pr-d/parmname ">Projected Demand Average</parmname>. This property
+should represent the total actual demand rate — the total of
+all meters monitored by this component on the energy network.<p class="- topic/p ">When
+the component invokes a shed or restoration, this value is expected
+to change in relation to the estimated values configured for the <parmname class="+ topic/keyword pr-d/parmname ">Power Shed Level</parmname> properties.</p><p class="- topic/p ">When null is checked,
+the value displayed defaults to the incoming value from the device.
+If you remove the check mark you can configure the<parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc></property><property class="- topic/strow       reference/property "><proptype class="- topic/stentry     reference/proptype ">Message</proptype><propvalue class="- topic/stentry     reference/propvalue ">read-only text</propvalue><propdesc class="- topic/stentry     reference/propdesc ">Displays information that relates to the status of the shed,
+restoration, or projected demand values, and may indicate the status
+of the EDL component, itself.</propdesc></property><property class="- topic/strow       reference/property "><proptype class="- topic/stentry     reference/proptype ">Shed Out</proptype><propvalue class="- topic/stentry     reference/propvalue ">number and null definition (defaults to 0)</propvalue><propdesc class="- topic/stentry     reference/propdesc ">Displays a value that indicates the number of levels to
+be shed. For example, a <parmname class="+ topic/keyword pr-d/parmname ">Shed Out</parmname> value of <systemoutput class="+ topic/ph sw-d/systemoutput ">3</systemoutput> indicates that a Power Shed Level of 3 is being
+shed.<p class="- topic/p ">When null is checked, the value displayed defaults to the
+incoming value from the device. If you remove the check mark you can
+configure the<parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc></property><property class="- topic/strow       reference/property "><proptype class="- topic/stentry     reference/proptype ">Billing Start Day</proptype><propvalue class="- topic/stentry     reference/propvalue ">date</propvalue><propdesc class="- topic/stentry     reference/propdesc ">Specifies the first utility billing day of the month. This
+aligns system data with the actual energy company billing periods.
+Each month, on the day specified by this property, the current month’s
+data move to the previous month, and the current month’s data
+become this month.</propdesc></property><property class="- topic/strow       reference/property "><proptype class="- topic/stentry     reference/proptype ">Demand Interval</proptype><propvalue class="- topic/stentry     reference/propvalue ">15 or 30 minutes (defaults to 15 minutes)</propvalue><propdesc class="- topic/stentry     reference/propdesc ">Configures the demand window used to calculate the average.
+You may change this value to 30 minutes. Any other value reverts to
+15 minutes. The larger demand interval has more data points (one per
+minute) than the smaller interval.<p class="- topic/p ">Depending on the value of the <parmname class="+ topic/keyword pr-d/parmname ">Percent Interval Elapsed</parmname> property, the data points may
+be comprised of mostly sampled historical demand values, mostly values
+that are projected (based on current demand), or half and half.</p></propdesc></property><property class="- topic/strow       reference/property "><proptype class="- topic/stentry     reference/proptype ">Percent Interval Elapsed</proptype><propvalue class="- topic/stentry     reference/propvalue ">percentage (defaults to 75)</propvalue><propdesc class="- topic/stentry     reference/propdesc ">Determines how much of the calculated demand is based on
+actual demand as opposed to how much is based on projected demand.
+A value of <userinput class="+ topic/ph sw-d/userinput ">50</userinput> calculates the <parmname class="+ topic/keyword pr-d/parmname ">Projected
+Demand Average</parmname> using half of the actual sampled (or historical)
+values and half of the projected values.<p class="- topic/p ">To calculate projected
+demand, the component uses current energy data at the current minute.
+In a 15 minute demand window, a value of 67 means that the current
+minute is 10. Larger numbers in this property increase the amount
+of historical data used and decrease the amount of data that are based
+on the current minute demand.</p></propdesc></property><property class="- topic/strow       reference/property "><proptype class="- topic/stentry     reference/proptype ">Rotate Level</proptype><propvalue class="- topic/stentry     reference/propvalue ">a number from 1 to 32 (defaults to 0)</propvalue><propdesc class="- topic/stentry     reference/propdesc ">Specifies the maximum <parmname class="+ topic/keyword pr-d/parmname ">Shed Level</parmname> to
+use. For example, a value of <userinput class="+ topic/ph sw-d/userinput ">3</userinput> limits load
+shedding to <parmname class="+ topic/keyword pr-d/parmname ">Power Shed Level3</parmname>.</propdesc></property><property class="- topic/strow       reference/property "><proptype class="- topic/stentry     reference/proptype ">Demand Limiting Deadband</proptype><propvalue class="- topic/stentry     reference/propvalue ">kW</propvalue><propdesc class="- topic/stentry     reference/propdesc ">Sets a deadband value the component uses to determine whether
+or not to invoke a restoration when activating restoration levels.
+The component does not use this value to invoke shed actions.</propdesc></property><property class="- topic/strow       reference/property "><proptype class="- topic/stentry     reference/proptype ">Demand Limit Period(n)</proptype><propvalue class="- topic/stentry     reference/propvalue ">kW</propvalue><propdesc class="- topic/stentry     reference/propdesc ">These three values set demand limits that correspond to
+each of the three daily periods. When energy usage exceeds the <parmname class="+ topic/keyword pr-d/parmname ">Demand Limit</parmname> value for a period, load shedding begins.</propdesc></property><property class="- topic/strow       reference/property "><proptype class="- topic/stentry     reference/proptype ">Demand Period(n) Start</proptype><propvalue class="- topic/stentry     reference/propvalue ">hours minutes seconds (default to 0)</propvalue><propdesc class="- topic/stentry     reference/propdesc ">These three values split up a 24-hour day into three time-periods
+used to assign a separate demand limit for each distinct time.</propdesc></property><property class="- topic/strow       reference/property "><proptype class="- topic/stentry     reference/proptype ">Power Shed Level(n)</proptype><propvalue class="- topic/stentry     reference/propvalue ">a number to two decimal places</propvalue><propdesc class="- topic/stentry     reference/propdesc ">These levels set up to 32 demand limit values based on the
+loads that are controlled by the specific shed group. Each value represents
+the amount of demand to shed when the component invokes the associated
+shed level. The component may invoke one or more shed levels to lower
+the demand below the current <parmname class="+ topic/keyword pr-d/parmname ">Demand Period</parmname> limit.
+In other words, the load-shed logic calculates how much demand is
+required to be reduced, and then uses these values to determine how
+many loads to shed.<p class="- topic/p ">Once the component invokes a shed level is invoked,
+it evaluates the actual power drop at the next minute to determine
+the effect of the shed action. If the initial load shed does not actually
+reduce the demand below the limit, the component invokes the next
+shed level (if any).</p><p class="- topic/p ">To limit the number of shed levels the
+component may invoke, configure the <parmname class="+ topic/keyword pr-d/parmname ">Rotate Level</parmname> property.</p></propdesc></property></properties><section class="- topic/section "><title class="- topic/title ">ElectricalDemandLimit data  – kitControl</title><p class="- topic/p ">You access these data by scrolling down the ElectricalDemandLimit
+property sheet.</p><fig class="- topic/fig "><title class="- topic/title ">ElectricalDemandLimit data</title><image placement="break" scale="65" scope="local" href="../graphic/kitControlElectricalDemandLimitData_0000067582.png" class="- topic/image "/></fig><table class="- topic/table "><tgroup cols="2" class="- topic/tgroup "><?PubTbl tgroup dispwid="813.00px"?><colspec colname="col1" colwidth="0.78*" class="- topic/colspec "/><colspec colname="col2" colwidth="1.22*" class="- topic/colspec "/><thead class="- topic/thead "><row class="- topic/row "><entry class="- topic/entry ">Data item</entry><entry class="- topic/entry ">Description</entry></row></thead><tbody class="- topic/tbody "><row class="- topic/row "><entry class="- topic/entry ">This Month Demand Period(n) Peaks</entry><entry class="- topic/entry ">Displays the value of the highest demand (minute) so far in
+the current month.</entry></row><row class="- topic/row "><entry class="- topic/entry ">This Month Demand Period(n) Peak Times</entry><entry class="- topic/entry ">Displays the time and date that the current month’s
+peak demand occurred. </entry></row><row class="- topic/row "><entry class="- topic/entry ">Previous Month Demand Period(n) Peaks</entry><entry class="- topic/entry ">Displays the value of the highest demand (minute) that occurred
+in the previous month. </entry></row><row class="- topic/row "><entry class="- topic/entry ">Previous Month Demand Period(n) Peak Times</entry><entry class="- topic/entry ">Displays the time and date that the previous month’s
+peak demand occurred.</entry></row><row class="- topic/row "><entry class="- topic/entry ">Projected Demand Average</entry><entry class="- topic/entry ">Totals the value of the <parmname class="+ topic/keyword pr-d/parmname ">Power Input</parmname> every
+time this value changes, and once a minute calculates <parmname class="+ topic/keyword pr-d/parmname ">Projected
+Demand Average</parmname> and <parmname class="+ topic/keyword pr-d/parmname ">Shed Level</parmname>. The
+component averages a combination of projected and historical samplings
+over the specified interval. To influence the value of the <parmname class="+ topic/keyword pr-d/parmname ">Projected Demand Average</parmname>, configure the <parmname class="+ topic/keyword pr-d/parmname ">Demand
+Interval</parmname> and the <parmname class="+ topic/keyword pr-d/parmname ">Percent Interval Elapsed</parmname> properties.</entry></row><row class="- topic/row "><entry class="- topic/entry ">Max Shed Level</entry><entry class="- topic/entry ">Displays the maximum shed level used in the current month.</entry></row></tbody></tgroup></table></section></refbody></reference>

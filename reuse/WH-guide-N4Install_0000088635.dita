@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="WH-guide-N4Install-F30A764D" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">WH-guide-N4Install</title>
+<shortdesc class="- topic/shortdesc ">Reusable content for the Niagara 4 Installation Guide.</shortdesc>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><note id="DaemonUserHomeLocation" type="caution" class="- topic/note ">The Daemon
+User Home and the <keyword conkeyref="wh_variables_n4/Workbench" conref="WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword "/> User Home are intended to be installed in distinctly separate
+locations. This separation of homes is for security reasons but it
+also prevents certain unintended results. For example, when the two
+homes are installed in the same location the <wintitle class="+ topic/keyword ui-d/wintitle ">Station Copier</wintitle> becomes unavailable, and you will not be able to make a portable
+copy of the station.</note></section>
+</refbody>
+</reference>

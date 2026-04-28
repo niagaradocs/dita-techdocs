@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="Alarm-FloatLimitAlarmExt" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">alarm-FloatLimitAlarmExt</title>
+<shortdesc class="- topic/shortdesc ">This alarm extension generates an alarm when a NumericPoints's
+or NumericWritable's Out slot falls outside a normal range defined
+by a setpoint, high difference limit, low difference limit, and a
+deadband. This alarm extension is available in the <apiname class="+ topic/keyword pr-d/apiname ">Extensions</apiname> folder of the <wintitle class="+ topic/keyword ui-d/wintitle ">alarm</wintitle> palette.</shortdesc><?Pub Caret 85?>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">alarm-FloatLimitAlarmExt</indexterm>
+<indexterm class="- topic/indexterm ">extension<indexterm class="- topic/indexterm ">alarm-FloatLimitAlarmExt</indexterm></indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><title class="- topic/title ">Algorithm properties</title>These properties are unique
+to the <apiname class="+ topic/keyword pr-d/apiname ">FloatLimitAlarmExt</apiname>.</section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype "><uicontrol class="+ topic/ph ui-d/uicontrol ">Setpoint</uicontrol></proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number </propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Specifies the value that is the basis for defining the normal
+range provided the value and its status is valid. It can be linked
+to another point. </propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype "><uicontrol class="+ topic/ph ui-d/uicontrol ">Last Valid Setpoint</uicontrol></proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Specifies the setpoint value when its status and value were
+last valid.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype "><uicontrol class="+ topic/ph ui-d/uicontrol ">Low Diff Limit</uicontrol></proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number (0.00–+inf)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Determines the low limit of the normal range by subtracting
+the value from the last valid setpoint value.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype "><uicontrol class="+ topic/ph ui-d/uicontrol ">High Diff Limit</uicontrol></proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number (0.00–+inf)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Determines the high limit of the normal range by adding
+the value to the last valid setpoint value.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype "><uicontrol class="+ topic/ph ui-d/uicontrol ">Deadband</uicontrol></proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number (0.00–+inf)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the differential value applied to high and low limits
+before return-to-normal. This value is subtracted from the high limit
+and added to low limit.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype "><uicontrol class="+ topic/ph ui-d/uicontrol ">High Limit Text</uicontrol></proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text string</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines a bformat, which displays when a high limit is exceeded.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype "><uicontrol class="+ topic/ph ui-d/uicontrol ">Low Limit Text</uicontrol></proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text string</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines a bformat, which displays when low limit is exceeded.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype "><uicontrol class="+ topic/ph ui-d/uicontrol ">Limit Enable</uicontrol></proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">checkbox options<?Pub _newline?><uicontrol class="+ topic/ph ui-d/uicontrol ">Low Limit Enable</uicontrol><?Pub _newline?><uicontrol class="+ topic/ph ui-d/uicontrol ">High Limit Enable</uicontrol></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Enables the limit settings.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

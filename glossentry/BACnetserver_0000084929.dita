@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="BACnetServer-B103F5AA" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry ">
+<glossterm class="- topic/title concept/title glossentry/glossterm ">BACnet server</glossterm>
+<glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">An Operational mode for a BACnet system that provides a
+service to a requesting client.</glossdef>
+</glossentry>

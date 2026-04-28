@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="cat_DeletingACategory" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Deleting a category name</title>
+<shortdesc class="- topic/shortdesc ">You delete a category name using the <wintitle class="+ topic/keyword ui-d/wintitle ">Category
+Manager</wintitle>.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">category<indexterm class="- topic/indexterm ">deleting</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "/>
+<vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq ">The category has been added. You are viewing the Category
+Manager.</prereq>
+<context class="- topic/section task/context "/>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To delete a category name, click the row in the <wintitle class="+ topic/keyword ui-d/wintitle ">Category Manager</wintitle> view and press <uicontrol class="+ topic/ph ui-d/uicontrol ">Delete</uicontrol> or right-click the row and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Delete</uicontrol>.</cmd>
+</step>
+</steps>
+<result class="- topic/section task/result ">Deleting a category name changes the name back to the generic
+index name of Category 1, 2, etc. It does not remove the category
+index from the object(s) with which it is associated.</result>
+</taskbody>
+</task>

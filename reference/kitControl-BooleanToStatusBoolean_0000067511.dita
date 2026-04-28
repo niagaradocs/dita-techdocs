@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-BooleanToStatusBoolean" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-BooleanToStatusBoolean</title>
+<shortdesc class="- topic/shortdesc ">This component  links (converts) the simple Boolean value
+(a non-status value) in an extension or other component (<parmname class="+ topic/keyword pr-d/parmname ">In</parmname> property) to the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> property
+of a point or kitControl object (a StatusBoolean value). This component
+is the reverse of the StatusBooleanToBoolean component.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">BooleanToStatusbBoolean</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">BooleanToStatusBoolean is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Conversion</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p><fig class="- topic/fig ">
+<title class="- topic/title ">BooleanToStatusBoolean properties</title>
+<image href="../graphic/kitcontrolBooleanToStatusBoolean_0000067543.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window (defaults to <systemoutput class="+ topic/ph sw-d/systemoutput ">true</systemoutput> and <systemoutput class="+ topic/ph sw-d/systemoutput ">false</systemoutput>)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Defines the text to display for each boolean value.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">trueText</option> configures the text to describe the
+state when the component returns <option class="+ topic/keyword pr-d/option ">true.</option></p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">falseText </option> configures the text to describe the state when
+the component returns <option class="+ topic/keyword pr-d/option ">false.</option></p>This definition applies
+to the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> property value. What text to define
+depends on how you are using the component.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> and <option class="+ topic/keyword pr-d/option ">false</option> (default)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the source simple non-status value.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only StatusBoolean <option class="+ topic/keyword pr-d/option ">true</option> and <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the converted target status value.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

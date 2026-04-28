@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference-4234" xml:lang="en-us" class="- topic/topic       reference/reference "><title class="- topic/title ">Viewing incomplete certificates on Security Dashboard</title><shortdesc class="- topic/shortdesc ">On the Certificate Management Service of the Security Dashboard, you can view if the User Key Store contains any certificates with incomplete cert chains.</shortdesc><prolog class="- topic/prolog "><author translate="no" type="creator" class="- topic/author ">ClaudiaSerwe &lt;claudia.serwe@tridium.com&gt;</author><metadata class="- topic/metadata "><keywords class="- topic/keywords "/></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section ">
+    <p class="- topic/p ">To view the  item, go to the <wintitle class="+ topic/keyword ui-d/wintitle ">Security Dashboard</wintitle> view in the Security Service and scroll to the <uicontrol class="+ topic/ph ui-d/uicontrol ">Certificate Management Service</uicontrol> card.</p><image placement="break" width="600" href="../graphic/DashboardIncompleteCert.png" class="- topic/image "/>
+            
+            <p class="- topic/p "/>
+        </section></refbody></reference>

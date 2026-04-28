@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--Arbortext, Inc., 1988-2019, v.4002--><?Pub UDT template _font?><reference id="EthernetWiring-0B498D6D" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Ethernet wiring</title>
+<shortdesc class="- topic/shortdesc ">Two RJ-45 10/100/1000-Mbit Ethernet connectors are labeled
+PRI (LAN1) for primary, and SEC (LAN2) for secondary. </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">ethernet wiring</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">Use a standard Ethernet patch cable to an Ethernet switch.</p><note type="caution" class="- topic/note ">The <ph conkeyref="host_models/nc9000" conref="../reuse/WH_HardwareVariables_Tridium_N4_0000009933.dita#WHHardwareVariables-Tridium-9A32E735/nc9000" class="- topic/ph "/> is not compatible with a Power-Over-Ethernet (POE) network.
+Connecting the <ph conkeyref="host_models/nc" conref="../reuse/WH_HardwareVariables_Tridium_N4_0000009933.dita#WHHardwareVariables-Tridium-9A32E735/nc" class="- topic/ph "/> on a network segment, which carries power, may cause the unit
+to fail. In that event, you must disconnect it from the POE network
+segment and power-cycle the unit.</note><p class="- topic/p ">The factory-default IP
+address for PRI is 192.168.1.140. The subnet mask is 255.255.255.0.
+By default, the SEC (LAN2) port is disabled. Refer to the <cite class="- topic/cite "><ph conkeyref="doctitles_coresw/JACE-9000InstallSGuide" conref="../reuse/WH_CoreSWDocTitles_Tridium_N4_0000009937.dita#WHCoreSoftwareDocumentTitles-9A315B77/JACE-9000InstallSGuide" class="- topic/ph "/></cite> for details on the software configuration of the Ethernet
+ports.<note class="- topic/note ">Often, you only use PRI (LAN1 primary) unless you have
+a specific application for the other port. For example, isolating
+a driver’s network traffic using SEC (LAN2). Do not use SEC as the
+primary port. If enabling SEC, you must connect PRI and SEC to different
+IP subnets. Further, a <ph conkeyref="host_models/nc" conref="../reuse/WH_HardwareVariables_Tridium_N4_0000009933.dita#WHHardwareVariables-Tridium-9A32E735/nc" class="- topic/ph "/> controller does not provide IP routing or a bridging operation
+between the two Ethernet ports.</note></p></section>
+</refbody>
+</reference><?Pub Caret -1?>

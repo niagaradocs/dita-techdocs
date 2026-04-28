@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="opcUaClient-OpcUaClientAlarmManager" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Opc Ua Client Alarm Manager</title>
+<shortdesc class="- topic/shortdesc ">This manager is the default view of the client alarms device
+extension (<uicontrol class="+ topic/ph ui-d/uicontrol ">OpcUaClientAlarmDeviceExt</uicontrol>) as well
+as the server alarms device extension (<uicontrol class="+ topic/ph ui-d/uicontrol ">OpcUaServerAlarmDeviceExt</uicontrol>).</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Opc Ua Client Alarm Manager</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">This view allows you to scan the OPC UA server to discover
+and subscribe to OPC UA alarm events. For more information, refer
+to “Opc Ua Server Alarm Manager.”</p></section>
+</refbody>
+</reference>

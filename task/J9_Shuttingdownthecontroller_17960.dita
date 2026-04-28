@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="J9_ShuttingDownTheController-019" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Shutting down the controller</title>
+<!--This topic is NOT SHARED by docJ8Startup and docJ9Startup.-->
+<shortdesc class="- topic/shortdesc ">This procedure safely prepares the controller before you
+remove power.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">shutdown</indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/><vrm version="3.8" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq ">The controller is powered on. Any running devices (HVAC, boiler,
+meter, etc) have been set in a standby mode.</prereq>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Press and hold the <uicontrol class="+ topic/ph ui-d/uicontrol ">SHUT DOWN</uicontrol> button
+until the <uicontrol class="+ topic/ph ui-d/uicontrol ">SHUT DOWN</uicontrol> LED flashes (about 5 seconds).</cmd>
+<stepresult class="- topic/itemgroup task/stepresult "><note class="- topic/note ">Releasing the button after the flashing LED starts
+confirms that the button press is intentional.</note>After about 10
+seconds, the <uicontrol class="+ topic/ph ui-d/uicontrol ">BEAT</uicontrol> LED is no longer lit, indicating
+that the shut down preparation process is complete.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Remove power from the controller.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">Shut down is complete.</stepresult>
+</step>
+</steps>
+</taskbody>
+</task>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="role_AncestorPermissions" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Ancestor permissions</title>
+<shortdesc class="- topic/shortdesc ">Often, you may wish to grant a user the right to access
+components using categories that are not included in the component’s
+parent, such that, permissions to a component's ancestor tree are
+not explicitly granted. In this case, the system automatically grants <systemoutput class="+ topic/ph sw-d/systemoutput ">operator</systemoutput> permission level read-only access to all
+ancestor components in the component tree. Otherwise, a user would
+be unable to navigate to target component in the Nav tree.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">ancestor permission level</indexterm>
+</keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "/>
+<vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">This automatic ancestor permission level assignment is done by
+the station periodically, but you can force it at any time with a
+right-click <uicontrol class="+ topic/ph ui-d/uicontrol ">Update</uicontrol> action on the <uicontrol class="+ topic/ph ui-d/uicontrol ">CategoryService</uicontrol> node in the Nav tree.</p>
+</conbody>
+</concept>

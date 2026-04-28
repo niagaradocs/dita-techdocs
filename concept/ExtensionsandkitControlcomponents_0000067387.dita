@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="ExtensionsAndKitControlComponents-41621597" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">Extensions and kitControl components</title><shortdesc class="- topic/shortdesc ">You can add point extensions, such as alarm extension,
+history extension, or perhaps a control extension, to many kitControl
+components. Other kitControl components cannot receive extensions.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">extensions<indexterm class="- topic/indexterm ">and kit control
+components</indexterm></indexterm></keywords></metadata></prolog><conbody class="- topic/body  concept/conbody "><p class="- topic/p ">These are some specific examples of kitControl components that
+support extensions:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">Average object (<uicontrol class="+ topic/ph ui-d/uicontrol ">Math</uicontrol> folder): Inputs
+link to multiple proxy NumericPoints, each representing a room temperature.
+The Average object represents a Zone temperature (average). To this
+object you may add an alarm extension (OutOfRangeAlarmExt) and history
+extension (NumericInterval).</p></li><li class="- topic/li "><p class="- topic/p ">And object (<uicontrol class="+ topic/ph ui-d/uicontrol ">Logic</uicontrol> folder): Inputs link
+to multiple proxy BooleanPoints, each representing fan status (off
+or on). The And object links to downstream control logic. To track
+when all fans are running, you may add a history extension (BooleanChangeOfValue)
+and perhaps a control extension to collect runtime (DiscreteTotalizerExt).</p></li><li class="- topic/li "><p class="- topic/p ">NumericSwitch object (<uicontrol class="+ topic/ph ui-d/uicontrol ">Util</uicontrol> folder):
+Inputs link to two proxy NumericWritables, each representing a power
+rate (kW). The object output links to downstream control logic (and
+represents the current switched rate). To totalize this effective
+rate into energy accumulation, you can add a control extension (NumericTotalizerExt)
+and proper scaling to collect kWh.</p></li></ul><p class="- topic/p ">These components are not based on simple control points (ControlPoint)
+and do not support the addition of extensions:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">Constants components (any)</p></li><li class="- topic/li "><p class="- topic/p ">Conversion components (any)</p></li><li class="- topic/li "><p class="- topic/p ">Energy components (any)</p></li><li class="- topic/li "><p class="- topic/p ">HVAC components (except for LoopPoint, InterstartDelayControl
+and Tstat, which do support extensions)</p></li><li class="- topic/li "><p class="- topic/p ">Latches components (any)</p></li><li class="- topic/li "><p class="- topic/p ">Selects components (any)</p></li><li class="- topic/li "><p class="- topic/p ">String components (any)</p></li><li class="- topic/li "><p class="- topic/p ">Timer components (any)</p></li><li class="- topic/li "><p class="- topic/p ">Util components (except BooleanSwitch, EnumSwitch, MultiVibrator,
+NumericSwitch, StringSwitch, Ramp, Random, and SineWave, which do support extensions)</p></li></ul><p class="- topic/p ">You can quickly tell if a kitControl object can receive an extension
+by seeing if it has the frozen ProxyExt (proxy extension). To see
+this, expand the object in the kitControl palette, Nav tree or view
+the object’s property sheet. If a <parmname class="+ topic/keyword pr-d/parmname ">Proxy Ext</parmname> property is present, you can add other extensions (provided they
+are the correct type), for example a BooleanChangeOfValue history
+extension for a Logic-type object, and so forth. If you try to add
+an extension to a kitControl component that does not support extensions,
+you receive an illegal parent error message.</p><note class="- topic/note ">The frozen ProxyExt is the only use for the proxy extension
+in a kitControl object. Its value is always null. Only control points
+can be proxy points.</note></conbody></concept>

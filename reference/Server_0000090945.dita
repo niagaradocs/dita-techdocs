@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--Arbortext, Inc., 1988-2016, v.4002--><reference id="Server-39E2A293" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Server</title>
+<shortdesc class="- topic/shortdesc "><apiname class="+ topic/keyword pr-d/apiname ">Server</apiname>, <apiname class="+ topic/keyword pr-d/apiname ">ServerAIDesc</apiname> in the palette exposes a numeric component as an analog input object.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Server</indexterm></keywords></metadata>
+</prolog>
+</reference>

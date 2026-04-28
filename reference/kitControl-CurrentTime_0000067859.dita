@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-CurrentTime" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-CurrentTime</title>
+<shortdesc class="- topic/shortdesc ">This component references or displays the current system
+time formatted in Baja absolute time (AbsTime). You use it directly
+for graphics display, or with a TimeDifference object for other applications. </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">CurrentTime</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">CurrentTime is in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Timer</uicontrol> folder
+of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p><fig class="- topic/fig ">
+<title class="- topic/title ">CurrentTime properties</title>
+<image href="../graphic/kitControlCurrentTime_0000067849.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window (defaults to show the date, time and
+seconds)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Configures how much of the current time to show.<p class="- topic/p ">For example,
+some applications may not require time in seconds.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Update Time</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours minutes seconds</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Selects the time to output.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only current time</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the result of the selected time and facets.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

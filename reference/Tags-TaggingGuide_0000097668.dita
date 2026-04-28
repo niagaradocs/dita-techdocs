@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="TagsTaggingGuide-BDE340D1" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Tags</title><shortdesc class="- topic/shortdesc ">All tags in the <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> Haystack 4 tag dictionary come from the Project Haystack’s <filepath class="+ topic/ph sw-d/filepath ">defs.json</filepath> file.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Tags</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section ">Most defs in the Project Haystack core library (lib:ph) are excluded unless they meet the following requirements: <ul class="- topic/ul "><li class="- topic/li ">
+                    <p class="- topic/p ">The entity or <filepath class="+ topic/ph sw-d/filepath ">geoPlace defs</filepath></p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Subtypes of entity</p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Defs that are a tag on entity or geoPlace or one of their subtypes</p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Defs listed in the <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> configuration file: min, max, input, and output</p>
+                </li></ul><p class="- topic/p ">For remaining defs, the supertype tree of each def is traversed and if a mapped Haystack 4 type is found, a tag of the corresponding <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> type will be added to the dictionary.</p><fig class="- topic/fig "><title class="- topic/title ">Haystack 4 tag definitions</title></fig><image placement="break" scale="100" href="../graphic/TaggingTagDefinitions_0000097678.png" class="- topic/image "/><?Pub Caret 0?></section></refbody></reference>

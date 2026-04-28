@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="OnCallConfiguration-4CE9F0C2" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">onCall Configuration</title>
+<shortdesc class="- topic/shortdesc "/>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Configuration</indexterm></keywords>
+</metadata><?Pub Caret 15?>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">To configure the <apiname class="+ topic/keyword pr-d/apiname ">onCall</apiname> functionality, you will
+perform the following steps:</p>
+</conbody>
+</concept>

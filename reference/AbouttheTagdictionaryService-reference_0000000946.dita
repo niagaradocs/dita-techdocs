@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="tagdictionary-TagDictionaryService" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">tagdictionary-TagDictionaryService</title><shortdesc class="- topic/shortdesc ">The <uicontrol class="+ topic/ph ui-d/uicontrol ">Tag Dictionary Service</uicontrol>, located
+in a station’s Services directory, is the container for all tag dictionaries
+installed in the station. </shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Tag Dictionary Service</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><title class="- topic/title ">Tag Dictionary Service</title><p class="- topic/p ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Tag
+Dictionary Manager</wintitle> is the main view for the Tag Dictionary
+Service. The service has a property for defining a<uicontrol class="+ topic/ph ui-d/uicontrol ">default
+namespace</uicontrol> so that queries that do not specify a namespace
+are resolved on this default namespace. For example, if you execute
+a NEQL query for "<userinput class="+ topic/ph sw-d/userinput ">point</userinput>" (instead of "<userinput class="+ topic/ph sw-d/userinput ">n:point</userinput>"), and the default namespace ID is set to "<userinput class="+ topic/ph sw-d/userinput ">n</userinput>", your query returns all objects tagged with "<userinput class="+ topic/ph sw-d/userinput ">n:point</userinput>".</p><?Pub Caret 137?><p class="- topic/p ">Note the following information
+about the Tag Dictionary Service:</p><ul class="- topic/ul "><li class="- topic/li ">The <uicontrol class="+ topic/ph ui-d/uicontrol ">tags</uicontrol> license is required to use the
+TagDictionaryService and tag dictionaries on a station.</li><li class="- topic/li "><p class="- topic/p ">A station can support only one tag dictionary service.</p></li><li class="- topic/li ">Neither the tag dictionary service nor any tag dictionaries are
+strictly required for tagging or for performing NEQL queries. However,
+without tags or tag dictionaries, a station is not be able to take
+advantage of most of the functions available from tagging objects.
+Tags and tag dictionaries are fairly lightweight and therefore are
+included by default in all stations created by the new station wizard.</li><li class="- topic/li "><p class="- topic/p ">Installed tag dictionaries belong under the <uicontrol class="+ topic/ph ui-d/uicontrol ">TagDictionaryService</uicontrol>. They are not allowed anywhere else in the station.<fig expanse="textline" class="- topic/fig "><title class="- topic/title ">TagDictionaryService is located in the Services directory</title><image placement="break" scale="85" scope="local" width="250" href="../graphic/tagdictionaryservice_0000016280_0000000990.png" class="- topic/image "/></fig></p></li></ul>Tagging enhancements include added support
+for tag-based Px bindings which resolve NEQL query Ords instead of
+slot path Ords. The purpose of this is to enable you to create reusable
+graphics that can be installed on any component in any station where
+the bound components are properly tagged and related correctly to
+the base component. Tag-based Px bindings use a NEQL query and a new
+single scheme that resolves the query result to a single entity. The
+TagDictionaryService includes new configuration properties to support
+this functionality. For details, see the “Neqlize options” section.<note class="- topic/note ">The <apiname class="+ topic/keyword pr-d/apiname ">tagdictionary</apiname> palette includes two smart tag
+dictionaries that support the System Database and System Indexing
+features. The dictionaries allow you to easily exclude portions of
+a NiagaraStation from indexing operations, which you might want to
+do for licensing reasons. This dictionary has a smart tag, the scoped
+tag. If you add this dictionary to your station, you can drop a <wintitle class="+ topic/keyword ui-d/wintitle ">systemIndex:excluded</wintitle> marker tag on a component and any
+descendants will have this same tag implied on them. To prevent implying
+this tag on all descendants, you can apply a <wintitle class="+ topic/keyword ui-d/wintitle ">systemIndex:included</wintitle> marker tag where necessary. This dictionary has a scoped tag rule
+that can be configured to imply the <wintitle class="+ topic/keyword ui-d/wintitle ">systemIndex:excluded</wintitle> tag on portions of the station as specified in one or more Ord scopes.</note><p class="- topic/p ">The <uicontrol class="+ topic/ph ui-d/uicontrol ">Tag Dictionary Service</uicontrol> includes the
+following indexing features both of which reduce the amount of re-evaluation
+of tag rules, which improves response time for obtaining results of
+NEQL searches and traversing hierarchies: <ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">Tag Rule Index, enabled by default. For complete details, see <xref format="dita" scope="local" type="reference" href="TagRuleIndex-Tagging_0000028540.dita" class="- topic/xref "><?Pub _previewtext text="Tag Rule Index"?></xref>. </p></li><li class="- topic/li "><p class="- topic/p ">The Implied Tags Index, disabled by default, can be configured
+for user-selected implied tags. For complete details, see <xref format="dita" scope="local" type="reference" href="ImpliedTagsIndex-Tagging_0000028539.dita" class="- topic/xref "><?Pub _previewtext
+text="Implied Tags Index"?></xref>. </p></li></ul></p></section><section class="- topic/section "><title class="- topic/title ">Tag Dictionary Service properties</title><p class="- topic/p "/></section><properties class="- topic/simpletable reference/properties "><prophead class="- topic/sthead      reference/prophead "><proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd><propvaluehd class="- topic/stentry     reference/propvaluehd ">Values</propvaluehd><propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd></prophead><property class="- topic/strow       reference/property "><proptype class="- topic/stentry     reference/proptype ">Enabled</proptype><propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option></propvalue><propdesc class="- topic/stentry     reference/propdesc ">Activates and deactivates use of the function.</propdesc></property><property class="- topic/strow       reference/property "><proptype class="- topic/stentry     reference/proptype ">Status</proptype><propvalue class="- topic/stentry     reference/propvalue ">Text, read-only</propvalue><propdesc class="- topic/stentry     reference/propdesc ">Indicates the condition of the component at last polling.<ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p "><msgph class="+ topic/ph sw-d/msgph ">{ok}</msgph> indicates that the component is polling
+successfully.</p></li><li class="- topic/li "><p class="- topic/p "><msgph class="+ topic/ph sw-d/msgph ">{down}</msgph> indicates that polling is unsuccessful,
+perhaps because of an incorrect property.</p></li><li class="- topic/li "><p class="- topic/p "><msgph class="+ topic/ph sw-d/msgph ">{disabled}</msgph> indicates that the <parmname class="+ topic/keyword pr-d/parmname ">Enable</parmname> property is set to <option class="+ topic/keyword pr-d/option ">false</option>.</p></li><li class="- topic/li "><p class="- topic/p "><msgph class="+ topic/ph sw-d/msgph ">fault</msgph> indicates another problem.</p></li></ul></propdesc></property><property class="- topic/strow       reference/property "><proptype class="- topic/stentry     reference/proptype ">Fault Cause</proptype><propvalue class="- topic/stentry     reference/propvalue ">Text, read-only</propvalue><propdesc class="- topic/stentry     reference/propdesc ">Indicates why the network, component, or extension  is in
+fault.</propdesc></property><property class="- topic/strow       reference/property "><proptype class="- topic/stentry     reference/proptype ">Default Namespace Id</proptype><propvalue class="- topic/stentry     reference/propvalue ">Text, string</propvalue><propdesc class="- topic/stentry     reference/propdesc ">This TagDictionaryService property provides a field that
+is used to indicate a default tag namespace (tag dictionary), which
+is used if there is no namespace provided as part of a query. For
+example, if the default namespace is set to “hs”, a search query that
+includes only “ahu” would return all objects that are tagged with
+“hs:ahu”. </propdesc></property><property class="- topic/strow       reference/property "><proptype class="- topic/stentry     reference/proptype ">Tag Rule Index Enabled</proptype><propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> (default) or <option class="+ topic/keyword pr-d/option ">false</option></propvalue><propdesc class="- topic/stentry     reference/propdesc ">Enabled by default, the Tag Rule Index is an index on the
+Tag Dictionary Service which improves performance in evaluating tag
+rules for implied tags during NEQL searches. Setting the property
+to false automatically clears the index, as do any changes in the
+service.</propdesc></property><property class="- topic/strow       reference/property "><proptype class="- topic/stentry     reference/proptype ">Indexed Tags</proptype><propvalue class="- topic/stentry     reference/propvalue ">text string</propvalue><propdesc class="- topic/stentry     reference/propdesc ">Entering tag ids in this field enables those tags to be
+indexed for each component in the station. Use a semi-colon separated
+list for multiple tag ids that should be indexed.  This field can
+be cleared to clear the implied tag index and prevent any further
+indexing.</propdesc></property><property class="- topic/strow       reference/property "><proptype class="- topic/stentry     reference/proptype ">Neqlize Options</proptype><propvalue class="- topic/stentry     reference/propvalue ">additional details</propvalue><propdesc class="- topic/stentry     reference/propdesc ">Contains sub-properties that list default excluded relations
+and tags, enable/disable use of the default exclusions, custom excluded
+relations and tags. You can specify whether to use the default exclusions
+along with any custom exclusions or to use only the your custom exclusions.
+For details, see the following section on “Neqlize Options”.</propdesc></property></properties><section class="- topic/section "><title class="- topic/title ">Actions</title><ul compact="yes" class="- topic/ul "><li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">Clear Tag Rule Index</uicontrol> allows you to manually
+clear the Tag Rule index.</p> <note class="- topic/note ">Typically, you would not need
+to invoke this <uicontrol class="+ topic/ph ui-d/uicontrol ">Clear Tag Rule Index</uicontrol> action
+because the index is cleared automatically whenever changes are made
+in the Tag Dictionary Service. It is provided so that you can reset
+everything when you are not seeing the expected results.</note></li><li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">Invalidate All Tag Indexes</uicontrol> resets (clears)
+all tag indexes.</p></li><li class="- topic/li "><p class="- topic/p "><uicontrol class="+ topic/ph ui-d/uicontrol ">Invalidate Single Tag Index</uicontrol> resets (clears)
+the specified tag indexes.</p></li></ul><note class="- topic/note ">These actions do not discontinue indexing for the tagIDs
+listed in the <parmname class="+ topic/keyword pr-d/parmname ">Indexed Tags</parmname> property. The index
+will be rebuilt the next time a search for one of the indexed tagIDs
+is executed.</note></section></refbody></reference>

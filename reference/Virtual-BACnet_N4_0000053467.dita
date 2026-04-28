@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="bacnet-BacnetVirtualGateway" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Virtual (bacnet-BacnetVirtualGateway)</title><shortdesc class="- topic/shortdesc ">This component is the BACnet driver’s implementation
+of the Baja Virtual Gateway. A virtual gateway resides under the station’s
+component space. Other object spaces are <uicontrol class="+ topic/ph ui-d/uicontrol ">Files</uicontrol> and <uicontrol class="+ topic/ph ui-d/uicontrol ">History</uicontrol>. For a general explanation about
+Baja virtual components, refer to the <cite class="- topic/cite "><ph conkeyref="doctitles_coresw/NiagaraDriversGuide" class="- topic/ph ">Drivers Guide</ph></cite></shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">virtual components</indexterm><indexterm class="- topic/indexterm ">BacnetVirtualGateway</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p ">Each <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetDevice</uicontrol> and <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetWsDevice</uicontrol> has its own virtual gateway, at the same
+level as its device extensions (<uicontrol class="+ topic/ph ui-d/uicontrol ">Points</uicontrol>, <uicontrol class="+ topic/ph ui-d/uicontrol ">Schedules</uicontrol>, and so on).</p><p class="- topic/p ">Accessing components under
+this gateway dynamically adds them as virtual points while they are
+subscribed, but they exist only in memory (are not persisted in the
+station database like proxy points). When virtual points become unsubscribed,
+they driver automatically removes them from the station database.</p><p class="- topic/p ">Expanding a <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetVirtualGateway</uicontrol> results
+in a list of the device’s BACnet objects. Each is a <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetVirtualObject</uicontrol> that contains a number of <uicontrol class="+ topic/ph ui-d/uicontrol ">BACnetVirtualProperty</uicontrol> components to represent its properties.
+Thus, virtual points are at the object, property level.</p></section></refbody></reference>

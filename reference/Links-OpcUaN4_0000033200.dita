@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="LinksOpcUaN4-AA9F8C7E" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Third-party simulation software</title>
+<shortdesc class="- topic/shortdesc ">Third-party OPC UA simulation servers and client devices
+are available for purposes of testing and evaluation. This section
+provides a few links.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Unified Automation's UA Expert link<indexterm class="- topic/indexterm ">OPC UA Client</indexterm></indexterm><indexterm class="- topic/indexterm ">Prosys OPC UA lijnks<indexterm class="- topic/indexterm ">simulation server</indexterm><indexterm class="- topic/indexterm ">client device</indexterm></indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">If installing only the client driver, you will need to
+identify an OPC UA server for the client driver to communicate with.
+Following are a couple simulators that are available.<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Prosys OPC UA Simulation Server download: <?Pub _newline?><userinput class="+ topic/ph sw-d/userinput ">https://prosysopc.com/products/opc-ua-simulation-server/</userinput> </p></li>
+<li class="- topic/li "><p class="- topic/p ">OPC Foundation Sample Applications download: <?Pub _newline
+?><userinput class="+ topic/ph sw-d/userinput ">https://opcfoundation.org/products/view/opc-ua-server-simulator</userinput></p></li>
+</ul></p><p class="- topic/p ">If installing only the server driver, you will need to
+identify an OPC UA client device for the server driver to communicate
+with. Following are a couple of clients that are available.<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Prosys OPC UA Client download: <?Pub _newline?><userinput class="+ topic/ph sw-d/userinput ">https://www.prosysopc.com/products/opc-ua-client/evaluate/</userinput></p></li>
+<li class="- topic/li "><p class="- topic/p ">Unified Automation's UA Expert OPC UA Client download:<?Pub _newline
+?><userinput class="+ topic/ph sw-d/userinput ">https://www.unified-automation.com/downloads/opc-ua-clients.html</userinput></p></li>
+</ul></p></section>
+</refbody>
+</reference>

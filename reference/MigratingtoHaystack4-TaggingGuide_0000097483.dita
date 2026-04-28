@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<?xml-stylesheet href="file:///C:/Users/H477160/Honeywell/Tridium%20Tech%20Docs%20-%20Documents/General/Arbortext/com.tridium.atxcustom/doctypes/ditabase/N4-ditabase.style" type="text/x-styler" media="editor" alternate="yes"?><reference id="MigratingToHaystack4TaggingGuide-BCD53270" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Migrating to Haystack 4</title>
+<shortdesc class="- topic/shortdesc ">The Haystack 4 tag dictionary contains an action that adds
+Haystack 4 equivalents for Haystack 3 tags, tag groups, and relations.
+The Haystack 3 items are not removed. The equivalent tags and relations
+are mostly copies of the Haystack 3 versions with the distinction
+of the Haystack 4 <codeph class="+ topic/ph pr-d/codeph ">h4</codeph> namespace. To see the required
+item modifications, see “Changes3to4 – Project Haystack” at <cite class="- topic/cite ">https:// project-haystack.org/doc/docHaystack/Changes3to4</cite>.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Migrating to Haystack 4</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">These modifications are captured in a configuration file
+packaged with the <apiname class="+ topic/keyword pr-d/apiname ">haystack-rt</apiname> module.</p><title class="- topic/title ">Tag groups</title><p class="- topic/p ">There are no exact equivalents for Haystack
+3 tag groups. Some require only an additional “point” tag such as
+the Haystack 3 <codeph class="+ topic/ph pr-d/codeph ">dischargeAirTempSensor</codeph> group that
+results in adding the Haystack 4 proto <codeph class="+ topic/ph pr-d/codeph ">dischargeAirTempSensorPoint</codeph>. Others require an explicit mapping such as <codeph class="+ topic/ph pr-d/codeph ">energyNetSensor</codeph> to <codeph class="+ topic/ph pr-d/codeph ">totalNetAcElecActiveEnergySensorPoint</codeph>. Some
+Haystack 3 tag groups, such as <codeph class="+ topic/ph pr-d/codeph ">steamEnteringFlowSensor</codeph>, cannot be mapped and Haystack 4 equivalent tags are added for those
+tag group tags.</p></section>
+<section class="- topic/section "><p class="- topic/p ">Value tags are not included in Haystack 4 tag groups.
+Therefore as an example, the <codeph class="+ topic/ph pr-d/codeph ">voltAnglePhaseSensorAB</codeph> tag is equivalent to the <codeph class="+ topic/ph pr-d/codeph ">acElecVoltAngleSensorPoint</codeph> tag plus a “phase” tag set to “AB”.</p><?Pub Caret 11?></section>
+</refbody>
+</reference>

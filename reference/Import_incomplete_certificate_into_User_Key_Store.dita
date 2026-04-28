@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference-8392" xml:lang="en-us" class="- topic/topic       reference/reference "><title class="- topic/title ">Importing incomplete certificates into User Key Store</title><shortdesc class="- topic/shortdesc ">As of <keyword conkeyref="wh_variables_n4/niagara4.15" class="- topic/keyword "/>, you can import certificates with incomplete chains into the User Key Store, fixing previous import errors. Existing certificates with incomplete chains that are already in the User Key Store can be used by services such as the Fox Service, Web Service, niagarad and others as server certificates. Client certificates with incomplete chains may also be used as client certificates for authentication.</shortdesc><prolog class="- topic/prolog "><author translate="no" type="creator" class="- topic/author ">ClaudiaSerwe &lt;claudia.serwe@tridium.com&gt;</author><metadata class="- topic/metadata "><keywords class="- topic/keywords "/></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section ">
+            <title class="- topic/title ">Overview</title>
+            <p class="- topic/p ">This enhancement offers you increased flexibility
+when importing and utilizing certificates within  <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/>. Some companies choose not to share the public
+certificate of their Certificate Authority (CA), which can hinder the ability
+to build a complete certificate chain. Previously, this prevented certificate
+imports into <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/>.</p>
+    
+    
+        </section><section class="- topic/section "><title class="- topic/title ">Importing a certificate with an incomplete chain</title><p class="- topic/p ">The import procedure does not change. However, if the certificate has an incomplete chain,
+the import will succeed. The icon in  the 
+<wintitle class="+ topic/keyword ui-d/wintitle ">Certificate Manager</wintitle> view will display an additional badge to indicate this.</p>
+    <p class="- topic/p ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Certificate Management for Niagara Workbench</wintitle> view includes the optional column <wintitle class="+ topic/keyword ui-d/wintitle ">Full Cert Chain</wintitle> column, which you can add by selecting <uicontrol class="+ topic/ph ui-d/uicontrol ">Full Cert Chain</uicontrol> from the drop-down menu in the upper right corner. <image width="300" href="../graphic/FullCertChainDropDown.png" class="- topic/image "/> </p><p class="- topic/p ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Full Cert Chain</wintitle> column displays <option class="+ topic/keyword pr-d/option ">true</option> for
+certificates with complete chains and <option class="+ topic/keyword pr-d/option ">false</option> for certificates without complete chains.<image placement="break" width="700" href="../graphic/FullCertChainColumn.png" class="- topic/image "/> </p></section><section class="- topic/section "><title class="- topic/title ">Best practices</title><p class="- topic/p "/><p class="- topic/p ">When validating certificates, the validating entity should
+confirm a chain of trust from a trusted certificate to the presented
+certificate chain presented by the other party. If an incomplete chain is presented, full
+verification may not be possible. While it is recommended to use a complete chain for
+improved interoperability, many scenarios accept incomplete chains, including
+BACnet/SC applications.</p>
+    </section><section class="- topic/section "><title class="- topic/title ">Security considerations</title><p class="- topic/p ">The use of an incomplete certificate chain does not in itself represent a security risk. The validation process will still strive to
+establish a chain of trust. However, an incomplete chain might prevent the
+validating party  from successfully forming this trust, which can impact connections
+for certain applications.</p>
+    </section></refbody></reference>

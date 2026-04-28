@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="UsingAllRecordedValues-23067EF4" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Using all recorded values</title>
+<shortdesc class="- topic/shortdesc ">This example uses mostly recorded values to calculate the <parmname class="+ topic/keyword pr-d/parmname ">Projected Demand Average</parmname>.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Projected Demand Average<indexterm class="- topic/indexterm ">using recorded values</indexterm></indexterm></keywords></metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">Assuming that the <parmname class="+ topic/keyword pr-d/parmname ">Demand Interval</parmname> property
+is set to 15 minutes and the <parmname class="+ topic/keyword pr-d/parmname ">Percent Interval Elapsed</parmname> property is set to 93%, the system calculates demand based completely
+on recorded demand readings for the current minute and the 14 previous
+minutes. Following, is an example of using all recorded values and
+no projected values.</p>
+<codeblock class="+ topic/pre pr-d/codeblock ">minutesElapsed = 15 * 93.33 / 100 = 14
+minutesRemaining = 15 - 14 = 1
+calculated total = (current Power Input * minutesRemaining)
+	+ Power Input from each minutesElapsed interval
+calculated total = (600 * 1) + 600 + 600 + 600 + 600 + 600
+	+ 600 + 600 + 600 + 600 + 400 + 400 +400 + 400 + 400 = 8000
+projectedDemand = calculated total / (minutesElapsed
+	+ minutesRemaining)
+projectedDemand = 8000 / (14 + 1) = 533</codeblock>
+<p class="- topic/p ">In this case, there would be no projected demand. Actual demand
+is used in this calculation.</p>
+<p class="- topic/p ">This example assumes that the <parmname class="+ topic/keyword pr-d/parmname ">Power Input</parmname> is
+currently 600 and has been at that level for the previous nine minutes,
+prior to that, the value was 400.</p>
+<p class="- topic/p ">By setting the <parmname class="+ topic/keyword pr-d/parmname ">Percent Interval Elapsed</parmname> to
+a value that corresponds to the last minute of the <parmname class="+ topic/keyword pr-d/parmname ">Demand
+Interval</parmname>, the projected output is a sliding window average
+of the minutely recorded <parmname class="+ topic/keyword pr-d/parmname ">Power Input</parmname> values.</p>
+</conbody>
+</concept>

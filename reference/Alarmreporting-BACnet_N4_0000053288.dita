@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="AlarmReportingBACnet-547B6A8F" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Alarm reporting configuration</title>
+<shortdesc class="- topic/shortdesc ">The BACnet driver supports intrinsic event reporting more
+commonly called alarming. Support is available for both client and
+server operations, which means that a station can both receive (and
+reroute) BACnet alarms from Bacnet proxy points, and also send BACnet
+alarms from components that have been exported as BACnet objects.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">alarms<indexterm class="- topic/indexterm ">configuring reporting
+(sending)</indexterm></indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">Any station that is exporting control points to BACnet
+can also route BACnet alarms from those points to BACnet devices.
+A BacnetDestination component in the Alarming folder of the <apiname class="+ topic/keyword pr-d/apiname ">bacnet</apiname> palette is used to specify a receiving BACnet client
+device.</p></section>
+<section class="- topic/section "><title class="- topic/title ">Prerequisites for exporting alarms</title><p class="- topic/p ">Only
+Framework components in the station that are exported as BACnet objects
+can generate BACnet alarms, where alarming capability is intrinsic
+to that object. For example, a control point exposed as an analog
+input object must use an out-of-range algorithm provided by an <uicontrol class="+ topic/ph ui-d/uicontrol ">OutOfRangeAlarmExt</uicontrol>. Another alarm extension, such as
+the <uicontrol class="+ topic/ph ui-d/uicontrol ">StatusAlarmExt</uicontrol>, is not supported.</p><p class="- topic/p ">In general, only components exported as BACnet object types: Analog
+Input, Analog Output, Analog Value, Binary Input, Binary Output, Binary
+Value, Multistate Input, Multistate Output, or Multistate Value are
+good candidates for exporting alarms. In a station these include control
+points (often proxy points) and components from the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> module, at least those with a <uicontrol class="+ topic/ph ui-d/uicontrol ">NullProxyExt</uicontrol>. <uicontrol class="+ topic/ph ui-d/uicontrol ">Calendar</uicontrol> and <uicontrol class="+ topic/ph ui-d/uicontrol ">Schedule</uicontrol> components cannot export alarms. </p><p class="- topic/p ">A separate <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetDestination</uicontrol> component must be added under the station’s <uicontrol class="+ topic/ph ui-d/uicontrol ">AlarmService</uicontrol> for each remote BACnet client to which alarms need to be sent (one-to-one <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetDestination</uicontrol> to device). In this component, you
+specify the unique BACnet device identifier for this device, and possibly
+make other non-default configuration changes.</p></section>
+<section class="- topic/section "><title class="- topic/title ">Restrictions on exporting alarms</title><p class="- topic/p ">Only one
+alarm extension is supported on a point configured for BACnet alarming
+(referencing an alarm classs linked to a <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetDestination</uicontrol>).</p><p class="- topic/p ">Each alarm class component that you link to a <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetDestination</uicontrol> component must be exported to BACnet,
+as a notification class object. Linked <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetDestination</uicontrol> components automatically appear as entries in the <parmname class="+ topic/keyword pr-d/parmname ">Recipient
+List</parmname> of these notification class objects.</p><p class="- topic/p ">Unless
+the alarm classes you are using define escalation levels, alarms are
+not regenerated. If a BACnet device is down when the component sends
+an alarm, the alarm the driver does not save the alarm for retransmission.
+Of course, the station maintains a record of alarms in the alarm database.</p></section>
+</refbody>
+</reference>

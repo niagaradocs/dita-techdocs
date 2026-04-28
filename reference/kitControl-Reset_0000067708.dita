@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-Reset" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-Reset</title>
+<shortdesc class="- topic/shortdesc ">This component performs a linear reset on the <parmname class="+ topic/keyword pr-d/parmname ">In A</parmname> property value.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Reset</indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">Reset is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Math</uicontrol> folder
+of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p><fig class="- topic/fig ">
+<title class="- topic/title ">Reset properties</title>
+<image href="../graphic/kitControlReset_0000067523.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window (defaults to null for units, one decimal
+place for precision, negative infinity for minimum, and positive infinity
+for maximum)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Selects units and configures how the value displays:</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">units</option> defines the unit of measure from <option class="+ topic/keyword pr-d/option ">acceleration </option> to <option class="+ topic/keyword pr-d/option ">volumetric flow.</option></p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">precision </option>defines the number of decimal places. </p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">min</option> defines the lowest value allowed.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">max</option> defines the highest value allowed.</p>This definition
+applies to the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value for this component.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only number (defaults to zero (0))</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the result of the calculation.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In A</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">degrees of temperature (defaults to null)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Contains one or more input values (degrees of temperature)
+for the calculation.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Input Low Limit</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">degrees of temperature (defaults to zero (0))</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Sets the lowest limit on outside air temperature. This value
+must be less than the <parmname class="+ topic/keyword pr-d/parmname ">Input High Limit</parmname>.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Input High Limit</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">degrees of temperature (defaults to zero (0))</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Sets the highest limit on outside air temperature. This
+value must be greater than <parmname class="+ topic/keyword pr-d/parmname ">Input Low Limit</parmname>.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Output Low Limit</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">degrees of temperature (defaults to zero (0))</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Sets the lowest limit on water temperature. This value may
+(or may not) be greater than the <parmname class="+ topic/keyword pr-d/parmname ">Output High Limit</parmname>.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Output High Limit</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">degrees of temperature (defaults to zero (0))</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Sets the highest limit on water temperature. This value
+may (or may not) be greater than the <parmname class="+ topic/keyword pr-d/parmname ">Output Low Limit</parmname>.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

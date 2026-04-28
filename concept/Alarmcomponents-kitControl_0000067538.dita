@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="AlarmComponents-268983B9" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Alarm components</title>
+<shortdesc class="- topic/shortdesc ">Components include services, folders and other model building
+blocks associated with a module. You may drag them to a property or
+wire sheet from a palette. The Alarm folder in the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette contains four special-purpose alarm extensions.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">alarm components</indexterm></keywords>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">Two extensions are for Boolean type points that also have one or
+more DiscreteTotalizerExt extensions:</p>
+<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">ChangeOfStateCountAlarmExt</p></li>
+<li class="- topic/li "><p class="- topic/p ">ElapsedActiveTimeAlarmExt</p></li>
+</ul>
+<p class="- topic/p ">These extensions provide alarm capability based upon COS count
+and runtime (elapsed active time). To use either (or both) of these
+extensions in the parent Boolean point (BooleanPoint, BooleanWritable)
+place them under the corresponding DiscreteTotalizerExt.</p>
+<p class="- topic/p ">The LoopAlarmExt provides a sliding-limit type alarm for a LoopPoint.
+Its calculations are based on control deviation from a setpoint.</p>
+<p class="- topic/p ">You can configure the AlarmCountToRelay extension to monitor the
+number of alarms (alarm count) of a linked Alarm Class component.
+AlarmCountToRelay features a timed Boolean relay output.</p>
+<p class="- topic/p ">An additional alarm extension, StringChangeOfValueExt is in the <apiname class="+ topic/keyword pr-d/apiname ">alarm</apiname> palette. This extension generates an alarm upon inclusion
+or exclusion of a particular string value, or more accurately, regular
+expression (regexp) of a point's Out slot (string type).</p>
+<p class="- topic/p ">The descriptions included in the following topics appear as headings
+in documentation. They also appear as context-sensitive help topics
+when accessed by:<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Right-clicking on the object and selecting <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Views</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Guide Help</uicontrol>
+</menucascade></p></li>
+<li class="- topic/li "><p class="- topic/p ">Clicking <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Help</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Guide On Target</uicontrol></menucascade></p></li>
+</ul></p>
+</conbody>
+</concept>

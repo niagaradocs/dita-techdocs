@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="onCall-OnCallService" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">onCall-OnCallService</title>
+<shortdesc class="- topic/shortdesc ">This component is a customization of the AlarmService.
+It expands the features of standard alarm escalation to notify users
+based on a priority list (contact list). The <apiname class="+ topic/keyword pr-d/apiname ">OnCallService</apiname> initiates an email (or text message) notification for designated
+alarms, sending the notification sequentially, as alarms escalate,
+to users based on their assigned priority. The <apiname class="+ topic/keyword pr-d/apiname ">OnCallService</apiname> allows you to set up a flexible user contact list and schedule that
+list using the standard scheduler interface.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">on call service</indexterm><indexterm class="- topic/indexterm ">alarm<indexterm class="- topic/indexterm ">on call service</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<fig class="- topic/fig ">
+<title class="- topic/title ">On call processing</title>
+<image href="../graphic/oncallprocess_0000011511_0000006247.png" class="- topic/image "/></fig>
+<p class="- topic/p ">The general process for the<apiname class="+ topic/keyword pr-d/apiname ">OnCallService</apiname> is
+as follows:</p>
+<ol class="- topic/ol ">
+<li class="- topic/li "><p class="- topic/p ">A designated alarm class receives an alarm notification and
+sends the alarm notification to an <apiname class="+ topic/keyword pr-d/apiname ">OnCallRecipient</apiname>.</p></li>
+<li class="- topic/li "><p class="- topic/p ">The <apiname class="+ topic/keyword pr-d/apiname ">OnCallRecipient</apiname> sends the alarm notification
+to the active <apiname class="+ topic/keyword pr-d/apiname ">OnCallList</apiname>.</p><p class="- topic/p ">The active <apiname class="+ topic/keyword pr-d/apiname ">OnCallList</apiname> is designated by the <wintitle class="+ topic/keyword ui-d/wintitle ">On Call List
+Schedule</wintitle>. The <apiname class="+ topic/keyword pr-d/apiname ">OnCallList</apiname> specifies which
+users (<apiname class="+ topic/keyword pr-d/apiname ">OnCallContact</apiname>s) are notified. The <apiname class="+ topic/keyword pr-d/apiname ">OnCallContact</apiname> properties include a reference to a <parmname class="+ topic/keyword pr-d/parmname ">User Alarm Recipient</parmname> which specifies how the alarm notification
+is sent. For example, <parmname class="+ topic/keyword pr-d/parmname ">User Alarm Recipient</parmname> types
+include:</p><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p "><apiname class="+ topic/keyword pr-d/apiname ">EmailRecipient</apiname> (sends alarm notification
+by email)</p></li>
+<li class="- topic/li "><p class="- topic/p "><apiname class="+ topic/keyword pr-d/apiname ">SmsRecipient</apiname> (sends alarm notification by
+text message)</p></li>
+</ul></li>
+<li class="- topic/li "><p class="- topic/p ">After a specified time, if no recipient acknowledges the alarm,
+the system escalates the alarm and sends an email or text message
+to the next specified contact. The system continues to escalate each
+alarm until a recipient acknowledges it or until it reaches the final
+escalation level. At any time, any user on the contact list may acknowledge
+the alarm and halt the escalation process.</p></li>
+</ol>
+<p class="- topic/p ">To add the <apiname class="+ topic/keyword pr-d/apiname ">OnCallService</apiname> to a station, drag
+a copy of the <apiname class="+ topic/keyword pr-d/apiname ">OnCallService</apiname> from the <wintitle class="+ topic/keyword ui-d/wintitle ">onCall</wintitle> palette to the <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol></menucascade> node in the Nav tree.</p>
+</conbody>
+</concept>

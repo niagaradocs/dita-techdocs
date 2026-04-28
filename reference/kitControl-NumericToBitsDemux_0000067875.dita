@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-NumericToBitsDemux" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-NumericToBitsDemux</title>
+<shortdesc class="- topic/shortdesc ">This component converts a numeric value into the binary
+equivalent. Each bit in the component represents the binary bit position
+of the numeric integer (the component truncates numerics to whole
+numbers for the conversion). This component can express numeric values
+in bits (up to 32) as well as bytes (up to 4).</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">NumericToBitsDemux</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><note class="- topic/note ">This component is not designed to convert negative
+numbers.</note><p class="- topic/p ">NumericToBitsDemux component is located in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Util</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p><fig class="- topic/fig ">
+<title class="- topic/title ">NumericToBitsDemux properties</title>
+<image href="../graphic/kitControlNumericToBitsDemux_0000067889.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In Numeric</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number (defaults to 0.00) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the numeric input value. Typically, you would link
+a StatusNumeric output to the <parmname class="+ topic/keyword pr-d/parmname ">In Numeric</parmname> property
+of this component. The component propagates the Status portion of
+the input to all StatusBoolean and StatusNumeric (byte) outputs.<p class="- topic/p ">When null is checked, the corresponding value defines the default
+when a calculation returns null.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Bit0 through Bit31</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default)
+and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Represent the converted numeric as binaries.<p class="- topic/p ">When null
+is checked, the corresponding value defines the default when a calculation
+returns null.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Byte0 through Byte3</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number (defaults to 0.00) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Express the converted numeric input as bytes.<p class="- topic/p ">When null
+is checked, the corresponding value defines the default when a calculation
+returns null.</p></propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="OpcUaServerAlarmAcknowledgmentProce-D3C86B62" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">OpcUaServer alarm acknowledgment processing</title><shortdesc class="- topic/shortdesc ">An OPC UA client can subscribe and receive OPC UA events
+from an OPC UA server. The <wintitle class="+ topic/keyword ui-d/wintitle ">OPC UA client Alarm Manager</wintitle> may allow you to acknowledge a received event back to the OPC UA
+server. It may also allow the user to command the OPC UA server
+to enable or disable the source of the received event.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">alarm acknowledgment processing</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p ">The OPC UA server's <uicontrol class="+ topic/ph ui-d/uicontrol ">OpcUaServerAlarmDeviceExt</uicontrol> processes the Acknowledge, Enable, and Disable commands. <uicontrol class="+ topic/ph ui-d/uicontrol ">OpcUaServerAlarmDeviceExt</uicontrol> is a child of each namespace
+component. Each OPC UA server namespace has a frozen slot named <uicontrol class="+ topic/ph ui-d/uicontrol ">AlarmExt</uicontrol>. This extension is a type of <uicontrol class="+ topic/ph ui-d/uicontrol ">OpcUaServerAlarmDeviceExt</uicontrol>. It keeps track of all of the alarmable points under this
+namespace. &#160;When the extension receives an Acknowledge command
+for the OPC UA client, it attempts to locate the alarm record being
+acknowledged and acknowledges the alarm. When the extension
+receives a Disable command, it disables the alarm from generating
+any more OPC UA events from the associated control point until it
+receives an Enable command.</p></section></refbody></reference>

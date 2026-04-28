@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="saml-SAMLUserPrototypeFolder" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Prototype Folder (saml-SAMLUserPrototypeFolder)</title>
+<shortdesc class="- topic/shortdesc ">This component serves as a container for the circle of
+trust user prototypes in the remote station’s <uicontrol class="+ topic/ph ui-d/uicontrol ">UserService</uicontrol> and <uicontrol class="+ topic/ph ui-d/uicontrol ">UserPrototypes</uicontrol>, under the <uicontrol class="+ topic/ph ui-d/uicontrol ">CircleOfTrust</uicontrol>.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">saml-SAMLUser PrototypeFolder</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">This component has no unique properties of its own.</p></section>
+</refbody>
+</reference>

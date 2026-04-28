@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="SelectInstallLocation-E9879F88" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Selecting the installation location</title><shortdesc class="- topic/shortdesc ">This procedure describes selecting the location for the
+installation. The program provides the default location which you
+can change if you wish. It also provides options to use this instance
+of <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> as an installation tool and to install PDF versions of
+all documentation.<image placement="break" scale="60" href="../graphic/n4_installer_selectlocation_0000015323_0000000767.png" class="- topic/image "/></shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Selecting installation location</indexterm><indexterm class="- topic/indexterm ">Location of installed files</indexterm></keywords></metadata></prolog><taskbody class="- topic/body task/taskbody "><context class="- topic/section task/context "/><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the installation window, accept the default destination
+folder or if desired, click <uicontrol class="+ topic/ph ui-d/uicontrol ">Browse</uicontrol> to navigate
+to a different folder.</cmd><info class="- topic/itemgroup task/info "><p class="- topic/p ">The default location is <filepath class="+ topic/ph sw-d/filepath ">C:\niagara\niagara-4.x.</filepath><varname class="+ topic/keyword sw-d/varname ">nnn</varname> (where <varname class="+ topic/keyword sw-d/varname ">nnn</varname> is the build
+number). If needed, you can directly edit the folder path (for example,
+changing the drive from C: to D:), or click <uicontrol class="+ topic/ph ui-d/uicontrol ">Browse</uicontrol> and navigate to another folder.</p><p class="- topic/p "><note class="- topic/note ">If you change the default
+destination folder, you can click the <uicontrol class="+ topic/ph ui-d/uicontrol ">Refresh</uicontrol> button to recalculate the <uicontrol class="+ topic/ph ui-d/uicontrol ">Space Required</uicontrol> and <uicontrol class="+ topic/ph ui-d/uicontrol ">Space Available</uicontrol> values.</note></p></info></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Accept or deselect, as needed, the two options that are
+selected by default: </cmd><info class="- topic/itemgroup task/info "><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p "><b class="+ topic/ph hi-d/b ">This instance of <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/> will be used as an installation tool</b> — Typically,
+you leave this selected.</p><p class="- topic/p ">This option installs additional files
+that allow the installation to be used to commission controllers.
+Always select this option for any <keyword conkeyref="wh_variables_n4/Supervisor" class="- topic/keyword "/> host. This option installs the distribution (dist) files
+in the appropriate folders under the <keyword conkeyref="wh_variables_n4/niagara4" class="- topic/keyword "/> version (software) folder. Using a platform connection,
+these files allow you to commission, or provision, a remote host to
+the same revision and build level as this <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword ">Niagara</keyword> installation. </p></li><li class="- topic/li "><p class="- topic/p "><b class="+ topic/ph hi-d/b ">Install Documentation</b> — Installing this documentation
+requires additional disk storage. It is not required for any functions,
+but it is recommended for reference information. </p><p class="- topic/p ">This option
+installs PDF versions of the help files, hardware installation guides,
+and other manuals, which are available as PDFs, in the<filepath class="+ topic/ph sw-d/filepath ">!docs</filepath> folder. </p><note class="- topic/note ">These are the same PDFs that are in the <filepath class="+ topic/ph sw-d/filepath ">!docs</filepath> folder of the zipped distribution file (or CD).</note></li></ul></info></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Click <uicontrol class="+ topic/ph ui-d/uicontrol ">Next</uicontrol> to proceed.</cmd></step></steps></taskbody></task>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="OfflineDeviceAndPointConfig-4CCB1DC3" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Offline device and point configuration</title><shortdesc class="- topic/shortdesc ">The EDE (Engineering Data Exchange) configuration utility,
+running on either a controller or PC platform, can discover BACnet
+devices and points from EDE configuration files, creating an offline
+BACnet network of corresponding devices and points with the same hierarchy
+and type information as described in the EDE configuration files.<!--The filename for this reference topic is Configuration-BACnet_N4. It cannot be renamed.--></shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">EDE configuration utility</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p ">Support for EDE offline discovery is built into the Framework.
+It does not run in the remote controller platform although it can
+operate on the controller station.</p></section><section class="- topic/section "><title class="- topic/title ">When to use this utility</title><p class="- topic/p ">Within the <keyword conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara_fw-NoTM" class="- topic/keyword "/> you should use this utility:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">When upgrading to a new controller. You can export EDE data
+from the station running on the old controller and use the exported
+EDE configuration files with a discovery job to update the station
+database in the new station before connecting devices.</p></li><li class="- topic/li "><p class="- topic/p ">To configure a Supervisor station. You can export EDE data
+from each controller station and use the exported EDE configuration
+files to discover and update the database in the Supervisor station.</p></li></ul></section><section class="- topic/section "><title class="- topic/title ">Offline configuration</title><p class="- topic/p ">This utility configures
+a station that is offline, where offline means that no BACnet devices,
+which will be imported into the station, are currently connected to
+the station’s controller. The station itself is running and
+accessible using <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/>.</p><p class="- topic/p ">To facilitate network configuration, the station
+requires the Bacnet EDE Service component, which handles the appropriate
+job submissions for device and point discovery. Standard manager views
+on the BACnet network and BACnet device components manage these job
+submissions.</p><p class="- topic/p ">The discovery process follows the standard system
+process of discovery on the network for all devices and on each device
+for the underlying points.</p></section><section class="- topic/section "><title class="- topic/title ">Licensing</title><p class="- topic/p ">This utility does not require
+a separate license. A BACnet license is sufficient to use this feature.</p></section><section class="- topic/section "><title class="- topic/title ">Object export not supported</title><p class="- topic/p ">This utility
+supports the automatic creation of a BACnet network. Device and point
+data are intended to configure connections to real-world BACnet devices
+and points. The purpose is to import state information from the points
+into a running station. This utility does not support the configuration
+of existing components for export as point data to BACnet devices.</p></section></refbody></reference>

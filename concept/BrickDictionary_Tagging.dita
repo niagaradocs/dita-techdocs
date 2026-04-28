@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="BrickTagDictionary-78745259" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">Brick tag dictionary</title><shortdesc class="- topic/shortdesc ">The Brick tag dictionary is an instance of the standard <keyword conkeyref="wh_variables_n4/niagara" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara" class="- topic/keyword "/> Smart Tag Dictionary and does not contain any custom properties
+or actions. There are no custom views associated with this dictionary.
+The dictionary contains a collection of definitions for tags, tag
+groups, relations, and tag rules. </shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Brick tag dictionary</indexterm></keywords></metadata></prolog><conbody class="- topic/body  concept/conbody "><p class="- topic/p ">To create a Brick tag dictionary, establish a Fox connection to
+the station. In the <apiname class="+ topic/keyword pr-d/apiname ">brick</apiname> palette, select the <uicontrol class="+ topic/ph ui-d/uicontrol ">Brick</uicontrol> component and add it to the <uicontrol class="+ topic/ph ui-d/uicontrol ">TagDictionaryService</uicontrol> container on the station.</p><p class="- topic/p ">You have three tag dictionary components available for
+installation from the <apiname class="+ topic/keyword pr-d/apiname ">brick</apiname> 
+      palette:
+      <ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">The 
+      main <uicontrol class="+ topic/ph ui-d/uicontrol ">Brick</uicontrol> tag dictionary includes tag groups that
+contain tags derived from the Brick schema subclass and
+<parmname class="+ topic/keyword pr-d/parmname ">hasAssociatedTag</parmname> information.</p></li><li class="- topic/li "><p class="- topic/p ">The <uicontrol class="+ topic/ph ui-d/uicontrol ">BrickHasTagsOnly</uicontrol> dictionary
+in the AlternateBrickTagDictionaries folder      
+contains tag groups with tags derived 
+      only 
+      from
+the <parmname class="+ topic/keyword pr-d/parmname ">hasAssociatedTag</parmname> information
+      .</p></li><li class="- topic/li "><p class="- topic/p ">The
+<uicontrol class="+ topic/ph ui-d/uicontrol ">BrickSubclassesOnly</uicontrol> dictionary
+in the <parmname class="+ topic/keyword pr-d/parmname ">AlternateBrickTagDictionaries</parmname> folder contains tag groups with tags derived 
+      only 
+      from
+subclass information.</p></li></ul></p><section class="- topic/section "><title class="- topic/title ">Overview</title><p class="- topic/p ">A Brick schema organizes entities
+of a building into a class hierarchy, where each level is a more specific
+version of its parent. In Brick, the types are defined as a hierarchy
+of classes.</p><p class="- topic/p ">The Brick tag dictionary contains a library tag groups, relations, and rules that enable a <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> station to be modelled using Brick semantics defined in
+the Brick ontology. As a station is being constructed, these dictionary
+elements can be applied, or they can be applied to components of an
+existing station. The Brick tag dictionary does not contain any custom
+properties or actions, and it has no custom views associated.</p><p class="- topic/p ">Module information: The <apiname class="+ topic/keyword pr-d/apiname ">brick-rt</apiname> module, which
+needs to be installed on your station, implements a <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> Smart tag dictionary to support modelling a system using
+the Brick schema. This module has a dependency in the <apiname class="+ topic/keyword pr-d/apiname ">tagdictionary-rt</apiname> module, which is required for any tag dictionary.</p><p class="- topic/p ">The Brick
+tag dictionary contains the following definitions for  tag groups,
+relations, and tag rules:</p><ul class="- topic/ul "><li class="- topic/li "><cite class="- topic/cite ">Brick subclasses</cite>: Brick schema entities can be
+declared a subclass of another entity. These are modeled as 
+tag groups  in the dictionary. The subclass hierarchy elements are included as tags in a tag group. For example, the <parmname class="+ topic/keyword pr-d/parmname ">airHandlingUnit</parmname> tag group includes subclass entries for <parmname class="+ topic/keyword pr-d/parmname ">hvacEquipment</parmname>, <parmname class="+ topic/keyword pr-d/parmname ">equipment</parmname>, and <parmname class="+ topic/keyword pr-d/parmname ">entity</parmname>.</li><li class="- topic/li "><cite class="- topic/cite ">Brick </cite><parmname class="+ topic/keyword pr-d/parmname ">hasAssociatedTag</parmname>: Many Brick schema
+entities have a <parmname class="+ topic/keyword pr-d/parmname ">hasAssociatedTag</parmname> property. These are modeled in the dictionary as tag groups.  For example, the <parmname class="+ topic/keyword pr-d/parmname ">airHandlingUnit</parmname> tag group includes tags for <parmname class="+ topic/keyword pr-d/parmname ">air</parmname>, <parmname class="+ topic/keyword pr-d/parmname ">equipment</parmname>,<parmname class="+ topic/keyword pr-d/parmname "> handler</parmname>, <parmname class="+ topic/keyword pr-d/parmname ">handling</parmname>, and <parmname class="+ topic/keyword pr-d/parmname ">unit</parmname>. </li><li class="- topic/li "><cite class="- topic/cite ">Brick</cite> 
+        <parmname class="+ topic/keyword pr-d/parmname ">aliasOf</parmname>: A few Brick schema entities are declared as an
+alias of another entity. For example, the Brick AHU entity is an
+alias of the Air_Handling_Unit entity. Alias entities are included in the Brick
+dictionary as tag groups with the same contents as the
+originating entity tag group.</li><li class="- topic/li "><cite class="- topic/cite ">Brick
+class</cite>:
+         Each
+tag group includes a class tag with a String value of
+the Class name declared in the Brick schema. For example, the 
+        <parmname class="+ topic/keyword pr-d/parmname ">airHandlingUnit</parmname>
+         tag
+group contains a 
+        <parmname class="+ topic/keyword pr-d/parmname ">class</parmname>         tag         with
+the value "Air_Handling_Unit".
+        </li><li class="- topic/li "><cite class="- topic/cite ">Brick Id</cite>: The <parmname class="+ topic/keyword pr-d/parmname ">id</parmname> tag has been removed from the dictionary.</li><li class="- topic/li "><cite class="- topic/cite ">Brick inverse relations</cite>: Most of the relationships
+defined in the Brick schema have associated inverse relationships.
+For example, if one entity has a <apiname class="+ topic/keyword pr-d/apiname ">bk:isPartOf</apiname> relationship
+to another entity, there is an associated inverse <apiname class="+ topic/keyword pr-d/apiname ">bk:hasPart</apiname> relationship. In these cases, when you apply one of these relations
+between two entities in a station, the dictionary rules will imply
+the inverse relation between those two entities.</li></ul><note class="- topic/note ">The Haystack smart tag dictionary and the Brick tag dictionary
+can run simultaneously. </note><?Pub Caret 23?></section></conbody></concept>

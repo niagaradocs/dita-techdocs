@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="SettingUpMessagingComponents" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Setting up SMS components</title>
+<shortdesc class="- topic/shortdesc ">The <wintitle class="+ topic/keyword ui-d/wintitle ">sms</wintitle> palette contains the SMS components.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">SMS<indexterm class="- topic/indexterm ">setup</indexterm></indexterm>
+</keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq ">Your station is licensed to use the SMS feature.</prereq>
+<context class="- topic/section task/context "/>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Open the <wintitle class="+ topic/keyword ui-d/wintitle ">sms</wintitle> palette and drag the <apiname class="+ topic/keyword pr-d/apiname ">SmsService</apiname> component to the <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol></menucascade> container.</cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To prepare to acknowledge alarms via sms, drag the <apiname class="+ topic/keyword pr-d/apiname ">SmsAlarmAcknowledger</apiname> from the <wintitle class="+ topic/keyword ui-d/wintitle ">sms</wintitle> palette
+to the <uicontrol class="+ topic/ph ui-d/uicontrol ">SmsService</uicontrol> node in the Nav tree.</cmd>
+</step>
+</steps>
+</taskbody>
+</task>

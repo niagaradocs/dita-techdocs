@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="J8SystemShell-AA1582D0" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">System shell</title><!--This topic is NOT shared with docJ8Startup-it is a new topic for J9.--><shortdesc class="- topic/shortdesc ">All controllers have a system shell that provides low-level
+access to a few basic platform settings. Using a special power-up
+mode and a serial connection via an appropriate type USB cable connected
+to the controller, you can access this system shell from your PC.
+System shell is also available via SSH (Secure Shell) provided that
+SSH is enabled in the controller.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">system shell</indexterm></keywords><prodinfo class="- topic/prodinfo "><prodname class="- topic/prodname "><keyword conkeyref="wh_variables_n4/niagara" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara" class="- topic/keyword "/></prodname><vrmlist class="- topic/vrmlist "><vrm version="4.1" class="- topic/vrm "/></vrmlist></prodinfo></metadata></prolog><conbody class="- topic/body  concept/conbody "><p class="- topic/p ">Typical usage is for initial controller setup, troubleshooting,
+or to create or restore a backup. Also, in the case of IP address
+mis-configuration, you can use the serial system shell to regain access
+to the unit.</p><p class="- topic/p ">Depending on your preference, you may wish to use the serial shell
+to set the controller IP address as an alternative to reconfiguring
+your PC’s IP address in Windows (to initially connect to a new controller).
+If done as the first step, afterwards you could connect normally (Ethernet/IP)
+and perform all the other <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> software installation and platform configuration using <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/>  and the <wintitle class="+ topic/keyword ui-d/wintitle ">Commissioning Wizard</wintitle>. This
+method would save you from having to re-configure your PC’s IP address
+settings in Windows: first to connect to the controller as shipped
+from the factory, and then back again to its original settings.</p><p class="- topic/p ">The following topics provide more details.</p><?Pub Caret 20?></conbody></concept>

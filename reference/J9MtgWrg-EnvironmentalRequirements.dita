@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<?Pub UDT template _font?><reference id="EnvironmentalRequirements-0B4457B9" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Environmental requirements</title>
+<shortdesc class="- topic/shortdesc ">This product is for <b class="+ topic/ph hi-d/b ">indoor use only</b> at an altitude
+no higher than 2,000m (6,562 ft.).</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">requirements<indexterm class="- topic/indexterm ">environmental</indexterm></indexterm><indexterm class="- topic/indexterm ">environmental requirements</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">For a unit mounted inside an enclosure, ensure that the
+enclosure is designed to keep the unit within its required operating
+temperature range (considering a 24-watt dissipation by the controller).
+This is important if the controller is mounted inside an enclosure
+with other heat-producing equipment.</p><p class="- topic/p ">Ambient conditions must
+be within these ranges:</p><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Operating Temperature: -20°C to 60°C (-4°F to 140°F)</p></li>
+<li class="- topic/li "><p class="- topic/p ">Storage Temperature: -40°C to 85°C (-40°F to 185°F)</p></li>
+<li class="- topic/li "><p class="- topic/p ">Relative humidity: 5% to 95% non-condensing. Pollution Degree
+2</p></li>
+<li class="- topic/li "><p class="- topic/p ">Supply (mains) voltage allowable voltage fluctuation: +/- 10%</p></li>
+</ul><p class="- topic/p ">Do not mount the unit:</p><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">In an area with excessive moisture, corrosive fumes, or explosive
+vapors</p></li>
+<li class="- topic/li "><p class="- topic/p ">Where vibration or shock is likely to occur</p></li>
+<li class="- topic/li "><p class="- topic/p ">In a location subject to electrical noise, such as in the proximity
+of large electrical contactors, electrical machinery, welding equipment,
+and so on</p></li>
+</ul></section>
+</refbody>
+</reference>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="Proportional-onlyControl-24A3A1A6" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Proportional-only control</title>
+<shortdesc class="- topic/shortdesc ">P-only control is just reset action, where loop output
+is directly proportional to the magnitude of the setpoint error (E<sub class="+ topic/ph hi-d/sub ">S</sub>) and the size of the proportional gain (K<sub class="+ topic/ph hi-d/sub ">P</sub>).</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">PID<indexterm class="- topic/indexterm ">proportional-only control</indexterm></indexterm></keywords></metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">P-only loop output is linear, and is calculated as follows:</p>
+<p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">Output = (K<sub class="+ topic/ph hi-d/sub ">P</sub> x E<sub class="+ topic/ph hi-d/sub ">S</sub>) + bias</codeph> (if action = direct) or</p>
+<p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">Output = - ((K<sub class="+ topic/ph hi-d/sub ">P</sub> x E<sub class="+ topic/ph hi-d/sub ">S</sub>) + bias)</codeph> (if action = reverse)</p>
+<p class="- topic/p ">where &#160;<codeph class="+ topic/ph pr-d/codeph ">E<sub class="+ topic/ph hi-d/sub ">S</sub> = [PV - setpt]</codeph></p>
+<p class="- topic/p ">If you are using proportional-only loop control, follow these guidelines:</p>
+<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Output limits: &#160;Define the <parmname class="+ topic/keyword pr-d/parmname ">Maximum Output</parmname> and <parmname class="+ topic/keyword pr-d/parmname ">Minimum Output</parmname> properties for the loop
+output, noting that the maximum value must be greater than the minimum.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Proportional Gain: &#160;&#160;Calculate and enter a proportionalConstant
+(K<sub class="+ topic/ph hi-d/sub ">P</sub>) property value starting with this formula:</p><p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">[output range (maxOutput - minOutput)] / throttling range</codeph></p><p class="- topic/p ">where <codeph class="+ topic/ph pr-d/codeph ">throttling range</codeph> is the corresponding
+result in the process variable.</p><p class="- topic/p ">For example, for a temperature
+loop where a 0-to-100% loop output results in a 20 degree swing in
+the process variable, a starting point KP is:</p><p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">[(100%
+- 0%)/ 20deg.] = [(100% / 20deg.] = 5</codeph></p><p class="- topic/p ">When tuning the
+loop, you can try increasing this value (effectively using only a
+portion of the throttling range) to eliminate the amount of setpoint
+error. However, if you increase the K<sub class="+ topic/ph hi-d/sub ">P</sub> too much, this typically
+results in a constant oscillation of the process variable (above and
+below the setpoint).</p></li>
+<li class="- topic/li "><p class="- topic/p ">Bias: Assign the bias property an output-midpoint value (for
+example, 50.0). This allows for equal corrections for a process variable
+above or below setpoint.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Integral and Derivitive Gain: Set the properties integralConstant
+and derivativeConstant to 0.0 (the defaults).</p></li>
+</ul>
+</conbody>
+</concept>

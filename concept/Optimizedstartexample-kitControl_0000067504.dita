@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="OptimizedStartExample-25A285CC" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">Optimized start example</title><shortdesc class="- topic/shortdesc ">To optimize performance, the framework turns an air handling
+unit on and off based on a weekly schedule.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">start example</indexterm><indexterm class="- topic/indexterm ">OptimizeStartStop</indexterm></keywords></metadata></prolog><conbody class="- topic/body  concept/conbody "><p class="- topic/p "/><fig class="- topic/fig "><title class="- topic/title ">A simple OptimizedStartStop component wire sheet</title><image placement="break" scale="65" scope="local" width="600" href="../graphic/kitControlOSSExample1Annotated_0000067525.png" class="- topic/image "/></fig><p class="- topic/p ">In this example:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">A weekly schedule specifies occupancy times and is linked to
+the component for calculations (1). The schedule is also linked directly
+(bypassing the component) to the <parmname class="+ topic/keyword pr-d/parmname ">In16</parmname> property
+(lowest priority in this case) of the occupancy control point (AhuOccCmd)
+(2).</p></li><li class="- topic/li "><p class="- topic/p ">The components <parmname class="+ topic/keyword pr-d/parmname ">Start Enable</parmname> and <parmname class="+ topic/keyword pr-d/parmname ">Stop Enable</parmname> properties (3) are both <option class="+ topic/keyword pr-d/option ">true</option>. This means that both optimized starts and optimized stops are enabled.</p></li><li class="- topic/li "><p class="- topic/p ">The <parmname class="+ topic/keyword pr-d/parmname ">Start Time</parmname> and <parmname class="+ topic/keyword pr-d/parmname ">Stop Time
+Command</parmname>s (4) are linked to priority inputs <parmname class="+ topic/keyword pr-d/parmname ">In12</parmname> and <parmname class="+ topic/keyword pr-d/parmname ">In13</parmname> respectively of the occupancy control
+point (AhuOccCmd) (5). These commands are true when an optimal start
+or stop condition is required, otherwise the outputs are set to <option class="+ topic/keyword pr-d/option ">null</option>, which relinquishes control to the next higher priority
+level.</p></li></ul><fig class="- topic/fig "><title class="- topic/title ">Another OptimizedStartStop component wire sheet</title><image placement="break" scale="65" scope="local" width="550" href="../graphic/kitControlOSSExample2_0000067524.png" class="- topic/image "/></fig><p class="- topic/p ">Additional logic is linked into the occupancy command component
+(AhuOccCmd) to control which logic has priority on specifying the
+AhuOccCmd Boolean point status, as follows:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">In9</parmname> temperature control overrides a demand
+limiting link from an EDL component to <parmname class="+ topic/keyword pr-d/parmname ">In10</parmname>.
+This prevents a load shed if the comfort range that can be configured
+is exceeded.</p></li><li class="- topic/li "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">In10</parmname> (demand limiting link from the EDL
+component) overrides an OptimizedStartStop component’s Stop
+link into <parmname class="+ topic/keyword pr-d/parmname ">In12</parmname>.</p></li><li class="- topic/li "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">In12</parmname> (OptimizedStartStop component’s
+Stop link) overrides a Start link into <parmname class="+ topic/keyword pr-d/parmname ">In13</parmname> (as
+described above).</p></li><li class="- topic/li "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">In13</parmname> (optimal start) overrides the schedule
+link to <parmname class="+ topic/keyword pr-d/parmname ">In16</parmname> (lowest priority) (as described
+above).</p></li></ul></conbody></concept>

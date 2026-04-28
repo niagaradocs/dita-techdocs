@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="FAQBACnetSC-4FC0F1C2" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">FAQ</title><shortdesc class="- topic/shortdesc ">BACnet/SC is designed to meet the requirements of IT departments
+for ease of installation, standard security best practices and minimal
+ongoing support.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">faq</indexterm></keywords></metadata></prolog><conbody class="- topic/body  concept/conbody "><section class="- topic/section "><title class="- topic/title ">What is a BACnet node?</title><p class="- topic/p ">A BACnet/SC node
+can be a simple device, such as a thermostat, or a more sophisticated
+device that routes to an existing BACnet system, or it could be the
+main workstation for the entire facility. A node connects to the primary
+hub from which it receives broadcast and unicast messages. Or it can
+directly connect to one or more nodes to receive unicast messages
+from that node only.</p></section><section class="- topic/section "><title class="- topic/title ">What happens when a certificate expires?</title><indexterm class="- topic/indexterm ">certificate expiration</indexterm><p class="- topic/p ">A device with an expired certificate
+cannot connect to the hub. Device certificates need to be updated
+in a timely manner. This can be an administrative challenge especially
+if protecting your installation is extremely important.</p></section><section class="- topic/section "><title class="- topic/title ">Does a hub re-route messages or decode them?</title><indexterm class="- topic/indexterm ">hub function</indexterm><p class="- topic/p ">The TLS connection from the
+device terminates at the hub. The hub decodes the message, then encrypts
+it again to send it on to the next connection. Decoding lets the hub
+read the destination address and properly forward the message to the
+correct recipient. A hub receives messages from only trusted devices.</p></section><section class="- topic/section "><title class="- topic/title ">What about the BBMD (BACnet/IP Broadcast Management
+Device)?</title><indexterm class="- topic/indexterm ">BBMD</indexterm><p class="- topic/p ">BACnet/SC requires no
+BBMD configuration with static IP addresses. The hub takes part of
+this functionality in that it distributes the broadcast. The hub is
+the heart of the BACnet/SC network. It does not require a static IP
+address to pass data through a secure web socket using a URI (Universal
+Resource Identifier).The host can use a regular URI DNS name and even
+a resource path to locate the hub and make a web socket connection.</p></section><section class="- topic/section "><title class="- topic/title ">Can a network have different types of hubs?</title><indexterm class="- topic/indexterm ">hub</indexterm><p class="- topic/p ">A hub may be a controller, a BACnet
+router, a Supervisor PC or a cloud service. With cloud deployment,
+a hub may be a virtual machine in a data center.</p></section><section class="- topic/section "><title class="- topic/title ">What happens if a hub fails?</title><indexterm class="- topic/indexterm ">hub<indexterm class="- topic/indexterm ">failure</indexterm></indexterm><p class="- topic/p ">If the primary hub fails, a redundant,
+failover hub automatically takes over.</p><fig class="- topic/fig "><title class="- topic/title ">Redundant hub</title><image placement="break" scope="local" width="500" href="../graphic/BACnetSCFailoverHub_0000081040.png" class="- topic/image "/></fig><p class="- topic/p ">The failover hub takes over when the device node cannot reach
+the primary hub. A node is configured to identify both the primary
+and failover hubs. The use of a failover hub is optional, but recommended.</p><p class="- topic/p ">When the primary hub is available again, the network automatically
+reconnects to it.</p></section><section class="- topic/section "><title class="- topic/title ">Should we get rid of your BACnet/IP with VPN?</title><indexterm class="- topic/indexterm ">VPN</indexterm><p class="- topic/p ">Using a VPN is more secure than standard
+BACnet/IP. You should upgrade your networks one step at a time. This
+is possible because messages that are sent over a BACnet/SC link layer
+can be routed to and from BACnet/IP link layers.</p></section><section class="- topic/section "><title class="- topic/title ">What about scalability?</title><indexterm class="- topic/indexterm ">scalability</indexterm><p class="- topic/p ">The number of devices a BACnet/SC supports depends on the hub.
+A large installation may have multiple hubs. Certificate management
+is designed to support large numbers of hubs and devices.</p></section></conbody></concept>

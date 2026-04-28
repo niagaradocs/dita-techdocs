@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="ComponentsInTheBacnetOwsModule-54239B3F" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Components in the bacnetOws module</title>
+<shortdesc class="- topic/shortdesc ">Components include services, folders and other model building
+blocks associated with a module. You may drag them to a property or
+wire sheet from a palette. The components of the <apiname class="+ topic/keyword pr-d/apiname ">bacnetOWS</apiname> module support BACnet features running in a Supervisor PC.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">components<indexterm class="- topic/indexterm ">bacnetOws module</indexterm></indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">Descriptions included in the following topics appear as
+context-sensitive help topics when accessed by:<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Right-clicking on the object and selecting <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Views</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Guide Help</uicontrol>
+</menucascade></p></li>
+<li class="- topic/li "><p class="- topic/p ">Clicking <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Help</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Guide On Target</uicontrol></menucascade></p></li>
+</ul></p></section>
+</refbody>
+</reference>

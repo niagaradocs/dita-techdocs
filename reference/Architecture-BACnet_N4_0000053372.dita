@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="Architecture-4DFC1E9D" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Architecture</title><shortdesc class="- topic/shortdesc ">BACnet (Building Automation Control network) is a data
+communication protocol developed by ASHRAE (American Society of Heating,
+Refrigerating, and Air Conditioning Engineers) for managing building
+automation devices. The BACnet driver uses the standard     <keyword conkeyref="wh_variables_n4/niagara_fw" class="- topic/keyword "/> network architecture to implement this protocol. The <cite class="- topic/cite "><ph conkeyref="doctitles_coresw/NiagaraDriversGuide" class="- topic/ph ">Drivers Guide</ph></cite> documents the Framework’s general
+approach.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">architecture</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><title class="- topic/title ">Network types</title><p class="- topic/p ">A remote station’s <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetNetwork</uicontrol> is unique because it simultaneously supports
+multiple BACnet link layer types using different BACnet communication
+protocols:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">BACnet/IP</p></li><li class="- topic/li "><p class="- topic/p ">BACnet/SC</p></li><li class="- topic/li "><p class="- topic/p ">BACnet/Ethernet</p></li><li class="- topic/li "><p class="- topic/p ">BACnet MS/TP for host platforms that are based on QNX and <ph conkeyref="host_models/nc9000" class="- topic/ph "/>.</p></li></ul><p class="- topic/p ">Thus, depending on the configuration, a <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetNetwork</uicontrol> may proxy BACnet devices that not only reside in different BACnet
+networks, but are also accessed using different physical ports on
+the host controller.</p></section><section class="- topic/section "><title class="- topic/title ">Client/server operations</title><p class="- topic/p ">BACnet is based
+on a client/server model. The client is in charge and tells the server
+what and how to deliver data. The server responds to client requests.
+A remote host platform may function as both a client and a server.</p></section><section class="- topic/section "><title class="- topic/title ">Server operations</title><p class="- topic/p ">If the host platform is
+licensed as a BACnet server, it can export any number of selected
+types of objects from the station (regardless of location) to appear
+as BACnet objects in a client. As such, these objects can service
+client requests from any networked BACnet device. This includes exporting
+schedules, calendars and histories. Exported histories appear externally
+as BACnet Trend Log objects.</p><note type="note" class="- topic/note "><p class="- topic/p ">BACnet AWS Supervisor
+(<uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetAwsNetwork</uicontrol>) and BACnet OWS Supervisor
+(<uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetOwsNetwork</uicontrol>) stations are not typically
+licensed for server side (export) operations.</p></note><p class="- topic/p ">The BACnet
+driver, running in a remote controller, is capable of managing both
+server and client operations concurrently. In special cases, you may
+configure a remote controller station to run as a BACnet server only.</p></section></refbody></reference>

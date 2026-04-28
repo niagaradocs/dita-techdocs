@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="FinishInstallOptions-E987ADB9" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Finishing install options</title><shortdesc class="- topic/shortdesc ">The final window appears after the installation of all
+files. The options allow you to launch <keyword conkeyref="wh_variables_n4/Workbench" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword "/> immediately, install and start the platform daemon, and
+copy daemon data from the prior release.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo "><prodname class="- topic/prodname "><keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword ">Niagara</keyword></prodname><vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/><vrm version="4.1" class="- topic/vrm "/></vrmlist></prodinfo></metadata><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Finishing install options</indexterm></keywords></metadata></prolog><taskbody class="- topic/body task/taskbody "><context class="- topic/section task/context "><fig class="- topic/fig "><title class="- topic/title ">Finish install window</title><image placement="break" scale="55" scope="local" href="../graphic/n4_installer_selectfinish_0000015321_0000000765.png" class="- topic/image "/></fig><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p "><b class="+ topic/ph hi-d/b ">Launch <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword "/></b>.</p><p class="- topic/p ">This option is selected by default, and recommended.</p></li><li class="- topic/li "><p class="- topic/p "><b class="+ topic/ph hi-d/b ">Install and Start Platform Daemon</b>.</p><p class="- topic/p ">This option
+is selected by default. Any <keyword conkeyref="wh_variables_n4/Supervisor" class="- topic/keyword "/> installation, or engineering workstation PC that is licensed
+to run a local station requires that you start the platform daemon.</p><p class="- topic/p ">Installing the platform daemon automatically stops and replaces
+any other running platform daemon with the platform daemon from this
+release. Also, at any time you can install and start the platform
+daemon from any installed <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword ">Niagara</keyword> build, using the <uicontrol class="+ topic/ph ui-d/uicontrol ">Start</uicontrol> menu
+shortcut: <uicontrol class="+ topic/ph ui-d/uicontrol ">Install Platform Daemon</uicontrol>.</p><p class="- topic/p ">The
+platform daemon runs as a Windows service. To verify that it is running,
+from a command prompt, type: <userinput class="+ topic/ph sw-d/userinput ">services.msc</userinput> and
+press <uicontrol class="+ topic/ph ui-d/uicontrol ">Enter</uicontrol>. In the <uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol> window, double-click on the <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword ">Niagara</keyword> named service to see details, such as the software
+release and build number.</p></li><li class="- topic/li "><p class="- topic/p "><b class="+ topic/ph hi-d/b ">Copy Daemon Data From Prior Version</b></p><p class="- topic/p ">This option
+is selected by default when the installer detects daemon data in an
+earlier version. When selected, the installer copies from the earlier
+version the stations, templates, and other files needed for the stations
+to run. </p> <note class="- topic/note ">In <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword ">Niagara</keyword>, if the installer detects that there is an existing
+daemon home for the version being installed, then this option is not
+available. This is to avoid overwriting a daemon home with an older
+version when re-installing software or upgrading a newer version. <p class="- topic/p ">For example, if you have existing <keyword conkeyref="wh_variables_n4/niagara4.10" class="- topic/keyword "/> and <keyword conkeyref="wh_variables_n4/niagara4.11" class="- topic/keyword "/> daemon homes, you install a newer version of <keyword conkeyref="wh_variables_n4/niagara4.11" class="- topic/keyword "/>, and, if this option was selected, the installer would
+copy files from the <keyword conkeyref="wh_variables_n4/niagara4.10" class="- topic/keyword "/> daemon home to the existing <keyword conkeyref="wh_variables_n4/niagara4.11" class="- topic/keyword "/> daemon home, overwriting more recent files. This is, most
+likely, an unwanted outcome.</p></note><?Pub Caret 12?></li></ul></context><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Click <uicontrol class="+ topic/ph ui-d/uicontrol ">Finish</uicontrol> to close the window
+and execute the selected options.</cmd></step></steps></taskbody></task>

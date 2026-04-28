@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--Arbortext, Inc., 1988-2016, v.4002--><reference id="bacnet-Points-39DD939C" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Points</title>
+<shortdesc class="- topic/shortdesc ">This view lists the proxy points in the point device extension
+under the <uicontrol class="+ topic/ph ui-d/uicontrol ">NiagaraNetwork</uicontrol>. The Points folder
+is the top parent container for real-time data values originating
+from a device.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Points</indexterm></keywords></metadata>
+</prolog>
+</reference>

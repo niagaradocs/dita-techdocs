@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="ServerConfigurationBACnet-54025BD6" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Server management</title>
+<shortdesc class="- topic/shortdesc "><!--Original title: Server configuration-->Stations function
+as servers when they export objects at the request of a client station.
+These include exporting schedules, calendars, files, and histories.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">server configuration</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">You configure almost all BACnet server operations under
+the BACnet <uicontrol class="+ topic/ph ui-d/uicontrol ">Local Device</uicontrol> node of the station’s <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetNetwork</uicontrol>. The local device’s <uicontrol class="+ topic/ph ui-d/uicontrol ">Export
+Table</uicontrol> provides special manager views to centrally manage
+server functions, via a right-click on the <uicontrol class="+ topic/ph ui-d/uicontrol ">Export Table</uicontrol> node, or in its view selector. In some cases, when operating as
+a BACnet server, you may need to change properties under the <menucascade class="+ topic/ph ui-d/menucascade ">
+<uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetNetwork</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Bacnet Comm</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Server</uicontrol></menucascade> component.</p><note class="- topic/note ">The
+Batch Search and Replace feature is useful when adding/editing multiple
+exports.</note></section>
+</refbody>
+</reference>

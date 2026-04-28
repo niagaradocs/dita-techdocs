@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!--Arbortext, Inc., 1988-2019, v.4002--><map xml:lang="en" class="- map/map ">
+<title class="- topic/title ">Windows</title>
+<topicref format="dita" href="../reference/Windows-reference_0000015129.dita" navtitle="Windows" scope="local" type="reference" class="- map/topicref ">
+<topicref format="dita" href="../reference/ConfigureDeviceDiscoverywindow-BACnet_0000044750.dita" navtitle="Configure Device Discovery window" scope="local" type="reference" class="- map/topicref "/>
+<topicref format="dita" href="../reference/DeviceCommunicationControlwindow-BACnetGuide_0000080523.dita" navtitle="Device Communication Control window" scope="local" type="reference" class="- map/topicref "/>
+<topicref format="dita" href="../reference/EDEExportwindow-BacnetN4_0000073819.dita" navtitle="EDE Export window" scope="local" type="reference" class="- map/topicref "/>
+<topicref format="dita" href="../reference/EDEConfigurationWindow-BacnetN4_0000073850.dita" navtitle="EDE Configuration Window" scope="local" type="reference" class="- map/topicref ">
+</topicref>
+<topicref format="dita" href="../reference/GetEnrollmentSummarywindow-BACnetGuide_0000080524.dita" navtitle="Get Enrollment Summary window" scope="local" type="reference" class="- map/topicref ">
+</topicref>
+<topicref format="dita" href="../reference/NewBacnetAnalogInputDescriptor-Bacnet_0000023438.dita" navtitle="New (and Edit) Bacnet Analog Input Descriptor" scope="local" type="reference" class="- map/topicref "/>
+<topicref format="dita" href="../reference/NewBBMDrecord-BACnet_0000083402.dita" navtitle="New (and Edit) BBMD record" scope="local" type="reference" class="- map/topicref ">
+</topicref>
+<topicref format="dita" href="../reference/Add-andEditdevicewindow-BACnet_0000044742.dita" navtitle="New (and Edit) device window" scope="local" type="reference" class="- map/topicref ">
+</topicref>
+<topicref format="dita" href="../reference/Add-andEditdevicehistorywindow-BACnet_0000044994.dita" navtitle="New (and Edit) device history window" scope="local" type="reference" class="- map/topicref "/>
+<topicref format="dita" href="../reference/New-andEditexportfolderwindow-BACnet_0000045117.dita" navtitle="New (and Edit) export folder window" scope="local" type="reference" class="- map/topicref "/>
+<topicref format="dita" href="../reference/Add-andEditexporthistorywindow-BACnet_0000045170.dita" navtitle="Add (and Edit) export history window" scope="local" type="reference" class="- map/topicref "/>
+<topicref format="dita" href="../reference/Add-andEditexportobjectswindow-BACnet_0000045114.dita" navtitle="New (and Edit) export objects window" scope="local" type="reference" class="- map/topicref "/>
+<topicref format="dita" href="../reference/Add-andEditfileexportwindow-BACnet_0000045112.dita" navtitle="New (and Edit) file export window" scope="local" type="reference" class="- map/topicref "/>
+<topicref format="dita" href="../reference/New-Editforeigndevicerecord-BACnet_0000083401.dita" navtitle="New (and Edit) foreign device record" scope="local" type="reference" class="- map/topicref "/>
+<topicref format="dita" href="../reference/New-andEditpointwindow-BACnet_0000044820.dita" navtitle="New (and Edit) point window" scope="local" type="reference" class="- map/topicref ">
+</topicref>
+<topicref format="dita" href="../reference/Add-andEditwindowforscheduleimport-BACnet_0000044842.dita" navtitle="New (and Edit) window for schedule import" scope="local" type="reference" class="- map/topicref "/>
+<topicref format="dita" href="../reference/Add-andEditwindowforscheduleexport-BACnet_0000044841.dita" navtitle="New (and Edit) window for schedule export" scope="local" type="reference" class="- map/topicref "/>
+<topicref format="dita" href="../reference/ReinitializeDevicewindow-BACnetGuide_0000080522.dita" navtitle="ReinitializeDevice window" scope="local" type="reference" class="- map/topicref ">
+</topicref>
+<topicref format="dita" href="../reference/Searchforobjectsbynameorid-WhoHasConfigwindow-BACnet_0000044749.dita" navtitle="Search for objects by name or id (Who Has Config) window" scope="local" type="reference" class="- map/topicref "/>
+<topicref format="dita" href="../reference/SynchronizeTimewindow-BACnet_0000044748.dita" navtitle="Synchronize Time window" scope="local" type="reference" class="- map/topicref ">
+</topicref>
+</topicref>
+</map><?Pub Caret -2?>

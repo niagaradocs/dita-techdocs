@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="Windowsreference" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Windows</title>
+<shortdesc class="- topic/shortdesc ">Windows create and edit database records or collect information
+when accessing a component. You access them by dragging a component
+from a palette into a station or by clicking a button.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">windows</indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">Windows do not support <uicontrol class="+ topic/ph ui-d/uicontrol ">On View (F1)</uicontrol> and <uicontrol class="+ topic/ph ui-d/uicontrol ">Guide on Target</uicontrol> help. To learn about
+the information each contains, search the help system for key words.</p></section>
+</refbody>
+</reference>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="ExampleBACnetIpDiagrams-5599121D" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Example BACnet/Ip diagrams</title><shortdesc class="- topic/shortdesc ">BACnet/IP networks can be complex, with devices designated
+as BBMDs and foreign devices, plus standard TCP/IP (IP) routers. BBMDs
+are used to avoid having separate B/IP networks for each subnet, which
+would require a BACnet/IP router to exist on each subnet (yet even
+more complexity).</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">BACnet/Ip diagrams</indexterm><indexterm class="- topic/indexterm ">diagrams</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><title class="- topic/title ">Internetwork that includes a single Bacnet/IP network
+spanning multiple IP subnets, plus other BACnet networks</title><p class="- topic/p ">A Bacnet/IP network may span multiple IP subnets. Use of BBMDs provides
+BACnet broadcast message delivery through IP routers. </p><fig class="- topic/fig "><title class="- topic/title ">Multiple networks</title><image placement="break" width="500" href="../graphic/B-IP_BACnet_Network_Multiple_Subnetsvsd_0000045494.png" class="- topic/image "/></fig><p class="- topic/p ">On subnet 192.168.1, there is no BBMD. Both BACnet/IP nodes
+on that subnet (Device IDs 7, 8) are registered as foreign devices
+with a remote BBMD.</p><p class="- topic/p ">On the physical Ethernet segment used by
+subnet 192.168.7, there are both BACnet/IP devices (Device IDs 2 and
+3) and BACnet over Ethernet devices (Device IDs 4, 5, and 9). Router
+C provides communications between these two BACnet networks.</p><p class="- topic/p ">With the exception of router B (B/IP to B/ARCNET), all BACnet routing
+and BBMD functions can be performed by host stations.</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">On subnet 192.168.3, a QNX-based host with two MSTP trunks
+and BACnet/IP enabled perform router A functions (B/IP to MS/TP) and
+BBMD functions.</p></li><li class="- topic/li "><p class="- topic/p ">On subnet 192.168.5, BBMD a host station performs functions
+with BACnet/IP enabled.</p></li><li class="- topic/li "><p class="- topic/p ">On subnet 192.168.7, any host station with both B/Ethernet
+and BACnet/IP enabled can perform router C functions (B/IP to B/Eth)
+and BBMD functions.</p></li></ul></section><section class="- topic/section "><title class="- topic/title ">A similar internetwork with stations providing BBMD
+and routing functions</title><p class="- topic/p ">The figure shows a similar internetwork
+with functions provided by Framework stations.</p><fig class="- topic/fig "><title class="- topic/title ">Framework station provide internetwork functions</title><image placement="break" width="500" href="../graphic/B-IP_BACnet_Network_Multiple_Subnets_2JACEs_0000045577.png" class="- topic/image "/></fig><p class="- topic/p ">In the internetwork above, the station operating as BACnet
+device (node) 6 could be hosted by either a remote controller or a
+BACnet (OWS or AWS) Supervisor.</p></section></refbody></reference>

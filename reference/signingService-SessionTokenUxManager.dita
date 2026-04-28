@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="signingService-SessionTokenUxManager" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Session Token Manager View (signingService-SessionTokenUxManager)</title><shortdesc class="- topic/shortdesc ">You can approve or reject tokens using actions on individual
+session tokens. Alternatively, you can use the <wintitle class="+ topic/keyword ui-d/wintitle ">Session Token
+Manager</wintitle> view, which is the default view for the store.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">signingService-SessionTokenUxManager</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p "><image placement="break" scope="local" width="500" href="../graphic/signingService-SessionTokenUxManager.png" class="- topic/image "/></p><p class="- topic/p ">To access
+it, expand <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Services</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">SigningService</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Transports</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">foxTransport</uicontrol></menucascade> and double-click <uicontrol class="+ topic/ph ui-d/uicontrol ">Session Token Store</uicontrol>. The view displays each session token
+as a row that includes the status of the token plus all the metadata
+values submitted by the requesting component, which should help you
+on your decision to approve or reject the token. <note class="- topic/note ">Only admin
+users are permitted to approve or reject tokens. They may batch approve,
+reject or delete session tokens by selecting multiple rows. </note></p><p class="- topic/p ">When approving a token, you must select the <uicontrol class="+ topic/ph ui-d/uicontrol ">Signing
+Profile</uicontrol> to which this request should be associated. The
+CSR will be signed by the CA certificate defined in that profile.<image placement="break" width="500" href="../graphic/signingService-ConfirmApprovals.png" class="- topic/image "/></p><p class="- topic/p ">You can approve a rejected
+token at a later date provided the token has not automatically been
+removed before.</p><?Pub Caret 76?></section></refbody></reference>

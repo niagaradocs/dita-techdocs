@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="TagDictionaryService-7AE6D5A4" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Tag dictionary service</title>
+<shortdesc class="- topic/shortdesc ">The <uicontrol class="+ topic/ph ui-d/uicontrol ">Tag Dictionary Service</uicontrol>, located
+in a station’s Services directory, is the container for all tag dictionaries
+installed in the station. </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Tag dictionary service</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><title class="- topic/title "/></section>
+</refbody>
+</reference>

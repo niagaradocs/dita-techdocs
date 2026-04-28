@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-Psychrometric" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-Psychrometric</title>
+<shortdesc class="- topic/shortdesc ">This component You can use it to support applications that
+need to calculate the properties of moist air using given temperature
+and humidity inputs.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Psychrometric</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">Psychrometric is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Energy</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p><fig class="- topic/fig ">
+<title class="- topic/title ">Psychrometric properties</title>
+<image href="../graphic/kitControlPsychrometric_0000067609.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Unit Select</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">drop-down list (defaults to <option class="+ topic/keyword pr-d/option ">English</option>)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Selects units of measure.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Temperature Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Selects units and configures how the value displays:</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">units</option> defaults to temperature.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">precision </option> defines the number of decimal places of temperature.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">min</option> defines the lowest temperature allowed.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">max</option> defines the highest temperature allowed.</p>This configuration applies to <parmname class="+ topic/keyword pr-d/parmname ">Outside Temp</parmname>,
+This configuration applies to the <parmname class="+ topic/keyword pr-d/parmname ">In Temp</parmname> property
+value. </propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Humidity Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Selects units and configures how the value displays:</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">units</option> defaults to percentage of relative humidity
+(%RH).</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">precision </option> defines the number of decimal
+places of humidity percentage.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">min</option> defines
+the lowest humidity allowed.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">max</option> defines the
+highest humidity allowed.</p>This configuration applies to <parmname class="+ topic/keyword pr-d/parmname ">In Humidity</parmname> property value.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In Temp</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number of degrees of temperature (defaults to 0.0 degrees
+F) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the input temperature.<p class="- topic/p ">When null value is checked,
+the value displayed defaults to the incoming value from the device.
+If you remove the check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In Humidity</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">percentage of humidity (defaults to 0.0 percent RH) and
+null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the input humidity.<p class="- topic/p ">When null value is checked,
+the value displayed defaults to the incoming value from the device.
+If you remove the check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out Dew Point</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">nan (not a number) or degrees (defaults to nan) and null
+definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Reports the calculated dew point temperature. This value
+requires valid <parmname class="+ topic/keyword pr-d/parmname ">In Temp</parmname> and <parmname class="+ topic/keyword pr-d/parmname ">In Humidity</parmname> values.<p class="- topic/p ">When null value is checked, the value displayed defaults
+to the incoming value from the device. If you remove the check mark
+you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out Enthalpy</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">nan (not a number) or BTU/lb (defaults to nan) and null
+definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Reports calculated enthalpy. This value requires valid <parmname class="+ topic/keyword pr-d/parmname ">In Temp</parmname> and <parmname class="+ topic/keyword pr-d/parmname ">In Humidity</parmname> values.<p class="- topic/p ">When null is checked, the value displayed defaults to the incoming
+value from the device. If you remove the check mark you can configure
+the<parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out Sat Press</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number of psi (pounds per square inch) (defaults to 0.019)
+and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Reports calculated saturated pressure. This value requires
+a valid <parmname class="+ topic/keyword pr-d/parmname ">In Temp</parmname>.<p class="- topic/p ">When null value is checked,
+the value displayed defaults to the incoming value from the device.
+If you remove the check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out Vapor Press</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">nan psi and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Reports calculated vapor pressure. This value requires valid <parmname class="+ topic/keyword pr-d/parmname ">In Temp</parmname> and <parmname class="+ topic/keyword pr-d/parmname ">In Humidity</parmname> values.<p class="- topic/p ">When null value is checked, the value displayed defaults to the incoming
+value from the device. If you remove the check mark you can configure
+the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out Wet Bulb Temp</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">nan or degrees (defaults to nan) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Reports calculated wet bulb temperature. This value requires
+valid <parmname class="+ topic/keyword pr-d/parmname ">In Temp</parmname> and <parmname class="+ topic/keyword pr-d/parmname ">In Humidity</parmname> values.<p class="- topic/p ">When null value is checked, the value displayed defaults
+to the incoming value from the device. If you remove the check mark
+you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

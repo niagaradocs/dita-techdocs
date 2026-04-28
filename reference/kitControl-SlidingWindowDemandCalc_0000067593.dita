@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-SlidingWindowDemandCalc" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-SlidingWindowDemandCalc</title>
+<shortdesc class="- topic/shortdesc ">This component simulates a demand meter and calculates
+the sliding window demand for 5, 15, and 30-minute demand intervals
+based on an accumulative pulse counter input. It also calculates the
+total kWh since last reset and the hourly and daily kWh values.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">SlidingWindowDemandCalc</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">SlidingWindowDemandCalc is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Energy</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette. </p><p class="- topic/p ">Once calculated, a standard history extension setup to execute
+on-trigger only can log the hourly and daily kWh values. The SlidingWindowDemandCalc
+object fires the hourly and daily triggers to align the kWh data correctly
+to actual clock values. The pulse input into the object is assumed
+to be accumulative (not delta pulses) that roll over after reaching
+the 16 bit limit (65535).</p><p class="- topic/p ">You can configure this component to
+reset all the calculated accumulative values on a preset interval
+such as at “noon on the first Sunday, every month.”</p><fig class="- topic/fig ">
+<title class="- topic/title ">SlidingWindowDemandCalc properties</title>
+<image href="../graphic/kitControlSlidingWindowDemandCalc_0000067605.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Consumption Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window (defaults to kW-hr for units, one
+decimal point for precision, negative infinity for minimum value,
+and positive infinity for the maximum value)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Configures the consumption output property:<p class="- topic/p "><option class="+ topic/keyword pr-d/option ">units</option> configures units of measure (default to energy and kilowatt hour
+(kW-hr)).</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">precision</option> defines the number of decimal
+places for the out values (defaults to 1).</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">min</option> defines the smallest allowable value of the output property (defaults
+to -infinity)</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">max</option> defines the largest allowable
+value of the output property (defaults to +infinity)</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Demand Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window (defaults to kW for units, one decimal
+point for precision, negative infinity for minimum, positive infinity
+for maximum)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Configures the demand output property:<p class="- topic/p "><option class="+ topic/keyword pr-d/option ">units</option> configures units of measure (default to power and kilowatt hour
+(kW-hr).</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">precision</option> defines the number of decimal
+places for the out values (defaults to 1).</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">min</option> defines the smallest allowable value of the output property (defaults
+to -infinity)</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">max</option> defines the largest allowable
+value of the output property (defaults to +infinity)</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Kwh Per Pulse Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window (defaults to kW-hr for units, three
+decimal places for precision, negative infinity for minimum, and positive
+infinity for maximum)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Configures the kwh per pulse output property.<p class="- topic/p "><option class="+ topic/keyword pr-d/option ">units</option> configures units of measure (default to energy and
+kilowatt hour (kW-hr)).</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">precision</option> defines the
+number of decimal places for the out values (defaults to 3).</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">min</option> defines the smallest allowable value of the
+output property (defaults to -infinity)</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">max</option> defines the largest allowable value of the output property (defaults
+to +infinity)</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Current Pulse Count</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number (defaults to 0.00) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays data from a link to a pulse counter input object
+indicating the running total of pulses.<p class="- topic/p ">When null is checked, the
+value displayed defaults to the incoming value from the device. If
+you remove the check mark you can configure the<parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Time of Reset</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the date and time of the last reset</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Demand5</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the demand (kW) for a five minute window.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Demand15</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the demand (kW) for a fifteen minute window.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Demand30</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the demand for a 30 minute period.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Kwh</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the running kWh (consumption) value since the last
+reset.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Kwh Hourly</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the running value since the last hourly reset.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Kwh Last Hour</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the kWh (consumption) value for the last hour.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Kwh Daily</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the kWh (consumption) value since the last daily
+reset.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Kwh Last Day</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the kWh (consumption) value for the last day.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Kwh Per Pulse</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number of kilowatts per hour (defaults to 1 kW-hr)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Sets the value per pulse, that is, how much energy each
+pulse represents. This value is usually noted on the meter or provided
+by the power company. </propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Enable Reset</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> (default) or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><option class="+ topic/keyword pr-d/option ">true</option> configures recurring automatic resets
+to happen at a frequency based on the following properties.<p class="- topic/p "><option class="+ topic/keyword pr-d/option ">false</option> disables automatic resets.</p> </propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Reset Day of Month</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number from 1 to 31</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Sets the day of month when a recurring automatic reset (if
+enabled) occurs.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Reset Day of Week</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">drop-down list (defaults to Sunday)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Selects the day of the week when a recurring automatic reset
+(if enabled) occurs.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Reset Time</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours:minutes (defaults to 12 AM)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Sets the time of day for a recurring automatic reset (if
+enabled) to occur.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Meter Rollover</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Specifies the maximum value the meter provides before it
+rolls over to zero (0). The default value is 65535, the data type
+is a long (up to a very large number, 9223372036854775807).</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

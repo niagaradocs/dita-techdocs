@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="Client-A15DD90B" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry "><glossterm class="- topic/title concept/title glossentry/glossterm ">client</glossterm><glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">A wireless client is a device that can use the 802.11 protocol. The <ph conkeyref="host_models/nc8000" class="- topic/ph "/> is such a device as is a laptop, a PC, and a Wi-Fi phone. A client may be fixed, mobile or portable. Generally, in wireless networking terminology, a station, wireless client and node are often used interchangeably.</glossdef></glossentry>

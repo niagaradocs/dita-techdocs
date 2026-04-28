@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-OneShot" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-OneShot</title>
+<shortdesc class="- topic/shortdesc ">This component provides a single, temporary, status Boolean
+output for a specified duration (as set in the <parmname class="+ topic/keyword pr-d/parmname ">Time</parmname> property). A OneShot action occurs with a false-to-true value transition
+at the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> property, or with an invoked Fire action.
+When either of these conditions occurs, the component sets the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> property value to <option class="+ topic/keyword pr-d/option ">true</option> and the <parmname class="+ topic/keyword pr-d/parmname ">Out Not</parmname> property value to <option class="+ topic/keyword pr-d/option ">false</option> for a
+time that is equal to the value of the  <parmname class="+ topic/keyword pr-d/parmname ">Time</parmname> property.
+When the time expires, these values revert to the previous default
+values.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">OneShot</indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">OneShot is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Timer</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p><fig class="- topic/fig ">
+<title class="- topic/title ">OneShot properties</title>
+<image href="../graphic/kitControlOneShot_0000067847.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Defines the text to display for each Boolean value.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">trueText</option> configures the text to describe the
+state when the component returns <option class="+ topic/keyword pr-d/option ">true.</option></p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">falseText</option> configures the text to describe the state when
+the component returns <option class="+ topic/keyword pr-d/option ">false.</option></p><p class="- topic/p ">This definition
+applies to the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> value for this component.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default)
+and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the input value. You set this property by linking
+a Boolean <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> value to it. You can manually configure
+the default state to a numeric value or set it to <option class="+ topic/keyword pr-d/option ">null</option>, so that when no value is linked into this property, the component
+uses the default value. The component passes this property value to
+its <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> property for the amount of time set in
+the <parmname class="+ topic/keyword pr-d/parmname ">Time</parmname> property.<p class="- topic/p ">When null value is checked,
+the value displayed defaults to the incoming value from the device.
+If you remove the check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Time</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours minutes seconds (defaults to .5 second)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Determines how long the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> and <parmname class="+ topic/keyword pr-d/parmname ">Out Not</parmname> properties hold their one-shot values. <p class="- topic/p ">For
+example, a <parmname class="+ topic/keyword pr-d/parmname ">Time</parmname> property value of 2 holds the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> property at <option class="+ topic/keyword pr-d/option ">true</option> and the <parmname class="+ topic/keyword pr-d/parmname ">Out Not</parmname> property value at <option class="+ topic/keyword pr-d/option ">false</option> for two
+seconds.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default)
+and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the current value (display text) that changes with
+a<option class="+ topic/keyword pr-d/option ">false</option> to <option class="+ topic/keyword pr-d/option ">true</option> transition at the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> property value or a Fire action. Using the <parmname class="+ topic/keyword pr-d/parmname ">Facets</parmname> property, you configure the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> value display text as desired. <p class="- topic/p ">After a OneShot is triggered and
+the <parmname class="+ topic/keyword pr-d/parmname ">Time</parmname> value period expires, this value returns
+to the default (<option class="+ topic/keyword pr-d/option ">false</option>) value. <option class="+ topic/keyword pr-d/option ">null</option> does not change the value with a OneShot Fire action or <option class="+ topic/keyword pr-d/option ">false</option> to <option class="+ topic/keyword pr-d/option ">true</option> transition at the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> property value.</p><p class="- topic/p ">When null value is checked, the
+value displayed defaults to the incoming value from the device. If
+you remove the check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out Not</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> (default) or <option class="+ topic/keyword pr-d/option ">false</option> and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the opposite of the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> property.
+This value changes with a <option class="+ topic/keyword pr-d/option ">false</option> to <option class="+ topic/keyword pr-d/option ">true</option> transition at the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> property value or a Fire
+action. <p class="- topic/p ">After a OneShot is triggered and the <parmname class="+ topic/keyword pr-d/parmname ">Time</parmname> value period expires, this value returns to the default (<option class="+ topic/keyword pr-d/option ">true</option>) value. <option class="+ topic/keyword pr-d/option ">null</option> does not change with
+a OneShot Fire action or <option class="+ topic/keyword pr-d/option ">false</option> to <option class="+ topic/keyword pr-d/option ">true</option> transition of the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> property value.</p><p class="- topic/p ">When null value is checked, the value displayed defaults to the incoming
+value from the device. If you remove the check mark you can configure
+the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-StringTest" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-StringTest</title>
+<shortdesc class="- topic/shortdesc ">This component compares two StatusString values (<parmname class="+ topic/keyword pr-d/parmname ">In A</parmname> and <parmname class="+ topic/keyword pr-d/parmname ">In B</parmname>) and outputs a StatusBoolean
+Out (true/false) result.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">StringTest</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">StringTest is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">String</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette</p><p class="- topic/p ">Test Selection
+property choices are:</p><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">aEqualsB</p></li>
+<li class="- topic/li "><p class="- topic/p ">aEqualsBIgnoreCase</p></li>
+<li class="- topic/li "><p class="- topic/p ">aStartsWithB</p></li>
+<li class="- topic/li "><p class="- topic/p ">aEndsWithB</p></li>
+<li class="- topic/li "><p class="- topic/p ">aContainsB</p></li>
+</ul><fig class="- topic/fig ">
+<title class="- topic/title ">StringTest properties</title>
+<image href="../graphic/kitControlStringTest_0000067721.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> (default) or <option class="+ topic/keyword pr-d/option ">false</option> and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Boolean output indicates the result of the comparison.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In A and In B</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text (defaults to blank) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Define the two strings to compare.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Test Select</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">drop-down list</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Identifies the test to perform on <parmname class="+ topic/keyword pr-d/parmname ">In A</parmname>:<p class="- topic/p "><option class="+ topic/keyword pr-d/option ">aEqualsB</option> compares <parmname class="+ topic/keyword pr-d/parmname ">In A</parmname> with <parmname class="+ topic/keyword pr-d/parmname ">In B</parmname> taking case into consideration.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">AEqualsBIgnoreCase</option> compares with <parmname class="+ topic/keyword pr-d/parmname ">In B</parmname> ignoring case.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">aStartsWithB</option> tests to see if <parmname class="+ topic/keyword pr-d/parmname ">In A</parmname> includes <parmname class="+ topic/keyword pr-d/parmname ">In B</parmname> beginning at the first position.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">aEndsWithB</option> tests to see if <parmname class="+ topic/keyword pr-d/parmname ">In A</parmname> includes <parmname class="+ topic/keyword pr-d/parmname ">In
+B</parmname> beginning at the last position.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">aContainsB</option> tests to see if <parmname class="+ topic/keyword pr-d/parmname ">In A</parmname> includes <parmname class="+ topic/keyword pr-d/parmname ">In
+B</parmname> anywhere within <parmname class="+ topic/keyword pr-d/parmname ">In A</parmname>.</p></propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

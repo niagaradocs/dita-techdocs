@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="ObjectIdentifierOrObjectID-B124C2EB" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry ">
+<glossterm class="- topic/title concept/title glossentry/glossterm ">object identifier or object ID</glossterm>
+<glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">A BACnet method to identify a particular object within a
+device using a combination of its object type and an instance number
+(unique for that type, within that device). In the case of the single
+device object (type) per BACnet device, it must have a unique instance
+number across the BACnet internetwork on which it is installed.</glossdef>
+</glossentry>

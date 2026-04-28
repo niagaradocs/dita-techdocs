@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="bacnet-BacnetClientLayer" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Client (bacnet-BacnetClientLayer)</title>
+<shortdesc class="- topic/shortdesc ">This component represents the client side of the application
+layer of the BACnet communications stack. </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">client</indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section ">To access this node in the Nav tree, expand the BACnet network
+and <uicontrol class="+ topic/ph ui-d/uicontrol ">Bacnet Comm</uicontrol>. This layer of the driver has
+no properties.</section>
+</refbody>
+</reference>

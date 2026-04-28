@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="SDCard-346D9C63" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">microSD card</title><shortdesc class="- topic/shortdesc ">The microSD card is the primary storage medium for all data and configuration options related to the software installation. Since the microSD card can be easily removed and the data duplicated, files are stored in encrypted format and decoded on the fly as they are accessed.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">SD card, microSD card<indexterm class="- topic/indexterm ">about the</indexterm></indexterm><indexterm class="- topic/indexterm ">secure storage</indexterm></keywords></metadata></prolog><conbody class="- topic/body  concept/conbody "><p class="- topic/p ">Sensitive data include the following:</p><ul class="- topic/ul "><li class="- topic/li ">
+                <p class="- topic/p ">Credentials (OS and others)</p>
+            </li><li class="- topic/li ">
+                <p class="- topic/p "><keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> Key material</p>
+            </li><li class="- topic/li ">
+                <p class="- topic/p ">Certificates and their private key files</p>
+            </li></ul><p class="- topic/p ">The system is designed to protect these data while at the same time allowing you to move a microSD card from a failed controller to a replacement controller.</p></conbody></concept>

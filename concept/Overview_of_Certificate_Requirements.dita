@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept-5691" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">Overview of Certificate Requirements</title><shortdesc class="- topic/shortdesc ">A certificate is an electronic document that uses a digital signature to bind a public key with a person or organization.
+Certificates may serve a variety of purposes depending on how you configure the certificate's
+Key Usage property. Their primary purpose in this system is to verify the identity of a server so that communication
+can be trusted.</shortdesc><conbody class="- topic/body  concept/conbody "><p class="- topic/p "><ol class="- topic/ol "><li class="- topic/li "><p class="- topic/p "><b class="+ topic/ph hi-d/b ">Purpose of Certificates</b>: Certificates in OPC UA are crucial for establishing secure communications between clients and servers. They help ensure confidentiality, integrity, and authenticity of the messages exchanged.</p></li><li class="- topic/li "><p class="- topic/p "><b class="+ topic/ph hi-d/b ">Types of certificates</b>:<ol class="- topic/ol "><li class="- topic/li "><p class="- topic/p ">A CA (Certificate Authority) certificate is a self-signed certificate that belongs to a CA. This could be a
+third party or a company serving as its own CA.</p></li><li class="- topic/li "><p class="- topic/p ">A root CA certificate is a self-signed CA certificate whose private key is used to sign other certificates
+creating a trusted certificate tree. With its private key, a root CA certificate may be exported, stored on a
+USB thumb drive in a vault, and brought out only when certificates need to be signed. A root CA certificate's
+private key requires the creation of a password on export and the provision of the same password
+when you use it to sign other certificates.</p></li><li class="- topic/li "><p class="- topic/p ">An intermediate certificate is a CA certificate signed by a root CA certificate that is used to sign server
+certificates or other intermediate CA certificates. Using intermediate certificates isolates a group of server
+certificates.</p></li><li class="- topic/li "><p class="- topic/p ">A server certificate represents the server-side of a secure connection.</p></li><li class="- topic/li "><p class="- topic/p ">A client certificate represents the client-side of a secure connection. It is used by client systems to make
+authenticated requests to a server</p></li></ol></p></li><li class="- topic/li "><b class="+ topic/ph hi-d/b ">Certificate Authorities (CAs)</b> : OPC UA systems can use a public key infrastructure (PKI), which involves trusted authorities that issue certificates. The client and server must trust these CAs for their certificates to be accepted. </li></ol> </p></conbody></concept>

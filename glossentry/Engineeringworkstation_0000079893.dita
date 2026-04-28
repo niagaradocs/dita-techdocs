@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="EngineeringWorkstation-2D356B23" xml:lang="en" class="- topic/topic concept/concept glossentry/glossentry "><glossterm class="- topic/title concept/title glossentry/glossterm ">engineering workstation</glossterm><glossdef class="- topic/abstract concept/abstract glossentry/glossdef ">An installation of <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> on a PC, which is used to commission controller hardware
+and perform application engineering on both offline and online stations.
+In some cases the this workstation may also be licensed to run a station
+to facilitate application development and testing.</glossdef><?Pub Caret 186?></glossentry>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="SSLTrustStoreTab" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Trust Store tabs</title><shortdesc class="- topic/shortdesc ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Trust Stores</wintitle> contain signed and trusted root certificates with their public keys. These stores contain no private keys. A <wintitle class="+ topic/keyword ui-d/wintitle ">Trust Store</wintitle> supports the client side of the relationship by using its root CA certificates to verify the signatures of the certificates it receives from each server. If a client cannot validate a server certificate’s signature, an error message allows you to approve or reject a security exemption (on the <wintitle class="+ topic/keyword ui-d/wintitle ">Allowed Hosts</wintitle> tab).</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Trust Store tab</indexterm></keywords><prodinfo class="- topic/prodinfo "><prodname class="- topic/prodname "><keyword conkeyref="wh_variables_n4/niagara" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara" class="- topic/keyword ">Niagara</keyword></prodname><vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist></prodinfo></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section ">
+            <p class="- topic/p ">The <wintitle class="+ topic/keyword ui-d/wintitle ">System Trust Stores</wintitle> contain installed signed certificates by trusted entities (CA authorities) recognized by the Java Runtime Engine (JRE) of the currently opened platform. A <wintitle class="+ topic/keyword ui-d/wintitle ">User Trust Store</wintitle> contains installed signed certificates by trusted entities that you have imported (your own certificates).</p>
+            <p class="- topic/p ">Only certificates with public keys are stored in the <wintitle class="+ topic/keyword ui-d/wintitle ">Trust Stores</wintitle>. The majority of certificates in the <wintitle class="+ topic/keyword ui-d/wintitle ">System Trust Store</wintitle> come from the JRE. You add your own certificates to a <wintitle class="+ topic/keyword ui-d/wintitle ">User Trust Store</wintitle> by importing them.</p>
+            <p class="- topic/p ">Feel free to pass out such root certificates to your team; share them with your customers; make sure that any client that needs to connect to one of your servers has the server’s root certificate in its client <wintitle class="+ topic/keyword ui-d/wintitle ">Trust Store</wintitle>.</p>
+            <fig class="- topic/fig "><title class="- topic/title ">System Trust Store Example<image placement="break" width="500" href="../graphic/TrustStore-Tridium_0000017062.png" class="- topic/image "/></title></fig>
+        </section><section class="- topic/section ">
+            <title class="- topic/title ">Trust Store columns</title>
+            <table class="- topic/table "><tgroup cols="2" class="- topic/tgroup "><colspec colname="col1" colwidth="15%" class="- topic/colspec "/><colspec colname="col2" colwidth="85%" class="- topic/colspec "/><thead class="- topic/thead "><row class="- topic/row "><entry class="- topic/entry ">Column</entry><entry class="- topic/entry ">Description</entry></row></thead><tbody class="- topic/tbody "><row class="- topic/row "><entry class="- topic/entry ">Alias</entry><entry class="- topic/entry ">
+                                <div conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/TLSAlias-div" class="- topic/div "/>
+                            </entry></row><row class="- topic/row "><entry class="- topic/entry ">Issued By</entry><entry class="- topic/entry ">
+                                <div conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/TLSIssuedBy-div" class="- topic/div "/>
+                            </entry></row><row class="- topic/row "><entry class="- topic/entry ">Subject</entry><entry class="- topic/entry ">
+                                <div conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/TLSSubject-div" class="- topic/div "/>
+                            </entry></row><row class="- topic/row "><entry class="- topic/entry ">Not Before</entry><entry class="- topic/entry ">
+                                <div conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/TLSNotAfter-div" class="- topic/div "/>
+                            </entry></row><row class="- topic/row "><entry class="- topic/entry ">Not After</entry><entry class="- topic/entry ">
+                                <div conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/TLSNotAfter-div" class="- topic/div "/>
+                            </entry></row><row class="- topic/row "><entry class="- topic/entry ">Key Algorithm</entry><entry class="- topic/entry ">
+                                <div conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/TLSKeyAlgorithm-div" class="- topic/div "/>
+                            </entry></row><row class="- topic/row "><entry class="- topic/entry ">Key Size</entry><entry class="- topic/entry ">
+                                <div conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/TLSKeySize-div" class="- topic/div "/>
+                            </entry></row><row class="- topic/row "><entry class="- topic/entry ">Signature Algorithm</entry><entry class="- topic/entry ">
+                                <div conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/TLSSignatureAlgorithm-div" class="- topic/div "/>
+                            </entry></row><row class="- topic/row "><entry class="- topic/entry ">Signature Size</entry><entry class="- topic/entry ">
+                                <div conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/TLSSignatureSize-div" class="- topic/div "/>
+                            </entry></row><row class="- topic/row "><entry class="- topic/entry ">Valid</entry><entry class="- topic/entry ">
+                                <div conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/TLSValid-div" class="- topic/div "/>
+                            </entry></row><row class="- topic/row "><entry class="- topic/entry ">Self Signed</entry><entry class="- topic/entry ">
+                                <div conref="../reuse/Reuse1.dita#Reuse1-CAD76CAC/TLSSelfSigned-div" class="- topic/div "/>
+                            </entry></row></tbody></tgroup></table>
+        </section><section class="- topic/section ">
+            <title class="- topic/title ">Trust Store buttons</title>
+            <p class="- topic/p ">The <uicontrol class="+ topic/ph ui-d/uicontrol ">Delete</uicontrol> and <uicontrol class="+ topic/ph ui-d/uicontrol ">Import</uicontrol> buttons are available only in a <wintitle class="+ topic/keyword ui-d/wintitle ">User Trust Store</wintitle>.</p>
+        </section><section class="- topic/section ">
+            <title class="- topic/title ">User Key Store buttons</title>
+            <p class="- topic/p ">
+                <ul class="- topic/ul "><li class="- topic/li ">
+                        <p conref="../reuse/WH-guide-General_0000048987.dita#descGen/buttonView-p" class="- topic/p "/>
+                    </li><li class="- topic/li ">
+                        <p conref="../reuse/WH-guide-General_0000048987.dita#descGen/buttonDelete-p" class="- topic/p "/>
+                    </li><li class="- topic/li ">
+                        <p conref="../reuse/WH-guide-General_0000048987.dita#descGen/buttonImport-p" class="- topic/p "/>
+                    </li><li class="- topic/li ">
+                        <p conref="../reuse/WH-guide-General_0000048987.dita#descGen/buttonExport-p" class="- topic/p "/>
+                        <p class="- topic/p ">For certificates, the file extension is <filepath class="+ topic/ph sw-d/filepath ">.pem</filepath>.</p>
+                    </li></ul>
+            </p>
+        </section></refbody></reference>

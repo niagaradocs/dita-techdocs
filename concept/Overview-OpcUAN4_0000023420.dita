@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="OverviewOpcUAN4-5481DD8F" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">Overview</title><shortdesc class="- topic/shortdesc ">OPC is the interoperability standard for secure and reliable
+data exchange in the industrial automation space, as well as other
+industries. The OPC standard is a series of specifications that define
+the interface between clients and servers, as well as servers and
+servers, including access to real-time data, monitoring of alarms
+and events, access to historical data and other applications.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">overview</indexterm></keywords></metadata></prolog><conbody class="- topic/body  concept/conbody "><p class="- topic/p ">The OPC standard, initially restricted to the Windows operating
+system, derives its acronym from OLE (object linking and embedding)
+for Process Control. These specifications are now known as OPC Classic.
+The OPC Unified Architecture (UA) is a platform-independent, service-oriented
+architecture that integrates the functionality of the individual OPC
+Classic specifications into an extensible framework. </p><p class="- topic/p ">The Opc UA Driver is the <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword ">Niagara</keyword> implementation of this service-oriented architecture.</p></conbody></concept>

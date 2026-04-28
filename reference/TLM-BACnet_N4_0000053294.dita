@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--Arbortext, Inc., 1988-2019, v.4002--><reference id="bacnet-BacnetTrendLogMultiple" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">TLM (Bacnet Trend Log Multiple)</title><?Pub Caret 0?>
+<shortdesc class="- topic/shortdesc ">This component is a Config object that represents a BACnet
+trend log multiple object that monitors and records values of one
+or more properties for one or more referenced objects, either in the
+same device as the trend log multiple object or in an external device. </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">TLM</indexterm><indexterm class="- topic/indexterm ">Bacnet Trend
+Log Multiple</indexterm><indexterm class="- topic/indexterm ">trend log multiple</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "/>
+</refbody>
+</reference>

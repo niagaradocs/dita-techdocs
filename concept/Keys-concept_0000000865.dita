@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="SSLKeys" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Keys</title>
+<shortdesc class="- topic/shortdesc ">A pair of asymmetric <i class="+ topic/ph hi-d/i ">keys</i> (one public and the other
+private) makes server verification and encryption possible. The term
+"asymmetric" means that the two keys are different, but related. The
+system can use the private key to read messages encrypted with the
+public key and vice versa.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">TLS<indexterm class="- topic/indexterm ">keys</indexterm></indexterm>
+<indexterm class="- topic/indexterm ">keys<indexterm class="- topic/indexterm ">public and private</indexterm></indexterm>
+<indexterm class="- topic/indexterm ">public key</indexterm><indexterm class="- topic/indexterm ">private key</indexterm>
+<indexterm class="- topic/indexterm ">encryption</indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "/>
+<vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">The signing of certificates with the private key is required to
+verify authenticity. Both keys are required to encrypt information.
+In advance, key generation software running on remote controller or
+station generates this pair of asymmetric keys.</p>
+<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">A <i class="+ topic/ph hi-d/i ">public key</i> is a string of bytes included in the certificate.
+This key resides in the server's <wintitle class="+ topic/keyword ui-d/wintitle ">System</wintitle> or <wintitle class="+ topic/keyword ui-d/wintitle ">User Trust Store</wintitle> and is used to identify the authenticity
+of the connecting client certificate.</p></li>
+<li class="- topic/li "><p class="- topic/p ">A <i class="+ topic/ph hi-d/i ">private key</i> is also a string of bytes that resides
+on the server. The root CA certificate's private key must be physically
+protected for a certificate tree to remain secure. A private key must
+not be sent via email, and, if necessary, should be physically transported
+(on a thumb drive or other medium that is not connected to the Internet).</p></li>
+</ul>
+</conbody>
+</concept>

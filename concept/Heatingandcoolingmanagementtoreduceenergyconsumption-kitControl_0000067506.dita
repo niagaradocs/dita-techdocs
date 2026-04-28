@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="HeatingAndCoolingManagementToReduce-259F06DD" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Heating and cooling management to reduce energy consumption</title>
+<shortdesc class="- topic/shortdesc ">In a simple model, a schedule can control when the heat
+or air conditioning turn on and off. Using the OptimizedStartStop
+kitControl component you can configure a more sophisticated automatic
+system that optimizes heating and cooling start and stop times based
+on actual outside and inside temperatures.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">heating optimized</indexterm><indexterm class="- topic/indexterm ">cooling optimized</indexterm><indexterm class="- topic/indexterm ">energy optimization</indexterm>
+</keywords></metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">To conserve energy in a building, the OptimizedStartStop kitControl
+component serves two goals:</p>
+<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Turn the heating or cooling equipment on at the latest possible
+time while still providing a comfortable temperature during building
+occupancy.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Turn the same equipment off at the earliest possible time,
+allowing the building to “drift” while staying within
+a comfortable temperature range until it is no longer occupied.</p></li>
+</ul>
+<p class="- topic/p ">Starting and stopping heating or cooling equipment are valid schedule
+events, which you link to the OptimizedStartStop component. Setting
+the component’s <parmname class="+ topic/keyword pr-d/parmname ">Start Enable</parmname> or <parmname class="+ topic/keyword pr-d/parmname ">Stop Enable</parmname> property to <option class="+ topic/keyword pr-d/option ">true</option> initiates
+the heating or cooling event on behalf of the schedule. Once started
+or stopped, the component runs a calculation 15 seconds after the
+beginning of every minute until the next event, which is <i class="+ topic/ph hi-d/i ">not already
+set</i> in the schedule. The result of the calculation is called the <parmname class="+ topic/keyword pr-d/parmname ">Calculated Command Time</parmname>. The value of this property determines
+the next scheduled event: an early start command to achieve a specified
+temperature range by the time the building is occupied or an early
+stop command without sacrificing the temperature range by the time
+the space is unoccupied. After a schedule invokes the <parmname class="+ topic/keyword pr-d/parmname ">Calculated
+Command Time</parmname>, the component analyzes the actual area response
+(temperature change rate) and makes weighted adjustments to the calculation
+parameters based on the detected values so that subsequent calculations
+might be more accurate.</p>
+<p class="- topic/p ">If one of the enable values (<parmname class="+ topic/keyword pr-d/parmname ">Start Enable</parmname> or <option class="+ topic/keyword pr-d/option ">Stop Enable</option>) is scheduled to be set to <option class="+ topic/keyword pr-d/option ">true</option> in one hour, but is already <option class="+ topic/keyword pr-d/option ">true</option>, the component
+performs no calculation even if <parmname class="+ topic/keyword pr-d/parmname ">Start Enable</parmname> or <parmname class="+ topic/keyword pr-d/parmname ">Stop Enable</parmname> is set to true.</p>
+<p class="- topic/p "> </p>
+</conbody>
+</concept>

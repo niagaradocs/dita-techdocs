@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="InstallingAHostOnAnIPSubnetWithABBM-55A0F594" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Installing a host on an IP subnet with a BBMD</title>
+<shortdesc class="- topic/shortdesc ">If you have an existing BACnet/IP network that spans IP
+subnets, chances are that it has at least one existing BBMD.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">host<indexterm class="- topic/indexterm ">installing on an IP
+subnet with a BBMD</indexterm></indexterm><indexterm class="- topic/indexterm ">BBMD</indexterm>
+<indexterm class="- topic/indexterm ">IP subnet</indexterm></keywords></metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Expand <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetNetwork</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetComm</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">IpPort</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Link</uicontrol></menucascade>. </cmd></step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">In the <wintitle class="+ topic/keyword ui-d/wintitle ">Link</wintitle> property sheet of the <uicontrol class="+ topic/ph ui-d/uicontrol ">Ip Port</uicontrol> leave the <parmname class="+ topic/keyword pr-d/parmname ">Ip Device Type</parmname> property set to <option class="+ topic/keyword pr-d/option ">Standard</option>.</cmd></step>
+</steps>
+</taskbody>
+</task>

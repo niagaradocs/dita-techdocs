@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="ExampleInternetworkDiagrams-BACnet-559822FA" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Example internetwork diagrams</title><shortdesc class="- topic/shortdesc ">The diagrams in this topic illustrate internetwork configurations.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">internetwork<indexterm class="- topic/indexterm ">diagrams</indexterm></indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><title class="- topic/title ">Four physical networks, two routers</title><fig class="- topic/fig "><title class="- topic/title ">Ethernet, MS/TP and ARCnet</title><image placement="break" scope="local" width="500" href="../graphic/4networks_2routers_0000045498.png" class="- topic/image "/></fig><p class="- topic/p ">Routers A and B join together three media and link-layer
+types: BACnet over Ethernet (network 2), BACnet MS/TP (networks 11
+and 22), and BACnet ARCnet (network 8). Each BACnet node has a unique
+Device ID number (shown inside the node circle). Router A could actually
+be a remote station that is licensed for MS/TP (next example).</p></section><section class="- topic/section "><title class="- topic/title ">BACnet Ethernet to MS/TP router functions provided
+by the station in a remote host</title><p class="- topic/p ">This internetwork includes
+an Ethernet/IP backbone.</p><fig class="- topic/fig "><title class="- topic/title ">Ethernet and MS/TP</title><image placement="break" scope="local" width="500" href="../graphic/4networks_2routers_JACE_router_0000045497.png" class="- topic/image "/></fig><p class="- topic/p ">In this case, the host’s station provides BACnet routing
+between the two MS/TP networks and an Ethernet network. On an Ethernet
+LAN, there may be two separate BACnet networks sharing the same media:
+BACnet over Ethernet and BACnet/IP.</p></section><section class="- topic/section "><title class="- topic/title ">Same physical Ethernet LAN, router joins two BACnet
+networks</title><p class="- topic/p ">Each BACnet node has a unique Device ID number
+(shown inside the node). This router function could actually be provided
+by a host station.</p><fig class="- topic/fig "><title class="- topic/title ">Two networks</title><image placement="break" scope="local" width="500" href="../graphic/MixedEthernetAndIP_0000045496.png" class="- topic/image "/></fig></section><section class="- topic/section "><title class="- topic/title ">BACnet/IP to BACnet/Ethernet router function provided
+by a station</title><p class="- topic/p ">The controller or BACnet Supervisor manages
+this network with both BACnet/IP and BACnet Ethernet enabled.</p><fig class="- topic/fig "><title class="- topic/title ">Two networks</title><image placement="break" scope="local" width="500" href="../graphic/MixedEthernetAndIP_NiagaraRouter_0000045495.png" class="- topic/image "/></fig><p class="- topic/p ">In this case, be especially careful that no other router
+exists between the BACnet Ethernet and BACnet/IP networks. If the
+host station detects this illegal (loop) configuration, it stops its
+routing functions. This condition is indicated on the <wintitle class="+ topic/keyword ui-d/wintitle ">Property
+Sheet</wintitle> of the <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Bacnet Comm</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Network</uicontrol></menucascade> component, where its <parmname class="+ topic/keyword pr-d/parmname ">Routing Enabled</parmname> property is automatically set back to <option class="+ topic/keyword pr-d/option ">false</option> (from <option class="+ topic/keyword pr-d/option ">true</option>). Corresponding entries
+are generated in the station's LogHistory, which records the detected
+mis-configuration and disabled BACnet router functionality.</p></section></refbody></reference>

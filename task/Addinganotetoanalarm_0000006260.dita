@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="AddingANoteToAnAlarm" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Adding a note to an alarm</title>
+<shortdesc class="- topic/shortdesc ">Adding a note to an alarm record provides useful information
+to guide the resolution of the alert or alarm condition. It can be
+invoked via toolbar or right-click option.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">note<indexterm class="- topic/indexterm ">adding to an alarm</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Select one or more alarm rows on the alarm console and
+click <uicontrol class="+ topic/ph ui-d/uicontrol ">Notes</uicontrol> at the bottom of the alarm console.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Notes</wintitle> window opens. If the selected
+alarm record represents a source with multiple alarms, the system
+adds any note you create to all the alarms associated with the source.<p class="- topic/p ">If a given alarm row has more than one alarm associated with it,
+the window displays <systemoutput class="+ topic/ph sw-d/systemoutput ">&lt;Multiple Alarms&gt;</systemoutput>. </p></stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Type the note and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Add Note</uicontrol>.</cmd></step>
+</steps>
+</taskbody>
+</task>

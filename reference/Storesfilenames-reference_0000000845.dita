@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="SSLStoresFileNames" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Stores file names</title>
+<shortdesc class="- topic/shortdesc ">The folders that contain the <keyword conkeyref="wh_variables_n4/Workbench" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword "/> and platform/station stores each contain a set of three
+data files, one per type of store.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">stores<indexterm class="- topic/indexterm ">file names</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "/>
+<vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><note class="- topic/note ">Only the appropriate <keyword conkeyref="wh_variables_n4/Workbench" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword "/>, platform or station tools may be used to modify these
+data files. Attempts to modify them by other means renders them corrupt
+and unusable.</note><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p "><filepath class="+ topic/ph sw-d/filepath ">keystore.jceks</filepath> is the<wintitle class="+ topic/keyword ui-d/wintitle "> User Key
+Store</wintitle>. In <keyword conkeyref="wh_variables_n4/Workbench" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword "/> it contains a company’s root CA, intermediate, and code-signing
+certificates. In a server, it contains the server certificate.</p></li>
+<li class="- topic/li "><p class="- topic/p "><filepath class="+ topic/ph sw-d/filepath ">cacerts.jceks</filepath> is the <wintitle class="+ topic/keyword ui-d/wintitle ">User Trust
+Store</wintitle>. In a client it contains the root CA and intermediate
+certificates with only their public keys.</p></li>
+<li class="- topic/li "><p class="- topic/p "><filepath class="+ topic/ph sw-d/filepath ">exemptions.tes</filepath> is the <wintitle class="+ topic/keyword ui-d/wintitle ">Allowed
+Hosts</wintitle> list. In a client it contains the certificate for
+hosts (servers) with whom the client may securely communicate even
+though the client either:</p><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">does not have a root CA certificate in its <wintitle class="+ topic/keyword ui-d/wintitle ">System</wintitle> or <wintitle class="+ topic/keyword ui-d/wintitle ">User Trust Store</wintitle> for the server, or</p></li>
+<li class="- topic/li "><p class="- topic/p ">may have a matching root CA certificate, but the <systemoutput class="+ topic/ph sw-d/systemoutput ">Common Name</systemoutput> or <systemoutput class="+ topic/ph sw-d/systemoutput ">Alternate Server Name</systemoutput> of the server certificate is not the same as the host name of the
+server being authenticated.</p></li>
+</ul></li>
+<li class="- topic/li "><p class="- topic/p "><filepath class="+ topic/ph sw-d/filepath ">.bcfks</filepath> is the FIPS (Federal Information
+Processing Standard) compliant key store. In non-FIPS mode, they are
+stored in a <filepath class="+ topic/ph sw-d/filepath ">.jceks</filepath> key store. These key stores
+are managed separately. The FIPS and non-FIPS certificates do not
+overlap.</p></li><?Pub Caret 137?>
+</ul><note class="- topic/note ">A certificate in the <keyword conkeyref="wh_variables_n4/Workbench" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword "/> <wintitle class="+ topic/keyword ui-d/wintitle ">User Key Store</wintitle> may have the same
+name as a certificate in a platform/station <wintitle class="+ topic/keyword ui-d/wintitle ">User Key Store</wintitle>, but they may not be the same certificate. Similarly, files in these
+stores may have differing alias names, and, in fact, contain the same
+public keys. It is the public/private key pair that defines a certificate,
+not the certificate’s name.</note></section>
+</refbody>
+</reference>

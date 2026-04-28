@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="opcUaServer-OpcUaServerPointFolder" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">opcUaServer-OpcUaServerPointFolder</title>
+<shortdesc class="- topic/shortdesc ">This component is the OPC UA server implementation of a
+standard folder under the <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">OpcUaNamespace</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Points</uicontrol></menucascade> container.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">opcUaServer-OpcUaServerPointFolder</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">You add such folders using the <uicontrol class="+ topic/ph ui-d/uicontrol ">New Folder</uicontrol> button in the <wintitle class="+ topic/keyword ui-d/wintitle ">Opc Ua Server Point Manager</wintitle> of
+the OPC UA server point device extension. ThisFolder is also available
+in the <apiname class="+ topic/keyword pr-d/apiname ">opcUaServer</apiname> palette.</p></section>
+</refbody>
+</reference>

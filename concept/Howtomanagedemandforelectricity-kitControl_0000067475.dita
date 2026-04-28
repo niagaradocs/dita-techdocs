@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="HowTheFrameworkManagesDemandForElec-23046E6F" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">How to manage demand for electricity</title>
+<shortdesc class="- topic/shortdesc ">It is one thing to project future electricity demand, but
+how does the framework then manage the demand for power to reduce
+cost?</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">electricity<indexterm class="- topic/indexterm ">managing demand</indexterm></indexterm></keywords></metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">The framework divides a day into three periods. For each period,
+you configure a specific demand limit. The framework compares the <parmname class="+ topic/keyword pr-d/parmname ">Projected Demand Average</parmname> to this <parmname class="+ topic/keyword pr-d/parmname ">Demand Limit</parmname> at the current time of day and, based on this comparison, sheds
+or restores electrical load as appropriate. In other words, if the
+projected demand is higher than the demand limit for the current time
+of day, the system sheds power. If shedding is active, and the projected
+demand is lower than the demand limit for the current time of day,
+the system restores power.</p>
+<p class="- topic/p ">Thirty-two power shed levels serve the shedding calculations. Each
+shed level value represents an amount by which to drop the power when
+that shed level is active. You configure these estimates manually
+in the ElectricalDemandLimit and ShedControl property sheets. They
+do not reflect live data. When the projected demand exceeds the <parmname class="+ topic/keyword pr-d/parmname ">Demand Limit</parmname> for the current demand period, the component
+calculates how many loads to shed. You should set the <parmname class="+ topic/keyword pr-d/parmname ">Power
+Shed Level</parmname> properties to demand values based on loads that
+are controlled by the specific shed group. The load shed logic calculates
+how much demand to reduce, and then uses the <parmname class="+ topic/keyword pr-d/parmname ">Power Shed
+Level</parmname> values to determine how many of the loads to shed.</p>
+<p class="- topic/p ">Shedding and restoring loads occurs in a fixed priority. The system
+sheds Power Shed Level1 first and restores it last.</p>
+</conbody>
+</concept>

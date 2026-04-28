@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="BackingUpAStationBACnet-541F0597" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Backing up a station</title>
+<shortdesc class="- topic/shortdesc ">This procedure summarizes the steps for backing up a remote
+BACnet station.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">backup</indexterm></keywords></metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq ">You have admin-level write permissions on the BacnetNetwork
+and BacnetLocalDevice, at a minimum. The password is not blank, not
+the default value, and you know what the password is.</prereq>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Un-hide the normally hidden <parmname class="+ topic/keyword pr-d/parmname ">Reinitialize Allowed</parmname> property of the <parmname class="+ topic/keyword pr-d/parmname ">Server</parmname> layer component (child
+of the <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetComm</uicontrol> container under the <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetNetwork</uicontrol>) and set its value to <option class="+ topic/keyword pr-d/option ">true</option>.</cmd>
+<info class="- topic/itemgroup task/info ">This value defaults to <option class="+ topic/keyword pr-d/option ">false</option>. Once the backup
+is complete, you can hide it again.</info>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Right-click the station node and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Backup
+Station</uicontrol>.</cmd></step>
+</steps>
+<result class="- topic/section task/result ">The <uicontrol class="+ topic/ph ui-d/uicontrol ">Local Device</uicontrol>’s <parmname class="+ topic/keyword pr-d/parmname ">Backup and Restore State</parmname> property changes from <systemoutput class="+ topic/ph sw-d/systemoutput ">Idle</systemoutput> to <systemoutput class="+ topic/ph sw-d/systemoutput ">Preparation</systemoutput> for
+backup and the station’s <uicontrol class="+ topic/ph ui-d/uicontrol ">BackupService</uicontrol> begins preparing a backup <filepath class="+ topic/ph sw-d/filepath ">.dist</filepath>, which contains
+the following:<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Station database — config.bog</p></li>
+<li class="- topic/li "><p class="- topic/p ">Alarm history database</p></li>
+<li class="- topic/li "><p class="- topic/p ">History database</p></li>
+<li class="- topic/li "><p class="- topic/p ">Module metadata — information about which version of
+each module is loaded. The modules themselves are not backed up.</p></li>
+</ul><p class="- topic/p ">The system exports the <filepath class="+ topic/ph sw-d/filepath ">.dist</filepath> file as
+a <uicontrol class="+ topic/ph ui-d/uicontrol ">File</uicontrol> object—part of the <parmname class="+ topic/keyword pr-d/parmname ">configurationFiles</parmname> property of the device object. The
+backup client then reads the <uicontrol class="+ topic/ph ui-d/uicontrol ">File</uicontrol> object using
+BACnet file access services.</p><p class="- topic/p ">Finally, the <uicontrol class="+ topic/ph ui-d/uicontrol ">Local Device</uicontrol>’s <parmname class="+ topic/keyword pr-d/parmname ">Backup and Restore State</parmname> property
+changes back to <systemoutput class="+ topic/ph sw-d/systemoutput ">Idle</systemoutput> and normal station
+operation resumes.</p></result>
+</taskbody>
+</task>

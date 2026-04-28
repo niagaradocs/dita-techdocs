@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="CommonTaggingTasks" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Common tagging tasks</title>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Common tagging tasks</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">The following sections include descriptions of some common
+ways to use tagging.</p></section>
+</refbody>
+</reference>

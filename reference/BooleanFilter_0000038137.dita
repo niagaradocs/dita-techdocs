@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="tagdictionary-BooleanFilter" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">tagdictionary-BooleanFilter</title><shortdesc class="- topic/shortdesc "><parmname class="+ topic/keyword pr-d/parmname ">BooleanFilter </parmname> is one of several possible
+validity conditions subproperties, which are used to specify a certain
+criteria to be met in order for a tag to be applied to an object.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">BooleanFilter</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p ">For example, the <parmname class="+ topic/keyword pr-d/parmname ">BooleanFilter</parmname> condition
+slot has a <wintitle class="+ topic/keyword ui-d/wintitle ">Filter</wintitle> subproperty containing the
+NEQL predicate which queries objects in the station for the tags: <option class="+ topic/keyword pr-d/option ">hs:equip</option> or <option class="+ topic/keyword pr-d/option ">hs:chiller</option>. If the query returns <systemoutput class="+ topic/ph sw-d/systemoutput ">true</systemoutput> for any object (as having one of more of the
+queried tags), the validity criteria has been met. So the parent definition's
+tag(s) and/or relation(s) become implied for those objects.</p><image placement="break" scale="80" scope="local" width="300" href="../graphic/N4Tagging_ConditionBooleanFilter_0000039000.png" class="- topic/image "/></section></refbody></reference>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="cat_AssigningCategoriesToStationObj" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Assigning a component to a basic category</title><shortdesc class="- topic/shortdesc ">You use the <wintitle class="+ topic/keyword ui-d/wintitle ">Category Browser</wintitle> to assign
+individual components to basic categories. Components may belong to
+more than one category at the same time. </shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">category<indexterm class="- topic/indexterm ">for assigning components</indexterm></indexterm><indexterm class="- topic/indexterm ">Category<indexterm class="- topic/indexterm ">Crowser</indexterm></indexterm><indexterm class="- topic/indexterm ">component<indexterm class="- topic/indexterm ">assigning to a basic category</indexterm></indexterm></keywords><prodinfo class="- topic/prodinfo "><prodname class="- topic/prodname "/><vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist></prodinfo></metadata></prolog><taskbody class="- topic/body task/taskbody "><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Right-click Expand <uicontrol class="+ topic/ph ui-d/uicontrol ">CategoryService</uicontrol> in the Nav tree and click <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Views</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">Category Browser</uicontrol></menucascade> in the Nav tree.</cmd><stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Category Browser</wintitle> view appears.
+Use this view to assign components.<p class="- topic/p ">By default this view shows
+the component types collapsed into rows in a tree structure: Alarm,
+Config (components), Files, and History. The columns represent the
+categories in the station. The column titles identify the categories.</p></stepresult></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To view all components that have category assignments,
+click the binocular icon <image href="../graphic/find_0000018151.png" class="- topic/image "/>) on
+the toolbar.</cmd><stepresult class="- topic/itemgroup task/stepresult ">All components appear in the table.</stepresult></step><?Pub Caret 83?><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Use the expandable tree to navigate to components of interest
+in the table. To return to the previous collapsed view, select the <option class="+ topic/keyword pr-d/option ">Category Browser</option> from the drop-down list of views.</cmd></step><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">As needed, in any component row, click either:</cmd><choices class="- topic/ul task/choices "><choice class="- topic/li task/choice ">In the category column to assign a component to a category
+or click again (toggle) to remove the component assignment from the
+category.</choice><choice class="- topic/li task/choice ">In the Inherit column to assign a component to any of the
+categories its parent is assigned to.</choice></choices><info class="- topic/itemgroup task/info ">With the exception of the root components, Alarms, Config, Files,
+and History, each object must belong to at least one basic category
+or inherit its parent’s category assignments. The root objects cannot
+inherit. They must belong to one or more categories.<note conkeyref="gen/Categories_OperatorWritePrivilege" class="- topic/note "/></info></step></steps><result class="- topic/section task/result ">Using the <wintitle class="+ topic/keyword ui-d/wintitle ">Category Browser</wintitle> to assign
+a component to a basic category updates the component’s category bitmap.
+Copying the component to another station or saving it in a bog for
+reuse includes the category bitmap.</result></taskbody></task>

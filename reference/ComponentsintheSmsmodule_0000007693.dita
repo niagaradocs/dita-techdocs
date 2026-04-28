@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="SmsComponents" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Components in the Sms module</title>
+<shortdesc class="- topic/shortdesc ">The Sms module contains components that allow you to set
+up a service for sending text messages. The following components are
+included in the Sms module:</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata ">
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="3.8" class="- topic/vrm "/><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><ul class="- topic/ul ">
+<li class="- topic/li ">SmsService</li>
+<li class="- topic/li ">SmsRecipient</li>
+<li class="- topic/li ">Sms</li>
+<li class="- topic/li ">SmsAlarmAcknowledger</li>
+</ul></section>
+</refbody>
+</reference>

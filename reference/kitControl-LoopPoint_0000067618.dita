@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-LoopPoint" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-LoopPoint</title>
+<shortdesc class="- topic/shortdesc ">This component implements a simple PID control loop. Loop
+objects provide closed-loop PID control (proportional, integral, derivative)
+at the station level. Independent gain constants configure the loop
+as P-only, PI, or PID.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">LoopPoint</indexterm><indexterm class="- topic/indexterm ">PID
+control</indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">LoopPoint is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">HVAC</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p><fig class="- topic/fig ">
+<title class="- topic/title ">LoopPoint properties</title>
+<image href="../graphic/kitControlLoopPoint_0000067481.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Selects units and configures how the value displays:</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">unit</option> defines the unit of measure from <option class="+ topic/keyword pr-d/option ">acceleration</option> to <option class="+ topic/keyword pr-d/option ">volumetric flow.</option></p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">precision </option> defines the number of decimal places. </p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">min</option> defines the lowest value allowed.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">max</option> defines the highest value allowed.</p><p class="- topic/p ">These facets
+apply to the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only number</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the output value for the loop.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Loop Enable</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> (default) or <option class="+ topic/keyword pr-d/option ">false</option> and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Turns the loop on and off. <p class="- topic/p "><option class="+ topic/keyword pr-d/option ">true</option> enables
+the PID loop algorithm to execute at the rate selected by the <parmname class="+ topic/keyword pr-d/parmname ">Execute Time</parmname> property.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">false</option> forces
+the PID loop output to a value that is dependent on the selection
+in the <option class="+ topic/keyword pr-d/option ">Disable Action</option> property.</p><p class="- topic/p ">When null is
+checked, the value displayed defaults to the incoming value from the
+device.If you remove the check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In </parmname> value. </p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Input Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Selects units and configures how the value displays:</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">unit</option> defines the unit of measure from <option class="+ topic/keyword pr-d/option ">acceleration</option> to <option class="+ topic/keyword pr-d/option ">volumetric flow.</option></p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">precision </option> defines the number of decimal places. </p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">min</option> defines the lowest value allowed.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">max</option> defines the highest value allowed.</p><p class="- topic/p ">These facets
+apply to the input.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Controller Variable</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "> number (defaults to 0.0) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the input value for the controlled property (for
+example, space temperature). This input must be valid for this object
+to function.<p class="- topic/p ">When null is checked, the value displayed defaults
+to the incoming value from the device.If you remove the check mark
+you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In </parmname> value. </p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Setpoint</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number of degrees of temperature and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the input value for the setpoint (for example, the
+space temperature setpoint). This value must be valid for this object
+to function. The object does not provide an integral command function
+for the setpoint value when entered on the property sheet.<p class="- topic/p ">If a
+commandable setpoint is required, link from a NumericWritable control
+point to the setpoint slot.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Execute Time</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours minutes seconds (defaults to .5 second)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Controls the execution frequency for the PID algorithm.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Actual Time</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only integer (defaults to zero (0))</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Reports the milliseconds since the previous execution. Changing
+the <parmname class="+ topic/keyword pr-d/parmname ">Execute Time</parmname> changes this time.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Loop Action</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">drop-down list (defaults to <option class="+ topic/keyword pr-d/option ">Direct</option>)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Determines if the control algorithm is direct or reverse
+acting.<p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Direct</option> increases the loop output as the
+value of the controlled variable increases to greater than the setpoint
+value. In a temperature loop, this is considered to be a cooling application.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Reverse</option> increases the loop output as the value
+of the controlled variable decreases to less than the setpoint value.
+In a temperature loop, this is considered to be a heating application.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Disable Action</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">drop-down list (defaults to <option class="+ topic/keyword pr-d/option ">Zero</option>)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Selects the value for the loop output (<parmname class="+ topic/keyword pr-d/parmname ">Out</parmname>) when <parmname class="+ topic/keyword pr-d/parmname ">Loop Enable</parmname> is <option class="+ topic/keyword pr-d/option ">false</option>.<p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Max Value</option> sets the loop output value to the
+value configured for <parmname class="+ topic/keyword pr-d/parmname ">Max Output</parmname>.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Min Value</option> sets the loop output value to the value configured
+for <parmname class="+ topic/keyword pr-d/parmname ">Min Output</parmname>.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Hold</option> maintains
+the loop output value at the last calculated value.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">Zero</option> sets the loop output value to zero (0.00).</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Tuning Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Selects units and configures how the value displays:</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">unit</option> defines the unit of measure from <option class="+ topic/keyword pr-d/option ">acceleration</option> to <option class="+ topic/keyword pr-d/option ">volumetric flow.</option></p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">precision </option> defines the number of decimal places. </p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">min</option> defines the lowest value allowed.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">max</option> defines the highest value allowed.</p><p class="- topic/p ">These facets
+apply to the tuning properties, such as the constants, <parmname class="+ topic/keyword pr-d/parmname ">Bias</parmname>, and output properties.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Proportional Constant</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number of seconds to three decimal places</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines a value used by the loop algorithm to set the overall
+gain for the loop. A starting point for this value equals: output
+range/throttling range.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Integral Constant</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number to three decimal places</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the integral gain in repeats per minute. The loop
+algorithm uses this value (also called the reset rate) to act on the
+magnitude of the setpoint error. A typical starting point is 0.5.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Derivative Constant</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number to three decimal places</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the derivative gain used by the loop algorithm to
+act on the rate of change of the setpoint error.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Bias</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number to two decimal places</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines an amount of output the algorithm adds to correct
+any offset error. The algorithm uses this value normally only with
+proportional control.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Maximum Output</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number to two decimal places</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the maximum output value that the loop algorithm
+can produce.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Minimum Output</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number to two decimal places</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the minimum output value that the loop algorithm
+can produce.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Ramp Time</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours minutes seconds (defaults to 0)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the minimum time that the output can ramp completely
+from <parmname class="+ topic/keyword pr-d/parmname ">Minimum Output</parmname> to <parmname class="+ topic/keyword pr-d/parmname ">Maximum Output</parmname>, effectively establishing a rate-of-change slope. This component
+enforces this value at station startup or whenever the LoopPoint transitions
+from disabled to enabled.<p class="- topic/p ">Once <parmname class="+ topic/keyword pr-d/parmname ">Ramp Time</parmname> expires,
+it no longer affects the output. This property is intended to prevent
+the loop from opening a valve or other controlled device to its maximum
+limit (“slamming”) during startup.</p><note class="- topic/note ">The default
+Ramp Time is 0:00:00, or disabled. To constrain the loop output rate
+of change when the loop starts or is enabled, enter a reasonable <parmname class="+ topic/keyword pr-d/parmname ">Ramp Time</parmname> value.</note></propdesc>
+</property>
+</properties>
+<section class="- topic/section "><title class="- topic/title ">Action</title><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">ResetIntegral</option> clears
+the current integral component of the loop’s output calculation.
+If needed, you can link this slot to another object to provide a quick
+purge of the integral effect. Typically, the latter would provide
+more of a debug utility, and should not be necessary if the LoopPoint’s
+configuration properties are correctly defined.</p></section>
+</refbody>
+</reference>

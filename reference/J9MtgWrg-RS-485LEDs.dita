@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<?Pub UDT template _font?><reference id="RS485LEDs-0B4A58EF" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">RS485 LEDs</title>
+<shortdesc class="- topic/shortdesc ">RS485 port <uicontrol class="+ topic/ph ui-d/uicontrol ">A</uicontrol> (COM1) and RS485 port <uicontrol class="+ topic/ph ui-d/uicontrol ">B</uicontrol> (COM2) each have two LEDs reflecting port activity.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">RS485 LEDs</indexterm><indexterm class="- topic/indexterm ">LEDs</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Yellow (TX): indicates the controller is transmitting data
+on the RS485 port.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Green (RX): indicates the controller is receiving data from
+an RS485 device connected to this port.</p></li>
+</ul><p class="- topic/p ">These LEDs use a fixed “on time” when a message is detected
+on the port. If a receive LED is on constantly, this can indicate
+a wiring problem, such as a shorted wire or reversed wiring.</p></section>
+</refbody>
+</reference>

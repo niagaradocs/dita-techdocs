@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="SelectComponents-282E42EF" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Select components</title>
+<shortdesc class="- topic/shortdesc ">Select objects pass one of multiple inputs to the output.
+You can select from three to 10 inputs for each action.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">select components</indexterm></keywords>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">All select objects require an enumerated input to perform the selection.
+The four select object types differ only by the type of input data
+selected and passed to the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> property.</p>
+</conbody>
+</concept>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="Troubleshooting-BACnet_4.9_EDE-C7E53B69" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">EDE troubleshooting</title><shortdesc class="- topic/shortdesc ">When the station initiates an EDE discovery job, the JobService
+records it in the Job Log. You can review this log and use it in troubleshooting.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">troubleshooting<indexterm class="- topic/indexterm ">EDE</indexterm></indexterm><indexterm class="- topic/indexterm ">job log (EDE)</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p ">To see the progress of the EDE discovery job, click on
+the <uicontrol class="+ topic/ph ui-d/uicontrol ">Job Log</uicontrol> control near the top of the manager
+view. This job displays only objects that failed to discover. It also
+specifies the invalid property due to which the discovery job failed. </p></section></refbody></reference>

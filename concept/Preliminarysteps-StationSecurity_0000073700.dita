@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="PreliminaryStepsStationSecurity-C74E1C5B" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">Preliminary steps</title><shortdesc class="- topic/shortdesc ">Complete these steps in preparation for setting up the
+SAML IdP Service.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">SAMLIdpService<indexterm class="- topic/indexterm ">preliminary
+steps</indexterm></indexterm></keywords></metadata></prolog><conbody class="- topic/body  concept/conbody "><p class="- topic/p ">The following steps can be completed in any order.</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">Generate a server certificate in the <keyword conkeyref="wh_variables_n4/Supervisor" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Supervisor" class="- topic/keyword "> Supervisor</keyword>’s <wintitle class="+ topic/keyword ui-d/wintitle ">Certificate Management</wintitle>. The certificate does not need to be signed since SAML IdP uses
+certificate pinning. It just needs to be present in the <wintitle class="+ topic/keyword ui-d/wintitle ">User Key Store</wintitle>.</p></li><li class="- topic/li "><p class="- topic/p ">Determine how many Circles of Trust you intend to create. For
+each one, identify which stations to include and which users to include
+as user prototypes.</p></li><li class="- topic/li "><p class="- topic/p ">Add all of the subordinate stations to the <keyword conkeyref="wh_variables_n4/Supervisor" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Supervisor" class="- topic/keyword "> Supervisor</keyword>’s <uicontrol class="+ topic/ph ui-d/uicontrol ">NiagaraNetwork</uicontrol> and
+make sure that the stations ping. This connection is necessary because
+later you will run a provisioning job on the subordinate stations.</p></li><li class="- topic/li "><p class="- topic/p ">Create user prototypes in each remote station. You need all
+of the user prototypes for all of the users in any Circles of Trust
+that a station is a part of. The user prototypes do not need to exist
+in the <keyword conkeyref="wh_variables_n4/Supervisor" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Supervisor" class="- topic/keyword ">Spervisor</keyword> station. When an attempt to log in to a subordinate
+station as a SAML user is made, the user is created in the subordinate
+station according to a user prototype. For this reason, the prototypes
+must exist in the remote station beforehand.</p><p class="- topic/p ">The SAML Authentication Scheme only supports the baja-UserPrototype. While LDAP supports this user prototype as well as the default user prototype. </p></li><li class="- topic/li "><p class="- topic/p ">In the <keyword conkeyref="wh_variables_n4/Supervisor" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Supervisor" class="- topic/keyword "> Supervisor</keyword>’s UserService, create all of the users that
+you need for any Circle of Trust or subordinate station.</p></li></ul></conbody></concept>

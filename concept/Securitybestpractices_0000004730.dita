@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="SecurityBestPractices" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">Security best practices</title><shortdesc class="- topic/shortdesc ">Ensuring the security of your device network is crucial in today's environment.Therefore, it is essential that you  allocate resources and dedicate time to implement the best practices.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">best security practices</indexterm></keywords><prodinfo class="- topic/prodinfo "><prodname class="- topic/prodname ">Niagara</prodname><vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist></prodinfo></metadata><?Pub Caret 16?></prolog><conbody class="- topic/body  concept/conbody "><section class="- topic/section "><title class="- topic/title "/><p class="- topic/p "><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">Always upgrade your platform and station
+to the latest software version. Install all patches and software updates.</p></li><li class="- topic/li "><p class="- topic/p ">Physical
+security is crucial. Secure all computer equipment in a locked room.
+Make sure that each station is only accessible by authorized users.</p></li><li class="- topic/li "><p class="- topic/p ">Physically
+protect wiring to prevent an unauthorized person from plugging in
+to your network.</p></li><li class="- topic/li "><p class="- topic/p ">Use
+digital certificates to secure data transmission over wires or wireless
+connections. If you must connect a host station directly to the public
+Internet, make sure you are using CA-signed certificates</p></li><li class="- topic/li "><p class="- topic/p ">If
+your company is acting as its own CA (Certificate Authority), your
+root CA certificate must be separately installed in each station's <wintitle class="+ topic/keyword ui-d/wintitle ">User Trust Store</wintitle>.</p></li><li class="- topic/li "><p class="- topic/p ">Physically
+protect the medium (usually a USB thumb drive) you use to back up
+and transport exported certificates.</p></li><li class="- topic/li "><p class="- topic/p ">Install
+browsers using only a trusted installation program. The program you
+use installs third-party certificates from CAs. These must be trustworthy certificates.</p></li><li class="- topic/li "><p class="- topic/p ">For
+high-traffic stations (especially stations that provide public access
+to a controller network), secure <apiname class="+ topic/keyword pr-d/apiname ">niagarad</apiname> with
+a separate certificate from that used for your <apiname class="+ topic/keyword pr-d/apiname ">FoxService</apiname> and <apiname class="+ topic/keyword pr-d/apiname ">WebService</apiname>.</p></li><li class="- topic/li "><p class="- topic/p ">Back
+up each station regularly. Embedded systems, such as <ph conkeyref="host_models/nc" class="- topic/ph "/> controllers write audit information to a rolling buffer. To
+avoid losing a station's audit trail, regularly export audit histories
+to a <keyword conkeyref="wh_variables_n4/Supervisor" class="- topic/keyword "/> station.</p></li></ul></p></section></conbody></concept>

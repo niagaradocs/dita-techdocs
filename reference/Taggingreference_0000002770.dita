@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<?xml-stylesheet href="file:///C:/Users/H477160/Honeywell/Tridium%20Tech%20Docs%20-%20Documents/General/Arbortext/com.tridium.atxcustom/doctypes/ditabase/N4-ditabase.style" type="text/x-styler" media="editor" alternate="yes"?><reference id="TaggingReference-47294A23" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Tagging reference</title>
+<shortdesc class="- topic/shortdesc ">Tagging is a form of semantic modeling that assigns information
+(one or more tags) to objects. The tag information can help integrators
+and users significantly when searching for objects, designing system
+structures or navigating hierarchies.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata ">
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "><keyword conkeyref="wh_variables_n4/niagara" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara" class="- topic/keyword "/></prodname>
+</prodinfo>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">Tagging can identify a device and indicate where it is
+physically located. By identifying and locating devices, tags provide
+a context for the device that can be used in many different ways.
+When you use tags, you can reduce or eliminate the requirement to
+manually map objects directly to a desired application.</p></section>
+</refbody>
+</reference>

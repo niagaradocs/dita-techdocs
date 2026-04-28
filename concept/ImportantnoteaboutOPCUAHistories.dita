@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="ImportantNoteAboutOPCUAHistories-B0C9030F" xml:lang="en" class="- topic/topic concept/concept "><title class="- topic/title ">Important note about OPC UA Histories</title><shortdesc class="- topic/shortdesc ">When you discover and add histories in the OPC UA client,
+they are automatically stored in two locations. Adding histories using
+the History extension places them under the respective driver name
+within the history section. Similarly, when you add a point with history
+to the Point device extension, it appears under the station history.</shortdesc><?Pub Caret 46?><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">discover points and histories</indexterm><indexterm class="- topic/indexterm ">adding points and histories</indexterm></keywords></metadata></prolog><conbody class="- topic/body  concept/conbody "><fig class="- topic/fig "><title class="- topic/title ">OpcUa Histories </title><image placement="break" scale="65" href="../graphic/OPCUAHistories.png" class="- topic/image "/></fig><p class="- topic/p ">Following is an explanation of two methods for importing histories
+from the OpcUa server into the client.<ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p "><b class="+ topic/ph hi-d/b ">OpcUaClientPointDeviceExt</b>: When you identify a point
+with a history on the discovered OPC UA server in the <wintitle class="+ topic/keyword ui-d/wintitle ">OpcUaClientPointManager</wintitle> view, adding this point to the station as a <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> point will automatically
+create an ImportHistoryExt as a subordinate to the control point.
+By default, these histories are located under the station History.</p></li><li class="- topic/li "><p class="- topic/p "><b class="+ topic/ph hi-d/b ">OpcUaClientHistoryDeviceExt</b>: Each <uicontrol class="+ topic/ph ui-d/uicontrol ">OpcUaDevice</uicontrol> includes an <uicontrol class="+ topic/ph ui-d/uicontrol ">OpcUaClientHistoryDeviceExt</uicontrol>.
+This device extension’s <wintitle class="+ topic/keyword ui-d/wintitle ">OpcUaClientHistoryImportManager</wintitle> view allows you to uncover all histories collected by the connected
+OPC UA Server. When you discover and add these histories, the system
+retrieves and stores the history of that particular point under the
+client driver name within the History.</p></li></ul></p><p class="- topic/p ">Preferably, you should add histories to the Points device extension.
+However, it is possible to collect histories without creating a Control
+Point by utilizing the Histories device extension..</p></conbody></concept>

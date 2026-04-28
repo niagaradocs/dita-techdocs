@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="DocumentChangeLog-CED08D5B" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Document change log</title><shortdesc class="- topic/shortdesc ">Changes to this document are listed in this topic.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">document change log</indexterm></keywords></metadata><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo "><prodname class="- topic/prodname "><keyword conkeyref="wh_variables_n4/niagara" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara" class="- topic/keyword "/></prodname></prodinfo></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><title class="- topic/title ">November 20, 2025</title><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">Updated "Java installation" topic in the "Important information" chapter.</p></li></ul></section><section class="- topic/section "><title class="- topic/title ">May 1, 2025</title><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">Updated supported operating systems and database software tables in "Important information" chapter. </p></li><li class="- topic/li "><p class="- topic/p ">Edited "Editing silent.properties file" topic in "Silent Installer" chapter.</p></li></ul></section><section class="- topic/section ">
+            <title class="- topic/title ">September 11, 2024</title>
+            <ul class="- topic/ul "><li class="- topic/li ">
+                    <p class="- topic/p ">Updated supported Operating Systems, supported Relational Databases, and supported Web browsers tables for version <keyword conkeyref="wh_variables_n4/niagara4.14" class="- topic/keyword "/> supervisor.</p>
+                </li></ul>
+        </section><section class="- topic/section ">
+            <title class="- topic/title ">March 27, 2024</title>
+            <ul class="- topic/ul "><li class="- topic/li ">
+                    <p class="- topic/p ">Updated hardware requirements for <keyword conkeyref="wh_variables_n4/niagara4" class="- topic/keyword ">Niagara 4</keyword> supervisor.</p>
+                </li></ul>
+        </section><section class="- topic/section ">
+            <title class="- topic/title ">December 21, 2023</title><?Pub Caret -2?>
+            <ul class="- topic/ul "><li class="- topic/li ">
+                    <p class="- topic/p ">In the “Silent Installer” chapter, added information about the location of the <apiname class="+ topic/keyword pr-d/apiname ">silent.properties</apiname> file.</p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Updated "Supported operating systems" topic. to show support for Windows Server 2022 in <keyword conkeyref="wh_variables_n4/niagara4.10u6" class="- topic/keyword "/>.</p>
+                </li></ul>
+        </section><section class="- topic/section ">
+            <title class="- topic/title ">July 25, 2023</title>
+            <ul class="- topic/ul "><li class="- topic/li ">
+                    <p class="- topic/p ">Added “Silent Installer” chapter (<keyword conkeyref="wh_variables_n4/niagara4.13" class="- topic/keyword "/>).</p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Added <ph conkeyref="host_models/nc" class="- topic/ph ">Jace</ph> reference to “Setting the system passphrase” topic.</p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Updated the 4.13 table for Supported operating systems, Supported web browsers, Supported relational database software and Supported mobile operating systems. Supported operating systems</p>
+                </li></ul>
+        </section><section class="- topic/section ">
+            <title class="- topic/title ">October 17, 2022</title>
+            <p class="- topic/p ">Updated the 4.12 table for Supported operating systems, Supported web browsers, Supported relational database software and Supported mobile operating systems.</p>
+        </section><section class="- topic/section ">
+            <title class="- topic/title ">November 29, 2021</title>
+            <ul class="- topic/ul "><li class="- topic/li ">
+                    <p class="- topic/p ">Updated 4.11 column in these tables: operating systems, web browsers, relational database software and mobile operating systems.</p>
+                </li><li class="- topic/li ">
+                    <p class="- topic/p ">Updated two examples with more recent <ph conkeyref="wh_variables_n4/niagara_tm" class="- topic/ph "/> version numbers.</p>
+                </li></ul>
+        </section><section class="- topic/section ">
+            <title class="- topic/title ">April 5, 2021</title>
+            <p class="- topic/p ">Corrected the supported relational databases table.</p>
+        </section></refbody></reference>

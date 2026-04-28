@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="InternetworkRules-BACnet-55983D95" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">Internetwork rules</title>
+<shortdesc class="- topic/shortdesc ">These rules ensure communication success among networks
+and devices on an internetwork.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">internetwork rules</indexterm><indexterm class="- topic/indexterm ">rules for internetworks</indexterm></keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><title class="- topic/title ">Rule: There must be only one message path between
+any two BACnet devices on an internetwork. No communication loops
+are allowed.</title><p class="- topic/p ">Example: Do not configure multiple BACnet devices
+on the same LAN with both BACnet/IP and BACnet/Ethernet enabled. This
+includes host (remote controller) stations.</p></section>
+<section class="- topic/section "><title class="- topic/title ">Rule: A BACnet router must exist between two BACnet
+networks (different network numbers) for BACnet messages to pass between
+the devices on the two networks. This applies to any link-layer types.</title><p class="- topic/p ">The important concept here is that a BACnet router can be a single-purpose
+device, or an application layer device (controller) that also includes
+router functionality, such as a station running in a remote host.</p><p class="- topic/p ">The BACnet Specification requires that all devices communicating
+on the BACnet network have an application layer entity, including
+a BACnet Device object.</p><p class="- topic/p ">By default, if a station is configured
+for multiple link-layers, it automatically acts as a router between
+two (or more) BACnet networks to which it is directly attached. However,
+a station does not act as a plain IP router.</p><p class="- topic/p ">For example, if
+an EthernetPort and two MstpPorts are enabled in a remote station,
+the station operates as a BACnet router between the three networks.
+If Ethernet, IP, and a MS/TP ports are enabled, the station operates
+as a BACnet-to-BACnet/IP router between the three networks, and so
+forth. If you add a second IpPort, bound to a different UDP port,
+the station routes BACnet messages among the networks, just like other
+data link layers.</p></section>
+<section class="- topic/section "><title class="- topic/title ">Rule: Within any given internetwork, each BACnet network
+must have a unique network number, from 1 to 65534.</title><p class="- topic/p ">The
+concept is that each link-layer (network port), which is enabled in
+the BACnet network’s <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Bacnet Comm</uicontrol>
+<uicontrol class="+ topic/ph ui-d/uicontrol ">Network</uicontrol></menucascade> container corresponds
+to a specific BACnet network, specified by the <parmname class="+ topic/keyword pr-d/parmname ">Network Number</parmname> property.</p><p class="- topic/p ">If you establish a new BACnet internetwork, you
+can specify any network number for each port. For example, BACnet/IP
+(IpPort) = 1, BACnet/Ethernet (EthernetPort) = 2, and (if a QNX-based
+host), MstpPort (1) = 3, MstpPort (2) = 4, and so on.</p><p class="- topic/p ">If you
+add a host on an existing BACnet internetwork, you should specify
+the established BACnet/IP network number and/or BACnet/Ethernet network
+number currently in use. If you have a host with one or more enabled
+MstpPorts, you must also specify a previously-unused network number
+for each network.</p></section>
+<section class="- topic/section "><title class="- topic/title ">Rule: Every BACnet object, including the Device object
+in each BACnet device, must have a unique numeric Object_Identifier.</title><p class="- topic/p ">In the specific case of the Device object, this Object_Identifier
+must be unique, internetwork-wide. Valid values for this identifier
+range from 0 to 4194302.</p><p class="- topic/p ">The concept is that BACnet devices
+respond to a Who-Is broadcast message with an I-Am reply that includes
+each Device object’s unique numeric Object_Identifier. If you
+receive duplicate I-Am messages (multiples showing the same device,
+by number), either more than one device has been assigned the same
+identifier (number) or a message loop exists.</p></section>
+</refbody>
+</reference>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="bacnet-BacnetObject" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">BacnetObject</title>
+<shortdesc class="- topic/shortdesc ">This general purpose config object provides properties
+of a BACnet object type that is not included in the config folder
+of the <apiname class="+ topic/keyword pr-d/apiname ">bacnet</apiname> palette, or if a BACnet OWS Supervisor
+or BACnet AWS Supervisor, not included in the config folders of the <apiname class="+ topic/keyword pr-d/apiname ">bacnetOws</apiname> and <apiname class="+ topic/keyword pr-d/apiname ">bacnetAws</apiname> palette. </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">BacnetObject</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p "/></section>
+</refbody>
+</reference>

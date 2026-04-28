@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="aTagging" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">Tagging Overview</title><shortdesc class="- topic/shortdesc ">Adding tags to your data model can streamline the process
+of setting up a system, especially large or enterprise systems. Instead
+of manually mapping data into the application point by point, trend
+by trend, systems integrators can use tags to facilitate the process.
+Tag information can also facilitate and improve search results and
+hierarchical navigation design. Tagging is a form of semantic modeling
+that assigns information (one or more tags) to objects. The tag information
+can help integrators and users significantly when searching for objects,
+designing system structures or navigating hierarchies.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">Tagging<indexterm class="- topic/indexterm ">overview</indexterm></indexterm></keywords></metadata></prolog><conbody class="- topic/body  concept/conbody "><p class="- topic/p ">If you add tags to station objects using standard <term class="- topic/term ">Tag Dictionaries</term>, other applications can discover station content without having
+to understand the naming convention used by the installer or system
+integrator. Typical station tagging might include things such as:
+networks, devices, points, control blocks, and more. You can also
+map all of these example objects to domain-specific semantic entities
+such as, buildings, systems, equipment to further indicate how they
+relate to each other. Tagging can identify a device and indicate where
+it is physically located. By identifying and locating devices, tags
+provide a context for the device that can be used in many different
+ways. When you use tags, you can reduce or eliminate the requirement
+to manually map objects directly to a desired application.</p><p class="- topic/p ">The tagging architecture is centered on JSON-only tag dictionary exchange. All legacy CSV workflows, including editing in Excel and importing .csv files, are  deprecated.</p></conbody></concept>

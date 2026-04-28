@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-StringIndexOf" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-StringIndexOf</title>
+<shortdesc class="- topic/shortdesc ">This component compares two StatusString inputs (<parmname class="+ topic/keyword pr-d/parmname ">In A</parmname>, <parmname class="+ topic/keyword pr-d/parmname ">In B</parmname>), looking for an exact
+match of string <parmname class="+ topic/keyword pr-d/parmname ">In B</parmname> within string <parmname class="+ topic/keyword pr-d/parmname ">In A</parmname>. The object outputs a StatusBoolean result (true,
+false).</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">StringIndexOf</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p "> The StringIndexOf is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">String</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p><fig class="- topic/fig ">
+<title class="- topic/title ">StringIndexOf properties</title>
+<image href="../graphic/kitControlStringIndexOf_0000067724.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> (default) or <option class="+ topic/keyword pr-d/option ">false</option> and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Boolean output indicates the result of the comparison.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In A and In B</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text (defaults to blank) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Define the two strings to compare.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">From Index</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">integer (defaults to 0)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the string from where to start the comparison. </propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Begin Index</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">integer (defaults to 0)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines which position in the string to start the comparison.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">After Index</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">integer (defaults to 0)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines which position in the string to end the comparison.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

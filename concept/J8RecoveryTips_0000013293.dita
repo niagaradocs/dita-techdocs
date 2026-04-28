@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="J8RecoveryTips-C15146B2" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Troubleshooting</title>
+<!--This topic is shared by docJ8Startup and docJ9Startup.-->
+<shortdesc class="- topic/shortdesc ">During commissioning, it is possible to run into problems.
+For instance, you may type an IP address incorrectly when entering
+it, and as a result be unable to regain access. This chapter provides
+information that can help with troubleshooting or general controller
+operations.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata ">
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname ">Niagara</prodname>
+<vrmlist class="- topic/vrmlist "><vrm version="4.1" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody "/>
+</concept>

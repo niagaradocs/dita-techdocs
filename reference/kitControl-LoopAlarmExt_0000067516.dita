@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--Arbortext, Inc., 1988-2019, v.4002--><reference id="kitControl-LoopAlarmAlgorithm" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-LoopAlarmExt</title>
+<shortdesc class="- topic/shortdesc ">This component is a special-purpose alarm extension, especially
+for the use as a child of a LoopPoint component. It provides alarming
+as a deviation from the current setpoint (plus or minus), using offnormal
+properties errorLimit and deadband. As of <keyword conkeyref="wh_variables_n4/niagara4.14" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/niagara4.14" class="- topic/keyword ">Niagara 4.14</keyword>, when the <parmname class="+ topic/keyword pr-d/parmname ">Low Diff Limit Enabled</parmname> property is set to <option class="+ topic/keyword pr-d/option ">true</option>, a <parmname class="+ topic/keyword pr-d/parmname ">Low Diff Limit</parmname> is defined that may differ from the existing error limit. Once <parmname class="+ topic/keyword pr-d/parmname ">Low Diff Limit Enabled</parmname> is set to <option class="+ topic/keyword pr-d/option ">true</option>, the <parmname class="+ topic/keyword pr-d/parmname ">Low Diff Limit</parmname> property will be used by
+the algorithm.</shortdesc><?Pub Caret 472?>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">LoopAlarmExt</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">LoopAlarmExt is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Alarm</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p><p class="- topic/p ">The properties
+for this extension are the same as those for a standard framework
+alarm extension. Refer to the <cite class="- topic/cite "><ph conkeyref="doctitles_coresw/NiagaraN4AlarmsGuide" conref="../reuse/WH_CoreSWDocTitles_Tridium_N4_0000009937.dita#WHCoreSoftwareDocumentTitles-9A315B77/NiagaraN4AlarmsGuide" class="- topic/ph "/>.</cite></p></section>
+</refbody>
+</reference>

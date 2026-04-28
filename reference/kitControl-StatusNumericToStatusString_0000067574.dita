@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-StatusNumericToStatusString" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-StatusNumericToStatusString</title>
+<shortdesc class="- topic/shortdesc ">This component converts a StatusNumeric value to a StatusString
+value.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">StatusNumericToStatusString</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">StatusNumericToStatusString is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Conversion</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette. </p><p class="- topic/p ">Object properties specify the number of integer
+(whole number) digits and decimal digits to use in the output string,
+with a default value of six (6) each. Unused digits are padded with
+a zero. For example, with an input numeric value of 72.8, the default
+output string would be: <systemoutput class="+ topic/ph sw-d/systemoutput ">000072.800000</systemoutput>.</p><fig class="- topic/fig ">
+<title class="- topic/title ">StatusNumericToStatusString properties</title>
+<image href="../graphic/kitControlStatusNumericToStatusString_0000067586.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only number</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the converted target status text.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">In</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number and null definition (defaults to 0)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the source status numeric value.<p class="- topic/p ">When null is
+checked, the value displayed defaults to the incoming value from the
+device. If you remove the check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Integer Digits</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number (defaults to 6)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Configures the whole number to the left of the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value’s decimal point.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Decimal Digits</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number (defaults to 6)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Configures the fraction to the right of the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value’s decimal point.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

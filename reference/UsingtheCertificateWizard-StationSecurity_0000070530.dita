@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="UsingTheCertificateWizardStationSec-878356E6" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Certificate Wizard</title><shortdesc class="- topic/shortdesc ">The latest <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword ">Niagara</keyword> version supports a <wintitle class="+ topic/keyword ui-d/wintitle ">Certificate Wizard</wintitle>. This wizard, available as a view on the platform root, provides
+a complete, continuous workflow that helps you properly set up certificates
+to harden a platform and station against cyber attack.<!--This topic is used in both the Station Security Guide, Enterprise Security Installation and Maintenance Guide (System Security chapter) and Platform Guide--></shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">certificate<indexterm class="- topic/indexterm ">wizard</indexterm></indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><p class="- topic/p ">The wizard assumes prior experience in various types of
+certificate setup and a reasonable level of confidence in performing
+such procedures as are commonly done using the <wintitle class="+ topic/keyword ui-d/wintitle ">Certificate
+Management</wintitle> tool. That being the case, you will find that
+the <wintitle class="+ topic/keyword ui-d/wintitle ">Certificate Wizard</wintitle> simplifies the certificate
+setup process for a station by combining several steps into a continuous
+workflow. If you are unfamiliar with certificates, work through individual
+setup procedures using the <wintitle class="+ topic/keyword ui-d/wintitle ">Certificate Management</wintitle> tool as described elsewhere in this guide. The individual procedures
+will help you gain a better understanding of the steps involved.</p><p class="- topic/p ">As an alternative to using the <wintitle class="+ topic/keyword ui-d/wintitle ">Certificate Management</wintitle> tabs to create and install a CA root certificate, the <wintitle class="+ topic/keyword ui-d/wintitle ">Certificate Wizard</wintitle> generates the root CA certificate and
+exports it with only its public key in preparation to install in a
+browser.</p><note class="- topic/note ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Certificate Wizard</wintitle> is intended
+to be used for a single platform at a time, not for provisioning multiple
+platforms.</note><p class="- topic/p ">The <wintitle class="+ topic/keyword ui-d/wintitle ">Certificate Wizard</wintitle> may
+be configured to perform some or all of the following tasks:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">Generate a new root CA certificate on the local host that can
+be used to sign all server certificates.</p></li><li class="- topic/li "><p class="- topic/p ">Generate a new server certificate for a host platform.</p></li><li class="- topic/li "><p class="- topic/p ">Sign a server certificate with a new or existing root CA certificate.</p></li><li class="- topic/li "><p class="- topic/p ">Export a server certificate CSR (signing request) for signing
+by an external certificate authority.</p></li><li class="- topic/li "><p class="- topic/p ">Install a root CA certificate into the <wintitle class="+ topic/keyword ui-d/wintitle ">User Trust
+Store</wintitle> of a platform/station selected from the daemon directory.</p></li></ul><p class="- topic/p ">Once the <wintitle class="+ topic/keyword ui-d/wintitle ">Certificate Wizard</wintitle> generates
+the files, they must still be installed into all of the appropriate
+devices. This is accomplished via the <wintitle class="+ topic/keyword ui-d/wintitle ">Certificate Management</wintitle> tool found in the <keyword conkeyref="wh_variables_n4/Workbench" class="- topic/keyword ">Workbench</keyword> <wintitle class="+ topic/keyword ui-d/wintitle ">Tools</wintitle> menu.</p></section></refbody></reference>

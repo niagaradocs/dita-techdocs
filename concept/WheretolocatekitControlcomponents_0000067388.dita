@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="WhereToLocateKitControlComponents-4161DFC8" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Where to locate kitControl components</title>
+<shortdesc class="- topic/shortdesc ">As with simple control points, you can copy kitControl
+components to any folder or component in the station. This includes
+placing kitControl components under any device Points extension (container),
+or under any Points extension subfolder. </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">location of components</indexterm>
+</keywords></metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">There are two competing best practice philosophies about locating
+your control logic:</p>
+<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">Philosophy A maintains that only proxy points belong under
+a device’s Points container. You can add extensions (control,
+history, and alarm), as needed, to proxy points. However, other components
+(kitControl components, simple control points, schedules) should be
+located under a central folder—not under the station’s
+Driver architecture—but instead in subfolders under a main <uicontrol class="+ topic/ph ui-d/uicontrol ">Logic</uicontrol> folder (by convention) created in the root of the
+station’s <uicontrol class="+ topic/ph ui-d/uicontrol ">Config</uicontrol> container.</p><p class="- topic/p ">This
+philosophy requires many internal links between proxy points and kitControl
+components. It often makes following control logic harder, because
+you do not see most links except as knobs. In addition, it makes applications
+much less portable in that you cannot copy an entire application by
+selecting a single device container.</p></li>
+<li class="- topic/li "><p class="- topic/p ">Philosophy B maintains that kitControl components and schedules
+belong under each device’s <uicontrol class="+ topic/ph ui-d/uicontrol ">Points</uicontrol> container
+(either directly, or in subfolders). This allows you to create local
+links between device proxy points and other components. Copying an
+entire application requires copying a single device container.</p></li>
+</ul>
+<p class="- topic/p ">The original intention of Philosophy A was to establish a logic
+convention to simplify universal support of different application
+types. However, Philosophy B offers easier portability of each application,
+allowing easy replication and reuse at a device level. In general,
+use of Philosophy B is more common. In other words, it is preferable
+to locate kitControl components where they are needed.</p>
+</conbody>
+</concept>

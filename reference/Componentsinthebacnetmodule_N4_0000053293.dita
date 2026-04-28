@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="BacnetPalette-5421F61C" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">Components in the bacnet module</title><shortdesc class="- topic/shortdesc ">This module supports all BACnet features that run in a
+remote controller.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">module<indexterm class="- topic/indexterm ">bacnet</indexterm></indexterm><indexterm class="- topic/indexterm ">bacnet module</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><fig class="- topic/fig "><title class="- topic/title ">The bacnet palette</title><image placement="break" width="300" href="../graphic/Bacnetpalette_0000054210.png" class="- topic/image "/></fig><p class="- topic/p ">The <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetDeviceFolder</uicontrol> is a single
+component with no child components.</p><p class="- topic/p ">The BacnetDevice folder
+contains seven child components, which are to be dragged to the station.</p></section></refbody></reference>

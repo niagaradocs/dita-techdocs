@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="HistoryExportBACnet-54173B78" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">History export</title>
+<shortdesc class="- topic/shortdesc ">BACnet trend log objects closely resemble standard histories
+in many ways. However, a fully-compliant BACnet trend log includes
+additional data, such as sequence numbers, as well as record entries
+for log events, such as log enable, log disable, and buffer purge
+within the log data.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">history export</indexterm><indexterm class="- topic/indexterm ">trend log</indexterm><indexterm class="- topic/indexterm ">BacnetTrendLogExt</indexterm>
+<indexterm class="- topic/indexterm ">Bacnet Niagara Log Export Manager</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">Therefore, depending on requirements, there are two methods
+to export a history:</p><ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p ">When a fully BACnet-compliant trend log object is needed, you
+must drag<uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetTrendLogExt</uicontrol> extension from the <apiname class="+ topic/keyword pr-d/apiname ">bacnet</apiname> palette into the source point in the station, instead
+of the typical history extension. In this case, the resulting history
+provides the additional BACnet-compliant data, such as sequence numbers
+and log events.</p></li>
+<li class="- topic/li "><p class="- topic/p ">If retroactively exporting to BACnet, and a trend log object
+that provides data by time and by index, access only is sufficient.
+Export by selecting any standard history (created by a standard history
+extension). Do this in the <wintitle class="+ topic/keyword ui-d/wintitle ">Bacnet Niagara Log Export Manager</wintitle> using a discover job. In this case, the exposed trend log object
+does not provide sequence numbers or by sequence number access, because
+this information was not stored within the original history.</p></li>
+</ul></section>
+<section class="- topic/section "><title class="- topic/title ">BacnetTrendLogExt extensions</title><p class="- topic/p ">The <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetTrendLogExts</uicontrol> reside in the <filepath class="+ topic/ph sw-d/filepath ">Trending</filepath> folder of the <apiname class="+ topic/keyword pr-d/apiname ">bacnet</apiname> palette.</p><fig id="ID-fig-00000015" class="- topic/fig ">
+<title id="ID-0000039c" class="- topic/title ">BacnetTrendLogExts in the bacnet palette</title>
+<image placement="break" scale="65" href="../graphic/Bacnetpalette_0000054210.png" class="- topic/image ">
+</image>
+</fig><p class="- topic/p ">You can use one of these instead of a standard history extension,
+pasting it in any point in which you need to export its history as
+a fully BACnet-compliant trend log object. For example, if you have
+a Lon proxy point of type NumericPoint, for nvoSpaceTemp representing
+room temperature, you could copy a <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetNumericIntervalTrendLogExt</uicontrol> into that NumericPoint. Its resulting history (created only after
+you enable it, as with any history extension) will now be fully BACnet-compliant.</p><p class="- topic/p ">By default, when you add one of the extensions to a component,
+note that a corresponding Bacnet log descriptor of type <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetTrendLogDescriptor</uicontrol> is automatically created in
+the root of the Export Table. You still define the normal collection
+properties in the <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetTrendLogExt</uicontrol> history
+extension (of the source component), however, there are additional
+properties in its associated BACnet trend log descriptor.</p></section>
+<section class="- topic/section "><title class="- topic/title ">Differences between BACnet-exposed histories and standard
+histories</title><p class="- topic/p ">A history created by a BacnetTrandLogExt has extra
+properties for sequence numbers and log events. A standard history
+does not include these properties.</p></section>
+</refbody>
+</reference>

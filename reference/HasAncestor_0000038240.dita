@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="tagdictionary-HasAncestor" xml:lang="en" class="- topic/topic       reference/reference "><title class="- topic/title ">tagdictionary-HasAncestor</title><shortdesc class="- topic/shortdesc "><parmname class="+ topic/keyword pr-d/parmname ">HasAncestor</parmname> is one of several possible
+TagRule conditions, which are used to specify a tag rule or tag validity
+criteria. </shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">HasAncestor</indexterm></keywords></metadata></prolog><refbody class="- topic/body        reference/refbody "><section class="- topic/section "><fig class="- topic/fig "><title class="- topic/title ">Example HasAncestor Condition slot with Filter</title><image placement="break" scale="75" width="300" href="../graphic/HasAncestor_0000038260.png" class="- topic/image "/></fig><p class="- topic/p ">In the example shown, the <parmname class="+ topic/keyword pr-d/parmname ">HasAncestor</parmname> condition slot has a <parmname class="+ topic/keyword pr-d/parmname ">Filter</parmname> subproperty containing
+the NEQL predicate which queries ancestor entries in the station: <option class="+ topic/keyword pr-d/option ">hs:ahu or hs:vav</option>. If the <parmname class="+ topic/keyword pr-d/parmname ">Filter</parmname> NEQL
+predicate is <systemoutput class="+ topic/ph sw-d/systemoutput ">true</systemoutput> for the target object
+or one of its ancestors, the HasAncestor criteria is met. If an object
+is a component and has a parent component, its ancestor is that parent.
+If an object is not a component or is a component without a parent
+component, the endpoint of the first outbound <codeph class="+ topic/ph pr-d/codeph ">n:parent</codeph> relation is its ancestor.</p></section></refbody></reference>

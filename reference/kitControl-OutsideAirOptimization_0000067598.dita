@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-OutsideAirOptimization" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-OutsideAirOptimization</title>
+<shortdesc class="- topic/shortdesc ">This component supports applications that need to allow
+for enthalpy based free cooling. This object is typically used during
+occupancy periods.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">OutsideAirOptimization</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">OutsideAirOptimization is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Energy</uicontrol> folder <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p><p class="- topic/p ">The freeCooling output is set to <option class="+ topic/keyword pr-d/option ">false</option> if <codeph class="+ topic/ph pr-d/codeph ">outside &gt;= inside</codeph> and set to true if <codeph class="+ topic/ph pr-d/codeph ">outside &lt;=
+inside - (abs) thresholdSpan</codeph>.</p><p class="- topic/p ">There is also a low temperature
+check to protect against freezing.</p><fig class="- topic/fig ">
+<title class="- topic/title ">OutsideAirOptimization properties</title>
+<image href="../graphic/kitControlOutsideAirOptimization_0000067610.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Temperature Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Selects units and configures how the value displays:</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">units</option> defaults to temperature.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">precision </option> defines the number of decimal places of temperature.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">min</option> defines the lowest temperature allowed.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">max</option> defines the highest temperature allowed.</p>This configuration applies to <parmname class="+ topic/keyword pr-d/parmname ">Outside Temp</parmname>, <parmname class="+ topic/keyword pr-d/parmname ">Inside Temp</parmname>, and <parmname class="+ topic/keyword pr-d/parmname ">Low Temperature Limit</parmname> properties.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Humidity Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Selects units and configures how the value displays:</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">units</option> defaults to percentage of relative humidity
+(%RH).</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">precision </option> defines the number of decimal
+places of humidity percentage.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">min</option> defines
+the lowest humidity allowed.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">max</option> defines the
+highest humidity allowed.</p><p class="- topic/p ">This configuration applies to the <parmname class="+ topic/keyword pr-d/parmname ">Outside Humidity</parmname> and <parmname class="+ topic/keyword pr-d/parmname ">Inside Humidity</parmname> property values.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Outside Temp</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number of degrees of temperature (defaults to 0.0 degrees
+F) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the current outside air temperature. This input
+must be valid for this object to function.<p class="- topic/p ">When null value is checked,
+the value displayed defaults to the incoming value from the device.
+If you remove the check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Outside Humidity</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">percentage of humidity (defaults to 0.0 RH percent) and
+null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the current outside air humidity. This input must
+be valid for this object to function.<p class="- topic/p ">When null value is checked,
+the value displayed defaults to the incoming value from the device.
+If you remove the check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Inside Temp</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number of degrees of temperature (defaults to 0.0 degrees
+F) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the current inside air temperature. This input must
+be valid for this object to functio</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Inside Humidity</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">percentage of humidity (defaults to 0.0 RH percent) and
+null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the current inside air humidity. This input must
+be valid for this object to function.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Low Temperature Limit</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number of degrees of temperature (defaults to 0.0 degrees
+F) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Provides freeze protection. <p class="- topic/p ">When null value is checked,
+the value displayed defaults to the incoming value from the device.
+If you remove the check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Outside Enthalpy</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number (defaults to 0.00) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the calculated outside air enthalpy.<p class="- topic/p ">When null
+value is checked, the value displayed defaults to the incoming value
+from the device. If you remove the check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Outside Enthalpy String</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text (defaults to blank) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Provides the outside enthalpy value as a string or possible
+status/error message.<p class="- topic/p ">When null value is checked, the value displayed
+defaults to the incoming value from the device. If you remove the
+check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Inside Enthalpy</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number (defaults to 0.00) and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the calculated inside air enthalpy.<p class="- topic/p ">When null
+value is checked, the value displayed defaults to the incoming value
+from the device. If you remove the check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Inside Enthalpy String</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text (defaults to blank) and null definnition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Provides the inside enthalpy value as a string or possible
+status/error message.<p class="- topic/p ">When null value is checked, the value displayed
+defaults to the incoming value from the device. If you remove the
+check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Free Cooling</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> or <option class="+ topic/keyword pr-d/option ">false</option> (default)
+and null definition</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Sets the value of the <parmname class="+ topic/keyword pr-d/parmname ">Free Cooling Command</parmname> when the component determines that free cooling should be used.
+Otherwise, the value is null.<p class="- topic/p ">When null value is checked, the value
+displayed defaults to the incoming value from the device. If you remove
+the check mark you can configure the <parmname class="+ topic/keyword pr-d/parmname ">In</parmname> value.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Current Mode</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text (defaults to <systemoutput class="+ topic/ph sw-d/systemoutput ">No Free Cooling</systemoutput>)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Indicates what mode this object is currently in:<p class="- topic/p ">Input
+out of range</p><p class="- topic/p ">Free Cooling</p><p class="- topic/p ">No Free Cooling</p><p class="- topic/p ">Low temperature</p><p class="- topic/p ">Input error</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Threshold Span</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number to two decimal places (defaults to 1.00)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Configures the difference between the inside enthalpy and
+the outside enthalpy. The actual difference must be greater than this
+value before the system enables free cooling.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Use Enthalpy</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> (default) or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Enables (<option class="+ topic/keyword pr-d/option ">true</option>) and disables (<option class="+ topic/keyword pr-d/option ">false</option>) the use of enthalpy for determining if free cooling is available.
+Otherwise, the component uses outside and inside temperature to decide.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Free Cooling Command</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> (default) or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the Boolean value to be set in the <parmname class="+ topic/keyword pr-d/parmname ">Free
+Cooling</parmname> property if free cooling is available.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Use Null Output</proptype>
+<propvalue class="- topic/stentry     reference/propvalue "><option class="+ topic/keyword pr-d/option ">true</option> (default) or <option class="+ topic/keyword pr-d/option ">false</option></propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><option class="+ topic/keyword pr-d/option ">true</option> sets the null flag on <parmname class="+ topic/keyword pr-d/parmname ">Free
+Cooling</parmname> output when free cooling is not available.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="AWSAndOWSSupervisors-BACnet-55829C32" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">AWS and OWS Supervisors</title>
+<shortdesc class="- topic/shortdesc ">The driver provides two BTL-certified Supervisor stations.
+BTL stands for BACnet Testing Laboratories. BTL certification means
+that the driver has been tested by an official BACnet testing organization,
+and certified to comply with its own BACnet PICS (Protocol Implementation
+Conformance Statement).</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">BTL certification</indexterm><indexterm class="- topic/indexterm ">PICS</indexterm><indexterm class="- topic/indexterm ">AWS</indexterm><indexterm class="- topic/indexterm ">OWS</indexterm>
+</keywords></metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">Both the BACnet AWS (Advanced Workstation) Supervisor
+and BACnet OWS (Operator Workstation) Supervisor are specially-licensed
+Supervisor stations that run on a PC. Both provide client access to,
+and control of BACnet devices; both provide the supervisory functionality
+described in the BACnet Specification for B-AWS and B-OWS profiles;
+and, with the exception of being able to export to BACnet objects,
+both include the same functionality provided by the standard BACnet
+driver as described in this document.</p><note class="- topic/note "><p class="- topic/p ">Any Supervisor station
+that was created using the older bacnetws module (BacnetWsNetwork)
+needs to be converted using a utility that is available in both the <apiname class="+ topic/keyword pr-d/apiname ">bacnetAws</apiname> and <apiname class="+ topic/keyword pr-d/apiname ">bacnetOws</apiname> modules. This
+utility converts the saved station database (config.bog) to one compatible
+with one of the supported Supervisor modules.</p></note></section>
+</refbody>
+</reference>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="auth_AssigningAuthenticationSchemes" xml:lang="en-us" class="- topic/topic task/task ">
+<title class="- topic/title ">Assigning authentication schemes to users</title>
+<shortdesc class="- topic/shortdesc ">Each user is assigned their own AuthenticationScheme. This
+allows different users to use different schemes appropriate to the
+user type. Some schemes apply to both Fox and Web. Other schemes,
+such as HTTP-Basic, apply only to certain web logins (for example,
+Obix clients). These schemes do not work over Fox or even via the
+form login.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">authentication<indexterm class="- topic/indexterm ">scheme, assigning
+to users</indexterm></indexterm></keywords>
+<prodinfo class="- topic/prodinfo ">
+<prodname class="- topic/prodname "/>
+<vrmlist class="- topic/vrmlist "><vrm version="4.0" class="- topic/vrm "/></vrmlist>
+</prodinfo>
+</metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody ">
+<prereq class="- topic/section task/prereq ">The authentication scheme to use has been added to the <apiname class="+ topic/keyword pr-d/apiname ">AuthenticationService</apiname>.</prereq>
+<context class="- topic/section task/context ">By default, each new station comes with the <apiname class="+ topic/keyword pr-d/apiname ">DigestScheme</apiname> and <apiname class="+ topic/keyword pr-d/apiname ">AXDigestScheme</apiname> already installed. The <apiname class="+ topic/keyword pr-d/apiname ">DigestScheme</apiname> is assigned to all users, so that in simple
+cases no additional setup is required.</context>
+<steps class="- topic/ol task/steps ">
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Right-click <apiname class="+ topic/keyword pr-d/apiname ">UserService</apiname> in the Nav tree
+and click <menucascade class="+ topic/ph ui-d/menucascade "><uicontrol class="+ topic/ph ui-d/uicontrol ">Views</uicontrol><uicontrol class="+ topic/ph ui-d/uicontrol ">User
+Manager</uicontrol></menucascade>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The <wintitle class="+ topic/keyword ui-d/wintitle ">User Manager</wintitle> view opens.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Select the user and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Edit</uicontrol>.</cmd>
+<stepresult class="- topic/itemgroup task/stepresult ">The <apiname class="+ topic/keyword pr-d/apiname ">UserService</apiname> <wintitle class="+ topic/keyword ui-d/wintitle ">Property
+Sheet</wintitle> opens.</stepresult>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">Scroll down to <parmname class="+ topic/keyword pr-d/parmname ">Authentication Scheme Name</parmname> and expand the <parmname class="+ topic/keyword pr-d/parmname ">Authenticator</parmname> section.</cmd>
+</step>
+<step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To assign an authentication scheme, select the scheme from
+the <parmname class="+ topic/keyword pr-d/parmname ">Authentication Scheme Name</parmname> drop-down list.</cmd>
+</step>
+</steps>
+<result class="- topic/section task/result ">Once these setup steps are complete, the station is ready
+for authentication.</result>
+</taskbody>
+</task>

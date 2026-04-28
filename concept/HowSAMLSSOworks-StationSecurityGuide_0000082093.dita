@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="HowSAMLSSOWorksStationSecurityGuide-63F6C81D" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">How SAML SSO works</title><shortdesc class="- topic/shortdesc ">In <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/>, SAML SSO is the main supported SSO scheme. The <apiname class="+ topic/keyword pr-d/apiname ">SAMLAuthenticationScheme</apiname>, found in the <apiname class="+ topic/keyword pr-d/apiname ">saml</apiname> palette, configures a station for SAML Single Sign-On (SSO). This
+scheme stores configuration properties required for communications
+with a SAML IdP (Identity Provider). With SSO, when a user tries to
+access the station and has not been authenticated, the station delegates
+authentication to the configured IdP.</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">SSO</indexterm></keywords></metadata></prolog><conbody class="- topic/body  concept/conbody "><p class="- topic/p ">The framework’s SAML scheme uses SAML 2.0 (Security Assertion Markup
+Language v.2.0). This is an open standard for exchanging authentication
+and authorization data in the form of encrypted messages passed between
+security domains. Specific protocols process the SAML request-response
+message exchanges over a secure connection. SSO via a web browser
+uses the SAML 2.0 Web Browser SSO profile to define how to use SAML
+messages and bindings between browser-connected Supervisor and remote
+controller stations.</p><p class="- topic/p ">With SSO, the process of SAML request-response message exchanges
+occurs between two system entities:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">SP (Service Provider), which is a station typically running
+on a remote controller.</p></li><li class="- topic/li "><p class="- topic/p ">IdP (Identity Provider), which stores and maintains the authentication
+and authorization information.</p></li></ul><p class="- topic/p ">SAML SSO uses an approach similar to LDAP authentication, which
+also stores authentication credentials external to the remote station.</p><fig class="- topic/fig "><title class="- topic/title ">SAML transaction steps</title><image placement="break" scale="25" width="350" href="../graphic/SAMLTransactions_0000082113.png" class="- topic/image "/></fig><p class="- topic/p ">Beginning with step number one:</p><ol class="- topic/ol "><li class="- topic/li "><p class="- topic/p ">A user directs their web browser to a URL hosted by a <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> station with the <option class="+ topic/keyword pr-d/option ">SAML Authentication Scheme</option> available.</p></li><li class="- topic/li "><p class="- topic/p ">The SP generates a SAML request. Since the URL being requested
+requires authentication, the station opens a login window with various
+options. The user chooses to use SAML authentication. The station,
+acting as the SP, generates a SAML request that is unique to the user
+and to this particular session (visit).</p></li><li class="- topic/li "><p class="- topic/p ">The SP redirects the browser to the SAML IdP, Single Sign On
+(SSO) URL. In <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/>, the SAML IdP can be another <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/> station, such as the Supervisor station or it can be a
+third-party SAML IdP server.</p></li><li class="- topic/li "><p class="- topic/p ">The IdP receives the redirect, decodes it and prompts the user
+to log in to the IdP using their credentials.</p></li><li class="- topic/li "><p class="- topic/p ">After the user successfully logs in, the IdP generates a SAML
+response to be sent back to the SP.</p></li><li class="- topic/li "><p class="- topic/p ">The IdP encodes the SAML response and redirects the user’s
+web browser back to the SP’s Assertion Consumer Service (ACS) URL.
+The redirected URL contains the encoded SAML response and all the
+user data, which the SP is authorized to receive.</p></li><li class="- topic/li "><p class="- topic/p ">The SP (ACS URL) verifies the SAML response.</p></li><li class="- topic/li "><p class="- topic/p ">The SP grants access to the application and redirects the user’s
+web browser back to the original URL they attempted to access. This
+time, based on the IdP authentication, the application’s web page
+opens.</p></li></ol><p class="- topic/p ">To configure a station for SAML SSO, in addition to the default
+authentication schemes (Digest and AxDigest), the station’s <uicontrol class="+ topic/ph ui-d/uicontrol ">AuthenticationService</uicontrol> must contain a properly configured
+SAML authentication scheme. The <uicontrol class="+ topic/ph ui-d/uicontrol ">AuthenticationService</uicontrol> also contains SSO configuration properties with which to tailor
+the authentication workflow.</p><note class="- topic/note ">In <keyword conkeyref="wh_variables_n4/niagara" class="- topic/keyword "/>, an added baja-UserPrototype component supports the <uicontrol class="+ topic/ph ui-d/uicontrol ">UserService</uicontrol>. SAML authentication requires this UserPrototype.</note><note class="- topic/note ">The WebService <parmname class="+ topic/keyword pr-d/parmname ">Same Site</parmname> property value “Strict” is not supported for SAML authentication.
+If the property is set to <option class="+ topic/keyword pr-d/option ">Strict</option>, it will cause SAML authentication
+to fail.</note><?Pub Caret 0?><p class="- topic/p ">The Components chapter of this guide provides more information
+about the WebService component, and user-authentication components:
+baja-UserService, saml-SAMLAuthenticationScheme, saml-SAMLAttributeMapper,
+and saml-SamlXmlDecryptor.</p></conbody></concept>

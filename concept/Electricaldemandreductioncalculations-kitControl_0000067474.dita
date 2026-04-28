@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="ElectricalDemandReductionCalculations-230E4EB7" xml:lang="en-us" class="- topic/topic concept/concept "><title class="- topic/title ">Electrical demand reduction calculations</title><shortdesc class="- topic/shortdesc ">When <parmname class="+ topic/keyword pr-d/parmname ">Projected Demand Average</parmname> exceeds
+the <parmname class="+ topic/keyword pr-d/parmname ">Demand Limit</parmname> value for the current <parmname class="+ topic/keyword pr-d/parmname ">Demand Interval</parmname>, the system calculates how many loads
+to shed. </shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">shed level values</indexterm></keywords></metadata></prolog><conbody class="- topic/body  concept/conbody "><p class="- topic/p ">You should set all available (or desired) <parmname class="+ topic/keyword pr-d/parmname ">Power Shed
+Level</parmname> properties (1-32) to a demand value based on the
+loads that are controlled by the specific shed group. </p><p class="- topic/p ">An estimate of the demand associated with a group of equipment
+can be calculated if the operating voltage and current draw are known
+for the loads. This is an example of a calculation for single-phase
+loads:</p><p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">W = V * A</codeph></p><p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">W = 120 Volts * 30 Amps = 3600 Watts = 3.6 kW</codeph></p><codeblock class="+ topic/pre pr-d/codeblock "/><p class="- topic/p ">The following is an example using the square root of 3 for three-phase
+loads:</p><p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">W = V * A * 1.73</codeph></p><p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">W = 480 Volts * 30 Amps * 1.73 = 24919 Watts = 24.9 kW</codeph></p><p class="- topic/p ">In addition, the calculated total is 7625 kW and the Projected
+Demand Average is 533 kW. These equations show the kW that needs to
+be shed:</p><p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">targetIntervalTotal = demandLimit * (minutesElapsed + minutesRemaining)</codeph></p><p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">targetIntervalTotal = 500 * (11.25 + 3.75) = 7500</codeph></p><p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">powerChange = (calculated total - targetIntervalTotal)
+/ minutesRemaining</codeph></p><p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">powerChange = (7625 - 7500) / 3.75 = 33.33 KW that needs
+to be shed</codeph></p><p class="- topic/p ">Since <parmname class="+ topic/keyword pr-d/parmname ">Power Shed Level1</parmname> is only expected to
+reduce the demand by 20 kW, both <parmname class="+ topic/keyword pr-d/parmname ">Power Shed Level1</parmname> and <parmname class="+ topic/keyword pr-d/parmname ">Power Shed Level2</parmname> must be shed to reduce
+the demand by an expected 35 kW combined.</p><p class="- topic/p ">The necessary loads are shed in sequential order during the same
+execution cycle, without evaluating the actual impact on demand.</p><p class="- topic/p ">The load shed determination is based on the projected reduction
+in demand for each group.</p><p class="- topic/p ">Subsequent calculations may result in additional load shedding
+if the actual demand is not reduced below the demand limit.</p></conbody></concept>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="UpdatingNetworkSettingsUsingSystemS-3A018756" xml:lang="en-us" class="- topic/topic task/task "><title class="- topic/title ">Update Network Settings example in the System Shell</title><!--This topic is NOT SHARED by docJ8Startup and docJ9Startup.--><shortdesc class="- topic/shortdesc ">Use system shell menu option '2' to access most of the same IP networking options available in the Commissioning
+Wizard step "TCP/IP configuration". When selected, you are prompted for each setting sequentially,
+starting with hostname (shown below).</shortdesc><prolog class="- topic/prolog "><metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">network settings<indexterm class="- topic/indexterm ">updating
+using system shell</indexterm></indexterm></keywords></metadata></prolog><taskbody class="- topic/body task/taskbody "><prereq class="- topic/section task/prereq ">You have connected to the controller using the system shell.</prereq><steps class="- topic/ol task/steps "><step class="- topic/li task/step "><cmd class="- topic/ph task/cmd ">To access most of the same IP networking options available
+in the <wintitle class="+ topic/keyword ui-d/wintitle ">Commissioning Wizard</wintitle> step that configures
+TCP/IP settings, select system shell menu option <option class="+ topic/keyword pr-d/option ">2</option>.</cmd><stepresult class="- topic/itemgroup task/stepresult ">The Network Configuration Utility displays. Following
+is an example of the flow with some fictional addresses:<codeblock class="+ topic/pre pr-d/codeblock ">Network Configuration Utility
+Enter new value, '.' to clear the field or '&lt;cr&gt;' to keep existing value.
+Hostname &lt;localhost&gt; : J8_East
+Domain &lt;&gt; : myDomain.net
+Primary DNS Server &lt;&gt; : 8.8.8.8
+Secondary DNS Server &lt;&gt; : 8.8.4.4
+Route &lt;192.168.1.1&gt; :
+Primary IPv6 DNS Server &lt;&gt; :
+Secondary IPv6 DNS Server &lt;&gt; :
+IPv6 Route &lt;&gt; :
+
+NET1 Ethernet interface (en0)
+  IP address (clear to use DHCP) &lt;&gt; : 192.168.1.36
+  Subnet mask &lt;255.255.255.0&gt; :
+  Enable IPv6 addressing on this adapter? (Y/n) :
+  IPv6 address (clear to use stateless autoconfiguration) &lt;&gt; :
+
+Enable NET2 (en1) interface? (y/N) : Y
+NET2 Ethernet interface
+  IP address (clear to use DHCP) &lt;&gt; : 172.15.16.36
+  Subnet mask &lt;255.255.255.0&gt; :
+  Enable IPv6 addressing on this adapter? (Y/n) :
+  IPv6 address (only 1 adapter may use IPv6 Autoconfiguration) &lt;&gt; :
+ **** IPv6 Autoconfiguration NOT supported on NET2 interface.
+ IPv6 on NET2 will be disabled.
+
+Confirm new configuration
+Hostname : J8_East
+Domain : myDomain.net
+Default Gateway : 192.168.1.1
+Primary DNS : 8.8.8.8
+Secondary DNS : 8.8.4.4
+Default IPv6 Gateway :
+Primary IPv6 DNS :
+Secondary IPv6 DNS :
+
+NET1 settings:
+IP Address : 192.168.1.36
+Subnet Mask : 255.255.255.0
+IPv6 Addressing assigned via Autoconfiguration
+
+NET2 settings:
+IP Address : 172.15.16.36
+Subnet Mask : 255.255.255.0
+IPv6 Addressing assigned via Autoconfiguration
+
+Save these settings  [Y/n]?
+</codeblock><note class="- topic/note ">After you save the network settings, they do not become active until you perform a reboot of the
+controller. You can do this when you return to the main system shell menu, by selecting Reboot, menu
+option 6.</note></stepresult></step></steps></taskbody><?Pub Caret -2?></task>

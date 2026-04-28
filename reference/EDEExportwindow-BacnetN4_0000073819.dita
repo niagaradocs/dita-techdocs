@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="EDEExportWindow-C8BF4A80" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">EDE Export Window</title>
+<shortdesc class="- topic/shortdesc ">This window exports configured devices and points from
+a BACnet network.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">EDE Export window</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><fig class="- topic/fig ">
+<title class="- topic/title ">Export window Action tab<image href="../graphic/Exportwindow_0000073860.png" placement="break" scale="65" class="- topic/image ">
+</image></title>
+<p class="- topic/p ">This window opens when you right-click the Export Table folder
+under a BACnet network Local Device and click <uicontrol class="+ topic/ph ui-d/uicontrol ">Export</uicontrol>.</p>
+</fig><p class="- topic/p ">This window has following properties:<ul class="- topic/ul ">
+<li class="- topic/li "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">Select Exporter</parmname> selects the Export Table
+to EDE from the drop-down list.</p></li>
+<li class="- topic/li "><p class="- topic/p "><parmname class="+ topic/keyword pr-d/parmname ">Save to File</parmname> saves the data to the location
+identified by clicking the <uicontrol class="+ topic/ph ui-d/uicontrol ">Browse</uicontrol> button.</p></li>
+</ul></p></section>
+<section class="- topic/section "><fig class="- topic/fig ">
+<title class="- topic/title ">Export window Setup tab</title>
+<image href="../graphic/ExportSetup_0000073859.png" placement="break" scale="65" class="- topic/image ">
+</image>
+</fig><p class="- topic/p ">This window opens when you right-click the <uicontrol class="+ topic/ph ui-d/uicontrol ">Export
+Table</uicontrol> folder under <uicontrol class="+ topic/ph ui-d/uicontrol ">Local Device</uicontrol> in the BACnet network, click <uicontrol class="+ topic/ph ui-d/uicontrol ">Export</uicontrol> and click
+the <wintitle class="+ topic/keyword ui-d/wintitle ">Setup</wintitle> tab.</p></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Project Name</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Specifies the project name for the EDE configuration.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Version Of Reference File</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Specifies the version of the file.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Timestamp of Last change</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the time stamp when the file is being exported.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Author of the Document</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Specifies the user who created the document.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Version of Layout</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read only</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the version of the layout as configured in the
+driver.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Limited Resources</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">text</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Mentions extra information about the file.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">File Delimiter</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">punctuation (defaults to a comma (<uicontrol class="+ topic/ph ui-d/uicontrol ">,</uicontrol>))</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Specifies the delimiter used for the file.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="ControllerConfiguration-C76D113B" xml:lang="en-us" class="- topic/topic concept/concept ">
+<title class="- topic/title ">Controller device and point configuration</title>
+<shortdesc class="- topic/shortdesc ">A remote controller can be a client or a server on the
+network. It functions as a client on its <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetNetwork</uicontrol> when it discovers devices and points, when it imports schedules
+from another station and when it receives alarms from devices. It
+functions as a server on a <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetAwsNetwork</uicontrol> or <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetOwsNetwork</uicontrol> when a Supervisor station
+requests data from its station.</shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">device<indexterm class="- topic/indexterm ">configuration</indexterm></indexterm></keywords></metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody ">
+<p class="- topic/p ">Like other drivers, you configure controller devices and points
+using special manager views and property sheets in <keyword conkeyref="wh_variables_n4/Workbench" conref="../reuse/WH_SoftwareVariables_Tridium_N4_0000009934.dita#WHSoftwareVariablesTridium-9A3264AE/Workbench" class="- topic/keyword "/>. After configuring the <uicontrol class="+ topic/ph ui-d/uicontrol ">BacnetNetwork</uicontrol> in the remote station, you discover devices and points.</p>
+</conbody>
+</concept>

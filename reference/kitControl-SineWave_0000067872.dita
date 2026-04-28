@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="kitControl-SineWave" xml:lang="en" class="- topic/topic       reference/reference ">
+<title class="- topic/title ">kitControl-SineWave</title>
+<shortdesc class="- topic/shortdesc ">This component generates a sine wave as a StatusNumeric
+out. </shortdesc>
+<prolog class="- topic/prolog ">
+<metadata class="- topic/metadata "><keywords class="- topic/keywords "><indexterm class="- topic/indexterm ">SineWave</indexterm></keywords>
+</metadata>
+</prolog>
+<refbody class="- topic/body        reference/refbody ">
+<section class="- topic/section "><p class="- topic/p ">SineWave is available in the <uicontrol class="+ topic/ph ui-d/uicontrol ">Util</uicontrol> folder of the <apiname class="+ topic/keyword pr-d/apiname ">kitControl</apiname> palette.</p><fig class="- topic/fig ">
+<title class="- topic/title ">SineWave properties</title>
+<image href="../graphic/kitControlSineWave_0000067886.png" placement="break" scale="65" scope="local" class="- topic/image "/>
+</fig></section>
+<properties class="- topic/simpletable reference/properties ">
+<prophead class="- topic/sthead      reference/prophead ">
+<proptypehd class="- topic/stentry     reference/proptypehd ">Property</proptypehd>
+<propvaluehd class="- topic/stentry     reference/propvaluehd ">Value</propvaluehd>
+<propdeschd class="- topic/stentry     reference/propdeschd ">Description</propdeschd>
+</prophead>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Facets</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">Config Facets window (defaults to null units, a single
+decimal place, minimum=negative infinity, and maximum=positive infinity)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc "><p class="- topic/p ">Selects units and configures how the value displays:</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">units </option> defines the unit of measure from<option class="+ topic/keyword pr-d/option ">acceleration </option> to <option class="+ topic/keyword pr-d/option ">volumetric flow.</option></p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">precision </option>defines the number of decimal places. </p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">min</option> defines the lowest value allowed.</p><p class="- topic/p "><option class="+ topic/keyword pr-d/option ">max</option> defines the highest value allowed.</p><p class="- topic/p ">This definition
+applies to the <parmname class="+ topic/keyword pr-d/parmname ">Out</parmname> property value for this component.</p></propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Out</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">read-only number</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Displays the calculated value</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Period</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours minutes seconds (defaults to 30 seconds)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the duration of the ramp.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Amplitude</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number of decibels (defaults to 50.00)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Amplitude is the height of sine wave from its lowest to
+highest point. </propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Offset</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">positive or negative number to two decimal places (defaults
+to 50.00)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Adjusts the amplitude.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Update Interval</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours minutes seconds (defaults to one second)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines how often to restart the ramp.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Offset</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">number to two decimal places (defaults to 50)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines a positive or negative distance from zero that the
+wave's amplitude is centered on.</propdesc>
+</property>
+<property class="- topic/strow       reference/property ">
+<proptype class="- topic/stentry     reference/proptype ">Update Interval</proptype>
+<propvalue class="- topic/stentry     reference/propvalue ">hours minutes seconds (defaults to one second)</propvalue>
+<propdesc class="- topic/stentry     reference/propdesc ">Defines the interval.</propdesc>
+</property>
+</properties>
+</refbody>
+</reference>
